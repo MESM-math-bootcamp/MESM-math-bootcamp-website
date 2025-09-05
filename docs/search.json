@@ -1,10 +1,36 @@
 [
   {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
+    "objectID": "notes/day5_differential_equations.html",
+    "href": "notes/day5_differential_equations.html",
+    "title": "Day 5: Differential Equations",
     "section": "",
-    "text": "About this site"
+    "text": "Day 5: Differential Equations",
+    "crumbs": [
+      "📓 notes",
+      "Day 5: Differential Equations"
+    ]
+  },
+  {
+    "objectID": "notes/day3_derivatives.html",
+    "href": "notes/day3_derivatives.html",
+    "title": "Day 3: Derivatives",
+    "section": "",
+    "text": "Day 3: Derivatives",
+    "crumbs": [
+      "📓 notes",
+      "Day 3: Derivatives"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits.html",
+    "href": "notes/day2_limits.html",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Day 2: Limits",
+    "crumbs": [
+      "📓 notes",
+      "Day 2: Limits"
+    ]
   },
   {
     "objectID": "index.html",
@@ -12,5 +38,38 @@
     "title": "mesm-website",
     "section": "",
     "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+  },
+  {
+    "objectID": "notes/day1_algebra.html",
+    "href": "notes/day1_algebra.html",
+    "title": "Day 1: Algebra",
+    "section": "",
+    "text": "Day 1: Algebra",
+    "crumbs": [
+      "📓 notes",
+      "Day 1: Algebra"
+    ]
+  },
+  {
+    "objectID": "notes/about.html",
+    "href": "notes/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site",
+    "crumbs": [
+      "📓 notes",
+      "About"
+    ]
+  },
+  {
+    "objectID": "notes/day4_integrals.html",
+    "href": "notes/day4_integrals.html",
+    "title": "Day 4: Integrals",
+    "section": "",
+    "text": "Day 4: Integrals",
+    "crumbs": [
+      "📓 notes",
+      "Day 4: Integrals"
+    ]
   }
 ]
