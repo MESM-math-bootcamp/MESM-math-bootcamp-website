@@ -3,10 +3,12 @@ project:
   output-dir: docs
 
 execute:
-  freeze: auto  # re-render only when source changes
+  freeze: auto  # Re-render only when source changes
 
 website:
-  title: "MESM Math Bootcamp"
+  title: "Bren Calculus Workshop"
+  page-footer: 
+    right: This website is built with [Quarto](https://quarto.org/) and [GitHub pages](https://github.com/MEDS-eds-220/MEDS-eds-220-course).
 
   announcement: 
     icon: hammer
@@ -17,10 +19,6 @@ website:
 
   navbar:
     right:
-      - href: index.qmd
-        text: 🗺️ home
-      - text: 📓 notes
-        href: notes/about.qmd
 
       - icon: github
         menu:
@@ -30,14 +28,13 @@ website:
             url: https://github.com/MESM-math-bootcamp/MESM-math-bootcamp-website/issues
 
   sidebar:
-    - id: notes
-      contents:
-        - notes/about.qmd
-        - notes/day1_algebra.qmd
-        - notes/day2_limits.qmd
-        - notes/day3_derivatives.qmd
-        - notes/day4_integrals.qmd
-        - notes/day5_differential_equations.qmd
+    contents:
+      - index.qmd
+      - notes/day1_algebra.qmd
+      - notes/day2_limits.qmd
+      - notes/day3_derivatives.qmd
+      - notes/day4_integrals.qmd
+      - notes/day5_differential_equations.qmd
 
 format:
   html:

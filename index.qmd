@@ -1,7 +1,25 @@
----
-title: "mesm-website"
----
 
-This is a Quarto website.
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Welcome!
+
+Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the [UCSB Master of Environmental Science and Management](https://bren.ucsb.edu/masters-programs/master-environmental-science-and-management) at the [Bren School of Environmnetal Science and Management](https://bren.ucsb.edu).
+
+## Workshop description
+
+This 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren.
+The primary workshop objectives are as follows:
+
+- Reinforce math skills used in Bren courses
+- Understand how math and calculus are used in environmental science
+- Help transition to graduate school life
+- Build collaborative environment
+
+## Instructor
+[**Carmen Galaz García**](https://bren.ucsb.edu/people/carmen-galaz-garcia-0) (she/her/hers)
+
+- E-mail: c_galazgarcia@ucsb.edu
+- Student hours: Thursday 2 pm -3 pm @ Bren Hall 4424
+
+## Syllabus
+
+[Click here to see the syllabus.](https://docs.google.com/document/d/14dcg7u3n1rEz-fReZcO8Gnddk3hEGi8u4DKTroWdonU/edit?usp=share_link){target="_blank"}  

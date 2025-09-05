@@ -6,7 +6,6 @@
     "section": "",
     "text": "Day 5: Differential Equations",
     "crumbs": [
-      "📓 notes",
       "Day 5: Differential Equations"
     ]
   },
@@ -17,7 +16,6 @@
     "section": "",
     "text": "Day 3: Derivatives",
     "crumbs": [
-      "📓 notes",
       "Day 3: Derivatives"
     ]
   },
@@ -28,16 +26,48 @@
     "section": "",
     "text": "Day 2: Limits",
     "crumbs": [
-      "📓 notes",
       "Day 2: Limits"
     ]
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "mesm-website",
+    "title": "Welcome!",
     "section": "",
-    "text": "This is a Quarto website.\nTo learn more about Quarto websites visit https://quarto.org/docs/websites."
+    "text": "Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the UCSB Master of Environmental Science and Management at the Bren School of Environmnetal Science and Management.\n\n\nThis 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment\n\n\n\n\nCarmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424\n\n\n\n\nClick here to see the syllabus.",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#workshop-description",
+    "href": "index.html#workshop-description",
+    "title": "Welcome!",
+    "section": "",
+    "text": "This 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Carmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#syllabus",
+    "href": "index.html#syllabus",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Click here to see the syllabus.",
+    "crumbs": [
+      "Welcome!"
+    ]
   },
   {
     "objectID": "notes/day1_algebra.html",
@@ -46,7 +76,6 @@
     "section": "",
     "text": "Day 1: Algebra",
     "crumbs": [
-      "📓 notes",
       "Day 1: Algebra"
     ]
   },
@@ -55,11 +84,7 @@
     "href": "notes/about.html",
     "title": "About",
     "section": "",
-    "text": "About this site",
-    "crumbs": [
-      "📓 notes",
-      "About"
-    ]
+    "text": "About this site"
   },
   {
     "objectID": "notes/day4_integrals.html",
@@ -68,7 +93,6 @@
     "section": "",
     "text": "Day 4: Integrals",
     "crumbs": [
-      "📓 notes",
       "Day 4: Integrals"
     ]
   }
