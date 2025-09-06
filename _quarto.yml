@@ -30,11 +30,11 @@ website:
   sidebar:
     contents:
       - index.qmd
-      - notes/day1_algebra.qmd
-      - notes/day2_limits.qmd
-      - notes/day3_derivatives.qmd
-      - notes/day4_integrals.qmd
-      - notes/day5_differential_equations.qmd
+      - notes/day1_algebra/day1_algebra.qmd
+      - notes/day2_limits/day2_limits.qmd
+      - notes/day3_derivatives/day3_derivatives.qmd
+      - notes/day4_integrals/day4_integrals.qmd
+      - notes/day5_differential_equations/day5_differential_equations.qmd
 
 format:
   html:

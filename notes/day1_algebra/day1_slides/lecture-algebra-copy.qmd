@@ -1,0 +1,280 @@
+---
+format: 
+  revealjs:
+    chalkboard: true
+    slide-number: true
+    show-slide-number: print
+    theme:
+      - ucsb-media.scss
+---
+
+## {#title-slide data-menu-title="Title Slide" background=.white}
+
+[Introduction and Warm Up Algebra]{.custom-title .blue-text}
+
+[Bren Calculus Workshop]{.custom-subtitle .gold}
+
+<hr class="hr-teal">
+
+[Nathaniel Grimes]{.body-text-l .center-text .blue-text}
+
+[Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
+
+[**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
+
+## {#survey data-menu-title="Please fill out this survery"}
+
+[Please fill out this survey]{.slide-title}
+
+![](images/frame.png){fig-align="center"}
+
+[Or you can click on this link](https://forms.gle/BivhWDG7oaAefH6K6)
+
+## {#obj data-menu-title="Workshop Objectives"}
+
+[Workshop Objectives]{.slide-title}
+
+<hr>
+
+![](images/confused.gif){fig-align="center"}
+
+1.  Shake off the math/schoolwork dust
+
+2.  Equip students with the math skills to succeed in all Bren Courses
+
+3.  Learn how valuable math is to environmental science
+
+4.  Build collaborative environment, crucial for success at Bren
+
+
+## {#tbl data-menu-title="Team Based Learning"}
+
+[We will be using team based learning]{.slide-title}
+
+<hr>
+
+-   Science and policy are done collaboratively
+
+-   TBL shows better learning outcomes than traditional lecturing
+
+    -   [In Math](https://www.tandfonline.com/doi/pdf/10.1080/10511970.2018.1542417?casa_token=We71OsRHNuQAAAAA:U4I567tQynbXcFHplLpIkkamtpfUf1GqCgIKBP453cVdHJ8b3mP-yymXkVNOc4JJ4aZfJxpGvU766Q)
+
+    -   [For Women especially](https://www.tandfonline.com/doi/pdf/10.1080/00220485.2017.1397571?casa_token=d394sBXFFSEAAAAA:Sa68G6KKjBzxy6aD9KBnRH7W5xChBl_PYfy-Yeck2YlOCoDOxp903xu_6S9yTpFTwqVtugWK23im2Q)
+
+    -   [Higher engagement](https://www.lifescied.org/doi/pdf/10.1187/cbe.17-03-0055)
+
+-   We'll be doing a TBL Lite\*, because I know orientation week is busy and school hasn't officially started
+
+    -   Keep extra pre-class work and assessments to a minimum
+
+## {#team-form data-menu-title="Team Formation"}
+
+[Team Formation]{.slide-title}
+
+<hr>
+
+Live coding demonstration
+
+::: aside
+Basically I'm using a constrained k-means algorithm to group everyone into equally balanced groups then pulling randomly from each to create balanced groups based on the likert scale responses of the survey. Full explanation will be included in a write up to see how code works
+:::
+
+## {#exp data-menu-title="Team Expectations"}
+
+[Team Expectations]{.slide-title}
+
+<hr>
+
+- Support and encourage each other
+
+- Communicate between all group members
+
+- Learn by teaching
+
+- Complete in class team assessments
+
+[**Feel free to work with anyone on out of class exercises**]{.seagreen}
+
+## {#math-envs data-menu-title="Math in Environmental Science" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Math in Environmental Science</div>
+</div>
+
+## {#des data-menu-title="describe"}
+
+[Describe to your team what is the purpose of environmental science?]{.slide-title}
+
+<br>
+
+<br>
+
+[How would you go about solving environmental problems?]{.slide-title}
+
+## {#math-lang data-menu-title="Math is a Language"}
+
+[Math is an important tool in Environmental Science]{.slide-title}
+
+<hr>
+
+
+::: columns
+::: {.column width="50%"}
+:::{.center-text}
+**Math to solve**
+:::
+
+Math is science's foundation for finding evidence
+
+Math verifies positive statements
+
+- $CO_2$ concentrations increase by X amount for every Y amount of electricity used
+:::
+
+::: {.column width="50%"}
+:::{.center-text}
+**Math to Communicate**
+:::
+
+Math is a language
+
+Policy people need to know how to support their arguments
+
+Math helps identify weakness in models, methods, and interpretation of results
+
+If you don't understand it, how can you make a decision on it?
+
+:::
+:::
+
+## {#math-bren data-menu-title="Math at Bren"}
+
+[Math at Bren]{.slide-title}
+
+<hr>
+
+
+::: columns
+::: {.column width="50%"}
+:::{.center-text}
+**In classes:**
+:::
+
+- ESM 201 Lokta-Volterra Models 
+$$
+\begin{align}
+\frac{dN_1}{dt}&=r_1N_1\left(\frac{K_1-N_1-\alpha N_2}{K_1}\right)\\
+\frac{dN_2}{dt}&=r_2N_2\left(\frac{K_2-N_2-\beta N_1}{K_2}\right)
+\end{align}
+$$
+
+- ESM 222 Groundwater transport of absorbed contaminant
+$$
+\frac{\partial C}{\partial t}=\left(\frac{D}{R}\frac{\partial^2t}{\partial x^2}\right)-\left(\frac{v}{R}\frac{\partial C}{\partial x}\right)-\frac{k}{R}C
+$$
+:::
+
+::: {.column width="40%"}
+:::{.center-text}
+**In Research**
+
+:::
+
+[Applying Portfolio Theory (A mix of calculus and stochastic linear algebra) to salmon stocks (MESM GP)](https://bren.ucsb.edu/projects/applying-portfolio-theory-improve-spatial-recovery-planning-pacific-salmon)
+
+[We might be underestimating social cost of carbon because of adaptation (Dr. Jeon Bren PhD)](https://woongchanjeon.com/research/project/Adaptation/Jeon_Adaptation_December2023.pdf)
+
+[My own research in impacts from fishery insurance programs](ibi-behavior-draft-3.pdf)
+
+:::
+:::
+
+
+
+## {#algebra data-menu-title=Algebra" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Algebra</div>
+</div>
+
+
+
+## {#alge-rules data-menu-title="Rules of Algebra"}
+
+[Rules of Algebra]{.slide-title}
+
+<hr>
+
+1.  Never change an equation, we rewrite into more useful forms
+
+2.  Manipulate BOTH sides of an equation with the SAME THING
+
+3.  Order of Operations (aka PEDMAS)
+
+## {#pedmas data-menu-title="(P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract"}
+
+[(P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract [PEDMAS]]{.slide-title}
+
+<hr>
+
+```{r echo=FALSE, out.width="40%",fig.align='center'}
+#knitr::include_graphics("images/pedmas_meme.webp")
+```
+
+## {#pedmas-use data-menu-title="PEDMAS important for what order to manipulate equations"}
+
+[PEDMAS important for what order to manipulate equations]{.slide-title}
+
+<hr>
+
+$$
+4*(y-4)+(x+1)^2=z
+$$
+
+If I give you x and y, how would you solve this equation?
+
+## {#flex-eq data-menu-title="Often times we want flexible equations"}
+
+[Often times we want flexible equations]{.slide-title}
+
+<hr>
+
+Prices are important in economics, but not always available for environmental goods.
+
+<br>
+
+:::{.center-text}
+**How do we get prices if we know quantity?**
+:::
+
+$$
+\require{cancel}
+\begin{aligned}
+Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
+\end{aligned}
+$$
+
+## {#flex-eq2 data-menu-title="Often times we want flexible equations"}
+
+[Often times we want flexible equations]{.slide-title}
+
+<hr>
+
+Prices are important in economics, but not always available.
+
+<br>
+
+:::{.center-text}
+**How do we get prices if we know quantity?**
+:::
+
+$$
+\require{cancel}
+\begin{aligned}
+Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
+80Q&=\frac{(400-P)\cancel{80}}{\cancel{80}}  &\text{ Multiply both sides by 80} \\
+80Q-400&=\cancel{400}-\cancel{400} -P &\text{ Subtract both sides by 400} \\
+-1(80Q-400)&=-P(-1) &\text{Multiply both sides by -1} \\
+400-80Q&=P  &\text{Flip terms for simplicity}
+\end{aligned}
+$$
