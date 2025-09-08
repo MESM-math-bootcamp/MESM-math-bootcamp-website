@@ -266,11 +266,20 @@ Widely used in hydrogeology and environmental engineering to model how contamina
 
 <hr>
 
-1.  Never change an equation, we rewrite into more useful forms
+1.  Never change an equation. Instead, we rewrite them into more useful forms
 
-2.  Manipulate BOTH sides of an equation with the SAME THING
+2.  Manipulate BOTH sides of an equation with the SAME PROCEDURE.
+
+Always add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the qeuation. 
 
 3.  Order of Operations (aka PEDMAS)
+
+- First: calculate anything inside parenthesis
+
+- Second: Do multiplications and divisions
+
+- Third: Add and subtract
+
 
 ## {#pedmas data-menu-title="(P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract"}
 
@@ -279,7 +288,7 @@ Widely used in hydrogeology and environmental engineering to model how contamina
 <hr>
 
 ```{r echo=FALSE, out.width="40%",fig.align='center'}
-#knitr::include_graphics("images/pedmas_meme.webp")
+knitr::include_graphics("images/pedmas_meme.webp")
 ```
 
 ## {#pedmas-use data-menu-title="PEDMAS important for what order to manipulate equations"}
@@ -292,7 +301,24 @@ $$
 4*(y-4)+(x+1)^2=z
 $$
 
-If I give you x and y, how would you solve this equation?
+If we are given the values of $x=-3$ and $y=2$, what would be the value of $z$?
+
+✏️ [Take a minute to solve this individually.]{style="color:green;"}
+
+## {#pedmas-use data-menu-title="PEDMAS important for what order to manipulate equations"}
+
+[PEDMAS important for what order to manipulate equations]{.slide-title}
+
+<hr>
+
+$$
+4*(y-4)+(x+1)^2=z
+$$
+
+If we are given the values of $x=-3$ and $y=2$, what would be the value of $z$?
+
+💡 [Let's see a solution!]{style="color:green;"}
+
 
 ## {#flex-eq data-menu-title="Often times we want flexible equations"}
 
@@ -315,13 +341,38 @@ Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
 \end{aligned}
 $$
 
+✏️ [Take a minute to solve this individually.]{style="color:green;"}
+
+## {#flex-eq data-menu-title="Often times we want flexible equations"}
+
+[Often times we want flexible equations]{.slide-title}
+
+<hr>
+
+Prices are important in economics, but not always available for environmental goods.
+
+<br>
+
+:::{.center-text}
+**How do we get prices if we know quantity?**
+:::
+
+$$
+\require{cancel}
+\begin{aligned}
+Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
+\end{aligned}
+$$
+
+💡 [Let's see a solution!]{style="color:green;"}
+
 ## {#flex-eq2 data-menu-title="Often times we want flexible equations"}
 
 [Often times we want flexible equations]{.slide-title}
 
 <hr>
 
-Prices are important in economics, but not always available.
+Prices are important in economics, but not always available for environmental goods. 
 
 <br>
 
@@ -342,23 +393,61 @@ $$
 
 ## {#practice-alge data-menu-title="Easy to make mistakes"}
 
-[It's easy to make mistakes while doing algebra. Practice makes perfect]{.slide-title}
+[It can be easy to make mistakes while doing algebra. Practice makes perfect!]{.slide-title}
 
 <hr>
 
 Solve all in terms of $x$
 
-$$
-3x+2=10x-12
-$$
+(A)  $3x+2=10x-12$
 
-$$
-4-3(2x+1)=8-\frac{3x}{2}
-$$
+<br>
 
-$$
-3(x+7a)-5=b+2(c-4x)
-$$
+(B) $4-3(2x+1)=8-\frac{3x}{2}$
+
+<br>
+
+(C) $3(x+7a)-5=b+2(c-4x)$
+
+✏️ [Take a minute to solve these individually.]{style="color:green;"}
+
+## {#practice-alge data-menu-title="Easy to make mistakes"}
+
+[It can be easy to make mistakes while doing algebra. Practice makes perfect!]{.slide-title}
+
+<hr>
+
+💡 [Let's see a solution!]{style="color:green;"}
+
+Solve all in terms of $x$
+
+:::: {.columns}
+
+::: {.column width="50%"}
+:::{.center-text}
+(A)  $3x+2=10x-12$
+:::
+:::
+
+::: {.column width="50%"}
+:::{.center-text}
+(B) $4-3(2x+1)=8-\frac{3x}{2}$
+:::
+:::
+
+::::
+## {#practice-alge data-menu-title="Easy to make mistakes"}
+
+[It can be easy to make mistakes while doing algebra. Practice makes perfect!]{.slide-title}
+
+<hr>
+
+💡 [Let's see a solution!]{style="color:green;"}
+
+Solve all in terms of $x$
+
+(C) $3(x+7a)-5=b+2(c-4x)$
+
 
 ## {#practice-alge-sol data-menu-title="Solutions"}
 

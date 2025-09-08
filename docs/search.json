@@ -571,7 +571,7 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#alge-rules",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules of Algebra\n\n\nNever change an equation, we rewrite into more useful forms\nManipulate BOTH sides of an equation with the SAME THING\nOrder of Operations (aka PEDMAS)"
+    "text": "Rules of Algebra\n\n\nNever change an equation. Instead, we rewrite them into more useful forms\nManipulate BOTH sides of an equation with the SAME PROCEDURE.\n\nAlways add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the qeuation.\n\nOrder of Operations (aka PEDMAS)\n\n\nFirst: calculate anything inside parenthesis\nSecond: Do multiplications and divisions\nThird: Add and subtract"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#pedmas",
@@ -585,28 +585,28 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#pedmas-use",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "PEDMAS important for what order to manipulate equations\n\n\\[\n4*(y-4)+(x+1)^2=z\n\\]\nIf I give you x and y, how would you solve this equation?"
+    "text": "PEDMAS important for what order to manipulate equations\n\n\\[\n4*(y-4)+(x+1)^2=z\n\\]\nIf we are given the values of \\(x=-3\\) and \\(y=2\\), what would be the value of \\(z\\)?\n💡 Let’s see a solution!"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#flex-eq",
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#flex-eq",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n\\end{aligned}\n\\]"
+    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n\\end{aligned}\n\\]\n💡 Let’s see a solution!"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#flex-eq2",
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#flex-eq2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n80Q&=\\frac{(400-P)\\cancel{80}}{\\cancel{80}}  &\\text{ Multiply both sides by 80} \\\\\n80Q-400&=\\cancel{400}-\\cancel{400} -P &\\text{ Subtract both sides by 400} \\\\\n-1(80Q-400)&=-P(-1) &\\text{Multiply both sides by -1} \\\\\n400-80Q&=P  &\\text{Flip terms for simplicity}\n\\end{aligned}\n\\]"
+    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n80Q&=\\frac{(400-P)\\cancel{80}}{\\cancel{80}}  &\\text{ Multiply both sides by 80} \\\\\n80Q-400&=\\cancel{400}-\\cancel{400} -P &\\text{ Subtract both sides by 400} \\\\\n-1(80Q-400)&=-P(-1) &\\text{Multiply both sides by -1} \\\\\n400-80Q&=P  &\\text{Flip terms for simplicity}\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#practice-alge",
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#practice-alge",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "It’s easy to make mistakes while doing algebra. Practice makes perfect\n\nSolve all in terms of \\(x\\)\n\\[\n3x+2=10x-12\n\\]\n\\[\n4-3(2x+1)=8-\\frac{3x}{2}\n\\]\n\\[\n3(x+7a)-5=b+2(c-4x)\n\\]"
+    "text": "It can be easy to make mistakes while doing algebra. Practice makes perfect!\n\n💡 Let’s see a solution!\nSolve all in terms of \\(x\\)\n\n\\(3(x+7a)-5=b+2(c-4x)\\)"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#practice-alge-sol",
