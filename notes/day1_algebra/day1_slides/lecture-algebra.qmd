@@ -5,9 +5,8 @@ format:
     slide-number: true
     show-slide-number: print
     theme:
-     - ../../ucsb-media.scss
-#    logo: images/bren-logo.png
-
+     - ucsb-media.scss
+    logo: images/bren-logo.png
 ---
 
 ## {#title-slide data-menu-title="Title Slide" background=.white}

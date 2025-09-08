@@ -95,5 +95,468 @@
     "crumbs": [
       "Day 4: Integrals"
     ]
+  },
+  {
+    "objectID": "notes/day4_integrals/day4_integrals.html",
+    "href": "notes/day4_integrals/day4_integrals.html",
+    "title": "Day 4: Integrals",
+    "section": "",
+    "text": "Day 4: Integrals",
+    "crumbs": [
+      "Day 4: Integrals"
+    ]
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_algebra.html",
+    "href": "notes/day1_algebra/day1_algebra.html",
+    "title": "Day 1: Algebra",
+    "section": "",
+    "text": "Day 1: Algebra",
+    "crumbs": [
+      "Day 1: Algebra"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html",
+    "href": "notes/day2_limits/day2_limits.html",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Day 2: Limits",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day5_differential_equations/day5_differential_equations.html",
+    "href": "notes/day5_differential_equations/day5_differential_equations.html",
+    "title": "Day 5: Differential Equations",
+    "section": "",
+    "text": "Day 5: Differential Equations",
+    "crumbs": [
+      "Day 5: Differential Equations"
+    ]
+  },
+  {
+    "objectID": "notes/day3_derivatives/day3_derivatives.html",
+    "href": "notes/day3_derivatives/day3_derivatives.html",
+    "title": "Day 3: Derivatives",
+    "section": "",
+    "text": "Day 3: Derivatives",
+    "crumbs": [
+      "Day 3: Derivatives"
+    ]
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#title-slide",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#title-slide",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nNathaniel Grimes\nBren School of Environmental Science & Management\nLast updated: r format(Sys.time(), '%b %d, %Y')"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#survey",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#survey",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Please fill out this survey\n\nOr you can click on this link"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#obj",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#obj",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Workshop Objectives\n\n\n\nShake off the math/schoolwork dust\nEquip students with the math skills to succeed in all Bren Courses\nLearn how valuable math is to environmental science\nBuild collaborative environment, crucial for success at Bren"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#tbl",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#tbl",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "We will be using team based learning\n\n\nScience and policy are done collaboratively\nTBL shows better learning outcomes than traditional lecturing\n\nIn Math\nFor Women especially\nHigher engagement\n\nWe’ll be doing a TBL Lite*, because I know orientation week is busy and school hasn’t officially started\n\nKeep extra pre-class work and assessments to a minimum"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#team-form",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#team-form",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Formation\n\nLive coding demonstration\n\n\nBasically I’m using a constrained k-means algorithm to group everyone into equally balanced groups then pulling randomly from each to create balanced groups based on the likert scale responses of the survey. Full explanation will be included in a write up to see how code works"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exp",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exp",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Expectations\n\n\nSupport and encourage each other\nCommunicate between all group members\nLearn by teaching\nComplete in class team assessments\n\nFeel free to work with anyone on out of class exercises"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#math-envs",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#math-envs",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Math in Environmental Science"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#des",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#des",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Describe to your team what is the purpose of environmental science?\n\n\nHow would you go about solving environmental problems?"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#math-lang",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#math-lang",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Math is an important tool in Environmental Science\n\n\n\n\nMath to solve\n\nMath is science’s foundation for finding evidence\nMath verifies positive statements\n\n\\(CO_2\\) concentrations increase by X amount for every Y amount of electricity used\n\n\n\nMath to Communicate\n\nMath is a language\nPolicy people need to know how to support their arguments\nMath helps identify weakness in models, methods, and interpretation of results\nIf you don’t understand it, how can you make a decision on it?"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#math-bren",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#math-bren",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Math at Bren\n\n\n\n\nIn classes:\n\n\nESM 201 Lokta-Volterra Models \\[\n\\begin{align}\n\\frac{dN_1}{dt}&=r_1N_1\\left(\\frac{K_1-N_1-\\alpha N_2}{K_1}\\right)\\\\\n\\frac{dN_2}{dt}&=r_2N_2\\left(\\frac{K_2-N_2-\\beta N_1}{K_2}\\right)\n\\end{align}\n\\]\nESM 222 Groundwater transport of absorbed contaminant \\[\n\\frac{\\partial C}{\\partial t}=\\left(\\frac{D}{R}\\frac{\\partial^2t}{\\partial x^2}\\right)-\\left(\\frac{v}{R}\\frac{\\partial C}{\\partial x}\\right)-\\frac{k}{R}C\n\\]\n\n\n\nIn Research\n\nApplying Portfolio Theory (A mix of calculus and stochastic linear algebra) to salmon stocks (MESM GP)\nWe might be underestimating social cost of carbon because of adaptation (Dr. Jeon Bren PhD)\nMy own research in impacts from fishery insurance programs"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#title-slide",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#title-slide",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nNathaniel Grimes\nBren School of Environmental Science & Management\nLast updated: Sep 08, 2025"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#survey",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#survey",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Please fill out this survey\n\nOr you can click on this link"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#obj",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#obj",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Workshop Objectives\n\n\n\nShake off the math/schoolwork dust\nEquip students with the math skills to succeed in all Bren Courses\nLearn how valuable math is to environmental science\nBuild collaborative environment, crucial for success at Bren"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#tbl",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#tbl",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "We will be using team based learning\n\n\nScience and policy are done collaboratively\nTBL shows better learning outcomes than traditional lecturing\n\nIn Math\nFor Women especially\nHigher engagement\n\nWe’ll be doing a TBL Lite*, because I know orientation week is busy and school hasn’t officially started\n\nKeep extra pre-class work and assessments to a minimum"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#team-form",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#team-form",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Formation\n\nLive coding demonstration\n\n\nBasically I’m using a constrained k-means algorithm to group everyone into equally balanced groups then pulling randomly from each to create balanced groups based on the likert scale responses of the survey. Full explanation will be included in a write up to see how code works"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#exp",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#exp",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Expectations\n\n\nSupport and encourage each other\nCommunicate between all group members\nLearn by teaching\nComplete in class team assessments\n\nFeel free to work with anyone on out of class exercises"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#math-envs",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#math-envs",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Math in Environmental Science"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#des",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#des",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Describe to your team what is the purpose of environmental science?\n\n\nHow would you go about solving environmental problems?"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#math-lang",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#math-lang",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Math is an important tool in Environmental Science\n\n\n\n\nMath to solve\n\nMath is science’s foundation for finding evidence\nMath verifies positive statements\n\n\\(CO_2\\) concentrations increase by X amount for every Y amount of electricity used\n\n\n\nMath to Communicate\n\nMath is a language\nPolicy people need to know how to support their arguments\nMath helps identify weakness in models, methods, and interpretation of results\nIf you don’t understand it, how can you make a decision on it?"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#math-bren",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#math-bren",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Math at Bren\n\n\n\n\nIn classes:\n\n\nESM 201 Lokta-Volterra Models \\[\n\\begin{align}\n\\frac{dN_1}{dt}&=r_1N_1\\left(\\frac{K_1-N_1-\\alpha N_2}{K_1}\\right)\\\\\n\\frac{dN_2}{dt}&=r_2N_2\\left(\\frac{K_2-N_2-\\beta N_1}{K_2}\\right)\n\\end{align}\n\\]\nESM 222 Groundwater transport of absorbed contaminant \\[\n\\frac{\\partial C}{\\partial t}=\\left(\\frac{D}{R}\\frac{\\partial^2t}{\\partial x^2}\\right)-\\left(\\frac{v}{R}\\frac{\\partial C}{\\partial x}\\right)-\\frac{k}{R}C\n\\]\n\n\n\nIn Research\n\nApplying Portfolio Theory (A mix of calculus and stochastic linear algebra) to salmon stocks (MESM GP)\nWe might be underestimating social cost of carbon because of adaptation (Dr. Jeon Bren PhD)\nMy own research in impacts from fishery insurance programs"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#algebra",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#algebra",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Algebra"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#alge-rules",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#alge-rules",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules of Algebra\n\n\nNever change an equation, we rewrite into more useful forms\nManipulate BOTH sides of an equation with the SAME THING\nOrder of Operations (aka PEDMAS)"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#pedmas",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#pedmas",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "(P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract [PEDMAS]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#pedmas-use",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#pedmas-use",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "PEDMAS important for what order to manipulate equations\n\n\\[\n4*(y-4)+(x+1)^2=z\n\\]\nIf I give you x and y, how would you solve this equation?"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#flex-eq",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#flex-eq",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#flex-eq2",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#flex-eq2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n80Q&=\\frac{(400-P)\\cancel{80}}{\\cancel{80}}  &\\text{ Multiply both sides by 80} \\\\\n80Q-400&=\\cancel{400}-\\cancel{400} -P &\\text{ Subtract both sides by 400} \\\\\n-1(80Q-400)&=-P(-1) &\\text{Multiply both sides by -1} \\\\\n400-80Q&=P  &\\text{Flip terms for simplicity}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#practice-alge",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#practice-alge",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "It’s easy to make mistakes while doing algebra. Practice makes perfect\n\nSolve all in terms of \\(x\\)\n\\[\n3x+2=10x-12\n\\]\n\\[\n4-3(2x+1)=8-\\frac{3x}{2}\n\\]\n\\[\n3(x+7a)-5=b+2(c-4x)\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#practice-alge-sol",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#practice-alge-sol",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Practice Solutions\n\n\n\n\\[\n\\small\n\\begin{aligned}\n3x+2&=10x-12 \\\\\n3x+2+12&=10x-12(+12) \\\\\n3x-3x+14&=10x-3x \\\\\n14&=7x \\\\\nx&=2\n\\end{aligned}\n\\] \n\\[\n\\small\n\\begin{aligned}\n4-3(2x+1)&=8-\\frac{3x}{2}\\\\\n4-3-6x&=8-\\frac{3x}{2} \\\\\n1-6x&=8-\\frac{3x}{2} \\\\\n2-12x&=16-3x \\\\\n-9x&=14 \\\\\nx&=\\frac{-14}{9}\\\\\n\\end{aligned}\n\\]\n\n\\[\n\\small\n\\begin{aligned}\n3(x+7a)-5&=b+2(c-4x)\\\\\n3x+21a-5&=b+2c-8x \\\\\n11x+21a-5&=b+2c \\\\\n11x&=5+b+2c-21a\\\\\nx&=\\frac{5+b+2c-21a}{11}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#exponents",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#exponents",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Exponents make algebra WAY tougher\n\n\\(x^n=x*x*x*x... (\\text{n-times})\\)\nMany environmental variables follow exponential formulas like decay and growth\nYou might find yourself trying to solve equations like \\(x^{\\frac{3}{4}}=3x^{\\frac{5}{3}}\\)\nUse the same principles of algebra and the properties on the next slide to manipulate"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#exponents-rule",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#exponents-rule",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules and Properties of Exponents\n\n\\[\n\\begin{align}\nx^0&=1 & x\\ne0 \\\\\nx^{-n}&=\\frac{1}{x^n} &x\\ne0 \\\\\nx^ax^b&=x^{a+b} \\\\\n\\frac{x^a}{x^b}&=x^{a-b}\\\\\n(x^a)^b&=x^{ab}\\\\\n(\\frac{x}{y})^a&=\\frac{x^a}{y^a}\\\\\n(xy)^a&=x^ay^a\\\\\n(\\sqrt[n]{x}=a)&\\to x=a^n \\\\\nx^\\frac{1}{n}&=\\sqrt[n]{x}\\\\\nx^\\frac{m}{n}&=(x^{\\frac{1}{n}})^m=(\\sqrt[n]{x})^m\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#polynomials",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#polynomials",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Polynomials describe more complex relationships through exponents\n\n\\[\n\\large\n\\begin{align}\na_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\n\\end{align}\n\\]\n\n\nFor example, polynomials often represent real world data better than a linear function\n\\[\n\\begin{aligned}\nCV&=b_0+b1\\text{ row}+b_2 \\text{ column}+ b_3\\text{ row}^2\\\\\n&+b_4\\text{ column}^2+b_5\\text{ row x column} +b_6\\text{ elevation}\n\\end{aligned}\n\\]\n\nModel used to predict monthly climate patterns in Ireland"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#fundamental",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#fundamental",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "The Fundamental Theorem of Algebra helps us solve for unknowns\n\n\\[\n\\large\n\\begin{align}\na_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\n\\end{align}\n\\]\n\nFundamental Theorem of Algebra:\n\n\nEvery nth degree polynomial has exactly n zeros (solutions)\n\n\nOften times we look forsolution when equations equal zero Interesting properties at zero or the difference between two equations Comes from calculus maximization problems (covered in Day 3)"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#find-zeros",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#find-zeros",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "You were already finding zeroes!\n\n\nThis is just a 1st degree polynomial. How many solutions did it have?\n\n\\[\n3x+2=10x-12\n\\]\n\nFinding nth degree polynomial zeros are much harder\n\nLet computers do it for us\n\nFocus on 2nd degree polynomials"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#roots",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#roots",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "What do I mean by roots or solutions?\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\((x-4)(x+3)\\)?\n\nTry the same thing with \\(x^2-x-12\\)\nThe only way to get \\(x^2-x-12\\)=0 is for x to either be 4 or -3\n4 and -3 are said to be the roots of the equation"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#foil",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#foil",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "(F)irst (O)utside (I)nside (L)ast\n\nSecond degree polynomials can be written as a multiplication of their “roots” aka solutions\nWe can expand using FOIL!\nMultiply each term in the adjacent polynomial and add together\n\\[\n\\begin{align*}\n\\text{First}&=x*x & \\text{Outside}&=3x & \\text{Inside}&=-4x & \\text{Last}&=-12 \\\\\nx^2-&x-12=0 & &\\text{Add all terms together}\n\\end{align*}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#quad",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#quad",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Quadratic Formula solves 2nd degree polynomials\n\nFor any second degree polynomial\n\\[\nax^2+bx+c=0\n\\]\nThe solution to can be found using the quadratic formula\n\\[\nx=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#section",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#section",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Identify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)\n\n\\[\n4x^2+x-14=0\n\\]\n\nIdentify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)\n\n\\[\n256-\\sqrt{44}x^2+.23x=10\n\\]\n\nWhat happens if \\(b^2-4ac\\) is negative in the quadratic formula\nExpand \\((3x-6)(2x+1)\\)"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-sol-one",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-sol-one",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solutions\n\n\\[\n4x^2+x-14=0\n\\]\n\\[\n\\begin{aligned}\na=4 \\\\\nb=1 \\\\\nc=-14\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-sol-two",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-sol-two",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solutions\n\n\\[\n256-\\sqrt{44} x^2+.23x=10\n\\]\n\\[\n\\begin{aligned}\na=\\sqrt{44} \\\\\nb=.23 \\\\\nc=246\n\\end{aligned}\n\\]\nThis will probably be a nasty calculation, but that is what computers are for. The order does not matter, only that the \\(a\\) corresponds to the square term, the \\(b\\) to the 1st degree term, and the \\(c\\) to the constant"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-sol-three",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-sol-three",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solutions\n\n\nWhat happens if \\(b^2-4ac\\) is negative in the quadratic formula\n\nThere are no real solutions, but imaginary solutions. Can still be useful (saddle path solutions, but that’s for another class)"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-sol-four",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-sol-four",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solutions\n\n\nExpand \\((3x-6)(2x+1)\\)\n\n\\[\n\\begin{align}\n(3x-6)(2x+1) \\\\\n6x^2+3x-12x-6 \\\\\n6x^2-9x-6\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graphs",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graphs",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Graphs"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graph-demo",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graph-demo",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Graphs bring visual connection to math and data\n\n\nWhich looks better and is easier to understand?"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graph-use",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graph-use",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "How to use graphs\n\n\n\nGraphs move in a rectangular coordinate system with two dimensions (axes)\n\nx - axis (horizontal)\ny- axis (vertical)\nAxis units must be defined\n\nWe use point pairs to place data\n\n(X,Y)\nWhere would (2,-1) go on the graph?"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graph-series",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graph-series",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Graphs series of points to make lines"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graph-fcn",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graph-fcn",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Most 2D functions can be shown on graphs\n\n\n\n\n\\(\\color{green}{y=sin(3x+2)}\\)\n\n\n\n\\(\\color{red}{y=0.5x^3+x^2-5x}\\)\n\n\n\n\\(\\color{blue}{y=0.85x+0.44}\\)"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graph-ingredients",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#graph-ingredients",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Two key ingredients to graphs\n\n\n\n\nIntercepts\n\n\nX-intercept\n\nWhere does the graph intersect the x-axis? (x,0)\n\ny-intercept\n\nWhere does the graph intersect the y-axis? (0,y)\n\n\n\nSlope of lines\n\n\nHow quickly is the graph changing?\n\n\n\nWhat are the intercepts of the polynomial function in red?"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#slope-int",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#slope-int",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Slope-Intercept Form\n\nEasiest model to describe linear relationship between two variables\n\\[\n\\huge\n\\begin{align}\n\\underbrace{y}_{\\text{output}}=\\overbrace{m}^{\\text{Slope}}\\underbrace{x}_{\\text{input}}+\\overbrace{b}^{\\text{y intercept}}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#slope-def",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#slope-def",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Slope-Intercept Form\n\n\n\nVertical Change per unit of Horizontal Change\n\\[\nm=\\frac{\\Delta y}{\\Delta x}=\\frac{y_2-y_1}{x_2-x_1}\n\\]\nHorizontal Slope: m=0\nVertical Slope: m is undefined\n\n\nRise over Run"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#slope-roc",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#slope-roc",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Slope represents rate of change"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#slope-avg",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#slope-avg",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Slope can be average or instantaneous\n\n\n\n\nRise over run can always be used to find average rate of change between two parts of a graph\n\n\n\nInstantaneous leads us to Calculus"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-2",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-q2",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-q2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "You’re team measured the concentrations of pesticides in a lake exposed to agricultural runoff. The intern in charge of finishing the calculations ran off for the weekend leaving you all to finish their work. They left behind the following equation describing the total amount of pesticides in the lake if runoff is stopped from the farm by a new policy incentive reducing pesticides use:\n\\[\n\\begin{aligned}\n&y=(8-2t)(t+2) \\\\\n&\\text{Where } y \\text{ is pesticde concentration in ppb} \\\\\n&\\text{and } t \\text{ is time in years}\n\\end{aligned}\n\\]\nWork with your team to discuss conceptually how you would solve the following tasks.\n\nWrite out the intern’s work in a more useful equation\nHow long will it take for the pesticide concentration in the lake to reach zero? Since the equation is a polynomial describe why one solution is more applicable than the other.\nPresent your findings (Choose between a graph or table)\nWhat is the average change in concentration from year 0 to year 4?\nExplain to your client why concentrations might behave the way they were modeled."
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-sol21",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-sol21",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution 1\n\nLet’s FOIL out the equation so it becomes easier to graph.\n\\[\n\\begin{aligned}\ny&=(-2t+8)(t+2) \\\\\ny&=\\overbrace{-2t^2}^{\\text{First}}-\\overbrace{4t}^{\\text{Outside}}+\\overbrace{8t}^{\\text{Inside}}+\\overbrace{16}^{\\text{Last}}\\\\\ny&=-2t^2+4t+16\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-q2-sol2",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-q2-sol2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution 2\n\n\n\n\nUse the Quadratic Formula\n\n\\[\n\\begin{aligned}\n0&=-2t^2+4t+16 \\\\\n0&=\\frac{-4\\pm\\sqrt{4^2-4(-2)(16)}}{2(-2)}\\\\\n0&=\\frac{-4\\pm\\sqrt{16+128}}{-4} \\\\\n&t=4\\text{, } t=-2\n\\end{aligned}\n\\]\n\n\nUse the factors\n\n\\[\n\\begin{aligned}\n2t-8=0 \\\\\nt=\\frac{8}{2}\\\\\nt=4\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-q2-sol3",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-q2-sol3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nt=seq(-2,4)\ny=-2*t^2+4*t+16\ndf&lt;-data.frame(t=t,y=y)\np&lt;-df %&gt;% \n  ggplot(aes(x=t,y=y))+\n  geom_line(color=\"#003660\",linewidth=3)+\n  labs(x=\"Years\",y=\"Pesticide Concentration\")+\n  scale_x_continuous(expand = c(0, 0)) +\n  scale_y_continuous(expand = c(0, 0),limits = c(-2,22))+\n  theme_classic()+\n  theme(text = element_text(size = 28)) \n\np"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-q2-sol4",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-q2-sol4",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\np2&lt;-df %&gt;% \n  filter(t&gt;=0) %&gt;% \n  ggplot(aes(x=t,y=y))+\n  geom_line(color=\"#003660\",linewidth=3)+\n  labs(x=\"Years\",y=\"Pesticide Concentration\")+\n  scale_x_continuous(expand = c(0, 0)) +\n  scale_y_continuous(expand = c(0, 0),limits=c(-2,22))+\n  geom_hline(yintercept = 0)+\n  annotate(\"segment\",x=0,xend=4,y=16,yend=0,color=\"#FEBC11\",linewidth=2)+\n  theme_classic()+\n  theme(text = element_text(size = 28)) \n\np2\n\nUse rise over run:\n\\[\n\\frac{\\Delta y}{\\Delta x}=\\frac{0-16}{4-0}=-4\n\\]\nPesticides are removed from the lake at an average rate of 4 ppb per year"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-q2-sol5",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#ta-q2-sol5",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution 5\n\n\n\n\n\n\n\n\n\n\n\n\n\nPesticide concentrations might initially increase in the lake from residual particles in the soil being washed into the lake. Then a mixture microbial activity and other chemical process reduce the pesticides to more inert components (You will learn the actual answer in ESM 202)"
   }
 ]

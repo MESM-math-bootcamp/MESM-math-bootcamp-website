@@ -5,7 +5,7 @@ format:
     slide-number: true
     show-slide-number: print
     theme:
-      - ucsb-media.scss
+     - ../../../ucsb-media.scss    
 ---
 
 ## {#title-slide data-menu-title="Title Slide" background=.white}
@@ -278,3 +278,833 @@ Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
 400-80Q&=P  &\text{Flip terms for simplicity}
 \end{aligned}
 $$
+
+## {#practice-alge data-menu-title="Easy to make mistakes"}
+
+[It's easy to make mistakes while doing algebra. Practice makes perfect]{.slide-title}
+
+<hr>
+
+Solve all in terms of $x$
+
+$$
+3x+2=10x-12
+$$
+
+$$
+4-3(2x+1)=8-\frac{3x}{2}
+$$
+
+$$
+3(x+7a)-5=b+2(c-4x)
+$$
+
+## {#practice-alge-sol data-menu-title="Solutions"}
+
+[Practice Solutions]{.slide-title}
+
+<hr>
+
+:::columns
+
+:::{.column width=50%}
+$$
+\small
+\begin{aligned}
+3x+2&=10x-12 \\
+3x+2+12&=10x-12(+12) \\
+3x-3x+14&=10x-3x \\
+14&=7x \\
+x&=2
+\end{aligned}
+$$
+<br>
+
+$$
+\small
+\begin{aligned}
+4-3(2x+1)&=8-\frac{3x}{2}\\
+4-3-6x&=8-\frac{3x}{2} \\
+1-6x&=8-\frac{3x}{2} \\
+2-12x&=16-3x \\
+-9x&=14 \\
+x&=\frac{-14}{9}\\
+\end{aligned}
+$$
+
+:::
+
+:::{.column width=50%}
+$$
+\small
+\begin{aligned}
+3(x+7a)-5&=b+2(c-4x)\\
+3x+21a-5&=b+2c-8x \\
+11x+21a-5&=b+2c \\
+11x&=5+b+2c-21a\\
+x&=\frac{5+b+2c-21a}{11}
+\end{aligned}
+$$
+:::
+:::
+
+## {#exponents data-menu-title="Exponents"}
+
+[Exponents make algebra WAY tougher]{.slide-title}
+
+<hr>
+
+$x^n=x*x*x*x... (\text{n-times})$
+
+Many environmental variables follow exponential formulas like decay and growth
+
+You might find yourself trying to solve equations like $x^{\frac{3}{4}}=3x^{\frac{5}{3}}$
+
+Use the same principles of algebra and the properties on the next slide to manipulate
+
+## {#exponents-rule data-menu-title="Exponents Rules"}
+
+[Rules and Properties of Exponents]{.slide-title}
+
+<hr>
+
+$$
+\begin{align}
+x^0&=1 & x\ne0 \\
+x^{-n}&=\frac{1}{x^n} &x\ne0 \\
+x^ax^b&=x^{a+b} \\
+\frac{x^a}{x^b}&=x^{a-b}\\
+(x^a)^b&=x^{ab}\\
+(\frac{x}{y})^a&=\frac{x^a}{y^a}\\
+(xy)^a&=x^ay^a\\
+(\sqrt[n]{x}=a)&\to x=a^n \\
+x^\frac{1}{n}&=\sqrt[n]{x}\\
+x^\frac{m}{n}&=(x^{\frac{1}{n}})^m=(\sqrt[n]{x})^m
+\end{align}
+$$
+
+## {#polynomials data-menu-title="Polynomials"}
+
+[Polynomials describe more complex relationships through exponents]{.slide-title}
+
+<hr>
+
+$$
+\large
+\begin{align}
+a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0
+\end{align}
+$$
+
+
+:::columns
+
+:::{.column width=70%}
+For example, polynomials often represent real world data better than a linear function
+
+$$
+\begin{aligned}
+CV&=b_0+b1\text{ row}+b_2 \text{ column}+ b_3\text{ row}^2\\
+&+b_4\text{ column}^2+b_5\text{ row x column} +b_6\text{ elevation}
+\end{aligned}
+$$
+
+:::
+
+:::{.column width=30%}
+[Model used to predict monthly climate patterns in Ireland](https://www.int-res.com/articles/cr1998/10/c010p035.pdf)
+
+:::
+:::
+
+```{r echo=FALSE, out.width="80%",fig.align='center'}
+#knitr::include_graphics("images/ireland.png")
+```
+
+
+## {#fundamental data-menu-title="Fundamental Theorem of Algebra"}
+
+[The Fundamental Theorem of Algebra helps us solve for unknowns]{.slide-title}
+
+<hr>
+
+$$
+\large
+\begin{align}
+a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0
+\end{align}
+$$
+
+:::{.center-text .body-text-xl}
+*Fundamental Theorem of Algebra:*
+:::
+
+:::{.body-text-xl}
+**Every nth degree polynomial has exactly n zeros (solutions)**
+:::
+
+::: {.notes}
+Often times we look forsolution when equations equal zero
+Interesting properties at zero or the difference between two equations
+Comes from calculus maximization problems (covered in Day 3)
+:::
+
+## {#find-zeros data-menu-title="You were already finding zeroes"}
+
+[You were already finding zeroes!]{.slide-title}
+
+<hr>
+
+- This is just a 1st degree polynomial. How many solutions did it have?
+
+$$
+3x+2=10x-12
+$$
+
+- Finding nth degree polynomial zeros are much harder
+
+    - Let computers do it for us
+
+- Focus on 2nd degree polynomials
+
+## {#roots data-menu-title="What do I mean by rots or soultions?"}
+
+[What do I mean by roots or solutions?]{.slide-title}
+
+<hr>
+What happens if $x=4$ or $x=-3$ in $(x-4)(x+3)$?
+
+:::{.incremental}
+- Try the same thing with $x^2-x-12$
+
+- The only way to get $x^2-x-12$=0 is for x to either be 4 or -3
+
+- 4 and -3 are said to be the roots of the equation
+:::
+
+## {#foil data-menu-title="FOIL"}
+
+[(F)irst (O)utside (I)nside (L)ast]{.slide-title}
+
+<hr>
+
+Second degree polynomials can be written as a multiplication of their "roots" aka solutions
+
+We can expand using FOIL!
+
+
+[**Multiply each term in the adjacent polynomial and add together**]{.seagreen}
+
+$$
+\begin{align*}
+\text{First}&=x*x & \text{Outside}&=3x & \text{Inside}&=-4x & \text{Last}&=-12 \\
+x^2-&x-12=0 & &\text{Add all terms together}
+\end{align*}
+$$
+
+## {#quad data-menu-title="Quadratic Formula"}
+
+[Quadratic Formula solves 2nd degree polynomials]{.slide-title}
+
+<hr>
+
+**For any second degree polynomial**
+
+$$
+ax^2+bx+c=0
+$$
+
+**The solution to can be found using the quadratic formula**
+
+$$
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
+$$
+
+## {#ta data-menu-title=Team" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Team Assessment</div>
+</div>
+
+##
+
+1) Identify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)
+
+$$
+4x^2+x-14=0
+$$
+
+2) Identify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)
+
+$$
+256-\sqrt{44}x^2+.23x=10
+$$
+
+3) What happens if $b^2-4ac$ is negative in the quadratic formula
+
+4) Expand $(3x-6)(2x+1)$
+
+## {#ta-sol-one data-menu-title="Solutions to first TA"}
+
+[Solutions]{.slide-title}
+
+<hr>
+
+$$
+4x^2+x-14=0
+$$
+
+
+$$
+\begin{aligned}
+a=4 \\
+b=1 \\
+c=-14
+\end{aligned}
+$$
+
+## {#ta-sol-two data-menu-title="Solutions to first TA"}
+
+[Solutions]{.slide-title}
+
+<hr>
+
+$$
+256-\sqrt{44} x^2+.23x=10
+$$
+
+
+$$
+\begin{aligned}
+a=\sqrt{44} \\
+b=.23 \\
+c=246
+\end{aligned}
+$$
+
+[This will probably be a nasty calculation, but that is what computers are for. The order does not matter, only that the $a$ corresponds to the square term, the $b$ to the 1st degree term, and the $c$ to the constant]{.body-text-s .teal-text}
+
+## {#ta-sol-three data-menu-title="Solutions to first TA"}
+
+[Solutions]{.slide-title}
+
+<hr>
+
+3) What happens if $b^2-4ac$ is negative in the quadratic formula
+
+[There are no real solutions, but imaginary solutions. Can still be useful (saddle path solutions, but that's for another class)]{.teal-text}
+
+## {#ta-sol-four data-menu-title="Solutions to first TA"}
+
+[Solutions]{.slide-title}
+
+<hr>
+
+4) Expand $(3x-6)(2x+1)$
+
+$$
+\begin{align}
+(3x-6)(2x+1) \\
+6x^2+3x-12x-6 \\
+6x^2-9x-6
+\end{align}
+$$
+
+## {#graphs data-menu-title=Graphing" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Graphs</div>
+</div>
+
+
+## {#graph-demo data-menu-title="Which graph looks better"}
+
+[Graphs bring visual connection to math and data]{.slide-title}
+
+<hr>
+:::{.center-text}
+**Which looks better and is easier to understand?**
+:::
+
+:::: {.columns}
+::: {.column width="50%"}
+```{r}
+library(DT)
+library(tidyverse)
+
+car<-mtcars %>% 
+  select(mpg,cyl,disp,hp)
+DT::datatable(car,
+              fillContainer = FALSE, options = list(pageLength = 4))
+```
+
+:::
+
+:::{.column width="50%"}
+```{r,echo=FALSE, fig.width=6, fig.height=6,out.width="90%",fig.align='right'}
+ggplot(mtcars, aes(x=as.factor(cyl), y=mpg)) + 
+    geom_boxplot(fill="slateblue", alpha=0.2) + 
+    xlab("Number of Cylinders")+
+  theme_classic()+
+  theme(text = element_text(size = 28)) 
+```
+:::
+::::
+
+## {#graph-use data-menu-title="How to use graphs"}
+
+[How to use graphs]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+Graphs move in a rectangular coordinate system with two dimensions (axes)
+
+- x - axis (horizontal)
+
+- y- axis (vertical)
+
+- Axis units must be defined
+
+
+:::{.incremental}
+
+We use point pairs to place data
+
+- (**X**,**Y**)
+
+- Where would (2,-1) go on the graph?
+
+:::
+:::
+:::{.column width="50%"}
+
+```{r echo=FALSE}
+knitr::include_graphics("images/cart.png")
+```
+:::
+::::
+
+## {#graph-series data-menu-title="Graphs series of points to make lines"}
+
+[Graphs series of points to make lines]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+```{r echo=FALSE}
+set.seed(1)
+x=seq(0,10)
+y=x+1.5*rnorm(10)
+pdf<-data.frame(x=x,y=y)
+
+DT::datatable(round(pdf,2),
+              fillContainer = FALSE, options = list(pageLength = 6))
+```
+
+:::
+:::{.column width="50%"}
+
+```{r, echo=FALSE,fig.height=5.5,fig.width=5,out.width="90%"}
+ggplot(pdf,aes(x=x,y=y))+
+  geom_point(size=4)+
+  geom_path(linewidth=2)+
+  geom_smooth(method="lm",se=FALSE,size=2)+
+  annotate("text",x=2.9,y=8,label="Blue Regression Line\ny=0.856x+0.44",size=6)+
+  theme_classic()+
+  theme(text = element_text(size = 28)) 
+```
+
+:::
+::::
+
+## {#graph-fcn data-menu-title="Most functions can be shown on graphs"}
+
+[Most 2D functions can be shown on graphs]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+- $\color{green}{y=sin(3x+2)}$
+
+<br>
+
+- $\color{red}{y=0.5x^3+x^2-5x}$
+
+<br>
+
+- $\color{blue}{y=0.85x+0.44}$
+
+:::
+:::{.column width="50%"}
+
+```{r echo=FALSE}
+
+x=seq(0,10,by=0.01)
+sn=sin(3*x)+2*x
+pol=-0.2*x^3+2*x^2-2*x
+reg=x*0.85+0.44
+
+p2df=data.frame(sin=sn,polynomial=pol,linear=reg,x=x) %>% 
+  pivot_longer(cols=!x,values_to="values",names_to = "fun")
+```
+
+
+```{r echo=FALSE, fig.align='center',fig.dim=c(6,8),out.width="90%"}
+p1<-ggplot(p2df,aes(x=x,y=values,color=fun))+
+  geom_path(linewidth=3)+
+  theme_classic()+
+  scale_color_manual(values=c("blue","red","darkgreen"),name="Function Type")+
+  labs(y="y")+
+  theme(text = element_text(size = 28)) +
+  geom_hline(yintercept=0,color="black",size=1.5)+
+  scale_x_continuous(expand = c(0, 0),limits = c(0,11)) +
+  scale_y_continuous(expand = c(0, 0),limits=c(-22,22))+
+  theme(legend.position = c(.5,.25))
+  
+p1
+  
+```
+:::
+::::
+
+## {#graph-ingredients data-menu-title="Two key ingredients to graphs"}
+
+[Two key ingredients to graphs]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+1) Intercepts
+
+- X-intercept
+
+  - Where does the graph intersect the x-axis? (x,0)
+    
+- y-intercept
+
+    - Where does  the graph intersect the y-axis? (0,y)
+    
+2) Slope of lines
+
+- How quickly is the graph changing?
+:::
+
+:::{.column width="50%"}
+:::{.center-text}
+What are the intercepts of the polynomial function in red?
+:::
+
+```{r echo=FALSE,fig.align='center',fig.dim=c(6,8),out.width="80%"}
+p1+theme(legend.position = "none")
+  
+```
+:::
+::::
+
+## {#graph-seafood data-menu-title="Seafood depletion"}
+
+
+```{r echo=FALSE,fig.align='center',out.width="60%"}
+knitr::include_graphics("images/headline.PNG")
+```
+
+:::{.fragment .fade-in}
+```{r echo=FALSE,fig.align='center',out.width="70%"}
+knitr::include_graphics("images/worm.PNG")
+```
+:::
+
+## {#slope-int data-menu-title="Slope-Intercept Form"}
+
+[Slope-Intercept Form]{.slide-title}
+
+<hr>
+
+Easiest model to describe linear relationship between two variables
+
+$$
+\huge
+\begin{align}
+\underbrace{y}_{\text{output}}=\overbrace{m}^{\text{Slope}}\underbrace{x}_{\text{input}}+\overbrace{b}^{\text{y intercept}}
+\end{align}
+$$
+
+## {#slope-def data-menu-title="Definition of Slope"}
+
+[Slope-Intercept Form]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+Vertical Change per unit of Horizontal Change
+
+$$
+m=\frac{\Delta y}{\Delta x}=\frac{y_2-y_1}{x_2-x_1}
+$$
+
+Horizontal Slope: m=0
+
+Vertical Slope: m is undefined
+
+:::
+
+:::{.column width="50%"}
+
+:::{.center-text}
+**Rise over Run**
+:::
+
+```{r echo=FALSE,fig.align='center',out.width="80%"}
+knitr::include_graphics("images/slope.PNG")
+```
+
+:::
+::::
+
+## {#slope-roc data-menu-title="Slope represents rate of change"}
+
+[Slope represents rate of change]{.slide-title}
+
+<hr>
+
+```{r echo=FALSE,fig.align='center',out.width="90%"}
+knitr::include_graphics("images/loa.PNG")
+```
+
+## {#slope-avg cdata-menu-title="can be average or instantaneous"}
+
+[Slope can be *average* or *instantaneous*]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+
+- Rise over run can always be used to find average rate of change between two parts of a graph
+
+
+:::
+
+:::{.column width="50%"}
+
+- Instantaneous leads us to Calculus
+
+:::
+::::
+
+```{r echo=FALSE,fig.align='center',out.width="50%"}
+knitr::include_graphics("images/trex.PNG")
+```
+
+
+## {#ta-2 data-menu-title="Team" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Team Assessment</div>
+</div>
+
+## {#ta-q2 data-menu-title="Team Assesment 2"}
+
+You're team measured the concentrations of pesticides in a lake exposed to agricultural runoff. The intern in charge of finishing the calculations ran off for the weekend leaving you all to finish their work. They left behind the following equation describing the total amount of pesticides in the lake if runoff is stopped from the farm by a new policy incentive reducing pesticides use:
+
+$$
+\begin{aligned}
+&y=(8-2t)(t+2) \\
+&\text{Where } y \text{ is pesticde concentration in ppb} \\
+&\text{and } t \text{ is time in years}
+\end{aligned}
+$$
+
+Work with your team to discuss conceptually how you would solve the following tasks.
+
+1) Write out the intern's work in a more useful equation
+
+2) How long will it take for the pesticide concentration in the lake to reach zero? Since the equation is a polynomial describe why one solution is more applicable than the other.
+
+3) Present your findings (Choose between a graph or table)
+
+4) What is the average change in concentration from year 0 to year 4?
+
+5) Explain to your client why concentrations might behave the way they were modeled.
+
+## {#ta-sol21 data-menu-title="Team Assesment 2 Solutions"}
+
+[Solution 1]{.slide-title}
+<hr>
+
+Let's FOIL out the equation so it becomes easier to graph.
+
+$$
+\begin{aligned}
+y&=(-2t+8)(t+2) \\
+y&=\overbrace{-2t^2}^{\text{First}}-\overbrace{4t}^{\text{Outside}}+\overbrace{8t}^{\text{Inside}}+\overbrace{16}^{\text{Last}}\\
+y&=-2t^2+4t+16
+\end{aligned}
+$$
+
+## {#ta-q2-sol2 data-menu-title="Team Assesment 2 Solutions"}
+
+[Solution 2]{.slide-title}
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+:::{.center-text}
+Use the Quadratic Formula
+:::
+
+$$
+\begin{aligned}
+0&=-2t^2+4t+16 \\
+0&=\frac{-4\pm\sqrt{4^2-4(-2)(16)}}{2(-2)}\\
+0&=\frac{-4\pm\sqrt{16+128}}{-4} \\
+&t=4\text{, } t=-2
+\end{aligned}
+$$
+:::
+:::{.column width="50%"}
+:::{.center-text}
+Use the factors
+:::
+
+$$
+\begin{aligned}
+2t-8=0 \\
+t=\frac{8}{2}\\
+t=4
+\end{aligned}
+$$
+
+:::
+
+::::
+
+## {#ta-q2-sol3 data-menu-title="Team Assesment 2 Solutions"}
+
+[Solution 3]{.slide-title}
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+```{r, echo=FALSE,out.width="90%",fig.dim=c(5,5)}
+t=seq(-2,4)
+y=-2*t^2+4*t+16
+df<-data.frame(t=t,y=y)
+p<-df %>% 
+  ggplot(aes(x=t,y=y))+
+  geom_line(color="#003660",linewidth=3)+
+  labs(x="Years",y="Pesticide Concentration")+
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0),limits = c(-2,22))+
+  theme_classic()+
+  theme(text = element_text(size = 28)) 
+
+p
+```
+:::
+:::{.column width="50%"}
+```{r eval=FALSE,echo=TRUE}
+t=seq(-2,4)
+y=-2*t^2+4*t+16
+df<-data.frame(t=t,y=y)
+p<-df %>% 
+  ggplot(aes(x=t,y=y))+
+  geom_line(color="#003660",linewidth=3)+
+  labs(x="Years",y="Pesticide Concentration")+
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0),limits = c(-2,22))+
+  theme_classic()+
+  theme(text = element_text(size = 28)) 
+
+p
+```
+:::
+
+::::
+
+## {#ta-q2-sol4 data-menu-title="Team Assesment 4 Solutions"}
+
+[Solution 4]{.slide-title}
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+```{r, echo=FALSE,out.width="90%",fig.dim=c(5,5.5)}
+p2<-df %>% 
+  filter(t>=0) %>% 
+  ggplot(aes(x=t,y=y))+
+  geom_line(color="#003660",linewidth=3)+
+  labs(x="Years",y="Pesticide Concentration")+
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0),limits=c(-2,22))+
+  geom_hline(yintercept = 0)+
+  annotate("segment",x=0,xend=4,y=16,yend=0,color="#FEBC11",linewidth=2)+
+  theme_classic()+
+  theme(text = element_text(size = 28)) 
+
+p2
+```
+:::
+:::{.column width="50%"}
+```{r eval=FALSE,echo=TRUE}
+p2<-df %>% 
+  filter(t>=0) %>% 
+  ggplot(aes(x=t,y=y))+
+  geom_line(color="#003660",linewidth=3)+
+  labs(x="Years",y="Pesticide Concentration")+
+  scale_x_continuous(expand = c(0, 0)) +
+  scale_y_continuous(expand = c(0, 0),limits=c(-2,22))+
+  geom_hline(yintercept = 0)+
+  annotate("segment",x=0,xend=4,y=16,yend=0,color="#FEBC11",linewidth=2)+
+  theme_classic()+
+  theme(text = element_text(size = 28)) 
+
+p2
+```
+
+Use rise over run:
+
+$$
+\frac{\Delta y}{\Delta x}=\frac{0-16}{4-0}=-4
+$$
+
+Pesticides are removed from the lake at an average rate of 4 ppb per year
+:::
+
+::::
+
+## {#ta-q2-sol5 data-menu-title="Team Assesment 5 Solutions"}
+
+[Solution 5]{.slide-title}
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+```{r, echo=FALSE,out.width="90%",fig.dim=c(5,5.5)}
+
+p2
+```
+:::
+:::{.column width="50%"}
+Pesticide concentrations might initially increase in the lake from residual particles in the soil being washed into the lake. Then a mixture microbial activity and other chemical process reduce the pesticides to more inert components (You will learn the actual answer in ESM 202)
+:::
+
+::::
+
