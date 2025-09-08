@@ -16,19 +16,28 @@ format:
 
 <hr class="hr-teal">
 
-[Nathaniel Grimes]{.body-text-l .center-text .blue-text}
+[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .blue-text}
 
 [Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
 
+<br>
+
+<br>
+
 [**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
+
+<br>
+
+*All materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop.*
+
 
 ## {#survey data-menu-title="Please fill out this survery"}
 
 [Please fill out this survey]{.slide-title}
 
-![](images/frame.png){fig-align="center"}
+![](images/survey2025-qrcode.png){fig-align="center"}
 
-[Or you can click on this link](https://forms.gle/BivhWDG7oaAefH6K6)
+[Or you can click on this link.](https://forms.gle/1jhjkgVrPxpjo4UU7)
 
 ## {#obj data-menu-title="Workshop Objectives"}
 
@@ -38,15 +47,56 @@ format:
 
 ![](images/confused.gif){fig-align="center"}
 
-1.  Shake off the math/schoolwork dust
+1.  Shake off the math dust
 
 2.  Equip students with the math skills to succeed in all Bren Courses
 
-3.  Learn how valuable math is to environmental science
+3.  Explore how valuable math is to environmental science
 
-4.  Build collaborative environment, crucial for success at Bren
+4.  Build a collaborative environment, crucial for success at Bren
 
 
+## {#about-me data-menu-title="About me"}
+
+[About me]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="60%"}
+
+[Carmen Galaz García (she/her)]{.body-text-m .blue-text}
+
+
+- Assistant Teaching Professor @ Bren
+
+Before this:
+
+- Data Scienist @ NCEAS
+- Ph.D. in Mathematics @ UCSB
+
+**Teaching:**
+
+- Python courses for Masters in Environmental Data Science (MEDS)
+- MEDS Capstone Projects
+- Supporting math and programming initiatives across Bren!
+
+**Research:**
+
+- NCEAS/TNC collaboration for invasive iceplant mapping analyzing remotely sensed images
+
+:::
+
+::: {.column width="40%"}
+![](images/Carmen4.jpg){fig-align="center"}
+
+![](images/bren-hex.png){fig-align="center"}
+:::
+::::
+
+
+<!--
 ## {#tbl data-menu-title="Team Based Learning"}
 
 [We will be using team based learning]{.slide-title}
@@ -79,19 +129,25 @@ Live coding demonstration
 Basically I'm using a constrained k-means algorithm to group everyone into equally balanced groups then pulling randomly from each to create balanced groups based on the likert scale responses of the survey. Full explanation will be included in a write up to see how code works
 :::
 
+-->
+
 ## {#exp data-menu-title="Team Expectations"}
 
-[Team Expectations]{.slide-title}
+[Student Expectations]{.slide-title}
 
 <hr>
 
-- Support and encourage each other
+We expect all team members will:
 
-- Communicate between all group members
+- Support and encourage their learning buddies and all classmates
 
-- Learn by teaching
+- Be open to learning from each other
 
-- Complete in class team assessments
+- Bring a collaborative attitude and communicate respectfully
+
+- See opportunities to share kownledge as a chance to deepend understanding
+
+- Complete all in-class assessments
 
 [**Feel free to work with anyone on out of class exercises**]{.seagreen}
 
@@ -113,39 +169,30 @@ Basically I'm using a constrained k-means algorithm to group everyone into equal
 
 ## {#math-lang data-menu-title="Math is a Language"}
 
-[Math is an important tool in Environmental Science]{.slide-title}
+[Math is an important tool in environmental science]{.slide-title}
 
 <hr>
 
+<p style="text-align: center">
+**Math helps us investigate the world and communicate our findings**
+</p>
 
-::: columns
-::: {.column width="50%"}
-:::{.center-text}
-**Math to solve**
-:::
 
-Math is science's foundation for finding evidence
+- Used by scientists to find evidence
 
-Math verifies positive statements
+- Can be used to quantify relations, trends, and changes
 
-- $CO_2$ concentrations increase by X amount for every Y amount of electricity used
-:::
+- Mathematical models can help us understand complex systems
 
-::: {.column width="50%"}
-:::{.center-text}
-**Math to Communicate**
-:::
+- Must be used responsibly and with awareness of potential biases and limitations
 
-Math is a language
+- Helps us support arguments that can transform policy and actions
 
-Policy people need to know how to support their arguments
 
-Math helps identify weakness in models, methods, and interpretation of results
+<br>
 
-If you don't understand it, how can you make a decision on it?
+[We need to understand the math to make decisions on it!]{.center-text .body-text-m .blue-text}
 
-:::
-:::
 
 ## {#math-bren data-menu-title="Math at Bren"}
 
@@ -153,14 +200,15 @@ If you don't understand it, how can you make a decision on it?
 
 <hr>
 
-
 ::: columns
 ::: {.column width="50%"}
 :::{.center-text}
 **In classes:**
 :::
 
-- ESM 201 Lokta-Volterra Models 
+- ESM 201: Ecology of Managed Ecosystems
+
+Lotka-Volterra Models 
 $$
 \begin{align}
 \frac{dN_1}{dt}&=r_1N_1\left(\frac{K_1-N_1-\alpha N_2}{K_1}\right)\\
@@ -168,11 +216,21 @@ $$
 \end{align}
 $$
 
-- ESM 222 Groundwater transport of absorbed contaminant
+<!--
+ A pair of first-order nonlinear differential equations, frequently used to describe the dynamics of biological systems in which two species interact, one as a predator and the other as prey. The populations change through time according to the pair of equations.
+-->
+
+- ESM 222: Pollution Risk Management
+
+ Groundwater transport of absorbed contaminant
 $$
 \frac{\partial C}{\partial t}=\left(\frac{D}{R}\frac{\partial^2t}{\partial x^2}\right)-\left(\frac{v}{R}\frac{\partial C}{\partial x}\right)-\frac{k}{R}C
 $$
 :::
+
+<!--
+Widely used in hydrogeology and environmental engineering to model how contaminants move and break down in groundwater.
+-->
 
 ::: {.column width="40%"}
 :::{.center-text}
@@ -180,12 +238,15 @@ $$
 
 :::
 
-[Applying Portfolio Theory (A mix of calculus and stochastic linear algebra) to salmon stocks (MESM GP)](https://bren.ucsb.edu/projects/applying-portfolio-theory-improve-spatial-recovery-planning-pacific-salmon)
+- Ecology, modeling, economics, and more!
 
-[We might be underestimating social cost of carbon because of adaptation (Dr. Jeon Bren PhD)](https://woongchanjeon.com/research/project/Adaptation/Jeon_Adaptation_December2023.pdf)
+- [Applying Portfolio Theory (A mix of calculus and stochastic linear algebra) to salmon stocks (MESM GP)](https://bren.ucsb.edu/projects/applying-portfolio-theory-improve-spatial-recovery-planning-pacific-salmon)
 
-[My own research in impacts from fishery insurance programs](ibi-behavior-draft-3.pdf)
+- [Quantifying Greenhouse Gas (GHG) Emissions Associated with Global Seafood Production (MEDS Capstone)](https://bren.ucsb.edu/projects/quantifying-greenhouse-gas-ghg-emissions-associated-global-seafood-production)
 
+<!--
+- [My own research on image analysis to identify invasive plant species](https://www.sciencedirect.com/science/article/pii/S1574954124001018)
+-->
 :::
 :::
 

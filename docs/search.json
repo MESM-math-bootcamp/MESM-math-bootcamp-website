@@ -151,21 +151,21 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nNathaniel Grimes\nBren School of Environmental Science & Management\nLast updated: Sep 08, 2025"
+    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 08, 2025\n\nAll materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#survey",
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#survey",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Please fill out this survey\n\nOr you can click on this link"
+    "text": "Please fill out this survey\n\nOr you can click on this link."
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#obj",
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#obj",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Workshop Objectives\n\n\n\nShake off the math/schoolwork dust\nEquip students with the math skills to succeed in all Bren Courses\nLearn how valuable math is to environmental science\nBuild collaborative environment, crucial for success at Bren"
+    "text": "Workshop Objectives\n\n\n\nShake off the math dust\nEquip students with the math skills to succeed in all Bren Courses\nExplore how valuable math is to environmental science\nBuild a collaborative environment, crucial for success at Bren"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#tbl",
@@ -186,7 +186,7 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exp",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Team Expectations\n\n\nSupport and encourage each other\nCommunicate between all group members\nLearn by teaching\nComplete in class team assessments\n\nFeel free to work with anyone on out of class exercises"
+    "text": "Student Expectations\n\nWe expect all team members will:\n\nSupport and encourage their learning buddies and all classmates\nBe open to learning from each other\nBring a collaborative attitude and communicate respectfully\nSee opportunities to share kownledge as a chance to deepend understanding\nComplete all in-class assessments\n\nFeel free to work with anyone on out of class exercises"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#math-envs",
@@ -207,14 +207,14 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#math-lang",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Math is an important tool in Environmental Science\n\n\n\n\nMath to solve\n\nMath is science’s foundation for finding evidence\nMath verifies positive statements\n\n\\(CO_2\\) concentrations increase by X amount for every Y amount of electricity used\n\n\n\nMath to Communicate\n\nMath is a language\nPolicy people need to know how to support their arguments\nMath helps identify weakness in models, methods, and interpretation of results\nIf you don’t understand it, how can you make a decision on it?"
+    "text": "Math is an important tool in environmental science\n\n\nMath helps us investigate the world and communicate our findings\n\n\nUsed by scientists to find evidence\nCan be used to quantify relations, trends, and changes\nMathematical models can help us understand complex systems\nMust be used responsibly and with awareness of potential biases and limitations\nHelps us support arguments that can transform policy and actions\n\n\nWe need to understand the math to make decisions on it!"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#math-bren",
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#math-bren",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Math at Bren\n\n\n\n\nIn classes:\n\n\nESM 201 Lokta-Volterra Models \\[\n\\begin{align}\n\\frac{dN_1}{dt}&=r_1N_1\\left(\\frac{K_1-N_1-\\alpha N_2}{K_1}\\right)\\\\\n\\frac{dN_2}{dt}&=r_2N_2\\left(\\frac{K_2-N_2-\\beta N_1}{K_2}\\right)\n\\end{align}\n\\]\nESM 222 Groundwater transport of absorbed contaminant \\[\n\\frac{\\partial C}{\\partial t}=\\left(\\frac{D}{R}\\frac{\\partial^2t}{\\partial x^2}\\right)-\\left(\\frac{v}{R}\\frac{\\partial C}{\\partial x}\\right)-\\frac{k}{R}C\n\\]\n\n\n\nIn Research\n\nApplying Portfolio Theory (A mix of calculus and stochastic linear algebra) to salmon stocks (MESM GP)\nWe might be underestimating social cost of carbon because of adaptation (Dr. Jeon Bren PhD)\nMy own research in impacts from fishery insurance programs"
+    "text": "Math at Bren\n\n\n\n\nIn classes:\n\n\nESM 201: Ecology of Managed Ecosystems\n\nLotka-Volterra Models \\[\n\\begin{align}\n\\frac{dN_1}{dt}&=r_1N_1\\left(\\frac{K_1-N_1-\\alpha N_2}{K_1}\\right)\\\\\n\\frac{dN_2}{dt}&=r_2N_2\\left(\\frac{K_2-N_2-\\beta N_1}{K_2}\\right)\n\\end{align}\n\\]\n\n\nESM 222: Pollution Risk Management\n\nGroundwater transport of absorbed contaminant \\[\n\\frac{\\partial C}{\\partial t}=\\left(\\frac{D}{R}\\frac{\\partial^2t}{\\partial x^2}\\right)-\\left(\\frac{v}{R}\\frac{\\partial C}{\\partial x}\\right)-\\frac{k}{R}C\n\\]\n\n\nIn Research\n\n\nEcology, modeling, economics, and more!\nApplying Portfolio Theory (A mix of calculus and stochastic linear algebra) to salmon stocks (MESM GP)\nQuantifying Greenhouse Gas (GHG) Emissions Associated with Global Seafood Production (MEDS Capstone)"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra-copy.html#title-slide",
@@ -831,5 +831,12 @@
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Solution 5\n\n\n\n\n\n\n\n\n\n\n\n\n\nPesticide concentrations might initially increase in the lake from residual particles in the soil being washed into the lake. Then a mixture microbial activity and other chemical process reduce the pesticides to more inert components (You will learn the actual answer in ESM 202)"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#about-me",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#about-me",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "About me\n\n\n\nCarmen Galaz García (she/her)\n\nAssistant Teaching Professor @ Bren\n\nBefore this:\n\nData Scienist @ NCEAS\nPh.D. in Mathematics @ UCSB\n\nTeaching:\n\nPython courses for Masters in Environmental Data Science (MEDS)\nMEDS Capstone Projects\nSupporting math and programming initiatives across Bren!\n\nResearch:\n\nNCEAS/TNC collaboration for invasive iceplant mapping analyzing remotely sensed images"
   }
 ]
