@@ -28,7 +28,7 @@ format:
 
 <br>
 
-*All materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop.*
+*Mterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.*
 
 
 ## {#survey data-menu-title="Please fill out this survery"}
@@ -274,11 +274,6 @@ Always add/substract/multiply/divide by the same number on both sides. More gene
 
 3.  Order of Operations (aka PEDMAS)
 
-- First: calculate anything inside parenthesis
-
-- Second: Do multiplications and divisions
-
-- Third: Add and subtract
 
 
 ## {#pedmas data-menu-title="(P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract"}
@@ -498,41 +493,115 @@ $$
 :::
 :::
 
+<!--------------------------------------------------------------------------->
 ## {#exponents data-menu-title="Exponents"}
 
-[Exponents make algebra WAY tougher]{.slide-title}
+[Exponents make algebra more interesting!]{.slide-title}
 
 <hr>
 
-$x^n=x*x*x*x... (\text{n-times})$
+**Example**
 
-Many environmental variables follow exponential formulas like decay and growth
+The expression $x^3$ means $x$ multiplied by itself 3 times:
+$$x^3=x * x * x$$
 
-You might find yourself trying to solve equations like $x^{\frac{3}{4}}=3x^{\frac{5}{3}}$
+More generally, 
+$$x^n = x \text{ to the power of } n.$$
 
-Use the same principles of algebra and the properties on the next slide to manipulate
+Intuitively, the **exponent** $n$ tells us how many times to multiply the **basis** $x$ by itself:
 
-## {#exponents-rule data-menu-title="Exponents Rules"}
+$$x^n = \underbrace{x * x * ... * x}_{n \text{ times}}$$
 
-[Rules and Properties of Exponents]{.slide-title}
+But the exponent can be any (real) number, not only integers!
+<!--------------------------------------------------------------------------->
+
+## {#exponents-applications-1 data-menu-title="What are exponents good for?"}
+
+[What are exponents good for?]{.slide-title}
 
 <hr>
 
+:::: {.columns}
+
+::: {.column width="50%" style="text-align: center;"}
+They can describe really big numbers
+
+<!--
+![](images/milky-way.jpg)
+-->
+
+<img src="images/milky-way.jpg" width="250" />
+
+Diameter of the Milky Way = 
+1,000,000,000,000,000,000,000 meters =
+$$10^{21} \text{ m}$$
+:::
+
+::: {.column width="50%" style="text-align: center;"}
+And also really small numbers
+
+![](images/blood-cells-red.jpg)
+
+Diameter of a human red blood cell = 
+0.0000000001 meters = 
+$$10^{-10} \text{ m}$$
+:::
+
+::::
+
+
+This way, we can use exponents to describe exponential growth and decay. Many environmental variables behave in this way. 
+
+
+<!--------------------------------------------------------------------------->
+## {#exponents-rules-1 data-menu-title="Exponents Rules (1)"}
+[Rules and properties of exponents (1)]{.slide-title}
+
+<hr>
+
+(1) Multiplication and division rules:
+
+$$x^a * x^b = x^{a+b}$$
+
+$$ \frac{x^a}{x^b} = x^{a-b}, \ \ \text{for } x \neq 0 $$
+
+(2) Any non-negative $x$ to the power of 0 equals 1:
+
+$$x^0 = 1, \ \ \text{for } x \neq 0$$ 
+
+(3) Negative exponent means divide:
+
+$$ x^{-a} = \frac{1}{x^a}, \ \ \text{for } x \neq 0$$
+
+(4) Fractional exponent means take the $n$-th root:
+
+$$ x^{\frac{1}{n}} = \sqrt[n]{x}$$
+
+<!--------------------------------------------------------------------------->
+## {#exponents-rules-2 data-menu-title="Exponents Rules (2)"}
+[Rules and properties of exponents (2)]{.slide-title}
+
+<hr>
+
+(5) Power of a power means multiply the exponents:
+
+$$(x^a)^b = x^{ab}$$
+
+(6) Exponents get distributed over products:
+
+$$ (xy)^a = x^a y^a$$
+
+(7) And exponents get distributed over divisions:
+
+$$ \left( \frac{x}{y} \right)^a = \frac{x^a}{y^a} $$
+
+(8) If $a$ is the $n$-th root of $x$, then $a$ to the $n$ equals x
+
 $$
-\begin{align}
-x^0&=1 & x\ne0 \\
-x^{-n}&=\frac{1}{x^n} &x\ne0 \\
-x^ax^b&=x^{a+b} \\
-\frac{x^a}{x^b}&=x^{a-b}\\
-(x^a)^b&=x^{ab}\\
-(\frac{x}{y})^a&=\frac{x^a}{y^a}\\
-(xy)^a&=x^ay^a\\
-(\sqrt[n]{x}=a)&\to x=a^n \\
-x^\frac{1}{n}&=\sqrt[n]{x}\\
-x^\frac{m}{n}&=(x^{\frac{1}{n}})^m=(\sqrt[n]{x})^m
-\end{align}
+a = \sqrt[n]{x} \Rightarrow a^n = x
 $$
 
+<!--------------------------------------------------------------------------->
 ## {#polynomials data-menu-title="Polynomials"}
 
 [Polynomials describe more complex relationships through exponents]{.slide-title}
@@ -571,7 +640,7 @@ $$
 #knitr::include_graphics("images/ireland.png")
 ```
 
-
+<!--------------------------------------------------------------------------->
 ## {#fundamental data-menu-title="Fundamental Theorem of Algebra"}
 
 [The Fundamental Theorem of Algebra helps us solve for unknowns]{.slide-title}
@@ -599,6 +668,7 @@ Interesting properties at zero or the difference between two equations
 Comes from calculus maximization problems (covered in Day 3)
 :::
 
+<!--------------------------------------------------------------------------->
 ## {#find-zeros data-menu-title="You were already finding zeroes"}
 
 [You were already finding zeroes!]{.slide-title}

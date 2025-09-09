@@ -213,9 +213,9 @@
 <p><span class="center-text body-text-m blue-text">Bren School of Environmental Science &amp; Management</span></p>
 <p><br></p>
 <p><br></p>
-<p><span class="body-text-s blue-text"><strong>Last updated:</strong> Sep 08, 2025</span></p>
+<p><span class="body-text-s blue-text"><strong>Last updated:</strong> Sep 09, 2025</span></p>
 <p><br></p>
-<p><em>All materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop.</em></p>
+<p><em>Mterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.</em></p>
 </section>
 <section id="survey" class="slide level2" data-menu-title="Please fill out this survery">
 <h2></h2>
@@ -416,11 +416,6 @@ Algebra
 <ol start="3" type="1">
 <li>Order of Operations (aka PEDMAS)</li>
 </ol>
-<ul>
-<li><p>First: calculate anything inside parenthesis</p></li>
-<li><p>Second: Do multiplications and divisions</p></li>
-<li><p>Third: Add and subtract</p></li>
-</ul>
 </section>
 <section id="pedmas" class="slide level2" data-menu-title="(P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract">
 <h2></h2>
@@ -590,34 +585,85 @@ x&amp;=\frac{5+b+2c-21a}{11}
 \end{aligned}
 \]</span></p>
 </div></div>
+<!--------------------------------------------------------------------------->
 </section>
 <section id="exponents" class="slide level2" data-menu-title="Exponents">
 <h2></h2>
-<p><span class="slide-title">Exponents make algebra WAY tougher</span></p>
+<p><span class="slide-title">Exponents make algebra more interesting!</span></p>
 <hr>
-<p><span class="math inline">\(x^n=x*x*x*x... (\text{n-times})\)</span></p>
-<p>Many environmental variables follow exponential formulas like decay and growth</p>
-<p>You might find yourself trying to solve equations like <span class="math inline">\(x^{\frac{3}{4}}=3x^{\frac{5}{3}}\)</span></p>
-<p>Use the same principles of algebra and the properties on the next slide to manipulate</p>
+<p><strong>Example</strong></p>
+<p>The expression <span class="math inline">\(x^3\)</span> means <span class="math inline">\(x\)</span> multiplied by itself 3 times: <span class="math display">\[x^3=x * x * x\]</span></p>
+<p>More generally, <span class="math display">\[x^n = x \text{ to the power of } n.\]</span></p>
+<p>Intuitively, the <strong>exponent</strong> <span class="math inline">\(n\)</span> tells us how many times to multiply the <strong>basis</strong> <span class="math inline">\(x\)</span> by itself:</p>
+<p><span class="math display">\[x^n = \underbrace{x * x * ... * x}_{n \text{ times}}\]</span></p>
+<p>But the exponent can be any (real) number, not only integers! <!---------------------------------------------------------------------------></p>
 </section>
-<section id="exponents-rule" class="slide level2" data-menu-title="Exponents Rules">
+<section id="exponents-applications-1" class="slide level2" data-menu-title="What are exponents good for?">
 <h2></h2>
-<p><span class="slide-title">Rules and Properties of Exponents</span></p>
+<p><span class="slide-title">What are exponents good for?</span></p>
 <hr>
+<div class="columns">
+<div class="column" style="text-align: center;">
+<p>They can describe really big numbers</p>
+<!--
+![](images/milky-way.jpg)
+-->
+<p><img src="images/milky-way.jpg" width="250"></p>
+<p>Diameter of the Milky Way = 1,000,000,000,000,000,000,000 meters = <span class="math display">\[10^{21} \text{ m}\]</span></p>
+</div><div class="column" style="text-align: center;">
+<p>And also really small numbers</p>
+<p><img data-src="images/blood-cells-red.jpg"></p>
+<p>Diameter of a human red blood cell = 0.0000000001 meters = <span class="math display">\[10^{-10} \text{ m}\]</span></p>
+</div></div>
+<p>This way, we can use exponents to describe exponential growth and decay. Many environmental variables behave in this way.</p>
+<!--------------------------------------------------------------------------->
+</section>
+<section id="exponents-rules-1" class="slide level2" data-menu-title="Exponents Rules (1)">
+<h2></h2>
+<p><span class="slide-title">Rules and properties of exponents (1)</span></p>
+<hr>
+<ol type="1">
+<li>Multiplication and division rules:</li>
+</ol>
+<p><span class="math display">\[x^a * x^b = x^{a+b}\]</span></p>
+<p><span class="math display">\[ \frac{x^a}{x^b} = x^{a-b}, \ \ \text{for } x \neq 0 \]</span></p>
+<ol start="2" type="1">
+<li>Any non-negative <span class="math inline">\(x\)</span> to the power of 0 equals 1:</li>
+</ol>
+<p><span class="math display">\[x^0 = 1, \ \ \text{for } x \neq 0\]</span></p>
+<ol start="3" type="1">
+<li>Negative exponent means divide:</li>
+</ol>
+<p><span class="math display">\[ x^{-a} = \frac{1}{x^a}, \ \ \text{for } x \neq 0\]</span></p>
+<ol start="4" type="1">
+<li>Fractional exponent means take the <span class="math inline">\(n\)</span>-th root:</li>
+</ol>
+<p><span class="math display">\[ x^{\frac{1}{n}} = \sqrt[n]{x}\]</span></p>
+<!--------------------------------------------------------------------------->
+</section>
+<section id="exponents-rules-2" class="slide level2" data-menu-title="Exponents Rules (2)">
+<h2></h2>
+<p><span class="slide-title">Rules and properties of exponents (2)</span></p>
+<hr>
+<ol start="5" type="1">
+<li>Power of a power means multiply the exponents:</li>
+</ol>
+<p><span class="math display">\[(x^a)^b = x^{ab}\]</span></p>
+<ol start="6" type="1">
+<li>Exponents get distributed over products:</li>
+</ol>
+<p><span class="math display">\[ (xy)^a = x^a y^a\]</span></p>
+<ol start="7" type="1">
+<li>And exponents get distributed over divisions:</li>
+</ol>
+<p><span class="math display">\[ \left( \frac{x}{y} \right)^a = \frac{x^a}{y^a} \]</span></p>
+<ol start="8" type="1">
+<li>If <span class="math inline">\(a\)</span> is the <span class="math inline">\(n\)</span>-th root of <span class="math inline">\(x\)</span>, then <span class="math inline">\(a\)</span> to the <span class="math inline">\(n\)</span> equals x</li>
+</ol>
 <p><span class="math display">\[
-\begin{align}
-x^0&amp;=1 &amp; x\ne0 \\
-x^{-n}&amp;=\frac{1}{x^n} &amp;x\ne0 \\
-x^ax^b&amp;=x^{a+b} \\
-\frac{x^a}{x^b}&amp;=x^{a-b}\\
-(x^a)^b&amp;=x^{ab}\\
-(\frac{x}{y})^a&amp;=\frac{x^a}{y^a}\\
-(xy)^a&amp;=x^ay^a\\
-(\sqrt[n]{x}=a)&amp;\to x=a^n \\
-x^\frac{1}{n}&amp;=\sqrt[n]{x}\\
-x^\frac{m}{n}&amp;=(x^{\frac{1}{n}})^m=(\sqrt[n]{x})^m
-\end{align}
+a = \sqrt[n]{x} \Rightarrow a^n = x
 \]</span></p>
+<!--------------------------------------------------------------------------->
 </section>
 <section id="polynomials" class="slide level2" data-menu-title="Polynomials">
 <h2></h2>
@@ -641,6 +687,7 @@ CV&amp;=b_0+b1\text{ row}+b_2 \text{ column}+ b_3\text{ row}^2\\
 </div><div class="column" style="width:30%;">
 <p><a href="https://www.int-res.com/articles/cr1998/10/c010p035.pdf">Model used to predict monthly climate patterns in Ireland</a></p>
 </div></div>
+<!--------------------------------------------------------------------------->
 </section>
 <section id="fundamental" class="slide level2" data-menu-title="Fundamental Theorem of Algebra">
 <h2></h2>
@@ -671,6 +718,7 @@ a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0
           overflow: hidden!important;
           display:block!important;
       }</style></aside>
+<!--------------------------------------------------------------------------->
 </section>
 <section id="find-zeros" class="slide level2" data-menu-title="You were already finding zeroes">
 <h2></h2>
@@ -829,8 +877,8 @@ Graphs
 <div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-806530387c4dfde56072" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-806530387c4dfde56072">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant","Duster 360","Merc 240D","Merc 230","Merc 280","Merc 280C","Merc 450SE","Merc 450SL","Merc 450SLC","Cadillac Fleetwood","Lincoln Continental","Chrysler Imperial","Fiat 128","Honda Civic","Toyota Corolla","Toyota Corona","Dodge Challenger","AMC Javelin","Camaro Z28","Pontiac Firebird","Fiat X1-9","Porsche 914-2","Lotus Europa","Ford Pantera L","Ferrari Dino","Maserati Bora","Volvo 142E"],[21,21,22.8,21.4,18.7,18.1,14.3,24.4,22.8,19.2,17.8,16.4,17.3,15.2,10.4,10.4,14.7,32.4,30.4,33.9,21.5,15.5,15.2,13.3,19.2,27.3,26,30.4,15.8,19.7,15,21.4],[6,6,4,6,8,6,8,4,4,6,6,8,8,8,8,8,8,4,4,4,4,8,8,8,8,4,4,4,8,6,8,4],[160,160,108,258,360,225,360,146.7,140.8,167.6,167.6,275.8,275.8,275.8,472,460,440,78.7,75.7,71.09999999999999,120.1,318,304,350,400,79,120.3,95.09999999999999,351,145,301,121],[110,110,93,110,175,105,245,62,95,123,123,180,180,180,205,215,230,66,52,65,97,150,150,245,175,66,91,113,264,175,335,109]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"mpg","targets":1},{"name":"cyl","targets":2},{"name":"disp","targets":3},{"name":"hp","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-327c5680366730f37b3c" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-327c5680366730f37b3c">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant","Duster 360","Merc 240D","Merc 230","Merc 280","Merc 280C","Merc 450SE","Merc 450SL","Merc 450SLC","Cadillac Fleetwood","Lincoln Continental","Chrysler Imperial","Fiat 128","Honda Civic","Toyota Corolla","Toyota Corona","Dodge Challenger","AMC Javelin","Camaro Z28","Pontiac Firebird","Fiat X1-9","Porsche 914-2","Lotus Europa","Ford Pantera L","Ferrari Dino","Maserati Bora","Volvo 142E"],[21,21,22.8,21.4,18.7,18.1,14.3,24.4,22.8,19.2,17.8,16.4,17.3,15.2,10.4,10.4,14.7,32.4,30.4,33.9,21.5,15.5,15.2,13.3,19.2,27.3,26,30.4,15.8,19.7,15,21.4],[6,6,4,6,8,6,8,4,4,6,6,8,8,8,8,8,8,4,4,4,4,8,8,8,8,4,4,4,8,6,8,4],[160,160,108,258,360,225,360,146.7,140.8,167.6,167.6,275.8,275.8,275.8,472,460,440,78.7,75.7,71.09999999999999,120.1,318,304,350,400,79,120.3,95.09999999999999,351,145,301,121],[110,110,93,110,175,105,245,62,95,123,123,180,180,180,205,215,230,66,52,65,97,150,150,245,175,66,91,113,264,175,335,109]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"mpg","targets":1},{"name":"cyl","targets":2},{"name":"disp","targets":3},{"name":"hp","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -882,8 +930,8 @@ Graphs
 <div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-23c20353163d24f037fe" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-23c20353163d24f037fe">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],[0,1,2,3,4,5,6,7,8,9,10],[-0.9399999999999999,1.28,0.75,5.39,4.49,3.77,6.73,8.109999999999999,8.859999999999999,8.539999999999999,9.06]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>x<\/th>\n      <th>y<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":6,"columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"x","targets":1},{"name":"y","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[6,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-8b70b1cfe288d221776b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-8b70b1cfe288d221776b">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],[0,1,2,3,4,5,6,7,8,9,10],[-0.9399999999999999,1.28,0.75,5.39,4.49,3.77,6.73,8.109999999999999,8.859999999999999,8.539999999999999,9.06]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>x<\/th>\n      <th>y<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":6,"columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"x","targets":1},{"name":"y","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[6,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div><div class="column" style="width:50%;">

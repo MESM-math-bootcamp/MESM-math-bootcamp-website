@@ -151,7 +151,7 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 08, 2025\n\nAll materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 09, 2025\n\nMterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#survey",
@@ -571,7 +571,7 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#alge-rules",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules of Algebra\n\n\nNever change an equation. Instead, we rewrite them into more useful forms\nManipulate BOTH sides of an equation with the SAME PROCEDURE.\n\nAlways add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the qeuation.\n\nOrder of Operations (aka PEDMAS)\n\n\nFirst: calculate anything inside parenthesis\nSecond: Do multiplications and divisions\nThird: Add and subtract"
+    "text": "Rules of Algebra\n\n\nNever change an equation. Instead, we rewrite them into more useful forms\nManipulate BOTH sides of an equation with the SAME PROCEDURE.\n\nAlways add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the qeuation.\n\nOrder of Operations (aka PEDMAS)"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#pedmas",
@@ -620,14 +620,14 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Exponents make algebra WAY tougher\n\n\\(x^n=x*x*x*x... (\\text{n-times})\\)\nMany environmental variables follow exponential formulas like decay and growth\nYou might find yourself trying to solve equations like \\(x^{\\frac{3}{4}}=3x^{\\frac{5}{3}}\\)\nUse the same principles of algebra and the properties on the next slide to manipulate"
+    "text": "Exponents make algebra more interesting!\n\nExample\nThe expression \\(x^3\\) means \\(x\\) multiplied by itself 3 times: \\[x^3=x * x * x\\]\nMore generally, \\[x^n = x \\text{ to the power of } n.\\]\nIntuitively, the exponent \\(n\\) tells us how many times to multiply the basis \\(x\\) by itself:\n\\[x^n = \\underbrace{x * x * ... * x}_{n \\text{ times}}\\]\nBut the exponent can be any (real) number, not only integers!"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-rule",
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-rule",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules and Properties of Exponents\n\n\\[\n\\begin{align}\nx^0&=1 & x\\ne0 \\\\\nx^{-n}&=\\frac{1}{x^n} &x\\ne0 \\\\\nx^ax^b&=x^{a+b} \\\\\n\\frac{x^a}{x^b}&=x^{a-b}\\\\\n(x^a)^b&=x^{ab}\\\\\n(\\frac{x}{y})^a&=\\frac{x^a}{y^a}\\\\\n(xy)^a&=x^ay^a\\\\\n(\\sqrt[n]{x}=a)&\\to x=a^n \\\\\nx^\\frac{1}{n}&=\\sqrt[n]{x}\\\\\nx^\\frac{m}{n}&=(x^{\\frac{1}{n}})^m=(\\sqrt[n]{x})^m\n\\end{align}\n\\]"
+    "text": "Rules and Properties of Exponents\n\n\\[\n\\begin{align}\nx^0&=1 & x\\ne0 \\\\\nx^{-n}&=\\frac{1}{x^n} &x\\ne0 \\\\\n\\end{align}\n\\]\n\n\\[\n\\begin{align}\nx^ax^b&=x^{a+b} \\\\\n\\frac{x^a}{x^b}&=x^{a-b}\\\\\n(x^a)^b&=x^{ab}\\\\\n\\end{align}\n\\]\n\n\n\\[\n\\begin{align}\n(\\frac{x}{y})^a&=\\frac{x^a}{y^a}\\\\\n(xy)^a&=x^ay^a\\\\\n\\end{align}\n\\]\n\n\n\\[\n\\begin{align}\n(\\sqrt[n]{x}=a)&\\to x=a^n \\\\\nx^\\frac{1}{n}&=\\sqrt[n]{x}\\\\\nx^\\frac{m}{n}&=(x^{\\frac{1}{n}})^m=(\\sqrt[n]{x})^m\n\\end{align}\n\\]"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#polynomials",
@@ -838,5 +838,54 @@
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "About me\n\n\n\nCarmen Galaz García (she/her)\n\nAssistant Teaching Professor @ Bren\n\nBefore this:\n\nData Scienist @ NCEAS\nPh.D. in Mathematics @ UCSB\n\nTeaching:\n\nPython courses for Masters in Environmental Data Science (MEDS)\nMEDS Capstone Projects\nSupporting math and programming initiatives across Bren!\n\nResearch:\n\nNCEAS/TNC collaboration for invasive iceplant mapping analyzing remotely sensed images"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-applications",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-applications",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "What are exponents good for?"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-applications-1",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-applications-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "What are exponents good for?\n\n\n\nThey can describe really big numbers\n\n\nDiameter of the Milky Way = 1,000,000,000,000,000,000,000 meters = \\[10^{21} \\text{ m}\\]\n\nAnd also really small numbers\n\nDiameter of a human red blood cell = 0.0000000001 meters = \\[10^{-10} \\text{ m}\\]\n\nThis way, we can use exponents to describe exponential growth and decay. Many environmental variables behave in this way."
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-laws-1",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-laws-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Laws of exponents (1)\n\n\nMultiplication rule:\n\n\\[x^a * x^b = x^{a+b}\\]\n\nAny non-negative \\(x\\) to the power of 0 equals 1:\n\n\\[x^0 = 1, \\ \\ \\text{for } x \\neq 0\\]\n\nNegative exponent means divide:\n\n\\[ x^{-a} = \\frac{1}{x^a}, \\ \\ \\text{for } x \\neq 0\\]\n\nPower of a power means multiply the exponents:\n\n\\[(x^a)^b = x^{ab}\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-laws-2",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-laws-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Laws of exponents (2)"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-laws-3",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-laws-3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Laws of exponents (3)"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-rules-1",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-rules-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules and properties of exponents (1)\n\n\nMultiplication and division rules:\n\n\\[x^a * x^b = x^{a+b}\\]\n\\[ \\frac{x^a}{x^b} = x^{a-b}, \\ \\ \\text{for } x \\neq 0 \\]\n\nAny non-negative \\(x\\) to the power of 0 equals 1:\n\n\\[x^0 = 1, \\ \\ \\text{for } x \\neq 0\\]\n\nNegative exponent means divide:\n\n\\[ x^{-a} = \\frac{1}{x^a}, \\ \\ \\text{for } x \\neq 0\\]\n\nFractional exponent means take the \\(n\\)-th root:\n\n\\[ x^{\\frac{1}{n}} = \\sqrt[n]{x}\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-rules-2",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-rules-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules and properties of exponents (2)\n\n\nPower of a power means multiply the exponents:\n\n\\[(x^a)^b = x^{ab}\\]\n\nExponents get distributed over products:\n\n\\[ (xy)^a = x^a y^a\\]\n\nAnd exponents get distributed over divisions:\n\n\\[ \\left( \\frac{x}{y} \\right)^a = \\frac{x^a}{y^a} \\]\n\nIf \\(a\\) is the \\(n\\)-th root of \\(x\\), then \\(a\\) to the \\(n\\) equals x\n\n\\[\na = \\sqrt[n]{x} \\Rightarrow a^n = x\n\\]"
   }
 ]
