@@ -23,4 +23,4 @@ This unit covers basic introduction of algebra and how to use graphs to convey e
 
 ## Problem set solutions
 
-[Solutions]()
+[Solutions](solutions_problem_set_algebra.qmd)

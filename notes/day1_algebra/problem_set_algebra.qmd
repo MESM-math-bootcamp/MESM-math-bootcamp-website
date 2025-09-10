@@ -1,5 +1,5 @@
 ---
-author: "Adapted by C. Galaz García from work by Nathan Grimes."
+author: "Nathaniel Grimes, adapted by C. Galaz García"
 ---
 # Algebra and Graphing Problem Set
 
@@ -15,7 +15,7 @@ library(tidyverse)
 
 1) Describe how solving for the roots of equations (the values of $x$ for which a function $f(x)$ satisfies $f(x)=0$) could be useful in environmental science. List at least one method to find roots of a certain kind of funciton.
 
-2) Expand these equations
+2) Expand the following expressions:
 
     a) $(x+2)(3x-4)$
 
@@ -34,12 +34,13 @@ library(tidyverse)
 
 # Story Problems
 
-4) Representative Concentration Pathwys (RCP) are climate chabge scenarios that project future greenhouse gas concentrations. 
-A new [RCP 4.5 projection](https://en.wikipedia.org/wiki/Representative_Concentration_Pathway) indicates that carbon emissions in the atmosphere will plateau at around 600 ppm. Today's atmospheric carbon concentration sits at 416 ppm. 
+4) [Representative Concentration Pathways (RCP)]((https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)) are climate change scenarios that project future greenhouse gas concentrations in 2100. 
+A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today's atmospheric carbon concentration sits at 416 ppm. 
 
-    a) If the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1ppm=2.13 gigatons.
 
-    b) Let's say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of $f(c)=\frac{-1}{8}t^2+6t+123.83$ where $t$ is each year and $c$ is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?
+    a) If the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.
+
+    b) Let's say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of $f(t)=\frac{-1}{8}t^2+6t+123.83$ where $t$ is each year and $f(t)$ is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?
 
 
 # Graphs
@@ -142,4 +143,4 @@ p1
   c) How would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?
   
   
-  ![Picture of scalloped hammerhead shark.](images/scalloped_hammerhead_shark.jpg)
+  ![Picture of a scalloped hammerhead shark.](images/scalloped_hammerhead_shark.jpg)
