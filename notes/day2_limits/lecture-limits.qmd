@@ -1,0 +1,789 @@
+---
+format: 
+  revealjs:
+    chalkboard: false
+    slide-number: true
+    show-slide-number: print
+    theme:
+     - ucsb-media.scss
+    logo: img/bren-logo.png
+embed-resources: true
+---
+
+## {#title-slide data-menu-title="Title Slide" background=.white}
+
+[Limits and Intro to Derivatives]{.custom-title .blue-text}
+
+[Bren Calculus Workshop]{.custom-subtitle .gold}
+
+<hr class="hr-teal">
+
+[Nathaniel Grimes]{.body-text-l .center-text .blue-text}
+
+[Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
+
+[**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
+
+## {#tr data-menu-title="Team Review"}
+
+[Team Review]{.slide-title}
+
+- How did everyone feel about the problem set?
+
+- Any questions?
+
+- Discuss with Team
+
+## {#mind data-menu-title="Mind Blower"}
+
+[Disclaimer]{.slide-title}
+
+<hr>
+
+```{r out.width="55%",fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/lXu72d4iKwqek/giphy.gif")
+```
+
+
+## {#fun-bake data-menu-title="Functions are like baking receipes"}
+
+[Functions are like baking receipes]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+- Assemble all your ingredients (independent variables like $x_1$, $x_2$)
+
+- Follow the instructions to mix, bake, and decorate (Instructions of function)
+
+- End up with final product ($f(x)$)
+
+Typically we use the notation $f(x)=x$, but we can always use different representations like $g(x)=x$ or $y=x$
+:::
+:::{.column width="50%"}
+
+```{r out.withd"50%"}
+knitr::include_graphics("img/cake.png")
+```
+
+:::
+::::
+
+## {#func-prop data-menu-title="Properties of a function"}
+
+[Properties of functions]{.slide-title}
+
+<hr>
+
+**For each combination of independent variables, there is exactly one value of the dependent variable.**
+
+- $f(1)\ne\{2,3\}$ i.e. if I put 1 into the function I can't have both 2 and 3 come out
+
+- Vertical line test
+
+Functions can be continuous or discontinuous
+
+- Continuous: For every value of $x$, $f(x)$ returns a number
+
+- Discontinuous: Parts are undefined
+
+## {#fun-q data-menu-title="Are these functions?"}
+
+[Are these functions]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="33%"}
+```{r, out.width="220%"}
+knitr::include_graphics("img/dsqrt.PNG")
+```
+
+:::
+:::{.column width="33%"}
+```{r, out.width="220%"}
+knitr::include_graphics("img/para.PNG")
+```
+:::
+:::{.column width="33%"}
+```{r out.width="220%"}
+knitr::include_graphics("img/circle.png")
+```
+:::
+::::
+
+## {#func-con data-menu-title="Continuous and Discontinuous Functions"}
+
+::::{.columns}
+:::{.column width="50%"}
+:::{.center-text .body-text-xl .blue-text}
+**Continuous**
+:::
+```{r,fig.align='center',out.width="220%"}
+
+knitr::include_graphics("img/cont.png")
+```
+:::
+:::{.column width="50%"}
+
+:::{.center-text .body-text-xl .blue-text}
+**Discontinuous**
+:::
+```{r fig.align='center',out.width="70%"}
+knitr::include_graphics("img/discont.png")
+```
+
+```{r fig.align='center',out.width="60%"}
+knitr::include_graphics("img/tan.png")
+```
+
+:::
+::::
+
+## {#limits data-menu-title="Limits"}
+
+[Limits]{.slide-title}
+
+<hr>
+
+**Definition:**
+
+*The value a function approaches as the input approaches a specific value*
+
+$$
+\large
+\lim_{x\to c} f(x)=L
+$$
+
+Verbally:
+
+"The limit of the function $f(x)$ as $x$ approaches the value $c$ is $L$"
+
+
+## {#lim-ex data-menu-title="Limit Example"}
+
+[Start with an example]{.slide-title}
+
+<hr>
+
+
+- What is the limit of $f(x)=2x^2-4$ as $x$ approaches 2?
+
+:::{.incremental}
+- Strategy to solve: $Evaluate f(x)$ at $x$ getting closer and closer to 2
+
+
+- Quick sanity check, what should $f(2)=?$
+
+
+- $f(2)=4$
+
+:::
+
+## {#lim-excon data-menu-title="Limit continued"}
+
+```{r fig.align='center',out.width="90%"}
+knitr::include_graphics("img/lim4.PNG")
+```
+
+From both directions it looks like $f(x)$ converges to 4
+
+$$
+\lim_{x\to c}(2x^2-4)=4
+$$
+
+
+## {#limit-graph-sol data-menu-title="Graphical Solution"}
+
+[Graphical Solution]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+Finding limits of functions when f(x) is continuous at c is easy.
+
+$$
+\lim_{x\to c}f(x)=f(c)
+$$
+:::
+:::{.column width="50%"}
+```{r fig.align='center',out.width="150%"}
+knitr::include_graphics("img/lim_graph_1.PNG")
+```
+
+:::
+::::
+
+
+## {#lim-discon data-menu-title="What happens with discontinuous functions"}
+
+[What happens with discontinuous functions?]{.slide-title}
+
+<hr>
+
+Try with your group the same approach for:
+
+$$
+\lim_{x\to 2}f(x)=\frac{|x-2|}{x-2}
+$$
+
+Hint: Start very close to 2 like 1.9 and 2.1
+
+:::{.fragment .fade-in}
+```{r fig.align='center',out.width="90%"}
+knitr::include_graphics("img/limx2.PNG")
+```
+:::
+
+
+## {#mean-girls data-menu-title="We broke the universe"}
+
+[We broke the universe]{.slide-title}
+
+<hr>
+
+:::{.body-text-l}
+- Dividing by zero is impossible
+
+- The function approaches different values from either side
+
+- Therefore...
+:::
+
+:::{.fragment .fade-in}
+
+```{r fig.align='center',out.width="50%"}
+knitr::include_graphics("img/limit.gif")
+```
+:::
+
+## {#graph data-menu-title="Clearer on the graph"}
+
+[Clearer on a graph]{.slide-title}
+
+<hr>
+
+```{r fig.align='center',out.width="40%"}
+knitr::include_graphics("img/lim_graph_2.PNG")
+```
+
+Technically the limit is "Undefined", because it does approach a finite value. Does not exist happens when the limits spiral off to infinity in both directions (tan graph)
+
+## {#lim-defined data-menu-title="Defined limit at an undefined point"}
+
+[Defined Limit at an undefined point]{.slide-title}
+
+<hr>
+
+ - Discontinuous functions can still have limits
+
+- Find the limit of $f(x)=x+1,x\ne 2$ as x approaches 2
+
+:::{.fragment .fade-in}
+
+```{r fig.align='center',out.width="50%"}
+knitr::include_graphics("img/lim3.PNG")
+```
+
+:::
+
+:::{.fragment .fade-in}
+
+::::{.columns}
+:::{.column width="50%"}
+
+```{r fig.align='center',out.width="70%"}
+knitr::include_graphics("img/lim_graph_3.png")
+```
+
+:::
+
+:::{.column width="50%'}
+
+
+$x=2$ may not exist, but we can still find a limit because it consistently approaches 3 from both directions
+:::
+::::
+:::
+
+## {#ta data-menu-title=Team" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Team Assessment</div>
+</div>
+
+## {#ta-1-1 data-menu-title="Team Assessment Question 1"}
+
+Work with your team to complete  these task
+
+:::{.center-text}
+Part 1:
+:::
+
+::::{.columns}
+:::{.column width="33%"}
+
+A) 
+```{r fig.align='center',out.width="100%"}
+knitr::include_graphics("img/lim_g_a.PNG")
+```
+
+1) 
+
+$$
+\lim_{x\to3}g(x)=0
+$$
+
+:::
+
+:::{.column width="33%"}
+
+B)
+```{r fig.align='center',out.width="100%"}
+knitr::include_graphics("img/lim_g_b.PNG")
+```
+
+2)
+
+$$
+\lim_{x\to-4}g(x)=3
+$$
+:::
+
+:::{.column width="33%"}
+
+C)
+
+```{r fig.align='center',out.width="100%"}
+knitr::include_graphics("img/lim_g_c.PNG")
+```
+
+
+3)
+
+$$
+\lim_{x\to 3} g(x)= \text{DNE}
+$$
+:::
+::::
+
+
+## {#ta-1-2 data-menu-title="Team Assessment Question 2"}
+
+Work with your team to complete these task 
+
+:::{.center-text}
+Part 2:
+:::
+
+2) Can you think of examples where discontinuous functions might exist in environmental science?
+
+3) Choose as a team to draw an example of one of these statements:
+
+- $\lim_{x\to 4^-} f(x)$ and $\lim_{x\to 4^+}f(x)$ are both infinite
+
+- $\lim_{x\to 3} f(x)=2$, but $f(3)=0$
+
+- $\lim_{x\to 5^-} f(x)=4$ and $\lim_{x\to 5^+} f(x)=2$
+
+- $\lim_{x\to -3} f(x)=-5$ but $f(-3)=-5$
+
+## {#intro-derv data-menu-title="Introduction to Derivates" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Introduction to Derivatives</div>
+</div>
+
+## {#alltogether data-menu-title="Putting it all together"}
+
+[Putting it all together]{.slide-title}
+
+<hr>
+
+Recall average rate of change and instantaneous
+
+```{r echo=FALSE,fig.align='center',out.width="50%"}
+knitr::include_graphics("img/trex.PNG")
+```
+
+Taking the average rate of change to a set limit will eventually converge to the instantaneous. 
+
+## {#walkthrough-1 data-menu-title="Walthrough"}
+
+[Walk Through Example]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+
+library(tidyverse)
+x=seq(0,3,by=0.01)
+y=x^2
+
+lim_df<-data.frame(x=x,y=y)
+
+dx=2
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+
+
+p0<-ggplot(data=lim_df,aes(x=x,y=y))+
+  geom_line(color="black",linewidth=3)+
+  theme_classic()+
+  annotate("point",x=0,y=0,size=6,color="blue")+
+  theme(text = element_text(size = 28)) 
+
+p0
+
+```
+
+
+## {#walkthrough-2 data-menu-title="Walkthrough"}
+
+[Walk Through Example]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+p1<-p0+
+  geom_point(aes(x=dx,y=y2),color="blue",size=6)+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  annotate("text",x=1,y=7,label="Delta~x==2",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=2",size=14)
+p1
+
+```
+
+## {#walkthrough-3 data-menu-title="Walkthrough"}
+
+[Walk Through Example]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+dx=1
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+p2<-p0+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  geom_point(aes(x=dx,y=y2),color="blue",size=6)+
+  annotate("text",x=1,y=7,label="Delta~x==1",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=1",size=14)
+
+p2
+
+```
+
+## {#walkthrough-4 data-menu-title="Walk Through Example"}
+
+[Walk Through Example]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+dx=0.5
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+p3<-p0+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  geom_point(aes(x=dx,y=y2),color="blue",size=6)+
+  annotate("text",x=1,y=7,label="Delta~x==0.5",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=.25",size=14)
+p3
+```
+
+## {#walkthrough-5 data-menu-title="Walkthrough"}
+
+[Walk Through Example]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+dx=0.1
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+p4<-p0+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  geom_point(aes(x=dx,y=y2),color="blue",size=6)+
+  annotate("text",x=1,y=7,label="Delta~x==0.1",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=.1",size=14)
+
+p4
+
+```
+
+## {#walkthrough-6 data-menu-title="Walkthrough"}
+
+[Walkthrough]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+dx=0.01
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+p5<-p0+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  geom_point(aes(x=dx,y=y2),color="blue",size=6)+
+  annotate("text",x=1,y=7,label="Delta~x==0.01",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=.01",size=14)
+
+p5
+
+
+```
+
+## {#tangent data-menu-title="Tangent Lines"}
+
+[Tangent Lines]{.slide-title}
+
+<hr>
+
+What if we set $\Delta x=0$? Then we would have a slope line that only touches our function at exactly $x$.
+
+```{r,fig.align='center'}
+knitr::include_graphics("img/tangent_line.png")
+```
+
+***These are called tangent lines***
+
+
+## {#ex-math data-menu-title="Put our example in math notation"}
+
+[Put our example in math notation]{.slide-title}
+
+<hr>
+$$\text{slope}=\frac{y_2-y_1}{x_2-x_1}$$
+
+Choose a point along the function $(x,f(x))$
+
+Choose a different point on the function $\Delta x$ away $(x+\Delta x,f(x+\Delta x))$
+
+Add these into the slope equation
+
+$$
+\text{slope}=\frac{f(x+\Delta x)-f(x)}{(x+\Delta x) -x}=\frac{f(x+\Delta x)-f(x)}{\Delta x}
+$$
+
+## {#derivative-def data-menu-title="Derivative Definition"}
+
+[Derivative Definition]{.slide-title}
+
+<hr>
+
+$$
+\large
+f'(x)=\lim_{\Delta x \to 0}=\frac{f(x+\Delta x)-f(x)}{\Delta x}
+$$
+
+<br>
+
+:::{.center-text}
+*Most common notation*
+:::
+
+$$
+\large
+f'(x)\text{, or }\frac{dy}{dx}
+$$
+
+## {#diff-func data-menu-title="Not all functions are differentiable"}
+
+[Not all functions are differentiable]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+- All differentiable functions are continuous, but not all continuous functions are differentiable
+
+- The absolute value function is one example $y=|x|$
+
+
+:::
+
+:::{.column width="50%"}
+
+
+```{r, fig.align='center',out.width="90%"}
+x=seq(-5,5)
+y=abs(x)
+
+df<-data.frame(x=x,y=y)
+
+df %>% 
+  ggplot(aes(x=x,y=y))+
+  geom_vline(xintercept = 0)+
+  geom_line(linewidth=3,color="red")+
+  theme_classic()+
+  theme(panel.border = element_blank(), axis.line.y = element_blank())+  
+  scale_x_continuous(expand = c(0, 0))+
+  scale_y_continuous(expand = c(0, 0))+
+  theme(text = element_text(size = 28)) 
+```
+
+:::
+::::
+
+## {#calc data-menu-title="Calculus and Derivatives are the study of change"}
+
+[Calculus and Derivatives are the study of change]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center',out.width="75%"}
+knitr::include_graphics("img/loa.PNG")
+```
+
+## {#envs-change data-menu-title="Enviromental Science is the Study of Change"}
+
+[Environmental Science is also a study of change]{.slide-title}
+
+<hr>
+
+
+```{r, fig.align='center',out.width="75%"}
+knitr::include_graphics("img/glacier.jpg")
+```
+
+## {#envs-change2 data-menu-title="Enviromental Science is the Study of Change"}
+
+[Environmental Science is also a study of change]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center',out.width="75%"}
+knitr::include_graphics("img/energy.png")
+```
+
+## {#envs-change3 data-menu-title="Enviromental Science is the Study of Change"}
+
+[Environmental Science is also a study of change]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center',out.width="75%"}
+knitr::include_graphics("img/bait.jpeg")
+```
+
+
+
+## {#diff-rules data-menu-title="Rules for Differentiation"}
+
+[Rules for Differentiation]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Constant Rule**
+:::
+
+- If $f(x)$ is contant, then for all $x$, $f'(x)=0$
+
+$$
+\begin{align}
+&y=a &\frac{dy}{dx}=0
+\end{align}
+$$
+<br>
+
+:::{.center-text}
+
+**Power Rule**
+:::
+
+$$
+\frac{d}{dx}[x^n]
+=nx^{n-1}
+$$
+
+## {#diff-examples data-menu-title="Examples"}
+
+[Examples]{.slide-title}
+
+<hr>
+
+$$
+\begin{align}
+&y=100 & &y=5x^5 & &y=\frac{1}{x^2}
+\end{align}
+$$
+
+## {#sum-diff data-menu-title="Rules for Differentiation"}
+
+[Rules for Differentiation]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Sum and Difference Rules**
+:::
+
+
+$$
+\begin{align}
+\frac{d}{dx}&=[f(x)+g(x)]=f'(x)+g'(x) \\
+\frac{d}{dx}&=[f(x)-g(x)]=f'(x)-g'(x)
+\end{align}
+$$
+<br>
+
+Looks really scary. All it says, if the function has pieces that are added or subtracted you can take the derivative of each individual piece.
+
+## {#sum-ex data-menu-title="Exaple"}
+
+[Example]{.slide-title}
+
+<hr>
+
+$$
+\begin{align}
+&y=x^2+8x+4 & &y=x^3-x^2+x-15
+\end{align}
+$$
+
+## {#ta-2 data-menu-title="Team Assessment 2" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Team Assessment</div>
+</div>
+
+
+## {#gta2-1 data-menu-title="Team Assessment 2 Questions"}
+
+1) As a team, list 5 fields of environmental science where studying the rate of change and derivatives would be important
+
+<br>
+
+2) Which rules should you use to take these derivatives?
+
+$$
+\begin{align}
+\text{A)  }& f(x)=3x^4 &\text{B) }  y=4x^2+3x-16
+\end{align}
+$$
+
+3) Find the derivatives of these functions
+
+$$
+\begin{align}
+&\text{A) } y=3x^2 & &\text{B) }h(x)=y=7x+4 & &\text{C) }g(y)=\sqrt{y}
+\end{align}
+$$
+
+4) Discuss why derivatives need continuity. It might help to think about why some continuous functions don't have derivatives.
+
