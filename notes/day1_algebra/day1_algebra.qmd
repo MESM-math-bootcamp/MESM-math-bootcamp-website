@@ -1,1 +1,50 @@
 # Day 1: Algebra
+
+This unit covers basic introduction of algebra and how to use graphs to convey environmental science.
+
+## Lecture materials
+
+[Algebra lecture slides](lecture-algebra.qmd)
+
+**Contents**
+-   Introductions
+
+-   Team assignments
+
+-   Math in environmental science
+
+-   Algebra review
+
+-   Graphing
+
+<!--
+-   Introductions
+
+-   Team assignments
+
+-   Math in environmental science
+
+-   Algebra review
+    - Order of operations
+    - Solving first-degree equations
+    - Exponents
+    - Polynomials
+    - Fundamental theorem of algebra
+    - Quadratic formula
+    - Team exercises
+
+-   Graphing
+    - Introduction
+    - Cartesian plane
+    - Linear equations
+    - Avereage vs. instantaneous rate of change
+    - Team exercises
+-->
+
+## Problem set
+
+[Download Copy of Problem Set]()
+
+## Problem set solutions
+
+[Solutions]()
