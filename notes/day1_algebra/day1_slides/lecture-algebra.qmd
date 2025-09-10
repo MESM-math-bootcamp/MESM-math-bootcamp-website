@@ -820,13 +820,19 @@ $$
 4x^2+x-14=0
 $$
 
+<br>
+
 2) Identify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)
 
 $$
 256-\sqrt{44}x^2+.23x=10
 $$
 
-3) What happens if $b^2-4ac$ is negative in the quadratic formula
+<br>
+
+3) What happens if $b^2-4ac$ is negative in the quadratic formula?
+
+<br>
 
 4) Expand $(3x-6)(2x+1)$
 
@@ -868,7 +874,7 @@ c=246
 \end{aligned}
 $$
 
-[This will probably be a nasty calculation, but that is what computers are for. The order does not matter, only that the $a$ corresponds to the square term, the $b$ to the 1st degree term, and the $c$ to the constant]{.body-text-s .teal-text}
+[This will probably be a nasty calculation, but that is what computers are for. The order does not matter, only that the $a$ corresponds to the square term, the $b$ to the 1st degree term, and the $c$ to the constant.]{.body-text-s .teal-text}
 
 ## {#ta-sol-three data-menu-title="Solutions to first TA"}
 
@@ -878,7 +884,7 @@ $$
 
 3) What happens if $b^2-4ac$ is negative in the quadratic formula
 
-[There are no real solutions, but imaginary solutions. Can still be useful (saddle path solutions, but that's for another class)]{.teal-text}
+[There are no real solutions, but complex (imaginary) solutions. This means numbers of the form $a+ib$ where $i = \sqrt{-1}$. These can still be useful - but that's for another class!]{.teal-text}
 
 ## {#ta-sol-four data-menu-title="Solutions to first TA"}
 
@@ -937,29 +943,31 @@ ggplot(mtcars, aes(x=as.factor(cyl), y=mpg)) +
 :::
 ::::
 
-## {#graph-use data-menu-title="How to use graphs"}
+## {#xy-coordinates data-menu-title="xy coordinates"}
 
-[How to use graphs]{.slide-title}
+[The $xy$ coordinate system]{.slide-title}
 
 <hr>
 
 ::::{.columns}
 :::{.column width="50%"}
 
-Graphs move in a rectangular coordinate system with two dimensions (axes)
+Graphs move in a 2-dimensional plane with a coordinate system using two axes:
 
-- x - axis (horizontal)
+- $x$-axis (horizontal axis)
 
-- y- axis (vertical)
+- $y$-axis (vertical axis)
 
-- Axis units must be defined
 
+<br>
+
+Axes units must be defined depending on the application.
 
 :::{.incremental}
 
-We use point pairs to place data
+We use pairs of numbers to place data:
 
-- (**X**,**Y**)
+- A point on the $xy$ plane with **coordinates** $(a,b)$ means the point is located at $a$ on the $x$-axis and at $b$ on the $y$-axis.
 
 - Where would (2,-1) go on the graph?
 
@@ -975,7 +983,7 @@ knitr::include_graphics("images/cart.png")
 
 ## {#graph-series data-menu-title="Graphs series of points to make lines"}
 
-[Graphs series of points to make lines]{.slide-title}
+[We can join series of points to make graphs]{.slide-title}
 
 <hr>
 
@@ -1007,9 +1015,24 @@ ggplot(pdf,aes(x=x,y=y))+
 :::
 ::::
 
+## {#graph-seafood data-menu-title="Seafood depletion"}
+
+[Real life example: seafood depletion]{.slide-title}
+
+
+```{r echo=FALSE,fig.align='center',out.width="60%"}
+knitr::include_graphics("images/headline.PNG")
+```
+
+:::{.fragment .fade-in}
+```{r echo=FALSE,fig.align='center',out.width="70%"}
+knitr::include_graphics("images/worm.PNG")
+```
+:::
+
 ## {#graph-fcn data-menu-title="Most functions can be shown on graphs"}
 
-[Most 2D functions can be shown on graphs]{.slide-title}
+[Functions on a single variable and a single output can be graphed]{.slide-title}
 
 <hr>
 
@@ -1069,19 +1092,19 @@ p1
 :::{.column width="50%"}
 
 
-1) Intercepts
+Intercepts
 
-- X-intercept
+- $x$-intercept
 
-  - Where does the graph intersect the x-axis? (x,0)
+  - Where does the graph intersect the $x$-axis? 
+  - In other words, for what values of $x$ do we have $(x,0)$ be part of the graph?
     
-- y-intercept
+- $y$-intercept
 
-    - Where does  the graph intersect the y-axis? (0,y)
+    - Where does  the graph intersect the $y$-axis? 
+    - In other words, for what value of $y$ do we have $(0,y)$ be part of the graph?
     
-2) Slope of lines
 
-- How quickly is the graph changing?
 :::
 
 :::{.column width="50%"}
@@ -1096,37 +1119,30 @@ p1+theme(legend.position = "none")
 :::
 ::::
 
-## {#graph-seafood data-menu-title="Seafood depletion"}
-
-
-```{r echo=FALSE,fig.align='center',out.width="60%"}
-knitr::include_graphics("images/headline.PNG")
-```
-
-:::{.fragment .fade-in}
-```{r echo=FALSE,fig.align='center',out.width="70%"}
-knitr::include_graphics("images/worm.PNG")
-```
-:::
 
 ## {#slope-int data-menu-title="Slope-Intercept Form"}
 
-[Slope-Intercept Form]{.slide-title}
+[Linear functions: slope-intercept form]{.slide-title}
 
 <hr>
 
-Easiest model to describe linear relationship between two variables
+Easiest model to describe linear relationship between two variables!
 
 $$
 \huge
 \begin{align}
-\underbrace{y}_{\text{output}}=\overbrace{m}^{\text{Slope}}\underbrace{x}_{\text{input}}+\overbrace{b}^{\text{y intercept}}
+\underbrace{y}_{\text{output}}=\overbrace{m}^{\text{Slope}}\underbrace{x}_{\text{input}}+\overbrace{b}^{\text{$y$ intercept}}
 \end{align}
 $$
 
+<br>
+
+- The **slope** tells us how quickly is the line changing. 
+
+
 ## {#slope-def data-menu-title="Definition of Slope"}
 
-[Slope-Intercept Form]{.slide-title}
+[How to calculate the slope?]{.slide-title}
 
 <hr>
 
@@ -1134,15 +1150,17 @@ $$
 :::{.column width="50%"}
 
 
-Vertical Change per unit of Horizontal Change
+Slope = 
+
+vertical change per unit of horizontal change.
 
 $$
 m=\frac{\Delta y}{\Delta x}=\frac{y_2-y_1}{x_2-x_1}
 $$
 
-Horizontal Slope: m=0
+Horizontal Slope: $m=0$
 
-Vertical Slope: m is undefined
+Vertical Slope: $m$ is undefined
 
 :::
 
@@ -1186,7 +1204,7 @@ knitr::include_graphics("images/loa.PNG")
 
 :::{.column width="50%"}
 
-- Instantaneous leads us to Calculus
+- Instantaneous rate of change leads us to ✨calculus✨.
 
 :::
 ::::
@@ -1204,23 +1222,29 @@ knitr::include_graphics("images/trex.PNG")
 
 ## {#ta-q2 data-menu-title="Team Assesment 2"}
 
-You're team measured the concentrations of pesticides in a lake exposed to agricultural runoff. The intern in charge of finishing the calculations ran off for the weekend leaving you all to finish their work. They left behind the following equation describing the total amount of pesticides in the lake if runoff is stopped from the farm by a new policy incentive reducing pesticides use:
+<!--TODO: we need some equitable way of having them interact with each other.-->
+
+Your team measured the concentrations of pesticides in a lake exposed to agricultural runoff. You have the following equation describing the total amount of pesticides in the lake if runoff is stopped from the farm by a new policy incentive reducing pesticides use:
 
 $$
 \begin{aligned}
 &y=(8-2t)(t+2) \\
 &\text{Where } y \text{ is pesticde concentration in ppb} \\
-&\text{and } t \text{ is time in years}
+&\text{and } t \text{ is time in years}.
 \end{aligned}
 $$
 
-Work with your team to discuss conceptually how you would solve the following tasks.
+Work with your team to 
 
-1) Write out the intern's work in a more useful equation
+- **first** discuss conceptually how you would solve *all* the following tasks, do not write anything!
+
+- **second** work out with pen and paper the solutions to verify the ideas you discussed.
+
+1) What kind of equation is this? Would it be useful to write it in another form?
 
 2) How long will it take for the pesticide concentration in the lake to reach zero? Since the equation is a polynomial describe why one solution is more applicable than the other.
 
-3) Present your findings (Choose between a graph or table)
+3) Present your findings (choose between a graph or table).
 
 4) What is the average change in concentration from year 0 to year 4?
 
@@ -1231,7 +1255,7 @@ Work with your team to discuss conceptually how you would solve the following ta
 [Solution 1]{.slide-title}
 <hr>
 
-Let's FOIL out the equation so it becomes easier to graph.
+Let's expand out the equation so it becomes easier to graph.
 
 $$
 \begin{aligned}
@@ -1370,7 +1394,7 @@ $$
 \frac{\Delta y}{\Delta x}=\frac{0-16}{4-0}=-4
 $$
 
-Pesticides are removed from the lake at an average rate of 4 ppb per year
+Pesticides are removed from the lake at an average rate of 4 ppb per year.
 :::
 
 ::::
@@ -1389,8 +1413,11 @@ p2
 ```
 :::
 :::{.column width="50%"}
-Pesticide concentrations might initially increase in the lake from residual particles in the soil being washed into the lake. Then a mixture microbial activity and other chemical process reduce the pesticides to more inert components (You will learn the actual answer in ESM 202)
+Pesticide concentrations might initially increase in the lake from residual particles in the soil being washed into the lake. Then a mixture microbial activity and other chemical process reduce the pesticides to more inert components. 
+
+(You will learn the actual answer in ESM 202: Environmental Biogeochemistry)
 :::
 
 ::::
 
+<!--TODO: include review of what we covered-->
