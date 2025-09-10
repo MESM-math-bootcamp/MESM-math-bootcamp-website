@@ -634,14 +634,14 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#polynomials",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Polynomials describe more complex relationships through exponents\n\n\\[\n\\large\n\\begin{align}\na_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\n\\end{align}\n\\]\n\n\nFor example, polynomials often represent real world data better than a linear function\n\\[\n\\begin{aligned}\nCV&=b_0+b1\\text{ row}+b_2 \\text{ column}+ b_3\\text{ row}^2\\\\\n&+b_4\\text{ column}^2+b_5\\text{ row x column} +b_6\\text{ elevation}\n\\end{aligned}\n\\]\n\nModel used to predict monthly climate patterns in Ireland"
+    "text": "Polynomials describe more complex relationships through exponents\n\nA polynomial is a function of the form: \\[\n\\large\n\\begin{align}\na_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\n\\end{align}\n\\]\n\n\\(x\\) is the variable\n\\(a_i\\) are constants (fixed numbers) that are called the coefficients of the polynomial\neach \\(a_ix^i\\) is called a term of the polynomial,\n\\(n\\) is called the degree of the polynomial, this is the largest exponent in the polynomial.\n\n\nExample:\n\n\\(x^5 + x^2 - 1\\) is a polynomial of degree five with three terms.\nLinear functions like \\(mx + c\\) where \\(m\\) and \\(c\\) are constants are polynomials of degree 1!\n\nPolynomials often represent real world data better than a linear function."
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#fundamental",
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#fundamental",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "The Fundamental Theorem of Algebra helps us solve for unknowns\n\n\\[\n\\large\n\\begin{align}\na_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\n\\end{align}\n\\]\n\nFundamental Theorem of Algebra:\n\n\nEvery nth degree polynomial has exactly n zeros (solutions)\n\n\nOften times we look forsolution when equations equal zero Interesting properties at zero or the difference between two equations Comes from calculus maximization problems (covered in Day 3)"
+    "text": "Fundamental Theorem of Algebra\n\n\nA zero, root, or solution for a polynomial is a value of \\(x\\) that makes the polynomial equal to zero.\n\n\n\n\nFundamental Theorem of Algebra\n\nA polynomial \\[\na_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\n\\]\nof degree \\(n\\) has exactly \\(n\\) roots \\(r_1, \\ldots, r_n\\) and it can be refactored as\n\\[\nc(x-r_1) ... (x-r_n)\n\\]\nThe numbers \\(c\\) and \\(r_1, \\ldots, r_n\\) may be complex!"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#find-zeros",
@@ -669,7 +669,7 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#quad",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Quadratic Formula solves 2nd degree polynomials\n\nFor any second degree polynomial\n\\[\nax^2+bx+c=0\n\\]\nThe solution to can be found using the quadratic formula\n\\[\nx=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}\n\\]"
+    "text": "Quadratic Formula solves 2nd degree polynomials\n\nFor any second degree polynomial\n\\[\nax^2+bx+c=0\n\\]\nThe roots to can be found using the quadratic formula:\n\\[\nx=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}\n\\]\n\nExample:\nLet’s use the quadratic formula to find the solutions to \\(x^2-x-12=0\\)."
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#ta",
@@ -879,7 +879,7 @@
     "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-rules-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules and properties of exponents (1)\n\n\nMultiplication and division rules:\n\n\\[x^a * x^b = x^{a+b}\\]\n\\[ \\frac{x^a}{x^b} = x^{a-b}, \\ \\ \\text{for } x \\neq 0 \\]\n\nAny non-negative \\(x\\) to the power of 0 equals 1:\n\n\\[x^0 = 1, \\ \\ \\text{for } x \\neq 0\\]\n\nNegative exponent means divide:\n\n\\[ x^{-a} = \\frac{1}{x^a}, \\ \\ \\text{for } x \\neq 0\\]\n\nFractional exponent means take the \\(n\\)-th root:\n\n\\[ x^{\\frac{1}{n}} = \\sqrt[n]{x}\\]"
+    "text": "Rules and properties of exponents (1)\n\n\nProduct rule:\n\n\\[x^a * x^b = x^{a+b}\\]\n\nQuotient rule:\n\n\\[ \\frac{x^a}{x^b} = x^{a-b}, \\ \\ \\text{for } x \\neq 0 \\]\n\nAny non-negative \\(x\\) to the power of 0 equals 1:\n\n\\[x^0 = 1, \\ \\ \\text{for } x \\neq 0\\]\n\nNegative exponent means divide:\n\n\\[ x^{-a} = \\frac{1}{x^a}, \\ \\ \\text{for } x \\neq 0\\]\n\nFractional exponent means take the \\(n\\)-th root: \\(\\ \\ \\ \\ \\ x^{\\frac{1}{n}} = \\sqrt[n]{x}\\)\n\n:::"
   },
   {
     "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-rules-2",
@@ -887,5 +887,33 @@
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Rules and properties of exponents (2)\n\n\nPower of a power means multiply the exponents:\n\n\\[(x^a)^b = x^{ab}\\]\n\nExponents get distributed over products:\n\n\\[ (xy)^a = x^a y^a\\]\n\nAnd exponents get distributed over divisions:\n\n\\[ \\left( \\frac{x}{y} \\right)^a = \\frac{x^a}{y^a} \\]\n\nIf \\(a\\) is the \\(n\\)-th root of \\(x\\), then \\(a\\) to the \\(n\\) equals x\n\n\\[\na = \\sqrt[n]{x} \\Rightarrow a^n = x\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-practice",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#exponents-practice",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Exponents practice\n\nSimplify the following. ✏️ Take three minutes to solve these individually.\n\n\\(\\frac{6^5}{6^3}\\)\n\n\n\n\\((x^2y)^4\\)\n\n \n\n\\(\\frac{x^5y^6}{xy^2}\\)\n\n \n\n\\(\\frac{24x^6}{12x^{-8}}\\)\n\n\n\n\\(5x^2y(2x^4y^{-3})\\)"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#find-roots",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#find-roots",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "You were already finding roots!\n\n\nA linear equation is just a 1st degree polynomial. How many solutions does it have?\n\n\\[\n3x+2=10x-12\n\\]\n\nFinding the roots of \\(n\\)-th degree polynomials is much harder\n\nLet computers do it for us\n\nLet’s zoom in on 2nd degree polynomials"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#example-linear",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#example-linear",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example: linear equation\n\n\nA linear equation is just a 1st degree polynomial. How many solutions does it have?\n\n\\[\n3x+2=10x-12\n\\]\nThis can be rewritten as:\n\\[\nx - 2 = 0.\n\\]\nSo \\(r_1 = 2\\) is the root. There is a single root because the degree is 1.\n\n\nFinding the roots of \\(n\\)-th degree polynomials is much harder - we will let computers do it for us.\n\nLet’s zoom in on 2nd degree polynomials"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_slides/lecture-algebra.html#example-second-degree",
+    "href": "notes/day1_algebra/day1_slides/lecture-algebra.html#example-second-degree",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12\\)=0 is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
   }
 ]
