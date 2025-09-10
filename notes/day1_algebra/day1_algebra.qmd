@@ -17,33 +17,9 @@ This unit covers basic introduction of algebra and how to use graphs to convey e
 
 -   Graphing
 
-<!--
--   Introductions
-
--   Team assignments
-
--   Math in environmental science
-
--   Algebra review
-    - Order of operations
-    - Solving first-degree equations
-    - Exponents
-    - Polynomials
-    - Fundamental theorem of algebra
-    - Quadratic formula
-    - Team exercises
-
--   Graphing
-    - Introduction
-    - Cartesian plane
-    - Linear equations
-    - Avereage vs. instantaneous rate of change
-    - Team exercises
--->
-
 ## Problem set
 
-[Download Copy of Problem Set]()
+[Click here to see the problem set.](problem_set_algebra.qmd)
 
 ## Problem set solutions
 
