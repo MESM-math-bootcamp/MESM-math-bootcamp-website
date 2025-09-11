@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Nathan Grimes">
+<meta name="dcterms.date" content="2024-09-19">
 
-<title>day2_limits – Bren Calculus Workshop</title>
+<title>Calculus Workshop – Bren Calculus Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -68,6 +70,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -116,7 +147,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/day2_limits/day2_limits.html">Day 2: Limits</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Calculus Workshop</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -145,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/day2_limits/day2_limits.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../notes/day2_limits/day2_limits.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Day 2: Limits</span></a>
   </div>
 </li>
@@ -172,50 +203,240 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#day-2-limits" id="toc-day-2-limits" class="nav-link active" data-scroll-target="#day-2-limits">Day 2: Limits</a>
-  <ul class="collapse">
-  <li><a href="#lecture-materials" id="toc-lecture-materials" class="nav-link" data-scroll-target="#lecture-materials">Lecture Materials</a></li>
-  <li><a href="#problem-set" id="toc-problem-set" class="nav-link" data-scroll-target="#problem-set">Problem Set</a></li>
-  <li><a href="#problem-set-solution" id="toc-problem-set-solution" class="nav-link" data-scroll-target="#problem-set-solution">Problem Set Solution</a></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Calculus Workshop</h1>
+<p class="subtitle lead">Limits and Derivatives Problem Set Solutions</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="day-2-limits" class="level1">
-<h1>Day 2: Limits</h1>
-<section id="lecture-materials" class="level2">
-<h2 class="anchored" data-anchor-id="lecture-materials">Lecture Materials</h2>
-<p><a href="../../notes/day2_limits/lecture-limits.html">Limits lecture slides</a></p>
-<p><strong>Contents</strong></p>
-<ul>
-<li><p>Limits conceptually</p></li>
-<li><p>How limits work</p></li>
-<li><p>Limits into derivatives</p></li>
-<li><p>Definition of derivatives</p></li>
-</ul>
-</section>
-<section id="problem-set" class="level2">
-<h2 class="anchored" data-anchor-id="problem-set">Problem Set</h2>
-<p><a href="../../notes/day2_limits/problem_set_limits.html">Download the Problem Set here</a></p>
-</section>
-<section id="problem-set-solution" class="level2">
-<h2 class="anchored" data-anchor-id="problem-set-solution">Problem Set Solution</h2>
-<p><a href="../../notes/day2_limits/solutions_problem_set_limits.html">Solutions</a></p>
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Nathan Grimes </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">September 19, 2024</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
 
 
-</section>
-</section>
+</header>
+
+
+<p><em>Answer the following questions to the best of your ability. Feel free to work with anyone in the cohort, though I would encourage attempting on your own first to make sure you fully understand the concepts.</em></p>
+<ol type="1">
+<li>Which of these graphs depict functions and which do not?</li>
+</ol>
+<p></p>
+<ol type="A">
+<li></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/v_test1.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="A">
+<li></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/v_test2.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="3" type="A">
+<li></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/v_test3.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="4" type="A">
+<li></li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/v_test4.png" class="img-fluid quarto-figure quarto-figure-center figure-img"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol start="2" type="1">
+<li>Find these limits:</li>
+</ol>
+<ol type="a">
+<li></li>
+</ol>
+<p><span class="math display">\[
+\lim_{x\to -2^-}\frac{4x}{x+2}
+\]</span></p>
+<p></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">x</td>
+<td style="text-align: right;">-2.5</td>
+<td style="text-align: right;">-2.1</td>
+<td style="text-align: right;">-2.01</td>
+<td style="text-align: right;">-2.001</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">y</td>
+<td style="text-align: right;">20.0</td>
+<td style="text-align: right;">84.0</td>
+<td style="text-align: right;">804.00</td>
+<td style="text-align: right;">8004.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="2" type="a">
+<li></li>
+</ol>
+<p><span class="math display">\[
+\lim_{x\to 3}2^x
+\]</span></p>
+<p></p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<table class="caption-top table table-sm table-striped small">
+<colgroup>
+<col style="width: 4%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 10%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td style="text-align: left;">x</td>
+<td style="text-align: right;">2.500000</td>
+<td style="text-align: right;">2.900000</td>
+<td style="text-align: right;">2.99000</td>
+<td style="text-align: right;">2.999000</td>
+<td style="text-align: right;">3.001000</td>
+<td style="text-align: right;">3.010000</td>
+<td style="text-align: right;">3.100000</td>
+<td style="text-align: right;">3.50000</td>
+</tr>
+<tr class="even">
+<td style="text-align: left;">y</td>
+<td style="text-align: right;">5.656854</td>
+<td style="text-align: right;">7.464264</td>
+<td style="text-align: right;">7.94474</td>
+<td style="text-align: right;">7.994457</td>
+<td style="text-align: right;">8.005547</td>
+<td style="text-align: right;">8.055644</td>
+<td style="text-align: right;">8.574188</td>
+<td style="text-align: right;">11.31371</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<ol start="3" type="1">
+<li>Determine the value of <span class="math inline">\(b\)</span> to make <span class="math inline">\(h(x)\)</span> continuous at <span class="math inline">\(x=-3\)</span>. Explain your reasoning using limits.</li>
+</ol>
+<p><span class="math display">\[
+h(x)=\begin{cases}
+bx^2-\frac{3}{2}x-5 &amp;x&lt;-3 \\
+-2x-9 &amp;x\ge-3
+\end{cases}
+\]</span></p>
+<p></p>
+<p><span class="math display">\[\begin{align}
+-2(-3)-9=-3\\
+b(-3)^2-\frac{3}{2}(-3)-5=-3\\
+9b+\frac{9}{2}=2\\
+9b=\frac{-5}{2}\\
+b=\frac{-5}{18}
+\end{align}\]</span></p>
+<ol start="4" type="1">
+<li>Calculate the derivative of the following functions then evaluate at the given x:</li>
+</ol>
+<ol type="a">
+<li><span class="math inline">\(2x^2+4\)</span> at <span class="math inline">\(x=-3\)</span></li>
+</ol>
+<p><span class="math display">\[\begin{align}
+2x^2+4\\
+\frac{d}{dx}=4x\\
+\frac{d}{dx(3)}=4(-3)=-12
+\end{align}\]</span></p>
+<ol start="2" type="a">
+<li><span class="math inline">\(x^4-5x^3+x-5\)</span> at <span class="math inline">\(x=5\)</span></li>
+</ol>
+<p><span class="math display">\[\begin{align}
+x^4-5x^3+x-5 \\
+\frac{d}{dx}=4x^3-15x^2+1 \\
+4(5)^3-15(5)^2+1=126
+\end{align}\]</span></p>
+<ol start="3" type="a">
+<li><span class="math inline">\(\frac{5}{x^2}\)</span> at <span class="math inline">\(x=2\)</span></li>
+</ol>
+<p><span class="math display">\[\begin{align}
+\frac{5}{x^2}\\
+\frac{d}{dx}=-10x^{-3}\\
+-10(2)^{-3}=1.25
+\end{align}\]</span></p>
+<div style="page-break-after: always;"></div>
+<ol start="5" type="1">
+<li>Find the slope of the tangent line in the graph below at <span class="math inline">\(x=2\)</span>. Describe in words how the slope of the tangent line represents the derivative. Could the tangent line match another point on the curve?</li>
+</ol>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="solutions_problem_set_limits_files/figure-html/unnamed-chunk-7-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<p></p>
+<p><span class="math display">\[
+slope=\frac{1--1}{2-1}=\frac{2}{1}
+\]</span></p>
+
+
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
