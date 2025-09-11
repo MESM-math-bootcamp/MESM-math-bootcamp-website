@@ -1,1 +1,23 @@
 # Day 2: Limits
+
+## Lecture Materials
+
+[Limits lecture slides](lecture-limits.qmd)
+
+**Contents**
+
+-   Limits conceptually
+
+-   How limits work
+
+-   Limits into derivatives
+
+-   Definition of derivatives
+
+## Problem Set
+
+[Download the Problem Set here](problem_set_limits.qmd)
+
+## Problem Set Solution
+
+[Solutions](solutions_problem_set_limits.qmd)

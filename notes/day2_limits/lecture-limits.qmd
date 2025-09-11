@@ -5,8 +5,7 @@ format:
     slide-number: true
     show-slide-number: print
     theme:
-     - ucsb-media.scss
-    logo: img/bren-logo.png
+     - ../../ucsb-media.scss    
 embed-resources: true
 ---
 
@@ -18,112 +17,139 @@ embed-resources: true
 
 <hr class="hr-teal">
 
-[Nathaniel Grimes]{.body-text-l .center-text .blue-text}
+[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .blue-text}
 
 [Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
 
+<br>
+
+<br>
+
 [**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
 
+<br>
+
+*Materials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.*
+
+<!--------------------------------------------------------------------------->
 ## {#tr data-menu-title="Team Review"}
 
 [Team Review]{.slide-title}
+
+<hr>
 
 - How did everyone feel about the problem set?
 
 - Any questions?
 
-- Discuss with Team
+- Discuss with study partner
 
-## {#mind data-menu-title="Mind Blower"}
+## {#fun-bake data-menu-title="Functions are like baking recipes"}
 
-[Disclaimer]{.slide-title}
-
-<hr>
-
-```{r out.width="55%",fig.align='center'}
-knitr::include_graphics("https://media.giphy.com/media/lXu72d4iKwqek/giphy.gif")
-```
-
-
-## {#fun-bake data-menu-title="Functions are like baking receipes"}
-
-[Functions are like baking receipes]{.slide-title}
+[Functions are like baking recipes]{.slide-title}
 
 <hr>
 
 ::::{.columns}
 :::{.column width="50%"}
 
-- Assemble all your ingredients (independent variables like $x_1$, $x_2$)
+1. Assemble all your ingredients.
 
-- Follow the instructions to mix, bake, and decorate (Instructions of function)
+  In a function, these are the independent variables like $x$.
 
-- End up with final product ($f(x)$)
+2. Follow the instructions to mix, bake, and decorate 
 
-Typically we use the notation $f(x)=x$, but we can always use different representations like $g(x)=x$ or $y=x$
+  These are the mathematical instructions in the function about how to manipulate the independent variables.
+
+3. End up with final product! 
+
+  This is the ouput $f(x)$ or dependent variable.
+
+  <br>
+
+Typically we use the notation $f(x)=x$, but we can always use different representations like $g(x)=x$ or $y=x$.
 :::
 :::{.column width="50%"}
 
 ```{r out.withd"50%"}
-knitr::include_graphics("img/cake.png")
+knitr::include_graphics("images/cake.png")
 ```
 
 :::
 ::::
 
-## {#func-prop data-menu-title="Properties of a function"}
+<!--------------------------------------------------------------------------->
 
-[Properties of functions]{.slide-title}
+## {#function-definition data-menu-title="What is a function?"}
 
-<hr>
-
-**For each combination of independent variables, there is exactly one value of the dependent variable.**
-
-- $f(1)\ne\{2,3\}$ i.e. if I put 1 into the function I can't have both 2 and 3 come out
-
-- Vertical line test
-
-Functions can be continuous or discontinuous
-
-- Continuous: For every value of $x$, $f(x)$ returns a number
-
-- Discontinuous: Parts are undefined
-
-## {#fun-q data-menu-title="Are these functions?"}
-
-[Are these functions]{.slide-title}
+[What is a function? ]{.slide-title}
 
 <hr>
+
+**For each combination of independent variables, there is exactly one (and only one) value of the dependent variable.**
+
+<br>
+
+**Example**
+
+A function $f(x)$ cannot return two values for $x=1$: $f(1)\ne\{2,3\}$
+
+<br>
+
+**Vertical line test**
+
+If you run a vertical line perpendicular to the $x$-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of $x$. 
+
+<br>
+
+. . .
+
+🤔 [Are these functions?]{style="color:green;"}
 
 ::::{.columns}
 :::{.column width="33%"}
 ```{r, out.width="220%"}
-knitr::include_graphics("img/dsqrt.PNG")
+knitr::include_graphics("images/dsqrt.PNG")
 ```
 
 :::
 :::{.column width="33%"}
 ```{r, out.width="220%"}
-knitr::include_graphics("img/para.PNG")
+knitr::include_graphics("images/para.PNG")
 ```
 :::
 :::{.column width="33%"}
 ```{r out.width="220%"}
-knitr::include_graphics("img/circle.png")
+knitr::include_graphics("images/circle.png")
 ```
 :::
 ::::
 
-## {#func-con data-menu-title="Continuous and Discontinuous Functions"}
+<!--------------------------------------------------------------------------->
+
+## {#continuity data-menu-title="Continuity"}
+[Continuity]{.slide-title}
+
+<hr>
+
+Intuitively, a function is **continuous** if there are no 'breaks' in the graph of the function. This means you  are able to draw the whole graph without lifting your pencil. 
+
+To define it formally we need to understnad limits.
+
+<br>
+
+A function is **discontinuous** if it's not continuous! So there are 'breaks' or 'gaps' in its graph.
+
+<br>
 
 ::::{.columns}
 :::{.column width="50%"}
 :::{.center-text .body-text-xl .blue-text}
 **Continuous**
 :::
-```{r,fig.align='center',out.width="220%"}
+```{r,fig.align='center',out.width="100%"}
 
-knitr::include_graphics("img/cont.png")
+knitr::include_graphics("images/cont.png")
 ```
 :::
 :::{.column width="50%"}
@@ -131,16 +157,17 @@ knitr::include_graphics("img/cont.png")
 :::{.center-text .body-text-xl .blue-text}
 **Discontinuous**
 :::
-```{r fig.align='center',out.width="70%"}
-knitr::include_graphics("img/discont.png")
-```
-
 ```{r fig.align='center',out.width="60%"}
-knitr::include_graphics("img/tan.png")
+knitr::include_graphics("images/discont.png")
 ```
 
+```{r fig.align='center',out.width="50%"}
+knitr::include_graphics("images/tan.png")
+```
 :::
 ::::
+
+<!--------------------------------------------------------------------------->
 
 ## {#limits data-menu-title="Limits"}
 
@@ -148,56 +175,88 @@ knitr::include_graphics("img/tan.png")
 
 <hr>
 
-**Definition:**
+**Definition**
 
-*The value a function approaches as the input approaches a specific value*
+We say a number $L$ is the limit of a function $f(x)$ as its variable $x$ approaches a number $c$, if the function's output values $f(x)$ approach $L$ when $x$ get closer to $c$. 
+
+<br>
+
+We write this symbolically as:
 
 $$
 \large
 \lim_{x\to c} f(x)=L
 $$
 
-Verbally:
+<br>
 
-"The limit of the function $f(x)$ as $x$ approaches the value $c$ is $L$"
+We read this as: "The limit of $f(x)$ as $x$ approaches $c$ is $L$."
 
+<!--------------------------------------------------------------------------->
 
 ## {#lim-ex data-menu-title="Limit Example"}
 
-[Start with an example]{.slide-title}
+[Example: numerical]{.slide-title}
 
 <hr>
 
+What is the limit of $f(x)=2x^2-4$ as $x$ approaches 2?
 
-- What is the limit of $f(x)=2x^2-4$ as $x$ approaches 2?
+We need to examine the values of $f(x)$ as $x$ gets closer to 2 from both sides.
 
-:::{.incremental}
-- Strategy to solve: $Evaluate f(x)$ at $x$ getting closer and closer to 2
+<br>
 
-
-- Quick sanity check, what should $f(2)=?$
-
-
-- $f(2)=4$
-
-:::
-
-## {#lim-excon data-menu-title="Limit continued"}
+. . . 
 
 ```{r fig.align='center',out.width="90%"}
-knitr::include_graphics("img/lim4.PNG")
+knitr::include_graphics("images/lim4.PNG")
 ```
 
-From both directions it looks like $f(x)$ converges to 4
+. . .
+
+From both directions it looks like $f(x)$ converges to 4.
+
+So, we say that "The limit of $2x^2-4$ as $x$ approaches 2 is 4" and we can write it like this:
 
 $$
-\lim_{x\to c}(2x^2-4)=4
+\lim_{x\to 2}(2x^2-4)=4
 $$
+
+
+<!--------------------------------------------------------------------------->
 
 
 ## {#limit-graph-sol data-menu-title="Graphical Solution"}
 
-[Graphical Solution]{.slide-title}
+[Example: graph]{.slide-title}
+
+<hr>
+
+What is the limit of $f(x)=2x^2-4$ as $x$ approaches 2?
+
+```{r fig.align='center',out.width="200%"}
+knitr::include_graphics("images/lim_graph_1.PNG")
+```
+
+From both directions it looks like $f(x)$ converges to 4.
+
+So, $\lim_{x\to 2}(2x^2-4)=4$.
+
+
+<!--------------------------------------------------------------------------->
+
+
+## {#continuity-revisited data-menu-title="Continuity revisited"}
+
+[Continuity revisited]{.slide-title}
+
+<!--
+
+- Quick sanity check, what should $f(2)=?$
+
+- $f(2)=4$
+
+-->
 
 <hr>
 
@@ -211,11 +270,15 @@ $$
 :::
 :::{.column width="50%"}
 ```{r fig.align='center',out.width="150%"}
-knitr::include_graphics("img/lim_graph_1.PNG")
+knitr::include_graphics("images/lim_graph_1.PNG")
 ```
 
 :::
 ::::
+
+
+<!--------------------------------------------------------------------------->
+
 
 
 ## {#lim-discon data-menu-title="What happens with discontinuous functions"}
@@ -234,7 +297,7 @@ Hint: Start very close to 2 like 1.9 and 2.1
 
 :::{.fragment .fade-in}
 ```{r fig.align='center',out.width="90%"}
-knitr::include_graphics("img/limx2.PNG")
+knitr::include_graphics("images/limx2.PNG")
 ```
 :::
 
@@ -256,7 +319,7 @@ knitr::include_graphics("img/limx2.PNG")
 :::{.fragment .fade-in}
 
 ```{r fig.align='center',out.width="50%"}
-knitr::include_graphics("img/limit.gif")
+knitr::include_graphics("images/limit.gif")
 ```
 :::
 
@@ -267,7 +330,7 @@ knitr::include_graphics("img/limit.gif")
 <hr>
 
 ```{r fig.align='center',out.width="40%"}
-knitr::include_graphics("img/lim_graph_2.PNG")
+knitr::include_graphics("images/lim_graph_2.PNG")
 ```
 
 Technically the limit is "Undefined", because it does approach a finite value. Does not exist happens when the limits spiral off to infinity in both directions (tan graph)
@@ -285,7 +348,7 @@ Technically the limit is "Undefined", because it does approach a finite value. D
 :::{.fragment .fade-in}
 
 ```{r fig.align='center',out.width="50%"}
-knitr::include_graphics("img/lim3.PNG")
+knitr::include_graphics("images/lim3.PNG")
 ```
 
 :::
@@ -296,7 +359,7 @@ knitr::include_graphics("img/lim3.PNG")
 :::{.column width="50%"}
 
 ```{r fig.align='center',out.width="70%"}
-knitr::include_graphics("img/lim_graph_3.png")
+knitr::include_graphics("images/lim_graph_3.png")
 ```
 
 :::
@@ -328,7 +391,7 @@ Part 1:
 
 A) 
 ```{r fig.align='center',out.width="100%"}
-knitr::include_graphics("img/lim_g_a.PNG")
+knitr::include_graphics("images/lim_g_a.PNG")
 ```
 
 1) 
@@ -343,7 +406,7 @@ $$
 
 B)
 ```{r fig.align='center',out.width="100%"}
-knitr::include_graphics("img/lim_g_b.PNG")
+knitr::include_graphics("images/lim_g_b.PNG")
 ```
 
 2)
@@ -358,7 +421,7 @@ $$
 C)
 
 ```{r fig.align='center',out.width="100%"}
-knitr::include_graphics("img/lim_g_c.PNG")
+knitr::include_graphics("images/lim_g_c.PNG")
 ```
 
 
@@ -406,7 +469,7 @@ Part 2:
 Recall average rate of change and instantaneous
 
 ```{r echo=FALSE,fig.align='center',out.width="50%"}
-knitr::include_graphics("img/trex.PNG")
+knitr::include_graphics("images/trex.PNG")
 ```
 
 Taking the average rate of change to a set limit will eventually converge to the instantaneous. 
@@ -555,7 +618,7 @@ p5
 What if we set $\Delta x=0$? Then we would have a slope line that only touches our function at exactly $x$.
 
 ```{r,fig.align='center'}
-knitr::include_graphics("img/tangent_line.png")
+knitr::include_graphics("images/tangent_line.png")
 ```
 
 ***These are called tangent lines***
@@ -646,7 +709,7 @@ df %>%
 <hr>
 
 ```{r, fig.align='center',out.width="75%"}
-knitr::include_graphics("img/loa.PNG")
+knitr::include_graphics("images/loa.PNG")
 ```
 
 ## {#envs-change data-menu-title="Enviromental Science is the Study of Change"}
@@ -657,7 +720,7 @@ knitr::include_graphics("img/loa.PNG")
 
 
 ```{r, fig.align='center',out.width="75%"}
-knitr::include_graphics("img/glacier.jpg")
+knitr::include_graphics("images/glacier.jpg")
 ```
 
 ## {#envs-change2 data-menu-title="Enviromental Science is the Study of Change"}
@@ -667,7 +730,7 @@ knitr::include_graphics("img/glacier.jpg")
 <hr>
 
 ```{r, fig.align='center',out.width="75%"}
-knitr::include_graphics("img/energy.png")
+knitr::include_graphics("images/energy.png")
 ```
 
 ## {#envs-change3 data-menu-title="Enviromental Science is the Study of Change"}
@@ -677,7 +740,7 @@ knitr::include_graphics("img/energy.png")
 <hr>
 
 ```{r, fig.align='center',out.width="75%"}
-knitr::include_graphics("img/bait.jpeg")
+knitr::include_graphics("images/bait.jpeg")
 ```
 
 

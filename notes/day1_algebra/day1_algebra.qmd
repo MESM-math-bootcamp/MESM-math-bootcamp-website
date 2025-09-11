@@ -9,8 +9,6 @@ This unit covers basic introduction of algebra and how to use graphs to convey e
 **Contents**
 -   Introductions
 
--   Team assignments
-
 -   Math in environmental science
 
 -   Algebra review

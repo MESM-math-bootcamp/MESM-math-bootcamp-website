@@ -28,7 +28,7 @@ format:
 
 <br>
 
-*Mterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.*
+*Materials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.*
 
 
 ## {#survey data-menu-title="Please fill out this survery"}
