@@ -207,32 +207,39 @@
     "text": "Continuity revisited\n\n\n\nA function \\(f(x)\\) is continuous at \\(x=c\\) if\n\\[\n\\lim_{x\\to c}f(x)=f(c).\n\\]\nSo, if a function is continuous, we just need to evaluate the function to obtain the limit.\n\nExample\n\\(f(x) = 2x^2-4\\) is a continuous function. So we can obtain the limit as \\(x\\to 2\\) by evaluating the function\n\\[\\lim_{x\\to 2}(2x^2-4)= f(2) = 4.\\]"
   },
   {
+    "objectID": "notes/day2_limits/lecture-limits.html#lim-defined",
+    "href": "notes/day2_limits/lecture-limits.html#lim-defined",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Limit at a discontinuity\n\n\nDiscontinuous functions can still have limits at a discontinuity.\n\nExample\nLet \\[\nf(x) = x+1 , \\text{ if x $\\neq$ 2}\n\\]\n✏️ Draw a graph of \\(f(x)\\).\n✏️ Try calculating \\(\\lim_{x\\to 2} f(x)\\).\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe value \\(f(2)\\) may not exist, but we can still find a limit because \\(f(x)\\) consistently approaches 3 from both directions as \\(x\\to 2\\)."
+  },
+  {
     "objectID": "notes/day2_limits/lecture-limits.html#lim-discon",
     "href": "notes/day2_limits/lecture-limits.html#lim-discon",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "What happens with discontinuous functions?\n\nExample\nThe function \\(|x|\\) is the absolute value function. It is such that\n\\[\n|x| =\n\\begin{cases}\nx, & \\text{ if } x\\geq 0 \\\\\n-x, & \\text{ if } x &lt;0\n\\end{cases}\n.\n\\]\n\n\n✏️ Is the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\n✏️ Try calculating: \\[\n\\lim_{x\\to 2}\\frac{|x-2|}{x-2}.\n\\]\n\nHint: Try to do numerical approximations or draw the graph of this function."
+    "text": "No limit at a discontinuity\n\n\nBut other times discontinuous functions don’t have a limit at a discontinuity.\n\nExample\nThe function \\(|x|\\) is the absolute value function. It is such that\n\\[\n|x| =\n\\begin{cases}\nx, & \\text{ if } x\\geq 0 \\\\\n-x, & \\text{ if } x &lt;0\n\\end{cases}\n.\n\\]\n\n\n✏️ Is the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\n✏️ Try calculating: \\[\n\\lim_{x\\to 2}\\frac{|x-2|}{x-2}.\n\\]\n\nHint: Try to do numerical approximations or draw the graph of this function."
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#mean-girls",
     "href": "notes/day2_limits/lecture-limits.html#mean-girls",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example\n\nIs the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\nThis function is not even defined at \\(x=2\\) since it would require us to divide by zero, which is undefined.\n\n\nTry calculating \\(\\lim_{x\\to 2}\\frac{|x-2|}{x-2}\\).\nLet’s investigate:"
+    "text": "No limit at a discontinuity\n\nIs the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\nThis function is not even defined at \\(x=2\\) since it would require us to divide by zero, which is undefined.\n\n\nTry calculating \\(\\lim_{x\\to 2}\\frac{|x-2|}{x-2}\\).\nLet’s investigate:"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#graph",
     "href": "notes/day2_limits/lecture-limits.html#graph",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example\n\nThe function \\(\\frac{|x-2|}{x-2}\\) approaches different values from either side at \\(x=2\\).\n\n\n\nTherefore…"
+    "text": "No limit at a discontinuity\n\nThe function \\(\\frac{|x-2|}{x-2}\\) approaches different values from either side at \\(x=2\\).\n\n\n\nTherefore…"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-defined",
-    "href": "notes/day2_limits/lecture-limits.html#lim-defined",
+    "objectID": "notes/day2_limits/lecture-limits.html#side-limits",
+    "href": "notes/day2_limits/lecture-limits.html#side-limits",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Defined limit at a discontinuity\n\n\nDiscontinuous functions can still have limits\n\nExample\nLet \\[\nf(x) = x+1 , \\text{ if x $\\neq$ 2}\n\\]\n✏️ Draw a graph of \\(f(x)\\).\n✏️ Try calculating \\(\\lim_{x\\to 2} f(x)\\).\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe value \\(f(2)\\) may not exist, but we can still find a limit because \\(f(x)\\) consistently approaches 3 from both directions as \\(x\\to 2\\)."
+    "text": "Side limits\n\nThough the function \\(f(x) = \\frac{|x-2|}{x-2}\\) had no limit at \\(x=2\\), it clearly was approaching certain values when we considered only values of \\(x\\) from one side or the other:\n\n\n\n\n\n\n\n\n\n\n\nIn this case we say that\n\n\n\\[\n\\lim_{x\\to 2^-} f(x) = -1\n\\]\nThe limit of \\(f(x)\\) as \\(x\\) approaches 2 from the left is -1.\n\nNotice the small - subscript on the 2.\n\n\\[\n\\lim_{x\\to 2^+} f(x) = 1\n\\]\nThe limit of \\(f(x)\\) as \\(x\\) approaches 2 from the right is 1.\n\nNotice the small + subscript on the 2."
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#ta",

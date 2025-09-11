@@ -285,105 +285,13 @@ knitr::include_graphics("images/lim_graph_1.PNG")
 
 <!--------------------------------------------------------------------------->
 
-
-
-## {#lim-discon data-menu-title="What happens with discontinuous functions"}
-
-[What happens with discontinuous functions?]{.slide-title}
-
-<hr>
-
-**Example**
-
-The function $|x|$ is the **absolute value function**. It is such that
-
-$$
-|x| = 
-\begin{cases}
-x, & \text{ if } x\geq 0 \\
--x, & \text{ if } x <0
-\end{cases}
-.
-$$
-
-. . .
-
-<br>
-
-✏️ [Is the function $f(x) = \frac{|x-2|}{x-2}$ continuous at $x=2$?]{style="color:green;"}
-
-
-✏️ [Try calculating:]{style="color:green;"}
-[
-$$
-\lim_{x\to 2}\frac{|x-2|}{x-2}.
-$$
-]{style="color:green;"}
-
-<br>
-
-Hint: Try to do numerical approximations or draw the graph of this function. 
-
-
-## {#mean-girls data-menu-title="We broke the universe"}
-
-[Example]{.slide-title}
-
-<hr>
-
-*Is the function $f(x) = \frac{|x-2|}{x-2}$ continuous at $x=2$?*
-
-This function is not even defined at $x=2$ since it would require us to divide by zero, which is undefined.
-
-. . . 
-
-<br>
-
-*Try calculating $\lim_{x\to 2}\frac{|x-2|}{x-2}$.*
-
-Let's investigate:
-
-```{r fig.align='center',out.width="60%"}
-knitr::include_graphics("images/limx2.PNG")
-```
-
-. . .
-
-```{r fig.align='center',out.width="35%"}
-knitr::include_graphics("images/lim_graph_2.PNG")
-```
-
-
-## {#graph data-menu-title="Clearer on the graph"}
-
-[Example]{.slide-title}
-
-<hr>
-
-The function $\frac{|x-2|}{x-2}$ approaches different values from either side at $x=2$.
-
-<div style="display:flex; justify-content:center;">
-  <img src="images/lim_graph_2.PNG" style="width:80%;">
-</div>
-
-Therefore...
-
-. . .
-
-<div style="display:flex; justify-content:center;">
-  <img src="images/limit.gif" style="width:100%;">
-</div>
-
-
-
-
 ## {#lim-defined data-menu-title="Defined limit at an undefined point"}
 
-[Defined limit at a discontinuity]{.slide-title}
+[Limit at a discontinuity]{.slide-title}
 
 <hr>
 
-- Discontinuous functions can still have limits
+- Discontinuous functions can still have limits at a discontinuity.
 
 **Example**
 
@@ -423,6 +331,161 @@ knitr::include_graphics("images/lim3.PNG")
 :::
 
 
+<!----------------------------------------------------------------------->
+
+## {#lim-discon data-menu-title="What happens with discontinuous functions"}
+
+[No limit at a discontinuity]{.slide-title}
+
+<hr>
+- But other times discontinuous functions don't have a limit at a discontinuity.
+
+**Example**
+
+The function $|x|$ is the **absolute value function**. It is such that
+
+$$
+|x| = 
+\begin{cases}
+x, & \text{ if } x\geq 0 \\
+-x, & \text{ if } x <0
+\end{cases}
+.
+$$
+
+. . .
+
+<br>
+
+✏️ [Is the function $f(x) = \frac{|x-2|}{x-2}$ continuous at $x=2$?]{style="color:green;"}
+
+
+✏️ [Try calculating:]{style="color:green;"}
+[
+$$
+\lim_{x\to 2}\frac{|x-2|}{x-2}.
+$$
+]{style="color:green;"}
+
+<br>
+
+Hint: Try to do numerical approximations or draw the graph of this function. 
+
+
+## {#mean-girls data-menu-title="We broke the universe"}
+
+[No limit at a discontinuity]{.slide-title}
+
+<hr>
+
+*Is the function $f(x) = \frac{|x-2|}{x-2}$ continuous at $x=2$?*
+
+This function is not even defined at $x=2$ since it would require us to divide by zero, which is undefined.
+
+. . . 
+
+<br>
+
+*Try calculating $\lim_{x\to 2}\frac{|x-2|}{x-2}$.*
+
+Let's investigate:
+
+```{r fig.align='center',out.width="60%"}
+knitr::include_graphics("images/limx2.PNG")
+```
+
+. . .
+
+```{r fig.align='center',out.width="35%"}
+knitr::include_graphics("images/lim_graph_2.PNG")
+```
+
+
+## {#graph data-menu-title="Clearer on the graph"}
+
+[No limit at a discontinuity]{.slide-title}
+
+<hr>
+
+The function $\frac{|x-2|}{x-2}$ approaches different values from either side at $x=2$.
+
+<div style="display:flex; justify-content:center;">
+  <img src="images/lim_graph_2.PNG" style="width:80%;">
+</div>
+
+Therefore...
+
+. . .
+
+<div style="display:flex; justify-content:center;">
+  <img src="images/limit.gif" style="width:100%;">
+</div>
+
+
+
+<!----------------------------------------------------------------------->
+## {#side-limits data-menu-title="Side limits"}
+
+[Side limits]{.slide-title}
+
+<hr>
+
+Though the function $f(x) = \frac{|x-2|}{x-2}$ had no limit at $x=2$, it clearly was approaching certain values when we considered only values of $x$ from one side or the other: 
+
+:::: {.columns}
+
+::: {.column width="65%"}
+<div style="display:flex; justify-content:center;">
+  <img src="images/side_limits_table.PNG" style="width:80%;">
+</div>
+:::
+
+::: {.column width="35%"}
+<div style="display:flex; justify-content:center;">
+  <img src="images/lim_graph_2.PNG" style="width:90%;">
+</div>
+:::
+
+::::
+
+. . .
+
+In this case we say that
+
+:::: {.columns}
+
+::: {.column width="50%"}
+$$
+\lim_{x\to 2^-} f(x) = -1
+$$
+
+The limit of $f(x)$ as $x$ approaches 2 **from the left** is -1. 
+
+<br>
+
+*Notice the small - subscript on the 2.*
+:::
+
+::: {.column width="50%"}
+
+$$
+\lim_{x\to 2^+} f(x) = 1
+$$
+
+The limit of $f(x)$ as $x$ approaches 2 **from the right** is 1. 
+
+<br>
+
+*Notice the small + subscript on the 2.*
+:::
+
+::::
+
+
+
+
+
+<!----------------------------------------------------------------------->
 ## {#ta data-menu-title=Team" background-color="#003660"}
 
 <div class="page-center">
