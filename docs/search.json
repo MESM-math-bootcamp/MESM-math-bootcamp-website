@@ -21,7 +21,7 @@
     "href": "notes/day1_algebra/day1_algebra.html",
     "title": "Day 1: Algebra",
     "section": "",
-    "text": "This unit covers basic introduction of algebra and how to use graphs to convey environmental science.\n\n\nAlgebra lecture slides\nContents - Introductions\n\nTeam assignments\nMath in environmental science\nAlgebra review\nGraphing\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
+    "text": "This unit covers basic introduction of algebra and how to use graphs to convey environmental science.\n\n\nAlgebra lecture slides\nContents - Introductions\n\nMath in environmental science\nAlgebra review\nGraphing\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
     "crumbs": [
       "Day 1: Algebra"
     ]
@@ -31,7 +31,7 @@
     "href": "notes/day1_algebra/day1_algebra.html#lecture-materials",
     "title": "Day 1: Algebra",
     "section": "",
-    "text": "Algebra lecture slides\nContents - Introductions\n\nTeam assignments\nMath in environmental science\nAlgebra review\nGraphing",
+    "text": "Algebra lecture slides\nContents - Introductions\n\nMath in environmental science\nAlgebra review\nGraphing",
     "crumbs": [
       "Day 1: Algebra"
     ]
@@ -69,6 +69,36 @@
     "title": "Day 2: Limits",
     "section": "",
     "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives\n\n\n\n\nDownload the Problem Set here\n\n\n\nSolutions",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html#lecture-materials",
+    "href": "notes/day2_limits/day2_limits.html#lecture-materials",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html#problem-set",
+    "href": "notes/day2_limits/day2_limits.html#problem-set",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Download the Problem Set here",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html#problem-set-solution",
+    "href": "notes/day2_limits/day2_limits.html#problem-set-solution",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Solutions",
     "crumbs": [
       "Day 2: Limits"
     ]
@@ -114,6 +144,272 @@
     ]
   },
   {
+    "objectID": "notes/day2_limits/lecture-limits.html#title-slide",
+    "href": "notes/day2_limits/lecture-limits.html#title-slide",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Limits and Intro to Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 11, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#tr",
+    "href": "notes/day2_limits/lecture-limits.html#tr",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Review\n\n\nHow did everyone feel about the problem set?\nAny questions?\nDiscuss with study partner"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#fun-bake",
+    "href": "notes/day2_limits/lecture-limits.html#fun-bake",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Functions are like baking recipes\n\n\n\n\nAssemble all your ingredients.\n\nIn a function, these are the independent variables like \\(x\\).\n\nFollow the instructions to mix, bake, and decorate\n\nThese are the mathematical instructions in the function about how to manipulate the independent variables.\n\nEnd up with final product!\n\nThis is the ouput \\(f(x)\\) or dependent variable.\n\nTypically we use the notation \\(f(x)=x\\), but we can always use different representations like \\(g(x)=x\\) or \\(y=x\\)."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#function-definition",
+    "href": "notes/day2_limits/lecture-limits.html#function-definition",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "What is a function?\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\n\nExample\nA function \\(f(x)\\) cannot return two values for \\(x=1\\): \\(f(1)\\ne\\{2,3\\}\\)\n\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\n\n🤔 Are these functions?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#continuity",
+    "href": "notes/day2_limits/lecture-limits.html#continuity",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Continuity\n\nIntuitively, a function is continuous if there are no ‘breaks’ in the graph of the function. This means you are able to draw the whole graph without lifting your pencil.\nTo define it formally we need to understand limits.\n\nA function is discontinuous if it’s not continuous! So there are ‘breaks’ or ‘gaps’ in its graph.\n\n\n\n\nContinuous\n\n\n\n\n\n\n\n\n\n\n\n\nDiscontinuous"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#limits",
+    "href": "notes/day2_limits/lecture-limits.html#limits",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Limits\n\nDefinition\nWe say a number \\(L\\) is the limit of a function \\(f(x)\\) as its variable \\(x\\) approaches a number \\(c\\), if the function’s output values \\(f(x)\\) approach \\(L\\) when \\(x\\) get closer to \\(c\\).\n\nWe write this symbolically as:\n\\[\n\\large\n\\lim_{x\\to c} f(x)=L\n\\]\n\nWe read this as: “The limit of \\(f(x)\\) as \\(x\\) approaches \\(c\\) is \\(L\\).”"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#lim-ex",
+    "href": "notes/day2_limits/lecture-limits.html#lim-ex",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example: numerical\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\nWe need to examine the values of \\(f(x)\\) as \\(x\\) gets closer to 2 from both sides.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, we say that “The limit of \\(2x^2-4\\) as \\(x\\) approaches 2 is 4” and we can write it like this:\n\\[\n\\lim_{x\\to 2}(2x^2-4)=4\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
+    "href": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example: graph\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, \\(\\lim_{x\\to 2}(2x^2-4)=4\\)."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#continuity-revisited",
+    "href": "notes/day2_limits/lecture-limits.html#continuity-revisited",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Continuity revisited\n\n\n\nA function \\(f(x)\\) is continuous at \\(x=c\\) if\n\\[\n\\lim_{x\\to c}f(x)=f(c).\n\\]\nSo, if a function is continuous, we just need to evaluate the function to obtain the limit.\n\nExample\n\\(f(x) = 2x^2-4\\) is a continuous function. So we can obtain the limit as \\(x\\to 2\\) by evaluating the function\n\\[\\lim_{x\\to 2}(2x^2-4)= f(2) = 4.\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#lim-discon",
+    "href": "notes/day2_limits/lecture-limits.html#lim-discon",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "What happens with discontinuous functions?\n\nExample\nThe function \\(|x|\\) is the absolute value function. It is such that\n\\[\n|x| =\n\\begin{cases}\nx, & \\text{ if } x\\geq 0 \\\\\n-x, & \\text{ if } x &lt;0\n\\end{cases}\n.\n\\]\n\n\n✏️ Is the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\n✏️ Try calculating: \\[\n\\lim_{x\\to 2}\\frac{|x-2|}{x-2}.\n\\]\n\nHint: Try to do numerical approximations or draw the graph of this function."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#mean-girls",
+    "href": "notes/day2_limits/lecture-limits.html#mean-girls",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example\n\nIs the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\nThis function is not even defined at \\(x=2\\) since it would require us to divide by zero, which is undefined.\n\n\nTry calculating \\(\\lim_{x\\to 2}\\frac{|x-2|}{x-2}\\).\nLet’s investigate:"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#graph",
+    "href": "notes/day2_limits/lecture-limits.html#graph",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example\n\nThe function \\(\\frac{|x-2|}{x-2}\\) approaches different values from either side at \\(x=2\\).\n\n\n\nTherefore…"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#lim-defined",
+    "href": "notes/day2_limits/lecture-limits.html#lim-defined",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Defined limit at a discontinuity\n\n\nDiscontinuous functions can still have limits\n\nExample\nLet \\[\nf(x) = x+1 , \\text{ if x $\\neq$ 2}\n\\]\n✏️ Draw a graph of \\(f(x)\\).\n✏️ Try calculating \\(\\lim_{x\\to 2} f(x)\\).\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe value \\(f(2)\\) may not exist, but we can still find a limit because \\(f(x)\\) consistently approaches 3 from both directions as \\(x\\to 2\\)."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#ta",
+    "href": "notes/day2_limits/lecture-limits.html#ta",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-1",
+    "href": "notes/day2_limits/lecture-limits.html#ta-1-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Task 1: Match the graphs (a,b,c) with the limits (1,2,3).\n\nPart 1:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to3}g(x)=0\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to-4}g(x)=3\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3} g(x)= \\text{DNE}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-2",
+    "href": "notes/day2_limits/lecture-limits.html#ta-1-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Part 2:\n\n2) Can you think of examples where discontinuous functions might exist in environmental science?\n3) As a team, draw graphs to exemplify two of these statements:\n\n\\(\\lim_{x\\to 4^-} f(x)\\) and \\(\\lim_{x\\to 4^+}f(x)\\) are both infinite\n\\(\\lim_{x\\to 3} f(x)=2\\), but \\(f(3)=0\\)\n\\(\\lim_{x\\to 5^-} f(x)=4\\) and \\(\\lim_{x\\to 5^+} f(x)=2\\)\n\\(\\lim_{x\\to -3} f(x)=-5\\) but \\(f(-3)=-5\\)"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#intro-derv",
+    "href": "notes/day2_limits/lecture-limits.html#intro-derv",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Introduction to Derivatives"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#alltogether",
+    "href": "notes/day2_limits/lecture-limits.html#alltogether",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Putting it all together\n\nRecall average rate of change and instantaneous\n\nTaking the average rate of change to a set limit will eventually converge to the instantaneous."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-1",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Walk Through Example"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-2",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Walk Through Example"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-3",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Walk Through Example"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-4",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-4",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Walk Through Example"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-5",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-5",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Walk Through Example"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-6",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-6",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Walkthrough"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#tangent",
+    "href": "notes/day2_limits/lecture-limits.html#tangent",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Tangent Lines\n\nWhat if we set \\(\\Delta x=0\\)? Then we would have a slope line that only touches our function at exactly \\(x\\).\n\nThese are called tangent lines"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#ex-math",
+    "href": "notes/day2_limits/lecture-limits.html#ex-math",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Put our example in math notation\n\n\\[\\text{slope}=\\frac{y_2-y_1}{x_2-x_1}\\]\nChoose a point along the function \\((x,f(x))\\)\nChoose a different point on the function \\(\\Delta x\\) away \\((x+\\Delta x,f(x+\\Delta x))\\)\nAdd these into the slope equation\n\\[\n\\text{slope}=\\frac{f(x+\\Delta x)-f(x)}{(x+\\Delta x) -x}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#derivative-def",
+    "href": "notes/day2_limits/lecture-limits.html#derivative-def",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Derivative Definition\n\n\\[\n\\large\nf'(x)=\\lim_{\\Delta x \\to 0}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\]\n\n\nMost common notation\n\n\\[\n\\large\nf'(x)\\text{, or }\\frac{dy}{dx}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-func",
+    "href": "notes/day2_limits/lecture-limits.html#diff-func",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Not all functions are differentiable\n\n\n\n\nAll differentiable functions are continuous, but not all continuous functions are differentiable\nThe absolute value function is one example \\(y=|x|\\)"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#calc",
+    "href": "notes/day2_limits/lecture-limits.html#calc",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Calculus and Derivatives are the study of change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#envs-change",
+    "href": "notes/day2_limits/lecture-limits.html#envs-change",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Environmental Science is also a study of change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#envs-change2",
+    "href": "notes/day2_limits/lecture-limits.html#envs-change2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Environmental Science is also a study of change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#envs-change3",
+    "href": "notes/day2_limits/lecture-limits.html#envs-change3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Environmental Science is also a study of change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for Differentiation\n\n\nConstant Rule\n\n\nIf \\(f(x)\\) is contant, then for all \\(x\\), \\(f'(x)=0\\)\n\n\\[\n\\begin{align}\n&y=a &\\frac{dy}{dx}=0\n\\end{align}\n\\] \n\nPower Rule\n\n\\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-examples",
+    "href": "notes/day2_limits/lecture-limits.html#diff-examples",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Examples\n\n\\[\n\\begin{align}\n&y=100 & &y=5x^5 & &y=\\frac{1}{x^2}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#sum-diff",
+    "href": "notes/day2_limits/lecture-limits.html#sum-diff",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for Differentiation\n\n\nSum and Difference Rules\n\n\\[\n\\begin{align}\n\\frac{d}{dx}&=[f(x)+g(x)]=f'(x)+g'(x) \\\\\n\\frac{d}{dx}&=[f(x)-g(x)]=f'(x)-g'(x)\n\\end{align}\n\\] \nLooks really scary. All it says, if the function has pieces that are added or subtracted you can take the derivative of each individual piece."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#sum-ex",
+    "href": "notes/day2_limits/lecture-limits.html#sum-ex",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example\n\n\\[\n\\begin{align}\n&y=x^2+8x+4 & &y=x^3-x^2+x-15\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#ta-2",
+    "href": "notes/day2_limits/lecture-limits.html#ta-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#gta2-1",
+    "href": "notes/day2_limits/lecture-limits.html#gta2-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "As a team, list 5 fields of environmental science where studying the rate of change and derivatives would be important\n\n\n\nWhich rules should you use to take these derivatives?\n\n\\[\n\\begin{align}\n\\text{A)  }& f(x)=3x^4 &\\text{B) }  y=4x^2+3x-16\n\\end{align}\n\\]\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=y=7x+4 & &\\text{C) }g(y)=\\sqrt{y}\n\\end{align}\n\\]\n\nDiscuss why derivatives need continuity. It might help to think about why some continuous functions don’t have derivatives."
+  },
+  {
     "objectID": "notes/day5_differential_equations/day5_differential_equations.html",
     "href": "notes/day5_differential_equations/day5_differential_equations.html",
     "title": "Day 5: Differential Equations",
@@ -135,7 +431,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 10, 2025\n\nMterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 11, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#survey",
@@ -523,337 +819,6 @@
     "text": "Day 3: Derivatives",
     "crumbs": [
       "Day 3: Derivatives"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#title-slide",
-    "href": "notes/day2_limits/lecture-limits.html#title-slide",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Limits and Intro to Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 10, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#tr",
-    "href": "notes/day2_limits/lecture-limits.html#tr",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Team Review\n\n\nHow did everyone feel about the problem set?\nAny questions?\nDiscuss with study partner"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#mind",
-    "href": "notes/day2_limits/lecture-limits.html#mind",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Disclaimer"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#fun-bake",
-    "href": "notes/day2_limits/lecture-limits.html#fun-bake",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Functions are like baking recipes\n\n\n\n\nAssemble all your ingredients.\n\nIn a function, these are the independent variables like \\(x\\).\n\nFollow the instructions to mix, bake, and decorate\n\nThese are the mathematical instructions in the function about how to manipulate the independent variables.\n\nEnd up with final product!\n\nThis is the ouput \\(f(x)\\) or dependent variable.\n\nTypically we use the notation \\(f(x)=x\\), but we can always use different representations like \\(g(x)=x\\) or \\(y=x\\)."
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#func-prop",
-    "href": "notes/day2_limits/lecture-limits.html#func-prop",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Properties of functions\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\nExmample\nA function \\(f(x)\\) cannot return two values for \\(x=1\\): \\(f(1)\\ne\\{2,3\\}\\)\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\nFunctions can be continuous or discontinuous\n\nContinuous: For every value of \\(x\\), \\(f(x)\\) returns a number\nDiscontinuous: Parts are undefined"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#fun-q",
-    "href": "notes/day2_limits/lecture-limits.html#fun-q",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Are these functions"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#func-con",
-    "href": "notes/day2_limits/lecture-limits.html#func-con",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Continuous\n\n\n\n\n\n\n\n\n\n\n\n\nDiscontinuous"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#limits",
-    "href": "notes/day2_limits/lecture-limits.html#limits",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Limits\n\nDefinition\nWe say a number \\(L\\) is the limit of a function \\(f(x)\\) as its variable \\(x\\) approaches a number \\(c\\), if the function’s output values \\(f(x)\\) approach \\(L\\) when \\(x\\) get closer to \\(c\\).\n\nWe write this symbolically as:\n\\[\n\\large\n\\lim_{x\\to c} f(x)=L\n\\]\n\nWe read this as: “The limit of \\(f(x)\\) as \\(x\\) approaches \\(c\\) is \\(L\\).”"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-ex",
-    "href": "notes/day2_limits/lecture-limits.html#lim-ex",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Example: numerical\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\nWe need to examine the values of \\(f(x)\\) as \\(x\\) gets closer to 2 from both sides.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, we say that “The limit of \\(2x^2-4\\) as \\(x\\) approaches 2 is 4” and we can write it like this:\n\\[\n\\lim_{x\\to 2}(2x^2-4)=4\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-excon",
-    "href": "notes/day2_limits/lecture-limits.html#lim-excon",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "From both directions it looks like \\(f(x)\\) converges to 4.\n\\[\n\\lim_{x\\to c}(2x^2-4)=4\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
-    "href": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Example: graph\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, \\(\\lim_{x\\to 2}(2x^2-4)=4\\)."
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-discon",
-    "href": "notes/day2_limits/lecture-limits.html#lim-discon",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "What happens with discontinuous functions?\n\nTry with your group the same approach for:\n\\[\n\\lim_{x\\to 2}f(x)=\\frac{|x-2|}{x-2}\n\\]\nHint: Start very close to 2 like 1.9 and 2.1"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#mean-girls",
-    "href": "notes/day2_limits/lecture-limits.html#mean-girls",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "We broke the universe\n\n\n\nDividing by zero is impossible\nThe function approaches different values from either side\nTherefore…"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#graph",
-    "href": "notes/day2_limits/lecture-limits.html#graph",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Clearer on a graph\n\n\nTechnically the limit is “Undefined”, because it does approach a finite value. Does not exist happens when the limits spiral off to infinity in both directions (tan graph)"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-defined",
-    "href": "notes/day2_limits/lecture-limits.html#lim-defined",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Defined Limit at an undefined point\n\n\nDiscontinuous functions can still have limits\nFind the limit of \\(f(x)=x+1,x\\ne 2\\) as x approaches 2\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\(x=2\\) may not exist, but we can still find a limit because it consistently approaches 3 from both directions"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta",
-    "href": "notes/day2_limits/lecture-limits.html#ta",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Team Assessment"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-1",
-    "href": "notes/day2_limits/lecture-limits.html#ta-1-1",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Work with your team to complete these task\n\nPart 1:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to3}g(x)=0\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to-4}g(x)=3\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3} g(x)= \\text{DNE}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-2",
-    "href": "notes/day2_limits/lecture-limits.html#ta-1-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Work with your team to complete these task\n\nPart 2:\n\n\nCan you think of examples where discontinuous functions might exist in environmental science?\nChoose as a team to draw an example of one of these statements:\n\n\n\\(\\lim_{x\\to 4^-} f(x)\\) and \\(\\lim_{x\\to 4^+}f(x)\\) are both infinite\n\\(\\lim_{x\\to 3} f(x)=2\\), but \\(f(3)=0\\)\n\\(\\lim_{x\\to 5^-} f(x)=4\\) and \\(\\lim_{x\\to 5^+} f(x)=2\\)\n\\(\\lim_{x\\to -3} f(x)=-5\\) but \\(f(-3)=-5\\)"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#intro-derv",
-    "href": "notes/day2_limits/lecture-limits.html#intro-derv",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Introduction to Derivatives"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#alltogether",
-    "href": "notes/day2_limits/lecture-limits.html#alltogether",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Putting it all together\n\nRecall average rate of change and instantaneous\n\nTaking the average rate of change to a set limit will eventually converge to the instantaneous."
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-1",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-1",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Walk Through Example"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-2",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Walk Through Example"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-3",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-3",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Walk Through Example"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-4",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-4",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Walk Through Example"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-5",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-5",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Walk Through Example"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-6",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-6",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Walkthrough"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#tangent",
-    "href": "notes/day2_limits/lecture-limits.html#tangent",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Tangent Lines\n\nWhat if we set \\(\\Delta x=0\\)? Then we would have a slope line that only touches our function at exactly \\(x\\).\n\nThese are called tangent lines"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#ex-math",
-    "href": "notes/day2_limits/lecture-limits.html#ex-math",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Put our example in math notation\n\n\\[\\text{slope}=\\frac{y_2-y_1}{x_2-x_1}\\]\nChoose a point along the function \\((x,f(x))\\)\nChoose a different point on the function \\(\\Delta x\\) away \\((x+\\Delta x,f(x+\\Delta x))\\)\nAdd these into the slope equation\n\\[\n\\text{slope}=\\frac{f(x+\\Delta x)-f(x)}{(x+\\Delta x) -x}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#derivative-def",
-    "href": "notes/day2_limits/lecture-limits.html#derivative-def",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Derivative Definition\n\n\\[\n\\large\nf'(x)=\\lim_{\\Delta x \\to 0}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\]\n\n\nMost common notation\n\n\\[\n\\large\nf'(x)\\text{, or }\\frac{dy}{dx}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-func",
-    "href": "notes/day2_limits/lecture-limits.html#diff-func",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Not all functions are differentiable\n\n\n\n\nAll differentiable functions are continuous, but not all continuous functions are differentiable\nThe absolute value function is one example \\(y=|x|\\)"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#calc",
-    "href": "notes/day2_limits/lecture-limits.html#calc",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Calculus and Derivatives are the study of change"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#envs-change",
-    "href": "notes/day2_limits/lecture-limits.html#envs-change",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Environmental Science is also a study of change"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#envs-change2",
-    "href": "notes/day2_limits/lecture-limits.html#envs-change2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Environmental Science is also a study of change"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#envs-change3",
-    "href": "notes/day2_limits/lecture-limits.html#envs-change3",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Environmental Science is also a study of change"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Rules for Differentiation\n\n\nConstant Rule\n\n\nIf \\(f(x)\\) is contant, then for all \\(x\\), \\(f'(x)=0\\)\n\n\\[\n\\begin{align}\n&y=a &\\frac{dy}{dx}=0\n\\end{align}\n\\] \n\nPower Rule\n\n\\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-examples",
-    "href": "notes/day2_limits/lecture-limits.html#diff-examples",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Examples\n\n\\[\n\\begin{align}\n&y=100 & &y=5x^5 & &y=\\frac{1}{x^2}\n\\end{align}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#sum-diff",
-    "href": "notes/day2_limits/lecture-limits.html#sum-diff",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Rules for Differentiation\n\n\nSum and Difference Rules\n\n\\[\n\\begin{align}\n\\frac{d}{dx}&=[f(x)+g(x)]=f'(x)+g'(x) \\\\\n\\frac{d}{dx}&=[f(x)-g(x)]=f'(x)-g'(x)\n\\end{align}\n\\] \nLooks really scary. All it says, if the function has pieces that are added or subtracted you can take the derivative of each individual piece."
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#sum-ex",
-    "href": "notes/day2_limits/lecture-limits.html#sum-ex",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Example\n\n\\[\n\\begin{align}\n&y=x^2+8x+4 & &y=x^3-x^2+x-15\n\\end{align}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta-2",
-    "href": "notes/day2_limits/lecture-limits.html#ta-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Team Assessment"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#gta2-1",
-    "href": "notes/day2_limits/lecture-limits.html#gta2-1",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "As a team, list 5 fields of environmental science where studying the rate of change and derivatives would be important\n\n\n\nWhich rules should you use to take these derivatives?\n\n\\[\n\\begin{align}\n\\text{A)  }& f(x)=3x^4 &\\text{B) }  y=4x^2+3x-16\n\\end{align}\n\\]\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=y=7x+4 & &\\text{C) }g(y)=\\sqrt{y}\n\\end{align}\n\\]\n\nDiscuss why derivatives need continuity. It might help to think about why some continuous functions don’t have derivatives."
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#function-definition",
-    "href": "notes/day2_limits/lecture-limits.html#function-definition",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "What is a function?\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\n\nExample\nA function \\(f(x)\\) cannot return two values for \\(x=1\\): \\(f(1)\\ne\\{2,3\\}\\)\n\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\n\n🤔 Are these functions?"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#continuity",
-    "href": "notes/day2_limits/lecture-limits.html#continuity",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Continuity\n\nIntuitively, a function is continuous if there are no ‘breaks’ in the graph of the function. This means you are able to draw the whole graph without lifting your pencil.\nTo define it formally we need to understnad limits.\n\nA function is discontinuous if it’s not continuous! So there are ‘breaks’ or ‘gaps’ in its graph.\n\n\n\n\nContinuous\n\n\n\n\n\n\n\n\n\n\n\n\nDiscontinuous"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#continuity-revisited",
-    "href": "notes/day2_limits/lecture-limits.html#continuity-revisited",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Continuity revisited\n\n\n\n\nFinding limits of functions when f(x) is continuous at c is easy.\n\\[\n\\lim_{x\\to c}f(x)=f(c)\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#lecture-materials",
-    "href": "notes/day2_limits/day2_limits.html#lecture-materials",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#problem-set",
-    "href": "notes/day2_limits/day2_limits.html#problem-set",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Download the Problem Set here",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#problem-set-solution",
-    "href": "notes/day2_limits/day2_limits.html#problem-set-solution",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Solutions",
-    "crumbs": [
-      "Day 2: Limits"
     ]
   }
 ]

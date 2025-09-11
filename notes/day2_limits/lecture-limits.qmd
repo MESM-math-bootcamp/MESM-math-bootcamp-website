@@ -29,7 +29,7 @@ embed-resources: true
 
 <br>
 
-*Materials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.*
+*Materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop.*
 
 <!--------------------------------------------------------------------------->
 ## {#tr data-menu-title="Team Review"}
@@ -134,7 +134,7 @@ knitr::include_graphics("images/circle.png")
 
 Intuitively, a function is **continuous** if there are no 'breaks' in the graph of the function. This means you  are able to draw the whole graph without lifting your pencil. 
 
-To define it formally we need to understnad limits.
+To define it formally we need to understand limits.
 
 <br>
 
@@ -246,34 +246,40 @@ So, $\lim_{x\to 2}(2x^2-4)=4$.
 <!--------------------------------------------------------------------------->
 
 
-## {#continuity-revisited data-menu-title="Continuity revisited"}
+## {#continuity-revisited data-menu-title="Continuity revisited" .center}
 
 [Continuity revisited]{.slide-title}
 
-<!--
-
-- Quick sanity check, what should $f(2)=?$
-
-- $f(2)=4$
-
--->
-
 <hr>
 
-::::{.columns}
-:::{.column width="50%"}
-Finding limits of functions when f(x) is continuous at c is easy.
+:::: {.columns}
+
+::: {.column width="40%"}
+A function $f(x)$ is **continuous at $x=c$** if
 
 $$
-\lim_{x\to c}f(x)=f(c)
+\lim_{x\to c}f(x)=f(c).
 $$
+
+So, if a function is continuous, we just need to evaluate the function to obtain the limit.
+
+
+<br>
+
+**Example**
+
+$f(x) = 2x^2-4$ is a continuous function. So we can obtain the limit as $x\to 2$ by evaluating the function 
+
+$$\lim_{x\to 2}(2x^2-4)= f(2) = 4.$$
+
 :::
-:::{.column width="50%"}
+
+::: {.column width="60%"}
 ```{r fig.align='center',out.width="150%"}
 knitr::include_graphics("images/lim_graph_1.PNG")
 ```
-
 :::
+
 ::::
 
 
@@ -287,71 +293,108 @@ knitr::include_graphics("images/lim_graph_1.PNG")
 
 <hr>
 
-Try with your group the same approach for:
+**Example**
+
+The function $|x|$ is the **absolute value function**. It is such that
 
 $$
-\lim_{x\to 2}f(x)=\frac{|x-2|}{x-2}
+|x| = 
+\begin{cases}
+x, & \text{ if } x\geq 0 \\
+-x, & \text{ if } x <0
+\end{cases}
+.
 $$
 
-Hint: Start very close to 2 like 1.9 and 2.1
+. . .
 
-:::{.fragment .fade-in}
-```{r fig.align='center',out.width="90%"}
-knitr::include_graphics("images/limx2.PNG")
-```
-:::
+<br>
+
+✏️ [Is the function $f(x) = \frac{|x-2|}{x-2}$ continuous at $x=2$?]{style="color:green;"}
+
+
+✏️ [Try calculating:]{style="color:green;"}
+[
+$$
+\lim_{x\to 2}\frac{|x-2|}{x-2}.
+$$
+]{style="color:green;"}
+
+<br>
+
+Hint: Try to do numerical approximations or draw the graph of this function. 
 
 
 ## {#mean-girls data-menu-title="We broke the universe"}
 
-[We broke the universe]{.slide-title}
+[Example]{.slide-title}
 
 <hr>
 
-:::{.body-text-l}
-- Dividing by zero is impossible
+*Is the function $f(x) = \frac{|x-2|}{x-2}$ continuous at $x=2$?*
 
-- The function approaches different values from either side
+This function is not even defined at $x=2$ since it would require us to divide by zero, which is undefined.
 
-- Therefore...
-:::
+. . . 
 
-:::{.fragment .fade-in}
+<br>
 
-```{r fig.align='center',out.width="50%"}
-knitr::include_graphics("images/limit.gif")
+*Try calculating $\lim_{x\to 2}\frac{|x-2|}{x-2}$.*
+
+Let's investigate:
+
+```{r fig.align='center',out.width="60%"}
+knitr::include_graphics("images/limx2.PNG")
 ```
-:::
 
-## {#graph data-menu-title="Clearer on the graph"}
+. . .
 
-[Clearer on a graph]{.slide-title}
-
-<hr>
-
-```{r fig.align='center',out.width="40%"}
+```{r fig.align='center',out.width="35%"}
 knitr::include_graphics("images/lim_graph_2.PNG")
 ```
 
-Technically the limit is "Undefined", because it does approach a finite value. Does not exist happens when the limits spiral off to infinity in both directions (tan graph)
 
-## {#lim-defined data-menu-title="Defined limit at an undefined point"}
+## {#graph data-menu-title="Clearer on the graph"}
 
-[Defined Limit at an undefined point]{.slide-title}
+[Example]{.slide-title}
 
 <hr>
 
- - Discontinuous functions can still have limits
+The function $\frac{|x-2|}{x-2}$ approaches different values from either side at $x=2$.
 
-- Find the limit of $f(x)=x+1,x\ne 2$ as x approaches 2
+<div style="display:flex; justify-content:center;">
+  <img src="images/lim_graph_2.PNG" style="width:80%;">
+</div>
 
-:::{.fragment .fade-in}
+Therefore...
 
-```{r fig.align='center',out.width="50%"}
-knitr::include_graphics("images/lim3.PNG")
-```
+. . .
 
-:::
+<div style="display:flex; justify-content:center;">
+  <img src="images/limit.gif" style="width:100%;">
+</div>
+
+
+
+
+## {#lim-defined data-menu-title="Defined limit at an undefined point"}
+
+[Defined limit at a discontinuity]{.slide-title}
+
+<hr>
+
+- Discontinuous functions can still have limits
+
+**Example**
+
+Let
+$$
+f(x) = x+1 , \text{ if x $\neq$ 2}
+$$
+
+✏️ [Draw a graph of $f(x)$.]{style="color:green;"}
+
+✏️ [Try calculating $\lim_{x\to 2} f(x)$.]{style="color:green;"}
 
 :::{.fragment .fade-in}
 
@@ -367,10 +410,18 @@ knitr::include_graphics("images/lim_graph_3.png")
 :::{.column width="50%'}
 
 
-$x=2$ may not exist, but we can still find a limit because it consistently approaches 3 from both directions
+The value $f(2)$ may not exist, but we can still find a limit because $f(x)$ consistently approaches 3 from both directions as $x\to 2$.
 :::
 ::::
 :::
+
+
+:::{.fragment .fade-in}
+```{r fig.align='center',out.width="70%"}
+knitr::include_graphics("images/lim3.PNG")
+```
+:::
+
 
 ## {#ta data-menu-title=Team" background-color="#003660"}
 
@@ -380,7 +431,7 @@ $x=2$ may not exist, but we can still find a limit because it consistently appro
 
 ## {#ta-1-1 data-menu-title="Team Assessment Question 1"}
 
-Work with your team to complete  these task
+[Task 1: Match the graphs (a,b,c) with the limits (1,2,3).]{style="color:green;"}
 
 :::{.center-text}
 Part 1:
@@ -436,23 +487,21 @@ $$
 
 ## {#ta-1-2 data-menu-title="Team Assessment Question 2"}
 
-Work with your team to complete these task 
-
 :::{.center-text}
 Part 2:
 :::
 
-2) Can you think of examples where discontinuous functions might exist in environmental science?
+[2) Can you think of examples where discontinuous functions might exist in environmental science?]{style="color:green;"}
 
-3) Choose as a team to draw an example of one of these statements:
+[3) As a team, draw graphs to exemplify two of these statements:]{style="color:green;"}
 
-- $\lim_{x\to 4^-} f(x)$ and $\lim_{x\to 4^+}f(x)$ are both infinite
+  a. $\lim_{x\to 4^-} f(x)$ and $\lim_{x\to 4^+}f(x)$ are both infinite
 
-- $\lim_{x\to 3} f(x)=2$, but $f(3)=0$
+  b. $\lim_{x\to 3} f(x)=2$, but $f(3)=0$
 
-- $\lim_{x\to 5^-} f(x)=4$ and $\lim_{x\to 5^+} f(x)=2$
+  c. $\lim_{x\to 5^-} f(x)=4$ and $\lim_{x\to 5^+} f(x)=2$
 
-- $\lim_{x\to -3} f(x)=-5$ but $f(-3)=-5$
+  d. $\lim_{x\to -3} f(x)=-5$ but $f(-3)=-5$
 
 ## {#intro-derv data-menu-title="Introduction to Derivates" background-color="#003660"}
 
