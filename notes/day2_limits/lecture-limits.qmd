@@ -485,7 +485,7 @@ The limit of $f(x)$ as $x$ approaches 2 **from the right** is 1.
 
 
 
-<!----------------------------------------------------------------------->
+<!---------------------------------------------------------->
 ## {#ta data-menu-title=Team" background-color="#003660"}
 
 <div class="page-center">
@@ -546,7 +546,7 @@ $$
 $$
 :::
 ::::
-
+<!---------------------------------------------------------->
 
 ## {#ta-1-2 data-menu-title="Team Assessment Question 2"}
 
@@ -555,6 +555,8 @@ Part 2:
 :::
 
 [2) Can you think of examples where discontinuous functions might exist in environmental science?]{style="color:green;"}
+
+<br>
 
 [3) As a team, draw graphs to exemplify two of these statements:]{style="color:green;"}
 
@@ -566,11 +568,15 @@ Part 2:
 
   d. $\lim_{x\to -3} f(x)=-5$ but $f(-3)=-5$
 
+<!---------------------------------------------------------->
+
 ## {#intro-derv data-menu-title="Introduction to Derivates" background-color="#003660"}
 
 <div class="page-center">
 <div class="custom-subtitle">Introduction to Derivatives</div>
 </div>
+
+<!---------------------------------------------------------->
 
 ## {#alltogether data-menu-title="Putting it all together"}
 
@@ -586,9 +592,11 @@ knitr::include_graphics("images/trex.PNG")
 
 Taking the average rate of change to a set limit will eventually converge to the instantaneous. 
 
+<!---------------------------------------------------------->
+
 ## {#walkthrough-1 data-menu-title="Walthrough"}
 
-[Walk Through Example]{.slide-title}
+[Walkthrough example]{.slide-title}
 
 <hr>
 
@@ -617,10 +625,11 @@ p0
 
 ```
 
+<!---------------------------------------------------------->
 
 ## {#walkthrough-2 data-menu-title="Walkthrough"}
 
-[Walk Through Example]{.slide-title}
+[Walkthrough example]{.slide-title}
 
 <hr>
 
@@ -634,9 +643,11 @@ p1
 
 ```
 
+<!---------------------------------------------------------->
+
 ## {#walkthrough-3 data-menu-title="Walkthrough"}
 
-[Walk Through Example]{.slide-title}
+[Walkthrough example]{.slide-title}
 
 <hr>
 
@@ -656,9 +667,11 @@ p2
 
 ```
 
+<!---------------------------------------------------------->
+
 ## {#walkthrough-4 data-menu-title="Walk Through Example"}
 
-[Walk Through Example]{.slide-title}
+[Walkthrough example]{.slide-title}
 
 <hr>
 
@@ -676,9 +689,11 @@ p3<-p0+
 p3
 ```
 
+<!---------------------------------------------------------->
+
 ## {#walkthrough-5 data-menu-title="Walkthrough"}
 
-[Walk Through Example]{.slide-title}
+[Walkthrough example]{.slide-title}
 
 <hr>
 
@@ -698,9 +713,11 @@ p4
 
 ```
 
+<!---------------------------------------------------------->
+
 ## {#walkthrough-6 data-menu-title="Walkthrough"}
 
-[Walkthrough]{.slide-title}
+[Walkthrough example]{.slide-title}
 
 <hr>
 
@@ -723,7 +740,7 @@ p5
 
 ## {#tangent data-menu-title="Tangent Lines"}
 
-[Tangent Lines]{.slide-title}
+[Tangent lines]{.slide-title}
 
 <hr>
 
@@ -733,12 +750,13 @@ What if we set $\Delta x=0$? Then we would have a slope line that only touches o
 knitr::include_graphics("images/tangent_line.png")
 ```
 
-***These are called tangent lines***
+These very special types of lines are called **tangent lines**.
 
+<!---------------------------------------------------------->
 
 ## {#ex-math data-menu-title="Put our example in math notation"}
 
-[Put our example in math notation]{.slide-title}
+[Example in math notation]{.slide-title}
 
 <hr>
 $$\text{slope}=\frac{y_2-y_1}{x_2-x_1}$$
@@ -752,6 +770,8 @@ Add these into the slope equation
 $$
 \text{slope}=\frac{f(x+\Delta x)-f(x)}{(x+\Delta x) -x}=\frac{f(x+\Delta x)-f(x)}{\Delta x}
 $$
+
+<!---------------------------------------------------------->
 
 ## {#derivative-def data-menu-title="Derivative Definition"}
 
@@ -774,6 +794,8 @@ $$
 \large
 f'(x)\text{, or }\frac{dy}{dx}
 $$
+
+<!---------------------------------------------------------->
 
 ## {#diff-func data-menu-title="Not all functions are differentiable"}
 

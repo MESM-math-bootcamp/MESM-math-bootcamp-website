@@ -1,5 +1,7 @@
 # Day 2: Limits
 
+![Artwork by @allison_horst](images/limits_horst.jpg)
+
 ## Lecture Materials
 
 [Limits lecture slides](lecture-limits.qmd)
@@ -16,7 +18,7 @@
 
 ## Problem Set
 
-[Download the Problem Set here](problem_set_limits.qmd)
+[Click here to see the problem set.](problem_set_limits.qmd)
 
 ## Problem Set Solution
 

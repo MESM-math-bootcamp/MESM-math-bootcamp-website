@@ -1,5 +1,5 @@
 ---
-author: "Nathaniel Grimes, adapted by C. Galaz García"
+author: "Nathaniel Grimes, Carmen Galaz García"
 ---
 
 # Limits and Derivatives Problem Set
