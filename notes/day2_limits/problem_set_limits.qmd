@@ -2,6 +2,8 @@
 author: "Nathaniel Grimes, adapted by C. Galaz García"
 ---
 
+# Limits and Derivatives Problem Set
+
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,warning=FALSE,message=FALSE,fig.align = 'center')
 
@@ -11,7 +13,6 @@ library(tidyverse)
 *Answer the following questions to the best of your ability.  Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!*
 
 1) Which of these graphs depict functions and which do not?
-
 
 A) 
 ```{r}
@@ -35,8 +36,9 @@ D)
 knitr::include_graphics("images/v_test4.png")
 ```
 
+<br>
 
-2) Find the following limits:
+2) Investigate what is the value of the following limits:
 
 a)
 
@@ -44,11 +46,14 @@ $$
 \lim_{x\to -2^-}\frac{4x}{x+2}
 $$
 
+
 b) 
 
 $$
 \lim_{x\to 3}2^x
 $$
+
+<br>
 
 3) Determine the value of $b$ to make $h(x)$ continuous at $x=-3$. Explain your reasoning using limits.
 
@@ -59,14 +64,24 @@ bx^2-\frac{3}{2}x-5 &x<-3 \\
 \end{cases}
 $$
 
+<br>
 
 4) Let $f(x) = 2x^2+4$. Calculate $f'(x)$ and $f'(-3)$.
 
+<br>
+
 5) Calculate the derivative of $g(x) = x^4-5x^3+x-5$ at $x=5$.
+
+<br>
 
 6) What is the instantaneous rate of change of $h(x) = \frac{5}{x^2}$ at $x=2$?
 
-7) Find the slope of the tangent line in the graph below at $x=2$. Describe in words how the slope of the tangent line represents the derivative. Could the tangent line match another point on the curve?
+<br>
+
+7) 
+  a. Approximate the slope of the tangent line in the graph below at $x=2$. 
+  
+  b. Write a short paragraph describing how the slope of the tangent line represents the derivative. 
 
 ```{r}
 #| code-fold: true
@@ -77,7 +92,7 @@ y=0.5*x^2-1
 
 ggplot()+
   geom_line(aes(x=x,y=y),color="black",linewidth=3)+
-  annotate("segment",x=0,xend=4,y=-3,yend=5,color="red",linewidth=2)+
+  #annotate("segment",x=0,xend=4,y=-3,yend=5,color="red",linewidth=2)+
   theme_minimal()+
   scale_x_continuous(breaks=seq(-4,4,by=1))+
   scale_y_continuous(breaks=seq(-3,7,by=1))+

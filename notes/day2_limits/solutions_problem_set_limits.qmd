@@ -1,47 +1,25 @@
 ---
-title: "Calculus Workshop"
-subtitle: "Limits and Derivatives Problem Set Solutions"
-author: "Nathan Grimes"
-date: "2024-09-19"
-output: pdf_document
+author: "Nathaniel Grimes, adapted by C. Galaz García"
 ---
+
+# Limits and Derivatives Problem Set Solutions
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE,warning=FALSE,message=FALSE,fig.align = 'center')
 
 library(tidyverse)
+library(ggplot2)
 ```
 
-*Answer the following questions to the best of your ability. Feel free to work with anyone in the cohort, though I would encourage attempting on your own first to make sure you fully understand the concepts.*
+*Answer the following questions to the best of your ability.  Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!*
 
 1) Which of these graphs depict functions and which do not?
 
-\textcolor{blue}{Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function.}
+<span style="color:blue">
+Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function.
+</span>
 
-A) 
-```{r}
-knitr::include_graphics("images/v_test1.png")
-```
-
-B)
-```{r}
-knitr::include_graphics("images/v_test2.png")
-```
-
-C)
-
-```{r}
-knitr::include_graphics("images/v_test3.png")
-```
-
-D)
-
-```{r}
-knitr::include_graphics("images/v_test4.png")
-```
-
-
-2) Find these limits:
+2) Investigate what is the value of the following limits:
 
 a)
 
@@ -49,10 +27,11 @@ $$
 \lim_{x\to -2^-}\frac{4x}{x+2}
 $$
 
-\textcolor{blue}{Evaluate the function from the left of ever closer values to infinty. We can see from the approximation below the limit approaches 2 from the left}
+<span style="color:blue">To investigate this limit we can evaluate the function $\frac{4x}{x+2}$ from the left with values getting closer to -2. We can see from the approximation below that  $y = \frac{4x}{x+2}$ rapidly increases with values closer to -2. So, we can say the limit goes to infinity. 
+</span>
 
 ```{r}
-x=c(-2.5,-2.1,-2.01,-2.001)
+x=c(-2.5,-2.1,-2.01,-2.001, -2.0001, -2.00001)
 y=4*x/(x+2)
 
 data.frame(x=x,y=y) %>% 
@@ -60,6 +39,24 @@ data.frame(x=x,y=y) %>%
   knitr::kable()
 ```
 
+<span style="color:blue">
+We can also plot the function to have a visual understanding of its behavior near -2. 
+</span>
+
+```{r}
+f <- function(x) 4*x/(x + 2)
+
+# Data avoiding x=-2
+x <- c(seq(-6, -2.01, length.out = 300), seq(-1.99, 4, length.out = 300))
+df <- data.frame(x = x, y = f(x))
+
+ggplot(df, aes(x, y)) +
+  geom_line(color = "blue") +
+  geom_vline(xintercept = -2, linetype = "dashed", color = "red") +
+  labs(title = "f(x) = 4x/(x+2)", x = "x", y = "y") +
+  theme_minimal()
+
+```
 
 b) 
 
@@ -67,7 +64,9 @@ $$
 \lim_{x\to 3}2^x
 $$
 
-\textcolor{blue}{The table below shows that the limit approaches 8 at x=3 from both directions}
+<span style="color:blue">
+To investigate this limit we can evaluate the function $2^x$ with values of $x$ approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say $\lim_{x\to 3}2^x=8$. 
+</span>
 
 ```{r}
 x=c(2.5,2.9,2.99,2.999,3.001,3.01,3.1,3.5)
@@ -78,6 +77,24 @@ data.frame(x=x,y=y) %>%
   knitr::kable()
 ```
 
+<span style="color:blue">
+We can also graph this function and see it is continuous. So $\lim_{x\to 3}2^x = 2^3 = 8$.
+</span>
+
+```{r}
+library(ggplot2)
+
+f <- function(x) 2^x
+
+x <- seq(0, 6, length.out = 300)
+df <- data.frame(x = x, y = f(x))
+
+ggplot(df, aes(x, y)) +
+  geom_line(color = "blue") +
+  geom_vline(xintercept = 3, linetype = "dashed", color = "red") +
+  labs(title = "f(x) = 2^x", x = "x", y = "y") +
+  theme_minimal()
+```
 
 3) Determine the value of $b$ to make $h(x)$ continuous at $x=-3$. Explain your reasoning using limits.
 
@@ -88,18 +105,50 @@ bx^2-\frac{3}{2}x-5 &x<-3 \\
 \end{cases}
 $$
 
-\textcolor{blue}{This function is broken down into disparate pieces. To connect them an make them continuous we need both to approach the same value at x. Otherwise they will not converge. First we can evaluate the bottom part at x=3, then adjust b to get the top part to also equal that same value.}
+<span style="color:blue">This function is broken down into two "pieces": it equals $bx^2 - \frac{3}{2}x - 5$ when $x$ is less than -3, and it equals $-2x-9$ when $x$ is greater or equal to -3. To connect these two pieces and make $h(x)$ continuous we need both pieces to approach the same value at $x=-3$, in other words</span>
 
+<span style="color:blue">
+$$ -3 = h(x) = \lim_{x\to-3} h(x).$$ 
+</span>
 
+<span style="color:blue">
+Let's calculate the side limits to see what's going on with $\lim_{x\to-3}$. From the left-hand side we have that:
+</span>
+
+<span style="color:blue">
+$$\lim_{x\to-3^-} h(x) = \lim_{x\to-3^-} bx^2 - \frac{3}{2}x - 5 = 9b + \frac{9}{2}.$$
+</span>
+
+<span style="color:blue">
+From the right-hand side we have that:
+</span>
+
+<span style="color:blue">
+$$
+\lim_{x\to-3^+} h(x) = \lim_{x\to-3^+} -2x-9 = -3
+$$
+</span>
+
+<span style="color:blue">
+If we want $h(x)$ to be continuous at $x=-3$ we then need
+</span>
+
+<span style="color:blue">
+$$ -3 = h(x) = \lim_{x\to-3^-} h(x) = \lim_{x\to-3^+} h(x) =  9b + \frac{9}{2} $$
+</span>
+
+<span style="color:blue">
+Solving this equation we obtain that
+</span>
+
+<span style="color:blue">
+$$
 \begin{align}
--2(-3)-9=-3\\
-b(-3)^2-\frac{3}{2}(-3)-5=-3\\
-9b+\frac{9}{2}=2\\
 9b=\frac{-5}{2}\\
-b=\frac{-5}{18}
+b=\frac{-5}{18}.
 \end{align}
-
-
+$$
+</span>
 
 4) Calculate the derivative of the following functions then evaluate at the given x:
 
@@ -153,7 +202,8 @@ ggplot()+
   
 ```
 
-\textcolor{blue}{Using rise over run we can take two points on the tangent line to find the slope. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative. In this graph $\frac{dy}{dx}=2$ is unique at only x=2. However in other curves, such as sine waves or higher order polynomials, it is possible for different tangent lines to have the same slope}
+<span style="color:blue">Using rise over run we can take two points on the tangent line to find the slope. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative. In this graph $\frac{dy}{dx}=2$ is unique at only x=2. However in other curves, such as sine waves or higher order polynomials, it is possible for different tangent lines to have the same slope
+</span>
 
 $$
 slope=\frac{1--1}{2-1}=\frac{2}{1}
