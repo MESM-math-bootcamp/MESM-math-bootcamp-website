@@ -1,5 +1,5 @@
 ---
-author: "Nathaniel Grimes, adapted by C. Galaz García"
+author: "Nathaniel Grimes, Carmen Galaz García"
 ---
 
 # Limits and Derivatives Problem Set Solutions
@@ -105,22 +105,23 @@ bx^2-\frac{3}{2}x-5 &x<-3 \\
 \end{cases}
 $$
 
-<span style="color:blue">This function is broken down into two "pieces": it equals $bx^2 - \frac{3}{2}x - 5$ when $x$ is less than -3, and it equals $-2x-9$ when $x$ is greater or equal to -3. To connect these two pieces and make $h(x)$ continuous we need both pieces to approach the same value at $x=-3$, in other words</span>
+<span style="color:blue">This function is broken down into two "pieces": it equals $bx^2 - \frac{3}{2}x - 5$ when $x$ is less than -3, and it equals $-2x-9$ when $x$ is greater or equal to -3. To connect these two pieces and make $h(x)$ continuous we need both pieces to approach the same value at $x=-3$. In other words, we need that </span>
 
 <span style="color:blue">
 $$ -3 = h(x) = \lim_{x\to-3} h(x).$$ 
 </span>
 
 <span style="color:blue">
-Let's calculate the side limits to see what's going on with $\lim_{x\to-3}$. From the left-hand side we have that:
+Let's calculate the side limits to see what's going on with $\lim_{x\to-3} h(x)$. From the left-hand side we have that
 </span>
 
-<span style="color:blue">
+<span style="color:blue">xw
 $$\lim_{x\to-3^-} h(x) = \lim_{x\to-3^-} bx^2 - \frac{3}{2}x - 5 = 9b + \frac{9}{2}.$$
 </span>
 
-<span style="color:blue">
-From the right-hand side we have that:
+<span style="color:blue">a8670390NCEAS
+
+From the right-hand side we have that
 </span>
 
 <span style="color:blue">
@@ -150,41 +151,58 @@ b=\frac{-5}{18}.
 $$
 </span>
 
-4) Calculate the derivative of the following functions then evaluate at the given x:
+4) Let $f(x) = 2x^2+4$. Calculate $f'(x)$ and $f'(-3)$.
 
-a) $2x^2+4$ at $x=-3$
-
-
+<span style="color:blue">
 \begin{align}
-2x^2+4\\
-\frac{d}{dx}=4x\\
-\frac{d}{dx(3)}=4(-3)=-12
+f(x)  &= 2x^2+4\\
+f'(x) &= 4x\\
+f'(-3) &=4(-3)\\
+      &=-12
 \end{align}
+</span>
 
+5) Calculate the derivative of $g(x) = x^4-5x^3+x-5$ at $x=5$.
 
-b) $x^4-5x^3+x-5$ at $x=5$
-
-
+<span style="color:blue">
 \begin{align}
-x^4-5x^3+x-5 \\
-\frac{d}{dx}=4x^3-15x^2+1 \\
-4(5)^3-15(5)^2+1=126
+g(x) &= x^4-5x^3+x-5 \\
+g'(x) &= 4x^3-15x^2+1 \\
+g'(5) &= 4(5)^3-15(5)^2+1\\
+&=126
 \end{align}
+</span>
 
 
-c) $\frac{5}{x^2}$ at $x=2$
+6) What is the instantaneous rate of change of $h(x) = \frac{5}{x^2}$ at $x=2$?
 
+<span style="color:blue">
+We have that
+</span>
 
+<span style="color:blue">
+$$ 
+h(x) = \frac{5}{x^2} = 5x^{-2}
+$$
+</span>
+
+<span style="color:blue">
+Then,
+</span>
+
+<span style="color:blue">
 \begin{align}
-\frac{5}{x^2}\\
-\frac{d}{dx}=-10x^{-3}\\
--10(2)^{-3}=1.25
+h'(x) & =-10x^{-3}\\
+h'(2) &= -10(2)^{-3}\\
+& = -\frac{10}{8}\\
+ &=-1.25.
 \end{align}
+</span>
 
-
-\pagebreak
-
-5) Find the slope of the tangent line in the graph below at $x=2$. Describe in words how the slope of the tangent line represents the derivative. Could the tangent line match another point on the curve?
+7) 
+  a. Approximate the slope of the tangent line in the graph below at $x=2$. 
+  
+  b. Write a short paragraph describing how the slope of the tangent line represents the derivative. 
 
 ```{r}
 x=seq(-4,4,by=0.1)
@@ -202,9 +220,18 @@ ggplot()+
   
 ```
 
-<span style="color:blue">Using rise over run we can take two points on the tangent line to find the slope. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative. In this graph $\frac{dy}{dx}=2$ is unique at only x=2. However in other curves, such as sine waves or higher order polynomials, it is possible for different tangent lines to have the same slope
+<span style="color:blue">
+a. First, we draw a tangent line to the graph at $x=2$, this is the red line plotted with the graph. 
+
+Using rise over run we can take two points on the tangent line to find the slope. Let's use $(2,1)$ and $(1,-1)$ as our points on the tangent, then
 </span>
 
+<span style="color:blue">
 $$
-slope=\frac{1--1}{2-1}=\frac{2}{1}
+slope=\frac{1- (-1)}{2-1}=2.
 $$
+</span>
+
+<span style="color:blue">
+ b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative. 
+ </span>

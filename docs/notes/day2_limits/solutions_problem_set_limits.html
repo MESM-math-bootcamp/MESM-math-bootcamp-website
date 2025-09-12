@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nathaniel Grimes, adapted by C. Galaz García">
+<meta name="author" content="Nathaniel Grimes, Carmen Galaz García">
 
 <title>solutions_problem_set_limits – Bren Calculus Workshop</title>
 <style>
@@ -224,7 +224,7 @@ window.Quarto = {
     <div>
     <div class="quarto-title-meta-heading">Author</div>
     <div class="quarto-title-meta-contents">
-             <p>Nathaniel Grimes, adapted by C. Galaz García </p>
+             <p>Nathaniel Grimes, Carmen Galaz García </p>
           </div>
   </div>
     
@@ -357,11 +357,12 @@ bx^2-\frac{3}{2}x-5 &amp;x&lt;-3 \\
 -2x-9 &amp;x\ge-3
 \end{cases}
 \]</span></p>
-<p><span style="color:blue">This function is broken down into two “pieces”: it equals <span class="math inline">\(bx^2 - \frac{3}{2}x - 5\)</span> when <span class="math inline">\(x\)</span> is less than -3, and it equals <span class="math inline">\(-2x-9\)</span> when <span class="math inline">\(x\)</span> is greater or equal to -3. To connect these two pieces and make <span class="math inline">\(h(x)\)</span> continuous we need both pieces to approach the same value at <span class="math inline">\(x=-3\)</span>, in other words</span></p>
+<p><span style="color:blue">This function is broken down into two “pieces”: it equals <span class="math inline">\(bx^2 - \frac{3}{2}x - 5\)</span> when <span class="math inline">\(x\)</span> is less than -3, and it equals <span class="math inline">\(-2x-9\)</span> when <span class="math inline">\(x\)</span> is greater or equal to -3. To connect these two pieces and make <span class="math inline">\(h(x)\)</span> continuous we need both pieces to approach the same value at <span class="math inline">\(x=-3\)</span>. In other words, we need that </span></p>
 <p><span style="color:blue"> <span class="math display">\[ -3 = h(x) = \lim_{x\to-3} h(x).\]</span> </span></p>
-<p><span style="color:blue"> Let’s calculate the side limits to see what’s going on with <span class="math inline">\(\lim_{x\to-3}\)</span>. From the left-hand side we have that: </span></p>
-<p><span style="color:blue"> <span class="math display">\[\lim_{x\to-3^-} h(x) = \lim_{x\to-3^-} bx^2 - \frac{3}{2}x - 5 = 9b + \frac{9}{2}.\]</span> </span></p>
-<p><span style="color:blue"> From the right-hand side we have that: </span></p>
+<p><span style="color:blue"> Let’s calculate the side limits to see what’s going on with <span class="math inline">\(\lim_{x\to-3} h(x)\)</span>. From the left-hand side we have that </span></p>
+<p><span style="color:blue">xw <span class="math display">\[\lim_{x\to-3^-} h(x) = \lim_{x\to-3^-} bx^2 - \frac{3}{2}x - 5 = 9b + \frac{9}{2}.\]</span> </span></p>
+<p><span style="color:blue">a8670390NCEAS</span></p>
+<p>From the right-hand side we have that </p>
 <p><span style="color:blue"> <span class="math display">\[
 \lim_{x\to-3^+} h(x) = \lim_{x\to-3^+} -2x-9 = -3
 \]</span> </span></p>
@@ -375,35 +376,43 @@ b=\frac{-5}{18}.
 \end{align}
 \]</span> </span></p>
 <ol start="4" type="1">
-<li>Calculate the derivative of the following functions then evaluate at the given x:</li>
+<li>Let <span class="math inline">\(f(x) = 2x^2+4\)</span>. Calculate <span class="math inline">\(f'(x)\)</span> and <span class="math inline">\(f'(-3)\)</span>.</li>
+</ol>
+<p><span style="color:blue"> <span class="math display">\[\begin{align}
+f(x)  &amp;= 2x^2+4\\
+f'(x) &amp;= 4x\\
+f'(-3) &amp;=4(-3)\\
+      &amp;=-12
+\end{align}\]</span> </span></p>
+<ol start="5" type="1">
+<li>Calculate the derivative of <span class="math inline">\(g(x) = x^4-5x^3+x-5\)</span> at <span class="math inline">\(x=5\)</span>.</li>
+</ol>
+<p><span style="color:blue"> <span class="math display">\[\begin{align}
+g(x) &amp;= x^4-5x^3+x-5 \\
+g'(x) &amp;= 4x^3-15x^2+1 \\
+g'(5) &amp;= 4(5)^3-15(5)^2+1\\
+&amp;=126
+\end{align}\]</span> </span></p>
+<ol start="6" type="1">
+<li>What is the instantaneous rate of change of <span class="math inline">\(h(x) = \frac{5}{x^2}\)</span> at <span class="math inline">\(x=2\)</span>?</li>
+</ol>
+<p><span style="color:blue"> We have that </span></p>
+<p><span style="color:blue"> <span class="math display">\[
+h(x) = \frac{5}{x^2} = 5x^{-2}
+\]</span> </span></p>
+<p><span style="color:blue"> Then, </span></p>
+<p><span style="color:blue"> <span class="math display">\[\begin{align}
+h'(x) &amp; =-10x^{-3}\\
+h'(2) &amp;= -10(2)^{-3}\\
+&amp; = -\frac{10}{8}\\
+&amp;=-1.25.
+\end{align}\]</span> </span></p>
+<ol start="7" type="1">
+<li></li>
 </ol>
 <ol type="a">
-<li><span class="math inline">\(2x^2+4\)</span> at <span class="math inline">\(x=-3\)</span></li>
-</ol>
-<p><span class="math display">\[\begin{align}
-2x^2+4\\
-\frac{d}{dx}=4x\\
-\frac{d}{dx(3)}=4(-3)=-12
-\end{align}\]</span></p>
-<ol start="2" type="a">
-<li><span class="math inline">\(x^4-5x^3+x-5\)</span> at <span class="math inline">\(x=5\)</span></li>
-</ol>
-<p><span class="math display">\[\begin{align}
-x^4-5x^3+x-5 \\
-\frac{d}{dx}=4x^3-15x^2+1 \\
-4(5)^3-15(5)^2+1=126
-\end{align}\]</span></p>
-<ol start="3" type="a">
-<li><span class="math inline">\(\frac{5}{x^2}\)</span> at <span class="math inline">\(x=2\)</span></li>
-</ol>
-<p><span class="math display">\[\begin{align}
-\frac{5}{x^2}\\
-\frac{d}{dx}=-10x^{-3}\\
--10(2)^{-3}=1.25
-\end{align}\]</span></p>
-<div style="page-break-after: always;"></div>
-<ol start="5" type="1">
-<li>Find the slope of the tangent line in the graph below at <span class="math inline">\(x=2\)</span>. Describe in words how the slope of the tangent line represents the derivative. Could the tangent line match another point on the curve?</li>
+<li><p>Approximate the slope of the tangent line in the graph below at <span class="math inline">\(x=2\)</span>.</p></li>
+<li><p>Write a short paragraph describing how the slope of the tangent line represents the derivative.</p></li>
 </ol>
 <div class="cell" data-layout-align="center">
 <div class="cell-output-display">
@@ -414,10 +423,12 @@ x^4-5x^3+x-5 \\
 </div>
 </div>
 </div>
-<p><span style="color:blue">Using rise over run we can take two points on the tangent line to find the slope. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative. In this graph <span class="math inline">\(\frac{dy}{dx}=2\)</span> is unique at only x=2. However in other curves, such as sine waves or higher order polynomials, it is possible for different tangent lines to have the same slope </span></p>
-<p><span class="math display">\[
-slope=\frac{1--1}{2-1}=\frac{2}{1}
-\]</span></p>
+<p><span style="color:blue"> a. First, we draw a tangent line to the graph at <span class="math inline">\(x=2\)</span>, this is the red line plotted with the graph.</span></p>
+<p>Using rise over run we can take two points on the tangent line to find the slope. Let’s use <span class="math inline">\((2,1)\)</span> and <span class="math inline">\((1,-1)\)</span> as our points on the tangent, then </p>
+<p><span style="color:blue"> <span class="math display">\[
+slope=\frac{1- (-1)}{2-1}=2.
+\]</span> </span></p>
+<p><span style="color:blue"> b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative. </span></p>
 
 
 </section>
