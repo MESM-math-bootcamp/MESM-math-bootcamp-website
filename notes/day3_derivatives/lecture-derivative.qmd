@@ -1,0 +1,682 @@
+---
+format: 
+  revealjs:
+    chalkboard: false
+    slide-number: true
+    show-slide-number: print
+    theme:
+     - ../../ucsb-media.scss   
+    html-math-method: mathjax     
+embed-resources: true
+---
+
+## {#title-slide data-menu-title="Title Slide" background=.white}
+
+[Rules and Applications of Derivatives]{.custom-title .blue-text}
+
+[Bren Calculus Workshop]{.custom-subtitle .gold}
+
+<hr class="hr-teal">
+
+[Nathaniel Grimes]{.body-text-l .center-text .blue-text}
+
+[Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
+
+[**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
+
+## {#tr data-menu-title="Team Review"}
+
+[Team Review]{.slide-title}
+
+- How did everyone feel about the problem set?
+
+- Any questions?
+
+- Discuss with Team
+
+## {#rules-cont data-menu-title="Product Rule"}
+
+[Rules for Derivatives Continued]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Product Rule**
+:::
+
+$$
+\large
+\frac{d}{dx}=[f(x)*g(x)]=f(x)g'(x)+g(x)f'(x)
+$$
+
+- Breakdown multiplication into two separate functions
+
+- Then take the first function times the derivative of the second, and add the second function times the derivative of the first.
+
+## {#prod-ex data-menu-title="Product Rule Example"}
+
+[Product Rule Example]{.slide-title}
+
+$$
+\begin{align}
+y&=2x(x^2+3x) \\
+y&=\overbrace{2x}^{f(x)}\overbrace{(x^2+3x)}^{g(x)} &\text{Break into two functions} \\
+\frac{dy}{dx}&=\overbrace{2x}^{f(x)}\overbrace{(2x+3)}^{g'(x)}+\overbrace{2}^{f'(x)}\overbrace{(x^2+3x)}^{g(x)} &\text{Apply Power Rule} \\
+\frac{dy}{dx}&=6x^2+12x  &\text{Algebra clean up}
+\end{align}
+$$
+
+## {#quotient-rule data-menu-title="Quotient Rule"}
+
+[Rule for Derivatives Continued]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Quotient Rule**
+:::
+
+$$
+\large
+\frac{d}{dx}\left [\frac{f(x)}{g(x)}\right]=\frac{g(x)f'(x)-f(x)g'(x)}{[g(x)]^2}
+$$
+
+- Same idea as product rule, but order matters
+
+- The denominator has to be $g(x)$
+
+## {#quo-ex data-menu-title="Quotient Rule Example"}
+
+[Quotient Rule Example]{.slide-title}
+
+<hr>
+
+$$
+\begin{align}
+y&=\frac{x^2}{(x+1)} \\[3px]
+y&=\class{fragment}{{}\frac{\overbrace{x^2}^{f(x)}}{\underbrace{(x+1)}_{g(x)}}} &\text{Identify Functions}\\[3px]
+\frac{dy}{dx}&=\class{fragment}{{}\frac{\overbrace{(x+1)}^{g(x)}\overbrace{2x}^{f'(x)}-\overbrace{x^2}^{f(x)}\overbrace{(1)}^{g'(x)}}{\underbrace{(x+1)^2}_{[g(x)]^2}}} &\text{Quotient Rule}\\[3px]
+\frac{dy}{dx}&=\class{fragment}{{}\frac{x^2+2x}{(x+1)^2}}
+\end{align}
+$$
+
+**Note:** Algebraically solving Quotient Rules can be very challenging. Try to reduce it down to a usable form.
+
+
+
+## {#rule-chain data-menu-title="Chain Rule"}
+
+[Rule of Derivatives Continued]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Chain Rule**
+:::
+
+$$
+\large
+\frac{d}{dx}[f(g(x))]=f'(g(x))g'(x)
+$$
+
+- Take the derivative of the outermost function then multiply by the derivative of the innermost
+
+- Probably the most important rule for advanced calculus
+
+## {#chain-ex data-menu-title="Chain Rule Example"}
+
+[Chain Rule Example]{.slide-title}
+
+<hr>
+
+
+- Use a trick called u-substitution
+
+- Label the inner function as u
+
+- Take the derivative with respect to u
+
+$$
+\begin{align}
+y&\class{fragment}{{}=(x^3-2)^2}\\[3px]
+u&=\class{fragment}{{}x^3-2}\\[3px] 
+y&\class{fragment}{{}=u^2} \\[3px]
+\frac{dy}{dx}&=\class{fragment}{{}\frac{dy}{du}\cdot\frac{du}{dx}}
+\end{align}
+$$
+
+
+## {#chain-ex-con data-menu-title="Chain Rule Example Continued"}
+
+[Chain Rule Example Continued]{.slide-title}
+
+<hr>
+
+
+$$
+\begin{align}
+\frac{dy}{dx}&=\frac{dy}{du}\cdot\frac{du}{dx}\\[3px]
+\frac{dy}{du}&=\class{fragment}{{}2u} &\text{Reminder: }y=u^2 \\[3px]
+\frac{du}{dx}&=\class{fragment}{{}3x^2} &\text{Reminder: }u=(x^3-2) \\[3px]
+\frac{dy}{dx}&=\class{fragment}{{} 2u\cdot3x^2} \\[3px]
+\frac{dy}{dx}&=\class{fragment}{{} 2(x^3-2)(3x^2)}
+\end{align}
+$$
+
+
+## {#exponent data-menu-title="An aside on exponents"}
+
+[An aside on exponents]{.slide-title}
+
+Base $e$ exponents are unique and useful in many math applications
+
+Originally derived to solve compounding interest rate problems in 1683 by Bernoulli
+
+::::{.columns}
+:::{.column width="50%"}
+It's a constant $e\approx2.72$
+
+Comes from this limit:
+
+$$
+\lim_{n\to \infty}(1+\frac{1}{n})^n
+$$
+:::
+:::{.column width="50%"}
+Follows normal power properties
+
+$e^{x+y}=e^x\cdot e^y$
+
+$e^{-x}=\frac{1}{e^x}$
+
+$e^{x-y}=\frac{e^x}{e^y}$
+
+$e^{rx}=(e^x)^r$
+:::
+::::
+
+## {#der-exp data-menu-title="Derivatives of Exponents"}
+
+[Derivatives of Exponents]{.slide-title}
+
+<hr>
+
+
+$$
+\large
+\frac{d}{dx}e^x=e^x
+$$
+
+::::{.columns}
+:::{.column width="50%"}
+```{r,fig.align='center',out.width="75%"}
+library(tidyverse)
+x=seq(-1,1,by=0.01)
+y=exp(x)
+
+ggplot()+
+  geom_line(aes(x=x,y=y),color="black",linewidth=3)+
+  theme_classic()+
+  labs(x="",y="",title=bquote(e^x))+
+  theme(text=element_text(size=28))
+```
+:::
+:::{.column width="50%"}
+
+The derivative at every point on this line is simply $f(x)$ 
+
+When $x=0$, $\frac{d}{dx(0)}=1$
+
+:::
+::::
+
+
+## {#er-exp-con data-menu-title="Derivatives of Exponents"}
+
+[Derivatives of Exponents]{.slide-title}
+
+<hr>
+
+```{r,fig.align='center',out.width="25%"}
+knitr::include_graphics("img/exp_comic.png")
+```
+
+
+## {#higher-order-der data-menu-title="Higher Order Derivatives"}
+
+[Higher Order Derivatives]{.slide-title}
+
+<hr>
+
+- We can continue to take derivatives of derivatives
+
+- The second derivative becomes the rate of change of the rate of change (Think acceleration)
+
+- Notation: 
+
+    - $f''(x)$ or $\frac{d^2y}{dx^2}$: 2nd Derivative
+    
+    - $f^{(n)}(x)$ or $\frac{d^ny}{dx^n}$ nth derivative
+
+## {#high data-menu-title="Higher Order Derivatives"}
+
+
+```{r,fig.align='center',out.width="75%"}
+knitr::include_graphics("img/nth.png")
+```
+
+
+## {#ta data-menu-title=Team" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Team Assessment</div>
+</div>
+
+## {#ta-1-q1 data-menu-title="Team Assessment 1 Question 1"}
+
+**Identify which rule works best for each function**
+
+$$
+\begin{align}
+\text{A) }y=e^{\sqrt{3x+10}} & &\text{B)  }g(y)=\frac{(8y+2)}{(4y+3)^3}  &  & \text{C) }p(b)=18b\cdot e^{2b}
+\end{align}
+$$
+
+<br>
+
+<br>
+
+:::{.footnote}
+Assessment continues on next slide
+:::
+
+
+
+## {#ta-1-q2 data-menu-title="Team Assessment Question 2"}
+
+1) Find the first derivative
+
+$$
+f(x)=(2x-x^2)^3
+$$
+
+2) Find the first derivative
+
+$$
+f(x)=\frac{2}{x^2+1}
+$$
+
+3) Find the third derivative
+
+$$
+f(x)=x^2(2x+1)
+$$
+
+
+## {#app-derv data-menu-title="Applications of Derivatives" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Application of Derivatives</div>
+</div>
+
+## {#exp-real-world data-menu-title="Exponential functions in the world"}
+
+[Exponential Functions in the world]{.slide-title}
+
+<hr>
+
+[Infectious diseases](https://ourworldindata.org/covid-cases?country=~USA)
+
+<br>
+
+[Human population](https://ourworldindata.org/grapher/population)
+
+<br>
+
+[Communication](https://ourworldindata.org/grapher/ict-adoption)
+
+<br> 
+
+[Growth of Renewable Energy](https://ourworldindata.org/grapher/modern-renewable-prod)
+
+
+## {#log-growth data-menu-title="Logistic Growth"}
+
+[Logistic Growth]{.slide-title}
+
+<hr>
+
+Resource limits do exist in the world
+
+$$
+\begin{align}
+\frac{dN}{dt}&=rN\left(\frac{K-N}{K}\right) \\
+\text{Where }N=\text{population, }r=\text{growth rate, }&t=\text{time, and }K=\text{Carrying Capacity}
+\end{align}
+$$
+
+```{r,fig.align='center',out.width="50%"}
+knitr::include_graphics("img/carry.webp")
+```
+
+
+## {#log-fisheries data-menu-title="Fisheries and Biological conservation"}
+
+[Extremely important in Fisheries and Biological Conservation]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+```{r,fig.align='center',fig.dim=c(5,5.5),out.width="90%"}
+x=seq(0,50)
+logistic<-function(t,p,k,r){
+ out= p*k*exp(r*t)/((k-p)+p*exp(r*t))
+ 
+ return(out)
+}
+
+y=logistic(t=x,p=10,k=100,r=.15)
+
+sec_log<-function(t,p,k,r){
+  r*p*k*(k-p)*exp(r*t)/((k-p)+p*exp(r*t))^2
+}
+
+z=sec_log(t=x,p=10,k=100,r=.15)
+p1<-ggplot()+
+  geom_line(aes(x=x,y=y),linewidth=2)+
+  theme_classic()+
+  labs(y="Population",x="Time",title="Logistic Growth")+
+  geom_hline(yintercept=100,color="red",linewidth=2,linetype=2)+
+  annotate("text",label="Carrying Capacity",x=25,y=122,size=6)+
+    annotate("segment",x=25,xend=25,y=115,yend=101,color="red",size=1,arrow=arrow())+
+  theme(text = element_text(size = 16))+
+  ylim(0,130)
+
+p2<-ggplot()+
+  geom_line(aes(x=x,y=z),linewidth=2)+
+  theme_classic()+
+  labs(y="Rate of Population Growth",x="Time",title="Derivative of Logistic")+
+  annotate("segment",x=29,xend=16,y=3.2,yend=3.8,size=1,arrow=arrow())+
+  annotate("text",label="Maximum\nSustainable\n Yield",x=40,y=3.1,size=6)+
+  theme(text = element_text(size = 16)) 
+
+p1
+
+```
+:::
+:::{.column width="50%"}
+
+```{r,fig.align='center',fig.dim=c(5,5.5),out.width="90%"}
+p2
+
+```
+:::
+::::
+
+## {#app-derv-exp data-menu-title="Derivatives solve environmental problems"}
+
+[Application of derivatives allows us to find crucial information to solve environmental problems]{.slide-title}
+
+<hr>
+
+1) Find instantaneous rate of change at any point
+
+2) Find when functions are increasing or decreasing
+
+3) Find the Optimal values of functions
+
+    - Optimal values are key to designing effective policies
+    
+## {#pop data-menu-title="How quickly is the human population rising right now?"}
+
+[How quickly is the human population rising right now?]{.slide-title}
+
+<hr>
+
+Dochy et al. (1995) used the following function to describe the increase in human population over time:
+
+$$
+x(t)=\frac{1}{c-\beta t}
+$$
+
+Where $c=9.833*10^{-3}$, $\beta=4.849*10^{-6}$, and $x$ is the total human population in millions at year $t$.
+
+- How quickly was the human population increasing in 1450?
+
+- What should be the population growth rate in 2024 according to this model?
+
+## {#pop-ex-1 data-menu-title="Human Population Example"}
+
+[Begin by taking the derivative]{.slide-title}
+
+<hr>
+
+First, think of which rules we would use for $x(t)=\frac{1}{c-\beta t}$
+
+## {#popex-2 data-menu-title="Human Population Example"}
+
+[Begin by taking the derivative]{.slide-title}
+
+<hr>
+
+$$
+\begin{align}
+x(t)&=\frac{1}{c-\beta t} \\
+x(t)&=(c-\beta t)^{-1} &\text{Rearrange} \\
+\frac{dx}{dt}&=\beta(c-\beta t)^{-2} &\text{Chain and Power Rule}\\
+x'(1450)&=.61 \text{ million per year} &x'(2024)=13,980
+\text{ million per year}
+\end{align}
+$$
+
+:::{.fragment .fade-in}
+**Why is this model so wrong**
+:::
+
+## {#pop-ex-3 data-menu-title="Human Population Example"}
+
+[The model isn't wrong, just not predictive out of sample]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+```{r,fig.align='center',fig.cap="Figure 2 from Dochy 2015",out.width="85%"}
+knitr::include_graphics("img/dochy.PNG")
+```
+:::
+:::{.column width="50%"}
+
+```{r,fig.align='center',out.width="95%"}
+knitr::include_graphics("img/population-regions-with-projections.png")
+```
+:::
+::::
+
+## {#derv-help data-menu-title="Derivatives help us understand the beavhior of functions and also people"}
+
+[Derivatives help us understand the behavior of functions and also people]{.slide-title}
+
+<hr>
+
+- Useful in designing predictive theory for new policies
+
+- Personal Example: Will a fishery insurance program incentivize overfishing?
+
+$$
+\begin{align}
+\begin{bmatrix}\frac{\partial K}{\partial \gamma} \\ \frac{\partial L}{\partial \gamma}\end{bmatrix}
+=-\begin{bmatrix}
+\frac{\partial U}{\partial K \partial K} & \frac{\partial U}{\partial K \partial L} \\
+\frac{\partial U}{\partial L \partial K} & \frac{\partial U}{\partial L \partial L}\end{bmatrix}^{-1}\begin{bmatrix}\frac{\partial U}{\partial K \partial \gamma}\\ \frac{\partial U}{\partial L \partial \gamma}\end{bmatrix}
+\end{align}
+$$
+
+- What conditions lead to:
+
+$$
+\begin{align}
+\begin{bmatrix}\frac{\partial K}{\partial \gamma} \\ \frac{\partial L}{\partial \gamma}\end{bmatrix}\lesseqgtr 0
+\end{align}
+$$
+
+## {#increasing data-menu-title="Increasing or Decreasing functions"}
+
+[Let's start a little simpler]{.slide-title}
+
+<hr>
+
+**Definition of increasing and decreasing Intervals of a Function**
+
+- For the function $f(x)$ (differentiable on the interval $(a,b)$)
+
+    - If $f'(x)>0$ for all $x$ values between $a$ and $b$, this interval is increasing
+    
+    - If $f'(x)<0$ for all $x$ values betwen $a$ and $b$, this interval is said to be decreasing
+    
+    - If $f'(x)=0$ for all values between $a$ and $b$, then the function is constant within the interval
+
+## {#increasing-graph data-menu-title="Graphical demonstration of Increasing vs Decreasing"}
+
+[Graphical demonstration of increasing vs decreasing]{.slide-title}
+
+<hr>
+```{r,fig.align='center',out.width="80%"}
+knitr::include_graphics("img/increase.PNG")
+```
+
+
+
+## {#optimization data-menu-title="Optimization problems find relative extremum (aka max or min) of functions"}
+
+[Optimization problems find relative extremum (aka max or min) of functions]{.slide-title}
+
+<hr>
+1) Find First Order Conditions:
+
+- Relative extremum exist at all points on function where $f'(x)=0$
+
+:::{.fragment .fade-in}
+2) Verify Second Order Conditions:
+
+- Whether an extremum is a maximum or minimum requires us to test if it is increasing or decreasing at the extremum
+
+- $f(x^*)$ is a local maximum if $f''(x)<0$
+
+- $f(x^*)$ is a local minimum if $f''(x)>0$
+
+:::
+
+## {#opt-graph data-menu-title="Graphical Example of Optimization"}
+
+[Graphical Example of Optimization]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+$f(x)=x^3-12x+2$
+
+Where does $f'(x)=0$?
+:::
+:::{.column width="50%"}
+
+```{r fig.align='center',fig.dim=c(5,5.5),out.width="90%"}
+
+x=seq(-5,5,by=.1)
+y=x^3-12*x+2
+
+ggplot()+
+  geom_line(aes(x=x,y=y),size=2.5,color="#003660")+
+  theme_classic()+
+  annotate("text",x=-2,y=35,label="Local Maximum",size=6)+
+  annotate("text",x=2,y=-35,label="Local Minimum",size=6)+
+  annotate("segment",x=0.5,xend=4,y=-14,yend=-14,linetype=2,color="#FEBC11",size=2)+
+  annotate("segment",x=-.5,xend=-4,y=18,yend=18,linetype="dashed",color="#FEBC11",size=2)+
+  theme(text = element_text(size = 28)) 
+
+```
+:::
+::::
+
+
+## {#opt-solve data-menu-title="Solve Optimization problems analytically"}
+
+[Solve Analytically]{.slide-title}
+
+<hr>
+
+First Order Conditions:
+
+$$
+\begin{align}
+f(x)&=x^3-12x+2 \\
+f'(x)&=3x^2-12 \\
+x^*&=-2  & x^*=2
+\end{align}
+$$
+
+:::{.fragment .fade-in}
+Second Order Conditions:
+
+$$
+\begin{align}
+f''(x)&=6x \\
+f''(-2)&<0  &f''(2)>0
+\end{align}
+$$
+:::
+
+:::{.fragment .fade-in}
+By the first order conditions we know that $x=2$ and $x=-2$ are local optimum.
+
+The second order conditions inform us that $x=-2$ is a local maximum and $x=2$ is a local minimum.
+:::
+
+
+## {#ta-2 data-menu-title="Team Assessment 2" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Team Assessment</div>
+</div>
+
+
+## {#gta2-1 data-menu-title="Team Assessment 2 Questions"}
+
+1) How many local min and maximums can you find on this graph?
+
+```{r,fig.align='center'}
+x=seq(-1,2.75,by=0.01)
+
+y=2*x^6-13*x^5+26*x^4-7*x^3-28*x^2+20*x
+
+ggplot()+
+  geom_line(aes(x=x,y=y),color="#003660",size=3)+
+  theme_classic()+
+  theme(text = element_text(size = 28)) 
+  
+
+```
+
+
+## {#gta2-2 data-menu-title="Team Assessment 2 Questions"}
+
+2) Solve for all optimum. Identify which are minima and which are maxima.
+
+$$
+f(x)=2x^3-6x^2+3x+15
+$$
+
+## {#gta2-3 data-menu-title="Team Assessment 2 Questions"}
+
+3) Your team has been hired to help the city of Santa Barbara to help eliminate a nasty pollutant in our streams. You are choosing between two policies. Policy A provides $\sqrt{10x+4}$ benefits where $x$ is the dollar spent on interventions. Policy B provides $\sqrt{20x+4}$ benefits for every dollar spent. However, each policy has a cost associated with each. Policy A has a constant linear cost at $2x$ and Policy B has a constant linear cost at $3x$.
+
+a) Find the optimal amount of interventions dollars to spend for each policy. Consider both costs and benefits. [hint: Remember $\sqrt{}$ is just $x^{\frac{1}{2}}$. You can use exponent rules to help solve]
+
+b) Which policy provides the most benefits?
+
+c) Which policy is cheaper?
+
+d) Which policy should the city of Santa Barbara pursue?
