@@ -18,11 +18,19 @@ embed-resources: true
 
 <hr class="hr-teal">
 
-[Nathaniel Grimes]{.body-text-l .center-text .blue-text}
+[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .blue-text}
 
 [Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
 
+<br>
+
+<br>
+
 [**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
+
+<br>
+
+*Materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop.*
 
 ## {#tr data-menu-title="Team Review"}
 

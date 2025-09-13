@@ -901,8 +901,6 @@ $$
 
 <hr>
 
-
-
 - All differentiable functions are continuous, but not all continuous functions are differentiable.
 
 - The absolute value function $|x|$ is one example, this is defined by 
