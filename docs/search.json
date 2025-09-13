@@ -64,133 +64,18 @@
     "text": "About this site"
   },
   {
-    "objectID": "notes/day2_limits/walkthrough.html#average-slope",
-    "href": "notes/day2_limits/walkthrough.html#average-slope",
-    "title": "Bren Calculus Workshop",
-    "section": "Average slope",
-    "text": "Average slope\n\n\nStart with:\n\nNearby point:\n\n\nAverage slope:"
-  },
-  {
-    "objectID": "notes/day2_limits/walkthrough.html#average-slope-1",
-    "href": "notes/day2_limits/walkthrough.html#average-slope-1",
-    "title": "Bren Calculus Workshop",
-    "section": "Average slope",
-    "text": "Average slope\n\n\nStart with a point \\((x,f(x))\\) on the graph.\nA nearby point can be \\((x+\\Delta x, f(x+\\Delta x))\\), where \\(\\Delta x\\) is a short distance from \\(x\\).\n\nThe average slope between \\((x,f(x))\\) and \\((x+\\Delta x, f(x+\\Delta x))\\) is given by\n \\[\\text{average slope} = \\frac{f(x+\\Delta x) - f(x)}{(x+\\Delta x)-x} = \\frac{f(x+\\Delta x) - f(x)}{\\Delta x}.\\] \nWhat happens when \\(\\Delta x\\) becomes smaller and smaller?"
-  },
-  {
-    "objectID": "notes/day2_limits/walkthrough.html#what-happens-when-delta-x-to-0",
-    "href": "notes/day2_limits/walkthrough.html#what-happens-when-delta-x-to-0",
-    "title": "Bren Calculus Workshop",
-    "section": "What happens when \\(\\Delta x \\to 0\\)",
-    "text": "What happens when \\(\\Delta x \\to 0\\)"
-  },
-  {
-    "objectID": "notes/day2_limits/walkthrough.html#slide-3",
-    "href": "notes/day2_limits/walkthrough.html#slide-3",
-    "title": "Bren Calculus Workshop",
-    "section": "Slide 3",
-    "text": "Slide 3"
-  },
-  {
-    "objectID": "notes/day2_limits/walkthrough.html#slide-4",
-    "href": "notes/day2_limits/walkthrough.html#slide-4",
-    "title": "Bren Calculus Workshop",
-    "section": "Slide 4",
-    "text": "Slide 4"
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html",
-    "href": "notes/day2_limits/day2_limits.html",
-    "title": "Day 2: Limits",
+    "objectID": "notes/day2_limits/problem_set_limits.html",
+    "href": "notes/day2_limits/problem_set_limits.html",
+    "title": "Limits and Derivatives Problem Set",
     "section": "",
-    "text": "Artwork by @allison_horst\n\n\n\n\nLimits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#lecture-materials",
-    "href": "notes/day2_limits/day2_limits.html#lecture-materials",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#problem-set",
-    "href": "notes/day2_limits/day2_limits.html#problem-set",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Click here to see the problem set.",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#problem-set-solution",
-    "href": "notes/day2_limits/day2_limits.html#problem-set-solution",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Solutions",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/solutions_problem_set_limits.html",
-    "href": "notes/day2_limits/solutions_problem_set_limits.html",
-    "title": "Limits and Derivatives Problem Set Solutions",
-    "section": "",
-    "text": "Limits and Derivatives Problem Set Solutions\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function. \n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\nTo investigate this limit we can evaluate the function \\(\\frac{4x}{x+2}\\) from the left with values getting closer to -2. We can see from the approximation below that \\(y = \\frac{4x}{x+2}\\) rapidly increases with values closer to -2. So, we can say the limit goes to infinity. \n\n\n\n\n\nx\n-2.5\n-2.1\n-2.01\n-2.001\n-2.0001\n-2.00001\n\n\ny\n20.0\n84.0\n804.00\n8004.000\n80004.0000\n800003.99999\n\n\n\n\n\n We can also plot the function to have a visual understanding of its behavior near -2. \n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n To investigate this limit we can evaluate the function \\(2^x\\) with values of \\(x\\) approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say \\(\\lim_{x\\to 3}2^x=8\\). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nx\n2.500000\n2.900000\n2.99000\n2.999000\n3.001000\n3.010000\n3.100000\n3.50000\n\n\ny\n5.656854\n7.464264\n7.94474\n7.994457\n8.005547\n8.055644\n8.574188\n11.31371\n\n\n\n\n\n We can also graph this function and see it is continuous. So \\(\\lim_{x\\to 3}2^x = 2^3 = 8\\). \n\n\n\n\n\n\n\n\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\nThis function is broken down into two “pieces”: it equals \\(bx^2 - \\frac{3}{2}x - 5\\) when \\(x\\) is less than -3, and it equals \\(-2x-9\\) when \\(x\\) is greater or equal to -3. To connect these two pieces and make \\(h(x)\\) continuous we need both pieces to approach the same value at \\(x=-3\\). In other words, we need that \n \\[ -3 = h(x) = \\lim_{x\\to-3} h(x).\\] \n Let’s calculate the side limits to see what’s going on with \\(\\lim_{x\\to-3} h(x)\\). From the left-hand side we have that \nxw \\[\\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^-} bx^2 - \\frac{3}{2}x - 5 = 9b + \\frac{9}{2}.\\] \na8670390NCEAS\nFrom the right-hand side we have that \n \\[\n\\lim_{x\\to-3^+} h(x) = \\lim_{x\\to-3^+} -2x-9 = -3\n\\] \n If we want \\(h(x)\\) to be continuous at \\(x=-3\\) we then need \n \\[ -3 = h(x) = \\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^+} h(x) =  9b + \\frac{9}{2} \\] \n Solving this equation we obtain that \n \\[\n\\begin{align}\n9b=\\frac{-5}{2}\\\\\nb=\\frac{-5}{18}.\n\\end{align}\n\\] \n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n \\[\\begin{align}\nf(x)  &= 2x^2+4\\\\\nf'(x) &= 4x\\\\\nf'(-3) &=4(-3)\\\\\n      &=-12\n\\end{align}\\] \n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n \\[\\begin{align}\ng(x) &= x^4-5x^3+x-5 \\\\\ng'(x) &= 4x^3-15x^2+1 \\\\\ng'(5) &= 4(5)^3-15(5)^2+1\\\\\n&=126\n\\end{align}\\] \n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n We have that \n \\[\nh(x) = \\frac{5}{x^2} = 5x^{-2}\n\\] \n Then, \n \\[\\begin{align}\nh'(x) & =-10x^{-3}\\\\\nh'(2) &= -10(2)^{-3}\\\\\n& = -\\frac{10}{8}\\\\\n&=-1.25.\n\\end{align}\\] \n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative.\n\n\n\n\n\n\n\n\n\n\n a. First, we draw a tangent line to the graph at \\(x=2\\), this is the red line plotted with the graph.\nUsing rise over run we can take two points on the tangent line to find the slope. Let’s use \\((2,1)\\) and \\((1,-1)\\) as our points on the tangent, then \n \\[\nslope=\\frac{1- (-1)}{2-1}=2.\n\\] \n b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the UCSB Master of Environmental Science and Management at the Bren School of Environmnetal Science and Management.\n\n\nThis 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment\n\n\n\n\nCarmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424\n\n\n\n\nClick here to see the syllabus.",
-    "crumbs": [
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "index.html#workshop-description",
-    "href": "index.html#workshop-description",
-    "title": "Welcome!",
-    "section": "",
-    "text": "This 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment",
-    "crumbs": [
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Carmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
-    "crumbs": [
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "index.html#syllabus",
-    "href": "index.html#syllabus",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Click here to see the syllabus.",
-    "crumbs": [
-      "Welcome!"
-    ]
+    "text": "Limits and Derivatives Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\n\n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n\n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n\n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n\n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative."
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#title-slide",
     "href": "notes/day2_limits/lecture-limits.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Limits and Intro to Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 12, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Limits and Intro to Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 13, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#tr",
@@ -452,11 +337,91 @@
     "text": "As a team, list 3 fields of environmental science where studying the rate of change and derivatives would be important.\n\n\n\nWhich rules should you use to take these derivatives?\n\n\\[\n\\begin{align}\n\\text{A)  }& f(x)=3x^4 &\\text{B) }  y=4x^2+3x-16\n\\end{align}\n\\]\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=7x+4 & &\\text{C) }g(y)=\\sqrt{y}\n\\end{align}\n\\]"
   },
   {
-    "objectID": "notes/day2_limits/problem_set_limits.html",
-    "href": "notes/day2_limits/problem_set_limits.html",
-    "title": "Limits and Derivatives Problem Set",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
     "section": "",
-    "text": "Limits and Derivatives Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\n\n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n\n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n\n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n\n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative."
+    "text": "Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the UCSB Master of Environmental Science and Management at the Bren School of Environmnetal Science and Management.\n\n\nThis 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment\n\n\n\n\nCarmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424\n\n\n\n\nClick here to see the syllabus.",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#workshop-description",
+    "href": "index.html#workshop-description",
+    "title": "Welcome!",
+    "section": "",
+    "text": "This 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Carmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#syllabus",
+    "href": "index.html#syllabus",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Click here to see the syllabus.",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/solutions_problem_set_limits.html",
+    "href": "notes/day2_limits/solutions_problem_set_limits.html",
+    "title": "Limits and Derivatives Problem Set Solutions",
+    "section": "",
+    "text": "Limits and Derivatives Problem Set Solutions\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function. \n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\nTo investigate this limit we can evaluate the function \\(\\frac{4x}{x+2}\\) from the left with values getting closer to -2. We can see from the approximation below that \\(y = \\frac{4x}{x+2}\\) rapidly increases with values closer to -2. So, we can say the limit goes to infinity. \n\n\n\n\n\nx\n-2.5\n-2.1\n-2.01\n-2.001\n-2.0001\n-2.00001\n\n\ny\n20.0\n84.0\n804.00\n8004.000\n80004.0000\n800003.99999\n\n\n\n\n\n We can also plot the function to have a visual understanding of its behavior near -2. \n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n To investigate this limit we can evaluate the function \\(2^x\\) with values of \\(x\\) approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say \\(\\lim_{x\\to 3}2^x=8\\). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nx\n2.500000\n2.900000\n2.99000\n2.999000\n3.001000\n3.010000\n3.100000\n3.50000\n\n\ny\n5.656854\n7.464264\n7.94474\n7.994457\n8.005547\n8.055644\n8.574188\n11.31371\n\n\n\n\n\n We can also graph this function and see it is continuous. So \\(\\lim_{x\\to 3}2^x = 2^3 = 8\\). \n\n\n\n\n\n\n\n\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\nThis function is broken down into two “pieces”: it equals \\(bx^2 - \\frac{3}{2}x - 5\\) when \\(x\\) is less than -3, and it equals \\(-2x-9\\) when \\(x\\) is greater or equal to -3. To connect these two pieces and make \\(h(x)\\) continuous we need both pieces to approach the same value at \\(x=-3\\). In other words, we need that \n \\[ -3 = h(x) = \\lim_{x\\to-3} h(x).\\] \n Let’s calculate the side limits to see what’s going on with \\(\\lim_{x\\to-3} h(x)\\). From the left-hand side we have that \nxw \\[\\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^-} bx^2 - \\frac{3}{2}x - 5 = 9b + \\frac{9}{2}.\\] \na8670390NCEAS\nFrom the right-hand side we have that \n \\[\n\\lim_{x\\to-3^+} h(x) = \\lim_{x\\to-3^+} -2x-9 = -3\n\\] \n If we want \\(h(x)\\) to be continuous at \\(x=-3\\) we then need \n \\[ -3 = h(x) = \\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^+} h(x) =  9b + \\frac{9}{2} \\] \n Solving this equation we obtain that \n \\[\n\\begin{align}\n9b=\\frac{-5}{2}\\\\\nb=\\frac{-5}{18}.\n\\end{align}\n\\] \n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n \\[\\begin{align}\nf(x)  &= 2x^2+4\\\\\nf'(x) &= 4x\\\\\nf'(-3) &=4(-3)\\\\\n      &=-12\n\\end{align}\\] \n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n \\[\\begin{align}\ng(x) &= x^4-5x^3+x-5 \\\\\ng'(x) &= 4x^3-15x^2+1 \\\\\ng'(5) &= 4(5)^3-15(5)^2+1\\\\\n&=126\n\\end{align}\\] \n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n We have that \n \\[\nh(x) = \\frac{5}{x^2} = 5x^{-2}\n\\] \n Then, \n \\[\\begin{align}\nh'(x) & =-10x^{-3}\\\\\nh'(2) &= -10(2)^{-3}\\\\\n& = -\\frac{10}{8}\\\\\n&=-1.25.\n\\end{align}\\] \n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative.\n\n\n\n\n\n\n\n\n\n\n a. First, we draw a tangent line to the graph at \\(x=2\\), this is the red line plotted with the graph.\nUsing rise over run we can take two points on the tangent line to find the slope. Let’s use \\((2,1)\\) and \\((1,-1)\\) as our points on the tangent, then \n \\[\nslope=\\frac{1- (-1)}{2-1}=2.\n\\] \n b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative."
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html",
+    "href": "notes/day2_limits/day2_limits.html",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Artwork by @allison_horst\n\n\n\n\nLimits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html#lecture-materials",
+    "href": "notes/day2_limits/day2_limits.html#lecture-materials",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html#problem-set",
+    "href": "notes/day2_limits/day2_limits.html#problem-set",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Click here to see the problem set.",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html#problem-set-solution",
+    "href": "notes/day2_limits/day2_limits.html#problem-set-solution",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Solutions",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
   },
   {
     "objectID": "notes/day5_differential_equations/day5_differential_equations.html",
