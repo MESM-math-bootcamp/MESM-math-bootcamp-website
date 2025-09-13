@@ -812,46 +812,70 @@ p4
 
 <hr>
 
-What if we set $\Delta x=0$? Then we would have a slope line that only touches our function at exactly $x$.
+**What if we let $\Delta x=0$?**
 
+Then we would have a slope line that only touches our function at exactly $x$.
+<!--
 ```{r,fig.align='center'}
 knitr::include_graphics("images/tangent_line.png")
+```
+-->
+
+```{r, fig.align='center'}
+
+slope=0
+line=x*slope
+p5<-p0+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  annotate("text",x=1,y=7,label="Delta~x==0",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=?",size=14)
+p5
 ```
 
 These very special types of lines are called **tangent lines**.
 
 <!---------------------------------------------------------->
 
-## {#ex-math data-menu-title="Put our example in math notation"}
+## {#recap data-menu-title="Recap in math notation"}
 
-[Example in math notation]{.slide-title}
-
-<hr>
-$$\text{slope}=\frac{y_2-y_1}{x_2-x_1}$$
-
-Choose a point along the function $(x,f(x))$
-
-Choose a different point on the function $\Delta x$ away $(x+\Delta x,f(x+\Delta x))$
-
-Add these into the slope equation
-
-$$
-\text{slope}=\frac{f(x+\Delta x)-f(x)}{(x+\Delta x) -x}=\frac{f(x+\Delta x)-f(x)}{\Delta x}
-$$
-
-<!---------------------------------------------------------->
-
-## {#derivative-def data-menu-title="Derivative Definition"}
-
-[Derivative Definition]{.slide-title}
+[Derivative definition]{.slide-title}
 
 <hr>
 
+Remember the slope of the line that passes between two points $(x_1, y_1)$ and $(x_2, y_2)$ is:
+
+$$\text{slope}=\frac{y_2-y_1}{x_2-x_1}.$$
+
+. . .
+
+If we have a function $f(x)$, then $(x,f(x))$ represents a point on its graph.
+
+. . .
+
+Choose a different point on the graph that is $\Delta x$ away: $(x+\Delta x,f(x+\Delta x))$.
+
+. . .
+
+Plug these pointson the graph of $f(x)$ into the slope equation:
+
+$$
+\text{slope}=\frac{f(x+\Delta x)-f(x)}{\Delta x}.
+$$
+
+. . .
+
+When we let $\Delta x \to 0$ we get <span style="color:red">**the slope of the tangent line at x**</span>
+
+<span style="color:red">
 $$
 \large
-f'(x)=\lim_{\Delta x \to 0}=\frac{f(x+\Delta x)-f(x)}{\Delta x}
+f'(x)=\lim_{\Delta x \to 0} \frac{f(x+\Delta x)-f(x)}{\Delta x}
 $$
+</span>
 
+<span style="color:red">**This is the derivative of $f$ at $x$.**</span>
+
+<!--
 <br>
 
 :::{.center-text}
@@ -863,6 +887,8 @@ $$
 f'(x)\text{, or }\frac{dy}{dx}
 $$
 
+-->
+
 <!---------------------------------------------------------->
 
 ## {#diff-func data-menu-title="Not all functions are differentiable"}
@@ -871,18 +897,17 @@ $$
 
 <hr>
 
-::::{.columns}
-:::{.column width="50%"}
-
-- All differentiable functions are continuous, but not all continuous functions are differentiable
-
-- The absolute value function is one example $y=|x|$
 
 
-:::
+- All differentiable functions are continuous, but not all continuous functions are differentiable.
 
-:::{.column width="50%"}
+- The absolute value function $|x|$ is one example, this is defined by 
+$$|x| = \cases{
+  x&,  x \geq 0\\
+  -x&, x<0
+}.$$
 
+It's graph is:
 
 ```{r, fig.align='center',out.width="90%"}
 x=seq(-5,5)
@@ -901,12 +926,11 @@ df %>%
   theme(text = element_text(size = 28)) 
 ```
 
-:::
-::::
+
 
 ## {#calc data-menu-title="Calculus and Derivatives are the study of change"}
 
-[Calculus and Derivatives are the study of change]{.slide-title}
+[Calculus and Derivatives are used to study change]{.slide-title}
 
 <hr>
 
@@ -916,7 +940,7 @@ knitr::include_graphics("images/loa.PNG")
 
 ## {#envs-change data-menu-title="Enviromental Science is the Study of Change"}
 
-[Environmental Science is also a study of change]{.slide-title}
+[Environmental Science studies change]{.slide-title}
 
 <hr>
 
@@ -927,7 +951,7 @@ knitr::include_graphics("images/glacier.jpg")
 
 ## {#envs-change2 data-menu-title="Enviromental Science is the Study of Change"}
 
-[Environmental Science is also a study of change]{.slide-title}
+[Environmental Science studies change]{.slide-title}
 
 <hr>
 
@@ -937,7 +961,7 @@ knitr::include_graphics("images/energy.png")
 
 ## {#envs-change3 data-menu-title="Enviromental Science is the Study of Change"}
 
-[Environmental Science is also a study of change]{.slide-title}
+[Environmental Science studies change]{.slide-title}
 
 <hr>
 
