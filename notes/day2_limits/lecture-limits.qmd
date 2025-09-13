@@ -592,18 +592,60 @@ knitr::include_graphics("images/trex.PNG")
 
 Taking the average rate of change to a set limit will eventually converge to the instantaneous. 
 
-<!---------------------------------------------------------->
+## {#average-slope data-menu-title="Average slope"}
 
-## {#walkthrough-1 data-menu-title="Walthrough"}
-
-[Walkthrough example]{.slide-title}
+[Average slope]{.slide-title}
 
 <hr>
 
 ```{r, fig.align='center'}
 
 library(tidyverse)
-x=seq(0,3,by=0.01)
+
+x=seq(-1,3,by=0.01)
+y=x^2
+
+lim_df<-data.frame(x=x,y=y)
+
+dx=2
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+
+
+ggplot(data=lim_df,aes(x=x,y=y))+
+  geom_line(color="black", linewidth=3)+
+  theme_classic()+
+  annotate("point",x=0,y=0,size=6,color="blue")+
+  theme(text = element_text(size = 28),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()) + 
+  coord_fixed(ratio = 1) +
+  coord_cartesian(xlim=c(-1,3), ylim=c(0,8))
+```
+
+Start with:
+
+
+<br>
+
+Nearby point:
+
+<br>
+
+<br>
+
+Average slope:
+
+## {#average-slope-filled data-menu-title="Average slope"}
+
+[Average slope]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+x=seq(-1,3,by=0.01)
 y=x^2
 
 lim_df<-data.frame(x=x,y=y)
@@ -618,22 +660,80 @@ line=x*slope
 p0<-ggplot(data=lim_df,aes(x=x,y=y))+
   geom_line(color="black",linewidth=3)+
   theme_classic()+
-  annotate("point",x=0,y=0,size=6,color="blue")+
-  theme(text = element_text(size = 28)) 
+  geom_line( data = data.frame(x = seq(-1, 3, by = 0.01),  
+                               y = 1.5 * seq(-1, 3, by = 0.01)),
+            aes(x = x, y = y),
+            color="red",
+            linewidth=2)+
+  annotate("point",x=0,y=0,size=8,color="blue")+
+  annotate("text", 
+            x=0, y=1, 
+            label="(x, f(x))",
+            size=10,
+            color="blue")+
+  annotate("point",x=1.5, y=2.25, size=8, color="blue")+
+  annotate("text", 
+            x=2.25, y=2.25, 
+            label="(x+Δx, f(x+Δx))",
+            size=10,
+            color="blue") +
+  theme(text = element_text(size = 28),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()) + 
+  coord_fixed(ratio = 1) +
+  coord_cartesian(xlim=c(-1,3), ylim=c(0,8))
 
 p0
-
 ```
 
-<!---------------------------------------------------------->
+Start with a point $(x,f(x))$ on the graph. 
 
-## {#walkthrough-2 data-menu-title="Walkthrough"}
+A nearby point can be $(x+\Delta x, f(x+\Delta x))$, where $\Delta x$ is a short distance from $x$. 
 
-[Walkthrough example]{.slide-title}
+
+<br>
+
+The average slope between $(x,f(x))$ and $(x+\Delta x, f(x+\Delta x))$ is given by
+
+<span style="color:red">
+$$\text{average slope} = \frac{f(x+\Delta x) - f(x)}{(x+\Delta x)-x} = \frac{f(x+\Delta x) - f(x)}{\Delta x}.$$
+</span>
+
+**What happens when $\Delta x$ becomes smaller and smaller?**
+
+
+## {#walkthrough-1 data-menu-title="Walkthrough"}
+
+[What happens when $\Delta x \to 0$?]{.slide-title}
 
 <hr>
 
 ```{r, fig.align='center'}
+
+library(tidyverse)
+
+x=seq(-1,3,by=0.01)
+y=x^2
+
+lim_df<-data.frame(x=x,y=y)
+
+dx=2
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+
+
+p0<- ggplot(data=lim_df,aes(x=x,y=y))+
+  geom_line(color="black", linewidth=3)+
+  theme_classic()+
+  annotate("point",x=0,y=0,size=6,color="blue")+
+  theme(text = element_text(size = 28),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()) + 
+  coord_fixed(ratio = 1) +
+  coord_cartesian(xlim=c(-1,3), ylim=c(0,8))
+
 p1<-p0+
   geom_point(aes(x=dx,y=y2),color="blue",size=6)+
   geom_line(aes(x=x,y=line),color="red",linewidth=2)+
@@ -643,11 +743,9 @@ p1
 
 ```
 
-<!---------------------------------------------------------->
+## {#walkthrough-2 data-menu-title="Walkthrough"}
 
-## {#walkthrough-3 data-menu-title="Walkthrough"}
-
-[Walkthrough example]{.slide-title}
+[What happens when $\Delta x \to 0$?]{.slide-title}
 
 <hr>
 
@@ -664,14 +762,11 @@ p2<-p0+
   annotate("text",x=1,y=4.5,label="Slope=1",size=14)
 
 p2
-
 ```
 
-<!---------------------------------------------------------->
+## {#walkthrough-3 data-menu-title="Walkthrough"}
 
-## {#walkthrough-4 data-menu-title="Walk Through Example"}
-
-[Walkthrough example]{.slide-title}
+[What happens when $\Delta x \to 0$?]{.slide-title}
 
 <hr>
 
@@ -685,20 +780,18 @@ p3<-p0+
   geom_line(aes(x=x,y=line),color="red",linewidth=2)+
   geom_point(aes(x=dx,y=y2),color="blue",size=6)+
   annotate("text",x=1,y=7,label="Delta~x==0.5",parse=TRUE,size=14)+
-  annotate("text",x=1,y=4.5,label="Slope=.25",size=14)
+  annotate("text",x=1,y=4.5,label="Slope=0.5",size=14)
 p3
 ```
 
-<!---------------------------------------------------------->
+## {#walkthrough-4 data-menu-title="Walkthrough"}
 
-## {#walkthrough-5 data-menu-title="Walkthrough"}
-
-[Walkthrough example]{.slide-title}
+[What happens when $\Delta x \to 0$?]{.slide-title}
 
 <hr>
 
 ```{r, fig.align='center'}
-dx=0.1
+dx=0.25
 y2=y[which(lim_df$x==dx)]
 
 slope=y2/dx
@@ -706,37 +799,12 @@ line=x*slope
 p4<-p0+
   geom_line(aes(x=x,y=line),color="red",linewidth=2)+
   geom_point(aes(x=dx,y=y2),color="blue",size=6)+
-  annotate("text",x=1,y=7,label="Delta~x==0.1",parse=TRUE,size=14)+
-  annotate("text",x=1,y=4.5,label="Slope=.1",size=14)
-
+  annotate("text",x=1,y=7,label="Delta~x==0.25",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=0.25",size=14)
 p4
-
 ```
 
 <!---------------------------------------------------------->
-
-## {#walkthrough-6 data-menu-title="Walkthrough"}
-
-[Walkthrough example]{.slide-title}
-
-<hr>
-
-```{r, fig.align='center'}
-dx=0.01
-y2=y[which(lim_df$x==dx)]
-
-slope=y2/dx
-line=x*slope
-p5<-p0+
-  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
-  geom_point(aes(x=dx,y=y2),color="blue",size=6)+
-  annotate("text",x=1,y=7,label="Delta~x==0.01",parse=TRUE,size=14)+
-  annotate("text",x=1,y=4.5,label="Slope=.01",size=14)
-
-p5
-
-
-```
 
 ## {#tangent data-menu-title="Tangent Lines"}
 

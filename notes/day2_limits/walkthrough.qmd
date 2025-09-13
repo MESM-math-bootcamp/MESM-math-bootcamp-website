@@ -16,7 +16,6 @@ embed-resources: true
 ```{r, fig.align='center'}
 
 library(tidyverse)
-library(latex2exp)
 
 x=seq(-1,3,by=0.01)
 y=x^2
@@ -55,10 +54,11 @@ Nearby point:
 Average slope:
 
 
-## Slide 1
-```{r, fig.align='center'}
+## Average slope
 
-library(tidyverse)
+<hr> 
+
+```{r, fig.align='center'}
 x=seq(-1,3,by=0.01)
 y=x^2
 
@@ -116,15 +116,34 @@ $$\text{average slope} = \frac{f(x+\Delta x) - f(x)}{(x+\Delta x)-x} = \frac{f(x
 
 **What happens when $\Delta x$ becomes smaller and smaller?**
 
-<!--
-The slope of a line going through two points $(x_1,y_1)$ and $(x_2, y_2)$ is given by:
-
-$$\text{slope}= \frac{y_2 - y_1}{x_2 - x_1} $$
--->
-
-## Slide 2
+## What happens when $\Delta x \to 0$
 
 ```{r, fig.align='center'}
+
+library(tidyverse)
+
+x=seq(-1,3,by=0.01)
+y=x^2
+
+lim_df<-data.frame(x=x,y=y)
+
+dx=2
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+
+
+p0<- ggplot(data=lim_df,aes(x=x,y=y))+
+  geom_line(color="black", linewidth=3)+
+  theme_classic()+
+  annotate("point",x=0,y=0,size=6,color="blue")+
+  theme(text = element_text(size = 28),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()) + 
+  coord_fixed(ratio = 1) +
+  coord_cartesian(xlim=c(-1,3), ylim=c(0,8))
+
 p1<-p0+
   geom_point(aes(x=dx,y=y2),color="blue",size=6)+
   geom_line(aes(x=x,y=line),color="red",linewidth=2)+

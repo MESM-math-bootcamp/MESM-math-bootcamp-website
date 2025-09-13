@@ -1,0 +1,21 @@
+{
+  "hash": "4c43f3d97620dece8a1f1f06fbd2661b",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nformat: \n  revealjs:\n    chalkboard: false\n    slide-number: true\n    show-slide-number: print\n    theme:\n     - ../../ucsb-media.scss    \nembed-resources: true\n---\n\n\n\n## Average slope\n\n<hr>\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](walkthrough_files/figure-revealjs/unnamed-chunk-1-1.png){fig-align='center' width=960}\n:::\n:::\n\n\n\nStart with:\n\n\n<br>\n\nNearby point:\n\n<br>\n\n<br>\n\nAverage slope:\n\n\n## Average slope\n\n<hr> \n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](walkthrough_files/figure-revealjs/unnamed-chunk-2-1.png){fig-align='center' width=960}\n:::\n:::\n\n\n\nStart with a point $(x,f(x))$ on the graph. \n\nA nearby point can be $(x+\\Delta x, f(x+\\Delta x))$, where $\\Delta x$ is a short distance from $x$. \n\n\n<br>\n\nThe average slope between $(x,f(x))$ and $(x+\\Delta x, f(x+\\Delta x))$ is given by\n\n<span style=\"color:red\">\n$$\\text{average slope} = \\frac{f(x+\\Delta x) - f(x)}{(x+\\Delta x)-x} = \\frac{f(x+\\Delta x) - f(x)}{\\Delta x}.$$\n</span>\n\n\n**What happens when $\\Delta x$ becomes smaller and smaller?**\n\n## What happens when $\\Delta x \\to 0$\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](walkthrough_files/figure-revealjs/unnamed-chunk-3-1.png){fig-align='center' width=960}\n:::\n:::\n\n\n\n## Slide 3\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](walkthrough_files/figure-revealjs/unnamed-chunk-4-1.png){fig-align='center' width=960}\n:::\n:::\n\n\n\n## Slide 4\n\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](walkthrough_files/figure-revealjs/unnamed-chunk-5-1.png){fig-align='center' width=960}\n:::\n:::",
+    "supporting": [
+      "walkthrough_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {
+      "include-after-body": [
+        "\n<script>\n  // htmlwidgets need to know to resize themselves when slides are shown/hidden.\n  // Fire the \"slideenter\" event (handled by htmlwidgets.js) when the current\n  // slide changes (different for each slide format).\n  (function () {\n    // dispatch for htmlwidgets\n    function fireSlideEnter() {\n      const event = window.document.createEvent(\"Event\");\n      event.initEvent(\"slideenter\", true, true);\n      window.document.dispatchEvent(event);\n    }\n\n    function fireSlideChanged(previousSlide, currentSlide) {\n      fireSlideEnter();\n\n      // dispatch for shiny\n      if (window.jQuery) {\n        if (previousSlide) {\n          window.jQuery(previousSlide).trigger(\"hidden\");\n        }\n        if (currentSlide) {\n          window.jQuery(currentSlide).trigger(\"shown\");\n        }\n      }\n    }\n\n    // hookup for slidy\n    if (window.w3c_slidy) {\n      window.w3c_slidy.add_observer(function (slide_num) {\n        // slide_num starts at position 1\n        fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);\n      });\n    }\n\n  })();\n</script>\n\n"
+      ]
+    },
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
