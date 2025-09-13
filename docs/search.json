@@ -211,7 +211,7 @@
     "href": "notes/day2_limits/lecture-limits.html#function-definition",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "What is a function?\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\n\nExample\nA function \\(f(x)\\) cannot return two values for \\(x=1\\): \\(f(1)\\ne\\{2,3\\}\\)\n\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\n\n🤔 Are these functions?"
+    "text": "What is a function?\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\n\nExample\nA function \\(f(x)\\) cannot return two values for \\(x=1\\). We cannot have \\(f(1)\\ne\\{2,3\\}\\).\n\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\n\n🤔 Are these functions?"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#continuity",
@@ -365,84 +365,77 @@
     "href": "notes/day2_limits/lecture-limits.html#tangent",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Tangent lines\n\nWhat if we set \\(\\Delta x=0\\)? Then we would have a slope line that only touches our function at exactly \\(x\\).\n\nThese very special types of lines are called tangent lines."
+    "text": "Tangent lines\n\nWhat if we let \\(\\Delta x=0\\)?\nThen we would have a slope line that only touches our function at exactly \\(x\\). \n\nThese very special types of lines are called tangent lines."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#ex-math",
-    "href": "notes/day2_limits/lecture-limits.html#ex-math",
+    "objectID": "notes/day2_limits/lecture-limits.html#recap",
+    "href": "notes/day2_limits/lecture-limits.html#recap",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example in math notation\n\n\\[\\text{slope}=\\frac{y_2-y_1}{x_2-x_1}\\]\nChoose a point along the function \\((x,f(x))\\)\nChoose a different point on the function \\(\\Delta x\\) away \\((x+\\Delta x,f(x+\\Delta x))\\)\nAdd these into the slope equation\n\\[\n\\text{slope}=\\frac{f(x+\\Delta x)-f(x)}{(x+\\Delta x) -x}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#derivative-def",
-    "href": "notes/day2_limits/lecture-limits.html#derivative-def",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Derivative Definition\n\n\\[\n\\large\nf'(x)=\\lim_{\\Delta x \\to 0}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\]\n\n\nMost common notation\n\n\\[\n\\large\nf'(x)\\text{, or }\\frac{dy}{dx}\n\\]"
+    "text": "Derivative definition\n\nRemember the slope of the line that passes between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) is:\n\\[\\text{slope}=\\frac{y_2-y_1}{x_2-x_1}.\\]\n\nIf we have a function \\(f(x)\\), then \\((x,f(x))\\) represents a point on its graph.\n\n\nChoose a different point on the graph that is \\(\\Delta x\\) away: \\((x+\\Delta x,f(x+\\Delta x))\\).\n\n\nPlug these pointson the graph of \\(f(x)\\) into the slope equation:\n\\[\n\\text{slope}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}.\n\\]\n\n\nWhen we let \\(\\Delta x \\to 0\\) we get the slope of the tangent line at \\(x\\)\n \\[\n\\large\nf'(x)=\\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\] \nThis is the derivative of \\(f\\) at \\(x\\).\n\n\nFor a function \\(f(x)\\) we can denote it’s derivative as \\(f'(x)\\) or also \\(\\frac{df}{dx}\\)."
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#diff-func",
     "href": "notes/day2_limits/lecture-limits.html#diff-func",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Not all functions are differentiable\n\n\n\n\nAll differentiable functions are continuous, but not all continuous functions are differentiable\nThe absolute value function is one example \\(y=|x|\\)"
+    "text": "Not all functions are differentiable\n\n\nAll differentiable functions are continuous, but not all continuous functions are differentiable.\nThe absolute value function \\(|x|\\) is one example, this is defined by \\[|x| = \\cases{\nx&,  x \\geq 0\\\\\n-x&, x&lt;0\n}.\\]\n\nIt’s graph is:"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#calc",
     "href": "notes/day2_limits/lecture-limits.html#calc",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Calculus and Derivatives are the study of change"
+    "text": "Calculus and Derivatives are used to study change"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#envs-change",
     "href": "notes/day2_limits/lecture-limits.html#envs-change",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Environmental Science is also a study of change"
+    "text": "Environmental Science studies change"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#envs-change2",
     "href": "notes/day2_limits/lecture-limits.html#envs-change2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Environmental Science is also a study of change"
+    "text": "Environmental Science studies change"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#envs-change3",
     "href": "notes/day2_limits/lecture-limits.html#envs-change3",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Environmental Science is also a study of change"
+    "text": "Environmental Science studies change"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules",
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for Differentiation\n\n\nConstant Rule\n\n\nIf \\(f(x)\\) is contant, then for all \\(x\\), \\(f'(x)=0\\)\n\n\\[\n\\begin{align}\n&y=a &\\frac{dy}{dx}=0\n\\end{align}\n\\] \n\nPower Rule\n\n\\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}\n\\]"
+    "text": "Rules for differentiation (1)\n\nConstant Rule\nLet \\(c\\) be a constant (so, a number). If \\(f(x) = c\\), then \\(f'(x)=0\\). Equivalently\n\\[\\frac{d}{dx}c = 0\\]\nPower Rule\nLet \\(n\\) be a (real) number, if \\(f(x)= x^n\\), then \\(f'(x) = nx^{n-1}\\). Equivalently \\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}.\n\\]\n\nExamples\n\\[\n\\begin{align}\n&y=100 & &f(x)=x^5 & &f(x)=\\frac{1}{x^2}\n\\end{align}\n\\]"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-examples",
-    "href": "notes/day2_limits/lecture-limits.html#diff-examples",
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Examples\n\n\\[\n\\begin{align}\n&y=100 & &y=5x^5 & &y=\\frac{1}{x^2}\n\\end{align}\n\\]"
+    "text": "Rules for differentiation (2)\n\nSum and Difference Rules\nLet \\(f(x)\\) and \\(g(x)\\) be differentiable functions. Then \\[\n\\begin{align}\n\\frac{d}{dx}[f(x)+g(x)]=\\frac{d}{dx}f(x)+\\frac{d}{dx}g(x) \\\\\n\\frac{d}{dx}[f(x)-g(x)]=\\frac{d}{dx}f(x)-\\frac{d}{dx}g(x)\n\\end{align}\n\\]\n😵All this says is: if the function has pieces that are added or subtracted you can take the derivative of each individual piece and add those derivatives.\n\nExample\n\\[\nf(x)=x^3-x^2-15\n\\]"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#sum-diff",
-    "href": "notes/day2_limits/lecture-limits.html#sum-diff",
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-3",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for Differentiation\n\n\nSum and Difference Rules\n\n\\[\n\\begin{align}\n\\frac{d}{dx}&=[f(x)+g(x)]=f'(x)+g'(x) \\\\\n\\frac{d}{dx}&=[f(x)-g(x)]=f'(x)-g'(x)\n\\end{align}\n\\] \nLooks really scary. All it says, if the function has pieces that are added or subtracted you can take the derivative of each individual piece."
+    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule\nThe derivative of a constant \\(c\\) multiplied by a function \\(f(x)\\) is the same as the constant multiplied by the derivative:\n\\[\\frac{d}{dx}[kf(x)] = k\\frac{d}{dx}f(x)\\]\nExample\n\\[\ny=x^2+\\sqrt{2}x-\\frac{8}{x}+4\n\\]"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#sum-ex",
-    "href": "notes/day2_limits/lecture-limits.html#sum-ex",
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example\n\n\\[\n\\begin{align}\n&y=x^2+8x+4 & &y=x^3-x^2+x-15\n\\end{align}\n\\]"
+    "text": "Summary of differentiation rules\n\n\n\n\n\n\n\n\n\nDifferentiation Rule\n\\(f'(x)\\) notation\n\\(\\frac{d}{dx}\\) notation\n\n\n\n\nConstant Rule\n\\(f(x)=c \\Rightarrow f'(x)=0\\)\n\\(\\frac{d}{dx}[c]=0\\)\n\n\nPower Rule\n\\(f(x)=x^n \\Rightarrow f'(x)=n x^{n-1}\\)\n\\(\\frac{d}{dx}[x^n]=n x^{n-1}\\)\n\n\nSum Rule\n\\((g(x)+h(x))'=g'(x)+h'(x)\\)\n\\(\\frac{d}{dx}[g(x)+h(x)]=\\frac{d}{dx}g(x)+\\frac{d}{dx}h(x)\\)\n\n\nDifference Rule\n\\((g(x)-h(x))' = g'(x)-h'(x)\\)\n\\(\\frac{d}{dx}[g(x)-h(x)]=\\frac{d}{dx}g(x)-\\frac{d}{dx}h(x)\\)\n\n\nConstant Multiplier Rule\n\\((c\\cdot g(x))'=c\\,g'(x)\\)\n\\(\\frac{d}{dx}[c\\,g(x)]=c\\,\\frac{d}{dx}g(x)\\)"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#ta-2",
@@ -456,7 +449,7 @@
     "href": "notes/day2_limits/lecture-limits.html#gta2-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "As a team, list 5 fields of environmental science where studying the rate of change and derivatives would be important\n\n\n\nWhich rules should you use to take these derivatives?\n\n\\[\n\\begin{align}\n\\text{A)  }& f(x)=3x^4 &\\text{B) }  y=4x^2+3x-16\n\\end{align}\n\\]\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=y=7x+4 & &\\text{C) }g(y)=\\sqrt{y}\n\\end{align}\n\\]\n\nDiscuss why derivatives need continuity. It might help to think about why some continuous functions don’t have derivatives."
+    "text": "As a team, list 3 fields of environmental science where studying the rate of change and derivatives would be important.\n\n\n\nWhich rules should you use to take these derivatives?\n\n\\[\n\\begin{align}\n\\text{A)  }& f(x)=3x^4 &\\text{B) }  y=4x^2+3x-16\n\\end{align}\n\\]\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=7x+4 & &\\text{C) }g(y)=\\sqrt{y}\n\\end{align}\n\\]"
   },
   {
     "objectID": "notes/day2_limits/problem_set_limits.html",

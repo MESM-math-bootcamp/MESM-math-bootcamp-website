@@ -92,7 +92,7 @@ knitr::include_graphics("images/cake.png")
 
 **Example**
 
-A function $f(x)$ cannot return two values for $x=1$: $f(1)\ne\{2,3\}$
+A function $f(x)$ cannot return two values for $x=1$. We cannot have $f(1)\ne\{2,3\}$.
 
 <br>
 
@@ -864,7 +864,7 @@ $$
 
 . . .
 
-When we let $\Delta x \to 0$ we get <span style="color:red">**the slope of the tangent line at x**</span>
+When we let $\Delta x \to 0$ we get <span style="color:red">**the slope of the tangent line at $x$**</span>
 
 <span style="color:red">
 $$
@@ -874,6 +874,10 @@ $$
 </span>
 
 <span style="color:red">**This is the derivative of $f$ at $x$.**</span>
+
+. . .
+
+For a function $f(x)$ we can denote it's derivative as $f'(x)$ or also $\frac{df}{dx}$. 
 
 <!--
 <br>
@@ -971,79 +975,98 @@ knitr::include_graphics("images/bait.jpeg")
 
 
 
-## {#diff-rules data-menu-title="Rules for Differentiation"}
+## {#diff-rules-1 data-menu-title="Rules for Differentiation (1)"}
 
-[Rules for Differentiation]{.slide-title}
+[Rules for differentiation (1)]{.slide-title}
 
 <hr>
 
-:::{.center-text}
 **Constant Rule**
-:::
 
-- If $f(x)$ is contant, then for all $x$, $f'(x)=0$
+Let $c$ be a constant (so, a number). If $f(x) = c$, then $f'(x)=0$. Equivalently
 
-$$
-\begin{align}
-&y=a &\frac{dy}{dx}=0
-\end{align}
-$$
-<br>
+$$\frac{d}{dx}c = 0$$
 
-:::{.center-text}
 
 **Power Rule**
-:::
 
+Let $n$ be a (real) number, if $f(x)= x^n$, then $f'(x) = nx^{n-1}$. Equivalently
 $$
 \frac{d}{dx}[x^n]
-=nx^{n-1}
+=nx^{n-1}.
 $$
 
-## {#diff-examples data-menu-title="Examples"}
+. . .
 
-[Examples]{.slide-title}
-
-<hr>
+**Examples**
 
 $$
 \begin{align}
-&y=100 & &y=5x^5 & &y=\frac{1}{x^2}
+&y=100 & &f(x)=x^5 & &f(x)=\frac{1}{x^2}
 \end{align}
 $$
 
-## {#sum-diff data-menu-title="Rules for Differentiation"}
+## {#diff-rules-2 data-menu-title="Rules for Differentiation (2)"}
 
-[Rules for Differentiation]{.slide-title}
+[Rules for differentiation (2)]{.slide-title}
 
 <hr>
 
-:::{.center-text}
 **Sum and Difference Rules**
-:::
 
-
+Let $f(x)$ and $g(x)$ be differentiable functions. Then 
 $$
 \begin{align}
-\frac{d}{dx}&=[f(x)+g(x)]=f'(x)+g'(x) \\
-\frac{d}{dx}&=[f(x)-g(x)]=f'(x)-g'(x)
+\frac{d}{dx}[f(x)+g(x)]=\frac{d}{dx}f(x)+\frac{d}{dx}g(x) \\
+\frac{d}{dx}[f(x)-g(x)]=\frac{d}{dx}f(x)-\frac{d}{dx}g(x)
 \end{align}
 $$
-<br>
 
-Looks really scary. All it says, if the function has pieces that are added or subtracted you can take the derivative of each individual piece.
+😵*All this says is: if the function has pieces that are added or subtracted you can take the derivative of each individual piece and add those derivatives.*
 
-## {#sum-ex data-menu-title="Exaple"}
+. . . 
 
-[Example]{.slide-title}
+**Example**
+
+$$
+f(x)=x^3-x^2-15
+$$
+
+
+## {#diff-rules-3 data-menu-title="Rules for Differentiation (3)"}
+
+[Rules for differentiation (3)]{.slide-title}
 
 <hr>
 
+**Constant Multiplier Rule**
+
+The derivative of a constant $c$ multiplied by a function $f(x)$ is the same as the constant multiplied by the derivative:
+
+$$\frac{d}{dx}[kf(x)] = k\frac{d}{dx}f(x)$$
+
+
+**Example**
+
 $$
-\begin{align}
-&y=x^2+8x+4 & &y=x^3-x^2+x-15
-\end{align}
+y=x^2+\sqrt{2}x-\frac{8}{x}+4
 $$
+
+## {#diff-rules-summary data-menu-title="Summary of differentiation rules"}
+
+[Summary of differentiation rules]{.slide-title}
+
+<hr>
+
+| Differentiation Rule | $f'(x)$ notation | $\frac{d}{dx}$ notation |
+|----------------------|------------------|-------------------------|
+| **Constant Rule** | $f(x)=c \Rightarrow f'(x)=0$ | $\frac{d}{dx}[c]=0$ |
+| **Power Rule** | $f(x)=x^n \Rightarrow f'(x)=n x^{n-1}$ | $\frac{d}{dx}[x^n]=n x^{n-1}$ |
+| **Sum Rule** | $(g(x)+h(x))'=g'(x)+h'(x)$ | $\frac{d}{dx}[g(x)+h(x)]=\frac{d}{dx}g(x)+\frac{d}{dx}h(x)$ |
+| **Difference Rule** | $(g(x)-h(x))' = g'(x)-h'(x)$ | $\frac{d}{dx}[g(x)-h(x)]=\frac{d}{dx}g(x)-\frac{d}{dx}h(x)$ |
+| **Constant Multiplier Rule**  | $(c\cdot g(x))'=c\,g'(x)$ | $\frac{d}{dx}[c\,g(x)]=c\,\frac{d}{dx}g(x)$ |
+
+
 
 ## {#ta-2 data-menu-title="Team Assessment 2" background-color="#003660"}
 
@@ -1054,7 +1077,7 @@ $$
 
 ## {#gta2-1 data-menu-title="Team Assessment 2 Questions"}
 
-1) As a team, list 5 fields of environmental science where studying the rate of change and derivatives would be important
+1) As a team, list 3 fields of environmental science where studying the rate of change and derivatives would be important.
 
 <br>
 
@@ -1070,9 +1093,6 @@ $$
 
 $$
 \begin{align}
-&\text{A) } y=3x^2 & &\text{B) }h(x)=y=7x+4 & &\text{C) }g(y)=\sqrt{y}
+&\text{A) } y=3x^2 & &\text{B) }h(x)=7x+4 & &\text{C) }g(y)=\sqrt{y}
 \end{align}
 $$
-
-4) Discuss why derivatives need continuity. It might help to think about why some continuous functions don't have derivatives.
-
