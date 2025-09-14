@@ -2,7 +2,7 @@
 
 ## Lecture Materials
 
-[Limits lecture slides](lecture-limits.qmd)
+[Limits lecture slides](lecture-derivatives.qmd)
 
 **Contents**
 
@@ -17,8 +17,8 @@
 
 ## Problem Set
 
-[Click here to see the problem set.](problem_set_limits.qmd)
+[Click here to see the problem set.](problem_set_derivatives.qmd)
 
 ## Problem Set Solution
 
-[Solutions](solutions_problem_set_limits.qmd)
+[Solutions](solutions_problem_set_derivatives.qmd)

@@ -10,72 +10,759 @@
     ]
   },
   {
-    "objectID": "notes/day1_algebra/solutions_problem_set_algebra.html",
-    "href": "notes/day1_algebra/solutions_problem_set_algebra.html",
-    "title": "Solutions: Algebra and Graphing Problem Set",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#title-slide",
+    "href": "notes/day3_derivatives/lecture-derivative.html#title-slide",
+    "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Solutions: Algebra and Graphing Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\nAlgebra basics\n\nDescribe how solving for the roots of equations (the values of \\(x\\) for which a function \\(f(x)\\) satisfies \\(f(x)=0\\)) could be useful in environmental science. List at least one method to find roots of a certain kind of funciton.\n\n Finding the roots of an equation could be useful to, for example, predict when the concentration of pollutants reaches zero, or when does the cost and benefits of a program balance. Any answers in that direction could be good. \n One method for finding roots would be to use the quadratic formula if the function is a quadratic function..\n\nExpand the following expressions:\n\na. \n \\[\n\\begin{align}\n(x+2)(3x-4) &=& 3x^2-4x+6x-8 \\\\\n            &=& 3x^2+2x-8\n\\end{align}\n\\] \n b. \n \\[\n\\begin{align}\n(x^2-2y)(x+y^3) = x^3+x^2y^3-2yx-2y^4\n\\end{align}\n\\] \n\nSolve for \\(x\\) in the following equations:\n\na.\n \\[\n\\begin{align}\n2x-4=&3x+12 \\\\\n2x&=3x+16 &\\text{Add 4 to both sides}\\\\\n-x&=16 &\\text{Subtract $3x$ from both sides}\\\\\nx&=16\n\\end{align}\n\\] \nb.  \\[\n\\begin{align}\n-6ax+2b&=x-5c \\\\\n-6ax&=x-5c-2b &\\text{Subtract $2b$ from both sides} \\\\\n-6ax-x&=-5c-2b &\\text{Subtract $x$} \\\\\nx(-6a-1)&=-5c-2b &\\text{Factor out $x$}\\\\\nx&=\\frac{-5c-2b}{(-6a-1)}\n\\end{align}\n\\] \nc.  \\[\n\\begin{align}\n2x^2+3x-4&=0 \\\\\n\\frac{-(3)\\pm\\sqrt{3^2-4(2*-4)}}{2(2)}&=0 \\\\\nx_1=\\frac{-3+\\sqrt{41}}{4}&  &x_2=\\frac{-3-\\sqrt{41}}{4} \\\\\nx_1\\approx0.85 & &x_2\\approx-2.35  \n\\end{align}\n\\] \nd.  \\[\n\\begin{align}\nx^2+2x-5&=0 \\\\\n\\frac{-(-2)\\pm\\sqrt{2^2-4(1*-5)}}{2(1)}&=0 \\\\\nx_1=\\frac{2+\\sqrt{24}}{2}&  &x_2=\\frac{2-\\sqrt{24}}{2} \\\\\nx_1\\approx3.45 & &x_2\\approx-1.45  \n\\end{align}\n\\] \n\n\nStory Problems\n\nRepresentative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm=2.13 gigaton to give your answer in gigatons.\n\n\n Since the fraction of US carbon emissions will remain constant at 14% we can calculate that the US will emit 14% of the 600 ppm in 2100: \n \\[\n\\begin{align}\n600 * 0.14 &=& 84 \\text{ ppm}\\\\\n  &=& 84* 2.13 \\text{ gigaton}\\\\\n  &=& 178.92 \\text{ gigaton}\n\\end{align}\n\\] \n\nLet’s say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of \\(f(t)=\\frac{-1}{8}t^2+6t+123.83\\) where \\(t\\) is each year and \\(f(t)\\) is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?\n\nBased on the model of the scientists, we need to where the total amount of US carbon equals 0. In other words, we need to find when \\[f(t) = \\frac{1}{8}t^2+6t+123.83=0.\\]\n\n Because \\(f(t)\\) is a second degree polynomial we can use the quadratic equation to find it’s roots: \n \\[\n\\begin{align}\nt &=& \\frac{-6\\pm\\sqrt{6^2-4(\\frac{-1}{8}*123.83)}}{\\frac{-2}{8}} \\\\\nt &\\approx& 63.581 \\text{ years}\n\\end{align}\n\\] \nWe are only concerned about the postive year amounts.\n\n\nGraphs\n\nFind the slope and \\(y\\)-intercept of the following lines.\n\n\n\nShow the code\nx=seq(-5,5)\n\ny=2*x+5\n\nw=(1/3)*x-1\n\nz=x-0.5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np2&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=w),size=3,color=\"blue\")+\n  geom_line(aes(x=x,y=w),size=2,color=\"blue\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-3,3,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np3&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=z),size=3,color=\"red\")+\n  geom_line(aes(x=x,y=z),size=2,color=\"red\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,5,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p2,p3,p4,labels=c(\"A\",\"B\",\"C\",\"D\"))\n\n\n\n\n\n\n\n\n\n The slope for graph A is 2 with a \\(y\\)-intercept of 5. \n The slope for graph B is 1/3 with a \\(y\\)-intercept of -1 \n The for graph C is 1 with a \\(y\\)-intercept of -0.5 \n The slope for graph D is -3 with a \\(y\\)-intercept of 2 \n\nThe growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\n\n The average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{155-40}{8-0} = 14.375\\] \n The average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{210-200}{30-20} =1 \\] \n This tells us that the average rate of change for sharks between the ages of 0 to 8 was 14.375. For the ages, 20 to 30 the average change was 1. \n\nWhat are the units of the average slopes and why would they change for a shark as they get older?\n\n Slopes are in units of length over age, so the slope indicates the growth in centimeters every year. As animals get older, ther slow down their growth. Less energy is spent in growing and more invested in reproductive energy. \n\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n We would need to apply calculus to find the true answer, but we can approximate it reasonably well by finding the smallest possible difference between two points around age 12. In this case we can use \\(\\frac{175-172}{13-12}\\) to get an approximate instaneous rate of growth of 3 cm per year.\n\n\n\nPicture of a scalloped hammerhead shark."
+    "text": "Rules and Applications of Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 14, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
-    "objectID": "notes/day1_algebra/day1_algebra.html",
-    "href": "notes/day1_algebra/day1_algebra.html",
-    "title": "Day 1: Algebra",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#tr",
+    "href": "notes/day3_derivatives/lecture-derivative.html#tr",
+    "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "This unit covers basic introduction of algebra and how to use graphs to convey environmental science.\n\n\nAlgebra lecture slides\nContents - Introductions\n\nMath in environmental science\nAlgebra review\nGraphing\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
+    "text": "Team Review\n\nHow did everyone feel about the problem set?\nAny questions?\nDiscuss with Team"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#rules-cont",
+    "href": "notes/day3_derivatives/lecture-derivative.html#rules-cont",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (4)\n\nProduct Rule\nLet \\(f(x)\\) and \\(g(x)\\) be differentiable functions. Then\n\\[\n\\large\n\\frac{d}{dx}[f(x)*g(x)]=f(x)g'(x)+g(x)f'(x)\n\\]\nWhat this is saying:\n\nBreakdown multiplication into two separate functions\nThen take the first function times the derivative of the second, and add the second function times the derivative of the first."
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#prod-ex-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#prod-ex-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Product rule example\n\n✏️ Find the derivative of \\(y=2x(x^2+3x)\\)."
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#prod-ex",
+    "href": "notes/day3_derivatives/lecture-derivative.html#prod-ex",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Product rule example\n\n✏️ Find the derivative of \\(y=2x(x^2+3x)\\).\nWe have that:\n\\[\n\\begin{align}\ny&=2x(x^2+3x) \\\\[3px]\ny&=\\overbrace{2x}^{f(x)}\\overbrace{(x^2+3x)}^{g(x)} &\\text{Break into two functions}\\\\[3px]\n\\frac{dy}{dx}&=\\overbrace{2x}^{f(x)}\\overbrace{(2x+3)}^{g'(x)}+\\overbrace{2}^{f'(x)}\\overbrace{(x^2+3x)}^{g(x)} &\\text{Apply Power Rule}\\\\[3px]\n\\frac{dy}{dx}&=6x^2+12x  &\\text{Algebra clean up}\n\\end{align}\n\\]\nWhat is another way we could have computed this derivative?"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#quotient-rule",
+    "href": "notes/day3_derivatives/lecture-derivative.html#quotient-rule",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (5)\n\nQuotient Rule\n\\[\n\\large\n\\frac{d}{dx}\\left [\\frac{f(x)}{g(x)}\\right]=\\frac{g(x)f'(x)-f(x)g'(x)}{[g(x)]^2}\n\\]\nNotice:\n\nSame idea as product rule, but order matters.\nThe denominator has to be \\(g(x)\\)"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#quo-ex-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#quo-ex-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Quotient rule example\n\n✏️ Find the derivative of \\(y=\\frac{x^2}{(x+1)}\\)."
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#quo-ex",
+    "href": "notes/day3_derivatives/lecture-derivative.html#quo-ex",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Quotient rule example\n\n✏️ Find the derivative of \\(y=\\frac{x^2}{(x+1)}\\).\n\\[\n\\begin{align}\ny &= \\frac{x^2}{(x+1)} \\\\[3px]\ny &= \\frac{\\overbrace{x^2}^{f(x)}}{\\underbrace{(x+1)}_{g(x)}} &\\text{Identify functions}\\\\[3px]\n\\frac{dy}{dx} &= \\frac{\\overbrace{(x+1)}^{g(x)}\\overbrace{2x}^{f'(x)}-\\overbrace{x^2}^{f(x)}\\overbrace{(1)}^{g'(x)}}{\\underbrace{(x+1)^2}_{[g(x)]^2}} &\\text{Quotient rule}\\\\[3px]\n\\frac{dy}{dx} &= \\frac{x^2+2x}{(x+1)^2} &\\text{Simplify} \\\\[3px]\n\\end{align}\n\\]\n\nNote: Applying the quotient rule can yield some complex algebraic expressions. Try to reduce it down to a usable form."
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#function-composition",
+    "href": "notes/day3_derivatives/lecture-derivative.html#function-composition",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Composition of functions\n\nIf we have two functions \\(f\\) and \\(g\\), the composition of \\(f\\) and \\(g\\) is\n\\[f\\circ g (x) = f(g(x)).\\]\nThis means that the output of \\(g(x)\\) is now the input of \\(f(x)\\).\n\nComposition of functions means applying one function to the result of another.\n\nExample\n✏️ Let \\(f(x) = x^2\\) and \\(g(x) = 2x+3\\). What is \\(f\\circ g (x)\\)?\nWe have that\n\\[f\\circ g (x)  = (2x+3)^2.\\]\nExample\n✏️ Let \\(h(x) = \\sqrt{ 3x^2 + 10}\\). How can we write \\(h\\) as a composition of functions?\nIf we make \\(f(x) = \\sqrt{x}\\) and \\(g(x) = 3x^2 +10\\) then we have that\n\\[ f\\circ g (x) = \\sqrt{ 3x^2 + 10}.\\]"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#chain-rule",
+    "href": "notes/day3_derivatives/lecture-derivative.html#chain-rule",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (6)\n\nChain Rule\n\\[\n\\large\n\\frac{d}{dx}f\\circ g(x)= \\frac{d}{dx} f(g(x)) = f'(g(x))\\cdot g'(x)\n\\]\nWhat this is saying:\n\nTake the derivative of the outermost function then multiply by the derivative of the innermost.\nProbably the most important rule for advanced calculus!\n\n\n\nYou may also encounter the chain rule in this form\n\\[\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx}.\\]\nThe next example will show us what this means."
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#chain-ex",
+    "href": "notes/day3_derivatives/lecture-derivative.html#chain-ex",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Chain rule example\n\n✏️ What is the derivative of \\(y = (x^3 -2)^2\\)? Let’s use a trick called \\(u\\)-substitution.\n\nIdentify the inner function and label it as \\(u\\). Rewrite \\(y\\) in terms of \\(u\\):\n\n\\[\n\\begin{align}\ny &= (x^3-2)^2 \\\\\nu &= x^3-2 \\\\\ny &= u^2\n\\end{align}\n\\]\n\nTake the derivative of \\(y\\) with respect to \\(u\\) and substitute \\(u\\):\n\n\\[\\frac{dy}{du} = 2u = 2(x^3-2).\\]\n\nAnd the derivative of \\(u\\) with respect to \\(x\\):\n\n\\[\\frac{du}{dx} = 3x^2.\\]\n\nPut everything back into the chain rule and simplify:\n\n\\[\n\\begin{align}\n\\frac{dy}{dx} &= \\frac{dy}{du}\\cdot\\frac{du}{dx} \\\\\n              &= 2(x^3-2)(3x^2)\n              = 6x^5 -12x^2.\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#exponent",
+    "href": "notes/day3_derivatives/lecture-derivative.html#exponent",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "The number \\(e\\) and exponential funcitons\n\nThe number \\(e\\) is a constant in mathematics, it is approximately \\(e\\approx 2.72\\), but really its decimals continue infinitely without any pattern.\n\nIt’s exact value can be described as \\[\ne = \\lim_{n\\to \\infty}(1+\\frac{1}{n})^n.\n\\]\nLike any other number, \\(e\\) follows normal power properties\n\\[\n\\begin{align}\ne^{x+y}&=&e^x\\cdot e^y \\\\\ne^{-x}&=&\\frac{1}{e^x}\\\\\ne^{x-y}&=&\\frac{e^x}{e^y}\\\\\ne^{rx}&=&(e^x)^r\n\\end{align}\n\\]\n\n\nThe exponential function \\(e^x\\) is the number \\(e\\) raised to the \\(x\\) power. In function notation you may sometimes see it as\n\\[ f(x) = e^x \\ \\ \\text{ or } \\ \\  f(x) = \\text{exp}(x).\\]"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#der-exp",
+    "href": "notes/day3_derivatives/lecture-derivative.html#der-exp",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Derivative of the exponential function\n\nWe have that \\[\n\\large\n\\frac{d}{dx}e^x=e^x\n\\]\nThe derivative at every point on this line is simply \\(e(x)\\)."
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#er-exp-con",
+    "href": "notes/day3_derivatives/lecture-derivative.html#er-exp-con",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Derivative of the exponential function"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#higher-order-der",
+    "href": "notes/day3_derivatives/lecture-derivative.html#higher-order-der",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Higher order derivatives\n\n\nWe can continue to take derivatives of derivatives\nThe second derivative becomes the rate of change of the rate of change (Think acceleration)\nNotation:\n\n\\(f''(x)\\) or \\(\\frac{d^2y}{dx^2}\\): 2nd Derivative\n\\(f^{(n)}(x)\\) or \\(\\frac{d^ny}{dx^n}\\) nth derivative"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#higher-order-der-meme",
+    "href": "notes/day3_derivatives/lecture-derivative.html#higher-order-der-meme",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Higher order derivatives"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta",
+    "href": "notes/day3_derivatives/lecture-derivative.html#ta",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta-1-q1",
+    "href": "notes/day3_derivatives/lecture-derivative.html#ta-1-q1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Part 1\n\n✏️ Identify which rule or rules works best for each function.\n\\[\n\\begin{align}\n\\text{A) }y=e^{\\sqrt{3x+10}} & &\\text{B)  }g(y)=\\frac{(8y+2)}{(4y+3)^3}  &  & \\text{C) }p(b)=18b\\cdot e^{2b}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta-1-q2",
+    "href": "notes/day3_derivatives/lecture-derivative.html#ta-1-q2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Part 2\n\n\nFind the first derivative of\n\n\\[\nf(x)=(2x-x^2)^3.\n\\]\n \n\nFind the first derivative of\n\n\\[\nf(x)=\\frac{2}{x^2+1}.\n\\]\n \n\nFind the third derivative of\n\n\\[\nf(x)=x^2(2x+1).\n\\]"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#app-derv",
+    "href": "notes/day3_derivatives/lecture-derivative.html#app-derv",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Application of Derivatives"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#exp-real-world",
+    "href": "notes/day3_derivatives/lecture-derivative.html#exp-real-world",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Exponential functions in the world\n\nInfectious diseases\n\nHuman population\n\nCommunication\n\nGrowth of Renewable Energy"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#log-growth",
+    "href": "notes/day3_derivatives/lecture-derivative.html#log-growth",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Logistic growth\n\nGrowth modeled by an exponential function is unbounded, but resource limits do exist.\nModeling growth using a logistic growth model: growth is initially exponential but levels off as the environment’s carrying capacity is reached. The growth rate is given by\n\\[\n\\frac{dN}{dt} = rN\\left(\\frac{K-N}{K}\\right).\n\\]\nwhere \\(N=\\text{population, }r=\\text{growth rate, }t=\\text{time, and }K=\\text{carrying capacity}.\\)"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#log-fisheries",
+    "href": "notes/day3_derivatives/lecture-derivative.html#log-fisheries",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Extremely important in fisheries and biological Ccnservation"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#app-derv-exp",
+    "href": "notes/day3_derivatives/lecture-derivative.html#app-derv-exp",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Using derivatives we can find crucial information to solve environmental problems\n\nDerivatives allow us to:\n\n\nFind instantaneous rate of change at any point\n\n\n\nFind when functions are increasing or decreasing\n\n\n\nFind the optimal values of functions\n\nOptimal values are key to designing effective policies"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop",
+    "href": "notes/day3_derivatives/lecture-derivative.html#pop",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "How quickly is the human population rising right now?\n\nDochy et al. (1995) used the following function to describe the increase in human population over time:\n\\[\nx(t)=\\frac{1}{c-\\beta t}\n\\]\nWhere \\(c=9.833*10^{-3}\\), \\(\\beta=4.849*10^{-6}\\), and \\(x\\) is the total human population in millions at year \\(t\\).\n\n \n✏️ Answer the following questions using the Dochy et al. model.\n- How quickly was the human population increasing in 1450?\n- What should be the population growth rate in 2024 according to this model?"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop-ex-1",
+    "href": "notes/day3_derivatives/lecture-derivative.html#pop-ex-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Use derivatives to find the answers!\n\n- How quickly was the human population increasing in 1450?\n\n“How quickly” are code words for “take the first derivative” of \\(x(t)=\\frac{1}{c-\\beta t}\\). Let’s do that:\n\\[\n\\begin{align}\nx(t)&=\\frac{1}{c-\\beta t} \\\\\nx(t)&=(c-\\beta t)^{-1} &\\text{Rearrange} \\\\\n\\frac{dx}{dt}&=\\beta(c-\\beta t)^{-2} &\\text{Chain and Power Rule}\\\\\n\\end{align}\n\\]\n\n\nSince the question is asking for how quickly was the population increasing in 1450 we need to evaluate the derivative at \\(t=1450\\). This is \\[x'(1450)=.61\\]\nSo, human population in 1450 was increasing at a rate of .61 million per year.\n\n\n- What should be the population growth rate in 2024 according to this model?\n\n\n“Population growth rate in 2024” means “evaluate the first derivative at $t=2024”. So let’s do that:\n\\[x'(2024) = \\beta(c-\\beta 2024)^{-2} = 13,980.\\]\nSo, human population in 2024 will be increasing at a rate of 13,980 million per year according to this model."
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop-ex-3",
+    "href": "notes/day3_derivatives/lecture-derivative.html#pop-ex-3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "The model isn’t wrong, just not predictive out of sample\n\n\n\n\n\n\n\n\nFigure 2 from Dochy 2015"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#derivative-sign-section",
+    "href": "notes/day3_derivatives/lecture-derivative.html#derivative-sign-section",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Positive and negative derivatives"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#increasing",
+    "href": "notes/day3_derivatives/lecture-derivative.html#increasing",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Increasing and decreasing functions\n\nA function is increasing on an interval \\((a,b)\\) is \\(f(x_1) &lt; f(x_2)\\) every time \\(x_1&lt;x_2\\).\nA function is decreasing on an interval \\((a,b)\\) is \\(f(x_1) &gt; f(x_2)\\) every time \\(x_1&lt;x_2\\).\nA function is constant on an interval \\((a,b)\\) is \\(f(x_1) = f(x_2)\\) for every \\(x_1, x_2\\) in \\((a,b)\\).\n🙂 This all really means what you think it means:"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative",
+    "href": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Increasing and decreasing functions\n\nLet \\(f(x)\\) be a function that is differentiable on the interval \\((a,b)\\), then:\n\nIf \\(f'(x)&gt;0\\) for all \\(x\\) values between \\(a\\) and \\(b\\), \\(f\\) is increasing on \\((a,b)\\)\nIf \\(f'(x)&lt;0\\) for all \\(x\\) values betwen \\(a\\) and \\(b\\), this interval is said to be decreasing\nIf \\(f'(x)=0\\) for all values between \\(a\\) and \\(b\\), then the function is constant within the interval"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#optimization",
+    "href": "notes/day3_derivatives/lecture-derivative.html#optimization",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Optimization problems find relative extremum (aka max or min) of functions\n\n\nFind First Order Conditions:\n\n\nRelative extremum exist at all points on function where \\(f'(x)=0\\)\n\n\n\nVerify Second Order Conditions:\n\n\nWhether an extremum is a maximum or minimum requires us to test if it is increasing or decreasing at the extremum\n\\(f(x^*)\\) is a local maximum if \\(f''(x)&lt;0\\)\n\\(f(x^*)\\) is a local minimum if \\(f''(x)&gt;0\\)"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#opt-graph",
+    "href": "notes/day3_derivatives/lecture-derivative.html#opt-graph",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Graphical Example of Optimization\n\n\n\n\\(f(x)=x^3-12x+2\\)\nWhere does \\(f'(x)=0\\)?"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#opt-solve",
+    "href": "notes/day3_derivatives/lecture-derivative.html#opt-solve",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solve Analytically\n\nFirst Order Conditions:\n\\[\n\\begin{align}\nf(x)&=x^3-12x+2 \\\\\nf'(x)&=3x^2-12 \\\\\nx^*&=-2  & x^*=2\n\\end{align}\n\\]\n\nSecond Order Conditions:\n\\[\n\\begin{align}\nf''(x)&=6x \\\\\nf''(-2)&&lt;0  &f''(2)&gt;0\n\\end{align}\n\\]\n\n\nBy the first order conditions we know that \\(x=2\\) and \\(x=-2\\) are local optimum.\nThe second order conditions inform us that \\(x=-2\\) is a local maximum and \\(x=2\\) is a local minimum."
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta-2",
+    "href": "notes/day3_derivatives/lecture-derivative.html#ta-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-1",
+    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "How many local min and maximums can you find on this graph?"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-2",
+    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solve for all optimum. Identify which are minima and which are maxima.\n\n\\[\nf(x)=2x^3-6x^2+3x+15\n\\]"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-3",
+    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Your team has been hired to help the city of Santa Barbara to help eliminate a nasty pollutant in our streams. You are choosing between two policies. Policy A provides \\(\\sqrt{10x+4}\\) benefits where \\(x\\) is the dollar spent on interventions. Policy B provides \\(\\sqrt{20x+4}\\) benefits for every dollar spent. However, each policy has a cost associated with each. Policy A has a constant linear cost at \\(2x\\) and Policy B has a constant linear cost at \\(3x\\).\n\n\nFind the optimal amount of interventions dollars to spend for each policy. Consider both costs and benefits. [hint: Remember \\(\\sqrt{}\\) is just \\(x^{\\frac{1}{2}}\\). You can use exponent rules to help solve]\nWhich policy provides the most benefits?\nWhich policy is cheaper?\nWhich policy should the city of Santa Barbara pursue?"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#title-slide",
+    "href": "notes/day1_algebra/lecture-algebra.html#title-slide",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 11, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#survey",
+    "href": "notes/day1_algebra/lecture-algebra.html#survey",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Please fill out this survey\n\nOr you can click on this link."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#obj",
+    "href": "notes/day1_algebra/lecture-algebra.html#obj",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Workshop Objectives\n\n\n\nShake off the math dust\nEquip students with the math skills to succeed in all Bren Courses\nExplore how valuable math is to environmental science\nBuild a collaborative environment, crucial for success at Bren"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#about-me",
+    "href": "notes/day1_algebra/lecture-algebra.html#about-me",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "About me\n\n\n\nCarmen Galaz García (she/her)\n\nAssistant Teaching Professor @ Bren\n\nBefore this:\n\nData Scienist @ NCEAS\nPh.D. in Mathematics @ UCSB\n\nTeaching:\n\nPython courses for Masters in Environmental Data Science (MEDS)\nMEDS Capstone Projects\nSupporting math and programming initiatives across Bren!\n\nResearch:\n\nNCEAS/TNC collaboration for invasive iceplant mapping analyzing remotely sensed images"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#exp",
+    "href": "notes/day1_algebra/lecture-algebra.html#exp",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Student Expectations\n\nWe expect all team members will:\n\nSupport and encourage their learning buddies and all classmates\nBe open to learning from each other\nBring a collaborative attitude and communicate respectfully\nSee opportunities to share kownledge as a chance to deepend understanding\nComplete all in-class assessments\n\nFeel free to work with anyone on out of class exercises"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#math-envs",
+    "href": "notes/day1_algebra/lecture-algebra.html#math-envs",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Math in Environmental Science"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#des",
+    "href": "notes/day1_algebra/lecture-algebra.html#des",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Describe to your team what is the purpose of environmental science?\n\n\nHow would you go about solving environmental problems?"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#math-lang",
+    "href": "notes/day1_algebra/lecture-algebra.html#math-lang",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Math is an important tool in environmental science\n\n\nMath helps us investigate the world and communicate our findings\n\n\nUsed by scientists to find evidence\nCan be used to quantify relations, trends, and changes\nMathematical models can help us understand complex systems\nMust be used responsibly and with awareness of potential biases and limitations\nHelps us support arguments that can transform policy and actions\n\n\nWe need to understand the math to make decisions on it!"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#math-bren",
+    "href": "notes/day1_algebra/lecture-algebra.html#math-bren",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Math at Bren\n\n\n\n\nIn classes:\n\n\nESM 201: Ecology of Managed Ecosystems\n\nLotka-Volterra Models \\[\n\\begin{align}\n\\frac{dN_1}{dt}&=r_1N_1\\left(\\frac{K_1-N_1-\\alpha N_2}{K_1}\\right)\\\\\n\\frac{dN_2}{dt}&=r_2N_2\\left(\\frac{K_2-N_2-\\beta N_1}{K_2}\\right)\n\\end{align}\n\\]\n\n\nESM 222: Pollution Risk Management\n\nGroundwater transport of absorbed contaminant \\[\n\\frac{\\partial C}{\\partial t}=\\left(\\frac{D}{R}\\frac{\\partial^2t}{\\partial x^2}\\right)-\\left(\\frac{v}{R}\\frac{\\partial C}{\\partial x}\\right)-\\frac{k}{R}C\n\\]\n\n\nIn Research\n\n\nEcology, modeling, economics, and more!\nApplying Portfolio Theory (A mix of calculus and stochastic linear algebra) to salmon stocks (MESM GP)\nQuantifying Greenhouse Gas (GHG) Emissions Associated with Global Seafood Production (MEDS Capstone)"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#algebra",
+    "href": "notes/day1_algebra/lecture-algebra.html#algebra",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Algebra"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#alge-rules",
+    "href": "notes/day1_algebra/lecture-algebra.html#alge-rules",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules of Algebra\n\n\nNever change an equation. Instead, we rewrite them into more useful forms\nManipulate BOTH sides of an equation with the SAME PROCEDURE.\n\nAlways add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the qeuation.\n\nOrder of Operations (aka PEDMAS)"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#pedmas",
+    "href": "notes/day1_algebra/lecture-algebra.html#pedmas",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "(P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract [PEDMAS]"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#pedmas-use-1",
+    "href": "notes/day1_algebra/lecture-algebra.html#pedmas-use-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "PEDMAS important for what order to manipulate equations\n\n\\[\n4*(y-4)+(x+1)^2=z\n\\]\nIf we are given the values of \\(x=-3\\) and \\(y=2\\), what would be the value of \\(z\\)?\n✏️ Take a minute to solve this individually."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#pedmas-use-2",
+    "href": "notes/day1_algebra/lecture-algebra.html#pedmas-use-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "PEDMAS important for what order to manipulate equations\n\n\\[\n4*(y-4)+(x+1)^2=z\n\\]\nIf we are given the values of \\(x=-3\\) and \\(y=2\\), what would be the value of \\(z\\)?\n💡 Let’s see a solution!"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#flex-eq-1",
+    "href": "notes/day1_algebra/lecture-algebra.html#flex-eq-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n\\end{aligned}\n\\]\n✏️ Take a minute to solve this individually."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#flex-eq-2",
+    "href": "notes/day1_algebra/lecture-algebra.html#flex-eq-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n\\end{aligned}\n\\]\n💡 Let’s see a solution!"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#flex-eq-3",
+    "href": "notes/day1_algebra/lecture-algebra.html#flex-eq-3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n80Q&=\\frac{(400-P)\\cancel{80}}{\\cancel{80}}  &\\text{ Multiply both sides by 80} \\\\\n80Q-400&=\\cancel{400}-\\cancel{400} -P &\\text{ Subtract both sides by 400} \\\\\n-1(80Q-400)&=-P(-1) &\\text{Multiply both sides by -1} \\\\\n400-80Q&=P  &\\text{Flip terms for simplicity}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#practice-alge-1",
+    "href": "notes/day1_algebra/lecture-algebra.html#practice-alge-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "It can be easy to make mistakes while doing algebra. Practice makes perfect!\n\nSolve all in terms of \\(x\\)\n\n\\(3x+2=10x-12\\)\n\n\n\n\\(4-3(2x+1)=8-\\frac{3x}{2}\\)\n\n\n\n\\(3(x+7a)-5=b+2(c-4x)\\)\n\n✏️ Take a minute to solve these individually."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#practice-alge-2",
+    "href": "notes/day1_algebra/lecture-algebra.html#practice-alge-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "It can be easy to make mistakes while doing algebra. Practice makes perfect!\n\n💡 Let’s see a solution!\nSolve all in terms of \\(x\\)\n\n\n\n\n\\(3x+2=10x-12\\)\n\n\n\n\n\n\\(4-3(2x+1)=8-\\frac{3x}{2}\\)"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#practice-alge-3",
+    "href": "notes/day1_algebra/lecture-algebra.html#practice-alge-3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "It can be easy to make mistakes while doing algebra. Practice makes perfect!\n\n💡 Let’s see a solution!\nSolve all in terms of \\(x\\)\n\n\\(3(x+7a)-5=b+2(c-4x)\\)"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#practice-alge-4",
+    "href": "notes/day1_algebra/lecture-algebra.html#practice-alge-4",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Practice Solutions\n\n\n\n\\[\n\\small\n\\begin{aligned}\n3x+2&=10x-12 \\\\\n3x+2+12&=10x-12(+12) \\\\\n3x-3x+14&=10x-3x \\\\\n14&=7x \\\\\nx&=2\n\\end{aligned}\n\\] \n\\[\n\\small\n\\begin{aligned}\n4-3(2x+1)&=8-\\frac{3x}{2}\\\\\n4-3-6x&=8-\\frac{3x}{2} \\\\\n1-6x&=8-\\frac{3x}{2} \\\\\n2-12x&=16-3x \\\\\n-9x&=14 \\\\\nx&=\\frac{-14}{9}\\\\\n\\end{aligned}\n\\]\n\n\\[\n\\small\n\\begin{aligned}\n3(x+7a)-5&=b+2(c-4x)\\\\\n3x+21a-5&=b+2c-8x \\\\\n11x+21a-5&=b+2c \\\\\n11x&=5+b+2c-21a\\\\\nx&=\\frac{5+b+2c-21a}{11}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents",
+    "href": "notes/day1_algebra/lecture-algebra.html#exponents",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Exponents make algebra more interesting!\n\nExample\nThe expression \\(x^3\\) means \\(x\\) multiplied by itself 3 times: \\[x^3=x * x * x\\]\nMore generally, \\[x^n = x \\text{ to the power of } n.\\]\nIntuitively, the exponent \\(n\\) tells us how many times to multiply the basis \\(x\\) by itself:\n\\[x^n = \\underbrace{x * x * ... * x}_{n \\text{ times}}\\]\nBut the exponent can be any (real) number, not only integers!"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-applications-1",
+    "href": "notes/day1_algebra/lecture-algebra.html#exponents-applications-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "What are exponents good for?\n\n\n\nThey can describe really big numbers\n\n\nDiameter of the Milky Way = 1,000,000,000,000,000,000,000 meters = \\[10^{21} \\text{ m}\\]\n\nAnd also really small numbers\n\nDiameter of a human red blood cell = 0.0000000001 meters = \\[10^{-10} \\text{ m}\\]\n\nThis way, we can use exponents to describe exponential growth and decay. Many environmental variables behave in this way."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-rules-1",
+    "href": "notes/day1_algebra/lecture-algebra.html#exponents-rules-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules and properties of exponents (1)\n\n\nProduct rule:\n\n\\[x^a * x^b = x^{a+b}\\]\n\nQuotient rule:\n\n\\[ \\frac{x^a}{x^b} = x^{a-b}, \\ \\ \\text{for } x \\neq 0 \\]\n\nAny non-negative \\(x\\) to the power of 0 equals 1:\n\n\\[x^0 = 1, \\ \\ \\text{for } x \\neq 0\\]\n\nNegative exponent means divide:\n\n\\[ x^{-a} = \\frac{1}{x^a}, \\ \\ \\text{for } x \\neq 0\\]\n\nFractional exponent means take the \\(n\\)-th root: \\(\\ \\ \\ \\ \\ x^{\\frac{1}{n}} = \\sqrt[n]{x}\\)\n\n:::"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-rules-2",
+    "href": "notes/day1_algebra/lecture-algebra.html#exponents-rules-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules and properties of exponents (2)\n\n\nPower of a power means multiply the exponents:\n\n\\[(x^a)^b = x^{ab}\\]\n\nExponents get distributed over products:\n\n\\[ (xy)^a = x^a y^a\\]\n\nAnd exponents get distributed over divisions:\n\n\\[ \\left( \\frac{x}{y} \\right)^a = \\frac{x^a}{y^a} \\]\n\nIf \\(a\\) is the \\(n\\)-th root of \\(x\\), then \\(a\\) to the \\(n\\) equals x\n\n\\[\na = \\sqrt[n]{x} \\Rightarrow a^n = x\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-practice",
+    "href": "notes/day1_algebra/lecture-algebra.html#exponents-practice",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Exponents practice\n\nSimplify the following. ✏️ Take three minutes to solve these individually.\n\n\\(\\frac{6^5}{6^3}\\)\n\n\n\n\\((x^2y)^4\\)\n\n \n\n\\(\\frac{x^5y^6}{xy^2}\\)\n\n \n\n\\(\\frac{24x^6}{12x^{-8}}\\)\n\n\n\n\\(5x^2y(2x^4y^{-3})\\)"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#polynomials",
+    "href": "notes/day1_algebra/lecture-algebra.html#polynomials",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Polynomials describe more complex relationships through exponents\n\nA polynomial is a function of the form: \\[\n\\large\n\\begin{align}\na_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\n\\end{align}\n\\]\n\n\\(x\\) is the variable\n\\(a_i\\) are constants (fixed numbers) that are called the coefficients of the polynomial\neach \\(a_ix^i\\) is called a term of the polynomial,\n\\(n\\) is called the degree of the polynomial, this is the largest exponent in the polynomial.\n\n\nExample:\n\n\\(x^5 + x^2 - 1\\) is a polynomial of degree five with three terms.\nLinear functions like \\(mx + c\\) where \\(m\\) and \\(c\\) are constants are polynomials of degree 1!\n\nPolynomials often represent real world data better than a linear function."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#fundamental",
+    "href": "notes/day1_algebra/lecture-algebra.html#fundamental",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Fundamental Theorem of Algebra\n\n\nA zero, root, or solution for a polynomial is a value of \\(x\\) that makes the polynomial equal to zero.\n\n\n\n\nFundamental Theorem of Algebra\n\nA polynomial \\[\na_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\n\\]\nof degree \\(n\\) has exactly \\(n\\) roots \\(r_1, \\ldots, r_n\\) and it can be refactored as\n\\[\nc(x-r_1) ... (x-r_n)\n\\]\nThe numbers \\(c\\) and \\(r_1, \\ldots, r_n\\) may be complex!"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#example-linear",
+    "href": "notes/day1_algebra/lecture-algebra.html#example-linear",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example: linear equation\n\n\nA linear equation is just a 1st degree polynomial. How many solutions does it have?\n\n\\[\n3x+2=10x-12\n\\]\nThis can be rewritten as:\n\\[\nx - 2 = 0.\n\\]\nSo \\(r_1 = 2\\) is the root. There is a single root because the degree is 1.\n\n\nFinding the roots of \\(n\\)-th degree polynomials is much harder - we will let computers do it for us.\n\nLet’s zoom in on 2nd degree polynomials"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#example-second-degree",
+    "href": "notes/day1_algebra/lecture-algebra.html#example-second-degree",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12\\)=0 is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#quad",
+    "href": "notes/day1_algebra/lecture-algebra.html#quad",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Quadratic Formula solves 2nd degree polynomials\n\nFor any second degree polynomial\n\\[\nax^2+bx+c=0\n\\]\nThe roots to can be found using the quadratic formula:\n\\[\nx=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}\n\\]\n\nExample:\nLet’s use the quadratic formula to find the solutions to \\(x^2-x-12=0\\)."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#section",
+    "href": "notes/day1_algebra/lecture-algebra.html#section",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Identify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)\n\n\\[\n4x^2+x-14=0\n\\]\n\n\nIdentify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)\n\n\\[\n256-\\sqrt{44}x^2+.23x=10\n\\]\n\n\nWhat happens if \\(b^2-4ac\\) is negative in the quadratic formula?\n\n\n\nExpand \\((3x-6)(2x+1)\\)"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-sol-one",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-sol-one",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solutions\n\n\\[\n4x^2+x-14=0\n\\]\n\\[\n\\begin{aligned}\na=4 \\\\\nb=1 \\\\\nc=-14\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-sol-two",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-sol-two",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solutions\n\n\\[\n256-\\sqrt{44} x^2+.23x=10\n\\]\n\\[\n\\begin{aligned}\na=\\sqrt{44} \\\\\nb=.23 \\\\\nc=246\n\\end{aligned}\n\\]\nThis will probably be a nasty calculation, but that is what computers are for. The order does not matter, only that the \\(a\\) corresponds to the square term, the \\(b\\) to the 1st degree term, and the \\(c\\) to the constant."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-sol-three",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-sol-three",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solutions\n\n\nWhat happens if \\(b^2-4ac\\) is negative in the quadratic formula\n\nThere are no real solutions, but complex (imaginary) solutions. This means numbers of the form \\(a+ib\\) where \\(i = \\sqrt{-1}\\). These can still be useful - but that’s for another class!"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-sol-four",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-sol-four",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solutions\n\n\nExpand \\((3x-6)(2x+1)\\)\n\n\\[\n\\begin{align}\n(3x-6)(2x+1) \\\\\n6x^2+3x-12x-6 \\\\\n6x^2-9x-6\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#graphs",
+    "href": "notes/day1_algebra/lecture-algebra.html#graphs",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Graphs"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#graph-demo",
+    "href": "notes/day1_algebra/lecture-algebra.html#graph-demo",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Graphs bring visual connection to math and data\n\n\nWhich looks better and is easier to understand?"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#xy-coordinates",
+    "href": "notes/day1_algebra/lecture-algebra.html#xy-coordinates",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#graph-series",
+    "href": "notes/day1_algebra/lecture-algebra.html#graph-series",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "We can join series of points to make graphs"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#graph-seafood",
+    "href": "notes/day1_algebra/lecture-algebra.html#graph-seafood",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Real life example: seafood depletion"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#graph-fcn",
+    "href": "notes/day1_algebra/lecture-algebra.html#graph-fcn",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Functions on a single variable and a single output can be graphed\n\n\n\n\n\\(\\color{green}{y=sin(3x+2)}\\)\n\n\n\n\\(\\color{red}{y=0.5x^3+x^2-5x}\\)\n\n\n\n\\(\\color{blue}{y=0.85x+0.44}\\)"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#graph-ingredients",
+    "href": "notes/day1_algebra/lecture-algebra.html#graph-ingredients",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Two key ingredients to graphs\n\n\n\nIntercepts\n\n\\(x\\)-intercept\n\nWhere does the graph intersect the \\(x\\)-axis?\nIn other words, for what values of \\(x\\) do we have \\((x,0)\\) be part of the graph?\n\n\\(y\\)-intercept\n\nWhere does the graph intersect the \\(y\\)-axis?\nIn other words, for what value of \\(y\\) do we have \\((0,y)\\) be part of the graph?\n\n\n\n\nWhat are the intercepts of the polynomial function in red?"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#slope-int",
+    "href": "notes/day1_algebra/lecture-algebra.html#slope-int",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Linear functions: slope-intercept form\n\nEasiest model to describe linear relationship between two variables!\n\\[\n\\huge\n\\begin{align}\n\\underbrace{y}_{\\text{output}}=\\overbrace{m}^{\\text{Slope}}\\underbrace{x}_{\\text{input}}+\\overbrace{b}^{\\text{$y$ intercept}}\n\\end{align}\n\\]\n\n\nThe slope tells us how quickly is the line changing."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#slope-def",
+    "href": "notes/day1_algebra/lecture-algebra.html#slope-def",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "How to calculate the slope?\n\n\n\nSlope =\nvertical change per unit of horizontal change.\n\\[\nm=\\frac{\\Delta y}{\\Delta x}=\\frac{y_2-y_1}{x_2-x_1}\n\\]\nHorizontal Slope: \\(m=0\\)\nVertical Slope: \\(m\\) is undefined\n\n\nRise over Run"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#slope-roc",
+    "href": "notes/day1_algebra/lecture-algebra.html#slope-roc",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Slope represents rate of change"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#slope-avg",
+    "href": "notes/day1_algebra/lecture-algebra.html#slope-avg",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Slope can be average or instantaneous\n\n\n\n\nRise over run can always be used to find average rate of change between two parts of a graph\n\n\n\nInstantaneous rate of change leads us to ✨calculus✨."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-2",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-q2",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-q2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Your team measured the concentrations of pesticides in a lake exposed to agricultural runoff. You have the following equation describing the total amount of pesticides in the lake if runoff is stopped from the farm by a new policy incentive reducing pesticides use:\n\\[\n\\begin{aligned}\n&y=(8-2t)(t+2) \\\\\n&\\text{Where } y \\text{ is pesticde concentration in ppb} \\\\\n&\\text{and } t \\text{ is time in years}.\n\\end{aligned}\n\\]\nWork with your team to\n\nfirst discuss conceptually how you would solve all the following tasks, do not write anything!\nsecond work out with pen and paper the solutions to verify the ideas you discussed.\n\n\nWhat kind of equation is this? Would it be useful to write it in another form?\nHow long will it take for the pesticide concentration in the lake to reach zero? Since the equation is a polynomial describe why one solution is more applicable than the other.\nPresent your findings (choose between a graph or table).\nWhat is the average change in concentration from year 0 to year 4?\nExplain to your client why concentrations might behave the way they were modeled."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-sol21",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-sol21",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution 1\n\nLet’s expand out the equation so it becomes easier to graph.\n\\[\n\\begin{aligned}\ny&=(-2t+8)(t+2) \\\\\ny&=\\overbrace{-2t^2}^{\\text{First}}-\\overbrace{4t}^{\\text{Outside}}+\\overbrace{8t}^{\\text{Inside}}+\\overbrace{16}^{\\text{Last}}\\\\\ny&=-2t^2+4t+16\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol2",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution 2\n\n\n\n\nUse the Quadratic Formula\n\n\\[\n\\begin{aligned}\n0&=-2t^2+4t+16 \\\\\n0&=\\frac{-4\\pm\\sqrt{4^2-4(-2)(16)}}{2(-2)}\\\\\n0&=\\frac{-4\\pm\\sqrt{16+128}}{-4} \\\\\n&t=4\\text{, } t=-2\n\\end{aligned}\n\\]\n\n\nUse the factors\n\n\\[\n\\begin{aligned}\n2t-8=0 \\\\\nt=\\frac{8}{2}\\\\\nt=4\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol3",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nt=seq(-2,4)\ny=-2*t^2+4*t+16\ndf&lt;-data.frame(t=t,y=y)\np&lt;-df %&gt;% \n  ggplot(aes(x=t,y=y))+\n  geom_line(color=\"#003660\",linewidth=3)+\n  labs(x=\"Years\",y=\"Pesticide Concentration\")+\n  scale_x_continuous(expand = c(0, 0)) +\n  scale_y_continuous(expand = c(0, 0),limits = c(-2,22))+\n  theme_classic()+\n  theme(text = element_text(size = 28)) \n\np"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol4",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol4",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\np2&lt;-df %&gt;% \n  filter(t&gt;=0) %&gt;% \n  ggplot(aes(x=t,y=y))+\n  geom_line(color=\"#003660\",linewidth=3)+\n  labs(x=\"Years\",y=\"Pesticide Concentration\")+\n  scale_x_continuous(expand = c(0, 0)) +\n  scale_y_continuous(expand = c(0, 0),limits=c(-2,22))+\n  geom_hline(yintercept = 0)+\n  annotate(\"segment\",x=0,xend=4,y=16,yend=0,color=\"#FEBC11\",linewidth=2)+\n  theme_classic()+\n  theme(text = element_text(size = 28)) \n\np2\n\nUse rise over run:\n\\[\n\\frac{\\Delta y}{\\Delta x}=\\frac{0-16}{4-0}=-4\n\\]\nPesticides are removed from the lake at an average rate of 4 ppb per year."
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol5",
+    "href": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol5",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution 5\n\n\n\n\n\n\n\n\n\n\n\n\n\nPesticide concentrations might initially increase in the lake from residual particles in the soil being washed into the lake. Then a mixture microbial activity and other chemical process reduce the pesticides to more inert components.\n(You will learn the actual answer in ESM 202: Environmental Biogeochemistry)"
+  },
+  {
+    "objectID": "notes/day1_algebra/problem_set_algebra.html",
+    "href": "notes/day1_algebra/problem_set_algebra.html",
+    "title": "Algebra and Graphing Problem Set",
+    "section": "",
+    "text": "Algebra and Graphing Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\nAlgebra basics\n\nDescribe how solving for the roots of equations (the values of \\(x\\) for which a function \\(f(x)\\) satisfies \\(f(x)=0\\)) could be useful in environmental science. List at least one method to find roots of a certain kind of funciton.\nExpand the following expressions:\n\n\\((x+2)(3x-4)\\)\n\\((x^2-2y)(x+y^3)\\)\n\nSolve for \\(x\\) in the following equations:\n\n\\(2x-4=3x+12\\)\n\\(-6ax+2b=x-5c\\)\n\\(2x^2+3x-4=0\\)\n\\(x^2-2x-5=0\\)\n\n\n\n\nStory Problems\n\nRepresentative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.\nLet’s say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of \\(f(t)=\\frac{-1}{8}t^2+6t+123.83\\) where \\(t\\) is each year and \\(f(t)\\) is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?\n\n\n\n\nGraphs\n\nFind the slope and \\(y\\)-intercept of the following lines.\n\n\n\n\nShow the code\nx=seq(-5,5)\n\ny=2*x+5\n\nw=(1/3)*x-1\n\nz=x-0.5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np2&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=w),size=3,color=\"blue\")+\n  geom_line(aes(x=x,y=w),size=2,color=\"blue\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-3,3,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np3&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=z),size=3,color=\"red\")+\n  geom_line(aes(x=x,y=z),size=2,color=\"red\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,5,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p2,p3,p4,labels=c(\"A\",\"B\",\"C\",\"D\"))\n\n\n\n\n\n\n\n\n\n\nThe growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\nWhat are the units of the average slopes and why would they change for a shark as they get older?\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n\n\n\nPicture of a scalloped hammerhead shark."
+  },
+  {
+    "objectID": "notes/day5_differential_equations/day5_differential_equations.html",
+    "href": "notes/day5_differential_equations/day5_differential_equations.html",
+    "title": "Day 5: Differential Equations",
+    "section": "",
+    "text": "Day 5: Differential Equations",
     "crumbs": [
-      "Day 1: Algebra"
+      "Day 5: Differential Equations"
     ]
   },
   {
-    "objectID": "notes/day1_algebra/day1_algebra.html#lecture-materials",
-    "href": "notes/day1_algebra/day1_algebra.html#lecture-materials",
-    "title": "Day 1: Algebra",
+    "objectID": "notes/day2_limits/day2_limits.html",
+    "href": "notes/day2_limits/day2_limits.html",
+    "title": "Day 2: Limits",
     "section": "",
-    "text": "Algebra lecture slides\nContents - Introductions\n\nMath in environmental science\nAlgebra review\nGraphing",
+    "text": "Artwork by @allison_horst\n\n\n\n\nLimits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
     "crumbs": [
-      "Day 1: Algebra"
+      "Day 2: Limits"
     ]
   },
   {
-    "objectID": "notes/day1_algebra/day1_algebra.html#problem-set",
-    "href": "notes/day1_algebra/day1_algebra.html#problem-set",
-    "title": "Day 1: Algebra",
+    "objectID": "notes/day2_limits/day2_limits.html#lecture-materials",
+    "href": "notes/day2_limits/day2_limits.html#lecture-materials",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html#problem-set",
+    "href": "notes/day2_limits/day2_limits.html#problem-set",
+    "title": "Day 2: Limits",
     "section": "",
     "text": "Click here to see the problem set.",
     "crumbs": [
-      "Day 1: Algebra"
+      "Day 2: Limits"
     ]
   },
   {
-    "objectID": "notes/day1_algebra/day1_algebra.html#problem-set-solutions",
-    "href": "notes/day1_algebra/day1_algebra.html#problem-set-solutions",
-    "title": "Day 1: Algebra",
+    "objectID": "notes/day2_limits/day2_limits.html#problem-set-solution",
+    "href": "notes/day2_limits/day2_limits.html#problem-set-solution",
+    "title": "Day 2: Limits",
     "section": "",
     "text": "Solutions",
     "crumbs": [
-      "Day 1: Algebra"
+      "Day 2: Limits"
     ]
   },
   {
-    "objectID": "notes/about.html",
-    "href": "notes/about.html",
-    "title": "About",
+    "objectID": "notes/day2_limits/solutions_problem_set_limits.html",
+    "href": "notes/day2_limits/solutions_problem_set_limits.html",
+    "title": "Limits and Derivatives Problem Set Solutions",
     "section": "",
-    "text": "About this site"
+    "text": "Limits and Derivatives Problem Set Solutions\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function. \n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\nTo investigate this limit we can evaluate the function \\(\\frac{4x}{x+2}\\) from the left with values getting closer to -2. We can see from the approximation below that \\(y = \\frac{4x}{x+2}\\) rapidly increases with values closer to -2. So, we can say the limit goes to infinity. \n\n\n\n\n\nx\n-2.5\n-2.1\n-2.01\n-2.001\n-2.0001\n-2.00001\n\n\ny\n20.0\n84.0\n804.00\n8004.000\n80004.0000\n800003.99999\n\n\n\n\n\n We can also plot the function to have a visual understanding of its behavior near -2. \n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n To investigate this limit we can evaluate the function \\(2^x\\) with values of \\(x\\) approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say \\(\\lim_{x\\to 3}2^x=8\\). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nx\n2.500000\n2.900000\n2.99000\n2.999000\n3.001000\n3.010000\n3.100000\n3.50000\n\n\ny\n5.656854\n7.464264\n7.94474\n7.994457\n8.005547\n8.055644\n8.574188\n11.31371\n\n\n\n\n\n We can also graph this function and see it is continuous. So \\(\\lim_{x\\to 3}2^x = 2^3 = 8\\). \n\n\n\n\n\n\n\n\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\nThis function is broken down into two “pieces”: it equals \\(bx^2 - \\frac{3}{2}x - 5\\) when \\(x\\) is less than -3, and it equals \\(-2x-9\\) when \\(x\\) is greater or equal to -3. To connect these two pieces and make \\(h(x)\\) continuous we need both pieces to approach the same value at \\(x=-3\\). In other words, we need that \n \\[ -3 = h(x) = \\lim_{x\\to-3} h(x).\\] \n Let’s calculate the side limits to see what’s going on with \\(\\lim_{x\\to-3} h(x)\\). From the left-hand side we have that \nxw \\[\\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^-} bx^2 - \\frac{3}{2}x - 5 = 9b + \\frac{9}{2}.\\] \na8670390NCEAS\nFrom the right-hand side we have that \n \\[\n\\lim_{x\\to-3^+} h(x) = \\lim_{x\\to-3^+} -2x-9 = -3\n\\] \n If we want \\(h(x)\\) to be continuous at \\(x=-3\\) we then need \n \\[ -3 = h(x) = \\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^+} h(x) =  9b + \\frac{9}{2} \\] \n Solving this equation we obtain that \n \\[\n\\begin{align}\n9b=\\frac{-5}{2}\\\\\nb=\\frac{-5}{18}.\n\\end{align}\n\\] \n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n \\[\\begin{align}\nf(x)  &= 2x^2+4\\\\\nf'(x) &= 4x\\\\\nf'(-3) &=4(-3)\\\\\n      &=-12\n\\end{align}\\] \n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n \\[\\begin{align}\ng(x) &= x^4-5x^3+x-5 \\\\\ng'(x) &= 4x^3-15x^2+1 \\\\\ng'(5) &= 4(5)^3-15(5)^2+1\\\\\n&=126\n\\end{align}\\] \n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n We have that \n \\[\nh(x) = \\frac{5}{x^2} = 5x^{-2}\n\\] \n Then, \n \\[\\begin{align}\nh'(x) & =-10x^{-3}\\\\\nh'(2) &= -10(2)^{-3}\\\\\n& = -\\frac{10}{8}\\\\\n&=-1.25.\n\\end{align}\\] \n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative.\n\n\n\n\n\n\n\n\n\n\n a. First, we draw a tangent line to the graph at \\(x=2\\), this is the red line plotted with the graph.\nUsing rise over run we can take two points on the tangent line to find the slope. Let’s use \\((2,1)\\) and \\((1,-1)\\) as our points on the tangent, then \n \\[\nslope=\\frac{1- (-1)}{2-1}=2.\n\\] \n b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative."
   },
   {
-    "objectID": "notes/day2_limits/problem_set_limits.html",
-    "href": "notes/day2_limits/problem_set_limits.html",
-    "title": "Limits and Derivatives Problem Set",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
     "section": "",
-    "text": "Limits and Derivatives Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\n\n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n\n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n\n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n\n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative."
+    "text": "Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the UCSB Master of Environmental Science and Management at the Bren School of Environmnetal Science and Management.\n\n\nThis 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment\n\n\n\n\nCarmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424\n\n\n\n\nClick here to see the syllabus.",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#workshop-description",
+    "href": "index.html#workshop-description",
+    "title": "Welcome!",
+    "section": "",
+    "text": "This 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Carmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#syllabus",
+    "href": "index.html#syllabus",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Click here to see the syllabus.",
+    "crumbs": [
+      "Welcome!"
+    ]
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#title-slide",
     "href": "notes/day2_limits/lecture-limits.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Limits and Intro to Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 13, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Limits and Intro to Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 14, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#tr",
@@ -337,500 +1024,102 @@
     "text": "As a team, list 3 fields of environmental science where studying the rate of change and derivatives would be important.\n\n\n\nWhich rules should you use to take these derivatives?\n\n\\[\n\\begin{align}\n\\text{A)  }& f(x)=3x^4 &\\text{B) }  y=4x^2+3x-16\n\\end{align}\n\\]\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=7x+4 & &\\text{C) }g(y)=\\sqrt{y}\n\\end{align}\n\\]"
   },
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome!",
+    "objectID": "notes/day2_limits/problem_set_limits.html",
+    "href": "notes/day2_limits/problem_set_limits.html",
+    "title": "Limits and Derivatives Problem Set",
     "section": "",
-    "text": "Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the UCSB Master of Environmental Science and Management at the Bren School of Environmnetal Science and Management.\n\n\nThis 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment\n\n\n\n\nCarmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424\n\n\n\n\nClick here to see the syllabus.",
+    "text": "Limits and Derivatives Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\n\n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n\n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n\n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n\n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative."
+  },
+  {
+    "objectID": "notes/about.html",
+    "href": "notes/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_algebra.html",
+    "href": "notes/day1_algebra/day1_algebra.html",
+    "title": "Day 1: Algebra",
+    "section": "",
+    "text": "This unit covers basic introduction of algebra and how to use graphs to convey environmental science.\n\n\nAlgebra lecture slides\nContents\n\nIntroductions\nMath in environmental science\nAlgebra review\nGraphing\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
     "crumbs": [
-      "Welcome!"
+      "Day 1: Algebra"
     ]
   },
   {
-    "objectID": "index.html#workshop-description",
-    "href": "index.html#workshop-description",
-    "title": "Welcome!",
+    "objectID": "notes/day1_algebra/day1_algebra.html#lecture-materials",
+    "href": "notes/day1_algebra/day1_algebra.html#lecture-materials",
+    "title": "Day 1: Algebra",
     "section": "",
-    "text": "This 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment",
+    "text": "Algebra lecture slides\nContents\n\nIntroductions\nMath in environmental science\nAlgebra review\nGraphing",
     "crumbs": [
-      "Welcome!"
+      "Day 1: Algebra"
     ]
   },
   {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Carmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
-    "crumbs": [
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "index.html#syllabus",
-    "href": "index.html#syllabus",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Click here to see the syllabus.",
-    "crumbs": [
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/solutions_problem_set_limits.html",
-    "href": "notes/day2_limits/solutions_problem_set_limits.html",
-    "title": "Limits and Derivatives Problem Set Solutions",
-    "section": "",
-    "text": "Limits and Derivatives Problem Set Solutions\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function. \n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\nTo investigate this limit we can evaluate the function \\(\\frac{4x}{x+2}\\) from the left with values getting closer to -2. We can see from the approximation below that \\(y = \\frac{4x}{x+2}\\) rapidly increases with values closer to -2. So, we can say the limit goes to infinity. \n\n\n\n\n\nx\n-2.5\n-2.1\n-2.01\n-2.001\n-2.0001\n-2.00001\n\n\ny\n20.0\n84.0\n804.00\n8004.000\n80004.0000\n800003.99999\n\n\n\n\n\n We can also plot the function to have a visual understanding of its behavior near -2. \n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n To investigate this limit we can evaluate the function \\(2^x\\) with values of \\(x\\) approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say \\(\\lim_{x\\to 3}2^x=8\\). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nx\n2.500000\n2.900000\n2.99000\n2.999000\n3.001000\n3.010000\n3.100000\n3.50000\n\n\ny\n5.656854\n7.464264\n7.94474\n7.994457\n8.005547\n8.055644\n8.574188\n11.31371\n\n\n\n\n\n We can also graph this function and see it is continuous. So \\(\\lim_{x\\to 3}2^x = 2^3 = 8\\). \n\n\n\n\n\n\n\n\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\nThis function is broken down into two “pieces”: it equals \\(bx^2 - \\frac{3}{2}x - 5\\) when \\(x\\) is less than -3, and it equals \\(-2x-9\\) when \\(x\\) is greater or equal to -3. To connect these two pieces and make \\(h(x)\\) continuous we need both pieces to approach the same value at \\(x=-3\\). In other words, we need that \n \\[ -3 = h(x) = \\lim_{x\\to-3} h(x).\\] \n Let’s calculate the side limits to see what’s going on with \\(\\lim_{x\\to-3} h(x)\\). From the left-hand side we have that \nxw \\[\\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^-} bx^2 - \\frac{3}{2}x - 5 = 9b + \\frac{9}{2}.\\] \na8670390NCEAS\nFrom the right-hand side we have that \n \\[\n\\lim_{x\\to-3^+} h(x) = \\lim_{x\\to-3^+} -2x-9 = -3\n\\] \n If we want \\(h(x)\\) to be continuous at \\(x=-3\\) we then need \n \\[ -3 = h(x) = \\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^+} h(x) =  9b + \\frac{9}{2} \\] \n Solving this equation we obtain that \n \\[\n\\begin{align}\n9b=\\frac{-5}{2}\\\\\nb=\\frac{-5}{18}.\n\\end{align}\n\\] \n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n \\[\\begin{align}\nf(x)  &= 2x^2+4\\\\\nf'(x) &= 4x\\\\\nf'(-3) &=4(-3)\\\\\n      &=-12\n\\end{align}\\] \n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n \\[\\begin{align}\ng(x) &= x^4-5x^3+x-5 \\\\\ng'(x) &= 4x^3-15x^2+1 \\\\\ng'(5) &= 4(5)^3-15(5)^2+1\\\\\n&=126\n\\end{align}\\] \n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n We have that \n \\[\nh(x) = \\frac{5}{x^2} = 5x^{-2}\n\\] \n Then, \n \\[\\begin{align}\nh'(x) & =-10x^{-3}\\\\\nh'(2) &= -10(2)^{-3}\\\\\n& = -\\frac{10}{8}\\\\\n&=-1.25.\n\\end{align}\\] \n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative.\n\n\n\n\n\n\n\n\n\n\n a. First, we draw a tangent line to the graph at \\(x=2\\), this is the red line plotted with the graph.\nUsing rise over run we can take two points on the tangent line to find the slope. Let’s use \\((2,1)\\) and \\((1,-1)\\) as our points on the tangent, then \n \\[\nslope=\\frac{1- (-1)}{2-1}=2.\n\\] \n b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative."
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html",
-    "href": "notes/day2_limits/day2_limits.html",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Artwork by @allison_horst\n\n\n\n\nLimits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#lecture-materials",
-    "href": "notes/day2_limits/day2_limits.html#lecture-materials",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#problem-set",
-    "href": "notes/day2_limits/day2_limits.html#problem-set",
-    "title": "Day 2: Limits",
+    "objectID": "notes/day1_algebra/day1_algebra.html#problem-set",
+    "href": "notes/day1_algebra/day1_algebra.html#problem-set",
+    "title": "Day 1: Algebra",
     "section": "",
     "text": "Click here to see the problem set.",
     "crumbs": [
-      "Day 2: Limits"
+      "Day 1: Algebra"
     ]
   },
   {
-    "objectID": "notes/day2_limits/day2_limits.html#problem-set-solution",
-    "href": "notes/day2_limits/day2_limits.html#problem-set-solution",
-    "title": "Day 2: Limits",
+    "objectID": "notes/day1_algebra/day1_algebra.html#problem-set-solutions",
+    "href": "notes/day1_algebra/day1_algebra.html#problem-set-solutions",
+    "title": "Day 1: Algebra",
     "section": "",
     "text": "Solutions",
     "crumbs": [
-      "Day 2: Limits"
+      "Day 1: Algebra"
     ]
   },
   {
-    "objectID": "notes/day5_differential_equations/day5_differential_equations.html",
-    "href": "notes/day5_differential_equations/day5_differential_equations.html",
-    "title": "Day 5: Differential Equations",
+    "objectID": "notes/day1_algebra/solutions_problem_set_algebra.html",
+    "href": "notes/day1_algebra/solutions_problem_set_algebra.html",
+    "title": "Solutions: Algebra and Graphing Problem Set",
     "section": "",
-    "text": "Day 5: Differential Equations",
-    "crumbs": [
-      "Day 5: Differential Equations"
-    ]
-  },
-  {
-    "objectID": "notes/day1_algebra/problem_set_algebra.html",
-    "href": "notes/day1_algebra/problem_set_algebra.html",
-    "title": "Algebra and Graphing Problem Set",
-    "section": "",
-    "text": "Algebra and Graphing Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\nAlgebra basics\n\nDescribe how solving for the roots of equations (the values of \\(x\\) for which a function \\(f(x)\\) satisfies \\(f(x)=0\\)) could be useful in environmental science. List at least one method to find roots of a certain kind of funciton.\nExpand the following expressions:\n\n\\((x+2)(3x-4)\\)\n\\((x^2-2y)(x+y^3)\\)\n\nSolve for \\(x\\) in the following equations:\n\n\\(2x-4=3x+12\\)\n\\(-6ax+2b=x-5c\\)\n\\(2x^2+3x-4=0\\)\n\\(x^2-2x-5=0\\)\n\n\n\n\nStory Problems\n\nRepresentative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.\nLet’s say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of \\(f(t)=\\frac{-1}{8}t^2+6t+123.83\\) where \\(t\\) is each year and \\(f(t)\\) is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?\n\n\n\n\nGraphs\n\nFind the slope and \\(y\\)-intercept of the following lines.\n\n\n\n\nShow the code\nx=seq(-5,5)\n\ny=2*x+5\n\nw=(1/3)*x-1\n\nz=x-0.5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np2&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=w),size=3,color=\"blue\")+\n  geom_line(aes(x=x,y=w),size=2,color=\"blue\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-3,3,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np3&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=z),size=3,color=\"red\")+\n  geom_line(aes(x=x,y=z),size=2,color=\"red\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,5,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p2,p3,p4,labels=c(\"A\",\"B\",\"C\",\"D\"))\n\n\n\n\n\n\n\n\n\n\nThe growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\nWhat are the units of the average slopes and why would they change for a shark as they get older?\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n\n\n\nPicture of a scalloped hammerhead shark."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#title-slide",
-    "href": "notes/day1_algebra/lecture-algebra.html#title-slide",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 11, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#survey",
-    "href": "notes/day1_algebra/lecture-algebra.html#survey",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Please fill out this survey\n\nOr you can click on this link."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#obj",
-    "href": "notes/day1_algebra/lecture-algebra.html#obj",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Workshop Objectives\n\n\n\nShake off the math dust\nEquip students with the math skills to succeed in all Bren Courses\nExplore how valuable math is to environmental science\nBuild a collaborative environment, crucial for success at Bren"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#about-me",
-    "href": "notes/day1_algebra/lecture-algebra.html#about-me",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "About me\n\n\n\nCarmen Galaz García (she/her)\n\nAssistant Teaching Professor @ Bren\n\nBefore this:\n\nData Scienist @ NCEAS\nPh.D. in Mathematics @ UCSB\n\nTeaching:\n\nPython courses for Masters in Environmental Data Science (MEDS)\nMEDS Capstone Projects\nSupporting math and programming initiatives across Bren!\n\nResearch:\n\nNCEAS/TNC collaboration for invasive iceplant mapping analyzing remotely sensed images"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#exp",
-    "href": "notes/day1_algebra/lecture-algebra.html#exp",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Student Expectations\n\nWe expect all team members will:\n\nSupport and encourage their learning buddies and all classmates\nBe open to learning from each other\nBring a collaborative attitude and communicate respectfully\nSee opportunities to share kownledge as a chance to deepend understanding\nComplete all in-class assessments\n\nFeel free to work with anyone on out of class exercises"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#math-envs",
-    "href": "notes/day1_algebra/lecture-algebra.html#math-envs",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Math in Environmental Science"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#des",
-    "href": "notes/day1_algebra/lecture-algebra.html#des",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Describe to your team what is the purpose of environmental science?\n\n\nHow would you go about solving environmental problems?"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#math-lang",
-    "href": "notes/day1_algebra/lecture-algebra.html#math-lang",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Math is an important tool in environmental science\n\n\nMath helps us investigate the world and communicate our findings\n\n\nUsed by scientists to find evidence\nCan be used to quantify relations, trends, and changes\nMathematical models can help us understand complex systems\nMust be used responsibly and with awareness of potential biases and limitations\nHelps us support arguments that can transform policy and actions\n\n\nWe need to understand the math to make decisions on it!"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#math-bren",
-    "href": "notes/day1_algebra/lecture-algebra.html#math-bren",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Math at Bren\n\n\n\n\nIn classes:\n\n\nESM 201: Ecology of Managed Ecosystems\n\nLotka-Volterra Models \\[\n\\begin{align}\n\\frac{dN_1}{dt}&=r_1N_1\\left(\\frac{K_1-N_1-\\alpha N_2}{K_1}\\right)\\\\\n\\frac{dN_2}{dt}&=r_2N_2\\left(\\frac{K_2-N_2-\\beta N_1}{K_2}\\right)\n\\end{align}\n\\]\n\n\nESM 222: Pollution Risk Management\n\nGroundwater transport of absorbed contaminant \\[\n\\frac{\\partial C}{\\partial t}=\\left(\\frac{D}{R}\\frac{\\partial^2t}{\\partial x^2}\\right)-\\left(\\frac{v}{R}\\frac{\\partial C}{\\partial x}\\right)-\\frac{k}{R}C\n\\]\n\n\nIn Research\n\n\nEcology, modeling, economics, and more!\nApplying Portfolio Theory (A mix of calculus and stochastic linear algebra) to salmon stocks (MESM GP)\nQuantifying Greenhouse Gas (GHG) Emissions Associated with Global Seafood Production (MEDS Capstone)"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#algebra",
-    "href": "notes/day1_algebra/lecture-algebra.html#algebra",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Algebra"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#alge-rules",
-    "href": "notes/day1_algebra/lecture-algebra.html#alge-rules",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Rules of Algebra\n\n\nNever change an equation. Instead, we rewrite them into more useful forms\nManipulate BOTH sides of an equation with the SAME PROCEDURE.\n\nAlways add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the qeuation.\n\nOrder of Operations (aka PEDMAS)"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#pedmas",
-    "href": "notes/day1_algebra/lecture-algebra.html#pedmas",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "(P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract [PEDMAS]"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#pedmas-use-1",
-    "href": "notes/day1_algebra/lecture-algebra.html#pedmas-use-1",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "PEDMAS important for what order to manipulate equations\n\n\\[\n4*(y-4)+(x+1)^2=z\n\\]\nIf we are given the values of \\(x=-3\\) and \\(y=2\\), what would be the value of \\(z\\)?\n✏️ Take a minute to solve this individually."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#pedmas-use-2",
-    "href": "notes/day1_algebra/lecture-algebra.html#pedmas-use-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "PEDMAS important for what order to manipulate equations\n\n\\[\n4*(y-4)+(x+1)^2=z\n\\]\nIf we are given the values of \\(x=-3\\) and \\(y=2\\), what would be the value of \\(z\\)?\n💡 Let’s see a solution!"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#flex-eq-1",
-    "href": "notes/day1_algebra/lecture-algebra.html#flex-eq-1",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n\\end{aligned}\n\\]\n✏️ Take a minute to solve this individually."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#flex-eq-2",
-    "href": "notes/day1_algebra/lecture-algebra.html#flex-eq-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n\\end{aligned}\n\\]\n💡 Let’s see a solution!"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#flex-eq-3",
-    "href": "notes/day1_algebra/lecture-algebra.html#flex-eq-3",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n80Q&=\\frac{(400-P)\\cancel{80}}{\\cancel{80}}  &\\text{ Multiply both sides by 80} \\\\\n80Q-400&=\\cancel{400}-\\cancel{400} -P &\\text{ Subtract both sides by 400} \\\\\n-1(80Q-400)&=-P(-1) &\\text{Multiply both sides by -1} \\\\\n400-80Q&=P  &\\text{Flip terms for simplicity}\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#practice-alge-1",
-    "href": "notes/day1_algebra/lecture-algebra.html#practice-alge-1",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "It can be easy to make mistakes while doing algebra. Practice makes perfect!\n\nSolve all in terms of \\(x\\)\n\n\\(3x+2=10x-12\\)\n\n\n\n\\(4-3(2x+1)=8-\\frac{3x}{2}\\)\n\n\n\n\\(3(x+7a)-5=b+2(c-4x)\\)\n\n✏️ Take a minute to solve these individually."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#practice-alge-2",
-    "href": "notes/day1_algebra/lecture-algebra.html#practice-alge-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "It can be easy to make mistakes while doing algebra. Practice makes perfect!\n\n💡 Let’s see a solution!\nSolve all in terms of \\(x\\)\n\n\n\n\n\\(3x+2=10x-12\\)\n\n\n\n\n\n\\(4-3(2x+1)=8-\\frac{3x}{2}\\)"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#practice-alge-3",
-    "href": "notes/day1_algebra/lecture-algebra.html#practice-alge-3",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "It can be easy to make mistakes while doing algebra. Practice makes perfect!\n\n💡 Let’s see a solution!\nSolve all in terms of \\(x\\)\n\n\\(3(x+7a)-5=b+2(c-4x)\\)"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#practice-alge-4",
-    "href": "notes/day1_algebra/lecture-algebra.html#practice-alge-4",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Practice Solutions\n\n\n\n\\[\n\\small\n\\begin{aligned}\n3x+2&=10x-12 \\\\\n3x+2+12&=10x-12(+12) \\\\\n3x-3x+14&=10x-3x \\\\\n14&=7x \\\\\nx&=2\n\\end{aligned}\n\\] \n\\[\n\\small\n\\begin{aligned}\n4-3(2x+1)&=8-\\frac{3x}{2}\\\\\n4-3-6x&=8-\\frac{3x}{2} \\\\\n1-6x&=8-\\frac{3x}{2} \\\\\n2-12x&=16-3x \\\\\n-9x&=14 \\\\\nx&=\\frac{-14}{9}\\\\\n\\end{aligned}\n\\]\n\n\\[\n\\small\n\\begin{aligned}\n3(x+7a)-5&=b+2(c-4x)\\\\\n3x+21a-5&=b+2c-8x \\\\\n11x+21a-5&=b+2c \\\\\n11x&=5+b+2c-21a\\\\\nx&=\\frac{5+b+2c-21a}{11}\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents",
-    "href": "notes/day1_algebra/lecture-algebra.html#exponents",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Exponents make algebra more interesting!\n\nExample\nThe expression \\(x^3\\) means \\(x\\) multiplied by itself 3 times: \\[x^3=x * x * x\\]\nMore generally, \\[x^n = x \\text{ to the power of } n.\\]\nIntuitively, the exponent \\(n\\) tells us how many times to multiply the basis \\(x\\) by itself:\n\\[x^n = \\underbrace{x * x * ... * x}_{n \\text{ times}}\\]\nBut the exponent can be any (real) number, not only integers!"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-applications-1",
-    "href": "notes/day1_algebra/lecture-algebra.html#exponents-applications-1",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "What are exponents good for?\n\n\n\nThey can describe really big numbers\n\n\nDiameter of the Milky Way = 1,000,000,000,000,000,000,000 meters = \\[10^{21} \\text{ m}\\]\n\nAnd also really small numbers\n\nDiameter of a human red blood cell = 0.0000000001 meters = \\[10^{-10} \\text{ m}\\]\n\nThis way, we can use exponents to describe exponential growth and decay. Many environmental variables behave in this way."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-rules-1",
-    "href": "notes/day1_algebra/lecture-algebra.html#exponents-rules-1",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Rules and properties of exponents (1)\n\n\nProduct rule:\n\n\\[x^a * x^b = x^{a+b}\\]\n\nQuotient rule:\n\n\\[ \\frac{x^a}{x^b} = x^{a-b}, \\ \\ \\text{for } x \\neq 0 \\]\n\nAny non-negative \\(x\\) to the power of 0 equals 1:\n\n\\[x^0 = 1, \\ \\ \\text{for } x \\neq 0\\]\n\nNegative exponent means divide:\n\n\\[ x^{-a} = \\frac{1}{x^a}, \\ \\ \\text{for } x \\neq 0\\]\n\nFractional exponent means take the \\(n\\)-th root: \\(\\ \\ \\ \\ \\ x^{\\frac{1}{n}} = \\sqrt[n]{x}\\)\n\n:::"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-rules-2",
-    "href": "notes/day1_algebra/lecture-algebra.html#exponents-rules-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Rules and properties of exponents (2)\n\n\nPower of a power means multiply the exponents:\n\n\\[(x^a)^b = x^{ab}\\]\n\nExponents get distributed over products:\n\n\\[ (xy)^a = x^a y^a\\]\n\nAnd exponents get distributed over divisions:\n\n\\[ \\left( \\frac{x}{y} \\right)^a = \\frac{x^a}{y^a} \\]\n\nIf \\(a\\) is the \\(n\\)-th root of \\(x\\), then \\(a\\) to the \\(n\\) equals x\n\n\\[\na = \\sqrt[n]{x} \\Rightarrow a^n = x\n\\]"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-practice",
-    "href": "notes/day1_algebra/lecture-algebra.html#exponents-practice",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Exponents practice\n\nSimplify the following. ✏️ Take three minutes to solve these individually.\n\n\\(\\frac{6^5}{6^3}\\)\n\n\n\n\\((x^2y)^4\\)\n\n \n\n\\(\\frac{x^5y^6}{xy^2}\\)\n\n \n\n\\(\\frac{24x^6}{12x^{-8}}\\)\n\n\n\n\\(5x^2y(2x^4y^{-3})\\)"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#polynomials",
-    "href": "notes/day1_algebra/lecture-algebra.html#polynomials",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Polynomials describe more complex relationships through exponents\n\nA polynomial is a function of the form: \\[\n\\large\n\\begin{align}\na_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\n\\end{align}\n\\]\n\n\\(x\\) is the variable\n\\(a_i\\) are constants (fixed numbers) that are called the coefficients of the polynomial\neach \\(a_ix^i\\) is called a term of the polynomial,\n\\(n\\) is called the degree of the polynomial, this is the largest exponent in the polynomial.\n\n\nExample:\n\n\\(x^5 + x^2 - 1\\) is a polynomial of degree five with three terms.\nLinear functions like \\(mx + c\\) where \\(m\\) and \\(c\\) are constants are polynomials of degree 1!\n\nPolynomials often represent real world data better than a linear function."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#fundamental",
-    "href": "notes/day1_algebra/lecture-algebra.html#fundamental",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Fundamental Theorem of Algebra\n\n\nA zero, root, or solution for a polynomial is a value of \\(x\\) that makes the polynomial equal to zero.\n\n\n\n\nFundamental Theorem of Algebra\n\nA polynomial \\[\na_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0\n\\]\nof degree \\(n\\) has exactly \\(n\\) roots \\(r_1, \\ldots, r_n\\) and it can be refactored as\n\\[\nc(x-r_1) ... (x-r_n)\n\\]\nThe numbers \\(c\\) and \\(r_1, \\ldots, r_n\\) may be complex!"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#example-linear",
-    "href": "notes/day1_algebra/lecture-algebra.html#example-linear",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Example: linear equation\n\n\nA linear equation is just a 1st degree polynomial. How many solutions does it have?\n\n\\[\n3x+2=10x-12\n\\]\nThis can be rewritten as:\n\\[\nx - 2 = 0.\n\\]\nSo \\(r_1 = 2\\) is the root. There is a single root because the degree is 1.\n\n\nFinding the roots of \\(n\\)-th degree polynomials is much harder - we will let computers do it for us.\n\nLet’s zoom in on 2nd degree polynomials"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#example-second-degree",
-    "href": "notes/day1_algebra/lecture-algebra.html#example-second-degree",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12\\)=0 is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#quad",
-    "href": "notes/day1_algebra/lecture-algebra.html#quad",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Quadratic Formula solves 2nd degree polynomials\n\nFor any second degree polynomial\n\\[\nax^2+bx+c=0\n\\]\nThe roots to can be found using the quadratic formula:\n\\[\nx=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}\n\\]\n\nExample:\nLet’s use the quadratic formula to find the solutions to \\(x^2-x-12=0\\)."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Team Assessment"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#section",
-    "href": "notes/day1_algebra/lecture-algebra.html#section",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Identify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)\n\n\\[\n4x^2+x-14=0\n\\]\n\n\nIdentify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)\n\n\\[\n256-\\sqrt{44}x^2+.23x=10\n\\]\n\n\nWhat happens if \\(b^2-4ac\\) is negative in the quadratic formula?\n\n\n\nExpand \\((3x-6)(2x+1)\\)"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-sol-one",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-sol-one",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Solutions\n\n\\[\n4x^2+x-14=0\n\\]\n\\[\n\\begin{aligned}\na=4 \\\\\nb=1 \\\\\nc=-14\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-sol-two",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-sol-two",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Solutions\n\n\\[\n256-\\sqrt{44} x^2+.23x=10\n\\]\n\\[\n\\begin{aligned}\na=\\sqrt{44} \\\\\nb=.23 \\\\\nc=246\n\\end{aligned}\n\\]\nThis will probably be a nasty calculation, but that is what computers are for. The order does not matter, only that the \\(a\\) corresponds to the square term, the \\(b\\) to the 1st degree term, and the \\(c\\) to the constant."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-sol-three",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-sol-three",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Solutions\n\n\nWhat happens if \\(b^2-4ac\\) is negative in the quadratic formula\n\nThere are no real solutions, but complex (imaginary) solutions. This means numbers of the form \\(a+ib\\) where \\(i = \\sqrt{-1}\\). These can still be useful - but that’s for another class!"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-sol-four",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-sol-four",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Solutions\n\n\nExpand \\((3x-6)(2x+1)\\)\n\n\\[\n\\begin{align}\n(3x-6)(2x+1) \\\\\n6x^2+3x-12x-6 \\\\\n6x^2-9x-6\n\\end{align}\n\\]"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#graphs",
-    "href": "notes/day1_algebra/lecture-algebra.html#graphs",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Graphs"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#graph-demo",
-    "href": "notes/day1_algebra/lecture-algebra.html#graph-demo",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Graphs bring visual connection to math and data\n\n\nWhich looks better and is easier to understand?"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#xy-coordinates",
-    "href": "notes/day1_algebra/lecture-algebra.html#xy-coordinates",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\n\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#graph-series",
-    "href": "notes/day1_algebra/lecture-algebra.html#graph-series",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "We can join series of points to make graphs"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#graph-seafood",
-    "href": "notes/day1_algebra/lecture-algebra.html#graph-seafood",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Real life example: seafood depletion"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#graph-fcn",
-    "href": "notes/day1_algebra/lecture-algebra.html#graph-fcn",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Functions on a single variable and a single output can be graphed\n\n\n\n\n\\(\\color{green}{y=sin(3x+2)}\\)\n\n\n\n\\(\\color{red}{y=0.5x^3+x^2-5x}\\)\n\n\n\n\\(\\color{blue}{y=0.85x+0.44}\\)"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#graph-ingredients",
-    "href": "notes/day1_algebra/lecture-algebra.html#graph-ingredients",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Two key ingredients to graphs\n\n\n\nIntercepts\n\n\\(x\\)-intercept\n\nWhere does the graph intersect the \\(x\\)-axis?\nIn other words, for what values of \\(x\\) do we have \\((x,0)\\) be part of the graph?\n\n\\(y\\)-intercept\n\nWhere does the graph intersect the \\(y\\)-axis?\nIn other words, for what value of \\(y\\) do we have \\((0,y)\\) be part of the graph?\n\n\n\n\nWhat are the intercepts of the polynomial function in red?"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#slope-int",
-    "href": "notes/day1_algebra/lecture-algebra.html#slope-int",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Linear functions: slope-intercept form\n\nEasiest model to describe linear relationship between two variables!\n\\[\n\\huge\n\\begin{align}\n\\underbrace{y}_{\\text{output}}=\\overbrace{m}^{\\text{Slope}}\\underbrace{x}_{\\text{input}}+\\overbrace{b}^{\\text{$y$ intercept}}\n\\end{align}\n\\]\n\n\nThe slope tells us how quickly is the line changing."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#slope-def",
-    "href": "notes/day1_algebra/lecture-algebra.html#slope-def",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "How to calculate the slope?\n\n\n\nSlope =\nvertical change per unit of horizontal change.\n\\[\nm=\\frac{\\Delta y}{\\Delta x}=\\frac{y_2-y_1}{x_2-x_1}\n\\]\nHorizontal Slope: \\(m=0\\)\nVertical Slope: \\(m\\) is undefined\n\n\nRise over Run"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#slope-roc",
-    "href": "notes/day1_algebra/lecture-algebra.html#slope-roc",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Slope represents rate of change"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#slope-avg",
-    "href": "notes/day1_algebra/lecture-algebra.html#slope-avg",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Slope can be average or instantaneous\n\n\n\n\nRise over run can always be used to find average rate of change between two parts of a graph\n\n\n\nInstantaneous rate of change leads us to ✨calculus✨."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-2",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Team Assessment"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-q2",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-q2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Your team measured the concentrations of pesticides in a lake exposed to agricultural runoff. You have the following equation describing the total amount of pesticides in the lake if runoff is stopped from the farm by a new policy incentive reducing pesticides use:\n\\[\n\\begin{aligned}\n&y=(8-2t)(t+2) \\\\\n&\\text{Where } y \\text{ is pesticde concentration in ppb} \\\\\n&\\text{and } t \\text{ is time in years}.\n\\end{aligned}\n\\]\nWork with your team to\n\nfirst discuss conceptually how you would solve all the following tasks, do not write anything!\nsecond work out with pen and paper the solutions to verify the ideas you discussed.\n\n\nWhat kind of equation is this? Would it be useful to write it in another form?\nHow long will it take for the pesticide concentration in the lake to reach zero? Since the equation is a polynomial describe why one solution is more applicable than the other.\nPresent your findings (choose between a graph or table).\nWhat is the average change in concentration from year 0 to year 4?\nExplain to your client why concentrations might behave the way they were modeled."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-sol21",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-sol21",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Solution 1\n\nLet’s expand out the equation so it becomes easier to graph.\n\\[\n\\begin{aligned}\ny&=(-2t+8)(t+2) \\\\\ny&=\\overbrace{-2t^2}^{\\text{First}}-\\overbrace{4t}^{\\text{Outside}}+\\overbrace{8t}^{\\text{Inside}}+\\overbrace{16}^{\\text{Last}}\\\\\ny&=-2t^2+4t+16\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol2",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Solution 2\n\n\n\n\nUse the Quadratic Formula\n\n\\[\n\\begin{aligned}\n0&=-2t^2+4t+16 \\\\\n0&=\\frac{-4\\pm\\sqrt{4^2-4(-2)(16)}}{2(-2)}\\\\\n0&=\\frac{-4\\pm\\sqrt{16+128}}{-4} \\\\\n&t=4\\text{, } t=-2\n\\end{aligned}\n\\]\n\n\nUse the factors\n\n\\[\n\\begin{aligned}\n2t-8=0 \\\\\nt=\\frac{8}{2}\\\\\nt=4\n\\end{aligned}\n\\]"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol3",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol3",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Solution 3\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nt=seq(-2,4)\ny=-2*t^2+4*t+16\ndf&lt;-data.frame(t=t,y=y)\np&lt;-df %&gt;% \n  ggplot(aes(x=t,y=y))+\n  geom_line(color=\"#003660\",linewidth=3)+\n  labs(x=\"Years\",y=\"Pesticide Concentration\")+\n  scale_x_continuous(expand = c(0, 0)) +\n  scale_y_continuous(expand = c(0, 0),limits = c(-2,22))+\n  theme_classic()+\n  theme(text = element_text(size = 28)) \n\np"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol4",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol4",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Solution 4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\np2&lt;-df %&gt;% \n  filter(t&gt;=0) %&gt;% \n  ggplot(aes(x=t,y=y))+\n  geom_line(color=\"#003660\",linewidth=3)+\n  labs(x=\"Years\",y=\"Pesticide Concentration\")+\n  scale_x_continuous(expand = c(0, 0)) +\n  scale_y_continuous(expand = c(0, 0),limits=c(-2,22))+\n  geom_hline(yintercept = 0)+\n  annotate(\"segment\",x=0,xend=4,y=16,yend=0,color=\"#FEBC11\",linewidth=2)+\n  theme_classic()+\n  theme(text = element_text(size = 28)) \n\np2\n\nUse rise over run:\n\\[\n\\frac{\\Delta y}{\\Delta x}=\\frac{0-16}{4-0}=-4\n\\]\nPesticides are removed from the lake at an average rate of 4 ppb per year."
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol5",
-    "href": "notes/day1_algebra/lecture-algebra.html#ta-q2-sol5",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Solution 5\n\n\n\n\n\n\n\n\n\n\n\n\n\nPesticide concentrations might initially increase in the lake from residual particles in the soil being washed into the lake. Then a mixture microbial activity and other chemical process reduce the pesticides to more inert components.\n(You will learn the actual answer in ESM 202: Environmental Biogeochemistry)"
+    "text": "Solutions: Algebra and Graphing Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\nAlgebra basics\n\nDescribe how solving for the roots of equations (the values of \\(x\\) for which a function \\(f(x)\\) satisfies \\(f(x)=0\\)) could be useful in environmental science. List at least one method to find roots of a certain kind of funciton.\n\n Finding the roots of an equation could be useful to, for example, predict when the concentration of pollutants reaches zero, or when does the cost and benefits of a program balance. Any answers in that direction could be good. \n One method for finding roots would be to use the quadratic formula if the function is a quadratic function..\n\nExpand the following expressions:\n\na. \n \\[\n\\begin{align}\n(x+2)(3x-4) &=& 3x^2-4x+6x-8 \\\\\n            &=& 3x^2+2x-8\n\\end{align}\n\\] \n b. \n \\[\n\\begin{align}\n(x^2-2y)(x+y^3) = x^3+x^2y^3-2yx-2y^4\n\\end{align}\n\\] \n\nSolve for \\(x\\) in the following equations:\n\na.\n \\[\n\\begin{align}\n2x-4=&3x+12 \\\\\n2x&=3x+16 &\\text{Add 4 to both sides}\\\\\n-x&=16 &\\text{Subtract $3x$ from both sides}\\\\\nx&=16\n\\end{align}\n\\] \nb.  \\[\n\\begin{align}\n-6ax+2b&=x-5c \\\\\n-6ax&=x-5c-2b &\\text{Subtract $2b$ from both sides} \\\\\n-6ax-x&=-5c-2b &\\text{Subtract $x$} \\\\\nx(-6a-1)&=-5c-2b &\\text{Factor out $x$}\\\\\nx&=\\frac{-5c-2b}{(-6a-1)}\n\\end{align}\n\\] \nc.  \\[\n\\begin{align}\n2x^2+3x-4&=0 \\\\\n\\frac{-(3)\\pm\\sqrt{3^2-4(2*-4)}}{2(2)}&=0 \\\\\nx_1=\\frac{-3+\\sqrt{41}}{4}&  &x_2=\\frac{-3-\\sqrt{41}}{4} \\\\\nx_1\\approx0.85 & &x_2\\approx-2.35  \n\\end{align}\n\\] \nd.  \\[\n\\begin{align}\nx^2+2x-5&=0 \\\\\n\\frac{-(-2)\\pm\\sqrt{2^2-4(1*-5)}}{2(1)}&=0 \\\\\nx_1=\\frac{2+\\sqrt{24}}{2}&  &x_2=\\frac{2-\\sqrt{24}}{2} \\\\\nx_1\\approx3.45 & &x_2\\approx-1.45  \n\\end{align}\n\\] \n\n\nStory Problems\n\nRepresentative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm=2.13 gigaton to give your answer in gigatons.\n\n\n Since the fraction of US carbon emissions will remain constant at 14% we can calculate that the US will emit 14% of the 600 ppm in 2100: \n \\[\n\\begin{align}\n600 * 0.14 &=& 84 \\text{ ppm}\\\\\n  &=& 84* 2.13 \\text{ gigaton}\\\\\n  &=& 178.92 \\text{ gigaton}\n\\end{align}\n\\] \n\nLet’s say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of \\(f(t)=\\frac{-1}{8}t^2+6t+123.83\\) where \\(t\\) is each year and \\(f(t)\\) is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?\n\nBased on the model of the scientists, we need to where the total amount of US carbon equals 0. In other words, we need to find when \\[f(t) = \\frac{1}{8}t^2+6t+123.83=0.\\]\n\n Because \\(f(t)\\) is a second degree polynomial we can use the quadratic equation to find it’s roots: \n \\[\n\\begin{align}\nt &=& \\frac{-6\\pm\\sqrt{6^2-4(\\frac{-1}{8}*123.83)}}{\\frac{-2}{8}} \\\\\nt &\\approx& 63.581 \\text{ years}\n\\end{align}\n\\] \nWe are only concerned about the postive year amounts.\n\n\nGraphs\n\nFind the slope and \\(y\\)-intercept of the following lines.\n\n\n\nShow the code\nx=seq(-5,5)\n\ny=2*x+5\n\nw=(1/3)*x-1\n\nz=x-0.5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np2&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=w),size=3,color=\"blue\")+\n  geom_line(aes(x=x,y=w),size=2,color=\"blue\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-3,3,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np3&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=z),size=3,color=\"red\")+\n  geom_line(aes(x=x,y=z),size=2,color=\"red\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,5,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p2,p3,p4,labels=c(\"A\",\"B\",\"C\",\"D\"))\n\n\n\n\n\n\n\n\n\n The slope for graph A is 2 with a \\(y\\)-intercept of 5. \n The slope for graph B is 1/3 with a \\(y\\)-intercept of -1 \n The for graph C is 1 with a \\(y\\)-intercept of -0.5 \n The slope for graph D is -3 with a \\(y\\)-intercept of 2 \n\nThe growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\n\n The average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{155-40}{8-0} = 14.375\\] \n The average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{210-200}{30-20} =1 \\] \n This tells us that the average rate of change for sharks between the ages of 0 to 8 was 14.375. For the ages, 20 to 30 the average change was 1. \n\nWhat are the units of the average slopes and why would they change for a shark as they get older?\n\n Slopes are in units of length over age, so the slope indicates the growth in centimeters every year. As animals get older, ther slow down their growth. Less energy is spent in growing and more invested in reproductive energy. \n\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n We would need to apply calculus to find the true answer, but we can approximate it reasonably well by finding the smallest possible difference between two points around age 12. In this case we can use \\(\\frac{175-172}{13-12}\\) to get an approximate instaneous rate of growth of 3 cm per year.\n\n\n\nPicture of a scalloped hammerhead shark."
   },
   {
     "objectID": "notes/day3_derivatives/day3_derivatives.html",
     "href": "notes/day3_derivatives/day3_derivatives.html",
     "title": "Day 3: Derivatives",
     "section": "",
-    "text": "Day 3: Derivatives",
+    "text": "Limits lecture slides\nContents\n\nProduct rule\nQuotient rule\nChain rule\nThe number \\(e\\) and exponential functions\nDerivative of exponential functions\nHigher order derivatives\nApplications of derivatives\nCritical points and local maxima and minima\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
+    "crumbs": [
+      "Day 3: Derivatives"
+    ]
+  },
+  {
+    "objectID": "notes/day3_derivatives/day3_derivatives.html#lecture-materials",
+    "href": "notes/day3_derivatives/day3_derivatives.html#lecture-materials",
+    "title": "Day 3: Derivatives",
+    "section": "",
+    "text": "Limits lecture slides\nContents\n\nProduct rule\nQuotient rule\nChain rule\nThe number \\(e\\) and exponential functions\nDerivative of exponential functions\nHigher order derivatives\nApplications of derivatives\nCritical points and local maxima and minima",
+    "crumbs": [
+      "Day 3: Derivatives"
+    ]
+  },
+  {
+    "objectID": "notes/day3_derivatives/day3_derivatives.html#problem-set",
+    "href": "notes/day3_derivatives/day3_derivatives.html#problem-set",
+    "title": "Day 3: Derivatives",
+    "section": "",
+    "text": "Click here to see the problem set.",
+    "crumbs": [
+      "Day 3: Derivatives"
+    ]
+  },
+  {
+    "objectID": "notes/day3_derivatives/day3_derivatives.html#problem-set-solution",
+    "href": "notes/day3_derivatives/day3_derivatives.html#problem-set-solution",
+    "title": "Day 3: Derivatives",
+    "section": "",
+    "text": "Solutions",
     "crumbs": [
       "Day 3: Derivatives"
     ]

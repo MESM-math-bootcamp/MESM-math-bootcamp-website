@@ -751,32 +751,54 @@ $$
 $$
 -->
 
-## {#increasing data-menu-title="Increasing or Decreasing functions"}
+## {#derivative-sign-section data-menu-title="Sign of the derivative" background-color="#003660"}
 
-[Let's start a little simpler]{.slide-title}
+<div class="page-center">
+<div class="custom-subtitle">Positive and negative derivatives</div>
+</div>
+
+<!---------------------------------------------------------------------->
+
+## {#increasing data-menu-title="Increasing and Decreasing functions"}
+
+[Increasing and decreasing functions]{.slide-title}
+
+<hr>
+
+A function is **increasing** on an interval $(a,b)$ is $f(x_1) < f(x_2)$ every time $x_1<x_2$. 
+
+A function is **decreasing** on an interval $(a,b)$ is $f(x_1) > f(x_2)$ every time $x_1<x_2$. 
+
+A function is **constant** on an interval $(a,b)$ is $f(x_1) = f(x_2)$ for every $x_1, x_2$ in $(a,b)$. 
+
+
+🙂 *This all really means what you think it means:*
+
+```{r,fig.align='center',out.width="100%"}
+knitr::include_graphics("images/increase_no_derivs.PNG")
+```
+
+<!---------------------------------------------------------------------->
+
+## {#sign-of-derivative data-menu-title="Sign of the derivative"}
+
+[Increasing and decreasing functions]{.slide-title}
 
 <hr>
 
-**Definition of increasing and decreasing Intervals of a Function**
+Let $f(x)$ be a function that is differentiable on the interval $(a,b)$, then:
 
-- For the function $f(x)$ (differentiable on the interval $(a,b)$)
-
-    - If $f'(x)>0$ for all $x$ values between $a$ and $b$, this interval is increasing
+  - If $f'(x)>0$ for all $x$ values between $a$ and $b$, $f$ is increasing on $(a,b)$
     
-    - If $f'(x)<0$ for all $x$ values betwen $a$ and $b$, this interval is said to be decreasing
+  - If $f'(x)<0$ for all $x$ values betwen $a$ and $b$, this interval is said to be decreasing
     
-    - If $f'(x)=0$ for all values between $a$ and $b$, then the function is constant within the interval
+  - If $f'(x)=0$ for all values between $a$ and $b$, then the function is constant within the interval
 
-## {#increasing-graph data-menu-title="Graphical demonstration of Increasing vs Decreasing"}
-
-[Graphical demonstration of increasing vs decreasing]{.slide-title}
-
-<hr>
 ```{r,fig.align='center',out.width="80%"}
 knitr::include_graphics("images/increase.PNG")
 ```
 
-
+<!---------------------------------------------------------------------->
 
 ## {#optimization data-menu-title="Optimization problems find relative extremum (aka max or min) of functions"}
 
