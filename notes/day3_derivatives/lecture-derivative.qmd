@@ -190,7 +190,7 @@ Composition of functions means applying one function to the result of another.
 
 **Example**
 
-Let $f(x) = x^2$ and $g(x) = 2x+3$. What is $f\circ g (x)$?
+✏️ [Let $f(x) = x^2$ and $g(x) = 2x+3$. What is $f\circ g (x)$?]{style="color:green;"}
 
 <br>
 
@@ -199,7 +199,7 @@ Let $f(x) = x^2$ and $g(x) = 2x+3$. What is $f\circ g (x)$?
 
 **Example**
 
-Let $h(x) = \sqrt{ 3x^2 + 10}$. How can we write $h$ as a composition of functions?
+✏️ [Let $h(x) = \sqrt{ 3x^2 + 10}$. How can we write $h$ as a composition of functions?]{style="color:green;"}
 
 
 <!---------------------------------------------------------------------->
@@ -222,17 +222,21 @@ This means that the output of $g(x)$ is now the input of $f(x)$.
 
 Composition of functions means applying one function to the result of another.
 
+<br>
+
 
 **Example**
 
-Let $f(x) = x^2$ and $g(x) = 2x+3$, then 
+✏️ [Let $f(x) = x^2$ and $g(x) = 2x+3$. What is $f\circ g (x)$?]{style="color:green;"}
+
+We have that
 
 $$f\circ g (x)  = (2x+3)^2.$$
 
 
 **Example**
 
-Let $h(x) = \sqrt{ 3x^2 + 10}$. How can we write $h$ as a composition of functions?
+✏️ [Let $h(x) = \sqrt{ 3x^2 + 10}$. How can we write $h$ as a composition of functions?]{style="color:green;"}
 
 If we make $f(x) = \sqrt{x}$ and $g(x) = 3x^2 +10$ then we have that
 
@@ -251,56 +255,100 @@ $$ f\circ g (x) = \sqrt{ 3x^2 + 10}.$$
 
 $$
 \large
-\frac{d}{dx}[f\circ g(x)]=f'(g(x))g'(x)
+\frac{d}{dx}f\circ g(x)= \frac{d}{dx} f(g(x)) = f'(g(x))\cdot g'(x)
 $$
 
-- Take the derivative of the outermost function then multiply by the derivative of the innermost
+What this is saying:
 
-- Probably the most important rule for advanced calculus
+- Take the derivative of the outermost function then multiply by the derivative of the innermost.
+
+- Probably the most important rule for advanced calculus!
+
+<br>
+
+. . .
+
+You may also encounter the chain rule in this form
+
+$$\frac{dy}{dx} = \frac{dy}{du}\cdot\frac{du}{dx}.$$
+
+The next example will show us what this means. 
 
 <!---------------------------------------------------------------------->
 
 ## {#chain-ex data-menu-title="Chain Rule Example"}
 
-[Chain Rule Example]{.slide-title}
+[Chain rule example]{.slide-title}
 
 <hr>
 
+✏️ [What is the derivative of $y = (x^3 -2)^2$?]{style="color:green;"}
+Let's use a trick called **$u$-substitution.**
 
-- Use a trick called u-substitution
+. . .
 
-- Label the inner function as u
+<br>
 
-- Take the derivative with respect to u
+1. Identify the inner function and label it as $u$. Rewrite $y$ in terms of $u$:
+
+<br>
+<br>
+
+2. Take the derivative of $y$ with respect to $u$ and substitute $u$: 
+
+<br>
+<br>
+
+3. And the derivative of $u$ with respect to $x$: 
+
+<br>
+<br>
+
+4. Put everything back into the chain rule and simplify:
+
+
+<!---------------------------------------------------------------------->
+
+## {#chain-ex data-menu-title="Chain Rule Example"}
+
+[Chain rule example]{.slide-title}
+
+<hr>
+
+✏️ [What is the derivative of $y = (x^3 -2)^2$?]{style="color:green;"}
+Let's use a trick called **$u$-substitution.**
+
+
+1. Identify the inner function and label it as $u$. Rewrite $y$ in terms of $u$:
 
 $$
 \begin{align}
-y&\class{fragment}{{}=(x^3-2)^2}\\[3px]
-u&=\class{fragment}{{}x^3-2}\\[3px] 
-y&\class{fragment}{{}=u^2} \\[3px]
-\frac{dy}{dx}&=\class{fragment}{{}\frac{dy}{du}\cdot\frac{du}{dx}}
+y &= (x^3-2)^2 \\
+u &= x^3-2 \\
+y &= u^2
+\end{align}
+$$
+
+2. Take the derivative of $y$ with respect to $u$ and substitute $u$: 
+
+$$\frac{dy}{du} = 2u = 2(x^3-2).$$
+
+3. And the derivative of $u$ with respect to $x$: 
+
+$$\frac{du}{dx} = 3x^2.$$
+
+4. Put everything back into the chain rule and simplify:
+
+$$
+\begin{align}
+\frac{dy}{dx} &= \frac{dy}{du}\cdot\frac{du}{dx} \\
+              &= 2(x^3-2)(3x^2) 
+              = 6x^5 -12x^2.
 \end{align}
 $$
 
 
 <!---------------------------------------------------------------------->
-
-## {#chain-ex-con data-menu-title="Chain Rule Example Continued"}
-
-[Chain Rule Example Continued]{.slide-title}
-
-<hr>
-
-
-$$
-\begin{align}
-\frac{dy}{dx}&=\frac{dy}{du}\cdot\frac{du}{dx}\\[3px]
-\frac{dy}{du}&=\class{fragment}{{}2u} &\text{Reminder: }y=u^2 \\[3px]
-\frac{du}{dx}&=\class{fragment}{{}3x^2} &\text{Reminder: }u=(x^3-2) \\[3px]
-\frac{dy}{dx}&=\class{fragment}{{} 2u\cdot3x^2} \\[3px]
-\frac{dy}{dx}&=\class{fragment}{{} 2(x^3-2)(3x^2)}
-\end{align}
-$$
 
 
 ## {#exponent data-menu-title="An aside on exponents"}
