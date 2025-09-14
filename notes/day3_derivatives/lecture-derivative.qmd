@@ -519,7 +519,7 @@ $$
 
 ## {#exp-real-world data-menu-title="Exponential functions in the world"}
 
-[Exponential Functions in the world]{.slide-title}
+[Exponential functions in the world]{.slide-title}
 
 <hr>
 
@@ -540,27 +540,28 @@ $$
 
 ## {#log-growth data-menu-title="Logistic Growth"}
 
-[Logistic Growth]{.slide-title}
+[Logistic growth]{.slide-title}
 
 <hr>
 
-Resource limits do exist in the world
+Growth modeled by an exponential function is unbounded, but resource limits do exist.
+
+Modeling growth using a **logistic growth model**: growth is initially exponential but levels off as the environment's **carrying capacity** is reached. The growth rate is given by
 
 $$
-\begin{align}
-\frac{dN}{dt}&=rN\left(\frac{K-N}{K}\right) \\
-\text{Where }N=\text{population, }r=\text{growth rate, }&t=\text{time, and }K=\text{Carrying Capacity}
-\end{align}
+\frac{dN}{dt} = rN\left(\frac{K-N}{K}\right).
 $$
 
-```{r,fig.align='center',out.width="50%"}
+where $N=\text{population, }r=\text{growth rate, }t=\text{time, and }K=\text{carrying capacity}.$
+
+```{r,fig.align='center',out.width="100%"}
 knitr::include_graphics("images/carry.webp")
 ```
 
 
 ## {#log-fisheries data-menu-title="Fisheries and Biological conservation"}
 
-[Extremely important in Fisheries and Biological Conservation]{.slide-title}
+[Extremely important in fisheries and biological Ccnservation]{.slide-title}
 
 <hr>
 
@@ -614,15 +615,23 @@ p2
 
 ## {#app-derv-exp data-menu-title="Derivatives solve environmental problems"}
 
-[Application of derivatives allows us to find crucial information to solve environmental problems]{.slide-title}
+[Using derivatives we can find crucial information to solve environmental problems]{.slide-title}
 
 <hr>
 
+Derivatives allow us to:
+
+<br>
+
 1) Find instantaneous rate of change at any point
+
+<br>
 
 2) Find when functions are increasing or decreasing
 
-3) Find the Optimal values of functions
+<br>
+
+3) Find the optimal values of functions
 
     - Optimal values are key to designing effective policies
     
@@ -638,39 +647,59 @@ $$
 x(t)=\frac{1}{c-\beta t}
 $$
 
+
 Where $c=9.833*10^{-3}$, $\beta=4.849*10^{-6}$, and $x$ is the total human population in millions at year $t$.
 
-- How quickly was the human population increasing in 1450?
+. . .
 
-- What should be the population growth rate in 2024 according to this model?
+<br>
+<br>
+
+✏️ [Answer the following questions using the Dochy et al. model.]{style="color:green;"}
+
+[- How quickly was the human population increasing in 1450?]{style="color:green;"}
+
+[- What should be the population growth rate in 2024 according to this model?]{style="color:green;"}
 
 ## {#pop-ex-1 data-menu-title="Human Population Example"}
 
-[Begin by taking the derivative]{.slide-title}
+[Use derivatives to find the answers!]{.slide-title}
 
 <hr>
 
-First, think of which rules we would use for $x(t)=\frac{1}{c-\beta t}$
+[- How quickly was the human population increasing in 1450?]{style="color:green;"}
 
-## {#popex-2 data-menu-title="Human Population Example"}
+. . .
 
-[Begin by taking the derivative]{.slide-title}
-
-<hr>
+"How quickly" are code words for "take the first derivative" of $x(t)=\frac{1}{c-\beta t}$. Let's do that:
 
 $$
 \begin{align}
 x(t)&=\frac{1}{c-\beta t} \\
 x(t)&=(c-\beta t)^{-1} &\text{Rearrange} \\
 \frac{dx}{dt}&=\beta(c-\beta t)^{-2} &\text{Chain and Power Rule}\\
-x'(1450)&=.61 \text{ million per year} &x'(2024)=13,980
-\text{ million per year}
 \end{align}
 $$
 
-:::{.fragment .fade-in}
-**Why is this model so wrong**
-:::
+. . .
+
+Since the question is asking for how quickly was the population increasing in 1450 we need to evaluate the derivative at $t=1450$. This is
+$$x'(1450)=.61$$
+
+So, *human population in 1450 was increasing at a rate of .61 million per year*.
+
+. . .
+
+[- What should be the population growth rate in 2024 according to this model?]{style="color:green;"}
+
+. . .
+
+"Population growth rate in 2024" means "evaluate the first derivative at $t=2024". So let's do that:
+
+$$x'(2024) = \beta(c-\beta 2024)^{-2} = 13,980.$$
+ 
+So, *human population in 2024 will be increasing at a rate of 13,980 million per year according to this model*.
+
 
 ## {#pop-ex-3 data-menu-title="Human Population Example"}
 
@@ -692,6 +721,8 @@ knitr::include_graphics("images/population-regions-with-projections.png")
 :::
 ::::
 
+
+<!--
 ## {#derv-help data-menu-title="Derivatives help us understand the beavhior of functions and also people"}
 
 [Derivatives help us understand the behavior of functions and also people]{.slide-title}
@@ -718,6 +749,7 @@ $$
 \begin{bmatrix}\frac{\partial K}{\partial \gamma} \\ \frac{\partial L}{\partial \gamma}\end{bmatrix}\lesseqgtr 0
 \end{align}
 $$
+-->
 
 ## {#increasing data-menu-title="Increasing or Decreasing functions"}
 
