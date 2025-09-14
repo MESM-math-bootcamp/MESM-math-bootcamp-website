@@ -1,20 +1,19 @@
 # Day 3: Derivatives
 
-![Artwork by @allison_horst](images/limits_horst.jpg)
-
 ## Lecture Materials
 
 [Limits lecture slides](lecture-limits.qmd)
 
 **Contents**
 
--   Limits conceptually
-
--   How limits work
-
--   Limits into derivatives
-
--   Definition of derivatives
+- Product rule 
+- Quotient rule
+- Chain rule
+- The number $e$ and exponential functions
+- Derivative of exponential functions
+- Higher order derivatives
+- Applications of derivatives
+- Critical points and local maxima and minima
 
 ## Problem Set
 

@@ -32,6 +32,8 @@ embed-resources: true
 
 *Materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop.*
 
+<!---------------------------------------------------------------------->
+
 ## {#tr data-menu-title="Team Review"}
 
 [Team Review]{.slide-title}
@@ -42,94 +44,221 @@ embed-resources: true
 
 - Discuss with Team
 
+<!---------------------------------------------------------------------->
+
 ## {#rules-cont data-menu-title="Product Rule"}
 
-[Rules for Derivatives Continued]{.slide-title}
+[Rules for differentiation (4)]{.slide-title}
 
 <hr>
 
-:::{.center-text}
 **Product Rule**
-:::
+
+Let $f(x)$ and $g(x)$ be differentiable functions. Then
 
 $$
 \large
-\frac{d}{dx}=[f(x)*g(x)]=f(x)g'(x)+g(x)f'(x)
+\frac{d}{dx}[f(x)*g(x)]=f(x)g'(x)+g(x)f'(x)
 $$
+
+What this is saying:
 
 - Breakdown multiplication into two separate functions
 
 - Then take the first function times the derivative of the second, and add the second function times the derivative of the first.
 
-## {#prod-ex data-menu-title="Product Rule Example"}
+<!---------------------------------------------------------------------->
 
-[Product Rule Example]{.slide-title}
+## {#prod-ex-blank data-menu-title="Product rule example"}
+
+[Product rule example]{.slide-title}
+
+<hr>
+
+✏️ [Find the derivative of $y=2x(x^2+3x)$.]{style="color:green;"}
+
+<!---------------------------------------------------------------------->
+
+## {#prod-ex data-menu-title="Product rule example"}
+
+[Product rule example]{.slide-title}
+
+<hr>
+
+✏️ [Find the derivative of $y=2x(x^2+3x)$.]{style="color:green;"}
+
+We have that:
 
 $$
 \begin{align}
-y&=2x(x^2+3x) \\
-y&=\overbrace{2x}^{f(x)}\overbrace{(x^2+3x)}^{g(x)} &\text{Break into two functions} \\
-\frac{dy}{dx}&=\overbrace{2x}^{f(x)}\overbrace{(2x+3)}^{g'(x)}+\overbrace{2}^{f'(x)}\overbrace{(x^2+3x)}^{g(x)} &\text{Apply Power Rule} \\
+y&=2x(x^2+3x) \\[3px]
+y&=\overbrace{2x}^{f(x)}\overbrace{(x^2+3x)}^{g(x)} &\text{Break into two functions}\\[3px]
+\frac{dy}{dx}&=\overbrace{2x}^{f(x)}\overbrace{(2x+3)}^{g'(x)}+\overbrace{2}^{f'(x)}\overbrace{(x^2+3x)}^{g(x)} &\text{Apply Power Rule}\\[3px] 
 \frac{dy}{dx}&=6x^2+12x  &\text{Algebra clean up}
 \end{align}
 $$
 
+What is another way we could have computed this derivative?
+
+<!---------------------------------------------------------------------->
+
 ## {#quotient-rule data-menu-title="Quotient Rule"}
 
-[Rule for Derivatives Continued]{.slide-title}
+[Rules for differentiation (5)]{.slide-title}
 
 <hr>
 
-:::{.center-text}
 **Quotient Rule**
-:::
 
 $$
 \large
 \frac{d}{dx}\left [\frac{f(x)}{g(x)}\right]=\frac{g(x)f'(x)-f(x)g'(x)}{[g(x)]^2}
 $$
 
-- Same idea as product rule, but order matters
+Notice:
+
+- Same idea as product rule, but order matters.
 
 - The denominator has to be $g(x)$
 
-## {#quo-ex data-menu-title="Quotient Rule Example"}
+<!---------------------------------------------------------------------->
 
-[Quotient Rule Example]{.slide-title}
+## {#quo-ex-blank data-menu-title="Quotient Rule Example"}
+
+[Quotient rule example]{.slide-title}
 
 <hr>
 
+✏️ [Find the derivative of $y=\frac{x^2}{(x+1)}$.]{style="color:green;"}
+
+<!---------------------------------------------------------------------->
+
+
+## {#quo-ex data-menu-title="Quotient Rule Example"}
+
+[Quotient rule example]{.slide-title}
+
+<hr>
+
+✏️ [Find the derivative of $y=\frac{x^2}{(x+1)}$.]{style="color:green;"}
+
+$$
+\begin{align}
+y &= \frac{x^2}{(x+1)} \\[3px]
+y &= \frac{\overbrace{x^2}^{f(x)}}{\underbrace{(x+1)}_{g(x)}} &\text{Identify functions}\\[3px]
+\frac{dy}{dx} &= \frac{\overbrace{(x+1)}^{g(x)}\overbrace{2x}^{f'(x)}-\overbrace{x^2}^{f(x)}\overbrace{(1)}^{g'(x)}}{\underbrace{(x+1)^2}_{[g(x)]^2}} &\text{Quotient rule}\\[3px]
+\frac{dy}{dx} &= \frac{x^2+2x}{(x+1)^2} &\text{Simplify} \\[3px]
+\end{align}
+$$
+
+<!--
 $$
 \begin{align}
 y&=\frac{x^2}{(x+1)} \\[3px]
 y&=\class{fragment}{{}\frac{\overbrace{x^2}^{f(x)}}{\underbrace{(x+1)}_{g(x)}}} &\text{Identify Functions}\\[3px]
 \frac{dy}{dx}&=\class{fragment}{{}\frac{\overbrace{(x+1)}^{g(x)}\overbrace{2x}^{f'(x)}-\overbrace{x^2}^{f(x)}\overbrace{(1)}^{g'(x)}}{\underbrace{(x+1)^2}_{[g(x)]^2}}} &\text{Quotient Rule}\\[3px]
-\frac{dy}{dx}&=\class{fragment}{{}\frac{x^2+2x}{(x+1)^2}}
+\frac{dy}{dx}&=\class{fragment}{{}\frac{x^2+2x}{(x+1)^2}\\[3px]}
 \end{align}
 $$
+-->
 
-**Note:** Algebraically solving Quotient Rules can be very challenging. Try to reduce it down to a usable form.
+**Note:** Applying the quotient rule can yield some complex algebraic expressions. Try to reduce it down to a usable form.
+
+<!---------------------------------------------------------------------->
 
 
+## {#function-composition data-menu-title="Composition of functions"}
 
-## {#rule-chain data-menu-title="Chain Rule"}
-
-[Rule of Derivatives Continued]{.slide-title}
+[Composition of functions]{.slide-title}
 
 <hr>
 
-:::{.center-text}
+
+If we have two functions $f$ and $g$, **the composition of $f$ and $g$** is 
+
+$$f\circ g (x) = f(g(x)).$$
+
+This means that the output of $g(x)$ is now the input of $f(x)$. 
+
+<br>
+
+Composition of functions means applying one function to the result of another.
+
+. . .
+
+<br>
+
+**Example**
+
+Let $f(x) = x^2$ and $g(x) = 2x+3$. What is $f\circ g (x)$?
+
+<br>
+
+<br>
+
+
+**Example**
+
+Let $h(x) = \sqrt{ 3x^2 + 10}$. How can we write $h$ as a composition of functions?
+
+
+<!---------------------------------------------------------------------->
+
+
+## {#function-composition data-menu-title="Composition of functions"}
+
+[Composition of functions]{.slide-title}
+
+<hr>
+
+
+If we have two functions $f$ and $g$, **the composition of $f$ and $g$** is 
+
+$$f\circ g (x) = f(g(x)).$$
+
+This means that the output of $g(x)$ is now the input of $f(x)$. 
+
+<br>
+
+Composition of functions means applying one function to the result of another.
+
+
+**Example**
+
+Let $f(x) = x^2$ and $g(x) = 2x+3$, then 
+
+$$f\circ g (x)  = (2x+3)^2.$$
+
+
+**Example**
+
+Let $h(x) = \sqrt{ 3x^2 + 10}$. How can we write $h$ as a composition of functions?
+
+If we make $f(x) = \sqrt{x}$ and $g(x) = 3x^2 +10$ then we have that
+
+$$ f\circ g (x) = \sqrt{ 3x^2 + 10}.$$
+
+
+<!---------------------------------------------------------------------->
+
+## {#chain-rule data-menu-title="Chain Rule"}
+
+[Rules for differentiation (6)]{.slide-title}
+
+<hr>
+
 **Chain Rule**
-:::
 
 $$
 \large
-\frac{d}{dx}[f(g(x))]=f'(g(x))g'(x)
+\frac{d}{dx}[f\circ g(x)]=f'(g(x))g'(x)
 $$
 
 - Take the derivative of the outermost function then multiply by the derivative of the innermost
 
 - Probably the most important rule for advanced calculus
+
+<!---------------------------------------------------------------------->
 
 ## {#chain-ex data-menu-title="Chain Rule Example"}
 
@@ -153,6 +282,8 @@ y&\class{fragment}{{}=u^2} \\[3px]
 \end{align}
 $$
 
+
+<!---------------------------------------------------------------------->
 
 ## {#chain-ex-con data-menu-title="Chain Rule Example Continued"}
 
@@ -246,7 +377,7 @@ When $x=0$, $\frac{d}{dx(0)}=1$
 <hr>
 
 ```{r,fig.align='center',out.width="25%"}
-knitr::include_graphics("img/exp_comic.png")
+knitr::include_graphics("images/exp_comic.png")
 ```
 
 
@@ -270,7 +401,7 @@ knitr::include_graphics("img/exp_comic.png")
 
 
 ```{r,fig.align='center',out.width="75%"}
-knitr::include_graphics("img/nth.png")
+knitr::include_graphics("images/nth.png")
 ```
 
 
@@ -364,7 +495,7 @@ $$
 $$
 
 ```{r,fig.align='center',out.width="50%"}
-knitr::include_graphics("img/carry.webp")
+knitr::include_graphics("images/carry.webp")
 ```
 
 
@@ -491,13 +622,13 @@ $$
 ::::{.columns}
 :::{.column width="50%"}
 ```{r,fig.align='center',fig.cap="Figure 2 from Dochy 2015",out.width="85%"}
-knitr::include_graphics("img/dochy.PNG")
+knitr::include_graphics("images/dochy.PNG")
 ```
 :::
 :::{.column width="50%"}
 
 ```{r,fig.align='center',out.width="95%"}
-knitr::include_graphics("img/population-regions-with-projections.png")
+knitr::include_graphics("images/population-regions-with-projections.png")
 ```
 :::
 ::::
@@ -551,7 +682,7 @@ $$
 
 <hr>
 ```{r,fig.align='center',out.width="80%"}
-knitr::include_graphics("img/increase.PNG")
+knitr::include_graphics("images/increase.PNG")
 ```
 
 
