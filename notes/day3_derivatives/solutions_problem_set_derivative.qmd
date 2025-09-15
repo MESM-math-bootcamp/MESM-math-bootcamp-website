@@ -84,7 +84,7 @@ The second derivative $f''(x)$ is positive whenever the function is concave up (
     
 e) $f''(x)<0$
     
-<span style="color:blue">    
+<span style="color:blue">
 The second derivative $f''(x)$ is negative whenever the function is concave down (it has an upside-down U shape). The points at which the graph changes concavity are called inflection points. We can estimate the function is concave down whenever $x>-1$.
 </span>
     
@@ -107,101 +107,146 @@ ggplot()+
 
 3)  Find the derivative of these equations
 
-a) $f(x)=\exp^{x^2+3}$
+a) $f(x)=e^{x^2+3}$
 
-\begin{align}
-f(x)&=e^{x^2+3}\\
-f'(x)&=2x e^{x^2+3}
-\end{align}
+<span style="color:blue">
+$$
+f'(x)=2x e^{x^2+3}
+$$
+</span>
     
-b) $f(x)=\sqrt(2x)((x^3-4x+15))$
+b) $f(x)=\sqrt(2x)(x^3-4x+15)$
 
-\begin{align}
-f(x)&=\sqrt{(2x)}((x^3-4x+15)) \\
-f'(x)&=\frac{1}{\sqrt{2x}}(x^3-4x+15)+\sqrt{2x}(3x^2-4)
-\end{align}
+<span style="color:blue">
+$$
+f'(x) =\frac{1}{\sqrt{2x}}(x^3-4x+15)+\sqrt{2x}(3x^2-4)
+$$
+</span>
     
 c) $f(x)=\frac{x^3+2x}{x-1}$
 
-\begin{align}
-f(x)&=\frac{x^3+2x}{x-1}\\
-f'(x)&=\frac{(x-1)(3x^2+2)-(x^3+2x)(1)}{(x-1)^2}
-\end{align}
+<span style="color:blue">
+$$
+f'(x)=\frac{(x-1)(3x^2+2)-(x^3+2x)(1)}{(x-1)^2}
+$$
+</span>
     
-4) Find the critical points of the function and determine whether they are maximum or minimum.
+4) Find the critical points of the following function and determine whether they are maxima or minima:
 
 $$
-2x^3-5x^2+3x-12
+f(x) = 2x^3-5x^2+3x-12.
 $$
 
-\begin{align}
-f'(x)&=6x^2-10x+3=0 &\textcolor{blue}{\text{Use the Quadratic formula to solve}}\\
-x&\approx 1.27  &x\approx 0.39 \\
-f''(x)&=12x-10 \\
-f''(1.27)&>0  &f''(0.39)&<0
-\end{align}
+<span style="color:blue">
+To do this we neeed to first find the critical points by solving $f'(x)=0$ and then use the second derivative test on the critical points we find to determine if they are a maxima or a minima. Computing the first derivative using the power rule we have that
+</span>
 
-\textcolor{blue}{Based on the first and second order conditions, there are two optimas for this function at $x\approx 1.27$ and $x\approx 0.39$. Plugging into the second order conditions we can see that $x\approx 0.39$ is a maximum and $x\approx 1.27$ is a minimum.}
+<span style="color:blue">
+$$
+f'(x)=6x^2-10x+3=0
+$$
+</span>
+
+<span style="color:blue">
+Then, using the quadratic formula to solve this equation we get that the critical points of $f(x)$ are
+$x\approx 1.27$ and $x\approx 0.39$. 
+</span>
+
+<span style="color:blue">
+Next, the second derivative is $f''(x)=12x-10$, and evaluating this at the critical points we get that
+$$f''(1.27)>0 \ \text{ and } \ f''(0.39)<0$$
+</span>
+
+<span style="color:blue">
+Therefore, based on the first and second order conditions, there are two optimas for this function at $x\approx 1.27$ and $x\approx 0.39$. Plugging these values into the second order derivative we can see that $x\approx 0.39$ is a maximum and $x\approx 1.27$ is a minimum.
+</span>
 
     
-5) Let's solve the canonical Gordon-Schaefer fisheries production model. This model formed the basis of fisheries management for half a century and is still a widely used model. It starts by defining the change in the abundance or biomass of fish by the logistic growth equation:
+5) 
+
+Let's solve the canonical Gordon-Schaefer fisheries production model. This model formed the basis of fisheries management for half a century and is still a widely used model. It starts by defining the change in the abundance or biomass of fish by the logistic growth equation:
 
 \begin{equation}
 \frac{dB}{dt}=rB(t)(1-\frac{B(t)}{K})
 \end{equation}
 
-where $B$ is biomass, $t$ is time, $r$ is the intrinsic growth rate, and $K$ is the carrying capacity. Next, fishers catch fish based on their effort $E$, technological ability $q$ (also called the catchability coefficient), and the amount of fish $B$. For simplicity, we use an easy multiplicative form:
+where $B$ is biomass, $t$ is time, $r$ is the intrinsic growth rate, and $K$ is the carrying capacity. 
+
+Next, fishers catch fish based on their effort $E$ (constant), technological ability $q$ (constant as well and also called the catchability coefficient), and the amount of fish $B$. For simplicity, we use an easy multiplicative form:
 
 $$
-Y=qEB
+Y(t)=qEB(t)
 $$
 
-This catch or harvest rate takes away from the growth of the fish stock, thus we can subtract it from the logistic growth equation 1. 
+This catch rate takes away from the growth of the fish stock, thus we can subtract it from the logistic growth equation 1. 
 
 \begin{equation}
-\frac{dB}{dt}=rB(t)(1-\frac{B(t)}{K})-Y
+\frac{dB}{dt}=rB(t)(1-\frac{B(t)}{K})-Y(t)
 \end{equation}
 
 **a)** Fishery managers are interested in finding the equilibrium level of biomass and harvest. We can set $\frac{dB}{dt}=0$. Solve for the equilibrium biomass in terms of K,q,r,E.
 
-\textcolor{blue}{Solution}
-
+<span style="color:blue">
+Substituting $Y(t)$ in $\frac{dB}{dt}$ and solving for B we obtain:
+$$
 \begin{align}
-0=rB(1-\frac{B}{K})-qEB \\
-qEB=rB(1-\frac{B}{K})\\
-qE=r(1-\frac{B}{K})\\
-\frac{rB}{K}=r-qE \\
-B=K(1-\frac{qE}{r})
+0&=rB(1-\frac{B}{K})-qEB \\
+qEB&=rB(1-\frac{B}{K})\\
+qE&=r(1-\frac{B}{K})\\
+\frac{rB}{K}&=r-qE \\
+B&=K(1-\frac{qE}{r}).
 \end{align}
+$$
+</blue>
 
-**b)** Sub the equilibrium biomass you found in A into the harvest equation. 
+**b)** Substitute the equilibrium biomass you found in (a) into the catch equation. 
 
-\textcolor{blue}{Solution}
-
+<span style="color:blue">
+Making this substitution we obtain
+$$
 \begin{align}
-Y=qEB \\
-Y=qEK(1-\frac{qE}{r})
+Y&=qEB \\
+ &=qEK(1-\frac{qE}{r})\\
+ &=qEK-\frac{q^2E^2K}{r}.
 \end{align}
+$$
+</span>
 
 **c)** What effort leads to a maximum sustainable yield? Maximize the equation from b) with respect to effort $E$.
 
-\textcolor{blue}{We can use either the product rule or distribute the E. It's easier algebra in this case to distribute the terms then take the derivative}
-
+<span style="color:blue">
+Let's take the derivative of the previous equation with respet to $E$:
+$$
 \begin{align}
-Y=qEK-\frac{q^2E^2K}{r}\\
-\frac{dY}{dE}=qK-\frac{2q^2EK}{r}=0 \\
-qK=\frac{2q^2EK}{r}\\
-\frac{r}{2q}=E^*
+\frac{dY}{dE}&= \frac{d}{dE} qEK-\frac{q^2E^2K}{r}\\
+   &= qK-\frac{2q^2EK}{r}.
 \end{align}
+$$
+</span>
+
+<span style="color:blue">
+To find the effort $E$ that leads to the maximum yield we find the critical points:
+$$
+\begin{align}
+qK-\frac{2q^2EK}{r} = 0 &\Rightarrow qK =\frac{2q^2EK}{r} \\
+                        &\Rightarrow  E^* = \frac{r}{2q}.
+\end{align}
+$$
+</span>
 
 **d)** Interpret what you found in c). What are the two variables that drive fisher harvest levels?
 
-\textcolor{blue}{The amount of effort that leads to the most amount of catch is driven entirely by the rate of growth of fish stocks and the ability of fishers to catch them. If $q$ catchability goes up, fishers become more efficient and need less effort to reach max harvest. Faster growing species allow for more growth and thus more effort to catch them.}
+<span style="color:blue">
+The amount of effort that leads to the most amount of catch is driven entirely by the rate of growth of fish stocks and the ability of fishers to catch them. If $q$ catchability goes up, fishers become more efficient and need less effort to reach max harvest. Faster growing species allow for more growth and thus more effort to catch them.
+</span>
 
-**e)** Calculate what the maximum sustainable yield by substituting the optimal harvest level into the harvest equation.
+**e)** Calculate what is the maximum sustainable yield by substituting the optimal harvest level into the harvest equation.
 
+<span style="color:blue">
+Doing this substitution we obtain that the maximum sustainable yield is
 \begin{align}
-Y_{MSY}=\frac{qrK}{2q}-\frac{q^2(\frac{r}{2q})^2K}{r}\\
-Y_{MSY}=\frac{rK}{2}-\frac{rK}{4}\\
-Y_{MSY}=\frac{Kr}{4}
+Y_{\text{max}}=\frac{qrK}{2q}-\frac{q^2(\frac{r}{2q})^2K}{r}\\
+Y_{\text{max}}=\frac{rK}{2}-\frac{rK}{4}\\
+Y_{\text{max}}=\frac{Kr}{4}.
 \end{align}
+</span>

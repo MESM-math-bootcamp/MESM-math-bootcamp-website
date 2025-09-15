@@ -10,6 +10,7 @@ library(tidyverse)
 
 *Answer the following questions to the best of your ability.  Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!*
 
+# Solutions: Derivatives Problem Set
 
 ## Derivative Rules
 
