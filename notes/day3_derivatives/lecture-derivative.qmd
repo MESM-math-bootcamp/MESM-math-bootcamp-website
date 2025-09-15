@@ -554,14 +554,14 @@ $$
 
 where $N=\text{population, }r=\text{growth rate, }t=\text{time, and }K=\text{carrying capacity}.$
 
-```{r,fig.align='center',out.width="100%"}
-knitr::include_graphics("images/carry.webp")
-```
+<div class="page-center">
+![](images/carry.webp)
+</div>
 
 
 ## {#log-fisheries data-menu-title="Fisheries and Biological conservation"}
 
-[Extremely important in fisheries and biological Ccnservation]{.slide-title}
+[Extremely important in fisheries and biological conservation]{.slide-title}
 
 <hr>
 
@@ -608,7 +608,6 @@ p1
 
 ```{r,fig.align='center',fig.dim=c(5,5.5),out.width="90%"}
 p2
-
 ```
 :::
 ::::
@@ -754,7 +753,7 @@ $$
 ## {#derivative-sign-section data-menu-title="Sign of the derivative" background-color="#003660"}
 
 <div class="page-center">
-<div class="custom-subtitle">Positive and negative derivatives</div>
+<div class="custom-subtitle">Positive and Negative Derivatives</div>
 </div>
 
 <!---------------------------------------------------------------------->
@@ -765,18 +764,18 @@ $$
 
 <hr>
 
-A function is **increasing** on an interval $(a,b)$ is $f(x_1) < f(x_2)$ every time $x_1<x_2$. 
+A function is **increasing** on an interval $(a,b)$ is $f(x_1) \leq f(x_2)$ every time $x_1<x_2$. 
 
-A function is **decreasing** on an interval $(a,b)$ is $f(x_1) > f(x_2)$ every time $x_1<x_2$. 
+A function is **decreasing** on an interval $(a,b)$ is $f(x_1) \geq f(x_2)$ every time $x_1<x_2$. 
 
 A function is **constant** on an interval $(a,b)$ is $f(x_1) = f(x_2)$ for every $x_1, x_2$ in $(a,b)$. 
 
 
 🙂 *This all really means what you think it means:*
 
-```{r,fig.align='center',out.width="100%"}
-knitr::include_graphics("images/increase_no_derivs.PNG")
-```
+<div class="page-center">
+![](images/increase.PNG)
+</div>
 
 <!---------------------------------------------------------------------->
 
@@ -794,47 +793,106 @@ Let $f(x)$ be a function that is differentiable on the interval $(a,b)$, then:
     
   - If $f'(x)=0$ for all values between $a$ and $b$, then the function is constant within the interval
 
-```{r,fig.align='center',out.width="80%"}
-knitr::include_graphics("images/increase.PNG")
-```
+
+<div class="page-center">
+![](images/increase.PNG)
+</div>
 
 <!---------------------------------------------------------------------->
 
-## {#optimization data-menu-title="Optimization problems find relative extremum (aka max or min) of functions"}
+## {#max-min data-menu-title="Local maxima and minima of funcitons"}
 
-[Optimization problems find relative extremum (aka max or min) of functions]{.slide-title}
+[Local maxima and minima of funcitons]{.slide-title}
+<hr>
+A funciton $f(x)$ has...
+
+-  a **local maximum** at $p$ if $f(p)$ is greater than or equal to the values of $f$ for points near $p$.
+
+. . .
+
+-  a **local minimum** at $p$ if $f(p)$ is less than or equal to the values of $f$ for points near $p$.
+
+. . .
+
+-  a **critical point** $p$ if $f'(p)=0$. The value $f(p)$ at a critital point $p$ is called a **critical value**.
+
+. . .
+
+Finding critical points helps us solve optimization problems: every maximum and miniumum occurs at a critical point.
+
+<div class="page-center">
+![](images/Maxima_and_Minima.svg.png)
+</div>
+
+<!---------------------------------------------------------------------->
+
+## {#optimization data-menu-title="Finding maxima/minima"}
+
+[Finding maxima/minima]{.slide-title}
 
 <hr>
-1) Find First Order Conditions:
+[1) Find critical points with the 1st derivative:]{style="color:red;"}
 
-- Relative extremum exist at all points on function where $f'(x)=0$
+- If $f(x)$ has a local maximum or minimum at $p$ then $f'(p)$ =0. 
+
+- This means that we need to look for local max/min among critical points (the values for $x$ for which $f'(x)=0$).
+
+<br>
 
 :::{.fragment .fade-in}
-2) Verify Second Order Conditions:
+[2) Apply the 2nd derivative test to critical points:]{style="color:red;"}
 
-- Whether an extremum is a maximum or minimum requires us to test if it is increasing or decreasing at the extremum
+- Whether an extremum is a maximum or minimum requires us to test if the function is concave up  or concave down around that point. 
 
-- $f(x^*)$ is a local maximum if $f''(x)<0$
+- If $f'(p)=0$ and $f''(p)<0$ then $f(x)$ has a local maximum at $p$
 
-- $f(x^*)$ is a local minimum if $f''(x)>0$
+- If $f'(x)=0$ and $f''(x)>0$, then $f(x)$ has a local minimum at $p$
+
+<div class="page-center">
+![](images/concavity-second-derivative.gif)
+</div>
 
 :::
 
-## {#opt-graph data-menu-title="Graphical Example of Optimization"}
+<!---------------------------------------------------------------------->
 
-[Graphical Example of Optimization]{.slide-title}
+## {#opt-graph data-menu-title="Example"}
+
+[Example]{.slide-title}
 
 <hr>
+
+✏️ [Consider the function  $f(x)=x^3-12x+2$. What are its local maxima and minima?]{style="color:green;"}
 
 ::::{.columns}
 :::{.column width="50%"}
 
-$f(x)=x^3-12x+2$
+:::{.fragment .fade-in}
+1. Find critical points with 1st derivative:
 
-Where does $f'(x)=0$?
+$$
+\begin{align}
+f(x)&=x^3-12x+2 \\
+f'(x)&=3x^2-12 \\
+x^*&=-2  & x^*=2
+\end{align}
+$$
+:::
+
+:::{.fragment .fade-in}
+2. Apply 2nd derivative test to critical points:
+
+$$
+\begin{align}
+f''(x)&=6x \\
+f''(-2)&<0  &f''(2)>0
+\end{align}
+$$
+:::
 :::
 :::{.column width="50%"}
 
+:::{.fragment .fade-in}
 ```{r fig.align='center',fig.dim=c(5,5.5),out.width="90%"}
 
 x=seq(-5,5,by=.1)
@@ -851,42 +909,14 @@ ggplot()+
 
 ```
 :::
-::::
-
-
-## {#opt-solve data-menu-title="Solve Optimization problems analytically"}
-
-[Solve Analytically]{.slide-title}
-
-<hr>
-
-First Order Conditions:
-
-$$
-\begin{align}
-f(x)&=x^3-12x+2 \\
-f'(x)&=3x^2-12 \\
-x^*&=-2  & x^*=2
-\end{align}
-$$
-
-:::{.fragment .fade-in}
-Second Order Conditions:
-
-$$
-\begin{align}
-f''(x)&=6x \\
-f''(-2)&<0  &f''(2)>0
-\end{align}
-$$
 :::
+::::
 
 :::{.fragment .fade-in}
 By the first order conditions we know that $x=2$ and $x=-2$ are local optimum.
 
 The second order conditions inform us that $x=-2$ is a local maximum and $x=2$ is a local minimum.
 :::
-
 
 ## {#ta-2 data-menu-title="Team Assessment 2" background-color="#003660"}
 
@@ -897,7 +927,7 @@ The second order conditions inform us that $x=-2$ is a local maximum and $x=2$ i
 
 ## {#gta2-1 data-menu-title="Team Assessment 2 Questions"}
 
-1) How many local min and maximums can you find on this graph?
+✏️ [1. How many local min and maximums can you find on this graph?]{style="color:green;"}
 
 ```{r,fig.align='center'}
 x=seq(-1,2.75,by=0.01)
@@ -915,20 +945,63 @@ ggplot()+
 
 ## {#gta2-2 data-menu-title="Team Assessment 2 Questions"}
 
-2) Solve for all optimum. Identify which are minima and which are maxima.
+✏️ [2. Find all the critical values. Identify which are minima and which are maxima.]{style="color:green;"}
 
+[
 $$
 f(x)=2x^3-6x^2+3x+15
-$$
+$$]{style="color:green;"}
 
 ## {#gta2-3 data-menu-title="Team Assessment 2 Questions"}
 
-3) Your team has been hired to help the city of Santa Barbara to help eliminate a nasty pollutant in our streams. You are choosing between two policies. Policy A provides $\sqrt{10x+4}$ benefits where $x$ is the dollar spent on interventions. Policy B provides $\sqrt{20x+4}$ benefits for every dollar spent. However, each policy has a cost associated with each. Policy A has a constant linear cost at $2x$ and Policy B has a constant linear cost at $3x$.
+✏️  [3. Your team has been hired to help the city of Santa Barbara to help eliminate a nasty pollutant in our streams. You are choosing between two policies. Policy A provides $\sqrt{10x+4}$ benefits where $x$ is the dollar spent on interventions. Policy B provides $\sqrt{20x+4}$ benefits for every dollar spent. However, each policy has a cost associated with each. Policy A has a constant linear cost at $2x$ and Policy B has a constant linear cost at $3x$.]{style="color:green;"}
 
-a) Find the optimal amount of interventions dollars to spend for each policy. Consider both costs and benefits. [hint: Remember $\sqrt{}$ is just $x^{\frac{1}{2}}$. You can use exponent rules to help solve]
+<br>
 
-b) Which policy provides the most benefits?
+[a) Which policy is cheaper?]{style="color:green;"}
 
-c) Which policy is cheaper?
+<br>
 
-d) Which policy should the city of Santa Barbara pursue?
+[b) Find the optimal amount of interventions dollars to spend for each policy. Consider both costs and benefits. [Hint: Remember $\sqrt{}$ is just $x^{\frac{1}{2}}$. You can use exponent rules to help solve]]{style="color:green;"}
+
+<br>
+
+[c) Which policy provides the most maximun net benefits?]{style="color:green;"}
+
+<br>
+
+
+[d) Which policy should the city of Santa Barbara pursue?]{style="color:green;"}
+
+## {#solutions data-menu-title="Solutions"}
+
+[Solution to exercise 3]{.slide-title}
+
+<hr>
+
+**a. Which policy is cheaper?**  
+Policy A is cheaper: it costs $2x$ vs. $3x$ for Policy B.
+
+**b. Optimal spending = maximizing net benefits**  
+For this, we need to create a function representing the net benefits for each policy:
+
+$$
+\begin{align}
+B_A (x) &= \sqrt{10x+4} - 2x & \text{net benefits for policy A,}\\
+B_A (x) &= \sqrt{20x+4} - 3x & \text{net benefits for policy B}.
+\end{align}
+$$
+Solving for critical points and applying the second derivative test we get that $B_A$ benefits are maximized when $x_A=\frac{9}{40}=0.225$ dollars are spent and $B_B$ benefits are maximized when $x_B=\frac{16}{45}\approx0.356$ dollars are spent.   
+
+**b. Which policy provides the most benefits?**  
+If we compare the maximum net benefits offered by each policy we get
+$$
+B_A (0.225) = 2.05\  \text{ and } 
+B_B (\frac{16}{45})\  \approx 2.27.
+$$
+
+So policy B provides the maximum net benefits. 
+
+**d. Which policy should the city pursue?**  
+
+Because Policy B yields the larger maximal net benefit (≈2.27), the City of Santa Barbara should probably pursue Policy B, assuming there are no restrictions in how much money they can invest in the policy.

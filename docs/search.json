@@ -14,7 +14,7 @@
     "href": "notes/day3_derivatives/lecture-derivative.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules and Applications of Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 14, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Rules and Applications of Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 15, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#tr",
@@ -168,7 +168,7 @@
     "href": "notes/day3_derivatives/lecture-derivative.html#log-fisheries",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Extremely important in fisheries and biological Ccnservation"
+    "text": "Extremely important in fisheries and biological conservation"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#app-derv-exp",
@@ -203,14 +203,14 @@
     "href": "notes/day3_derivatives/lecture-derivative.html#derivative-sign-section",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Positive and negative derivatives"
+    "text": "Positive and Negative Derivatives"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#increasing",
     "href": "notes/day3_derivatives/lecture-derivative.html#increasing",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Increasing and decreasing functions\n\nA function is increasing on an interval \\((a,b)\\) is \\(f(x_1) &lt; f(x_2)\\) every time \\(x_1&lt;x_2\\).\nA function is decreasing on an interval \\((a,b)\\) is \\(f(x_1) &gt; f(x_2)\\) every time \\(x_1&lt;x_2\\).\nA function is constant on an interval \\((a,b)\\) is \\(f(x_1) = f(x_2)\\) for every \\(x_1, x_2\\) in \\((a,b)\\).\n🙂 This all really means what you think it means:"
+    "text": "Increasing and decreasing functions\n\nA function is increasing on an interval \\((a,b)\\) is \\(f(x_1) \\leq f(x_2)\\) every time \\(x_1&lt;x_2\\).\nA function is decreasing on an interval \\((a,b)\\) is \\(f(x_1) \\geq f(x_2)\\) every time \\(x_1&lt;x_2\\).\nA function is constant on an interval \\((a,b)\\) is \\(f(x_1) = f(x_2)\\) for every \\(x_1, x_2\\) in \\((a,b)\\).\n🙂 This all really means what you think it means:"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative",
@@ -220,25 +220,25 @@
     "text": "Increasing and decreasing functions\n\nLet \\(f(x)\\) be a function that is differentiable on the interval \\((a,b)\\), then:\n\nIf \\(f'(x)&gt;0\\) for all \\(x\\) values between \\(a\\) and \\(b\\), \\(f\\) is increasing on \\((a,b)\\)\nIf \\(f'(x)&lt;0\\) for all \\(x\\) values betwen \\(a\\) and \\(b\\), this interval is said to be decreasing\nIf \\(f'(x)=0\\) for all values between \\(a\\) and \\(b\\), then the function is constant within the interval"
   },
   {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#max-min",
+    "href": "notes/day3_derivatives/lecture-derivative.html#max-min",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Local maxima and minima of funcitons\n\nA funciton \\(f(x)\\) has…\n\na local maximum at \\(p\\) if \\(f(p)\\) is greater than or equal to the values of \\(f\\) for points near \\(p\\).\n\n\n\na local minimum at \\(p\\) if \\(f(p)\\) is less than or equal to the values of \\(f\\) for points near \\(p\\).\n\n\n\n\na critical point \\(p\\) if \\(f'(p)=0\\). The value \\(f(p)\\) at a critital point \\(p\\) is called a critical value.\n\n\n\nFinding critical points helps us solve optimization problems: every maximum and miniumum occurs at a critical point."
+  },
+  {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#optimization",
     "href": "notes/day3_derivatives/lecture-derivative.html#optimization",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Optimization problems find relative extremum (aka max or min) of functions\n\n\nFind First Order Conditions:\n\n\nRelative extremum exist at all points on function where \\(f'(x)=0\\)\n\n\n\nVerify Second Order Conditions:\n\n\nWhether an extremum is a maximum or minimum requires us to test if it is increasing or decreasing at the extremum\n\\(f(x^*)\\) is a local maximum if \\(f''(x)&lt;0\\)\n\\(f(x^*)\\) is a local minimum if \\(f''(x)&gt;0\\)"
+    "text": "Finding maxima/minima\n\n1) Find critical points with the 1st derivative:\n\nIf \\(f(x)\\) has a local maximum or minimum at \\(p\\) then \\(f'(p)\\) =0.\nThis means that we need to look for local max/min among critical points (the values for \\(x\\) for which \\(f'(x)=0\\)).\n\n\n\n2) Apply the 2nd derivative test to critical points:\n\nWhether an extremum is a maximum or minimum requires us to test if the function is concave up or concave down around that point.\nIf \\(f'(p)=0\\) and \\(f''(p)&lt;0\\) then \\(f(x)\\) has a local maximum at \\(p\\)\nIf \\(f'(x)=0\\) and \\(f''(x)&gt;0\\), then \\(f(x)\\) has a local minimum at \\(p\\)"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#opt-graph",
     "href": "notes/day3_derivatives/lecture-derivative.html#opt-graph",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Graphical Example of Optimization\n\n\n\n\\(f(x)=x^3-12x+2\\)\nWhere does \\(f'(x)=0\\)?"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#opt-solve",
-    "href": "notes/day3_derivatives/lecture-derivative.html#opt-solve",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Solve Analytically\n\nFirst Order Conditions:\n\\[\n\\begin{align}\nf(x)&=x^3-12x+2 \\\\\nf'(x)&=3x^2-12 \\\\\nx^*&=-2  & x^*=2\n\\end{align}\n\\]\n\nSecond Order Conditions:\n\\[\n\\begin{align}\nf''(x)&=6x \\\\\nf''(-2)&&lt;0  &f''(2)&gt;0\n\\end{align}\n\\]\n\n\nBy the first order conditions we know that \\(x=2\\) and \\(x=-2\\) are local optimum.\nThe second order conditions inform us that \\(x=-2\\) is a local maximum and \\(x=2\\) is a local minimum."
+    "text": "Example\n\n✏️ Consider the function \\(f(x)=x^3-12x+2\\). What are its local maxima and minima?\n\n\n\n\nFind critical points with 1st derivative:\n\n\\[\n\\begin{align}\nf(x)&=x^3-12x+2 \\\\\nf'(x)&=3x^2-12 \\\\\nx^*&=-2  & x^*=2\n\\end{align}\n\\]\n\n\n\nApply 2nd derivative test to critical points:\n\n\\[\n\\begin{align}\nf''(x)&=6x \\\\\nf''(-2)&&lt;0  &f''(2)&gt;0\n\\end{align}\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBy the first order conditions we know that \\(x=2\\) and \\(x=-2\\) are local optimum.\nThe second order conditions inform us that \\(x=-2\\) is a local maximum and \\(x=2\\) is a local minimum."
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#ta-2",
@@ -252,21 +252,28 @@
     "href": "notes/day3_derivatives/lecture-derivative.html#gta2-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "How many local min and maximums can you find on this graph?"
+    "text": "✏️ 1. How many local min and maximums can you find on this graph?"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-2",
     "href": "notes/day3_derivatives/lecture-derivative.html#gta2-2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Solve for all optimum. Identify which are minima and which are maxima.\n\n\\[\nf(x)=2x^3-6x^2+3x+15\n\\]"
+    "text": "✏️ 2. Find all the critical values. Identify which are minima and which are maxima.\n\\[\nf(x)=2x^3-6x^2+3x+15\n\\]"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-3",
     "href": "notes/day3_derivatives/lecture-derivative.html#gta2-3",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Your team has been hired to help the city of Santa Barbara to help eliminate a nasty pollutant in our streams. You are choosing between two policies. Policy A provides \\(\\sqrt{10x+4}\\) benefits where \\(x\\) is the dollar spent on interventions. Policy B provides \\(\\sqrt{20x+4}\\) benefits for every dollar spent. However, each policy has a cost associated with each. Policy A has a constant linear cost at \\(2x\\) and Policy B has a constant linear cost at \\(3x\\).\n\n\nFind the optimal amount of interventions dollars to spend for each policy. Consider both costs and benefits. [hint: Remember \\(\\sqrt{}\\) is just \\(x^{\\frac{1}{2}}\\). You can use exponent rules to help solve]\nWhich policy provides the most benefits?\nWhich policy is cheaper?\nWhich policy should the city of Santa Barbara pursue?"
+    "text": "✏️ 3. Your team has been hired to help the city of Santa Barbara to help eliminate a nasty pollutant in our streams. You are choosing between two policies. Policy A provides \\(\\sqrt{10x+4}\\) benefits where \\(x\\) is the dollar spent on interventions. Policy B provides \\(\\sqrt{20x+4}\\) benefits for every dollar spent. However, each policy has a cost associated with each. Policy A has a constant linear cost at \\(2x\\) and Policy B has a constant linear cost at \\(3x\\).\n\na) Which policy is cheaper?\n\nb) Find the optimal amount of interventions dollars to spend for each policy. Consider both costs and benefits. [Hint: Remember \\(\\sqrt{}\\) is just \\(x^{\\frac{1}{2}}\\). You can use exponent rules to help solve]\n\nc) Which policy provides the most maximun net benefits?\n\nd) Which policy should the city of Santa Barbara pursue?"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#solutions",
+    "href": "notes/day3_derivatives/lecture-derivative.html#solutions",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution to exercise 3\n\na. Which policy is cheaper?\nPolicy A is cheaper: it costs \\(2x\\) vs. \\(3x\\) for Policy B.\nb. Optimal spending = maximizing net benefits\nFor this, we need to create a function representing the net benefits for each policy:\n\\[\n\\begin{align}\nB_A (x) &= \\sqrt{10x+4} - 2x & \\text{net benefits for policy A,}\\\\\nB_A (x) &= \\sqrt{20x+4} - 3x & \\text{net benefits for policy B}.\n\\end{align}\n\\] Solving for critical points and applying the second derivative test we get that \\(B_A\\) benefits are maximized when \\(x_A=\\frac{9}{40}=0.225\\) dollars are spent and \\(B_B\\) benefits are maximized when \\(x_B=\\frac{16}{45}\\approx0.356\\) dollars are spent.\nb. Which policy provides the most benefits?\nIf we compare the maximum net benefits offered by each policy we get \\[\nB_A (0.225) = 2.05\\  \\text{ and }\nB_B (\\frac{16}{45})\\  \\approx 2.27.\n\\]\nSo policy B provides the maximum net benefits.\nd. Which policy should the city pursue?\nBecause Policy B yields the larger maximal net benefit (≈2.27), the City of Santa Barbara should probably pursue Policy B, assuming there are no restrictions in how much money they can invest in the policy."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#title-slide",

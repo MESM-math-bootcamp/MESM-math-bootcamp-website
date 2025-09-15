@@ -2,7 +2,7 @@
 
 ## Lecture Materials
 
-[Limits lecture slides](lecture-derivatives.qmd)
+[Limits lecture slides](lecture-derivative.qmd)
 
 **Contents**
 
