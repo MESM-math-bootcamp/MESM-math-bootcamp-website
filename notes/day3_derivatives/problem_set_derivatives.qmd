@@ -1,0 +1,93 @@
+---
+author: "Nathaniel Grimes, adapted by C. Galaz García"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,warning=FALSE,message=FALSE)
+
+library(tidyverse)
+```
+
+*Answer the following questions to the best of your ability.  Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!*
+
+
+# Derivative Rules
+
+1) Explain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (constant, multiple, sum, product, chain, etc.) you would use. [For extra practice, have a try at solving them!]
+
+    a) $\large f(x)=\sqrt(x+3)$
+    
+    b) $\large h(a)=\frac{\exp^{-a}}{a^2-5}$
+    
+    c) $\large g(t)=\left(\frac{5t^3+2}{2(t^2-2)}\right)^6$
+    
+2) On the graph, label all regions where the following statements are true:
+
+    a) $f'(x)=0$
+    
+    b) $f'(x)>0$
+    
+    c) $f'(x)<0$
+    
+    d) [Bonus] $f''(x)>0$
+    
+    e) [Bonus] $f''(x)<0$
+    
+```{r}
+x=seq(-3,1,by=.1)
+
+y=-x^3-3*x^2+2
+
+ggplot()+
+  geom_hline(yintercept=0)+
+  geom_vline(xintercept = 0)+
+  geom_line(aes(x=x,y=y),color="black",size=3)+
+  theme_classic()+
+  labs(x="",y="")
+  
+```
+    
+  
+3)  Find the derivative of these equations
+
+    a) $f(x)=\exp^{x^2+3}$
+    
+    b) $f(x)=\sqrt(2x)((x^3-4x+15))$
+    
+    c) $f(x)=\frac{x^3+2x}{x-1}$
+    
+4) Find the critical points of the function and determine whether they are maximum or minimum.
+
+$$
+2x^3-5x^2+3x-12
+$$
+
+\pagebreak
+    
+5) Let's solve the canonical Gordon-Schaefer fisheries production model. This model formed the basis of fisheries management for half a century and is still a widely used model. It starts by defining the change in the abundance or biomass of fish by the logistic growth equation:
+
+\begin{equation}
+\frac{dB}{dt}=rB(t)(1-\frac{B(t)}{K})
+\end{equation}
+
+where $B$ is biomass, $t$ is time, $r$ is the intrinsic growth rate, and $K$ is the carrying capacity. Next, fishers catch fish based on their effort $E$, technological ability $q$ (also called the catchability coefficient), and the amount of fish $B$. For simplicity, we use an easy multiplicative form:
+
+$$
+Y=qEB
+$$
+
+This catch or harvest rate takes away from the growth of the fish stock, thus we can subtract it from the logistic growth equation 1. 
+
+\begin{equation}
+\frac{dB}{dt}=rB(t)(1-\frac{B(t)}{K})-Y
+\end{equation}
+
+**a)** Fishery managers are interested in finding the equilibrium level of biomass and harvest. We can set $\frac{dB}{dt}=0$. Solve for the equilibrium biomass in terms of K,q,r,E.
+
+**b)** Sub the equilibrium biomass you found in A into the harvest equation. 
+
+**c)** What effort leads to a maximum sustainable yield? Maximize the equation from b) with respect to effort $E$.
+
+**d)** Interpret what you found in c). What are the two variables that drive fisher harvest levels?
+
+**e)** Calculate what the maximum sustainable yield by substituting the optimal harvest level into the harvest equation.
