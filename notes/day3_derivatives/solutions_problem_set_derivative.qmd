@@ -8,72 +8,85 @@ knitr::opts_chunk$set(echo = FALSE,warning=FALSE,message=FALSE)
 library(tidyverse)
 ```
 
-*Answer the following questions to the best of your ability. Feel free to work with anyone in the cohort, though I would encourage attempting on your own first to make sure you fully understand the concepts.*
+*Answer the following questions to the best of your ability.  Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!*
 
-# The most important homework question you'll ever have at Bren
+# Solutions: Derivatives Problem Set
 
-1) What local wine, beer, or coffee pairs best with a homework session?
+## Derivative Rules
 
-\textcolor{blue}{Personal preference, Third Window has the best smash burgers and McConnell's ice cream shakes and a great selection of beer. Muni wine and caje coffee share the courtyard if that's more your style}
+1) Explain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (constant, multiple, sum, product, chain, etc.) you would use. For extra practice, have a try at solving them!
 
-# Derivative Rules
-
-1) Explain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (constant, multiple, sum, product, etc.) you would use. [For extra practice, have a try at solving them!]
-
-    a) $\large f(x)=\sqrt{(x+3)}$
+a) $\large f(x)=\sqrt{(x+3)}$
     
-\textcolor{blue}{Chain rule, but the $\frac{du}{dx}=1$ so it would look like we only need the power rule. We need to keep $(x+3)$}
+<span style="color:blue">
+We can use chain rule to compute this one, with the outer function being $\sqrt(u)$ and ithe inner function being $x+3$. We can compute each of these derivatives using the power rule. We obtain that<\span>
 
-\begin{align}
-f(x)&=\sqrt{(x+3)}\\
-f'(x)&=\frac{1}{2\sqrt{(x+3)}}
-\end{align}
+<span style="color:blue">
+$$
+f'(x)=\frac{1}{2\sqrt{(x+3)}}
+$$
+</span>
 
     
 b) $h(a)=\frac{\exp^{-a}}{a^2-5}$
     
-\textcolor{blue}{First we would use Quotient rule then to solve for the individual derivatives, exponent with chain rule and then power rule}
+<span style="color:blue">
+First we would use the quotient rule then to solve for the individual derivatives. The individual derivatives will require us to use the chain rule (for the numerator) and the power rule (for the denominator). We obtain that
+</span>
 
-\begin{align}
-h(a)&=\frac{\exp^{-a}}{a^2-5} \\
-h'(a)&=\frac{-(a^2-5)e^{-a}-(2a)e^{-a}}{(a^2-5)^2}
-\end{align}
+<span style="color:blue">
+$$
+h'(a)=\frac{-(a^2-5)e^{-a}-(2a)e^{-a}}{(a^2-5)^2}
+$$
+</span>
 
 c) $g(t)=\left(\frac{5t^3+2}{2(t^2-2)}\right)^6$
     
-\textcolor{blue}{First chain rule, but in the u-substitution we have to use the quotient and power rules}
+<span style="color:blue">
+First chain rule. In the $u$-substitution we have to use the quotient and power rules.
+</span>
 
+<span style="color:blue">
 \begin{align}
 g(t)&=\left(\frac{5t^3+2}{2(t^2-2)}\right)^6 \\
 g(t)&=u(t)^6  &u=\frac{5t^3+2}{2(t^2-2)}\\
-g'(t)&=6(u(t))^5  &\frac{du}{dx}=\frac{2(t^2-2)15t^2-4t(5t^3+2)}{(2(t^2-2))^2} \\
+g'(t)&=6(u(t))^5\times u'(t)  &\frac{du}{dt}=\frac{2(t^2-2)15t^2-4t(5t^3+2)}{(2(t^2-2))^2} \\
 g'(t)&=6(u(t))^5* \frac{2(t^2-2)15t^2-4t(5t^3+2)}{(2(t^2-2))^2} \\
 g'(t)&=6\left(\frac{5t^3+2}{2(t^2-2)}\right)^5\frac{2(t^2-2)15t^2-4t(5t^3+2)}{(2(t^2-2))^2}
 \end{align}
+</span>
     
 2) On the graph, label all regions where the following statements are true:
 
 a) $f'(x)=0$
     
-\textcolor{orange}{At the max and min $x=-2$ and $x=2$}
+<span style="color:blue">
+We have that $'f(x)=0$ at $x=-2$ and $x=2$, these are a minima and maxima respectively.
+</span>
     
 b) $f'(x)>0$
-    
-\textcolor{blue}{$-2<x<0$}
+<span style="color:blue">    
+The function $f(x)$ has a positive derivative whenever it is increasing, this happens over the interval (-2,0). This is indicated as the blue interval on the graph below.
+</span>
     
 c) $f'(x)<0$
 
-\textcolor{red}{$-\infty<x<-2$ and $0<x<\infty$}
+<span style="color:blue">
+The function $f(x)$ has a negative derivative whenever it is decreasing, this happens over the intervals $(-\infty,-2)$ and $(0,\infty)$. This range is indicated by the red intervals on the graph below.
+</span>
     
     
-d) [Bonus] $f''(x)>0$
-    
-\textcolor{purple}{We need to look for inflection points in the graph where it starts accelerating more or less. This occurs at $x=-1$. To the left the graph is speeding up its decrease until it changes directions and then rises quickly so $f''(x)>0$. To the right of $x=-1$, the graph's rise is dampened so $f''(x)<0$.
+d)$f''(x)>0$
 
+<span style="color:blue">    
+The second derivative $f''(x)$ is positive whenever the function is concave up (it has a U shape). The points at which the graph changes concavity are called inflection points. We can estimate the function is concave up whenever $x<-1$.
+</span>
     
-e) [Bonus] $f''(x)<0$
+e) $f''(x)<0$
     
-\textcolor{purple}{See above}
+<span style="color:blue">    
+The second derivative $f''(x)$ is negative whenever the function is concave down (it has an upside-down U shape). The points at which the graph changes concavity are called inflection points. We can estimate the function is concave down whenever $x>-1$.
+</span>
     
 ```{r,fig.cap="The color bars correspond to the verbal statements and their colors in answer key above"}
 x=seq(-3,1,by=.1)
@@ -86,14 +99,11 @@ ggplot()+
   geom_line(aes(x=x,y=y),color="black",size=3)+
   theme_classic()+
   labs(x="",y="")+
-  annotate("segment",x=-3,xend=-2,y=2.4,yend=-1.5,color="red",linewidth=2)+
-  annotate("segment",x=0,xend=2,y=2.6,yend=-1.5,color="red",linewidth=2)+
-  annotate("segment",x=-2,xend=0,y=-1.5,yend=2.6,color="blue",linewidth=2)
-  
-  
+  annotate("segment",x=-3,xend=-2,y=0.1,yend=0.1,color="red",linewidth=2)+
+  annotate("segment",x=0,xend=2,y=0.1,yend=0.1,color="red",linewidth=2)+
+  annotate("segment",x=-2,xend=0,y=0.1,yend=0.1,color="blue",linewidth=2)
 ```
     
-\pagebreak
 
 3)  Find the derivative of these equations
 
@@ -133,7 +143,6 @@ f''(1.27)&>0  &f''(0.39)&<0
 
 \textcolor{blue}{Based on the first and second order conditions, there are two optimas for this function at $x\approx 1.27$ and $x\approx 0.39$. Plugging into the second order conditions we can see that $x\approx 0.39$ is a maximum and $x\approx 1.27$ is a minimum.}
 
-\pagebreak
     
 5) Let's solve the canonical Gordon-Schaefer fisheries production model. This model formed the basis of fisheries management for half a century and is still a widely used model. It starts by defining the change in the abundance or biomass of fish by the logistic growth equation:
 
