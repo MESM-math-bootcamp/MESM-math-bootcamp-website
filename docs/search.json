@@ -294,7 +294,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 16, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 17, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#survey",
@@ -595,7 +595,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#graph-fcn",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Functions on a single variable and a single output can be graphed\n\n\n\n\n\\(\\color{green}{y=sin(3x+2)}\\)\n\n\n\n\\(\\color{red}{y=0.5x^3+x^2-5x}\\)\n\n\n\n\\(\\color{blue}{y=0.85x+0.44}\\)"
+    "text": "Functions on a single variable and a single output can be graphed\n\n\n\n\n\\(\\color{green}{y=sin(3x)+2x}\\)\n\n\n\n\\(\\color{red}{y=0.5x^3+x^2-5x}\\)\n\n\n\n\\(\\color{blue}{y=0.85x+0.44}\\)"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#graph-ingredients",
