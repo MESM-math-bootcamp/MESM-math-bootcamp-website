@@ -21,4 +21,4 @@
 
 ## Problem Set Solution
 
-[Solutions](solutions_problem_set_derivatives.qmd)
+[Solutions](solutions_problem_set_derivative.qmd)

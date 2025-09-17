@@ -294,7 +294,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 11, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Introduction and Warm Up Algebra\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 16, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#survey",
@@ -315,14 +315,14 @@
     "href": "notes/day1_algebra/lecture-algebra.html#about-me",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "About me\n\n\n\nCarmen Galaz García (she/her)\n\nAssistant Teaching Professor @ Bren\n\nBefore this:\n\nData Scienist @ NCEAS\nPh.D. in Mathematics @ UCSB\n\nTeaching:\n\nPython courses for Masters in Environmental Data Science (MEDS)\nMEDS Capstone Projects\nSupporting math and programming initiatives across Bren!\n\nResearch:\n\nNCEAS/TNC collaboration for invasive iceplant mapping analyzing remotely sensed images"
+    "text": "About me\n\n\n\nCarmen Galaz García (she/her)\n\nAssistant Teaching Professor @ Bren\n\nBefore:\n\nData Scienist @ NCEAS\nPh.D. in Mathematics @ UCSB\n\nTeaching & Research\n\nPython courses and Capstone Projects for Masters in Environmental Data Science (MEDS)\nSupporting math and data science across Bren!\nNCEAS/TNC collaboration for invasive iceplant mapping analyzing remotely sensed images"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#exp",
     "href": "notes/day1_algebra/lecture-algebra.html#exp",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Student Expectations\n\nWe expect all team members will:\n\nSupport and encourage their learning buddies and all classmates\nBe open to learning from each other\nBring a collaborative attitude and communicate respectfully\nSee opportunities to share kownledge as a chance to deepend understanding\nComplete all in-class assessments\n\nFeel free to work with anyone on out of class exercises"
+    "text": "Student Expectations\n\nWe expect all team students will:\n\nSupport and encourage all classmates\nBe open to learning from each other\nBring a collaborative attitude and communicate respectfully\nSee opportunities to share kownledge as a chance to deepend understanding\nComplete all in-class assessments\n\n\nLogistics\n\nNo food in BH 1414\nIf you are feeling sick: stay home and take care of yourself! Please mask up if you are not feeling 100%."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#math-envs",
@@ -336,7 +336,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#des",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Describe to your team what is the purpose of environmental science?\n\n\nHow would you go about solving environmental problems?"
+    "text": "Share with the person next to you:\n\nWhat has been your life or professional experience with math? Best friend ever, mortal enemy, or something in between?\n\nHow do you see math being relevant to solving environmental problems?"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#math-lang",
@@ -364,28 +364,21 @@
     "href": "notes/day1_algebra/lecture-algebra.html#alge-rules",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules of Algebra\n\n\nNever change an equation. Instead, we rewrite them into more useful forms\nManipulate BOTH sides of an equation with the SAME PROCEDURE.\n\nAlways add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the qeuation.\n\nOrder of Operations (aka PEDMAS)"
-  },
-  {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#pedmas",
-    "href": "notes/day1_algebra/lecture-algebra.html#pedmas",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "(P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract [PEDMAS]"
+    "text": "Rules of Algebra\n\n\nNever change an equation. Instead, we rewrite them into more useful forms\nManipulate BOTH sides of an equation with the SAME PROCEDURE.\n\n Always add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the equation. \n\nOrder of Operations, a.k.a. PEDMAS: (P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#pedmas-use-1",
     "href": "notes/day1_algebra/lecture-algebra.html#pedmas-use-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "PEDMAS important for what order to manipulate equations\n\n\\[\n4*(y-4)+(x+1)^2=z\n\\]\nIf we are given the values of \\(x=-3\\) and \\(y=2\\), what would be the value of \\(z\\)?\n✏️ Take a minute to solve this individually."
+    "text": "PEDMAS important for what order to manipulate equations\n\n\\[\nz = 4*(y-4)+(x+1)^2\n\\]\nIf we are given the values of \\(x=-3\\) and \\(y=2\\), what would be the value of \\(z\\)?\n✏️ Take a minute to solve this individually."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#pedmas-use-2",
     "href": "notes/day1_algebra/lecture-algebra.html#pedmas-use-2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "PEDMAS important for what order to manipulate equations\n\n\\[\n4*(y-4)+(x+1)^2=z\n\\]\nIf we are given the values of \\(x=-3\\) and \\(y=2\\), what would be the value of \\(z\\)?\n💡 Let’s see a solution!"
+    "text": "PEDMAS important for what order to manipulate equations\n\nIf we are given the values of \\(x=-3\\) and \\(y=2\\), what would be the value of \\(z\\)?\n💡 Let’s see a solution!\n\\[\n\\begin{align}\nz &= 4*(y-4)+(x+1)^2 \\\\\n  &= 4*(2-4)+(-3+1)^2 \\\\\n  &= 4*(-2)+(-2)^2 \\\\\n  &= -8 + 4 \\\\\n  &= -4.\n\\end{align}\n\\]"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#flex-eq-1",
@@ -395,18 +388,11 @@
     "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n\\end{aligned}\n\\]\n✏️ Take a minute to solve this individually."
   },
   {
-    "objectID": "notes/day1_algebra/lecture-algebra.html#flex-eq-2",
-    "href": "notes/day1_algebra/lecture-algebra.html#flex-eq-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n\\end{aligned}\n\\]\n💡 Let’s see a solution!"
-  },
-  {
     "objectID": "notes/day1_algebra/lecture-algebra.html#flex-eq-3",
     "href": "notes/day1_algebra/lecture-algebra.html#flex-eq-3",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Often times we want flexible equations\n\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n80Q&=\\frac{(400-P)\\cancel{80}}{\\cancel{80}}  &\\text{ Multiply both sides by 80} \\\\\n80Q-400&=\\cancel{400}-\\cancel{400} -P &\\text{ Subtract both sides by 400} \\\\\n-1(80Q-400)&=-P(-1) &\\text{Multiply both sides by -1} \\\\\n400-80Q&=P  &\\text{Flip terms for simplicity}\n\\end{aligned}\n\\]"
+    "text": "Often times we want flexible equations\n\n💡 Let’s see a solution!\nPrices are important in economics, but not always available for environmental goods.\n\n\nHow do we get prices if we know quantity?\n\n\\[\n\\require{cancel}\n\\begin{aligned}\nQ&=\\frac{(400-P)}{80} &\\text{Isolate P in terms of Q} \\\\\n80Q&=\\frac{(400-P)\\cancel{80}}{\\cancel{80}}  &\\text{ Multiply both sides by 80} \\\\\n80Q-400&=\\cancel{400}-\\cancel{400} -P &\\text{ Subtract both sides by 400} \\\\\n-1(80Q-400)&=-P(-1) &\\text{Multiply both sides by -1} \\\\\n400-80Q&=P  &\\text{Flip terms for simplicity}\n\\end{aligned}\n\\]"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#practice-alge-1",
@@ -441,7 +427,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#exponents",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Exponents make algebra more interesting!\n\nExample\nThe expression \\(x^3\\) means \\(x\\) multiplied by itself 3 times: \\[x^3=x * x * x\\]\nMore generally, \\[x^n = x \\text{ to the power of } n.\\]\nIntuitively, the exponent \\(n\\) tells us how many times to multiply the basis \\(x\\) by itself:\n\\[x^n = \\underbrace{x * x * ... * x}_{n \\text{ times}}\\]\nBut the exponent can be any (real) number, not only integers!"
+    "text": "Exponents make algebra more interesting!\n\nExample\nThe expression \\(x^3\\) means \\(x\\) multiplied by itself 3 times: \\[x^3=x * x * x\\]\n\nMore generally, \\[x^n = x \\text{ to the power of } n.\\]\n\n\nIntuitively, the exponent \\(n\\) tells us how many times to multiply the basis \\(x\\) by itself:\n\\[x^n = \\underbrace{x * x * ... * x}_{n \\text{ times}}\\]\nBut the exponent can be any (real) number, not only integers!"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-applications-1",
@@ -451,25 +437,46 @@
     "text": "What are exponents good for?\n\n\n\nThey can describe really big numbers\n\n\nDiameter of the Milky Way = 1,000,000,000,000,000,000,000 meters = \\[10^{21} \\text{ m}\\]\n\nAnd also really small numbers\n\nDiameter of a human red blood cell = 0.0000000001 meters = \\[10^{-10} \\text{ m}\\]\n\nThis way, we can use exponents to describe exponential growth and decay. Many environmental variables behave in this way."
   },
   {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-rules-blank-1",
+    "href": "notes/day1_algebra/lecture-algebra.html#exponents-rules-blank-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules and properties of exponents (1)\n\n\nProduct rule:\n\n\n\nQuotient rule:\n\n\n\nAny non-negative \\(x\\) to the power of 0 equals 1:\n\n\n\nNegative exponent means divide:\n\n\n\nFractional exponent means take the \\(n\\)-th root:"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-rules-blank-2",
+    "href": "notes/day1_algebra/lecture-algebra.html#exponents-rules-blank-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules and properties of exponents (2)\n\n\nPower of a power means multiply the exponents:\n\n\n\nExponents get distributed over products:\n\n\n\nAnd exponents get distributed over divisions:\n\n\n\nIf \\(a\\) is the \\(n\\)-th root of \\(x\\), then \\(a\\) to the \\(n\\) equals \\(x\\):"
+  },
+  {
     "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-rules-1",
     "href": "notes/day1_algebra/lecture-algebra.html#exponents-rules-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules and properties of exponents (1)\n\n\nProduct rule:\n\n\\[x^a * x^b = x^{a+b}\\]\n\nQuotient rule:\n\n\\[ \\frac{x^a}{x^b} = x^{a-b}, \\ \\ \\text{for } x \\neq 0 \\]\n\nAny non-negative \\(x\\) to the power of 0 equals 1:\n\n\\[x^0 = 1, \\ \\ \\text{for } x \\neq 0\\]\n\nNegative exponent means divide:\n\n\\[ x^{-a} = \\frac{1}{x^a}, \\ \\ \\text{for } x \\neq 0\\]\n\nFractional exponent means take the \\(n\\)-th root: \\(\\ \\ \\ \\ \\ x^{\\frac{1}{n}} = \\sqrt[n]{x}\\)\n\n:::"
+    "text": "Rules and properties of exponents (1)\n\n\nProduct rule: \\(x^a * x^b = x^{a+b}\\)\n\n\n\nQuotient rule: \\(\\frac{x^a}{x^b} = x^{a-b}, \\ \\ \\text{for } x \\neq 0\\)\n\n\n\nAny non-negative \\(x\\) to the power of 0 equals 1: \\(x^0 = 1, \\ \\ \\text{for } x \\neq 0\\)\n\n\n\nNegative exponent means divide: \\(x^{-a} = \\frac{1}{x^a}, \\ \\ \\text{for } x \\neq 0\\)\n\n\n\nFractional exponent means take the \\(n\\)-th root: \\(x^{\\frac{1}{n}} = \\sqrt[n]{x}\\)"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-rules-2",
     "href": "notes/day1_algebra/lecture-algebra.html#exponents-rules-2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules and properties of exponents (2)\n\n\nPower of a power means multiply the exponents:\n\n\\[(x^a)^b = x^{ab}\\]\n\nExponents get distributed over products:\n\n\\[ (xy)^a = x^a y^a\\]\n\nAnd exponents get distributed over divisions:\n\n\\[ \\left( \\frac{x}{y} \\right)^a = \\frac{x^a}{y^a} \\]\n\nIf \\(a\\) is the \\(n\\)-th root of \\(x\\), then \\(a\\) to the \\(n\\) equals x\n\n\\[\na = \\sqrt[n]{x} \\Rightarrow a^n = x\n\\]"
+    "text": "Rules and properties of exponents (2)\n\n\nPower of a power means multiply the exponents: \\((x^a)^b = x^{ab}\\)\n\n\n\nExponents get distributed over products: \\((xy)^a = x^a y^a\\)\n\n\n\nAnd exponents get distributed over divisions: \\(\\left( \\frac{x}{y} \\right)^a = \\frac{x^a}{y^a}\\)\n\n\n\nIf \\(a\\) is the \\(n\\)-th root of \\(x\\), then \\(a\\) to the \\(n\\) equals \\(x\\):\n\n\\[\na = \\sqrt[n]{x} \\Rightarrow a^n = x\n\\]"
+  },
+  {
+    "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-table",
+    "href": "notes/day1_algebra/lecture-algebra.html#exponents-table",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules and properties of exponents\n\n\\[\n\\begin{array}{|l|l|}\n\\hline\n\\textbf{Rule} & \\textbf{Expression} \\\\\n\\hline\n\\text{Product Rule} & x^{a} \\cdot x^{b} = x^{a+b} \\\\\n\\hline\n\\text{Quotient Rule} & \\frac{x^{a}}{x^{b}} = x^{a-b}, \\quad x \\neq 0 \\\\\n\\hline\n\\text{Zero Exponent} & x^{0} = 1, \\quad x \\neq 0 \\\\\n\\hline\n\\text{Negative Exponent} & x^{-a} = \\frac{1}{x^{a}}, \\quad x \\neq 0 \\\\\n\\hline\n\\text{Fractional Exponent} & x^{\\frac{1}{n}} = \\sqrt[n]{x} \\\\\n\\hline\n\\text{Power of a Power} & (x^{a})^{b} = x^{ab} \\\\\n\\hline\n\\text{Power of a Product} & (xy)^{a} = x^{a}y^{a} \\\\\n\\hline\n\\text{Power of a Quotient} & \\left(\\frac{x}{y}\\right)^{a} = \\frac{x^{a}}{y^{a}} \\\\\n\\hline\n\\text{$n$-th Root Definition} & a = \\sqrt[n]{x} \\quad \\Rightarrow \\quad a^{n} = x \\\\\n\\hline\n\\end{array}\n\\]"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-practice",
     "href": "notes/day1_algebra/lecture-algebra.html#exponents-practice",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Exponents practice\n\nSimplify the following. ✏️ Take three minutes to solve these individually.\n\n\\(\\frac{6^5}{6^3}\\)\n\n\n\n\\((x^2y)^4\\)\n\n \n\n\\(\\frac{x^5y^6}{xy^2}\\)\n\n \n\n\\(\\frac{24x^6}{12x^{-8}}\\)\n\n\n\n\\(5x^2y(2x^4y^{-3})\\)"
+    "text": "Exponents practice\n\n✏️ Let’s see a solution.\n\n\\(\\frac{6^5}{6^3} = 6^{5-3} = 6^2\\)\n\n\n\n\\((x^2y)^4 = (x^2)^4*y^2 = x^8y^2\\)\n\n \n\n\\(\\frac{x^5y^6}{xy^2} = \\frac{x^5}{x}*\\frac{y^6}{y^2} = x^{5-1}*y^{6-2} = x^4y^4 = (xy)^4\\)\n\n \n\n\\(\\frac{24x^6}{12x^{-8}} = 2x^6x^{(-(-8))}=2x^6x^8 = 2x^{6+8} = 2x^{14}\\)"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#polynomials",
@@ -497,7 +504,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#example-second-degree",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12\\)=0 is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
+    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12=0\\) is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#quad",
@@ -567,7 +574,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#xy-coordinates",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
+    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\n\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#graph-series",
@@ -743,7 +750,7 @@
     "href": "index.html",
     "title": "Welcome!",
     "section": "",
-    "text": "Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the UCSB Master of Environmental Science and Management at the Bren School of Environmnetal Science and Management.\n\n\nThis 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment\n\n\n\n\nCarmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424\n\n\n\n\nClick here to see the syllabus.",
+    "text": "Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the UCSB Master of Environmental Science and Management at the Bren School of Environmnetal Science and Management.\n\n\nThis 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment\n\n\n\n\nCarmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
     "crumbs": [
       "Welcome!"
     ]
@@ -764,16 +771,6 @@
     "title": "Welcome!",
     "section": "",
     "text": "Carmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
-    "crumbs": [
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "index.html#syllabus",
-    "href": "index.html#syllabus",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Click here to see the syllabus.",
     "crumbs": [
       "Welcome!"
     ]

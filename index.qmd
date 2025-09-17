@@ -20,6 +20,6 @@ The primary workshop objectives are as follows:
 - E-mail: c_galazgarcia@ucsb.edu
 - Student hours: Thursday 2 pm -3 pm @ Bren Hall 4424
 
-## Syllabus
+<!-- ## Syllabus
 
-[Click here to see the syllabus.](https://docs.google.com/document/d/14dcg7u3n1rEz-fReZcO8Gnddk3hEGi8u4DKTroWdonU/edit?usp=share_link){target="_blank"}  
+[Click here to see the syllabus.](https://docs.google.com/document/d/14dcg7u3n1rEz-fReZcO8Gnddk3hEGi8u4DKTroWdonU/edit?usp=share_link){target="_blank"}   -->
