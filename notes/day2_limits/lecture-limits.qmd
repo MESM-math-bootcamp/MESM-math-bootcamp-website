@@ -44,7 +44,7 @@ embed-resources: true
 
 - Discuss with study partner
 
-## {#fun-bake data-menu-title="Functions are like baking recipes"}
+## {#fun-bake data-menu-title="Functions are like baking recipes" .smaller}
 
 [Functions are like baking recipes]{.slide-title}
 
@@ -939,6 +939,25 @@ knitr::include_graphics("images/energy.png")
 knitr::include_graphics("images/bait.jpeg")
 ```
 
+## {#diff-rules-1-blank data-menu-title="Rules for Differentiation (1)"}
+
+[Rules for differentiation (1)]{.slide-title}
+
+<hr>
+
+**Constant Rule**
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+**Power Rule**
 
 
 ## {#diff-rules-1 data-menu-title="Rules for Differentiation (1)"}
@@ -953,7 +972,6 @@ Let $c$ be a constant (so, a number). If $f(x) = c$, then $f'(x)=0$. Equivalentl
 
 $$\frac{d}{dx}c = 0$$
 
-. . .
 
 
 **Power Rule**
@@ -973,6 +991,16 @@ $$
 &y=100 & &f(x)=x^5 & &f(x)=\frac{1}{x^2}
 \end{align}
 $$
+
+## {#diff-rules-2-blank data-menu-title="Rules for Differentiation (2)"}
+
+[Rules for differentiation (2)]{.slide-title}
+
+<hr>
+
+**Sum and Difference Rules**
+
+
 
 ## {#diff-rules-2 data-menu-title="Rules for Differentiation (2)"}
 
@@ -999,6 +1027,14 @@ $$
 $$
 f(x)=x^3-x^2-15
 $$
+
+## {#diff-rules-3-blank data-menu-title="Rules for Differentiation (3)"}
+
+[Rules for differentiation (3)]{.slide-title}
+
+<hr>
+
+**Constant Multiplier Rule**
 
 
 ## {#diff-rules-3 data-menu-title="Rules for Differentiation (3)"}

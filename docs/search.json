@@ -1000,11 +1000,25 @@
     "text": "Environmental Science studies change"
   },
   {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1-blank",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-1-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (1)\n\nConstant Rule\n     \nPower Rule"
+  },
+  {
     "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1",
     "href": "notes/day2_limits/lecture-limits.html#diff-rules-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (1)\n\nConstant Rule\nLet \\(c\\) be a constant (so, a number). If \\(f(x) = c\\), then \\(f'(x)=0\\). Equivalently\n\\[\\frac{d}{dx}c = 0\\]\n\nPower Rule\nLet \\(n\\) be a (real) number, if \\(f(x)= x^n\\), then \\(f'(x) = nx^{n-1}\\). Equivalently \\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}.\n\\]\n\n\nExamples\n\\[\n\\begin{align}\n&y=100 & &f(x)=x^5 & &f(x)=\\frac{1}{x^2}\n\\end{align}\n\\]"
+    "text": "Rules for differentiation (1)\n\nConstant Rule\nLet \\(c\\) be a constant (so, a number). If \\(f(x) = c\\), then \\(f'(x)=0\\). Equivalently\n\\[\\frac{d}{dx}c = 0\\]\nPower Rule\nLet \\(n\\) be a (real) number, if \\(f(x)= x^n\\), then \\(f'(x) = nx^{n-1}\\). Equivalently \\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}.\n\\]\n\nExamples\n\\[\n\\begin{align}\n&y=100 & &f(x)=x^5 & &f(x)=\\frac{1}{x^2}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2-blank",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-2-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (2)\n\nSum and Difference Rules"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2",
@@ -1012,6 +1026,13 @@
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Rules for differentiation (2)\n\nSum and Difference Rules\nLet \\(f(x)\\) and \\(g(x)\\) be differentiable functions. Then \\[\n\\begin{align}\n\\frac{d}{dx}[f(x)+g(x)]=\\frac{d}{dx}f(x)+\\frac{d}{dx}g(x) \\\\\n\\frac{d}{dx}[f(x)-g(x)]=\\frac{d}{dx}f(x)-\\frac{d}{dx}g(x)\n\\end{align}\n\\]\n😵All this says is: if the function has pieces that are added or subtracted you can take the derivative of each individual piece and add those derivatives.\n\nExample\n\\[\nf(x)=x^3-x^2-15\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3-blank",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-3-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3",
