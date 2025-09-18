@@ -88,19 +88,9 @@ knitr::include_graphics("images/cake.png")
 
 **For each combination of independent variables, there is exactly one (and only one) value of the dependent variable.**
 
-<br>
-
-**Example**
-
-A function $f(x)$ cannot return two values for $x=1$. We cannot have $f(1)\ne\{2,3\}$.
-
-<br>
-
 **Vertical line test**
 
 If you run a vertical line perpendicular to the $x$-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of $x$. 
-
-<br>
 
 . . .
 
@@ -143,20 +133,20 @@ A function is **discontinuous** if it's not continuous! So there are 'breaks' or
 <br>
 
 ::::{.columns}
-:::{.column width="50%"}
-:::{.center-text .body-text-xl .blue-text}
+:::{.column width="30%"}
+:::{.center-text .blue-text}
 **Continuous**
 :::
-```{r,fig.align='center',out.width="100%"}
 
-knitr::include_graphics("images/cont.png")
-```
+![](images/cont.png){fig-align="center" width="50%"}
 :::
-:::{.column width="50%"}
+:::{.column width="70%"}
 
-:::{.center-text .body-text-xl .blue-text}
+:::{.center-text.blue-text}
 **Discontinuous**
 :::
+
+::: {layout-ncol=2}
 ```{r fig.align='center',out.width="60%"}
 knitr::include_graphics("images/discont.png")
 ```
@@ -164,6 +154,7 @@ knitr::include_graphics("images/discont.png")
 ```{r fig.align='center',out.width="50%"}
 knitr::include_graphics("images/tan.png")
 ```
+:::
 :::
 ::::
 
@@ -208,9 +199,11 @@ We need to examine the values of $f(x)$ as $x$ gets closer to 2 from both sides.
 
 . . . 
 
-```{r fig.align='center',out.width="90%"}
+![](images/lim4.PNG){fig-align="center" width="70%"}
+
+<!-- ```{r fig.align='center',out.width="90%"}
 knitr::include_graphics("images/lim4.PNG")
-```
+``` -->
 
 . . .
 
@@ -263,9 +256,6 @@ $$
 
 So, if a function is continuous, we just need to evaluate the function to obtain the limit.
 
-
-<br>
-
 **Example**
 
 $f(x) = 2x^2-4$ is a continuous function. So we can obtain the limit as $x\to 2$ by evaluating the function 
@@ -300,24 +290,17 @@ $$
 f(x) = x+1 , \text{ if x $\neq$ 2}
 $$
 
-✏️ [Draw a graph of $f(x)$.]{style="color:green;"}
-
-✏️ [Try calculating $\lim_{x\to 2} f(x)$.]{style="color:green;"}
+✏️ [Draw a graph of $f(x)$. Then try calculating $\lim_{x\to 2} f(x)$.]{style="color:green;"}
 
 :::{.fragment .fade-in}
 
 ::::{.columns}
 :::{.column width="50%"}
 
-```{r fig.align='center',out.width="70%"}
-knitr::include_graphics("images/lim_graph_3.png")
-```
-
+![](images/lim_graph_3.png){fig-align="center" width="65%"}
 :::
 
 :::{.column width="50%'}
-
-
 The value $f(2)$ may not exist, but we can still find a limit because $f(x)$ consistently approaches 3 from both directions as $x\to 2$.
 :::
 ::::
@@ -394,12 +377,6 @@ Let's investigate:
 knitr::include_graphics("images/limx2.PNG")
 ```
 
-. . .
-
-```{r fig.align='center',out.width="35%"}
-knitr::include_graphics("images/lim_graph_2.PNG")
-```
-
 
 ## {#graph data-menu-title="Clearer on the graph"}
 
@@ -413,18 +390,11 @@ The function $\frac{|x-2|}{x-2}$ approaches different values from either side at
   <img src="images/lim_graph_2.PNG" style="width:80%;">
 </div>
 
-Therefore...
-
-. . .
-
-<div style="display:flex; justify-content:center;">
-  <img src="images/limit.gif" style="width:100%;">
-</div>
-
+Therefore... the limit does not exist!
 
 
 <!----------------------------------------------------------------------->
-## {#side-limits data-menu-title="Side limits"}
+## {#side-limits data-menu-title="Side limits" .smaller}
 
 [Side limits]{.slide-title}
 
@@ -436,13 +406,13 @@ Though the function $f(x) = \frac{|x-2|}{x-2}$ had no limit at $x=2$, it clearly
 
 ::: {.column width="65%"}
 <div style="display:flex; justify-content:center;">
-  <img src="images/side_limits_table.PNG" style="width:80%;">
+  <img src="images/side_limits_table.PNG" style="width:70%;">
 </div>
 :::
 
 ::: {.column width="35%"}
 <div style="display:flex; justify-content:center;">
-  <img src="images/lim_graph_2.PNG" style="width:90%;">
+  <img src="images/lim_graph_2.PNG" style="width:80%;">
 </div>
 :::
 
@@ -631,8 +601,6 @@ Start with:
 <br>
 
 Nearby point:
-
-<br>
 
 <br>
 
@@ -874,10 +842,7 @@ $$
 </span>
 
 <span style="color:red">**This is the derivative of $f$ at $x$.**</span>
-
-. . .
-
-For a function $f(x)$ we can denote it's derivative as $f'(x)$ or also $\frac{df}{dx}$. 
+Also denoted $\frac{df}{dx}$. 
 
 <!--
 <br>
@@ -903,15 +868,18 @@ $$
 
 - All differentiable functions are continuous, but not all continuous functions are differentiable.
 
+. . .
+
 - The absolute value function $|x|$ is one example, this is defined by 
-$$|x| = \cases{
-  x&,  x \geq 0\\
-  -x&, x<0
-}.$$
+$$|x| = 
+\begin{cases}
+  x  &, x \geq 0\\
+  -x &, x<0
+\end{cases}.$$
 
 It's graph is:
 
-```{r, fig.align='center',out.width="90%"}
+```{r, fig.align='center',out.width="40%"}
 x=seq(-5,5)
 y=abs(x)
 
@@ -932,12 +900,12 @@ df %>%
 
 ## {#calc data-menu-title="Calculus and Derivatives are the study of change"}
 
-[Calculus and Derivatives are used to study change]{.slide-title}
+[Calculus and derivatives are used to study change]{.slide-title}
 
 <hr>
 
 ```{r, fig.align='center',out.width="75%"}
-knitr::include_graphics("images/loa.PNG")
+knitr::include_graphics("images/trex-no-labels.PNG")
 ```
 
 ## {#envs-change data-menu-title="Enviromental Science is the Study of Change"}
@@ -984,6 +952,8 @@ knitr::include_graphics("images/bait.jpeg")
 Let $c$ be a constant (so, a number). If $f(x) = c$, then $f'(x)=0$. Equivalently
 
 $$\frac{d}{dx}c = 0$$
+
+. . .
 
 
 **Power Rule**
@@ -1043,6 +1013,7 @@ The derivative of a constant $c$ multiplied by a function $f(x)$ is the same as 
 
 $$\frac{d}{dx}[kf(x)] = k\frac{d}{dx}f(x)$$
 
+. . . 
 
 **Example**
 

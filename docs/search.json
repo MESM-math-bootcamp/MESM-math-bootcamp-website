@@ -504,7 +504,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#example-second-degree",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12=0\\) is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
+    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12=0\\) is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#quad",
@@ -574,7 +574,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#xy-coordinates",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\n\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
+    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#graph-series",
@@ -780,7 +780,7 @@
     "href": "notes/day2_limits/lecture-limits.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Limits and Intro to Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 14, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Limits and Intro to Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 18, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#tr",
@@ -801,14 +801,14 @@
     "href": "notes/day2_limits/lecture-limits.html#function-definition",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "What is a function?\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\n\nExample\nA function \\(f(x)\\) cannot return two values for \\(x=1\\). We cannot have \\(f(1)\\ne\\{2,3\\}\\).\n\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\n\n🤔 Are these functions?"
+    "text": "What is a function?\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\n🤔 Are these functions?"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#continuity",
     "href": "notes/day2_limits/lecture-limits.html#continuity",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Continuity\n\nIntuitively, a function is continuous if there are no ‘breaks’ in the graph of the function. This means you are able to draw the whole graph without lifting your pencil.\nTo define it formally we need to understand limits.\n\nA function is discontinuous if it’s not continuous! So there are ‘breaks’ or ‘gaps’ in its graph.\n\n\n\n\nContinuous\n\n\n\n\n\n\n\n\n\n\n\n\nDiscontinuous"
+    "text": "Continuity\n\nIntuitively, a function is continuous if there are no ‘breaks’ in the graph of the function. This means you are able to draw the whole graph without lifting your pencil.\nTo define it formally we need to understand limits.\n\nA function is discontinuous if it’s not continuous! So there are ‘breaks’ or ‘gaps’ in its graph.\n\n\n\n\nContinuous\n\n\n\n\n\n\n\n\nDiscontinuous"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#limits",
@@ -822,7 +822,7 @@
     "href": "notes/day2_limits/lecture-limits.html#lim-ex",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example: numerical\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\nWe need to examine the values of \\(f(x)\\) as \\(x\\) gets closer to 2 from both sides.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, we say that “The limit of \\(2x^2-4\\) as \\(x\\) approaches 2 is 4” and we can write it like this:\n\\[\n\\lim_{x\\to 2}(2x^2-4)=4\n\\]"
+    "text": "Example: numerical\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\nWe need to examine the values of \\(f(x)\\) as \\(x\\) gets closer to 2 from both sides.\n\n\n\n\n\n\n\n\n\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, we say that “The limit of \\(2x^2-4\\) as \\(x\\) approaches 2 is 4” and we can write it like this:\n\\[\n\\lim_{x\\to 2}(2x^2-4)=4\n\\]"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
@@ -836,14 +836,14 @@
     "href": "notes/day2_limits/lecture-limits.html#continuity-revisited",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Continuity revisited\n\n\n\nA function \\(f(x)\\) is continuous at \\(x=c\\) if\n\\[\n\\lim_{x\\to c}f(x)=f(c).\n\\]\nSo, if a function is continuous, we just need to evaluate the function to obtain the limit.\n\nExample\n\\(f(x) = 2x^2-4\\) is a continuous function. So we can obtain the limit as \\(x\\to 2\\) by evaluating the function\n\\[\\lim_{x\\to 2}(2x^2-4)= f(2) = 4.\\]"
+    "text": "Continuity revisited\n\n\n\nA function \\(f(x)\\) is continuous at \\(x=c\\) if\n\\[\n\\lim_{x\\to c}f(x)=f(c).\n\\]\nSo, if a function is continuous, we just need to evaluate the function to obtain the limit.\nExample\n\\(f(x) = 2x^2-4\\) is a continuous function. So we can obtain the limit as \\(x\\to 2\\) by evaluating the function\n\\[\\lim_{x\\to 2}(2x^2-4)= f(2) = 4.\\]"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#lim-defined",
     "href": "notes/day2_limits/lecture-limits.html#lim-defined",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Limit at a discontinuity\n\n\nDiscontinuous functions can still have limits at a discontinuity.\n\nExample\nLet \\[\nf(x) = x+1 , \\text{ if x $\\neq$ 2}\n\\]\n✏️ Draw a graph of \\(f(x)\\).\n✏️ Try calculating \\(\\lim_{x\\to 2} f(x)\\).\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe value \\(f(2)\\) may not exist, but we can still find a limit because \\(f(x)\\) consistently approaches 3 from both directions as \\(x\\to 2\\)."
+    "text": "Limit at a discontinuity\n\n\nDiscontinuous functions can still have limits at a discontinuity.\n\nExample\nLet \\[\nf(x) = x+1 , \\text{ if x $\\neq$ 2}\n\\]\n✏️ Draw a graph of \\(f(x)\\). Then try calculating \\(\\lim_{x\\to 2} f(x)\\).\n\n\n\n\n\n\n\n\n\nThe value \\(f(2)\\) may not exist, but we can still find a limit because \\(f(x)\\) consistently approaches 3 from both directions as \\(x\\to 2\\)."
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#lim-discon",
@@ -864,7 +864,7 @@
     "href": "notes/day2_limits/lecture-limits.html#graph",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "No limit at a discontinuity\n\nThe function \\(\\frac{|x-2|}{x-2}\\) approaches different values from either side at \\(x=2\\).\n\n\n\nTherefore…"
+    "text": "No limit at a discontinuity\n\nThe function \\(\\frac{|x-2|}{x-2}\\) approaches different values from either side at \\(x=2\\).\n\n\n\nTherefore… the limit does not exist!"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#side-limits",
@@ -913,7 +913,7 @@
     "href": "notes/day2_limits/lecture-limits.html#average-slope",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Average slope\n\n\nStart with:\n\nNearby point:\n\n\nAverage slope:"
+    "text": "Average slope\n\n\nStart with:\n\nNearby point:\n\nAverage slope:"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#average-slope-filled",
@@ -962,21 +962,21 @@
     "href": "notes/day2_limits/lecture-limits.html#recap",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Derivative definition\n\nRemember the slope of the line that passes between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) is:\n\\[\\text{slope}=\\frac{y_2-y_1}{x_2-x_1}.\\]\n\nIf we have a function \\(f(x)\\), then \\((x,f(x))\\) represents a point on its graph.\n\n\nChoose a different point on the graph that is \\(\\Delta x\\) away: \\((x+\\Delta x,f(x+\\Delta x))\\).\n\n\nPlug these pointson the graph of \\(f(x)\\) into the slope equation:\n\\[\n\\text{slope}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}.\n\\]\n\n\nWhen we let \\(\\Delta x \\to 0\\) we get the slope of the tangent line at \\(x\\)\n \\[\n\\large\nf'(x)=\\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\] \nThis is the derivative of \\(f\\) at \\(x\\).\n\n\nFor a function \\(f(x)\\) we can denote it’s derivative as \\(f'(x)\\) or also \\(\\frac{df}{dx}\\)."
+    "text": "Derivative definition\n\nRemember the slope of the line that passes between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) is:\n\\[\\text{slope}=\\frac{y_2-y_1}{x_2-x_1}.\\]\n\nIf we have a function \\(f(x)\\), then \\((x,f(x))\\) represents a point on its graph.\n\n\nChoose a different point on the graph that is \\(\\Delta x\\) away: \\((x+\\Delta x,f(x+\\Delta x))\\).\n\n\nPlug these pointson the graph of \\(f(x)\\) into the slope equation:\n\\[\n\\text{slope}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}.\n\\]\n\n\nWhen we let \\(\\Delta x \\to 0\\) we get the slope of the tangent line at \\(x\\)\n \\[\n\\large\nf'(x)=\\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\] \nThis is the derivative of \\(f\\) at \\(x\\). Also denoted \\(\\frac{df}{dx}\\)."
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#diff-func",
     "href": "notes/day2_limits/lecture-limits.html#diff-func",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Not all functions are differentiable\n\n\nAll differentiable functions are continuous, but not all continuous functions are differentiable.\nThe absolute value function \\(|x|\\) is one example, this is defined by \\[|x| = \\cases{\nx&,  x \\geq 0\\\\\n-x&, x&lt;0\n}.\\]\n\nIt’s graph is:"
+    "text": "Not all functions are differentiable\n\n\nAll differentiable functions are continuous, but not all continuous functions are differentiable.\n\n\n\nThe absolute value function \\(|x|\\) is one example, this is defined by \\[|x| =\n\\begin{cases}\nx  &, x \\geq 0\\\\\n-x &, x&lt;0\n\\end{cases}.\\]\n\nIt’s graph is:"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#calc",
     "href": "notes/day2_limits/lecture-limits.html#calc",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Calculus and Derivatives are used to study change"
+    "text": "Calculus and derivatives are used to study change"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#envs-change",
@@ -1004,7 +1004,7 @@
     "href": "notes/day2_limits/lecture-limits.html#diff-rules-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (1)\n\nConstant Rule\nLet \\(c\\) be a constant (so, a number). If \\(f(x) = c\\), then \\(f'(x)=0\\). Equivalently\n\\[\\frac{d}{dx}c = 0\\]\nPower Rule\nLet \\(n\\) be a (real) number, if \\(f(x)= x^n\\), then \\(f'(x) = nx^{n-1}\\). Equivalently \\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}.\n\\]\n\nExamples\n\\[\n\\begin{align}\n&y=100 & &f(x)=x^5 & &f(x)=\\frac{1}{x^2}\n\\end{align}\n\\]"
+    "text": "Rules for differentiation (1)\n\nConstant Rule\nLet \\(c\\) be a constant (so, a number). If \\(f(x) = c\\), then \\(f'(x)=0\\). Equivalently\n\\[\\frac{d}{dx}c = 0\\]\n\nPower Rule\nLet \\(n\\) be a (real) number, if \\(f(x)= x^n\\), then \\(f'(x) = nx^{n-1}\\). Equivalently \\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}.\n\\]\n\n\nExamples\n\\[\n\\begin{align}\n&y=100 & &f(x)=x^5 & &f(x)=\\frac{1}{x^2}\n\\end{align}\n\\]"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2",
@@ -1018,7 +1018,7 @@
     "href": "notes/day2_limits/lecture-limits.html#diff-rules-3",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule\nThe derivative of a constant \\(c\\) multiplied by a function \\(f(x)\\) is the same as the constant multiplied by the derivative:\n\\[\\frac{d}{dx}[kf(x)] = k\\frac{d}{dx}f(x)\\]\nExample\n\\[\ny=x^2+\\sqrt{2}x-\\frac{8}{x}+4\n\\]"
+    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule\nThe derivative of a constant \\(c\\) multiplied by a function \\(f(x)\\) is the same as the constant multiplied by the derivative:\n\\[\\frac{d}{dx}[kf(x)] = k\\frac{d}{dx}f(x)\\]\n\nExample\n\\[\ny=x^2+\\sqrt{2}x-\\frac{8}{x}+4\n\\]"
   },
   {
     "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
