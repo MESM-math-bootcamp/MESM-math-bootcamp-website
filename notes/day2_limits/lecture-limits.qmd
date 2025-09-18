@@ -1,12 +1,12 @@
 ---
 format: 
   revealjs:
-    chalkboard: false
+    chalkboard: true
     slide-number: true
     show-slide-number: print
     theme:
      - ../../ucsb-media.scss    
-embed-resources: true
+#embed-resources: true
 ---
 
 ## {#title-slide data-menu-title="Title Slide" background=.white}

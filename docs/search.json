@@ -504,7 +504,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#example-second-degree",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12=0\\) is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
+    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12=0\\) is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#quad",
@@ -574,7 +574,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#xy-coordinates",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
+    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\n\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#graph-series",
