@@ -359,7 +359,7 @@ A very nice slide deck Carmen made to explain what e is to my 34A summer 2020 st
 https://docs.google.com/presentation/d/1uztsfd9fwG49lxsDgxhyQZVsbFQDkmszsSkQdDivz2Q/edit?usp=sharing
 -->
 
-[The number $e$ and exponential funcitons]{.slide-title}
+[The number $e$]{.slide-title}
 
 <hr>
 
@@ -388,7 +388,7 @@ $$
 
 ## {#exponential-function data-menu-title="The exponential function $e^x$"}
 
-[The number $e$ and exponential funcitons]{.slide-title}
+[The exponential funciton]{.slide-title}
 
 <hr>
 
@@ -441,6 +441,7 @@ ggplot()+
 ```
 
 
+<!--
 ## {#er-exp-con data-menu-title="Derivatives of the exponential function"}
 
 [Derivative of the exponential function]{.slide-title}
@@ -450,6 +451,7 @@ ggplot()+
 ```{r,fig.align='center',out.width="25%"}
 knitr::include_graphics("images/exp_comic.png")
 ```
+-->
 
 
 ## {#higher-order-der data-menu-title="Higher Order Derivatives"}
@@ -656,7 +658,7 @@ Derivatives allow us to:
 
 <hr>
 
-Dochy et al. (1995) used the following function to describe the increase in human population over time:
+Von Foersters et al. (1960) used the following function to describe the increase in human population over time:
 
 $$
 x(t)=\frac{1}{c-\beta t}
@@ -720,6 +722,12 @@ $$x'(2024) = \beta(c-\beta 2024)^{-2} = 13,980.$$
  
 So, *human population in 2024 will be increasing at a rate of 13,980 million per year according to this model*.
 
+. . .
+
+After some investigation, human population is estimated to be growing at about 0.85% per year, which is around 70 million more people every year. 
+
+![](images/doomsday.png)
+
 
 ## {#pop-ex-3 data-menu-title="Human Population Example"}
 
@@ -729,9 +737,10 @@ So, *human population in 2024 will be increasing at a rate of 13,980 million per
 
 ::::{.columns}
 :::{.column width="50%"}
-```{r,fig.align='center',fig.cap="Figure 2 from Dochy 2015",out.width="85%"}
+```{r,fig.align='center',out.width="85%"}
 knitr::include_graphics("images/dochy.PNG")
 ```
+<!--fig.cap="Figure 2 from Dochy 2015",-->
 :::
 :::{.column width="50%"}
 
@@ -842,7 +851,7 @@ Let $f(x)$ be a function that is differentiable on the interval $(a,b)$, then:
 ![](images/increase.PNG){fig-align="center" width="60%"}
 </div>
 
-<!---------------------------------------------------------------------->
+<!-------------------------------------------------------
 
 ## {#concavity data-menu-title="Finding maxima/minima"}
 
@@ -851,7 +860,7 @@ Let $f(x)$ be a function that is differentiable on the interval $(a,b)$, then:
 <hr>
 
 TODO write this convexity slide
-
+--------------->
 
 
 <!---------------------------------------------------------------------->
@@ -1019,6 +1028,15 @@ ggplot()+
 ```
 
 
+## {#gta2-2-blank data-menu-title="Team Assessment 2 Questions"}
+
+✏️ [2. Find all the critical points of this function. Identify which are minima and which are maxima.]{style="color:green;"}
+[
+$$
+f(x)=2x^3-6x^2+3x+15
+$$]{style="color:green;"}
+
+
 ## {#gta2-2 data-menu-title="Team Assessment 2 Questions"}
 
 ✏️ [2. Find all the critical points of this function. Identify which are minima and which are maxima.]{style="color:green;"}
@@ -1027,6 +1045,7 @@ ggplot()+
 $$
 f(x)=2x^3-6x^2+3x+15
 $$]{style="color:green;"}
+
 
 ## {#gta2-3 data-menu-title="Team Assessment 2 Questions"}
 

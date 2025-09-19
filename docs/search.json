@@ -140,14 +140,14 @@
     "href": "notes/day3_derivatives/lecture-derivative.html#number-e",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "The number \\(e\\) and exponential funcitons\n\nThe number \\(e\\) is a constant in mathematics, it is approximately \\(e\\approx 2.72\\), but really its decimals continue infinitely without any pattern.\n\nIt’s exact value can be described as \\[\ne = \\lim_{n\\to \\infty}\\left(1+\\frac{1}{n}\\right)^n.\n\\]\nLike any other number, \\(e\\) follows normal power properties\n\\[\n\\begin{align}\ne^{x+y}&=&e^x\\cdot e^y \\\\\ne^{-x}&=&\\frac{1}{e^x}\\\\\ne^{x-y}&=&\\frac{e^x}{e^y}\\\\\ne^{rx}&=&(e^x)^r\n\\end{align}\n\\]"
+    "text": "The number \\(e\\)\n\nThe number \\(e\\) is a constant in mathematics, it is approximately \\(e\\approx 2.72\\), but really its decimals continue infinitely without any pattern.\n\nIt’s exact value can be described as \\[\ne = \\lim_{n\\to \\infty}\\left(1+\\frac{1}{n}\\right)^n.\n\\]\nLike any other number, \\(e\\) follows normal power properties\n\\[\n\\begin{align}\ne^{x+y}&=&e^x\\cdot e^y \\\\\ne^{-x}&=&\\frac{1}{e^x}\\\\\ne^{x-y}&=&\\frac{e^x}{e^y}\\\\\ne^{rx}&=&(e^x)^r\n\\end{align}\n\\]"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#exponential-function",
     "href": "notes/day3_derivatives/lecture-derivative.html#exponential-function",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "The number \\(e\\) and exponential funcitons\n\nThe exponential function \\(e^x\\) is the number \\(e\\) raised to the \\(x\\) power. In function notation you may sometimes see it as\n\\[ f(x) = e^x \\ \\ \\text{ or } \\ \\ \\text{exp}(x).\\]"
+    "text": "The exponential funciton\n\nThe exponential function \\(e^x\\) is the number \\(e\\) raised to the \\(x\\) power. In function notation you may sometimes see it as\n\\[ f(x) = e^x \\ \\ \\text{ or } \\ \\ \\text{exp}(x).\\]"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#der-exp",
@@ -155,13 +155,6 @@
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Derivative of the exponential function\n\nWe have that \\[\n\\large\n\\frac{d}{dx}e^x=e^x\n\\]\nThe derivative at every point on this line is simply \\(e(x)\\)."
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#er-exp-con",
-    "href": "notes/day3_derivatives/lecture-derivative.html#er-exp-con",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Derivative of the exponential function"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#higher-order-der",
@@ -231,7 +224,7 @@
     "href": "notes/day3_derivatives/lecture-derivative.html#pop",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "How quickly is the human population rising right now?\n\nDochy et al. (1995) used the following function to describe the increase in human population over time:\n\\[\nx(t)=\\frac{1}{c-\\beta t}\n\\]\nWhere \\(c=9.833*10^{-3}\\), \\(\\beta=4.849*10^{-6}\\), and \\(x\\) is the total human population in millions at year \\(t\\).\n\n \n✏️ Answer the following questions using the Dochy et al. model.\n- How quickly was the human population increasing in 1450?\n- What should be the population growth rate in 2024 according to this model?"
+    "text": "How quickly is the human population rising right now?\n\nVon Foersters et al. (1960) used the following function to describe the increase in human population over time:\n\\[\nx(t)=\\frac{1}{c-\\beta t}\n\\]\nWhere \\(c=9.833*10^{-3}\\), \\(\\beta=4.849*10^{-6}\\), and \\(x\\) is the total human population in millions at year \\(t\\).\n\n \n✏️ Answer the following questions using the Dochy et al. model.\n- How quickly was the human population increasing in 1450?\n- What should be the population growth rate in 2024 according to this model?"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#pop-ex-1",
@@ -245,14 +238,14 @@
     "href": "notes/day3_derivatives/lecture-derivative.html#pop-ex-2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Use derivatives to find the answers!\n\n- What should be the population growth rate in 2024 according to this model?\n\n“Population growth rate in 2024” means “evaluate the first derivative at $t=2024”. So let’s do that:\n\\[x'(2024) = \\beta(c-\\beta 2024)^{-2} = 13,980.\\]\nSo, human population in 2024 will be increasing at a rate of 13,980 million per year according to this model."
+    "text": "Use derivatives to find the answers!\n\n- What should be the population growth rate in 2024 according to this model?\n\n“Population growth rate in 2024” means “evaluate the first derivative at $t=2024”. So let’s do that:\n\\[x'(2024) = \\beta(c-\\beta 2024)^{-2} = 13,980.\\]\nSo, human population in 2024 will be increasing at a rate of 13,980 million per year according to this model.\n\n\nAfter some investigation, human population is estimated to be growing at about 0.85% per year, which is around 70 million more people every year."
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#pop-ex-3",
     "href": "notes/day3_derivatives/lecture-derivative.html#pop-ex-3",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "The model isn’t wrong, just not predictive out of sample\n\n\n\n\n\n\n\n\nFigure 2 from Dochy 2015"
+    "text": "The model isn’t wrong, just not predictive out of sample"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#derivative-sign-section",
@@ -281,13 +274,6 @@
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Increasing and decreasing functions\n\nLet \\(f(x)\\) be a function that is differentiable on the interval \\((a,b)\\), then:\n\nIf \\(f'(x)&gt;0\\) for all \\(x\\) values between \\(a\\) and \\(b\\), then \\(f(x)\\) is increasing on \\((a,b)\\)\nIf \\(f'(x)&lt;0\\) for all \\(x\\) values betwen \\(a\\) and \\(b\\), then \\(f(x)\\) is decreasing on \\((a,b)\\)\nIf \\(f'(x)=0\\) for all values between \\(a\\) and \\(b\\), then \\(f(x)\\) is constant on \\((a,b)\\)"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#concavity",
-    "href": "notes/day3_derivatives/lecture-derivative.html#concavity",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Concavity\n\nTODO write this convexity slide"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#max-min",
@@ -337,6 +323,13 @@
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "✏️ 1. How many local minimums and maximums can you find on this graph?"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-2-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-2-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "✏️ 2. Find all the critical points of this function. Identify which are minima and which are maxima. \\[\nf(x)=2x^3-6x^2+3x+15\n\\]"
   },
   {
     "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-2",
@@ -574,7 +567,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#example-second-degree",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12=0\\) is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
+    "text": "Example: second degree polynomial\n\nWhat happens if \\(x=4\\) or \\(x=-3\\) in \\(x^2-x-12\\)?\n\n\nThis means 4 and 3 are roots of the polynomial \\(x^2-x-12\\).\n\n\n\nThe only way to get \\(x^2-x-12=0\\) is for \\(x\\) to either be 4 or -3.\n\n\n\nWe can rewrite \\[x^2-x-12 = (x-4)(x+3).\\]\n\n\n\nVerify the factorization on the right."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#quad",
@@ -644,7 +637,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#xy-coordinates",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\n\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
+    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#graph-series",
