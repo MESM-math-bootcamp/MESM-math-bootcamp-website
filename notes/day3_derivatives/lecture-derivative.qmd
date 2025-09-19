@@ -551,10 +551,10 @@ $$
 
 <br> 
 
-[Growth of Renewable Energy](https://ourworldindata.org/grapher/modern-renewable-prod)
+[Growth of renewable energy](https://ourworldindata.org/grapher/modern-renewable-prod)
 
 
-## {#log-growth data-menu-title="Logistic Growth"}
+## {#log-growth data-menu-title="Logistic Growth" .smaller}
 
 [Logistic growth]{.slide-title}
 
@@ -571,13 +571,13 @@ $$
 where $N=\text{population, }r=\text{growth rate, }t=\text{time, and }K=\text{carrying capacity}.$
 
 <div class="page-center">
-![](images/carry.webp)
+![](images/carry.webp){fig-align="center" width="60%"}
 </div>
 
 
 ## {#log-fisheries data-menu-title="Fisheries and Biological conservation"}
 
-[Extremely important in fisheries and biological conservation]{.slide-title}
+[Important in fisheries and biological conservation]{.slide-title}
 
 <hr>
 
@@ -703,7 +703,12 @@ $$x'(1450)=.61$$
 
 So, *human population in 1450 was increasing at a rate of .61 million per year*.
 
-. . .
+## {#pop-ex-2 data-menu-title="Human Population Example"}
+
+[Use derivatives to find the answers!]{.slide-title}
+
+<hr>
+
 
 [- What should be the population growth rate in 2024 according to this model?]{style="color:green;"}
 
@@ -771,6 +776,13 @@ $$
 <div class="page-center">
 <div class="custom-subtitle">Positive and Negative Derivatives</div>
 </div>
+<!---------------------------------------------------------------------->
+
+## {#increasing data-menu-title="Increasing and Decreasing functions"}
+
+[Increasing and decreasing functions]{.slide-title}
+
+<hr>
 
 <!---------------------------------------------------------------------->
 
@@ -780,18 +792,34 @@ $$
 
 <hr>
 
-A function is **increasing** on an interval $(a,b)$ is $f(x_1) \leq f(x_2)$ every time $x_1<x_2$. 
+Take an interval $(a,b)$. A function $f(x)$ is...
 
-A function is **decreasing** on an interval $(a,b)$ is $f(x_1) \geq f(x_2)$ every time $x_1<x_2$. 
+ - ... **increasing** on $(a,b)$ if $f(x_1) \leq f(x_2)$ every time $x_1<x_2$ and $x_1, x_2$ in $(a,b)$.
 
-A function is **constant** on an interval $(a,b)$ is $f(x_1) = f(x_2)$ for every $x_1, x_2$ in $(a,b)$. 
+- ... **decreasing** on $(a,b)$ if $f(x_1) \geq f(x_2)$ every time $x_1<x_2$ and $x_1, x_2$ in $(a,b)$.
+
+- ... **constant** on an interval $(a,b)$ if $f(x_1) = f(x_2)$ for every $x_1, x_2$ in $(a,b)$.
+
 
 
 🙂 *This all really means what you think it means:*
 
 <div class="page-center">
-![](images/increase.PNG)
+![](images/concavity-second-derivative-no-labels.gif){fig-align="center" width="40%"}
 </div>
+
+<!--TODO: find a better graph with no derivatives in incresing, decreasing etc-->
+
+<!---------------------------------------------------------------------->
+
+## {#sign-of-derivative-blank data-menu-title="Sign of the derivative"}
+
+[Increasing and decreasing functions]{.slide-title}
+
+<hr>
+
+Let $f(x)$ be a function that is differentiable on the interval $(a,b)$, then:
+
 
 <!---------------------------------------------------------------------->
 
@@ -803,16 +831,28 @@ A function is **constant** on an interval $(a,b)$ is $f(x_1) = f(x_2)$ for every
 
 Let $f(x)$ be a function that is differentiable on the interval $(a,b)$, then:
 
-  - If $f'(x)>0$ for all $x$ values between $a$ and $b$, $f$ is increasing on $(a,b)$
-    
-  - If $f'(x)<0$ for all $x$ values betwen $a$ and $b$, this interval is said to be decreasing
-    
-  - If $f'(x)=0$ for all values between $a$ and $b$, then the function is constant within the interval
+  - If $f'(x)>0$ for all $x$ values between $a$ and $b$, then $f(x)$ is increasing on $(a,b)$
 
+  - If $f'(x)<0$ for all $x$ values betwen $a$ and $b$, then $f(x)$ is decreasing on $(a,b)$
+    
+    
+  - If $f'(x)=0$ for all values between $a$ and $b$, then $f(x)$ is constant on $(a,b)$
 
 <div class="page-center">
-![](images/increase.PNG)
+![](images/increase.PNG){fig-align="center" width="60%"}
 </div>
+
+<!---------------------------------------------------------------------->
+
+## {#concavity data-menu-title="Finding maxima/minima"}
+
+[Concavity]{.slide-title}
+
+<hr>
+
+TODO write this convexity slide
+
+
 
 <!---------------------------------------------------------------------->
 
@@ -837,7 +877,18 @@ A funciton $f(x)$ has...
 Finding critical points helps us solve optimization problems: every maximum and miniumum occurs at a critical point.
 
 <div class="page-center">
-![](images/Maxima_and_Minima.svg.png)
+![](images/Maxima_and_Minima.svg.png){fig-align="center" width="45%"}
+</div>
+<!---------------------------------------------------------------------->
+
+## {#optimization-motivation data-menu-title="Finding maxima/minima"}
+
+[Finding maxima/minima]{.slide-title}
+
+<hr>
+
+<div class="page-center">
+![](images/concavity-second-derivative-no-labels.gif){fig-align="center" width="65%"}
 </div>
 
 <!---------------------------------------------------------------------->
@@ -847,6 +898,7 @@ Finding critical points helps us solve optimization problems: every maximum and 
 [Finding maxima/minima]{.slide-title}
 
 <hr>
+
 [1) Find critical points with the 1st derivative:]{style="color:red;"}
 
 - If $f(x)$ has a local maximum or minimum at $p$ then $f'(p)$ =0. 
@@ -858,21 +910,26 @@ Finding critical points helps us solve optimization problems: every maximum and 
 :::{.fragment .fade-in}
 [2) Apply the 2nd derivative test to critical points:]{style="color:red;"}
 
-- Whether an extremum is a maximum or minimum requires us to test if the function is concave up  or concave down around that point. 
+- Whether a critical point is a maximum or minimum requires us to test if the function is concave up or concave down around that point. 
 
-- If $f'(p)=0$ and $f''(p)<0$ then $f(x)$ has a local maximum at $p$
+- If $f'(p)=0$ and $f''(p)<0$ then $f(x)$ has a local maximum at $p$.
 
-- If $f'(x)=0$ and $f''(x)>0$, then $f(x)$ has a local minimum at $p$
-
-<div class="page-center">
-![](images/concavity-second-derivative.gif)
-</div>
+- If $f'(x)=0$ and $f''(x)>0$, then $f(x)$ has a local minimum at $p$.
 
 :::
+<!---------------------------------------------------------------------->
+
+## {#opt-graph-blank data-menu-title="Example"}
+
+[Example]{.slide-title}
+
+<hr>
+
+✏️ [Consider the function  $f(x)=x^3-12x+2$. What are its local maxima and minima?]{style="color:green;"}
 
 <!---------------------------------------------------------------------->
 
-## {#opt-graph data-menu-title="Example"}
+## {#opt-graph data-menu-title="Example" .smaller}
 
 [Example]{.slide-title}
 
@@ -905,6 +962,14 @@ f''(-2)&<0  &f''(2)>0
 \end{align}
 $$
 :::
+
+:::{.fragment .fade-in}
+<br> 
+
+By the first order conditions we know that $x=2$ and $x=-2$ are the critical points of the function.
+
+The second order conditions inform us that $f(x)$ has a local maximum at $x=-2$ and a local minimum at $x=2$.
+:::
 :::
 :::{.column width="50%"}
 
@@ -928,11 +993,6 @@ ggplot()+
 :::
 ::::
 
-:::{.fragment .fade-in}
-By the first order conditions we know that $x=2$ and $x=-2$ are local optimum.
-
-The second order conditions inform us that $x=-2$ is a local maximum and $x=2$ is a local minimum.
-:::
 
 ## {#ta-2 data-menu-title="Team Assessment 2" background-color="#003660"}
 
@@ -943,7 +1003,7 @@ The second order conditions inform us that $x=-2$ is a local maximum and $x=2$ i
 
 ## {#gta2-1 data-menu-title="Team Assessment 2 Questions"}
 
-✏️ [1. How many local min and maximums can you find on this graph?]{style="color:green;"}
+✏️ [1. How many local minimums and maximums can you find on this graph?]{style="color:green;"}
 
 ```{r,fig.align='center'}
 x=seq(-1,2.75,by=0.01)
@@ -961,7 +1021,7 @@ ggplot()+
 
 ## {#gta2-2 data-menu-title="Team Assessment 2 Questions"}
 
-✏️ [2. Find all the critical values. Identify which are minima and which are maxima.]{style="color:green;"}
+✏️ [2. Find all the critical points of this function. Identify which are minima and which are maxima.]{style="color:green;"}
 
 [
 $$
@@ -989,7 +1049,7 @@ $$]{style="color:green;"}
 
 [d) Which policy should the city of Santa Barbara pursue?]{style="color:green;"}
 
-## {#solutions data-menu-title="Solutions"}
+## {#solutions data-menu-title="Solutions" .smaller}
 
 [Solution to exercise 3]{.slide-title}
 
