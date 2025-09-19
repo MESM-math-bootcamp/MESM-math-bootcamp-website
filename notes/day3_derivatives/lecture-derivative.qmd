@@ -1,13 +1,11 @@
 ---
 format: 
   revealjs:
-    chalkboard: false
+    chalkboard: true
     slide-number: true
     show-slide-number: print
     theme:
-     - ../../ucsb-media.scss   
-    html-math-method: mathjax     
-embed-resources: true
+     - ../../ucsb-media.scss    
 ---
 
 ## {#title-slide data-menu-title="Title Slide" background=.white}
@@ -42,11 +40,20 @@ embed-resources: true
 
 - Any questions?
 
-- Discuss with Team
+- Discuss with team
+<!---------------------------------------------------------------------->
+
+## {#product-rule-blank data-menu-title="Product Rule"}
+
+[Rules for differentiation (4)]{.slide-title}
+
+<hr>
+
+**Product Rule**
 
 <!---------------------------------------------------------------------->
 
-## {#rules-cont data-menu-title="Product Rule"}
+## {#product-rule data-menu-title="Product Rule"}
 
 [Rules for differentiation (4)]{.slide-title}
 
@@ -99,6 +106,15 @@ y&=\overbrace{2x}^{f(x)}\overbrace{(x^2+3x)}^{g(x)} &\text{Break into two functi
 $$
 
 What is another way we could have computed this derivative?
+<!---------------------------------------------------------------------->
+
+## {#quotient-rule-blank data-menu-title="Quotient Rule"}
+
+[Rules for differentiation (5)]{.slide-title}
+
+<hr>
+
+**Quotient Rule**
 
 <!---------------------------------------------------------------------->
 
@@ -162,12 +178,12 @@ y&=\class{fragment}{{}\frac{\overbrace{x^2}^{f(x)}}{\underbrace{(x+1)}_{g(x)}}} 
 $$
 -->
 
-**Note:** Applying the quotient rule can yield some complex algebraic expressions. Try to reduce it down to a usable form.
+<!--**Note:** Applying the quotient rule can yield some complex algebraic expressions. Try to reduce it down to a usable form.-->
 
 <!---------------------------------------------------------------------->
 
 
-## {#function-composition data-menu-title="Composition of functions"}
+## {#function-composition-blank data-menu-title="Composition of functions"}
 
 [Composition of functions]{.slide-title}
 
@@ -178,26 +194,18 @@ If we have two functions $f$ and $g$, **the composition of $f$ and $g$** is
 
 $$f\circ g (x) = f(g(x)).$$
 
-This means that the output of $g(x)$ is now the input of $f(x)$. 
-
-<br>
-
-Composition of functions means applying one function to the result of another.
+This means that the output of $g(x)$ is now the input of $f(x)$. In other words, composition of functions means applying one function to the result of another.
 
 . . .
 
 <br>
 
-**Example**
+**Examples**
 
 ✏️ [Let $f(x) = x^2$ and $g(x) = 2x+3$. What is $f\circ g (x)$?]{style="color:green;"}
 
 <br>
-
 <br>
-
-
-**Example**
 
 ✏️ [Let $h(x) = \sqrt{ 3x^2 + 10}$. How can we write $h$ as a composition of functions?]{style="color:green;"}
 
@@ -211,37 +219,35 @@ Composition of functions means applying one function to the result of another.
 
 <hr>
 
-
 If we have two functions $f$ and $g$, **the composition of $f$ and $g$** is 
 
 $$f\circ g (x) = f(g(x)).$$
 
-This means that the output of $g(x)$ is now the input of $f(x)$. 
-
-<br>
-
-Composition of functions means applying one function to the result of another.
+This means that the output of $g(x)$ is now the input of $f(x)$. In other words, composition of functions means applying one function to the result of another.
 
 <br>
 
 
-**Example**
+**Examples**
 
 ✏️ [Let $f(x) = x^2$ and $g(x) = 2x+3$. What is $f\circ g (x)$?]{style="color:green;"}
 
-We have that
+We have that $f\circ g (x)  = (2x+3)^2$.
 
-$$f\circ g (x)  = (2x+3)^2.$$
-
-
-**Example**
 
 ✏️ [Let $h(x) = \sqrt{ 3x^2 + 10}$. How can we write $h$ as a composition of functions?]{style="color:green;"}
 
-If we make $f(x) = \sqrt{x}$ and $g(x) = 3x^2 +10$ then we have that
+If we make $f(x) = \sqrt{x}$ and $g(x) = 3x^2 +10$ then we have that $f\circ g (x) = \sqrt{ 3x^2 + 10}.$
 
-$$ f\circ g (x) = \sqrt{ 3x^2 + 10}.$$
+<!---------------------------------------------------------------------->
 
+## {#chain-rule-blank data-menu-title="Chain Rule"}
+
+[Rules for differentiation (6)]{.slide-title}
+
+<hr>
+
+**Chain Rule**
 
 <!---------------------------------------------------------------------->
 
@@ -255,16 +261,13 @@ $$ f\circ g (x) = \sqrt{ 3x^2 + 10}.$$
 
 $$
 \large
-\frac{d}{dx}f\circ g(x)= \frac{d}{dx} f(g(x)) = f'(g(x))\cdot g'(x)
+\frac{d}{dx}f\circ g(x)= \frac{d}{dx} f(g(x)) \frac{d}{dx}g(x) 
 $$
+<!--= f'(g(x))\cdot g'(x)-->
 
-What this is saying:
-
-- Take the derivative of the outermost function then multiply by the derivative of the innermost.
+- "Take the derivative of the outermost function then multiply by the derivative of the innermost."
 
 - Probably the most important rule for advanced calculus!
-
-<br>
 
 . . .
 
@@ -276,7 +279,7 @@ The next example will show us what this means.
 
 <!---------------------------------------------------------------------->
 
-## {#chain-ex data-menu-title="Chain Rule Example"}
+## {#chain-ex-blank data-menu-title="Chain Rule Example"}
 
 [Chain rule example]{.slide-title}
 
@@ -286,8 +289,6 @@ The next example will show us what this means.
 Let's use a trick called **$u$-substitution.**
 
 . . .
-
-<br>
 
 1. Identify the inner function and label it as $u$. Rewrite $y$ in terms of $u$:
 
@@ -309,7 +310,7 @@ Let's use a trick called **$u$-substitution.**
 
 <!---------------------------------------------------------------------->
 
-## {#chain-ex data-menu-title="Chain Rule Example"}
+## {#chain-ex data-menu-title="Chain Rule Example" .smaller}
 
 [Chain rule example]{.slide-title}
 
@@ -351,7 +352,7 @@ $$
 
 <!---------------------------------------------------------------------->
 
-## {#exponent data-menu-title="The number $e$ and exponential funcitons"}
+## {#number-e data-menu-title="The number $e$"}
 
 <!-- 
 A very nice slide deck Carmen made to explain what e is to my 34A summer 2020 students.
@@ -368,7 +369,7 @@ The **number $e$ is a constant** in mathematics, it is approximately $e\approx 2
 
 It's exact value can be described as 
 $$
-e = \lim_{n\to \infty}(1+\frac{1}{n})^n.
+e = \lim_{n\to \infty}\left(1+\frac{1}{n}\right)^n.
 $$
 
 Like any other number, $e$ follows normal power properties
@@ -382,11 +383,32 @@ e^{rx}&=&(e^x)^r
 \end{align}
 $$
 
-. . .
+
+<!---------------------------------------------------------------------->
+
+## {#exponential-function data-menu-title="The exponential function $e^x$"}
+
+[The number $e$ and exponential funcitons]{.slide-title}
+
+<hr>
 
 The **exponential function $e^x$** is the number $e$ raised to the $x$ power. In function notation you may sometimes see it as
 
-$$ f(x) = e^x \ \ \text{ or } \ \  f(x) = \text{exp}(x).$$
+$$ f(x) = e^x \ \ \text{ or } \ \ \text{exp}(x).$$
+
+
+```{r,fig.align='center',out.width="75%"}
+library(tidyverse)
+x=seq(-3,3,by=0.01)
+y=exp(x)
+
+ggplot()+
+  geom_line(aes(x=x,y=y),color="black",linewidth=3)+
+  theme_classic()+
+  labs(x="x",y="y",title=bquote(e^x))+
+  theme(text=element_text(size=28))
+```
+
 
 <!---------------------------------------------------------------------->
 
@@ -436,26 +458,20 @@ knitr::include_graphics("images/exp_comic.png")
 
 <hr>
 
-- We can continue to take derivatives of derivatives
+- We can continue to take derivatives of derivatives.
 
-- The second derivative becomes the rate of change of the rate of change (Think acceleration)
+- The second derivative becomes the rate of change of the rate of change. 
+
+- If we interpret the first derivative as velocity, then the second derivative is acceleration. 
+
+. . .
 
 - Notation: 
 
-    - $f''(x)$ or $\frac{d^2y}{dx^2}$: 2nd Derivative
-    
-    - $f^{(n)}(x)$ or $\frac{d^ny}{dx^n}$ nth derivative
-
-## {#higher-order-der-meme data-menu-title="Higher Order Derivatives"}
-
-[Higher order derivatives]{.slide-title}
-
-<hr>
-
-
-```{r,fig.align='center',out.width="75%"}
-knitr::include_graphics("images/nth.png")
-```
+    - Function: $f(x) = y$
+    - 1st derivative: $f'(x)$ or $\frac{dy}{dx}f$
+    - 2nd derivative: $f''(x)$ or $\frac{d^2y}{dx^2}$
+    - nth derivative: $f^{(n)}(x)$ or $\frac{d^ny}{dx^n}$
 
 
 ## {#ta data-menu-title=Team" background-color="#003660"}
@@ -470,7 +486,7 @@ knitr::include_graphics("images/nth.png")
 Part 1
 :::
 
-✏️ [Identify which rule or rules works best for each function.]{style="color:green;"}
+✏️ [Identify which differentiation rule or rules works best for each function.]{style="color:green;"}
 
 $$
 \begin{align}
