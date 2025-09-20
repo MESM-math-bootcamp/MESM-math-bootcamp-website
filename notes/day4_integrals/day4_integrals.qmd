@@ -23,8 +23,8 @@ Area between two curves
 
 ## Problem set
 
-[Click here to see the problem set.](problem_set_algebra.qmd)
+[Click here to see the problem set.](problem_set_integrals.qmd)
 
 ## Problem set solutions
 
-[Solutions](solutions_problem_set_algebra.qmd)
+[Solutions](solutions_problem_set_integrals.qmd)

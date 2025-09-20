@@ -5,87 +5,254 @@ format:
     slide-number: true
     show-slide-number: print
     theme:
-     - ucsb-media.scss
-    logo: img/bren-logo.png
+     - ../../ucsb-media.scss    
     html-math-method: mathjax
-    include-in-header:
-      - text: |
-          <script>
-          MathJax = {
-            options: {
-              menuOptions: {
-                settings: {
-                  assistiveMml: false
-                }
-              }
-            }
-          };
-          </script>
-
+    # include-in-header:
+    #   - text: |
+    #       <script>
+    #       MathJax = {
+    #         options: {
+    #           menuOptions: {
+    #             settings: {
+    #               assistiveMml: false
+    #             }
+    #           }
+    #         }
+    #       };
+    #       </script>
 ---
+
+
+```{r}
+library(tidyverse)
+```
+
 
 ## {#title-slide data-menu-title="Title Slide" background=.white}
 
-[Intro to Integration]{.custom-title .blue-text}
+[Introduction to Integration]{.custom-title .blue-text}
 
 [Bren Calculus Workshop]{.custom-subtitle .gold}
 
 <hr class="hr-teal">
 
-[Nathaniel Grimes]{.body-text-l .center-text .blue-text}
+[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .blue-text}
 
 [Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
 
+<br>
+
+<br>
+
 [**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
+
+<br>
+
+*Materials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.*
+
 
 ## {#tr data-menu-title="Team Review"}
 
-[Team Review]{.slide-title}
+[Problem set review]{.slide-title}
+
+<hr>
 
 - How did everyone feel about the problem set?
 
 - Any questions?
 
-- Discuss with Team
+<!----------------------------------------------------->
+## {#logarithm-motivation title="Exponential function revisited"}
 
+[Exponential function revisited]{.slide-title}
+
+<hr>
+
+Remeber: the **exponential function** $e^x$ is the number $e$ raised to the $x$ power. 
+
+```{r,fig.align='center',out.width="60%"}
+
+x=seq(-3,3,by=0.01)
+y=exp(x)
+
+ggplot()+
+  geom_line(aes(x=x,y=y),color="black",linewidth=3)+
+  theme_classic()+
+  labs(x="x",y="y",title=bquote(e^x))+
+  theme(text=element_text(size=28))
+```
+
+A reasonable question would be:
+
+<br>
+
+<div class="page-center">
+<span style="color:red">
+Given $y$, what is the $x$ such that $e^x = y$?
+</span>
+</div>
+
+<!----------------------------------------------------->
+## {#ln-blank-1 data-menu-title="Natural Logs"}
+
+[Natural logarithms]{.slide-title}
+
+<hr>
+
+
+<!----------------------------------------------------->
+## {#ln-blank-2 data-menu-title="Natural Logs"}
+
+[Natural logarithms]{.slide-title}
+
+<hr>
+
+If $y>0$ then **$\ln(x)$ is the exponent you need to raise $e$ to in order to get $y$.**
+
+This means:
+
+$$
+\begin{align}
+\ln(e^x) &= x \\
+e^{\ln(y)} &= y
+\end{align}
+$$
+
+In other words, $\ln(x)$ is the inverse of the exponential function $e^x$. 
+
+<br>
+
+**Examples**
+
+- $\ln(e^3)$
+
+- $\ln(\frac{1}{e})$
+
+- $\ln(1)$
+
+- $\ln(0)$ 
+
+- $\ln(-7)$ 
+
+
+<!----------------------------------------------------->
 ## {#ln data-menu-title="Natural Logs"}
 
 [Natural logarithms]{.slide-title}
 
 <hr>
 
-- Inverse of exponentials
+If $y>0$ then **$\ln(x)$ is the exponent you need to raise $e$ to in order to get $y$.**
 
-:::{.center-text}
-**By Definition**
-:::
+This means:
 
 $$
-\large
-e^{\ln(x)}=x
+\begin{align}
+\ln(e^x) &= x \\
+e^{\ln(y)} &= y
+\end{align}
 $$
+
+In other words, $\ln(x)$ is the inverse of the exponential function $e^x$. 
+
+<br>
+
+**Examples**
+
+- $\ln(e^3) = 3$ because 3 is the power of $e$ needed to get $e^3$.
+
+- $\ln(\frac{1}{e}) = \ln(e^{-1}) = -1$
+
+- $\ln(1) = 0$ because 0 is the exponent we need to raise $e$ to to get 1
+
+- $\ln(0)$ does not exist, because there's no number we can raise $e$ to to get 0
+
+- $\ln(-7)$ does not exist, because $e$ to any number always be positive
+
+<!----------------------------------------------------->
+## {#ln data-menu-title="Properties of natural logarithm"}
+
+[Natural log properties]{.slide-title}
+
+<hr>
 
 ::::{.columns}
 :::{.column width="50%"}
 
-```{r,fig.dim=c(5,5.5), out.width="65%"}
-library(tidyverse)
-x=seq(0,10,by=.01)
+:::{.fragment .fade-in}
+```{r,fig.dim=c(5,5.5), out.width="100%"}
 
-y=log(x)
+# Define x values
+x_exp <- seq(-2, 4, length.out = 500)          # for e^x
+x_log <- seq(0.001, 4, length.out = 500)       # for ln(x) (x>0 only)
 
-ggplot()+
-  geom_line(aes(x=x,y=y),color="black",linewidth=3)+
-  theme_classic()+
-  theme(text=element_text(size=24))+
-  labs(x="",y="",title="Graph of ln(x)")+
-  geom_hline(yintercept = 0)
+# Compute y values
+y_exp <- exp(x_exp)
+y_log <- log(x_log)
+
+# Base plot: no axes, no box, no margin labels
+plot(x_exp, y_exp, type = "l", col = "blue", lwd = 2,
+     xlab = "", ylab = "",
+     xlim = c(-2, 4), ylim = c(-2, 6),         
+     main = "",
+     axes = FALSE, frame.plot = FALSE)
+
+# Draw custom axes at x=0 and y=0
+axis(1, pos = 0)  # x-axis at y=0
+axis(2, pos = 0)  # y-axis at x=0
+
+# Add ln(x)
+lines(x_log, y_log, col = "red", lwd = 2)
+
+# Add the line y = x (dotted)
+abline(0, 1, lty = 2, col = "darkgreen")
+
+# Add legend (no box)
+legend("topleft", legend = c("e^x", "ln(x)", "y=x"),
+       col = c("blue", "red", "darkgreen"), lwd = c(2,2,1),
+       lty = c(1,1,2), bty = "n")
+
+# Add manual axis labels at the ends
+text(x = 4, y = -0.2, labels = "x", cex = 1.2)
+text(x = 0.2, y = 6, labels = "y", cex = 1.2) 
 ```
 
+:::
 :::
 
 :::{.column width="50%"}
 
+:::{.fragment .fade-in}
+:::{.center-text}
+**Properties**
+:::
+
+
+$\ln (e^x)=x$
+
+$\ln(xy)=\ln x+\ln y$
+
+$\ln(\frac{x}{y})=\ln x-\ln y$
+
+$\ln(x^y)=y \ln x$
+:::
+
+:::
+::::
+
+<!----------------------------------------------------->
+## {#ln-ex-blank data-menu-title="Natural Logs"}
+
+[Using logarithms to solve equations]{.slide-title}
+
+<hr>
+✏️ [Solve for $t$ in the equation $Pe^{rt} = A$. ]{style="color:green;"}
+
+::::{.columns}
+:::{.column width="70%"}
+:::
+
+:::{.column width="30%"}
 :::{.center-text}
 **Properties**
 :::
@@ -97,17 +264,47 @@ $\ln(xy)=\ln x+\ln y$
 $\ln(\frac{x}{y})=\ln x-\ln y$
 
 $\ln(x^y)=y \ln x$
-
 :::
+
 ::::
 
-## {#d-ln data-menu-title="Natural logs"}
+<!----------------------------------------------------->
+## {#ln-ex data-menu-title="Natural Logs"}
+
+[Using logarithms to solve equations]{.slide-title}
+
+<hr>
+✏️ [Solve for $t$ in the equation $Pe^{rt} = A$. ]{style="color:green;"}
+
+$$
+\begin{align}
+Pe^{rt} &= A \\
+e^{rt} & = \frac{A}{P} \\
+rt &= \ln\left(\frac{A}{P}\right) \\
+t &= \frac{\ln(A)-\ln(P)}{r}
+\end{align}
+$$
+
+<!----------------------------------------------------->
+
+## {#d-ln-blank data-menu-title="Natural logs"}
 
 [Derivative of Natural Log]{.slide-title}
 
+<hr>
+
+<!----------------------------------------------------->
+
+## {#d-ln data-menu-title="Natural logs"}
+
+[Derivative of natural log]{.slide-title}
+
+<hr>
+The derivative of the natural logarithm is
+
 $$
 \large
-\frac{d}{dx}[\ln x]=\frac{1}{x}
+\frac{d}{dx}\ln x=\frac{1}{x}
 $$
 
 ::::{.columns}
@@ -119,9 +316,9 @@ $$
 
 - Allows us to more easily handle exponents $(e^x)$
 
-- Surprisingly simple derivative
+- Surprisingly simple derivative!
 
-- Really important in Integration
+- Important in integration
 :::
 :::{.column width="50%"}
 
@@ -130,46 +327,49 @@ $$
 :::
 
 
-- Time and Growth Problems
+- Time and growth Problems
 
-- Differential Equations
+- Differential equations
 
 :::
 ::::
-## {#ln-ex data-menu-title="Natural Logs"}
 
-[Examples of Natural Logs]{.slide-title}
+<!----------------------------------------------------->
+
+## {#ln-derv-ex-blank data-menu-title="Natural Log"}
+
+[Example]{.slide-title}
 
 <hr>
-Solve for t in this equation:
 
-$$
-A=Pe^{rt}
-$$
+✏️ [Find the derivative of $y=\ln(x^2)$. ]{style="color:green;"}
 
-:::{.fragment .fade-in}
+<!----------------------------------------------------->
 
-$$
-\begin{align}
-\frac{A}{P}&=e^{rt} \\
-\ln(\frac{A}{P})&=rt \\
-\frac{\ln(A)-\ln(P)}{r}&=t
-\end{align}
-$$
-:::
+<!-- ## {#ln-derv-ex-composition data-menu-title="Natural Log"}
+
+[Example]{.slide-title}
+
+<hr>
+
+There are two 
+
+✏️ [Find the derivative of $y=\ln(x^2)$. ]{style="color:green;"}
+
+TODO: add a solution with composition of functions. -->
+
+<!----------------------------------------------------->
 
 ## {#ln-derv-ex data-menu-title="Natural Log"}
 
-[Find the Derivative]{.slide-title}
+[Example]{.slide-title}
 
 <hr>
 
-$$
-\large
-y=\ln(x^2)
-$$
+✏️ [Find the derivative of $y=\ln(x^2)$. ]{style="color:green;"}
 
-:::{.fragment .fade-in}
+A solution with $u$-substitution.
+
 $$
 \begin{align}
 y=\ln(u)& &u=x^2\\
@@ -179,7 +379,8 @@ y=\ln(u)& &u=x^2\\
 \frac{dy}{dx}&=\frac{2}{x}\\
 \end{align}
 $$
-:::
+
+<!----------------------------------------------------->
 
 ## {#ta data-menu-title="Team Assessment" background-color="#003660"}
 
@@ -187,28 +388,82 @@ $$
 <div class="custom-subtitle">Team Assessment</div>
 </div>
 
+<!----------------------------------------------------->
 
 ## {#ta-1 data-menu-title="Team Assessment"}
 
-1) Solve these equation
+1) Solve these equations
 
 $$
 \begin{align}
-\text{Differentiate: A) }f(x)=x \ln x&  &\text{B)  }5+\ln(3x)=7  &  &\text{C) } e^{5x-0.2}=10
+\text{A)  }5+\ln(3x)=7  &  &\text{B) } e^{5x-0.2}=10
 \end{align}
 $$
 
-2) You contribute monthly to your retirement a company. After leaving the company, you no longer contribute, but the fund continues to accrue interest until you can remove it without penalty at age 55.
+<br>
+
+2) Find the derivative of $f(x)=x \ln x.$
+
+<br>
+
+3) You contribute monthly to your retirement a company. After leaving the company, you no longer contribute, but the fund continues to accrue interest until you can remove it without penalty at age 55.
 
 The increase in your funds is given by: 
-$$S=122000e^{0.032 t}$$ 
+$$R=122000e^{0.032 t}$$ 
 
-where S is the amount in your retirement account t years after leaving the company.
+where $R$ is the amount in your retirement account $t$ years after leaving the company.
 
 How many years after you quit will your retirement account be earning $8000/year in interest?
 
-3) Why can't logarithms have a negative x value?
+<!----------------------------------------------------->
 
+## {#solutions-1 data-menu-title="Solutions"}
+
+[Solutions]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="50%"}
+A) 
+
+$$
+\begin{align}
+5 + \ln(3x) &= 7 \\
+\ln(3x) &= 2 \\
+3x &= e^2 \\
+x & = \frac{e^2}{3} \\
+\end{align}
+$$
+:::
+
+::: {.column width="50%"}
+B) 
+
+$$
+\begin{align}
+e^{5x-0.2} &= 10 \\
+\ln(e^{5x-0.2}) &= \ln(10) \\
+5x-0.2 &= \ln(10) \\
+5x &= \ln(10) + 0.2 \\
+x &= \frac{\ln(10) + 0.2}{5}
+\end{align}
+$$
+:::
+::::
+
+2. 
+
+To take the derivative of $f(x) = x\ln(x)$ we can use the product rule: $(fg)' = f'g + fg'$. 
+Using this we have that
+
+$$
+f'(x) = 1\ln(x) + x\frac{1}{x} = \ln(x) + 1. 
+$$
+
+
+
+<!----------------------------------------------------->
 
 ## {#integrate-concept data-menu-title="Integration" background-color="#003660"}
 
@@ -229,7 +484,7 @@ knitr::include_graphics("https://imgs.xkcd.com/comics/differentiation_and_integr
 <hr>
 
 ```{r}
-knitr::include_graphics("img/area.png")
+knitr::include_graphics("images/area.png")
 ```
 
 
@@ -240,7 +495,7 @@ knitr::include_graphics("img/area.png")
 <hr>
 
 ```{r}
-knitr::include_graphics("img/reimann.png")
+knitr::include_graphics("images/reimann.png")
 ```
 
 
@@ -324,7 +579,7 @@ ggplot()+
 :::{.fragment .fade-in}
 
 ```{r,fig.align='center'}
-knitr::include_graphics("img/riemann.gif")
+knitr::include_graphics("images/riemann.gif")
 ```
 :::
 
@@ -427,7 +682,7 @@ $$
 :::
 :::{.column width="50%"}
 ```{r,out.width="75%"}
-knitr::include_graphics("img/c.png")
+knitr::include_graphics("images/c.png")
 ```
 :::
 ::::
@@ -547,7 +802,7 @@ $$
 <hr>
 
 ```{r,fig.align='center',out.width="80%"}
-knitr::include_graphics("img/increase.PNG")
+knitr::include_graphics("images/increase.PNG")
 ```
 
 
@@ -644,7 +899,7 @@ $$
 <hr>
 
 ```{r,out.width="80%"}
-knitr::include_graphics("img/twocurve.png")
+knitr::include_graphics("images/twocurve.png")
 ```
 
 
@@ -657,7 +912,7 @@ knitr::include_graphics("img/twocurve.png")
 Find the area of the shaded region in the graph below
 
 ```{r}
-knitr::include_graphics("img/diffxtwo.gif")
+knitr::include_graphics("images/diffxtwo.gif")
 ```
 
 ## {#area-ex2 data-menu-title="Area between curves"}
