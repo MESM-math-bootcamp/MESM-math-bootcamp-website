@@ -1,0 +1,198 @@
+---
+title: "Calculus Workshop"
+subtitle: "Integration Problem Set"
+author: "Nathan Grimes"
+date: "2023-09-19"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,warning=FALSE,message=FALSE)
+
+library(tidyverse)
+```
+
+*Answer the following questions to the best of your ability. Feel free to work with anyone in the cohort, though I would encourage attempting on your own first to make sure you fully understand the concepts.*
+
+# Logarithms
+
+## 1) Solve for x
+
+$ln(x+2)=12$
+
+\textcolor{blue}{Solution}
+
+\begin{align}
+x+2=e^{12}\\
+x=e^{12}-2\\
+x=162,752.79
+\end{align}
+
+$e^{3x+1}=16$
+
+\textcolor{blue}{Solution}
+
+\begin{align}
+3x+1=\ln(16)\\
+x=\frac{\ln(16)-1}{3} \\
+x=1.26
+\end{align}
+
+$6e^{4x}=41e^{2x}$
+
+\textcolor{blue}{Solution}
+
+\begin{align}
+\frac{e^{4x}}{e^{2x}=\frac{41}{6}}\\
+e^{4x-2x}=\frac{41}{6} \\
+e^{2x}=\frac{41}{6}\\
+2x=\ln(41)-\ln(6)\\
+x=\frac{\ln(41)-\ln(6)}{2}
+\end{align}
+
+
+## 2) Find the derivative:
+
+$$
+G(a)=\frac{2\ln(4a-2)}{e^{3a}}
+$$
+
+\textcolor{blue}{Solution: Break it down into parts. First we need the quotient rule. Then use chain rules for the f(x) and g(x) that you identify. Put it all together}
+
+\begin{align}
+\frac{dG}{da}=\frac{\frac{8e^{3a}}{4a-2}-3e^{3a}\ln(4a-2)}{[e^{3a}]^2}
+\end{align}
+
+
+
+# Reimann Sum
+
+1) Approximate the area under the curve $f(x)=3x^2-6x+10$ on the interval $[6,12]$ with 6 uniform rectangles. 
+
+Does the position of the rectangle make a difference? Describe in words,show mathematically, or draw on the graph how evaluating the rectangle in different ways might lead to slightly different approximations.
+
+```{r}
+x=seq(4,14,by=0.1)
+
+y=3*x^3-6*x+10
+
+ggplot()+
+  geom_line(aes(x=x,y=y),color="black",linewidth=2)+
+  theme_classic()+
+  scale_x_continuous(breaks=seq(4,14,by=1))+
+  labs(x="",y="")+
+  theme(text=element_text(size=19))
+  
+```
+
+\textcolor{blue}{The position of the rectangles will slightly affect the approximation, but not much. We could have the squares evaluate at the midpoint of $\delta x$ instead of at the end. Or we could evaluate to the right.}
+
+\textcolor{blue}{Evaluate the function at all values in between the interval. Then add them up.}
+
+```{r, echo=TRUE}
+x=seq(6,12)
+
+f=3*x^3-6*x+10
+
+sum(f)
+
+
+```
+
+
+# Intergrals
+
+
+## 1)
+The marginal benefit of abatement (e.g. reducing) for carbon is given by:
+
+$$
+MB=31-2Q
+$$
+
+However there is also a marginal cost for carbon abatement given by:
+
+$$
+MC=6+3Q
+$$
+
+Find the total net benefit of carbon abatement to society at equilibrium. (Hint: To get equilibrium and the bounds of the integral, first set marginal benefit equal to marginal cost and solve for $Q^*$. Then your integral bounds should be from 0 to $Q^*$)
+
+\textcolor{blue}{Solution: First find the equilibrium by setting the MB and MC equations equal to each other and solve for Q}
+
+\begin{align}
+31-2Q=6+3Q\\
+25=5Q \\
+5=Q^*
+\end{align}
+
+\textcolor{blue}{Now we can find the total benefit and cost of abatement by taking the definite integral of each curve from 0 to 5}
+\textcolor{blue}{Marginal Benefit}
+
+\begin{align}
+\int^5_030-2Qdq \\
+30Q-Q^2|^5_0 \\
+30(5)-(5)^2=125
+\end{align}
+
+\textcolor{blue}{Marginal Cost}
+
+\begin{align}
+\int^5_06+3Q dq\\
+6Q+\frac{3x^2}{2}|^5_0\\
+6(5)+\frac{3(5)^2}{2}=67.5
+\end{align}
+
+\textcolor{blue}{Now we subtract the difference to get the total net benefits to society (in ESM 204 this will be called net welfare). $125-67.5$=57.5}
+
+## 2)
+
+Take the Integrals
+
+\begin{align}
+\text{A) }y=\frac{3}{x^2}, y(1)=5&  &\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\text{C) } \int^4_2\frac{1}{2}x
+\end{align}
+
+\textcolor{blue}{Solution:}
+
+A) 
+\begin{align}
+\int\frac{3}{x^2} dx\\
+-3x^{-3}+C\\
+-3(1)^{-3}+C=5\\
+C=8\\
+x^{-3}+8
+\end{align}
+
+B)
+\begin{align}
+\int\ g(t)=3t^5-2t^3+16t-7 dt\\
+\frac{t^6}{2}-\frac{t^4}{2}+8t^2-7t+C\\
+\end{align}
+
+C)
+\begin{align}
+\int^4_2\frac{1}{2}x dx\\
+\frac{1}{4}x^2|^4_2\\
+\frac{1}{4}(4)^2-\frac{1}{4}(2)^2=3
+\end{align}
+
+## 3)
+
+A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$. Where $C$ is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?
+
+\begin{align}
+\frac{dC}{dt}&=2t+20\\
+dC&=2t+20 dt \\
+\int dC&=\int 2t+20 dt \\
+C&=t^2+20t+D\\
+30&=2^2+20(2)+D \\
+D&=-14
+\end{align}
+
+Now that we know D we can solve for the concentration in 1982
+
+$$
+20^2+20*(20)-14=\text{ 786ppm}
+$$
+

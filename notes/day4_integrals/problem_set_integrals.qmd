@@ -1,0 +1,83 @@
+---
+title: "Calculus Workshop"
+subtitle: "Integration Problem Set"
+author: "Nathan Grimes"
+date: "2023-09-19"
+output: pdf_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE,warning=FALSE,message=FALSE)
+
+library(tidyverse)
+```
+
+*Answer the following questions to the best of your ability. Feel free to work with anyone in the cohort, though I would encourage attempting on your own first to make sure you fully understand the concepts.*
+
+# Logarithms
+
+## 1) Solve for x
+
+$ln(x+2)=12$
+
+$e^{3x+1}=16$
+
+$6e^{4x}=41e^{2x}$
+
+## 2) Find the derivative:
+
+$$
+G(a)=\frac{2\ln(4a-2)}{e^{3a}}
+$$
+
+
+# Reimann Sum
+
+1) Approximate the area under the curve $f(x)=3x^2-6x+10$ on the interval $[6,12]$ with 6 uniform rectangles. 
+
+Does the position of the rectangle make a difference? Desribe in words,show mathmatically, or draw on the graph how evaluating the rectangle in different ways might lead to slighly different approximations.
+
+```{r}
+x=seq(4,14,by=0.1)
+
+y=3*x^3-6*x+10
+
+ggplot()+
+  geom_line(aes(x=x,y=y),color="black",linewidth=2)+
+  theme_classic()+
+  scale_x_continuous(breaks=seq(4,14,by=1))+
+  labs(x="",y="")+
+  theme(text=element_text(size=19))
+  
+```
+
+# Intergrals
+
+
+## 1)
+The marginal benefit of abatement (e.g. reducing) for carbon is given by:
+
+$$
+MB=31-2Q
+$$
+
+However there is also a marginal cost for carbon abatement given by:
+
+$$
+MC=6+3Q
+$$
+
+Find the total net benefit of carbon abatement to society at equilibrium. (Hint: To get equilibrium and the bounds of the integral, first set marginal benefit equal to marginal cost and solve for $Q^*$. Then your integral bounds should be from 0 to $Q^*$)
+
+## 2)
+
+Take the Integrals
+
+\begin{align}
+\text{A) }y=\frac{3}{x^2}, y(0)=5&  &\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\text{C) } \int^4_2\frac{1}{2}x
+\end{align}
+
+
+## 3)
+
+A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$. Where $C$ is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?

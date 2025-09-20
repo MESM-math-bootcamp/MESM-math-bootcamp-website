@@ -1,1 +1,30 @@
 # Day 4: Integrals
+
+This unit covers basic introduction to integration.
+
+## Lecture materials
+
+[Algebra lecture slides](lecture-algebra.qmd)
+
+**Contents**
+
+- Natural logarithms and its derivative
+- Integrals
+    - Area under curve and geometric motivation
+    - Riemann sums and the integral as a limit
+- Fundamental Theorem of Calculus
+- Rules of integration
+    - Linearity
+    - Integrating a constant 
+    - Power rule
+- Initial value problems
+- Definite and indefinite integrals
+Area between two curves
+
+## Problem set
+
+[Click here to see the problem set.](problem_set_algebra.qmd)
+
+## Problem set solutions
+
+[Solutions](solutions_problem_set_algebra.qmd)

@@ -1,0 +1,721 @@
+---
+format: 
+  revealjs:
+    chalkboard: true
+    slide-number: true
+    show-slide-number: print
+    theme:
+     - ucsb-media.scss
+    logo: img/bren-logo.png
+    html-math-method: mathjax
+    include-in-header:
+      - text: |
+          <script>
+          MathJax = {
+            options: {
+              menuOptions: {
+                settings: {
+                  assistiveMml: false
+                }
+              }
+            }
+          };
+          </script>
+
+---
+
+## {#title-slide data-menu-title="Title Slide" background=.white}
+
+[Intro to Integration]{.custom-title .blue-text}
+
+[Bren Calculus Workshop]{.custom-subtitle .gold}
+
+<hr class="hr-teal">
+
+[Nathaniel Grimes]{.body-text-l .center-text .blue-text}
+
+[Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
+
+[**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
+
+## {#tr data-menu-title="Team Review"}
+
+[Team Review]{.slide-title}
+
+- How did everyone feel about the problem set?
+
+- Any questions?
+
+- Discuss with Team
+
+## {#ln data-menu-title="Natural Logs"}
+
+[Natural logarithms]{.slide-title}
+
+<hr>
+
+- Inverse of exponentials
+
+:::{.center-text}
+**By Definition**
+:::
+
+$$
+\large
+e^{\ln(x)}=x
+$$
+
+::::{.columns}
+:::{.column width="50%"}
+
+```{r,fig.dim=c(5,5.5), out.width="65%"}
+library(tidyverse)
+x=seq(0,10,by=.01)
+
+y=log(x)
+
+ggplot()+
+  geom_line(aes(x=x,y=y),color="black",linewidth=3)+
+  theme_classic()+
+  theme(text=element_text(size=24))+
+  labs(x="",y="",title="Graph of ln(x)")+
+  geom_hline(yintercept = 0)
+```
+
+:::
+
+:::{.column width="50%"}
+
+:::{.center-text}
+**Properties**
+:::
+
+$\ln (e^x)=x$
+
+$\ln(xy)=\ln x+\ln y$
+
+$\ln(\frac{x}{y})=\ln x-\ln y$
+
+$\ln(x^y)=y \ln x$
+
+:::
+::::
+
+## {#d-ln data-menu-title="Natural logs"}
+
+[Derivative of Natural Log]{.slide-title}
+
+$$
+\large
+\frac{d}{dx}[\ln x]=\frac{1}{x}
+$$
+
+::::{.columns}
+:::{.column width="50%"}
+
+:::{.center-text}
+**Math uses**:
+:::
+
+- Allows us to more easily handle exponents $(e^x)$
+
+- Surprisingly simple derivative
+
+- Really important in Integration
+:::
+:::{.column width="50%"}
+
+:::{.center-text}
+**Real World Uses**
+:::
+
+
+- Time and Growth Problems
+
+- Differential Equations
+
+:::
+::::
+## {#ln-ex data-menu-title="Natural Logs"}
+
+[Examples of Natural Logs]{.slide-title}
+
+<hr>
+Solve for t in this equation:
+
+$$
+A=Pe^{rt}
+$$
+
+:::{.fragment .fade-in}
+
+$$
+\begin{align}
+\frac{A}{P}&=e^{rt} \\
+\ln(\frac{A}{P})&=rt \\
+\frac{\ln(A)-\ln(P)}{r}&=t
+\end{align}
+$$
+:::
+
+## {#ln-derv-ex data-menu-title="Natural Log"}
+
+[Find the Derivative]{.slide-title}
+
+<hr>
+
+$$
+\large
+y=\ln(x^2)
+$$
+
+:::{.fragment .fade-in}
+$$
+\begin{align}
+y=\ln(u)& &u=x^2\\
+\frac{dy}{du}&=\frac{1}{u} &\frac{du}{dx}=2x \\
+\frac{dy}{du}\frac{du}{dx}&=\frac{2x}{u} &\text{By Chain Rule}\\
+\frac{dy}{dx}&=\frac{2x}{x^2}\\
+\frac{dy}{dx}&=\frac{2}{x}\\
+\end{align}
+$$
+:::
+
+## {#ta data-menu-title="Team Assessment" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Team Assessment</div>
+</div>
+
+
+## {#ta-1 data-menu-title="Team Assessment"}
+
+1) Solve these equation
+
+$$
+\begin{align}
+\text{Differentiate: A) }f(x)=x \ln x&  &\text{B)  }5+\ln(3x)=7  &  &\text{C) } e^{5x-0.2}=10
+\end{align}
+$$
+
+2) You contribute monthly to your retirement a company. After leaving the company, you no longer contribute, but the fund continues to accrue interest until you can remove it without penalty at age 55.
+
+The increase in your funds is given by: 
+$$S=122000e^{0.032 t}$$ 
+
+where S is the amount in your retirement account t years after leaving the company.
+
+How many years after you quit will your retirement account be earning $8000/year in interest?
+
+3) Why can't logarithms have a negative x value?
+
+
+## {#integrate-concept data-menu-title="Integration" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Integration Conceputally</div>
+</div>
+
+## {#xkcd data-menu-title="Integration"}
+
+```{r out.width="55%",fig.align='center'}
+knitr::include_graphics("https://imgs.xkcd.com/comics/differentiation_and_integration.png")
+```
+
+## {#auc data-menu-title="Area under the curve"}
+
+[How do we find the area under this curve?]{.slide-title}
+
+<hr>
+
+```{r}
+knitr::include_graphics("img/area.png")
+```
+
+
+## {#rect-approx data-menu-title="Area under the curve"}
+
+[We can approximate the area by summing the area of easy to calculate rectangles]{.slide-title}
+
+<hr>
+
+```{r}
+knitr::include_graphics("img/reimann.png")
+```
+
+
+## {#rect data-menu-title="Reimann Sum"}
+
+[How do we make the rectangles]{.slide-title}
+
+<hr>
+1. Start at one end of the interval $[a,b]$
+
+2. Evaluate the function at $f(a)$
+
+3. Step away from $a$ by some small amount called $\Delta x$
+
+4. Multiply $f(a)\Delta x$
+
+5. Repeat the same steps above, but keep moving the function evaluation to new intervals
+
+6. Sum up all (k) rectangles
+
+$$
+\text{Area}=f(x_1)\Delta x+f(x_2)\Delta x+...f(x_k)\Delta x
+$$
+
+This is called a **Reimann Sum**
+
+## {#reinsum data-menu-title="Reimann Sum"}
+
+[Example of Reimann Sum]{.slide-title}
+
+<hr>
+
+Approximate the area under the curve from $[-3,3]$ with $\Delta x=1$ and $k=6$
+
+:::{.columns}
+
+:::{.column width="30%"}
+```{r}
+x=seq(-5,5,by=.1)
+y=x^3-12*x+2
+
+x_tab=seq(-3,3,by=1)
+y_tab=x_tab^3-12*x_tab+2
+
+
+data.frame(x=x_tab,y=y_tab) %>% 
+  knitr::kable()
+#DT::datatable(round(data.frame(x=x_tab,y=y_tab),2),
+              #fillContainer = FALSE, options = list(pageLength = 6))
+```
+:::
+
+:::{.column width="70%"}
+
+```{r,out.width="90%"}
+ggplot()+
+  geom_line(aes(x=x,y=y),size=2.5,color="#003660")+
+  theme_classic()+
+  annotate("segment",x=-3,xend=-3,y=11,yend=-63,linetype=1,color="#FEBC11",size=2)+
+  annotate("segment",x=3,xend=3,y=-7,yend=-63,color="#FEBC11",size=2)+
+  theme(text = element_text(size = 28))+
+  scale_y_continuous(expand=c(0,0))+
+  scale_x_continuous(breaks=seq(-5,5))
+```
+:::
+
+::::
+
+
+
+## {#exp-reimman data-menu-title="Reimann Sum"}
+
+[Expanding Reimann Sums]{.slide-title}
+
+<hr>
+
+- What if we try to make $\Delta x$ really small and the number of rectangles really big $(k\to \infty)$?
+
+- Our estimation of the Area will get better and better with more rectangles
+
+:::{.fragment .fade-in}
+
+```{r,fig.align='center'}
+knitr::include_graphics("img/riemann.gif")
+```
+:::
+
+
+
+## {#integral data-menu-title="Integrals"}
+
+[Take the limits to infinity]{.slide-title}
+
+<hr>
+
+
+Take the area calculation we did before, but with infinitely many $ks$
+
+$$
+\large
+\lim_{k\to\infty}R(f(x),\Delta x)=\text{True Area}
+$$
+
+We formally call this an integral with the following notation:
+
+$$
+\large
+\int^b_af(x)dx
+$$
+
+Verbally:
+
+*The Integral of $f(x)$ from $a$ to $b$ with respect to $x$*
+
+## {#integral-calc data-menu-title="Integrals"}
+
+[How do we calculate]{.slide-title}
+
+<hr>
+
+- Taking infinite sums is tedious to impossible by hand
+
+<br>
+
+- Luckily the $dx$ portion hints at the way to solve integrals
+
+
+## {#fundamental data-menu-title="Fundamental Theorem of Calculus"}
+
+[Fundamental Theorem of Calculus]{.slide-title}
+
+<hr>
+
+If $f(x)$ is continuous over an interval $[a,b]$, and the function $F(x)$ is defined by:
+
+$$
+\large
+F(x)=\int^x_af(t)dt
+$$
+
+then $F'(x)=f(x)$ over $[a,b]$
+
+
+## {#ftoc data-menu-title="Fundamental Theorem of Calculus"}
+
+[Fundamental Theorem of Calculus means that Integrals are just Anti-Derivatives]{.slide-title}
+
+<hr>
+If we integrate a derivative, we should get the same function back as the original vice-versa
+
+$$
+\begin{align}
+\frac{d}{dx}\left[\int f(x)dx\right]&=f(x) &\text{Differentiation is the inverse of integration}
+\end{align}
+$$
+
+:::{.fragment .fade-in}
+
+$$
+\begin{align}
+\int f'(x)&=f(x)+C &\text{Integration is the inverse of differentiation}
+\end{align}
+$$
+:::
+
+## {#c data-menu-title="Constants of Integration"}
+
+[Where the heck did that C come from?]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+- Start with $x^2-4x+1$
+
+- $\frac{d}{dx}=2x-4$
+
+- If we integrate, we'll have $x^2-4x+C$
+
+- There is no way of knowing what the x-intercept should be without additional information
+
+- We have to solve with an initial value problem
+
+:::
+:::{.column width="50%"}
+```{r,out.width="75%"}
+knitr::include_graphics("img/c.png")
+```
+:::
+::::
+
+## {#integratal-use data-menu-title="Why is Integration useful"}
+
+[Why is Integration Useful?]{.slide-title}
+
+<hr>
+- Convert from rate of changes to total values
+
+<br>
+
+- Solve Differential Equations
+
+    - i.e $\frac{dy}{dx}=2x-4$
+    
+    - Logistic Growth is one example
+    
+<br>    
+
+- Total area of curves
+
+    - Useful in policy evaluations
+
+
+
+## {#tough data-menu-title="Integration is tough"}
+
+[Integration is tough]{.slide-title}
+
+<hr>
+
+**Before integrating ask yourself:**
+
+1. What am I trying to solve?
+
+<br>
+
+2. Does it make sense to take an integral?
+
+## {#rules-cover data-menu-title="Rules of Integration" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Rules of Integration</div>
+</div>
+
+## {#sum-diff data-menu-title="Rules of Integration"}
+
+[Follow many of the same rules for derivatives]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Sum and Difference Rules**
+:::
+
+$$
+\begin{align}
+\int[f(x)+g(x)]dx=\int f(x)dx+\int g(x)dx \\
+\int[f(x)-g(x)]dx=\int f(x)dx-\int g(x)dx 
+\end{align}
+$$
+
+## {#constant data-menu-title="Rules of Integration"}
+
+[Rules of Integration]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Constant Rules**
+:::
+
+
+$$
+\begin{align}
+\int k dx&=kx+C \\
+\int kf(x)dx&=k\int f(x)dx
+\end{align}
+$$
+
+- Second part says we can move multipliers outside the integration to simplify. 
+
+## {#power data-menu-title="Rules of Integration"}
+
+[Rules of Integration]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Power Rule**
+:::
+
+$$
+\int x^ndx=\frac{x^{n+1}}{n+1}+C \text{, n}\ne1
+$$
+
+- Workhorse rule of integration
+
+## {#examples data-menu-title="Examples of Integration"}
+
+[Examples]{.slide-title}
+
+<hr>
+
+$$
+\begin{align}
+f(x)&=4 & &g(x)=2x^2  &f(x)=x^3-4x
+\end{align}
+$$
+
+## {#ivp data-menu-title="Initial Value Problems"}
+
+[Initial Value Problems]{.slide-title}
+
+<hr>
+
+```{r,fig.align='center',out.width="80%"}
+knitr::include_graphics("img/increase.PNG")
+```
+
+
+- To find the C terms, we need extra information
+
+- Often times that comes from being given an *initial value*
+
+- The start of the period we know that $y(0)=a$ or $y(12)=b$
+
+- We use this information to solve for what C should be
+
+
+
+## {#ivp-ex  data-menu-title="Initial Value Problem"}
+
+[Initial Value Problem: Example]{.slide-title}
+
+<hr>
+
+The marginal cost of producing $x$ units of a product is:
+
+$$
+\frac{dC}{dx}=25-0.02x
+$$
+
+Where C is the cost ($), and x is the number of units produced. Given that producing 2 units of product costs \$10, what is the complete cost equation?
+
+:::{.fragment .fade-in}
+
+$$
+\begin{align}
+C(x)=&25x-\frac{.02x^2}{2}+D & \text{Solve with Power Rule}\\
+10&=25(2)-\frac{0.02(2)^2}{2}+D  &\text{ Sub in x=2}\\
+-39.96&=D\\
+C(x)&=25x-\frac{0.2x^2}{2}-39.96
+\end{align}
+$$
+:::
+
+## {#definte data-menu-title="Definite vs Indefinite"}
+
+[Definite vs indefinite integrals]{.slide-title}
+
+<hr>
+
+::::{.columns}
+
+:::{.column width="50%"}
+
+- Definite integrals have start and end values (aka bounds)
+
+- We must evaluate between the intervals by
+
+$$
+\begin{align}
+\int^b_axdx\\
+\frac{1}{2}x^2|^b_a\\
+\frac{1}{2}(b)^2-\frac{1}{2}(a)^2
+\end{align}
+$$
+
+:::
+
+:::{.column width="50%"}
+- Indefinite Integrals no bounds 
+
+- Need initial values to find integration constants
+
+$$
+\int f(x)dx
+$$
+
+:::
+::::
+
+## {#def-solve data-menu-title="Definite Integral"}
+
+[Definite Integral: Example]{.slide-title}
+
+<hr>
+$$
+\begin{align}
+\int^2_{-1}3x^2dx \\
+x^3|^2_{-1}\\
+(2)^3-(-1)^3=9
+\end{align}
+$$
+
+
+## {#area data-menu-title="Area between Curves"}
+
+[Area between curves]{.slide-title}
+
+<hr>
+
+```{r,out.width="80%"}
+knitr::include_graphics("img/twocurve.png")
+```
+
+
+## {#area-ex1 data-menu-title="Area between curves"}
+
+[Area between curves example]{.slide-title}
+
+<hr>
+
+Find the area of the shaded region in the graph below
+
+```{r}
+knitr::include_graphics("img/diffxtwo.gif")
+```
+
+## {#area-ex2 data-menu-title="Area between curves"}
+
+[Area between curves example]{.slide-title}
+
+<hr>
+
+$$
+\small
+\begin{align}
+\int^1_0 \sqrt{x}=\frac{2}{3}x^\frac{3}{2} \\
+\int^1_0 x^2=\frac{1}{3}x^3
+\end{align}
+$$
+
+:::{.fragment .fade-in}
+
+- Then get the area of each by solving the definite integral
+
+$$
+\small
+\begin{align}
+\frac{2}{3}(1)^{\frac{3}{2}}-\frac{2}{3}(0)^{\frac{3}{2}}=\frac{2}{3}\\
+\frac{1}{3}(1)^3-\frac{1}{3}(0)^3=\frac{1}{3}
+\end{align}
+$$
+
+:::
+
+:::{.fragment .fade-in}
+
+- Then subtract the upper from the lower
+
+$$
+\small
+\frac{2}{3}-\frac{1}{3}=\frac{1}{3}
+$$
+
+:::
+
+
+## {#ta-2 data-menu-title="Team Assessment" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Team Assessment</div>
+</div>
+
+## {#ta2-1 data-menu-title="Team Assessment 2 Questions"}
+
+1) Explain and demonstrate how to approximate the area under the curve $f(x)=-9x^3+3x-9$ on the interval [4,10] using a Riemann sum with $k=3$
+
+2) Take the Integrals
+
+$$
+\begin{align}
+\text{A) }y=\frac{3}{x^2}, y(0)=5&  &\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\text{C) } \int^4_2\frac{1}{2}x
+\end{align}
+$$
+
+3) A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$. Where $C$ is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?
