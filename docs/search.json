@@ -1,356 +1,849 @@
 [
   {
-    "objectID": "notes/day4_integrals/day4_integrals.html",
-    "href": "notes/day4_integrals/day4_integrals.html",
-    "title": "Day 4: Integrals",
+    "objectID": "notes/day4_integrals/problem_set_integrals.html",
+    "href": "notes/day4_integrals/problem_set_integrals.html",
+    "title": "Calculus Workshop",
     "section": "",
-    "text": "Day 4: Integrals",
+    "text": "Answer the following questions to the best of your ability. Feel free to work with anyone in the cohort, though I would encourage attempting on your own first to make sure you fully understand the concepts."
+  },
+  {
+    "objectID": "notes/day4_integrals/problem_set_integrals.html#solve-for-x",
+    "href": "notes/day4_integrals/problem_set_integrals.html#solve-for-x",
+    "title": "Calculus Workshop",
+    "section": "1) Solve for x",
+    "text": "1) Solve for x\n\\(ln(x+2)=12\\)\n\\(e^{3x+1}=16\\)\n\\(6e^{4x}=41e^{2x}\\)"
+  },
+  {
+    "objectID": "notes/day4_integrals/problem_set_integrals.html#find-the-derivative",
+    "href": "notes/day4_integrals/problem_set_integrals.html#find-the-derivative",
+    "title": "Calculus Workshop",
+    "section": "2) Find the derivative:",
+    "text": "2) Find the derivative:\n\\[\nG(a)=\\frac{2\\ln(4a-2)}{e^{3a}}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/problem_set_integrals.html#section",
+    "href": "notes/day4_integrals/problem_set_integrals.html#section",
+    "title": "Calculus Workshop",
+    "section": "1)",
+    "text": "1)\nThe marginal benefit of abatement (e.g. reducing) for carbon is given by:\n\\[\nMB=31-2Q\n\\]\nHowever there is also a marginal cost for carbon abatement given by:\n\\[\nMC=6+3Q\n\\]\nFind the total net benefit of carbon abatement to society at equilibrium. (Hint: To get equilibrium and the bounds of the integral, first set marginal benefit equal to marginal cost and solve for \\(Q^*\\). Then your integral bounds should be from 0 to \\(Q^*\\))"
+  },
+  {
+    "objectID": "notes/day4_integrals/problem_set_integrals.html#section-1",
+    "href": "notes/day4_integrals/problem_set_integrals.html#section-1",
+    "title": "Calculus Workshop",
+    "section": "2)",
+    "text": "2)\nTake the Integrals\n\\[\\begin{align}\n\\text{A) }y=\\frac{3}{x^2}, y(0)=5&  &\\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\\text{C) } \\int^4_2\\frac{1}{2}x\n\\end{align}\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/problem_set_integrals.html#section-2",
+    "href": "notes/day4_integrals/problem_set_integrals.html#section-2",
+    "title": "Calculus Workshop",
+    "section": "3)",
+    "text": "3)\nA model for the rate of change in ozone concentrations over time between 1962-1984 is given by \\(\\frac{dC}{dt}=2t+20\\). Where \\(C\\) is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#title-slide",
+    "href": "notes/day4_integrals/lecture-integrals.html#title-slide",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Introduction to Integration\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 20, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#tr",
+    "href": "notes/day4_integrals/lecture-integrals.html#tr",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Problem set review\n\n\nHow did everyone feel about the problem set?\nAny questions?"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#logarithm-motivation",
+    "href": "notes/day4_integrals/lecture-integrals.html#logarithm-motivation",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Exponential function revisited\n\nRemeber: the exponential function \\(e^x\\) is the number \\(e\\) raised to the \\(x\\) power.\n\nA reasonable question would be:\n\n\n Given \\(y\\), what is the \\(x\\) such that \\(e^x = y\\)?"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ln-blank-1",
+    "href": "notes/day4_integrals/lecture-integrals.html#ln-blank-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Natural logarithms"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ln-blank-2",
+    "href": "notes/day4_integrals/lecture-integrals.html#ln-blank-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Natural logarithms\n\nIf \\(y&gt;0\\) then \\(\\ln(x)\\) is the exponent you need to raise \\(e\\) to in order to get \\(y\\).\nThis means:\n\\[\n\\begin{align}\n\\ln(e^x) &= x \\\\\ne^{\\ln(y)} &= y\n\\end{align}\n\\]\nIn other words, \\(\\ln(x)\\) is the inverse of the exponential function \\(e^x\\).\n\nExamples\n\n\\(\\ln(e^3)\\)\n\\(\\ln(\\frac{1}{e})\\)\n\\(\\ln(1)\\)\n\\(\\ln(0)\\)\n\\(\\ln(-7)\\)"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ln",
+    "href": "notes/day4_integrals/lecture-integrals.html#ln",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Natural log properties\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProperties\n\n\\(\\ln (e^x)=x\\)\n\\(\\ln(xy)=\\ln x+\\ln y\\)\n\\(\\ln(\\frac{x}{y})=\\ln x-\\ln y\\)\n\\(\\ln(x^y)=y \\ln x\\)"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ln-ex-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#ln-ex-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Using logarithms to solve equations\n\n✏️ Solve for \\(t\\) in the equation \\(Pe^{rt} = A\\).\n\n\n\n\n\nProperties\n\n\\(\\ln (e^x)=x\\)\n\\(\\ln(xy)=\\ln x+\\ln y\\)\n\\(\\ln(\\frac{x}{y})=\\ln x-\\ln y\\)\n\\(\\ln(x^y)=y \\ln x\\)"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ln-ex",
+    "href": "notes/day4_integrals/lecture-integrals.html#ln-ex",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Using logarithms to solve equations\n\n✏️ Solve for \\(t\\) in the equation \\(Pe^{rt} = A\\).\n\\[\n\\begin{align}\nPe^{rt} &= A \\\\\ne^{rt} & = \\frac{A}{P} \\\\\nrt &= \\ln\\left(\\frac{A}{P}\\right) \\\\\nt &= \\frac{\\ln(A)-\\ln(P)}{r}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#d-ln-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#d-ln-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Derivative of Natural Log"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#d-ln",
+    "href": "notes/day4_integrals/lecture-integrals.html#d-ln",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Derivative of natural log\n\nThe derivative of the natural logarithm is\n\\[\n\\large\n\\frac{d}{dx}\\ln x=\\frac{1}{x}\n\\]\n\n\n\nMath uses:\n\n\nAllows us to more easily handle exponents \\((e^x)\\)\nSurprisingly simple derivative!\nImportant in integration\n\n\n\nReal World Uses\n\n\nTime and growth Problems\nDifferential equations"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ln-derv-ex-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#ln-derv-ex-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example\n\n✏️ Find the derivative of \\(y=\\ln(x^2)\\)."
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ln-derv-ex",
+    "href": "notes/day4_integrals/lecture-integrals.html#ln-derv-ex",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example\n\n✏️ Find the derivative of \\(y=\\ln(x^2)\\).\nA solution with \\(u\\)-substitution.\n\\[\n\\begin{align}\ny=\\ln(u)& &u=x^2\\\\\n\\frac{dy}{du}&=\\frac{1}{u} &\\frac{du}{dx}=2x \\\\\n\\frac{dy}{du}\\frac{du}{dx}&=\\frac{2x}{u} &\\text{By Chain Rule}\\\\\n\\frac{dy}{dx}&=\\frac{2x}{x^2}\\\\\n\\frac{dy}{dx}&=\\frac{2}{x}\\\\\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ta",
+    "href": "notes/day4_integrals/lecture-integrals.html#ta",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ta-1",
+    "href": "notes/day4_integrals/lecture-integrals.html#ta-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solve these equations\n\n\\[\n\\begin{align}\n\\text{A)  }5+\\ln(3x)=7  &  &\\text{B) } e^{5x-0.2}=10\n\\end{align}\n\\]\n\n\nFind the derivative of \\(f(x)=x \\ln x.\\)\n\n\n\nThe popuplation \\(P(t)\\) of an invasive plant species in a wetland (in thousands of individuals) grows according to \\[P(t) = 200\\ln(1+0.5 t) + 50 \\] where \\(t\\) is time in months.\n\n\nWhat is the initial population at \\(t=0\\)?\nFind the instantaneous growth rate of the population at \\(t=6\\)."
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#solutions-1",
+    "href": "notes/day4_integrals/lecture-integrals.html#solutions-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solutions\n\n\n\n\n\n\n\\[\n\\begin{align}\n5 + \\ln(3x) &= 7 \\\\\n\\ln(3x) &= 2 \\\\\n3x &= e^2 \\\\\nx & = \\frac{e^2}{3} \\\\\n\\end{align}\n\\]\n\n\n\n\n\\[\n\\begin{align}\ne^{5x-0.2} &= 10 \\\\\n\\ln(e^{5x-0.2}) &= \\ln(10) \\\\\n5x-0.2 &= \\ln(10) \\\\\n5x &= \\ln(10) + 0.2 \\\\\nx &= \\frac{\\ln(10) + 0.2}{5}\n\\end{align}\n\\]\n\n\n\n\nTo take the derivative of \\(f(x) = x\\ln(x)\\) we can use the product rule: \\((fg)' = f'g + fg'\\). Using this we have that\n\\[\nf'(x) = 1\\ln(x) + x\\frac{1}{x} = \\ln(x) + 1.\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#solutions-2",
+    "href": "notes/day4_integrals/lecture-integrals.html#solutions-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solutions\n\n\nThe popuplation \\(P(t)\\) of an invasive plant species in a wetland (in thousands of individuals) grows according to \\[P(t) = 200\\ln(1+0.5 t) + 50 \\] where \\(t\\) is time in months.\n\n1. Initial population at \\(t = 0\\)\n\\[\n\\begin{aligned}\nP(0) &= 200 \\, \\ln(1 + 0.5 \\cdot 0) + 50 \\\\\n      &= 200 \\, \\ln(1) + 50 \\\\\n      &= 0 + 50 \\\\\n      &= 50\n\\end{aligned}\n\\]\nThe initial population is 50,000 individuals.\n2. Instantaneous growth rate at \\(t = 6\\) months\nThe derivative of \\(P(t)\\) is:\n\\[\n\\begin{aligned}\nP'(t) &= \\frac{d}{dt} \\big[200 \\, \\ln(1 + 0.5 t) + 50 \\big] \\\\\n      &= 200 \\cdot \\frac{1}{1 + 0.5 t} \\cdot 0.5 \\\\\n      &= \\frac{100}{1 + 0.5 t}\n\\end{aligned}\n\\]\nAt \\(t = 6\\):\n\\[\n\\begin{aligned}\nP'(6) &= \\frac{100}{1 + 0.5 \\cdot 6} \\\\\n       &= \\frac{100}{1 + 3} \\\\\n       &= \\frac{100}{4} \\\\\n       &= 25\n\\end{aligned}\n\\]\nThe population is growing at 25,000 individuals per month at \\(t = 6\\)."
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#integrate-concept",
+    "href": "notes/day4_integrals/lecture-integrals.html#integrate-concept",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Integration Conceputally"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#auc",
+    "href": "notes/day4_integrals/lecture-integrals.html#auc",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "How do we find the area under this curve?"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#rect-approx",
+    "href": "notes/day4_integrals/lecture-integrals.html#rect-approx",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "We can approximate the area by summing the area of easy to calculate rectangles"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#rect",
+    "href": "notes/day4_integrals/lecture-integrals.html#rect",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "How do we make the rectangles\n\n\nStart at one end of the interval \\([a,b]\\)\nEvaluate the function at \\(f(a)\\)\nStep away from \\(a\\) by some small amount called \\(\\Delta x\\)\nMultiply \\(f(a)\\Delta x\\)\nRepeat the same steps above, but keep moving the function evaluation to new intervals\nSum up all (k) rectangles\n\n\\[\n\\text{Area}=f(x_1)\\Delta x+f(x_2)\\Delta x+...f(x_k)\\Delta x\n\\]\nThis is called a Reimann Sum"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#reinsum",
+    "href": "notes/day4_integrals/lecture-integrals.html#reinsum",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example of Reimann Sum\n\nApproximate the area under the curve from \\([-3,3]\\) with \\(\\Delta x=1\\) and \\(k=6\\)\n\n\n\n\n\n\n\nx\ny\n\n\n\n\n-3\n11\n\n\n-2\n18\n\n\n-1\n13\n\n\n0\n2\n\n\n1\n-9\n\n\n2\n-14\n\n\n3\n-7"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#exp-reimman",
+    "href": "notes/day4_integrals/lecture-integrals.html#exp-reimman",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Expanding Reimann Sums\n\n\nWhat if we try to make \\(\\Delta x\\) really small and the number of rectangles really big \\((k\\to \\infty)\\)?\nOur estimation of the Area will get better and better with more rectangles"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#integral",
+    "href": "notes/day4_integrals/lecture-integrals.html#integral",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Take the limits to infinity\n\nTake the area calculation we did before, but with infinitely many \\(ks\\)\n\\[\n\\large\n\\lim_{k\\to\\infty}R(f(x),\\Delta x)=\\text{True Area}\n\\]\nWe formally call this an integral with the following notation:\n\\[\n\\large\n\\int^b_af(x)dx\n\\]\nVerbally:\nThe Integral of \\(f(x)\\) from \\(a\\) to \\(b\\) with respect to \\(x\\)"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#integral-calc",
+    "href": "notes/day4_integrals/lecture-integrals.html#integral-calc",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "How do we calculate\n\n\nTaking infinite sums is tedious to impossible by hand\n\n\n\nLuckily the \\(dx\\) portion hints at the way to solve integrals"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#fundamental",
+    "href": "notes/day4_integrals/lecture-integrals.html#fundamental",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Fundamental Theorem of Calculus\n\nIf \\(f(x)\\) is continuous over an interval \\([a,b]\\), and the function \\(F(x)\\) is defined by:\n\\[\n\\large\nF(x)=\\int^x_af(t)dt\n\\]\nthen \\(F'(x)=f(x)\\) over \\([a,b]\\)"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ftoc",
+    "href": "notes/day4_integrals/lecture-integrals.html#ftoc",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Fundamental Theorem of Calculus means that Integrals are just Anti-Derivatives\n\nIf we integrate a derivative, we should get the same function back as the original vice-versa\n\\[\n\\begin{align}\n\\frac{d}{dx}\\left[\\int f(x)dx\\right]&=f(x) &\\text{Differentiation is the inverse of integration}\n\\end{align}\n\\]\n\n\\[\n\\begin{align}\n\\int f'(x)&=f(x)+C &\\text{Integration is the inverse of differentiation}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#c",
+    "href": "notes/day4_integrals/lecture-integrals.html#c",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Where the heck did that C come from?\n\n\n\n\nStart with \\(x^2-4x+1\\)\n\\(\\frac{d}{dx}=2x-4\\)\nIf we integrate, we’ll have \\(x^2-4x+C\\)\nThere is no way of knowing what the x-intercept should be without additional information\nWe have to solve with an initial value problem"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#integratal-use",
+    "href": "notes/day4_integrals/lecture-integrals.html#integratal-use",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Why is Integration Useful?\n\n\nConvert from rate of changes to total values\n\n\n\nSolve Differential Equations\n\ni.e \\(\\frac{dy}{dx}=2x-4\\)\nLogistic Growth is one example\n\n\n\n\nTotal area of curves\n\nUseful in policy evaluations"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#tough",
+    "href": "notes/day4_integrals/lecture-integrals.html#tough",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Integration is tough\n\nBefore integrating ask yourself:\n\nWhat am I trying to solve?\n\n\n\nDoes it make sense to take an integral?"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#rules-cover",
+    "href": "notes/day4_integrals/lecture-integrals.html#rules-cover",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules of Integration"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#sum-diff",
+    "href": "notes/day4_integrals/lecture-integrals.html#sum-diff",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Follow many of the same rules for derivatives\n\n\nSum and Difference Rules\n\n\\[\n\\begin{align}\n\\int[f(x)+g(x)]dx=\\int f(x)dx+\\int g(x)dx \\\\\n\\int[f(x)-g(x)]dx=\\int f(x)dx-\\int g(x)dx\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#constant",
+    "href": "notes/day4_integrals/lecture-integrals.html#constant",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules of Integration\n\n\nConstant Rules\n\n\\[\n\\begin{align}\n\\int k dx&=kx+C \\\\\n\\int kf(x)dx&=k\\int f(x)dx\n\\end{align}\n\\]\n\nSecond part says we can move multipliers outside the integration to simplify."
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#power",
+    "href": "notes/day4_integrals/lecture-integrals.html#power",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules of Integration\n\n\nPower Rule\n\n\\[\n\\int x^ndx=\\frac{x^{n+1}}{n+1}+C \\text{, n}\\ne1\n\\]\n\nWorkhorse rule of integration"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#examples",
+    "href": "notes/day4_integrals/lecture-integrals.html#examples",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Examples\n\n\\[\n\\begin{align}\nf(x)&=4 & &g(x)=2x^2  &f(x)=x^3-4x\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ivp",
+    "href": "notes/day4_integrals/lecture-integrals.html#ivp",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Initial Value Problems\n\n\n\nTo find the C terms, we need extra information\nOften times that comes from being given an initial value\nThe start of the period we know that \\(y(0)=a\\) or \\(y(12)=b\\)\nWe use this information to solve for what C should be"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ivp-ex",
+    "href": "notes/day4_integrals/lecture-integrals.html#ivp-ex",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Initial Value Problem: Example\n\nThe marginal cost of producing \\(x\\) units of a product is:\n\\[\n\\frac{dC}{dx}=25-0.02x\n\\]\nWhere C is the cost ($), and x is the number of units produced. Given that producing 2 units of product costs $10, what is the complete cost equation?\n\n\\[\n\\begin{align}\nC(x)=&25x-\\frac{.02x^2}{2}+D & \\text{Solve with Power Rule}\\\\\n10&=25(2)-\\frac{0.02(2)^2}{2}+D  &\\text{ Sub in x=2}\\\\\n-39.96&=D\\\\\nC(x)&=25x-\\frac{0.2x^2}{2}-39.96\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#definte",
+    "href": "notes/day4_integrals/lecture-integrals.html#definte",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Definite vs indefinite integrals\n\n\n\n\nDefinite integrals have start and end values (aka bounds)\nWe must evaluate between the intervals by\n\n\\[\n\\begin{align}\n\\int^b_axdx\\\\\n\\frac{1}{2}x^2|^b_a\\\\\n\\frac{1}{2}(b)^2-\\frac{1}{2}(a)^2\n\\end{align}\n\\]\n\n\nIndefinite Integrals no bounds\nNeed initial values to find integration constants\n\n\\[\n\\int f(x)dx\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#def-solve",
+    "href": "notes/day4_integrals/lecture-integrals.html#def-solve",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Definite Integral: Example\n\n\\[\n\\begin{align}\n\\int^2_{-1}3x^2dx \\\\\nx^3|^2_{-1}\\\\\n(2)^3-(-1)^3=9\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#area",
+    "href": "notes/day4_integrals/lecture-integrals.html#area",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Area between curves"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#area-ex1",
+    "href": "notes/day4_integrals/lecture-integrals.html#area-ex1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Area between curves example\n\nFind the area of the shaded region in the graph below"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#area-ex2",
+    "href": "notes/day4_integrals/lecture-integrals.html#area-ex2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Area between curves example\n\n\\[\n\\small\n\\begin{align}\n\\int^1_0 \\sqrt{x}=\\frac{2}{3}x^\\frac{3}{2} \\\\\n\\int^1_0 x^2=\\frac{1}{3}x^3\n\\end{align}\n\\]\n\n\nThen get the area of each by solving the definite integral\n\n\\[\n\\small\n\\begin{align}\n\\frac{2}{3}(1)^{\\frac{3}{2}}-\\frac{2}{3}(0)^{\\frac{3}{2}}=\\frac{2}{3}\\\\\n\\frac{1}{3}(1)^3-\\frac{1}{3}(0)^3=\\frac{1}{3}\n\\end{align}\n\\]\n\n\n\nThen subtract the upper from the lower\n\n\\[\n\\small\n\\frac{2}{3}-\\frac{1}{3}=\\frac{1}{3}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ta-2",
+    "href": "notes/day4_integrals/lecture-integrals.html#ta-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ta2-1",
+    "href": "notes/day4_integrals/lecture-integrals.html#ta2-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Explain and demonstrate how to approximate the area under the curve \\(f(x)=-9x^3+3x-9\\) on the interval [4,10] using a Riemann sum with \\(k=3\\)\nTake the Integrals\n\n\\[\n\\begin{align}\n\\text{A) }y=\\frac{3}{x^2}, y(0)=5&  &\\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\\text{C) } \\int^4_2\\frac{1}{2}x\n\\end{align}\n\\]\n\nA model for the rate of change in ozone concentrations over time between 1962-1984 is given by \\(\\frac{dC}{dt}=2t+20\\). Where \\(C\\) is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?"
+  },
+  {
+    "objectID": "notes/day3_derivatives/day3_derivatives.html",
+    "href": "notes/day3_derivatives/day3_derivatives.html",
+    "title": "Day 3: Derivatives",
+    "section": "",
+    "text": "Limits lecture slides\nContents\n\nProduct rule\nQuotient rule\nChain rule\nThe number \\(e\\) and exponential functions\nDerivative of exponential functions\nHigher order derivatives\nApplications of derivatives\nCritical points and local maxima and minima\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
     "crumbs": [
-      "Day 4: Integrals"
+      "Day 3: Derivatives"
     ]
   },
   {
-    "objectID": "notes/day3_derivatives/solutions_problem_set_derivative.html",
-    "href": "notes/day3_derivatives/solutions_problem_set_derivative.html",
+    "objectID": "notes/day3_derivatives/day3_derivatives.html#lecture-materials",
+    "href": "notes/day3_derivatives/day3_derivatives.html#lecture-materials",
+    "title": "Day 3: Derivatives",
+    "section": "",
+    "text": "Limits lecture slides\nContents\n\nProduct rule\nQuotient rule\nChain rule\nThe number \\(e\\) and exponential functions\nDerivative of exponential functions\nHigher order derivatives\nApplications of derivatives\nCritical points and local maxima and minima",
+    "crumbs": [
+      "Day 3: Derivatives"
+    ]
+  },
+  {
+    "objectID": "notes/day3_derivatives/day3_derivatives.html#problem-set",
+    "href": "notes/day3_derivatives/day3_derivatives.html#problem-set",
+    "title": "Day 3: Derivatives",
+    "section": "",
+    "text": "Click here to see the problem set.",
+    "crumbs": [
+      "Day 3: Derivatives"
+    ]
+  },
+  {
+    "objectID": "notes/day3_derivatives/day3_derivatives.html#problem-set-solution",
+    "href": "notes/day3_derivatives/day3_derivatives.html#problem-set-solution",
+    "title": "Day 3: Derivatives",
+    "section": "",
+    "text": "Solutions",
+    "crumbs": [
+      "Day 3: Derivatives"
+    ]
+  },
+  {
+    "objectID": "notes/day3_derivatives/problem_set_derivatives.html",
+    "href": "notes/day3_derivatives/problem_set_derivatives.html",
     "title": "Solutions: Derivatives Problem Set",
     "section": "",
     "text": "Answer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!"
   },
   {
-    "objectID": "notes/day3_derivatives/solutions_problem_set_derivative.html#derivative-rules",
-    "href": "notes/day3_derivatives/solutions_problem_set_derivative.html#derivative-rules",
+    "objectID": "notes/day3_derivatives/problem_set_derivatives.html#derivative-rules",
+    "href": "notes/day3_derivatives/problem_set_derivatives.html#derivative-rules",
     "title": "Solutions: Derivatives Problem Set",
     "section": "Derivative Rules",
-    "text": "Derivative Rules\n\nExplain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (constant, multiple, sum, product, chain, etc.) you would use. For extra practice, have a try at solving them!\n\n\n\\(\\large f(x)=\\sqrt{(x+3)}\\)\n\n We can use chain rule to compute this one, with the outer function being \\(\\sqrt(u)\\) and ithe inner function being \\(x+3\\). We can compute each of these derivatives using the power rule. We obtain that&lt;&gt;\n \\[\nf'(x)=\\frac{1}{2\\sqrt{(x+3)}}\n\\] \n\n\\(h(a)=\\frac{\\exp^{-a}}{a^2-5}\\)\n\n First we would use the quotient rule then to solve for the individual derivatives. The individual derivatives will require us to use the chain rule (for the numerator) and the power rule (for the denominator). We obtain that \n \\[\nh'(a)=\\frac{-(a^2-5)e^{-a}-(2a)e^{-a}}{(a^2-5)^2}\n\\] \n\n\\(g(t)=\\left(\\frac{5t^3+2}{2(t^2-2)}\\right)^6\\)\n\n First chain rule. In the \\(u\\)-substitution we have to use the quotient and power rules. \n \\[\\begin{align}\ng(t)&=\\left(\\frac{5t^3+2}{2(t^2-2)}\\right)^6 \\\\\ng(t)&=u(t)^6  &u=\\frac{5t^3+2}{2(t^2-2)}\\\\\ng'(t)&=6(u(t))^5\\times u'(t)  &\\frac{du}{dt}=\\frac{2(t^2-2)15t^2-4t(5t^3+2)}{(2(t^2-2))^2} \\\\\ng'(t)&=6(u(t))^5* \\frac{2(t^2-2)15t^2-4t(5t^3+2)}{(2(t^2-2))^2} \\\\\ng'(t)&=6\\left(\\frac{5t^3+2}{2(t^2-2)}\\right)^5\\frac{2(t^2-2)15t^2-4t(5t^3+2)}{(2(t^2-2))^2}\n\\end{align}\\] \n\nOn the graph, label all regions where the following statements are true:\n\n\n\\(f'(x)=0\\)\n\n We have that \\('f(x)=0\\) at \\(x=-2\\) and \\(x=2\\), these are a minima and maxima respectively. \n\n\\(f'(x)&gt;0\\) \nThe function \\(f(x)\\) has a positive derivative whenever it is increasing, this happens over the interval (-2,0). This is indicated as the blue interval on the graph below. \n\\(f'(x)&lt;0\\)\n\n The function \\(f(x)\\) has a negative derivative whenever it is decreasing, this happens over the intervals \\((-\\infty,-2)\\) and \\((0,\\infty)\\). This range is indicated by the red intervals on the graph below. \nd)\\(f''(x)&gt;0\\)\n\nThe second derivative \\(f''(x)\\) is positive whenever the function is concave up (it has a U shape). The points at which the graph changes concavity are called inflection points. We can estimate the function is concave up whenever \\(x&lt;-1\\). \n\n\\(f''(x)&lt;0\\)\n\n The second derivative \\(f''(x)\\) is negative whenever the function is concave down (it has an upside-down U shape). The points at which the graph changes concavity are called inflection points. We can estimate the function is concave down whenever \\(x&gt;-1\\). \n\n\n\n\n\nThe color bars correspond to the verbal statements and their colors in answer key above\n\n\n\n\n\nFind the derivative of these equations\n\n\n\\(f(x)=e^{x^2+3}\\)\n\n \\[\nf'(x)=2x e^{x^2+3}\n\\] \n\n\\(f(x)=\\sqrt(2x)(x^3-4x+15)\\)\n\n \\[\nf'(x) =\\frac{1}{\\sqrt{2x}}(x^3-4x+15)+\\sqrt{2x}(3x^2-4)\n\\] \n\n\\(f(x)=\\frac{x^3+2x}{x-1}\\)\n\n \\[\nf'(x)=\\frac{(x-1)(3x^2+2)-(x^3+2x)(1)}{(x-1)^2}\n\\] \n\nFind the critical points of the following function and determine whether they are maxima or minima:\n\n\\[\nf(x) = 2x^3-5x^2+3x-12.\n\\]\n To do this we neeed to first find the critical points by solving \\(f'(x)=0\\) and then use the second derivative test on the critical points we find to determine if they are a maxima or a minima. Computing the first derivative using the power rule we have that \n \\[\nf'(x)=6x^2-10x+3=0\n\\] \n Then, using the quadratic formula to solve this equation we get that the critical points of \\(f(x)\\) are \\(x\\approx 1.27\\) and \\(x\\approx 0.39\\). \n Next, the second derivative is \\(f''(x)=12x-10\\), and evaluating this at the critical points we get that \\[f''(1.27)&gt;0 \\ \\text{ and } \\ f''(0.39)&lt;0\\] \n Therefore, based on the first and second order conditions, there are two optimas for this function at \\(x\\approx 1.27\\) and \\(x\\approx 0.39\\). Plugging these values into the second order derivative we can see that \\(x\\approx 0.39\\) is a maximum and \\(x\\approx 1.27\\) is a minimum. \n\n\n\nLet’s solve the canonical Gordon-Schaefer fisheries production model. This model formed the basis of fisheries management for half a century and is still a widely used model. It starts by defining the change in the abundance or biomass of fish by the logistic growth equation:\n\\[\\begin{equation}\n\\frac{dB}{dt}=rB(t)(1-\\frac{B(t)}{K})\n\\end{equation}\\]\nwhere \\(B\\) is biomass, \\(t\\) is time, \\(r\\) is the intrinsic growth rate, and \\(K\\) is the carrying capacity.\nNext, fishers catch fish based on their effort \\(E\\) (constant), technological ability \\(q\\) (constant as well and also called the catchability coefficient), and the amount of fish \\(B\\). For simplicity, we use an easy multiplicative form:\n\\[\nY(t)=qEB(t)\n\\]\nThis catch rate takes away from the growth of the fish stock, thus we can subtract it from the logistic growth equation 1.\n\\[\\begin{equation}\n\\frac{dB}{dt}=rB(t)(1-\\frac{B(t)}{K})-Y(t)\n\\end{equation}\\]\na) Fishery managers are interested in finding the equilibrium level of biomass and harvest. We can set \\(\\frac{dB}{dt}=0\\). Solve for the equilibrium biomass in terms of K,q,r,E.\n Substituting \\(Y(t)\\) in \\(\\frac{dB}{dt}\\) and solving for B we obtain: \\[\n\\begin{align}\n0&=rB(1-\\frac{B}{K})-qEB \\\\\nqEB&=rB(1-\\frac{B}{K})\\\\\nqE&=r(1-\\frac{B}{K})\\\\\n\\frac{rB}{K}&=r-qE \\\\\nB&=K(1-\\frac{qE}{r}).\n\\end{align}\n\\] \nb) Substitute the equilibrium biomass you found in (a) into the catch equation.\n Making this substitution we obtain \\[\n\\begin{align}\nY&=qEB \\\\\n&=qEK(1-\\frac{qE}{r})\\\\\n&=qEK-\\frac{q^2E^2K}{r}.\n\\end{align}\n\\] \nc) What effort leads to a maximum sustainable yield? Maximize the equation from b) with respect to effort \\(E\\).\n Let’s take the derivative of the previous equation with respet to \\(E\\): \\[\n\\begin{align}\n\\frac{dY}{dE}&= \\frac{d}{dE} qEK-\\frac{q^2E^2K}{r}\\\\\n   &= qK-\\frac{2q^2EK}{r}.\n\\end{align}\n\\] \n To find the effort \\(E\\) that leads to the maximum yield we find the critical points: \\[\n\\begin{align}\nqK-\\frac{2q^2EK}{r} = 0 &\\Rightarrow qK =\\frac{2q^2EK}{r} \\\\\n                        &\\Rightarrow  E^* = \\frac{r}{2q}.\n\\end{align}\n\\] \nd) Interpret what you found in c). What are the two variables that drive fisher harvest levels?\n The amount of effort that leads to the most amount of catch is driven entirely by the rate of growth of fish stocks and the ability of fishers to catch them. If \\(q\\) catchability goes up, fishers become more efficient and need less effort to reach max harvest. Faster growing species allow for more growth and thus more effort to catch them. \ne) Calculate what is the maximum sustainable yield by substituting the optimal harvest level into the harvest equation.\n Doing this substitution we obtain that the maximum sustainable yield is \\[\\begin{align}\nY_{\\text{max}}=\\frac{qrK}{2q}-\\frac{q^2(\\frac{r}{2q})^2K}{r}\\\\\nY_{\\text{max}}=\\frac{rK}{2}-\\frac{rK}{4}\\\\\nY_{\\text{max}}=\\frac{Kr}{4}.\n\\end{align}\\]"
+    "text": "Derivative Rules\n\nExplain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (constant, multiple, sum, product, chain, etc.) you would use. For extra practice, have a try at solving them!\n\n\\(\\large f(x)=\\sqrt(x+3)\\)\n\\(\\large h(a)=\\frac{\\exp^{-a}}{a^2-5}\\)\n\\(\\large g(t)=\\left(\\frac{5t^3+2}{2(t^2-2)}\\right)^6\\)\n\nOn the graph, label all regions where the following statements are true:\n\n\\(f'(x)=0\\)\n\\(f'(x)&gt;0\\)\n\\(f'(x)&lt;0\\)\n\\(f''(x)&gt;0\\)\n\\(f''(x)&lt;0\\)\n\n\n\n\n\n\n\n\n\n\n\n\nFind the derivative of these equations\n\n\\(f(x)=\\exp^{x^2+3}\\)\n\\(f(x)=\\sqrt(2x)(x^3-4x+15)\\)\n\\(f(x)=\\frac{x^3+2x}{x-1}\\)\n\nFind the critical points of the following function and determine whether they are maxima or minima:\n\n\\[\nf(x) = 2x^3-5x^2+3x-12.\n\\]"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#title-slide",
-    "href": "notes/day3_derivatives/lecture-derivative.html#title-slide",
+    "objectID": "notes/day3_derivatives/problem_set_derivatives.html#applications",
+    "href": "notes/day3_derivatives/problem_set_derivatives.html#applications",
+    "title": "Solutions: Derivatives Problem Set",
+    "section": "Applications",
+    "text": "Applications\n\n\n\nLet’s solve the canonical Gordon-Schaefer fisheries production model. This model formed the basis of fisheries management for half a century and is still a widely used model. It starts by defining the change in the abundance or biomass of fish by the logistic growth equation:\n\\[\\begin{equation}\n\\frac{dB}{dt}=rB(t)(1-\\frac{B(t)}{K})\n\\end{equation}\\]\nwhere \\(B\\) is biomass, \\(t\\) is time, \\(r\\) is the intrinsic growth rate, and \\(K\\) is the carrying capacity.\nNext, fishers catch fish based on their effort \\(E\\) (constant), technological ability \\(q\\) (constant as well and also called the catchability coefficient), and the amount of fish \\(B\\). For simplicity, we use an easy multiplicative form:\n\\[\nY(t)=qEB(t)\n\\]\nThis catch rate takes away from the growth of the fish stock, thus we can subtract it from the logistic growth equation 1.\n\\[\\begin{equation}\n\\frac{dB}{dt}=rB(t)(1-\\frac{B(t)}{K})-Y(t)\n\\end{equation}\\]\na) Fishery managers are interested in finding the equilibrium level of biomass and catch. We can set \\(\\frac{dB}{dt}=0\\). Solve for the equilibrium biomass in terms of K,q,r,E.\nb) Substitute the equilibrium biomass you found in A into the catch equation.\nc) What effort leads to a maximum sustainable yield? Maximize the equation from b) with respect to effort \\(E\\).\nd) Interpret what you found in c). What are the two variables that drive fisher harvest levels?\ne) Calculate what the maximum sustainable catch is by substituting the optimal harvest level into the harvest equation."
+  },
+  {
+    "objectID": "notes/day1_algebra/solutions_problem_set_algebra.html",
+    "href": "notes/day1_algebra/solutions_problem_set_algebra.html",
+    "title": "Solutions: Algebra and Graphing Problem Set",
+    "section": "",
+    "text": "Solutions: Algebra and Graphing Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\nAlgebra basics\n\nDescribe how solving for the roots of equations (the values of \\(x\\) for which a function \\(f(x)\\) satisfies \\(f(x)=0\\)) could be useful in environmental science. List at least one method to find roots of a certain kind of funciton.\n\n Finding the roots of an equation could be useful to, for example, predict when the concentration of pollutants reaches zero, or when does the cost and benefits of a program balance. Any answers in that direction could be good. \n One method for finding roots would be to use the quadratic formula if the function is a quadratic function..\n\nExpand the following expressions:\n\na. \n \\[\n\\begin{align}\n(x+2)(3x-4) &=& 3x^2-4x+6x-8 \\\\\n            &=& 3x^2+2x-8\n\\end{align}\n\\] \n b. \n \\[\n\\begin{align}\n(x^2-2y)(x+y^3) = x^3+x^2y^3-2yx-2y^4\n\\end{align}\n\\] \n\nSolve for \\(x\\) in the following equations:\n\na.\n \\[\n\\begin{align}\n2x-4=&3x+12 \\\\\n2x&=3x+16 &\\text{Add 4 to both sides}\\\\\n-x&=16 &\\text{Subtract $3x$ from both sides}\\\\\nx&=16\n\\end{align}\n\\] \nb.  \\[\n\\begin{align}\n-6ax+2b&=x-5c \\\\\n-6ax&=x-5c-2b &\\text{Subtract $2b$ from both sides} \\\\\n-6ax-x&=-5c-2b &\\text{Subtract $x$} \\\\\nx(-6a-1)&=-5c-2b &\\text{Factor out $x$}\\\\\nx&=\\frac{-5c-2b}{(-6a-1)}\n\\end{align}\n\\] \nc.  \\[\n\\begin{align}\n2x^2+3x-4&=0 \\\\\n\\frac{-(3)\\pm\\sqrt{3^2-4(2*-4)}}{2(2)}&=0 \\\\\nx_1=\\frac{-3+\\sqrt{41}}{4}&  &x_2=\\frac{-3-\\sqrt{41}}{4} \\\\\nx_1\\approx0.85 & &x_2\\approx-2.35  \n\\end{align}\n\\] \nd.  \\[\n\\begin{align}\nx^2+2x-5&=0 \\\\\n\\frac{-(-2)\\pm\\sqrt{2^2-4(1*-5)}}{2(1)}&=0 \\\\\nx_1=\\frac{2+\\sqrt{24}}{2}&  &x_2=\\frac{2-\\sqrt{24}}{2} \\\\\nx_1\\approx3.45 & &x_2\\approx-1.45  \n\\end{align}\n\\] \n\n\nStory Problems\n\nRepresentative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm=2.13 gigaton to give your answer in gigatons.\n\n\n Since the fraction of US carbon emissions will remain constant at 14% we can calculate that the US will emit 14% of the 600 ppm in 2100: \n \\[\n\\begin{align}\n600 * 0.14 &=& 84 \\text{ ppm}\\\\\n  &=& 84* 2.13 \\text{ gigaton}\\\\\n  &=& 178.92 \\text{ gigaton}\n\\end{align}\n\\] \n\nLet’s say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of \\(f(t)=\\frac{-1}{8}t^2+6t+123.83\\) where \\(t\\) is each year and \\(f(t)\\) is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?\n\nBased on the model of the scientists, we need to where the total amount of US carbon equals 0. In other words, we need to find when \\[f(t) = \\frac{1}{8}t^2+6t+123.83=0.\\]\n\n Because \\(f(t)\\) is a second degree polynomial we can use the quadratic equation to find it’s roots: \n \\[\n\\begin{align}\nt &=& \\frac{-6\\pm\\sqrt{6^2-4(\\frac{-1}{8}*123.83)}}{\\frac{-2}{8}} \\\\\nt &\\approx& 63.581 \\text{ years}\n\\end{align}\n\\] \nWe are only concerned about the postive year amounts.\n\n\nGraphs\n\nFind the slope and \\(y\\)-intercept of the following lines.\n\n\n\nShow the code\nx=seq(-5,5)\n\ny=2*x+5\n\nw=(1/3)*x-1\n\nz=x-0.5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np2&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=w),size=3,color=\"blue\")+\n  geom_line(aes(x=x,y=w),size=2,color=\"blue\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-3,3,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np3&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=z),size=3,color=\"red\")+\n  geom_line(aes(x=x,y=z),size=2,color=\"red\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,5,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p2,p3,p4,labels=c(\"A\",\"B\",\"C\",\"D\"))\n\n\n\n\n\n\n\n\n\n The slope for graph A is 2 with a \\(y\\)-intercept of 5. \n The slope for graph B is 1/3 with a \\(y\\)-intercept of -1 \n The for graph C is 1 with a \\(y\\)-intercept of -0.5 \n The slope for graph D is -3 with a \\(y\\)-intercept of 2 \n\nThe growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\n\n The average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{155-40}{8-0} = 14.375\\] \n The average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{210-200}{30-20} =1 \\] \n This tells us that the average rate of change for sharks between the ages of 0 to 8 was 14.375. For the ages, 20 to 30 the average change was 1. \n\nWhat are the units of the average slopes and why would they change for a shark as they get older?\n\n Slopes are in units of length over age, so the slope indicates the growth in centimeters every year. As animals get older, ther slow down their growth. Less energy is spent in growing and more invested in reproductive energy. \n\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n We would need to apply calculus to find the true answer, but we can approximate it reasonably well by finding the smallest possible difference between two points around age 12. In this case we can use \\(\\frac{175-172}{13-12}\\) to get an approximate instaneous rate of growth of 3 cm per year.\n\n\n\nPicture of a scalloped hammerhead shark."
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_algebra.html",
+    "href": "notes/day1_algebra/day1_algebra.html",
+    "title": "Day 1: Algebra",
+    "section": "",
+    "text": "This unit covers basic introduction of algebra and how to use graphs to convey environmental science.\n\n\nAlgebra lecture slides\nContents\n\nIntroductions\nMath in environmental science\nAlgebra review\nGraphing\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
+    "crumbs": [
+      "Day 1: Algebra"
+    ]
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_algebra.html#lecture-materials",
+    "href": "notes/day1_algebra/day1_algebra.html#lecture-materials",
+    "title": "Day 1: Algebra",
+    "section": "",
+    "text": "Algebra lecture slides\nContents\n\nIntroductions\nMath in environmental science\nAlgebra review\nGraphing",
+    "crumbs": [
+      "Day 1: Algebra"
+    ]
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_algebra.html#problem-set",
+    "href": "notes/day1_algebra/day1_algebra.html#problem-set",
+    "title": "Day 1: Algebra",
+    "section": "",
+    "text": "Click here to see the problem set.",
+    "crumbs": [
+      "Day 1: Algebra"
+    ]
+  },
+  {
+    "objectID": "notes/day1_algebra/day1_algebra.html#problem-set-solutions",
+    "href": "notes/day1_algebra/day1_algebra.html#problem-set-solutions",
+    "title": "Day 1: Algebra",
+    "section": "",
+    "text": "Solutions",
+    "crumbs": [
+      "Day 1: Algebra"
+    ]
+  },
+  {
+    "objectID": "notes/about.html",
+    "href": "notes/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site"
+  },
+  {
+    "objectID": "notes/day2_limits/problem_set_limits.html",
+    "href": "notes/day2_limits/problem_set_limits.html",
+    "title": "Limits and Derivatives Problem Set",
+    "section": "",
+    "text": "Limits and Derivatives Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\n\n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n\n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n\n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n\n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#title-slide",
+    "href": "notes/day2_limits/lecture-limits.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules and Applications of Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 19, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Limits and Intro to Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 18, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#tr",
-    "href": "notes/day3_derivatives/lecture-derivative.html#tr",
+    "objectID": "notes/day2_limits/lecture-limits.html#tr",
+    "href": "notes/day2_limits/lecture-limits.html#tr",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Team Review\n\nHow did everyone feel about the problem set?\nAny questions?\nDiscuss with team"
+    "text": "Team Review\n\n\nHow did everyone feel about the problem set?\nAny questions?\nDiscuss with study partner"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#product-rule-blank",
-    "href": "notes/day3_derivatives/lecture-derivative.html#product-rule-blank",
+    "objectID": "notes/day2_limits/lecture-limits.html#fun-bake",
+    "href": "notes/day2_limits/lecture-limits.html#fun-bake",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (4)\n\nProduct Rule"
+    "text": "Functions are like baking recipes\n\n\n\n\nAssemble all your ingredients.\n\nIn a function, these are the independent variables like \\(x\\).\n\nFollow the instructions to mix, bake, and decorate\n\nThese are the mathematical instructions in the function about how to manipulate the independent variables.\n\nEnd up with final product!\n\nThis is the ouput \\(f(x)\\) or dependent variable.\n\nTypically we use the notation \\(f(x)=x\\), but we can always use different representations like \\(g(x)=x\\) or \\(y=x\\)."
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#product-rule",
-    "href": "notes/day3_derivatives/lecture-derivative.html#product-rule",
+    "objectID": "notes/day2_limits/lecture-limits.html#function-definition",
+    "href": "notes/day2_limits/lecture-limits.html#function-definition",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (4)\n\nProduct Rule\nLet \\(f(x)\\) and \\(g(x)\\) be differentiable functions. Then\n\\[\n\\large\n\\frac{d}{dx}[f(x)*g(x)]=f(x)g'(x)+g(x)f'(x)\n\\]\nWhat this is saying:\n\nBreakdown multiplication into two separate functions\nThen take the first function times the derivative of the second, and add the second function times the derivative of the first."
+    "text": "What is a function?\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\n🤔 Are these functions?"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#prod-ex-blank",
-    "href": "notes/day3_derivatives/lecture-derivative.html#prod-ex-blank",
+    "objectID": "notes/day2_limits/lecture-limits.html#continuity",
+    "href": "notes/day2_limits/lecture-limits.html#continuity",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Product rule example\n\n✏️ Find the derivative of \\(y=2x(x^2+3x)\\)."
+    "text": "Continuity\n\nIntuitively, a function is continuous if there are no ‘breaks’ in the graph of the function. This means you are able to draw the whole graph without lifting your pencil.\nTo define it formally we need to understand limits.\n\nA function is discontinuous if it’s not continuous! So there are ‘breaks’ or ‘gaps’ in its graph.\n\n\n\n\nContinuous\n\n\n\n\n\n\n\n\nDiscontinuous"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#prod-ex",
-    "href": "notes/day3_derivatives/lecture-derivative.html#prod-ex",
+    "objectID": "notes/day2_limits/lecture-limits.html#limits",
+    "href": "notes/day2_limits/lecture-limits.html#limits",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Product rule example\n\n✏️ Find the derivative of \\(y=2x(x^2+3x)\\).\nWe have that:\n\\[\n\\begin{align}\ny&=2x(x^2+3x) \\\\[3px]\ny&=\\overbrace{2x}^{f(x)}\\overbrace{(x^2+3x)}^{g(x)} &\\text{Break into two functions}\\\\[3px]\n\\frac{dy}{dx}&=\\overbrace{2x}^{f(x)}\\overbrace{(2x+3)}^{g'(x)}+\\overbrace{2}^{f'(x)}\\overbrace{(x^2+3x)}^{g(x)} &\\text{Apply Power Rule}\\\\[3px]\n\\frac{dy}{dx}&=6x^2+12x  &\\text{Algebra clean up}\n\\end{align}\n\\]\nWhat is another way we could have computed this derivative?"
+    "text": "Limits\n\nDefinition\nWe say a number \\(L\\) is the limit of a function \\(f(x)\\) as its variable \\(x\\) approaches a number \\(c\\), if the function’s output values \\(f(x)\\) approach \\(L\\) when \\(x\\) get closer to \\(c\\).\n\nWe write this symbolically as:\n\\[\n\\large\n\\lim_{x\\to c} f(x)=L\n\\]\n\nWe read this as: “The limit of \\(f(x)\\) as \\(x\\) approaches \\(c\\) is \\(L\\).”"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#quotient-rule-blank",
-    "href": "notes/day3_derivatives/lecture-derivative.html#quotient-rule-blank",
+    "objectID": "notes/day2_limits/lecture-limits.html#lim-ex",
+    "href": "notes/day2_limits/lecture-limits.html#lim-ex",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (5)\n\nQuotient Rule"
+    "text": "Example: numerical\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\nWe need to examine the values of \\(f(x)\\) as \\(x\\) gets closer to 2 from both sides.\n\n\n\n\n\n\n\n\n\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, we say that “The limit of \\(2x^2-4\\) as \\(x\\) approaches 2 is 4” and we can write it like this:\n\\[\n\\lim_{x\\to 2}(2x^2-4)=4\n\\]"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#quotient-rule",
-    "href": "notes/day3_derivatives/lecture-derivative.html#quotient-rule",
+    "objectID": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
+    "href": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (5)\n\nQuotient Rule\n\\[\n\\large\n\\frac{d}{dx}\\left [\\frac{f(x)}{g(x)}\\right]=\\frac{g(x)f'(x)-f(x)g'(x)}{[g(x)]^2}\n\\]\nNotice:\n\nSame idea as product rule, but order matters.\nThe denominator has to be \\(g(x)\\)"
+    "text": "Example: graph\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, \\(\\lim_{x\\to 2}(2x^2-4)=4\\)."
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#quo-ex-blank",
-    "href": "notes/day3_derivatives/lecture-derivative.html#quo-ex-blank",
+    "objectID": "notes/day2_limits/lecture-limits.html#continuity-revisited",
+    "href": "notes/day2_limits/lecture-limits.html#continuity-revisited",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Quotient rule example\n\n✏️ Find the derivative of \\(y=\\frac{x^2}{(x+1)}\\)."
+    "text": "Continuity revisited\n\n\n\nA function \\(f(x)\\) is continuous at \\(x=c\\) if\n\\[\n\\lim_{x\\to c}f(x)=f(c).\n\\]\nSo, if a function is continuous, we just need to evaluate the function to obtain the limit.\nExample\n\\(f(x) = 2x^2-4\\) is a continuous function. So we can obtain the limit as \\(x\\to 2\\) by evaluating the function\n\\[\\lim_{x\\to 2}(2x^2-4)= f(2) = 4.\\]"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#quo-ex",
-    "href": "notes/day3_derivatives/lecture-derivative.html#quo-ex",
+    "objectID": "notes/day2_limits/lecture-limits.html#lim-defined",
+    "href": "notes/day2_limits/lecture-limits.html#lim-defined",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Quotient rule example\n\n✏️ Find the derivative of \\(y=\\frac{x^2}{(x+1)}\\).\n\\[\n\\begin{align}\ny &= \\frac{x^2}{(x+1)} \\\\[3px]\ny &= \\frac{\\overbrace{x^2}^{f(x)}}{\\underbrace{(x+1)}_{g(x)}} &\\text{Identify functions}\\\\[3px]\n\\frac{dy}{dx} &= \\frac{\\overbrace{(x+1)}^{g(x)}\\overbrace{2x}^{f'(x)}-\\overbrace{x^2}^{f(x)}\\overbrace{(1)}^{g'(x)}}{\\underbrace{(x+1)^2}_{[g(x)]^2}} &\\text{Quotient rule}\\\\[3px]\n\\frac{dy}{dx} &= \\frac{x^2+2x}{(x+1)^2} &\\text{Simplify} \\\\[3px]\n\\end{align}\n\\]"
+    "text": "Limit at a discontinuity\n\n\nDiscontinuous functions can still have limits at a discontinuity.\n\nExample\nLet \\[\nf(x) = x+1 , \\text{ if x $\\neq$ 2}\n\\]\n✏️ Draw a graph of \\(f(x)\\). Then try calculating \\(\\lim_{x\\to 2} f(x)\\).\n\n\n\n\n\n\n\n\n\nThe value \\(f(2)\\) may not exist, but we can still find a limit because \\(f(x)\\) consistently approaches 3 from both directions as \\(x\\to 2\\)."
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#function-composition-blank",
-    "href": "notes/day3_derivatives/lecture-derivative.html#function-composition-blank",
+    "objectID": "notes/day2_limits/lecture-limits.html#lim-discon",
+    "href": "notes/day2_limits/lecture-limits.html#lim-discon",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Composition of functions\n\nIf we have two functions \\(f\\) and \\(g\\), the composition of \\(f\\) and \\(g\\) is\n\\[f\\circ g (x) = f(g(x)).\\]\nThis means that the output of \\(g(x)\\) is now the input of \\(f(x)\\). In other words, composition of functions means applying one function to the result of another.\n\n\nExamples\n✏️ Let \\(f(x) = x^2\\) and \\(g(x) = 2x+3\\). What is \\(f\\circ g (x)\\)?\n \n✏️ Let \\(h(x) = \\sqrt{ 3x^2 + 10}\\). How can we write \\(h\\) as a composition of functions?"
+    "text": "No limit at a discontinuity\n\n\nBut other times discontinuous functions don’t have a limit at a discontinuity.\n\nExample\nThe function \\(|x|\\) is the absolute value function. It is such that\n\\[\n|x| =\n\\begin{cases}\nx, & \\text{ if } x\\geq 0 \\\\\n-x, & \\text{ if } x &lt;0\n\\end{cases}\n.\n\\]\n\n\n✏️ Is the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\n✏️ Try calculating: \\[\n\\lim_{x\\to 2}\\frac{|x-2|}{x-2}.\n\\]\n\nHint: Try to do numerical approximations or draw the graph of this function."
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#function-composition",
-    "href": "notes/day3_derivatives/lecture-derivative.html#function-composition",
+    "objectID": "notes/day2_limits/lecture-limits.html#mean-girls",
+    "href": "notes/day2_limits/lecture-limits.html#mean-girls",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Composition of functions\n\nIf we have two functions \\(f\\) and \\(g\\), the composition of \\(f\\) and \\(g\\) is\n\\[f\\circ g (x) = f(g(x)).\\]\nThis means that the output of \\(g(x)\\) is now the input of \\(f(x)\\). In other words, composition of functions means applying one function to the result of another.\n\nExamples\n✏️ Let \\(f(x) = x^2\\) and \\(g(x) = 2x+3\\). What is \\(f\\circ g (x)\\)?\nWe have that \\(f\\circ g (x)  = (2x+3)^2\\).\n✏️ Let \\(h(x) = \\sqrt{ 3x^2 + 10}\\). How can we write \\(h\\) as a composition of functions?\nIf we make \\(f(x) = \\sqrt{x}\\) and \\(g(x) = 3x^2 +10\\) then we have that \\(f\\circ g (x) = \\sqrt{ 3x^2 + 10}.\\)"
+    "text": "No limit at a discontinuity\n\nIs the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\nThis function is not even defined at \\(x=2\\) since it would require us to divide by zero, which is undefined.\n\n\nTry calculating \\(\\lim_{x\\to 2}\\frac{|x-2|}{x-2}\\).\nLet’s investigate:"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#chain-rule-blank",
-    "href": "notes/day3_derivatives/lecture-derivative.html#chain-rule-blank",
+    "objectID": "notes/day2_limits/lecture-limits.html#graph",
+    "href": "notes/day2_limits/lecture-limits.html#graph",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (6)\n\nChain Rule"
+    "text": "No limit at a discontinuity\n\nThe function \\(\\frac{|x-2|}{x-2}\\) approaches different values from either side at \\(x=2\\).\n\n\n\nTherefore… the limit does not exist!"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#chain-rule",
-    "href": "notes/day3_derivatives/lecture-derivative.html#chain-rule",
+    "objectID": "notes/day2_limits/lecture-limits.html#side-limits",
+    "href": "notes/day2_limits/lecture-limits.html#side-limits",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (6)\n\nChain Rule\n\\[\n\\large\n\\frac{d}{dx}f\\circ g(x)= \\frac{d}{dx} f(g(x)) \\frac{d}{dx}g(x)\n\\] \n\n“Take the derivative of the outermost function then multiply by the derivative of the innermost.”\nProbably the most important rule for advanced calculus!\n\n\nYou may also encounter the chain rule in this form\n\\[\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx}.\\]\nThe next example will show us what this means."
+    "text": "Side limits\n\nThough the function \\(f(x) = \\frac{|x-2|}{x-2}\\) had no limit at \\(x=2\\), it clearly was approaching certain values when we considered only values of \\(x\\) from one side or the other:\n\n\n\n\n\n\n\n\n\n\n\nIn this case we say that\n\n\n\\[\n\\lim_{x\\to 2^-} f(x) = -1\n\\]\nThe limit of \\(f(x)\\) as \\(x\\) approaches 2 from the left is -1.\n\nNotice the small - subscript on the 2.\n\n\\[\n\\lim_{x\\to 2^+} f(x) = 1\n\\]\nThe limit of \\(f(x)\\) as \\(x\\) approaches 2 from the right is 1.\n\nNotice the small + subscript on the 2."
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#chain-ex-blank",
-    "href": "notes/day3_derivatives/lecture-derivative.html#chain-ex-blank",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Chain rule example\n\n✏️ What is the derivative of \\(y = (x^3 -2)^2\\)? Let’s use a trick called \\(u\\)-substitution.\n\n\nIdentify the inner function and label it as \\(u\\). Rewrite \\(y\\) in terms of \\(u\\):\n\n \n\nTake the derivative of \\(y\\) with respect to \\(u\\) and substitute \\(u\\):\n\n \n\nAnd the derivative of \\(u\\) with respect to \\(x\\):\n\n \n\nPut everything back into the chain rule and simplify:"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#chain-ex",
-    "href": "notes/day3_derivatives/lecture-derivative.html#chain-ex",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Chain rule example\n\n✏️ What is the derivative of \\(y = (x^3 -2)^2\\)? Let’s use a trick called \\(u\\)-substitution.\n\nIdentify the inner function and label it as \\(u\\). Rewrite \\(y\\) in terms of \\(u\\):\n\n\\[\n\\begin{align}\ny &= (x^3-2)^2 \\\\\nu &= x^3-2 \\\\\ny &= u^2\n\\end{align}\n\\]\n\nTake the derivative of \\(y\\) with respect to \\(u\\) and substitute \\(u\\):\n\n\\[\\frac{dy}{du} = 2u = 2(x^3-2).\\]\n\nAnd the derivative of \\(u\\) with respect to \\(x\\):\n\n\\[\\frac{du}{dx} = 3x^2.\\]\n\nPut everything back into the chain rule and simplify:\n\n\\[\n\\begin{align}\n\\frac{dy}{dx} &= \\frac{dy}{du}\\cdot\\frac{du}{dx} \\\\\n              &= 2(x^3-2)(3x^2)\n              = 6x^5 -12x^2.\n\\end{align}\n\\]"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#number-e",
-    "href": "notes/day3_derivatives/lecture-derivative.html#number-e",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "The number \\(e\\)\n\nThe number \\(e\\) is a constant in mathematics, it is approximately \\(e\\approx 2.72\\), but really its decimals continue infinitely without any pattern.\n\nIt’s exact value can be described as \\[\ne = \\lim_{n\\to \\infty}\\left(1+\\frac{1}{n}\\right)^n.\n\\]\nLike any other number, \\(e\\) follows normal power properties\n\\[\n\\begin{align}\ne^{x+y}&=&e^x\\cdot e^y \\\\\ne^{-x}&=&\\frac{1}{e^x}\\\\\ne^{x-y}&=&\\frac{e^x}{e^y}\\\\\ne^{rx}&=&(e^x)^r\n\\end{align}\n\\]"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#exponential-function",
-    "href": "notes/day3_derivatives/lecture-derivative.html#exponential-function",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "The exponential funciton\n\nThe exponential function \\(e^x\\) is the number \\(e\\) raised to the \\(x\\) power. In function notation you may sometimes see it as\n\\[ f(x) = e^x \\ \\ \\text{ or } \\ \\ \\text{exp}(x).\\]"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#der-exp",
-    "href": "notes/day3_derivatives/lecture-derivative.html#der-exp",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Derivative of the exponential function\n\nWe have that \\[\n\\large\n\\frac{d}{dx}e^x=e^x\n\\]\nThe derivative at every point on this line is simply \\(e(x)\\)."
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#higher-order-der",
-    "href": "notes/day3_derivatives/lecture-derivative.html#higher-order-der",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Higher order derivatives\n\n\nWe can continue to take derivatives of derivatives.\nThe second derivative becomes the rate of change of the rate of change.\nIf we interpret the first derivative as velocity, then the second derivative is acceleration.\n\n\n\nNotation:\n\nFunction: \\(f(x) = y\\)\n1st derivative: \\(f'(x)\\) or \\(\\frac{dy}{dx}f\\)\n2nd derivative: \\(f''(x)\\) or \\(\\frac{d^2y}{dx^2}\\)\nnth derivative: \\(f^{(n)}(x)\\) or \\(\\frac{d^ny}{dx^n}\\)"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta",
-    "href": "notes/day3_derivatives/lecture-derivative.html#ta",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Team Assessment"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta-1-q1",
-    "href": "notes/day3_derivatives/lecture-derivative.html#ta-1-q1",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Part 1\n\n✏️ Identify which differentiation rule or rules works best for each function.\n\\[\n\\begin{align}\n\\text{A) }y=e^{\\sqrt{3x+10}} & &\\text{B)  }g(y)=\\frac{(8y+2)}{(4y+3)^3}  &  & \\text{C) }p(b)=18b\\cdot e^{2b}\n\\end{align}\n\\]"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta-1-q2",
-    "href": "notes/day3_derivatives/lecture-derivative.html#ta-1-q2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Part 2\n\n\nFind the first derivative of\n\n\\[\nf(x)=(2x-x^2)^3.\n\\]\n \n\nFind the first derivative of\n\n\\[\nf(x)=\\frac{2}{x^2+1}.\n\\]\n \n\nFind the third derivative of\n\n\\[\nf(x)=x^2(2x+1).\n\\]"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#app-derv",
-    "href": "notes/day3_derivatives/lecture-derivative.html#app-derv",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Application of Derivatives"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#exp-real-world",
-    "href": "notes/day3_derivatives/lecture-derivative.html#exp-real-world",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Exponential functions in the world\n\nInfectious diseases\n\nHuman population\n\nCommunication\n\nGrowth of renewable energy"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#log-growth",
-    "href": "notes/day3_derivatives/lecture-derivative.html#log-growth",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Logistic growth\n\nGrowth modeled by an exponential function is unbounded, but resource limits do exist.\nModeling growth using a logistic growth model: growth is initially exponential but levels off as the environment’s carrying capacity is reached. The growth rate is given by\n\\[\n\\frac{dN}{dt} = rN\\left(\\frac{K-N}{K}\\right).\n\\]\nwhere \\(N=\\text{population, }r=\\text{growth rate, }t=\\text{time, and }K=\\text{carrying capacity}.\\)"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#log-fisheries",
-    "href": "notes/day3_derivatives/lecture-derivative.html#log-fisheries",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Important in fisheries and biological conservation"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#app-derv-exp",
-    "href": "notes/day3_derivatives/lecture-derivative.html#app-derv-exp",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Using derivatives we can find crucial information to solve environmental problems\n\nDerivatives allow us to:\n\n\nFind instantaneous rate of change at any point\n\n\n\nFind when functions are increasing or decreasing\n\n\n\nFind the optimal values of functions\n\nOptimal values are key to designing effective policies"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop",
-    "href": "notes/day3_derivatives/lecture-derivative.html#pop",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "How quickly is the human population rising right now?\n\nVon Foersters et al. (1960) used the following function to describe the increase in human population over time:\n\\[\nx(t)=\\frac{1}{c-\\beta t}\n\\]\nWhere \\(c=9.833*10^{-3}\\), \\(\\beta=4.849*10^{-6}\\), and \\(x\\) is the total human population in millions at year \\(t\\).\n\n \n✏️ Answer the following questions using the Dochy et al. model.\n- How quickly was the human population increasing in 1450?\n- What should be the population growth rate in 2024 according to this model?"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop-ex-1",
-    "href": "notes/day3_derivatives/lecture-derivative.html#pop-ex-1",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Use derivatives to find the answers!\n\n- How quickly was the human population increasing in 1450?\n\n“How quickly” are code words for “take the first derivative” of \\(x(t)=\\frac{1}{c-\\beta t}\\). Let’s do that:\n\\[\n\\begin{align}\nx(t)&=\\frac{1}{c-\\beta t} \\\\\nx(t)&=(c-\\beta t)^{-1} &\\text{Rearrange} \\\\\n\\frac{dx}{dt}&=\\beta(c-\\beta t)^{-2} &\\text{Chain and Power Rule}\\\\\n\\end{align}\n\\]\n\n\nSince the question is asking for how quickly was the population increasing in 1450 we need to evaluate the derivative at \\(t=1450\\). This is \\[x'(1450)=.61\\]\nSo, human population in 1450 was increasing at a rate of .61 million per year."
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop-ex-2",
-    "href": "notes/day3_derivatives/lecture-derivative.html#pop-ex-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Use derivatives to find the answers!\n\n- What should be the population growth rate in 2024 according to this model?\n\n“Population growth rate in 2024” means “evaluate the first derivative at $t=2024”. So let’s do that:\n\\[x'(2024) = \\beta(c-\\beta 2024)^{-2} = 13,980.\\]\nSo, human population in 2024 will be increasing at a rate of 13,980 million per year according to this model.\n\n\nAfter some investigation, human population is estimated to be growing at about 0.85% per year, which is around 70 million more people every year."
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop-ex-3",
-    "href": "notes/day3_derivatives/lecture-derivative.html#pop-ex-3",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "The model isn’t wrong, just not predictive out of sample"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#derivative-sign-section",
-    "href": "notes/day3_derivatives/lecture-derivative.html#derivative-sign-section",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Positive and Negative Derivatives"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#increasing",
-    "href": "notes/day3_derivatives/lecture-derivative.html#increasing",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Increasing and decreasing functions\n\nTake an interval \\((a,b)\\). A function \\(f(x)\\) is…\n\n… increasing on \\((a,b)\\) if \\(f(x_1) \\leq f(x_2)\\) every time \\(x_1&lt;x_2\\) and \\(x_1, x_2\\) in \\((a,b)\\).\n… decreasing on \\((a,b)\\) if \\(f(x_1) \\geq f(x_2)\\) every time \\(x_1&lt;x_2\\) and \\(x_1, x_2\\) in \\((a,b)\\).\n… constant on an interval \\((a,b)\\) if \\(f(x_1) = f(x_2)\\) for every \\(x_1, x_2\\) in \\((a,b)\\).\n\n🙂 This all really means what you think it means:"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative-blank",
-    "href": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative-blank",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Increasing and decreasing functions\n\nLet \\(f(x)\\) be a function that is differentiable on the interval \\((a,b)\\), then:"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative",
-    "href": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Increasing and decreasing functions\n\nLet \\(f(x)\\) be a function that is differentiable on the interval \\((a,b)\\), then:\n\nIf \\(f'(x)&gt;0\\) for all \\(x\\) values between \\(a\\) and \\(b\\), then \\(f(x)\\) is increasing on \\((a,b)\\)\nIf \\(f'(x)&lt;0\\) for all \\(x\\) values betwen \\(a\\) and \\(b\\), then \\(f(x)\\) is decreasing on \\((a,b)\\)\nIf \\(f'(x)=0\\) for all values between \\(a\\) and \\(b\\), then \\(f(x)\\) is constant on \\((a,b)\\)"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#max-min",
-    "href": "notes/day3_derivatives/lecture-derivative.html#max-min",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Local maxima and minima of funcitons\n\nA funciton \\(f(x)\\) has…\n\na local maximum at \\(p\\) if \\(f(p)\\) is greater than or equal to the values of \\(f\\) for points near \\(p\\).\n\n\n\na local minimum at \\(p\\) if \\(f(p)\\) is less than or equal to the values of \\(f\\) for points near \\(p\\).\n\n\n\n\na critical point \\(p\\) if \\(f'(p)=0\\). The value \\(f(p)\\) at a critital point \\(p\\) is called a critical value.\n\n\n\nFinding critical points helps us solve optimization problems: every maximum and miniumum occurs at a critical point."
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#optimization-motivation",
-    "href": "notes/day3_derivatives/lecture-derivative.html#optimization-motivation",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Finding maxima/minima"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#optimization",
-    "href": "notes/day3_derivatives/lecture-derivative.html#optimization",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Finding maxima/minima\n\n1) Find critical points with the 1st derivative:\n\nIf \\(f(x)\\) has a local maximum or minimum at \\(p\\) then \\(f'(p)\\) =0.\nThis means that we need to look for local max/min among critical points (the values for \\(x\\) for which \\(f'(x)=0\\)).\n\n\n\n2) Apply the 2nd derivative test to critical points:\n\nWhether a critical point is a maximum or minimum requires us to test if the function is concave up or concave down around that point.\nIf \\(f'(p)=0\\) and \\(f''(p)&lt;0\\) then \\(f(x)\\) has a local maximum at \\(p\\).\nIf \\(f'(x)=0\\) and \\(f''(x)&gt;0\\), then \\(f(x)\\) has a local minimum at \\(p\\)."
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#opt-graph-blank",
-    "href": "notes/day3_derivatives/lecture-derivative.html#opt-graph-blank",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Example\n\n✏️ Consider the function \\(f(x)=x^3-12x+2\\). What are its local maxima and minima?"
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#opt-graph",
-    "href": "notes/day3_derivatives/lecture-derivative.html#opt-graph",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Example\n\n✏️ Consider the function \\(f(x)=x^3-12x+2\\). What are its local maxima and minima?\n\n\n\n\nFind critical points with 1st derivative:\n\n\\[\n\\begin{align}\nf(x)&=x^3-12x+2 \\\\\nf'(x)&=3x^2-12 \\\\\nx^*&=-2  & x^*=2\n\\end{align}\n\\]\n\n\n\nApply 2nd derivative test to critical points:\n\n\\[\n\\begin{align}\nf''(x)&=6x \\\\\nf''(-2)&&lt;0  &f''(2)&gt;0\n\\end{align}\n\\]\n\n\n\nBy the first order conditions we know that \\(x=2\\) and \\(x=-2\\) are the critical points of the function.\nThe second order conditions inform us that \\(f(x)\\) has a local maximum at \\(x=-2\\) and a local minimum at \\(x=2\\)."
-  },
-  {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta-2",
-    "href": "notes/day3_derivatives/lecture-derivative.html#ta-2",
+    "objectID": "notes/day2_limits/lecture-limits.html#ta",
+    "href": "notes/day2_limits/lecture-limits.html#ta",
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Team Assessment"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-1",
-    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-1",
+    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-1",
+    "href": "notes/day2_limits/lecture-limits.html#ta-1-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "✏️ 1. How many local minimums and maximums can you find on this graph?"
+    "text": "Task 1: Match the graphs (a,b,c) with the limits (1,2,3).\n\nPart 1:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to3}g(x)=0\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to-4}g(x)=3\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3} g(x)= \\text{DNE}\n\\]"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-2-blank",
-    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-2-blank",
+    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-2",
+    "href": "notes/day2_limits/lecture-limits.html#ta-1-2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "✏️ 2. Find all the critical points of this function. Identify which are minima and which are maxima. \\[\nf(x)=2x^3-6x^2+3x+15\n\\]"
+    "text": "Part 2:\n\n2) Can you think of examples where discontinuous functions might exist in environmental science?\n\n3) As a team, draw graphs to exemplify two of these statements:\n\n\\(\\lim_{x\\to 4^-} f(x)\\) and \\(\\lim_{x\\to 4^+}f(x)\\) are both infinite\n\\(\\lim_{x\\to 3} f(x)=2\\), but \\(f(3)=0\\)\n\\(\\lim_{x\\to 5^-} f(x)=4\\) and \\(\\lim_{x\\to 5^+} f(x)=2\\)\n\\(\\lim_{x\\to -3} f(x)=-5\\) but \\(f(-3)=-5\\)"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-2",
-    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-2",
+    "objectID": "notes/day2_limits/lecture-limits.html#intro-derv",
+    "href": "notes/day2_limits/lecture-limits.html#intro-derv",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "✏️ 2. Find all the critical points of this function. Identify which are minima and which are maxima.\n\\[\nf(x)=2x^3-6x^2+3x+15\n\\]"
+    "text": "Introduction to Derivatives"
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-3",
-    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-3",
+    "objectID": "notes/day2_limits/lecture-limits.html#alltogether",
+    "href": "notes/day2_limits/lecture-limits.html#alltogether",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "✏️ 3. Your team has been hired to help the city of Santa Barbara to help eliminate a nasty pollutant in our streams. You are choosing between two policies. Policy A provides \\(\\sqrt{10x+4}\\) benefits where \\(x\\) is the dollar spent on interventions. Policy B provides \\(\\sqrt{20x+4}\\) benefits for every dollar spent. However, each policy has a cost associated with each. Policy A has a constant linear cost at \\(2x\\) and Policy B has a constant linear cost at \\(3x\\).\n\na) Which policy is cheaper?\n\nb) Find the optimal amount of interventions dollars to spend for each policy. Consider both costs and benefits. [Hint: Remember \\(\\sqrt{}\\) is just \\(x^{\\frac{1}{2}}\\). You can use exponent rules to help solve]\n\nc) Which policy provides the most maximun net benefits?\n\nd) Which policy should the city of Santa Barbara pursue?"
+    "text": "Putting it all together\n\nRecall average rate of change and instantaneous\n\nTaking the average rate of change to a set limit will eventually converge to the instantaneous."
   },
   {
-    "objectID": "notes/day3_derivatives/lecture-derivative.html#solutions",
-    "href": "notes/day3_derivatives/lecture-derivative.html#solutions",
+    "objectID": "notes/day2_limits/lecture-limits.html#average-slope",
+    "href": "notes/day2_limits/lecture-limits.html#average-slope",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Solution to exercise 3\n\na. Which policy is cheaper?\nPolicy A is cheaper: it costs \\(2x\\) vs. \\(3x\\) for Policy B.\nb. Optimal spending = maximizing net benefits\nFor this, we need to create a function representing the net benefits for each policy:\n\\[\n\\begin{align}\nB_A (x) &= \\sqrt{10x+4} - 2x & \\text{net benefits for policy A,}\\\\\nB_A (x) &= \\sqrt{20x+4} - 3x & \\text{net benefits for policy B}.\n\\end{align}\n\\] Solving for critical points and applying the second derivative test we get that \\(B_A\\) benefits are maximized when \\(x_A=\\frac{9}{40}=0.225\\) dollars are spent and \\(B_B\\) benefits are maximized when \\(x_B=\\frac{16}{45}\\approx0.356\\) dollars are spent.\nb. Which policy provides the most benefits?\nIf we compare the maximum net benefits offered by each policy we get \\[\nB_A (0.225) = 2.05\\  \\text{ and }\nB_B (\\frac{16}{45})\\  \\approx 2.27.\n\\]\nSo policy B provides the maximum net benefits.\nd. Which policy should the city pursue?\nBecause Policy B yields the larger maximal net benefit (≈2.27), the City of Santa Barbara should probably pursue Policy B, assuming there are no restrictions in how much money they can invest in the policy."
+    "text": "Average slope\n\n\nStart with:\n\nNearby point:\n\nAverage slope:"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#average-slope-filled",
+    "href": "notes/day2_limits/lecture-limits.html#average-slope-filled",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Average slope\n\n\nStart with a point \\((x,f(x))\\) on the graph.\nA nearby point can be \\((x+\\Delta x, f(x+\\Delta x))\\), where \\(\\Delta x\\) is a short distance from \\(x\\).\n\nThe average slope between \\((x,f(x))\\) and \\((x+\\Delta x, f(x+\\Delta x))\\) is given by\n \\[\\text{average slope} = \\frac{f(x+\\Delta x) - f(x)}{(x+\\Delta x)-x} = \\frac{f(x+\\Delta x) - f(x)}{\\Delta x}.\\] \nWhat happens when \\(\\Delta x\\) becomes smaller and smaller?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-1",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-2",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-3",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-4",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-4",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#tangent",
+    "href": "notes/day2_limits/lecture-limits.html#tangent",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Tangent lines\n\nWhat if we let \\(\\Delta x=0\\)?\nThen we would have a slope line that only touches our function at exactly \\(x\\). \n\nThese very special types of lines are called tangent lines."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#recap",
+    "href": "notes/day2_limits/lecture-limits.html#recap",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Derivative definition\n\nRemember the slope of the line that passes between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) is:\n\\[\\text{slope}=\\frac{y_2-y_1}{x_2-x_1}.\\]\n\nIf we have a function \\(f(x)\\), then \\((x,f(x))\\) represents a point on its graph.\n\n\nChoose a different point on the graph that is \\(\\Delta x\\) away: \\((x+\\Delta x,f(x+\\Delta x))\\).\n\n\nPlug these pointson the graph of \\(f(x)\\) into the slope equation:\n\\[\n\\text{slope}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}.\n\\]\n\n\nWhen we let \\(\\Delta x \\to 0\\) we get the slope of the tangent line at \\(x\\)\n \\[\n\\large\nf'(x)=\\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\] \nThis is the derivative of \\(f\\) at \\(x\\). Also denoted \\(\\frac{df}{dx}\\)."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-func",
+    "href": "notes/day2_limits/lecture-limits.html#diff-func",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Not all functions are differentiable\n\n\nAll differentiable functions are continuous, but not all continuous functions are differentiable.\n\n\n\nThe absolute value function \\(|x|\\) is one example, this is defined by \\[|x| =\n\\begin{cases}\nx  &, x \\geq 0\\\\\n-x &, x&lt;0\n\\end{cases}.\\]\n\nIt’s graph is:"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#calc",
+    "href": "notes/day2_limits/lecture-limits.html#calc",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Calculus and derivatives are used to study change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#envs-change",
+    "href": "notes/day2_limits/lecture-limits.html#envs-change",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Environmental Science studies change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#envs-change2",
+    "href": "notes/day2_limits/lecture-limits.html#envs-change2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Environmental Science studies change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#envs-change3",
+    "href": "notes/day2_limits/lecture-limits.html#envs-change3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Environmental Science studies change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1-blank",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-1-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (1)\n\nConstant Rule\n     \nPower Rule"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (1)\n\nConstant Rule\nLet \\(c\\) be a constant (so, a number). If \\(f(x) = c\\), then \\(f'(x)=0\\). Equivalently\n\\[\\frac{d}{dx}c = 0\\]\nPower Rule\nLet \\(n\\) be a (real) number, if \\(f(x)= x^n\\), then \\(f'(x) = nx^{n-1}\\). Equivalently \\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}.\n\\]\n\nExamples\n\\[\n\\begin{align}\n&y=100 & &f(x)=x^5 & &f(x)=\\frac{1}{x^2}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2-blank",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-2-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (2)\n\nSum and Difference Rules"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (2)\n\nSum and Difference Rules\nLet \\(f(x)\\) and \\(g(x)\\) be differentiable functions. Then \\[\n\\begin{align}\n\\frac{d}{dx}[f(x)+g(x)]=\\frac{d}{dx}f(x)+\\frac{d}{dx}g(x) \\\\\n\\frac{d}{dx}[f(x)-g(x)]=\\frac{d}{dx}f(x)-\\frac{d}{dx}g(x)\n\\end{align}\n\\]\n😵All this says is: if the function has pieces that are added or subtracted you can take the derivative of each individual piece and add those derivatives.\n\nExample\n\\[\nf(x)=x^3-x^2-15\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3-blank",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-3-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-3",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule\nThe derivative of a constant \\(c\\) multiplied by a function \\(f(x)\\) is the same as the constant multiplied by the derivative:\n\\[\\frac{d}{dx}[kf(x)] = k\\frac{d}{dx}f(x)\\]\n\nExample\n\\[\ny=x^2+\\sqrt{2}x-\\frac{8}{x}+4\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Summary of differentiation rules\n\n\n\n\n\n\n\n\n\nDifferentiation Rule\n\\(f'(x)\\) notation\n\\(\\frac{d}{dx}\\) notation\n\n\n\n\nConstant Rule\n\\(f(x)=c \\Rightarrow f'(x)=0\\)\n\\(\\frac{d}{dx}[c]=0\\)\n\n\nPower Rule\n\\(f(x)=x^n \\Rightarrow f'(x)=n x^{n-1}\\)\n\\(\\frac{d}{dx}[x^n]=n x^{n-1}\\)\n\n\nSum Rule\n\\((g(x)+h(x))'=g'(x)+h'(x)\\)\n\\(\\frac{d}{dx}[g(x)+h(x)]=\\frac{d}{dx}g(x)+\\frac{d}{dx}h(x)\\)\n\n\nDifference Rule\n\\((g(x)-h(x))' = g'(x)-h'(x)\\)\n\\(\\frac{d}{dx}[g(x)-h(x)]=\\frac{d}{dx}g(x)-\\frac{d}{dx}h(x)\\)\n\n\nConstant Multiplier Rule\n\\((c\\cdot g(x))'=c\\,g'(x)\\)\n\\(\\frac{d}{dx}[c\\,g(x)]=c\\,\\frac{d}{dx}g(x)\\)"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#ta-2",
+    "href": "notes/day2_limits/lecture-limits.html#ta-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#gta2-1",
+    "href": "notes/day2_limits/lecture-limits.html#gta2-1",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "As a team, list 3 fields of environmental science where studying the rate of change and derivatives would be important.\n\n\n\nWhich rules should you use to take these derivatives?\n\n\\[\n\\begin{align}\n\\text{A)  }& f(x)=3x^4 &\\text{B) }  y=4x^2+3x-16\n\\end{align}\n\\]\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=7x+4 & &\\text{C) }g(y)=\\sqrt{y}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the UCSB Master of Environmental Science and Management at the Bren School of Environmnetal Science and Management.\n\n\nThis 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment\n\n\n\n\nCarmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#workshop-description",
+    "href": "index.html#workshop-description",
+    "title": "Welcome!",
+    "section": "",
+    "text": "This 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Welcome!",
+    "section": "",
+    "text": "Carmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
+    "crumbs": [
+      "Welcome!"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/solutions_problem_set_limits.html",
+    "href": "notes/day2_limits/solutions_problem_set_limits.html",
+    "title": "Limits and Derivatives Problem Set Solutions",
+    "section": "",
+    "text": "Limits and Derivatives Problem Set Solutions\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function. \n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\nTo investigate this limit we can evaluate the function \\(\\frac{4x}{x+2}\\) from the left with values getting closer to -2. We can see from the approximation below that \\(y = \\frac{4x}{x+2}\\) rapidly increases with values closer to -2. So, we can say the limit goes to infinity. \n\n\n\n\n\nx\n-2.5\n-2.1\n-2.01\n-2.001\n-2.0001\n-2.00001\n\n\ny\n20.0\n84.0\n804.00\n8004.000\n80004.0000\n800003.99999\n\n\n\n\n\n We can also plot the function to have a visual understanding of its behavior near -2. \n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n To investigate this limit we can evaluate the function \\(2^x\\) with values of \\(x\\) approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say \\(\\lim_{x\\to 3}2^x=8\\). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nx\n2.500000\n2.900000\n2.99000\n2.999000\n3.001000\n3.010000\n3.100000\n3.50000\n\n\ny\n5.656854\n7.464264\n7.94474\n7.994457\n8.005547\n8.055644\n8.574188\n11.31371\n\n\n\n\n\n We can also graph this function and see it is continuous. So \\(\\lim_{x\\to 3}2^x = 2^3 = 8\\). \n\n\n\n\n\n\n\n\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\nThis function is broken down into two “pieces”: it equals \\(bx^2 - \\frac{3}{2}x - 5\\) when \\(x\\) is less than -3, and it equals \\(-2x-9\\) when \\(x\\) is greater or equal to -3. To connect these two pieces and make \\(h(x)\\) continuous we need both pieces to approach the same value at \\(x=-3\\). In other words, we need that \n \\[ -3 = h(x) = \\lim_{x\\to-3} h(x).\\] \n Let’s calculate the side limits to see what’s going on with \\(\\lim_{x\\to-3} h(x)\\). From the left-hand side we have that \nxw \\[\\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^-} bx^2 - \\frac{3}{2}x - 5 = 9b + \\frac{9}{2}.\\] \na8670390NCEAS\nFrom the right-hand side we have that \n \\[\n\\lim_{x\\to-3^+} h(x) = \\lim_{x\\to-3^+} -2x-9 = -3\n\\] \n If we want \\(h(x)\\) to be continuous at \\(x=-3\\) we then need \n \\[ -3 = h(x) = \\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^+} h(x) =  9b + \\frac{9}{2} \\] \n Solving this equation we obtain that \n \\[\n\\begin{align}\n9b=\\frac{-5}{2}\\\\\nb=\\frac{-5}{18}.\n\\end{align}\n\\] \n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n \\[\\begin{align}\nf(x)  &= 2x^2+4\\\\\nf'(x) &= 4x\\\\\nf'(-3) &=4(-3)\\\\\n      &=-12\n\\end{align}\\] \n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n \\[\\begin{align}\ng(x) &= x^4-5x^3+x-5 \\\\\ng'(x) &= 4x^3-15x^2+1 \\\\\ng'(5) &= 4(5)^3-15(5)^2+1\\\\\n&=126\n\\end{align}\\] \n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n We have that \n \\[\nh(x) = \\frac{5}{x^2} = 5x^{-2}\n\\] \n Then, \n \\[\\begin{align}\nh'(x) & =-10x^{-3}\\\\\nh'(2) &= -10(2)^{-3}\\\\\n& = -\\frac{10}{8}\\\\\n&=-1.25.\n\\end{align}\\] \n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative.\n\n\n\n\n\n\n\n\n\n\n a. First, we draw a tangent line to the graph at \\(x=2\\), this is the red line plotted with the graph.\nUsing rise over run we can take two points on the tangent line to find the slope. Let’s use \\((2,1)\\) and \\((1,-1)\\) as our points on the tangent, then \n \\[\nslope=\\frac{1- (-1)}{2-1}=2.\n\\] \n b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative."
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html",
+    "href": "notes/day2_limits/day2_limits.html",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Artwork by @allison_horst\n\n\n\n\nLimits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html#lecture-materials",
+    "href": "notes/day2_limits/day2_limits.html#lecture-materials",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html#problem-set",
+    "href": "notes/day2_limits/day2_limits.html#problem-set",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Click here to see the problem set.",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day2_limits/day2_limits.html#problem-set-solution",
+    "href": "notes/day2_limits/day2_limits.html#problem-set-solution",
+    "title": "Day 2: Limits",
+    "section": "",
+    "text": "Solutions",
+    "crumbs": [
+      "Day 2: Limits"
+    ]
+  },
+  {
+    "objectID": "notes/day5_differential_equations/day5_differential_equations.html",
+    "href": "notes/day5_differential_equations/day5_differential_equations.html",
+    "title": "Day 5: Differential Equations",
+    "section": "",
+    "text": "Day 5: Differential Equations",
+    "crumbs": [
+      "Day 5: Differential Equations"
+    ]
+  },
+  {
+    "objectID": "notes/day1_algebra/problem_set_algebra.html",
+    "href": "notes/day1_algebra/problem_set_algebra.html",
+    "title": "Algebra and Graphing Problem Set",
+    "section": "",
+    "text": "Algebra and Graphing Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\nAlgebra basics\n\nDescribe how solving for the roots of equations (the values of \\(x\\) for which a function \\(f(x)\\) satisfies \\(f(x)=0\\)) could be useful in environmental science. List at least one method to find roots of a certain kind of funciton.\nExpand the following expressions:\n\n\\((x+2)(3x-4)\\)\n\\((x^2-2y)(x+y^3)\\)\n\nSolve for \\(x\\) in the following equations:\n\n\\(2x-4=3x+12\\)\n\\(-6ax+2b=x-5c\\)\n\\(2x^2+3x-4=0\\)\n\\(x^2-2x-5=0\\)\n\n\n\n\nStory Problems\n\nRepresentative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.\nLet’s say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of \\(f(t)=\\frac{-1}{8}t^2+6t+123.83\\) where \\(t\\) is each year and \\(f(t)\\) is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?\n\n\n\n\nGraphs\n\nFind the slope and \\(y\\)-intercept of the following lines.\n\n\n\n\nShow the code\nx=seq(-5,5)\n\ny=2*x+5\n\nw=(1/3)*x-1\n\nz=x-0.5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np2&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=w),size=3,color=\"blue\")+\n  geom_line(aes(x=x,y=w),size=2,color=\"blue\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-3,3,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np3&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=z),size=3,color=\"red\")+\n  geom_line(aes(x=x,y=z),size=2,color=\"red\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,5,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p2,p3,p4,labels=c(\"A\",\"B\",\"C\",\"D\"))\n\n\n\n\n\n\n\n\n\n\nThe growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\nWhat are the units of the average slopes and why would they change for a shark as they get older?\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n\n\n\nPicture of a scalloped hammerhead shark."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#title-slide",
@@ -745,506 +1238,428 @@
     "text": "Solution 5\n\n\n\n\n\n\n\n\n\n\n\n\n\nPesticide concentrations might initially increase in the lake from residual particles in the soil being washed into the lake. Then a mixture microbial activity and other chemical process reduce the pesticides to more inert components.\n(You will learn the actual answer in ESM 202: Environmental Biogeochemistry)"
   },
   {
-    "objectID": "notes/day1_algebra/problem_set_algebra.html",
-    "href": "notes/day1_algebra/problem_set_algebra.html",
-    "title": "Algebra and Graphing Problem Set",
-    "section": "",
-    "text": "Algebra and Graphing Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\nAlgebra basics\n\nDescribe how solving for the roots of equations (the values of \\(x\\) for which a function \\(f(x)\\) satisfies \\(f(x)=0\\)) could be useful in environmental science. List at least one method to find roots of a certain kind of funciton.\nExpand the following expressions:\n\n\\((x+2)(3x-4)\\)\n\\((x^2-2y)(x+y^3)\\)\n\nSolve for \\(x\\) in the following equations:\n\n\\(2x-4=3x+12\\)\n\\(-6ax+2b=x-5c\\)\n\\(2x^2+3x-4=0\\)\n\\(x^2-2x-5=0\\)\n\n\n\n\nStory Problems\n\nRepresentative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.\nLet’s say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of \\(f(t)=\\frac{-1}{8}t^2+6t+123.83\\) where \\(t\\) is each year and \\(f(t)\\) is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?\n\n\n\n\nGraphs\n\nFind the slope and \\(y\\)-intercept of the following lines.\n\n\n\n\nShow the code\nx=seq(-5,5)\n\ny=2*x+5\n\nw=(1/3)*x-1\n\nz=x-0.5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np2&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=w),size=3,color=\"blue\")+\n  geom_line(aes(x=x,y=w),size=2,color=\"blue\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-3,3,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np3&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=z),size=3,color=\"red\")+\n  geom_line(aes(x=x,y=z),size=2,color=\"red\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,5,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p2,p3,p4,labels=c(\"A\",\"B\",\"C\",\"D\"))\n\n\n\n\n\n\n\n\n\n\nThe growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\nWhat are the units of the average slopes and why would they change for a shark as they get older?\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n\n\n\nPicture of a scalloped hammerhead shark."
-  },
-  {
-    "objectID": "notes/day5_differential_equations/day5_differential_equations.html",
-    "href": "notes/day5_differential_equations/day5_differential_equations.html",
-    "title": "Day 5: Differential Equations",
-    "section": "",
-    "text": "Day 5: Differential Equations",
-    "crumbs": [
-      "Day 5: Differential Equations"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html",
-    "href": "notes/day2_limits/day2_limits.html",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Artwork by @allison_horst\n\n\n\n\nLimits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#lecture-materials",
-    "href": "notes/day2_limits/day2_limits.html#lecture-materials",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#problem-set",
-    "href": "notes/day2_limits/day2_limits.html#problem-set",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Click here to see the problem set.",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/day2_limits.html#problem-set-solution",
-    "href": "notes/day2_limits/day2_limits.html#problem-set-solution",
-    "title": "Day 2: Limits",
-    "section": "",
-    "text": "Solutions",
-    "crumbs": [
-      "Day 2: Limits"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/solutions_problem_set_limits.html",
-    "href": "notes/day2_limits/solutions_problem_set_limits.html",
-    "title": "Limits and Derivatives Problem Set Solutions",
-    "section": "",
-    "text": "Limits and Derivatives Problem Set Solutions\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function. \n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\nTo investigate this limit we can evaluate the function \\(\\frac{4x}{x+2}\\) from the left with values getting closer to -2. We can see from the approximation below that \\(y = \\frac{4x}{x+2}\\) rapidly increases with values closer to -2. So, we can say the limit goes to infinity. \n\n\n\n\n\nx\n-2.5\n-2.1\n-2.01\n-2.001\n-2.0001\n-2.00001\n\n\ny\n20.0\n84.0\n804.00\n8004.000\n80004.0000\n800003.99999\n\n\n\n\n\n We can also plot the function to have a visual understanding of its behavior near -2. \n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n To investigate this limit we can evaluate the function \\(2^x\\) with values of \\(x\\) approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say \\(\\lim_{x\\to 3}2^x=8\\). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nx\n2.500000\n2.900000\n2.99000\n2.999000\n3.001000\n3.010000\n3.100000\n3.50000\n\n\ny\n5.656854\n7.464264\n7.94474\n7.994457\n8.005547\n8.055644\n8.574188\n11.31371\n\n\n\n\n\n We can also graph this function and see it is continuous. So \\(\\lim_{x\\to 3}2^x = 2^3 = 8\\). \n\n\n\n\n\n\n\n\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\nThis function is broken down into two “pieces”: it equals \\(bx^2 - \\frac{3}{2}x - 5\\) when \\(x\\) is less than -3, and it equals \\(-2x-9\\) when \\(x\\) is greater or equal to -3. To connect these two pieces and make \\(h(x)\\) continuous we need both pieces to approach the same value at \\(x=-3\\). In other words, we need that \n \\[ -3 = h(x) = \\lim_{x\\to-3} h(x).\\] \n Let’s calculate the side limits to see what’s going on with \\(\\lim_{x\\to-3} h(x)\\). From the left-hand side we have that \nxw \\[\\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^-} bx^2 - \\frac{3}{2}x - 5 = 9b + \\frac{9}{2}.\\] \na8670390NCEAS\nFrom the right-hand side we have that \n \\[\n\\lim_{x\\to-3^+} h(x) = \\lim_{x\\to-3^+} -2x-9 = -3\n\\] \n If we want \\(h(x)\\) to be continuous at \\(x=-3\\) we then need \n \\[ -3 = h(x) = \\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^+} h(x) =  9b + \\frac{9}{2} \\] \n Solving this equation we obtain that \n \\[\n\\begin{align}\n9b=\\frac{-5}{2}\\\\\nb=\\frac{-5}{18}.\n\\end{align}\n\\] \n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n \\[\\begin{align}\nf(x)  &= 2x^2+4\\\\\nf'(x) &= 4x\\\\\nf'(-3) &=4(-3)\\\\\n      &=-12\n\\end{align}\\] \n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n \\[\\begin{align}\ng(x) &= x^4-5x^3+x-5 \\\\\ng'(x) &= 4x^3-15x^2+1 \\\\\ng'(5) &= 4(5)^3-15(5)^2+1\\\\\n&=126\n\\end{align}\\] \n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n We have that \n \\[\nh(x) = \\frac{5}{x^2} = 5x^{-2}\n\\] \n Then, \n \\[\\begin{align}\nh'(x) & =-10x^{-3}\\\\\nh'(2) &= -10(2)^{-3}\\\\\n& = -\\frac{10}{8}\\\\\n&=-1.25.\n\\end{align}\\] \n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative.\n\n\n\n\n\n\n\n\n\n\n a. First, we draw a tangent line to the graph at \\(x=2\\), this is the red line plotted with the graph.\nUsing rise over run we can take two points on the tangent line to find the slope. Let’s use \\((2,1)\\) and \\((1,-1)\\) as our points on the tangent, then \n \\[\nslope=\\frac{1- (-1)}{2-1}=2.\n\\] \n b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative."
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the UCSB Master of Environmental Science and Management at the Bren School of Environmnetal Science and Management.\n\n\nThis 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment\n\n\n\n\nCarmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
-    "crumbs": [
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "index.html#workshop-description",
-    "href": "index.html#workshop-description",
-    "title": "Welcome!",
-    "section": "",
-    "text": "This 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:\n\nReinforce math skills used in Bren courses\nUnderstand how math and calculus are used in environmental science\nHelp transition to graduate school life\nBuild collaborative environment",
-    "crumbs": [
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "Welcome!",
-    "section": "",
-    "text": "Carmen Galaz García (she/her/hers)\n\nE-mail: c_galazgarcia@ucsb.edu\nStudent hours: Thursday 2 pm -3 pm @ Bren Hall 4424",
-    "crumbs": [
-      "Welcome!"
-    ]
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#title-slide",
-    "href": "notes/day2_limits/lecture-limits.html#title-slide",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#title-slide",
+    "href": "notes/day3_derivatives/lecture-derivative.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Limits and Intro to Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 18, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Rules and Applications of Derivatives\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 19, 2025\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#tr",
-    "href": "notes/day2_limits/lecture-limits.html#tr",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#tr",
+    "href": "notes/day3_derivatives/lecture-derivative.html#tr",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Team Review\n\n\nHow did everyone feel about the problem set?\nAny questions?\nDiscuss with study partner"
+    "text": "Team Review\n\nHow did everyone feel about the problem set?\nAny questions?\nDiscuss with team"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#fun-bake",
-    "href": "notes/day2_limits/lecture-limits.html#fun-bake",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#product-rule-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#product-rule-blank",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Functions are like baking recipes\n\n\n\n\nAssemble all your ingredients.\n\nIn a function, these are the independent variables like \\(x\\).\n\nFollow the instructions to mix, bake, and decorate\n\nThese are the mathematical instructions in the function about how to manipulate the independent variables.\n\nEnd up with final product!\n\nThis is the ouput \\(f(x)\\) or dependent variable.\n\nTypically we use the notation \\(f(x)=x\\), but we can always use different representations like \\(g(x)=x\\) or \\(y=x\\)."
+    "text": "Rules for differentiation (4)\n\nProduct Rule"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#function-definition",
-    "href": "notes/day2_limits/lecture-limits.html#function-definition",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#product-rule",
+    "href": "notes/day3_derivatives/lecture-derivative.html#product-rule",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "What is a function?\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\n🤔 Are these functions?"
+    "text": "Rules for differentiation (4)\n\nProduct Rule\nLet \\(f(x)\\) and \\(g(x)\\) be differentiable functions. Then\n\\[\n\\large\n\\frac{d}{dx}[f(x)*g(x)]=f(x)g'(x)+g(x)f'(x)\n\\]\nWhat this is saying:\n\nBreakdown multiplication into two separate functions\nThen take the first function times the derivative of the second, and add the second function times the derivative of the first."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#continuity",
-    "href": "notes/day2_limits/lecture-limits.html#continuity",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#prod-ex-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#prod-ex-blank",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Continuity\n\nIntuitively, a function is continuous if there are no ‘breaks’ in the graph of the function. This means you are able to draw the whole graph without lifting your pencil.\nTo define it formally we need to understand limits.\n\nA function is discontinuous if it’s not continuous! So there are ‘breaks’ or ‘gaps’ in its graph.\n\n\n\n\nContinuous\n\n\n\n\n\n\n\n\nDiscontinuous"
+    "text": "Product rule example\n\n✏️ Find the derivative of \\(y=2x(x^2+3x)\\)."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#limits",
-    "href": "notes/day2_limits/lecture-limits.html#limits",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#prod-ex",
+    "href": "notes/day3_derivatives/lecture-derivative.html#prod-ex",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Limits\n\nDefinition\nWe say a number \\(L\\) is the limit of a function \\(f(x)\\) as its variable \\(x\\) approaches a number \\(c\\), if the function’s output values \\(f(x)\\) approach \\(L\\) when \\(x\\) get closer to \\(c\\).\n\nWe write this symbolically as:\n\\[\n\\large\n\\lim_{x\\to c} f(x)=L\n\\]\n\nWe read this as: “The limit of \\(f(x)\\) as \\(x\\) approaches \\(c\\) is \\(L\\).”"
+    "text": "Product rule example\n\n✏️ Find the derivative of \\(y=2x(x^2+3x)\\).\nWe have that:\n\\[\n\\begin{align}\ny&=2x(x^2+3x) \\\\[3px]\ny&=\\overbrace{2x}^{f(x)}\\overbrace{(x^2+3x)}^{g(x)} &\\text{Break into two functions}\\\\[3px]\n\\frac{dy}{dx}&=\\overbrace{2x}^{f(x)}\\overbrace{(2x+3)}^{g'(x)}+\\overbrace{2}^{f'(x)}\\overbrace{(x^2+3x)}^{g(x)} &\\text{Apply Power Rule}\\\\[3px]\n\\frac{dy}{dx}&=6x^2+12x  &\\text{Algebra clean up}\n\\end{align}\n\\]\nWhat is another way we could have computed this derivative?"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-ex",
-    "href": "notes/day2_limits/lecture-limits.html#lim-ex",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#quotient-rule-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#quotient-rule-blank",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example: numerical\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\nWe need to examine the values of \\(f(x)\\) as \\(x\\) gets closer to 2 from both sides.\n\n\n\n\n\n\n\n\n\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, we say that “The limit of \\(2x^2-4\\) as \\(x\\) approaches 2 is 4” and we can write it like this:\n\\[\n\\lim_{x\\to 2}(2x^2-4)=4\n\\]"
+    "text": "Rules for differentiation (5)\n\nQuotient Rule"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
-    "href": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#quotient-rule",
+    "href": "notes/day3_derivatives/lecture-derivative.html#quotient-rule",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example: graph\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, \\(\\lim_{x\\to 2}(2x^2-4)=4\\)."
+    "text": "Rules for differentiation (5)\n\nQuotient Rule\n\\[\n\\large\n\\frac{d}{dx}\\left [\\frac{f(x)}{g(x)}\\right]=\\frac{g(x)f'(x)-f(x)g'(x)}{[g(x)]^2}\n\\]\nNotice:\n\nSame idea as product rule, but order matters.\nThe denominator has to be \\(g(x)\\)"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#continuity-revisited",
-    "href": "notes/day2_limits/lecture-limits.html#continuity-revisited",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#quo-ex-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#quo-ex-blank",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Continuity revisited\n\n\n\nA function \\(f(x)\\) is continuous at \\(x=c\\) if\n\\[\n\\lim_{x\\to c}f(x)=f(c).\n\\]\nSo, if a function is continuous, we just need to evaluate the function to obtain the limit.\nExample\n\\(f(x) = 2x^2-4\\) is a continuous function. So we can obtain the limit as \\(x\\to 2\\) by evaluating the function\n\\[\\lim_{x\\to 2}(2x^2-4)= f(2) = 4.\\]"
+    "text": "Quotient rule example\n\n✏️ Find the derivative of \\(y=\\frac{x^2}{(x+1)}\\)."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-defined",
-    "href": "notes/day2_limits/lecture-limits.html#lim-defined",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#quo-ex",
+    "href": "notes/day3_derivatives/lecture-derivative.html#quo-ex",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Limit at a discontinuity\n\n\nDiscontinuous functions can still have limits at a discontinuity.\n\nExample\nLet \\[\nf(x) = x+1 , \\text{ if x $\\neq$ 2}\n\\]\n✏️ Draw a graph of \\(f(x)\\). Then try calculating \\(\\lim_{x\\to 2} f(x)\\).\n\n\n\n\n\n\n\n\n\nThe value \\(f(2)\\) may not exist, but we can still find a limit because \\(f(x)\\) consistently approaches 3 from both directions as \\(x\\to 2\\)."
+    "text": "Quotient rule example\n\n✏️ Find the derivative of \\(y=\\frac{x^2}{(x+1)}\\).\n\\[\n\\begin{align}\ny &= \\frac{x^2}{(x+1)} \\\\[3px]\ny &= \\frac{\\overbrace{x^2}^{f(x)}}{\\underbrace{(x+1)}_{g(x)}} &\\text{Identify functions}\\\\[3px]\n\\frac{dy}{dx} &= \\frac{\\overbrace{(x+1)}^{g(x)}\\overbrace{2x}^{f'(x)}-\\overbrace{x^2}^{f(x)}\\overbrace{(1)}^{g'(x)}}{\\underbrace{(x+1)^2}_{[g(x)]^2}} &\\text{Quotient rule}\\\\[3px]\n\\frac{dy}{dx} &= \\frac{x^2+2x}{(x+1)^2} &\\text{Simplify} \\\\[3px]\n\\end{align}\n\\]"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-discon",
-    "href": "notes/day2_limits/lecture-limits.html#lim-discon",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#function-composition-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#function-composition-blank",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "No limit at a discontinuity\n\n\nBut other times discontinuous functions don’t have a limit at a discontinuity.\n\nExample\nThe function \\(|x|\\) is the absolute value function. It is such that\n\\[\n|x| =\n\\begin{cases}\nx, & \\text{ if } x\\geq 0 \\\\\n-x, & \\text{ if } x &lt;0\n\\end{cases}\n.\n\\]\n\n\n✏️ Is the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\n✏️ Try calculating: \\[\n\\lim_{x\\to 2}\\frac{|x-2|}{x-2}.\n\\]\n\nHint: Try to do numerical approximations or draw the graph of this function."
+    "text": "Composition of functions\n\nIf we have two functions \\(f\\) and \\(g\\), the composition of \\(f\\) and \\(g\\) is\n\\[f\\circ g (x) = f(g(x)).\\]\nThis means that the output of \\(g(x)\\) is now the input of \\(f(x)\\). In other words, composition of functions means applying one function to the result of another.\n\n\nExamples\n✏️ Let \\(f(x) = x^2\\) and \\(g(x) = 2x+3\\). What is \\(f\\circ g (x)\\)?\n \n✏️ Let \\(h(x) = \\sqrt{ 3x^2 + 10}\\). How can we write \\(h\\) as a composition of functions?"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#mean-girls",
-    "href": "notes/day2_limits/lecture-limits.html#mean-girls",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#function-composition",
+    "href": "notes/day3_derivatives/lecture-derivative.html#function-composition",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "No limit at a discontinuity\n\nIs the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\nThis function is not even defined at \\(x=2\\) since it would require us to divide by zero, which is undefined.\n\n\nTry calculating \\(\\lim_{x\\to 2}\\frac{|x-2|}{x-2}\\).\nLet’s investigate:"
+    "text": "Composition of functions\n\nIf we have two functions \\(f\\) and \\(g\\), the composition of \\(f\\) and \\(g\\) is\n\\[f\\circ g (x) = f(g(x)).\\]\nThis means that the output of \\(g(x)\\) is now the input of \\(f(x)\\). In other words, composition of functions means applying one function to the result of another.\n\nExamples\n✏️ Let \\(f(x) = x^2\\) and \\(g(x) = 2x+3\\). What is \\(f\\circ g (x)\\)?\nWe have that \\(f\\circ g (x)  = (2x+3)^2\\).\n✏️ Let \\(h(x) = \\sqrt{ 3x^2 + 10}\\). How can we write \\(h\\) as a composition of functions?\nIf we make \\(f(x) = \\sqrt{x}\\) and \\(g(x) = 3x^2 +10\\) then we have that \\(f\\circ g (x) = \\sqrt{ 3x^2 + 10}.\\)"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#graph",
-    "href": "notes/day2_limits/lecture-limits.html#graph",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#chain-rule-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#chain-rule-blank",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "No limit at a discontinuity\n\nThe function \\(\\frac{|x-2|}{x-2}\\) approaches different values from either side at \\(x=2\\).\n\n\n\nTherefore… the limit does not exist!"
+    "text": "Rules for differentiation (6)\n\nChain Rule"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#side-limits",
-    "href": "notes/day2_limits/lecture-limits.html#side-limits",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#chain-rule",
+    "href": "notes/day3_derivatives/lecture-derivative.html#chain-rule",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Side limits\n\nThough the function \\(f(x) = \\frac{|x-2|}{x-2}\\) had no limit at \\(x=2\\), it clearly was approaching certain values when we considered only values of \\(x\\) from one side or the other:\n\n\n\n\n\n\n\n\n\n\n\nIn this case we say that\n\n\n\\[\n\\lim_{x\\to 2^-} f(x) = -1\n\\]\nThe limit of \\(f(x)\\) as \\(x\\) approaches 2 from the left is -1.\n\nNotice the small - subscript on the 2.\n\n\\[\n\\lim_{x\\to 2^+} f(x) = 1\n\\]\nThe limit of \\(f(x)\\) as \\(x\\) approaches 2 from the right is 1.\n\nNotice the small + subscript on the 2."
+    "text": "Rules for differentiation (6)\n\nChain Rule\n\\[\n\\large\n\\frac{d}{dx}f\\circ g(x)= \\frac{d}{dx} f(g(x)) \\frac{d}{dx}g(x)\n\\] \n\n“Take the derivative of the outermost function then multiply by the derivative of the innermost.”\nProbably the most important rule for advanced calculus!\n\n\nYou may also encounter the chain rule in this form\n\\[\\frac{dy}{dx} = \\frac{dy}{du}\\cdot\\frac{du}{dx}.\\]\nThe next example will show us what this means."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta",
-    "href": "notes/day2_limits/lecture-limits.html#ta",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#chain-ex-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#chain-ex-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Chain rule example\n\n✏️ What is the derivative of \\(y = (x^3 -2)^2\\)? Let’s use a trick called \\(u\\)-substitution.\n\n\nIdentify the inner function and label it as \\(u\\). Rewrite \\(y\\) in terms of \\(u\\):\n\n \n\nTake the derivative of \\(y\\) with respect to \\(u\\) and substitute \\(u\\):\n\n \n\nAnd the derivative of \\(u\\) with respect to \\(x\\):\n\n \n\nPut everything back into the chain rule and simplify:"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#chain-ex",
+    "href": "notes/day3_derivatives/lecture-derivative.html#chain-ex",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Chain rule example\n\n✏️ What is the derivative of \\(y = (x^3 -2)^2\\)? Let’s use a trick called \\(u\\)-substitution.\n\nIdentify the inner function and label it as \\(u\\). Rewrite \\(y\\) in terms of \\(u\\):\n\n\\[\n\\begin{align}\ny &= (x^3-2)^2 \\\\\nu &= x^3-2 \\\\\ny &= u^2\n\\end{align}\n\\]\n\nTake the derivative of \\(y\\) with respect to \\(u\\) and substitute \\(u\\):\n\n\\[\\frac{dy}{du} = 2u = 2(x^3-2).\\]\n\nAnd the derivative of \\(u\\) with respect to \\(x\\):\n\n\\[\\frac{du}{dx} = 3x^2.\\]\n\nPut everything back into the chain rule and simplify:\n\n\\[\n\\begin{align}\n\\frac{dy}{dx} &= \\frac{dy}{du}\\cdot\\frac{du}{dx} \\\\\n              &= 2(x^3-2)(3x^2)\n              = 6x^5 -12x^2.\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#number-e",
+    "href": "notes/day3_derivatives/lecture-derivative.html#number-e",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "The number \\(e\\)\n\nThe number \\(e\\) is a constant in mathematics, it is approximately \\(e\\approx 2.72\\), but really its decimals continue infinitely without any pattern.\n\nIt’s exact value can be described as \\[\ne = \\lim_{n\\to \\infty}\\left(1+\\frac{1}{n}\\right)^n.\n\\]\nLike any other number, \\(e\\) follows normal power properties\n\\[\n\\begin{align}\ne^{x+y}&=&e^x\\cdot e^y \\\\\ne^{-x}&=&\\frac{1}{e^x}\\\\\ne^{x-y}&=&\\frac{e^x}{e^y}\\\\\ne^{rx}&=&(e^x)^r\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#exponential-function",
+    "href": "notes/day3_derivatives/lecture-derivative.html#exponential-function",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "The exponential funciton\n\nThe exponential function \\(e^x\\) is the number \\(e\\) raised to the \\(x\\) power. In function notation you may sometimes see it as\n\\[ f(x) = e^x \\ \\ \\text{ or } \\ \\ \\text{exp}(x).\\]"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#der-exp",
+    "href": "notes/day3_derivatives/lecture-derivative.html#der-exp",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Derivative of the exponential function\n\nWe have that \\[\n\\large\n\\frac{d}{dx}e^x=e^x\n\\]\nThe derivative at every point on this line is simply \\(e(x)\\)."
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#higher-order-der",
+    "href": "notes/day3_derivatives/lecture-derivative.html#higher-order-der",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Higher order derivatives\n\n\nWe can continue to take derivatives of derivatives.\nThe second derivative becomes the rate of change of the rate of change.\nIf we interpret the first derivative as velocity, then the second derivative is acceleration.\n\n\n\nNotation:\n\nFunction: \\(f(x) = y\\)\n1st derivative: \\(f'(x)\\) or \\(\\frac{dy}{dx}f\\)\n2nd derivative: \\(f''(x)\\) or \\(\\frac{d^2y}{dx^2}\\)\nnth derivative: \\(f^{(n)}(x)\\) or \\(\\frac{d^ny}{dx^n}\\)"
+  },
+  {
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta",
+    "href": "notes/day3_derivatives/lecture-derivative.html#ta",
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Team Assessment"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-1",
-    "href": "notes/day2_limits/lecture-limits.html#ta-1-1",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta-1-q1",
+    "href": "notes/day3_derivatives/lecture-derivative.html#ta-1-q1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Task 1: Match the graphs (a,b,c) with the limits (1,2,3).\n\nPart 1:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to3}g(x)=0\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to-4}g(x)=3\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3} g(x)= \\text{DNE}\n\\]"
+    "text": "Part 1\n\n✏️ Identify which differentiation rule or rules works best for each function.\n\\[\n\\begin{align}\n\\text{A) }y=e^{\\sqrt{3x+10}} & &\\text{B)  }g(y)=\\frac{(8y+2)}{(4y+3)^3}  &  & \\text{C) }p(b)=18b\\cdot e^{2b}\n\\end{align}\n\\]"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-2",
-    "href": "notes/day2_limits/lecture-limits.html#ta-1-2",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta-1-q2",
+    "href": "notes/day3_derivatives/lecture-derivative.html#ta-1-q2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Part 2:\n\n2) Can you think of examples where discontinuous functions might exist in environmental science?\n\n3) As a team, draw graphs to exemplify two of these statements:\n\n\\(\\lim_{x\\to 4^-} f(x)\\) and \\(\\lim_{x\\to 4^+}f(x)\\) are both infinite\n\\(\\lim_{x\\to 3} f(x)=2\\), but \\(f(3)=0\\)\n\\(\\lim_{x\\to 5^-} f(x)=4\\) and \\(\\lim_{x\\to 5^+} f(x)=2\\)\n\\(\\lim_{x\\to -3} f(x)=-5\\) but \\(f(-3)=-5\\)"
+    "text": "Part 2\n\n\nFind the first derivative of\n\n\\[\nf(x)=(2x-x^2)^3.\n\\]\n \n\nFind the first derivative of\n\n\\[\nf(x)=\\frac{2}{x^2+1}.\n\\]\n \n\nFind the third derivative of\n\n\\[\nf(x)=x^2(2x+1).\n\\]"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#intro-derv",
-    "href": "notes/day2_limits/lecture-limits.html#intro-derv",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#app-derv",
+    "href": "notes/day3_derivatives/lecture-derivative.html#app-derv",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Introduction to Derivatives"
+    "text": "Application of Derivatives"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#alltogether",
-    "href": "notes/day2_limits/lecture-limits.html#alltogether",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#exp-real-world",
+    "href": "notes/day3_derivatives/lecture-derivative.html#exp-real-world",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Putting it all together\n\nRecall average rate of change and instantaneous\n\nTaking the average rate of change to a set limit will eventually converge to the instantaneous."
+    "text": "Exponential functions in the world\n\nInfectious diseases\n\nHuman population\n\nCommunication\n\nGrowth of renewable energy"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#average-slope",
-    "href": "notes/day2_limits/lecture-limits.html#average-slope",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#log-growth",
+    "href": "notes/day3_derivatives/lecture-derivative.html#log-growth",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Average slope\n\n\nStart with:\n\nNearby point:\n\nAverage slope:"
+    "text": "Logistic growth\n\nGrowth modeled by an exponential function is unbounded, but resource limits do exist.\nModeling growth using a logistic growth model: growth is initially exponential but levels off as the environment’s carrying capacity is reached. The growth rate is given by\n\\[\n\\frac{dN}{dt} = rN\\left(\\frac{K-N}{K}\\right).\n\\]\nwhere \\(N=\\text{population, }r=\\text{growth rate, }t=\\text{time, and }K=\\text{carrying capacity}.\\)"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#average-slope-filled",
-    "href": "notes/day2_limits/lecture-limits.html#average-slope-filled",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#log-fisheries",
+    "href": "notes/day3_derivatives/lecture-derivative.html#log-fisheries",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Average slope\n\n\nStart with a point \\((x,f(x))\\) on the graph.\nA nearby point can be \\((x+\\Delta x, f(x+\\Delta x))\\), where \\(\\Delta x\\) is a short distance from \\(x\\).\n\nThe average slope between \\((x,f(x))\\) and \\((x+\\Delta x, f(x+\\Delta x))\\) is given by\n \\[\\text{average slope} = \\frac{f(x+\\Delta x) - f(x)}{(x+\\Delta x)-x} = \\frac{f(x+\\Delta x) - f(x)}{\\Delta x}.\\] \nWhat happens when \\(\\Delta x\\) becomes smaller and smaller?"
+    "text": "Important in fisheries and biological conservation"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-1",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-1",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#app-derv-exp",
+    "href": "notes/day3_derivatives/lecture-derivative.html#app-derv-exp",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+    "text": "Using derivatives we can find crucial information to solve environmental problems\n\nDerivatives allow us to:\n\n\nFind instantaneous rate of change at any point\n\n\n\nFind when functions are increasing or decreasing\n\n\n\nFind the optimal values of functions\n\nOptimal values are key to designing effective policies"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-2",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-2",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop",
+    "href": "notes/day3_derivatives/lecture-derivative.html#pop",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+    "text": "How quickly is the human population rising right now?\n\nVon Foersters et al. (1960) used the following function to describe the increase in human population over time:\n\\[\nx(t)=\\frac{1}{c-\\beta t}\n\\]\nWhere \\(c=9.833*10^{-3}\\), \\(\\beta=4.849*10^{-6}\\), and \\(x\\) is the total human population in millions at year \\(t\\).\n\n \n✏️ Answer the following questions using the Dochy et al. model.\n- How quickly was the human population increasing in 1450?\n- What should be the population growth rate in 2024 according to this model?"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-3",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-3",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop-ex-1",
+    "href": "notes/day3_derivatives/lecture-derivative.html#pop-ex-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+    "text": "Use derivatives to find the answers!\n\n- How quickly was the human population increasing in 1450?\n\n“How quickly” are code words for “take the first derivative” of \\(x(t)=\\frac{1}{c-\\beta t}\\). Let’s do that:\n\\[\n\\begin{align}\nx(t)&=\\frac{1}{c-\\beta t} \\\\\nx(t)&=(c-\\beta t)^{-1} &\\text{Rearrange} \\\\\n\\frac{dx}{dt}&=\\beta(c-\\beta t)^{-2} &\\text{Chain and Power Rule}\\\\\n\\end{align}\n\\]\n\n\nSince the question is asking for how quickly was the population increasing in 1450 we need to evaluate the derivative at \\(t=1450\\). This is \\[x'(1450)=.61\\]\nSo, human population in 1450 was increasing at a rate of .61 million per year."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-4",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-4",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop-ex-2",
+    "href": "notes/day3_derivatives/lecture-derivative.html#pop-ex-2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+    "text": "Use derivatives to find the answers!\n\n- What should be the population growth rate in 2024 according to this model?\n\n“Population growth rate in 2024” means “evaluate the first derivative at $t=2024”. So let’s do that:\n\\[x'(2024) = \\beta(c-\\beta 2024)^{-2} = 13,980.\\]\nSo, human population in 2024 will be increasing at a rate of 13,980 million per year according to this model.\n\n\nAfter some investigation, human population is estimated to be growing at about 0.85% per year, which is around 70 million more people every year."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#tangent",
-    "href": "notes/day2_limits/lecture-limits.html#tangent",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#pop-ex-3",
+    "href": "notes/day3_derivatives/lecture-derivative.html#pop-ex-3",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Tangent lines\n\nWhat if we let \\(\\Delta x=0\\)?\nThen we would have a slope line that only touches our function at exactly \\(x\\). \n\nThese very special types of lines are called tangent lines."
+    "text": "The model isn’t wrong, just not predictive out of sample"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#recap",
-    "href": "notes/day2_limits/lecture-limits.html#recap",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#derivative-sign-section",
+    "href": "notes/day3_derivatives/lecture-derivative.html#derivative-sign-section",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Derivative definition\n\nRemember the slope of the line that passes between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) is:\n\\[\\text{slope}=\\frac{y_2-y_1}{x_2-x_1}.\\]\n\nIf we have a function \\(f(x)\\), then \\((x,f(x))\\) represents a point on its graph.\n\n\nChoose a different point on the graph that is \\(\\Delta x\\) away: \\((x+\\Delta x,f(x+\\Delta x))\\).\n\n\nPlug these pointson the graph of \\(f(x)\\) into the slope equation:\n\\[\n\\text{slope}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}.\n\\]\n\n\nWhen we let \\(\\Delta x \\to 0\\) we get the slope of the tangent line at \\(x\\)\n \\[\n\\large\nf'(x)=\\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\] \nThis is the derivative of \\(f\\) at \\(x\\). Also denoted \\(\\frac{df}{dx}\\)."
+    "text": "Positive and Negative Derivatives"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-func",
-    "href": "notes/day2_limits/lecture-limits.html#diff-func",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#increasing",
+    "href": "notes/day3_derivatives/lecture-derivative.html#increasing",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Not all functions are differentiable\n\n\nAll differentiable functions are continuous, but not all continuous functions are differentiable.\n\n\n\nThe absolute value function \\(|x|\\) is one example, this is defined by \\[|x| =\n\\begin{cases}\nx  &, x \\geq 0\\\\\n-x &, x&lt;0\n\\end{cases}.\\]\n\nIt’s graph is:"
+    "text": "Increasing and decreasing functions\n\nTake an interval \\((a,b)\\). A function \\(f(x)\\) is…\n\n… increasing on \\((a,b)\\) if \\(f(x_1) \\leq f(x_2)\\) every time \\(x_1&lt;x_2\\) and \\(x_1, x_2\\) in \\((a,b)\\).\n… decreasing on \\((a,b)\\) if \\(f(x_1) \\geq f(x_2)\\) every time \\(x_1&lt;x_2\\) and \\(x_1, x_2\\) in \\((a,b)\\).\n… constant on an interval \\((a,b)\\) if \\(f(x_1) = f(x_2)\\) for every \\(x_1, x_2\\) in \\((a,b)\\).\n\n🙂 This all really means what you think it means:"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#calc",
-    "href": "notes/day2_limits/lecture-limits.html#calc",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative-blank",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Calculus and derivatives are used to study change"
+    "text": "Increasing and decreasing functions\n\nLet \\(f(x)\\) be a function that is differentiable on the interval \\((a,b)\\), then:"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#envs-change",
-    "href": "notes/day2_limits/lecture-limits.html#envs-change",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative",
+    "href": "notes/day3_derivatives/lecture-derivative.html#sign-of-derivative",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Environmental Science studies change"
+    "text": "Increasing and decreasing functions\n\nLet \\(f(x)\\) be a function that is differentiable on the interval \\((a,b)\\), then:\n\nIf \\(f'(x)&gt;0\\) for all \\(x\\) values between \\(a\\) and \\(b\\), then \\(f(x)\\) is increasing on \\((a,b)\\)\nIf \\(f'(x)&lt;0\\) for all \\(x\\) values betwen \\(a\\) and \\(b\\), then \\(f(x)\\) is decreasing on \\((a,b)\\)\nIf \\(f'(x)=0\\) for all values between \\(a\\) and \\(b\\), then \\(f(x)\\) is constant on \\((a,b)\\)"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#envs-change2",
-    "href": "notes/day2_limits/lecture-limits.html#envs-change2",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#max-min",
+    "href": "notes/day3_derivatives/lecture-derivative.html#max-min",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Environmental Science studies change"
+    "text": "Local maxima and minima of funcitons\n\nA funciton \\(f(x)\\) has…\n\na local maximum at \\(p\\) if \\(f(p)\\) is greater than or equal to the values of \\(f\\) for points near \\(p\\).\n\n\n\na local minimum at \\(p\\) if \\(f(p)\\) is less than or equal to the values of \\(f\\) for points near \\(p\\).\n\n\n\n\na critical point \\(p\\) if \\(f'(p)=0\\). The value \\(f(p)\\) at a critital point \\(p\\) is called a critical value.\n\n\n\nFinding critical points helps us solve optimization problems: every maximum and miniumum occurs at a critical point."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#envs-change3",
-    "href": "notes/day2_limits/lecture-limits.html#envs-change3",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#optimization-motivation",
+    "href": "notes/day3_derivatives/lecture-derivative.html#optimization-motivation",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Environmental Science studies change"
+    "text": "Finding maxima/minima"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1-blank",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-1-blank",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#optimization",
+    "href": "notes/day3_derivatives/lecture-derivative.html#optimization",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (1)\n\nConstant Rule\n     \nPower Rule"
+    "text": "Finding maxima/minima\n\n1) Find critical points with the 1st derivative:\n\nIf \\(f(x)\\) has a local maximum or minimum at \\(p\\) then \\(f'(p)\\) =0.\nThis means that we need to look for local max/min among critical points (the values for \\(x\\) for which \\(f'(x)=0\\)).\n\n\n\n2) Apply the 2nd derivative test to critical points:\n\nWhether a critical point is a maximum or minimum requires us to test if the function is concave up or concave down around that point.\nIf \\(f'(p)=0\\) and \\(f''(p)&lt;0\\) then \\(f(x)\\) has a local maximum at \\(p\\).\nIf \\(f'(x)=0\\) and \\(f''(x)&gt;0\\), then \\(f(x)\\) has a local minimum at \\(p\\)."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-1",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#opt-graph-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#opt-graph-blank",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (1)\n\nConstant Rule\nLet \\(c\\) be a constant (so, a number). If \\(f(x) = c\\), then \\(f'(x)=0\\). Equivalently\n\\[\\frac{d}{dx}c = 0\\]\nPower Rule\nLet \\(n\\) be a (real) number, if \\(f(x)= x^n\\), then \\(f'(x) = nx^{n-1}\\). Equivalently \\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}.\n\\]\n\nExamples\n\\[\n\\begin{align}\n&y=100 & &f(x)=x^5 & &f(x)=\\frac{1}{x^2}\n\\end{align}\n\\]"
+    "text": "Example\n\n✏️ Consider the function \\(f(x)=x^3-12x+2\\). What are its local maxima and minima?"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2-blank",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-2-blank",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#opt-graph",
+    "href": "notes/day3_derivatives/lecture-derivative.html#opt-graph",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules for differentiation (2)\n\nSum and Difference Rules"
+    "text": "Example\n\n✏️ Consider the function \\(f(x)=x^3-12x+2\\). What are its local maxima and minima?\n\n\n\n\nFind critical points with 1st derivative:\n\n\\[\n\\begin{align}\nf(x)&=x^3-12x+2 \\\\\nf'(x)&=3x^2-12 \\\\\nx^*&=-2  & x^*=2\n\\end{align}\n\\]\n\n\n\nApply 2nd derivative test to critical points:\n\n\\[\n\\begin{align}\nf''(x)&=6x \\\\\nf''(-2)&&lt;0  &f''(2)&gt;0\n\\end{align}\n\\]\n\n\n\nBy the first order conditions we know that \\(x=2\\) and \\(x=-2\\) are the critical points of the function.\nThe second order conditions inform us that \\(f(x)\\) has a local maximum at \\(x=-2\\) and a local minimum at \\(x=2\\)."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-2",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Rules for differentiation (2)\n\nSum and Difference Rules\nLet \\(f(x)\\) and \\(g(x)\\) be differentiable functions. Then \\[\n\\begin{align}\n\\frac{d}{dx}[f(x)+g(x)]=\\frac{d}{dx}f(x)+\\frac{d}{dx}g(x) \\\\\n\\frac{d}{dx}[f(x)-g(x)]=\\frac{d}{dx}f(x)-\\frac{d}{dx}g(x)\n\\end{align}\n\\]\n😵All this says is: if the function has pieces that are added or subtracted you can take the derivative of each individual piece and add those derivatives.\n\nExample\n\\[\nf(x)=x^3-x^2-15\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3-blank",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-3-blank",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-3",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule\nThe derivative of a constant \\(c\\) multiplied by a function \\(f(x)\\) is the same as the constant multiplied by the derivative:\n\\[\\frac{d}{dx}[kf(x)] = k\\frac{d}{dx}f(x)\\]\n\nExample\n\\[\ny=x^2+\\sqrt{2}x-\\frac{8}{x}+4\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Summary of differentiation rules\n\n\n\n\n\n\n\n\n\nDifferentiation Rule\n\\(f'(x)\\) notation\n\\(\\frac{d}{dx}\\) notation\n\n\n\n\nConstant Rule\n\\(f(x)=c \\Rightarrow f'(x)=0\\)\n\\(\\frac{d}{dx}[c]=0\\)\n\n\nPower Rule\n\\(f(x)=x^n \\Rightarrow f'(x)=n x^{n-1}\\)\n\\(\\frac{d}{dx}[x^n]=n x^{n-1}\\)\n\n\nSum Rule\n\\((g(x)+h(x))'=g'(x)+h'(x)\\)\n\\(\\frac{d}{dx}[g(x)+h(x)]=\\frac{d}{dx}g(x)+\\frac{d}{dx}h(x)\\)\n\n\nDifference Rule\n\\((g(x)-h(x))' = g'(x)-h'(x)\\)\n\\(\\frac{d}{dx}[g(x)-h(x)]=\\frac{d}{dx}g(x)-\\frac{d}{dx}h(x)\\)\n\n\nConstant Multiplier Rule\n\\((c\\cdot g(x))'=c\\,g'(x)\\)\n\\(\\frac{d}{dx}[c\\,g(x)]=c\\,\\frac{d}{dx}g(x)\\)"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta-2",
-    "href": "notes/day2_limits/lecture-limits.html#ta-2",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#ta-2",
+    "href": "notes/day3_derivatives/lecture-derivative.html#ta-2",
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Team Assessment"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#gta2-1",
-    "href": "notes/day2_limits/lecture-limits.html#gta2-1",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-1",
+    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "As a team, list 3 fields of environmental science where studying the rate of change and derivatives would be important.\n\n\n\nWhich rules should you use to take these derivatives?\n\n\\[\n\\begin{align}\n\\text{A)  }& f(x)=3x^4 &\\text{B) }  y=4x^2+3x-16\n\\end{align}\n\\]\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=7x+4 & &\\text{C) }g(y)=\\sqrt{y}\n\\end{align}\n\\]"
+    "text": "✏️ 1. How many local minimums and maximums can you find on this graph?"
   },
   {
-    "objectID": "notes/day2_limits/problem_set_limits.html",
-    "href": "notes/day2_limits/problem_set_limits.html",
-    "title": "Limits and Derivatives Problem Set",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-2-blank",
+    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-2-blank",
+    "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Limits and Derivatives Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\n\n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n\n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n\n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n\n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative."
+    "text": "✏️ 2. Find all the critical points of this function. Identify which are minima and which are maxima. \\[\nf(x)=2x^3-6x^2+3x+15\n\\]"
   },
   {
-    "objectID": "notes/about.html",
-    "href": "notes/about.html",
-    "title": "About",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-2",
+    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-2",
+    "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "About this site"
+    "text": "✏️ 2. Find all the critical points of this function. Identify which are minima and which are maxima.\n\\[\nf(x)=2x^3-6x^2+3x+15\n\\]"
   },
   {
-    "objectID": "notes/day1_algebra/day1_algebra.html",
-    "href": "notes/day1_algebra/day1_algebra.html",
-    "title": "Day 1: Algebra",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#gta2-3",
+    "href": "notes/day3_derivatives/lecture-derivative.html#gta2-3",
+    "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "This unit covers basic introduction of algebra and how to use graphs to convey environmental science.\n\n\nAlgebra lecture slides\nContents\n\nIntroductions\nMath in environmental science\nAlgebra review\nGraphing\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
-    "crumbs": [
-      "Day 1: Algebra"
-    ]
+    "text": "✏️ 3. Your team has been hired to help the city of Santa Barbara to help eliminate a nasty pollutant in our streams. You are choosing between two policies. Policy A provides \\(\\sqrt{10x+4}\\) benefits where \\(x\\) is the dollar spent on interventions. Policy B provides \\(\\sqrt{20x+4}\\) benefits for every dollar spent. However, each policy has a cost associated with each. Policy A has a constant linear cost at \\(2x\\) and Policy B has a constant linear cost at \\(3x\\).\n\na) Which policy is cheaper?\n\nb) Find the optimal amount of interventions dollars to spend for each policy. Consider both costs and benefits. [Hint: Remember \\(\\sqrt{}\\) is just \\(x^{\\frac{1}{2}}\\). You can use exponent rules to help solve]\n\nc) Which policy provides the most maximun net benefits?\n\nd) Which policy should the city of Santa Barbara pursue?"
   },
   {
-    "objectID": "notes/day1_algebra/day1_algebra.html#lecture-materials",
-    "href": "notes/day1_algebra/day1_algebra.html#lecture-materials",
-    "title": "Day 1: Algebra",
+    "objectID": "notes/day3_derivatives/lecture-derivative.html#solutions",
+    "href": "notes/day3_derivatives/lecture-derivative.html#solutions",
+    "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Algebra lecture slides\nContents\n\nIntroductions\nMath in environmental science\nAlgebra review\nGraphing",
-    "crumbs": [
-      "Day 1: Algebra"
-    ]
+    "text": "Solution to exercise 3\n\na. Which policy is cheaper?\nPolicy A is cheaper: it costs \\(2x\\) vs. \\(3x\\) for Policy B.\nb. Optimal spending = maximizing net benefits\nFor this, we need to create a function representing the net benefits for each policy:\n\\[\n\\begin{align}\nB_A (x) &= \\sqrt{10x+4} - 2x & \\text{net benefits for policy A,}\\\\\nB_A (x) &= \\sqrt{20x+4} - 3x & \\text{net benefits for policy B}.\n\\end{align}\n\\] Solving for critical points and applying the second derivative test we get that \\(B_A\\) benefits are maximized when \\(x_A=\\frac{9}{40}=0.225\\) dollars are spent and \\(B_B\\) benefits are maximized when \\(x_B=\\frac{16}{45}\\approx0.356\\) dollars are spent.\nb. Which policy provides the most benefits?\nIf we compare the maximum net benefits offered by each policy we get \\[\nB_A (0.225) = 2.05\\  \\text{ and }\nB_B (\\frac{16}{45})\\  \\approx 2.27.\n\\]\nSo policy B provides the maximum net benefits.\nd. Which policy should the city pursue?\nBecause Policy B yields the larger maximal net benefit (≈2.27), the City of Santa Barbara should probably pursue Policy B, assuming there are no restrictions in how much money they can invest in the policy."
   },
   {
-    "objectID": "notes/day1_algebra/day1_algebra.html#problem-set",
-    "href": "notes/day1_algebra/day1_algebra.html#problem-set",
-    "title": "Day 1: Algebra",
-    "section": "",
-    "text": "Click here to see the problem set.",
-    "crumbs": [
-      "Day 1: Algebra"
-    ]
-  },
-  {
-    "objectID": "notes/day1_algebra/day1_algebra.html#problem-set-solutions",
-    "href": "notes/day1_algebra/day1_algebra.html#problem-set-solutions",
-    "title": "Day 1: Algebra",
-    "section": "",
-    "text": "Solutions",
-    "crumbs": [
-      "Day 1: Algebra"
-    ]
-  },
-  {
-    "objectID": "notes/day1_algebra/solutions_problem_set_algebra.html",
-    "href": "notes/day1_algebra/solutions_problem_set_algebra.html",
-    "title": "Solutions: Algebra and Graphing Problem Set",
-    "section": "",
-    "text": "Solutions: Algebra and Graphing Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\nAlgebra basics\n\nDescribe how solving for the roots of equations (the values of \\(x\\) for which a function \\(f(x)\\) satisfies \\(f(x)=0\\)) could be useful in environmental science. List at least one method to find roots of a certain kind of funciton.\n\n Finding the roots of an equation could be useful to, for example, predict when the concentration of pollutants reaches zero, or when does the cost and benefits of a program balance. Any answers in that direction could be good. \n One method for finding roots would be to use the quadratic formula if the function is a quadratic function..\n\nExpand the following expressions:\n\na. \n \\[\n\\begin{align}\n(x+2)(3x-4) &=& 3x^2-4x+6x-8 \\\\\n            &=& 3x^2+2x-8\n\\end{align}\n\\] \n b. \n \\[\n\\begin{align}\n(x^2-2y)(x+y^3) = x^3+x^2y^3-2yx-2y^4\n\\end{align}\n\\] \n\nSolve for \\(x\\) in the following equations:\n\na.\n \\[\n\\begin{align}\n2x-4=&3x+12 \\\\\n2x&=3x+16 &\\text{Add 4 to both sides}\\\\\n-x&=16 &\\text{Subtract $3x$ from both sides}\\\\\nx&=16\n\\end{align}\n\\] \nb.  \\[\n\\begin{align}\n-6ax+2b&=x-5c \\\\\n-6ax&=x-5c-2b &\\text{Subtract $2b$ from both sides} \\\\\n-6ax-x&=-5c-2b &\\text{Subtract $x$} \\\\\nx(-6a-1)&=-5c-2b &\\text{Factor out $x$}\\\\\nx&=\\frac{-5c-2b}{(-6a-1)}\n\\end{align}\n\\] \nc.  \\[\n\\begin{align}\n2x^2+3x-4&=0 \\\\\n\\frac{-(3)\\pm\\sqrt{3^2-4(2*-4)}}{2(2)}&=0 \\\\\nx_1=\\frac{-3+\\sqrt{41}}{4}&  &x_2=\\frac{-3-\\sqrt{41}}{4} \\\\\nx_1\\approx0.85 & &x_2\\approx-2.35  \n\\end{align}\n\\] \nd.  \\[\n\\begin{align}\nx^2+2x-5&=0 \\\\\n\\frac{-(-2)\\pm\\sqrt{2^2-4(1*-5)}}{2(1)}&=0 \\\\\nx_1=\\frac{2+\\sqrt{24}}{2}&  &x_2=\\frac{2-\\sqrt{24}}{2} \\\\\nx_1\\approx3.45 & &x_2\\approx-1.45  \n\\end{align}\n\\] \n\n\nStory Problems\n\nRepresentative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm=2.13 gigaton to give your answer in gigatons.\n\n\n Since the fraction of US carbon emissions will remain constant at 14% we can calculate that the US will emit 14% of the 600 ppm in 2100: \n \\[\n\\begin{align}\n600 * 0.14 &=& 84 \\text{ ppm}\\\\\n  &=& 84* 2.13 \\text{ gigaton}\\\\\n  &=& 178.92 \\text{ gigaton}\n\\end{align}\n\\] \n\nLet’s say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of \\(f(t)=\\frac{-1}{8}t^2+6t+123.83\\) where \\(t\\) is each year and \\(f(t)\\) is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?\n\nBased on the model of the scientists, we need to where the total amount of US carbon equals 0. In other words, we need to find when \\[f(t) = \\frac{1}{8}t^2+6t+123.83=0.\\]\n\n Because \\(f(t)\\) is a second degree polynomial we can use the quadratic equation to find it’s roots: \n \\[\n\\begin{align}\nt &=& \\frac{-6\\pm\\sqrt{6^2-4(\\frac{-1}{8}*123.83)}}{\\frac{-2}{8}} \\\\\nt &\\approx& 63.581 \\text{ years}\n\\end{align}\n\\] \nWe are only concerned about the postive year amounts.\n\n\nGraphs\n\nFind the slope and \\(y\\)-intercept of the following lines.\n\n\n\nShow the code\nx=seq(-5,5)\n\ny=2*x+5\n\nw=(1/3)*x-1\n\nz=x-0.5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np2&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=w),size=3,color=\"blue\")+\n  geom_line(aes(x=x,y=w),size=2,color=\"blue\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-3,3,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np3&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=z),size=3,color=\"red\")+\n  geom_line(aes(x=x,y=z),size=2,color=\"red\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,5,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p2,p3,p4,labels=c(\"A\",\"B\",\"C\",\"D\"))\n\n\n\n\n\n\n\n\n\n The slope for graph A is 2 with a \\(y\\)-intercept of 5. \n The slope for graph B is 1/3 with a \\(y\\)-intercept of -1 \n The for graph C is 1 with a \\(y\\)-intercept of -0.5 \n The slope for graph D is -3 with a \\(y\\)-intercept of 2 \n\nThe growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\n\n The average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{155-40}{8-0} = 14.375\\] \n The average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{210-200}{30-20} =1 \\] \n This tells us that the average rate of change for sharks between the ages of 0 to 8 was 14.375. For the ages, 20 to 30 the average change was 1. \n\nWhat are the units of the average slopes and why would they change for a shark as they get older?\n\n Slopes are in units of length over age, so the slope indicates the growth in centimeters every year. As animals get older, ther slow down their growth. Less energy is spent in growing and more invested in reproductive energy. \n\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n We would need to apply calculus to find the true answer, but we can approximate it reasonably well by finding the smallest possible difference between two points around age 12. In this case we can use \\(\\frac{175-172}{13-12}\\) to get an approximate instaneous rate of growth of 3 cm per year.\n\n\n\nPicture of a scalloped hammerhead shark."
-  },
-  {
-    "objectID": "notes/day3_derivatives/problem_set_derivatives.html",
-    "href": "notes/day3_derivatives/problem_set_derivatives.html",
+    "objectID": "notes/day3_derivatives/solutions_problem_set_derivative.html",
+    "href": "notes/day3_derivatives/solutions_problem_set_derivative.html",
     "title": "Solutions: Derivatives Problem Set",
     "section": "",
     "text": "Answer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!"
   },
   {
-    "objectID": "notes/day3_derivatives/problem_set_derivatives.html#derivative-rules",
-    "href": "notes/day3_derivatives/problem_set_derivatives.html#derivative-rules",
+    "objectID": "notes/day3_derivatives/solutions_problem_set_derivative.html#derivative-rules",
+    "href": "notes/day3_derivatives/solutions_problem_set_derivative.html#derivative-rules",
     "title": "Solutions: Derivatives Problem Set",
     "section": "Derivative Rules",
-    "text": "Derivative Rules\n\nExplain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (constant, multiple, sum, product, chain, etc.) you would use. For extra practice, have a try at solving them!\n\n\\(\\large f(x)=\\sqrt(x+3)\\)\n\\(\\large h(a)=\\frac{\\exp^{-a}}{a^2-5}\\)\n\\(\\large g(t)=\\left(\\frac{5t^3+2}{2(t^2-2)}\\right)^6\\)\n\nOn the graph, label all regions where the following statements are true:\n\n\\(f'(x)=0\\)\n\\(f'(x)&gt;0\\)\n\\(f'(x)&lt;0\\)\n\\(f''(x)&gt;0\\)\n\\(f''(x)&lt;0\\)\n\n\n\n\n\n\n\n\n\n\n\n\nFind the derivative of these equations\n\n\\(f(x)=\\exp^{x^2+3}\\)\n\\(f(x)=\\sqrt(2x)(x^3-4x+15)\\)\n\\(f(x)=\\frac{x^3+2x}{x-1}\\)\n\nFind the critical points of the following function and determine whether they are maxima or minima:\n\n\\[\nf(x) = 2x^3-5x^2+3x-12.\n\\]"
+    "text": "Derivative Rules\n\nExplain how to find the derivative of the following functions. Be sure to explicitly denote which derivative rules (constant, multiple, sum, product, chain, etc.) you would use. For extra practice, have a try at solving them!\n\n\n\\(\\large f(x)=\\sqrt{(x+3)}\\)\n\n We can use chain rule to compute this one, with the outer function being \\(\\sqrt(u)\\) and ithe inner function being \\(x+3\\). We can compute each of these derivatives using the power rule. We obtain that&lt;&gt;\n \\[\nf'(x)=\\frac{1}{2\\sqrt{(x+3)}}\n\\] \n\n\\(h(a)=\\frac{\\exp^{-a}}{a^2-5}\\)\n\n First we would use the quotient rule then to solve for the individual derivatives. The individual derivatives will require us to use the chain rule (for the numerator) and the power rule (for the denominator). We obtain that \n \\[\nh'(a)=\\frac{-(a^2-5)e^{-a}-(2a)e^{-a}}{(a^2-5)^2}\n\\] \n\n\\(g(t)=\\left(\\frac{5t^3+2}{2(t^2-2)}\\right)^6\\)\n\n First chain rule. In the \\(u\\)-substitution we have to use the quotient and power rules. \n \\[\\begin{align}\ng(t)&=\\left(\\frac{5t^3+2}{2(t^2-2)}\\right)^6 \\\\\ng(t)&=u(t)^6  &u=\\frac{5t^3+2}{2(t^2-2)}\\\\\ng'(t)&=6(u(t))^5\\times u'(t)  &\\frac{du}{dt}=\\frac{2(t^2-2)15t^2-4t(5t^3+2)}{(2(t^2-2))^2} \\\\\ng'(t)&=6(u(t))^5* \\frac{2(t^2-2)15t^2-4t(5t^3+2)}{(2(t^2-2))^2} \\\\\ng'(t)&=6\\left(\\frac{5t^3+2}{2(t^2-2)}\\right)^5\\frac{2(t^2-2)15t^2-4t(5t^3+2)}{(2(t^2-2))^2}\n\\end{align}\\] \n\nOn the graph, label all regions where the following statements are true:\n\n\n\\(f'(x)=0\\)\n\n We have that \\('f(x)=0\\) at \\(x=-2\\) and \\(x=2\\), these are a minima and maxima respectively. \n\n\\(f'(x)&gt;0\\) \nThe function \\(f(x)\\) has a positive derivative whenever it is increasing, this happens over the interval (-2,0). This is indicated as the blue interval on the graph below. \n\\(f'(x)&lt;0\\)\n\n The function \\(f(x)\\) has a negative derivative whenever it is decreasing, this happens over the intervals \\((-\\infty,-2)\\) and \\((0,\\infty)\\). This range is indicated by the red intervals on the graph below. \nd)\\(f''(x)&gt;0\\)\n\nThe second derivative \\(f''(x)\\) is positive whenever the function is concave up (it has a U shape). The points at which the graph changes concavity are called inflection points. We can estimate the function is concave up whenever \\(x&lt;-1\\). \n\n\\(f''(x)&lt;0\\)\n\n The second derivative \\(f''(x)\\) is negative whenever the function is concave down (it has an upside-down U shape). The points at which the graph changes concavity are called inflection points. We can estimate the function is concave down whenever \\(x&gt;-1\\). \n\n\n\n\n\nThe color bars correspond to the verbal statements and their colors in answer key above\n\n\n\n\n\nFind the derivative of these equations\n\n\n\\(f(x)=e^{x^2+3}\\)\n\n \\[\nf'(x)=2x e^{x^2+3}\n\\] \n\n\\(f(x)=\\sqrt(2x)(x^3-4x+15)\\)\n\n \\[\nf'(x) =\\frac{1}{\\sqrt{2x}}(x^3-4x+15)+\\sqrt{2x}(3x^2-4)\n\\] \n\n\\(f(x)=\\frac{x^3+2x}{x-1}\\)\n\n \\[\nf'(x)=\\frac{(x-1)(3x^2+2)-(x^3+2x)(1)}{(x-1)^2}\n\\] \n\nFind the critical points of the following function and determine whether they are maxima or minima:\n\n\\[\nf(x) = 2x^3-5x^2+3x-12.\n\\]\n To do this we neeed to first find the critical points by solving \\(f'(x)=0\\) and then use the second derivative test on the critical points we find to determine if they are a maxima or a minima. Computing the first derivative using the power rule we have that \n \\[\nf'(x)=6x^2-10x+3=0\n\\] \n Then, using the quadratic formula to solve this equation we get that the critical points of \\(f(x)\\) are \\(x\\approx 1.27\\) and \\(x\\approx 0.39\\). \n Next, the second derivative is \\(f''(x)=12x-10\\), and evaluating this at the critical points we get that \\[f''(1.27)&gt;0 \\ \\text{ and } \\ f''(0.39)&lt;0\\] \n Therefore, based on the first and second order conditions, there are two optimas for this function at \\(x\\approx 1.27\\) and \\(x\\approx 0.39\\). Plugging these values into the second order derivative we can see that \\(x\\approx 0.39\\) is a maximum and \\(x\\approx 1.27\\) is a minimum. \n\n\n\nLet’s solve the canonical Gordon-Schaefer fisheries production model. This model formed the basis of fisheries management for half a century and is still a widely used model. It starts by defining the change in the abundance or biomass of fish by the logistic growth equation:\n\\[\\begin{equation}\n\\frac{dB}{dt}=rB(t)(1-\\frac{B(t)}{K})\n\\end{equation}\\]\nwhere \\(B\\) is biomass, \\(t\\) is time, \\(r\\) is the intrinsic growth rate, and \\(K\\) is the carrying capacity.\nNext, fishers catch fish based on their effort \\(E\\) (constant), technological ability \\(q\\) (constant as well and also called the catchability coefficient), and the amount of fish \\(B\\). For simplicity, we use an easy multiplicative form:\n\\[\nY(t)=qEB(t)\n\\]\nThis catch rate takes away from the growth of the fish stock, thus we can subtract it from the logistic growth equation 1.\n\\[\\begin{equation}\n\\frac{dB}{dt}=rB(t)(1-\\frac{B(t)}{K})-Y(t)\n\\end{equation}\\]\na) Fishery managers are interested in finding the equilibrium level of biomass and harvest. We can set \\(\\frac{dB}{dt}=0\\). Solve for the equilibrium biomass in terms of K,q,r,E.\n Substituting \\(Y(t)\\) in \\(\\frac{dB}{dt}\\) and solving for B we obtain: \\[\n\\begin{align}\n0&=rB(1-\\frac{B}{K})-qEB \\\\\nqEB&=rB(1-\\frac{B}{K})\\\\\nqE&=r(1-\\frac{B}{K})\\\\\n\\frac{rB}{K}&=r-qE \\\\\nB&=K(1-\\frac{qE}{r}).\n\\end{align}\n\\] \nb) Substitute the equilibrium biomass you found in (a) into the catch equation.\n Making this substitution we obtain \\[\n\\begin{align}\nY&=qEB \\\\\n&=qEK(1-\\frac{qE}{r})\\\\\n&=qEK-\\frac{q^2E^2K}{r}.\n\\end{align}\n\\] \nc) What effort leads to a maximum sustainable yield? Maximize the equation from b) with respect to effort \\(E\\).\n Let’s take the derivative of the previous equation with respet to \\(E\\): \\[\n\\begin{align}\n\\frac{dY}{dE}&= \\frac{d}{dE} qEK-\\frac{q^2E^2K}{r}\\\\\n   &= qK-\\frac{2q^2EK}{r}.\n\\end{align}\n\\] \n To find the effort \\(E\\) that leads to the maximum yield we find the critical points: \\[\n\\begin{align}\nqK-\\frac{2q^2EK}{r} = 0 &\\Rightarrow qK =\\frac{2q^2EK}{r} \\\\\n                        &\\Rightarrow  E^* = \\frac{r}{2q}.\n\\end{align}\n\\] \nd) Interpret what you found in c). What are the two variables that drive fisher harvest levels?\n The amount of effort that leads to the most amount of catch is driven entirely by the rate of growth of fish stocks and the ability of fishers to catch them. If \\(q\\) catchability goes up, fishers become more efficient and need less effort to reach max harvest. Faster growing species allow for more growth and thus more effort to catch them. \ne) Calculate what is the maximum sustainable yield by substituting the optimal harvest level into the harvest equation.\n Doing this substitution we obtain that the maximum sustainable yield is \\[\\begin{align}\nY_{\\text{max}}=\\frac{qrK}{2q}-\\frac{q^2(\\frac{r}{2q})^2K}{r}\\\\\nY_{\\text{max}}=\\frac{rK}{2}-\\frac{rK}{4}\\\\\nY_{\\text{max}}=\\frac{Kr}{4}.\n\\end{align}\\]"
   },
   {
-    "objectID": "notes/day3_derivatives/problem_set_derivatives.html#applications",
-    "href": "notes/day3_derivatives/problem_set_derivatives.html#applications",
-    "title": "Solutions: Derivatives Problem Set",
-    "section": "Applications",
-    "text": "Applications\n\n\n\nLet’s solve the canonical Gordon-Schaefer fisheries production model. This model formed the basis of fisheries management for half a century and is still a widely used model. It starts by defining the change in the abundance or biomass of fish by the logistic growth equation:\n\\[\\begin{equation}\n\\frac{dB}{dt}=rB(t)(1-\\frac{B(t)}{K})\n\\end{equation}\\]\nwhere \\(B\\) is biomass, \\(t\\) is time, \\(r\\) is the intrinsic growth rate, and \\(K\\) is the carrying capacity.\nNext, fishers catch fish based on their effort \\(E\\) (constant), technological ability \\(q\\) (constant as well and also called the catchability coefficient), and the amount of fish \\(B\\). For simplicity, we use an easy multiplicative form:\n\\[\nY(t)=qEB(t)\n\\]\nThis catch rate takes away from the growth of the fish stock, thus we can subtract it from the logistic growth equation 1.\n\\[\\begin{equation}\n\\frac{dB}{dt}=rB(t)(1-\\frac{B(t)}{K})-Y(t)\n\\end{equation}\\]\na) Fishery managers are interested in finding the equilibrium level of biomass and catch. We can set \\(\\frac{dB}{dt}=0\\). Solve for the equilibrium biomass in terms of K,q,r,E.\nb) Substitute the equilibrium biomass you found in A into the catch equation.\nc) What effort leads to a maximum sustainable yield? Maximize the equation from b) with respect to effort \\(E\\).\nd) Interpret what you found in c). What are the two variables that drive fisher harvest levels?\ne) Calculate what the maximum sustainable catch is by substituting the optimal harvest level into the harvest equation."
-  },
-  {
-    "objectID": "notes/day3_derivatives/day3_derivatives.html",
-    "href": "notes/day3_derivatives/day3_derivatives.html",
-    "title": "Day 3: Derivatives",
+    "objectID": "notes/day4_integrals/solutions_problem_set_integrals.html",
+    "href": "notes/day4_integrals/solutions_problem_set_integrals.html",
+    "title": "Calculus Workshop",
     "section": "",
-    "text": "Limits lecture slides\nContents\n\nProduct rule\nQuotient rule\nChain rule\nThe number \\(e\\) and exponential functions\nDerivative of exponential functions\nHigher order derivatives\nApplications of derivatives\nCritical points and local maxima and minima\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
+    "text": "Answer the following questions to the best of your ability. Feel free to work with anyone in the cohort, though I would encourage attempting on your own first to make sure you fully understand the concepts."
+  },
+  {
+    "objectID": "notes/day4_integrals/solutions_problem_set_integrals.html#solve-for-x",
+    "href": "notes/day4_integrals/solutions_problem_set_integrals.html#solve-for-x",
+    "title": "Calculus Workshop",
+    "section": "1) Solve for x",
+    "text": "1) Solve for x\n\\(ln(x+2)=12\\)\n\n\\[\\begin{align}\nx+2=e^{12}\\\\\nx=e^{12}-2\\\\\nx=162,752.79\n\\end{align}\\]\n\\(e^{3x+1}=16\\)\n\n\\[\\begin{align}\n3x+1=\\ln(16)\\\\\nx=\\frac{\\ln(16)-1}{3} \\\\\nx=1.26\n\\end{align}\\]\n\\(6e^{4x}=41e^{2x}\\)\n\n\\[\\begin{align}\n\\frac{e^{4x}}{e^{2x}=\\frac{41}{6}}\\\\\ne^{4x-2x}=\\frac{41}{6} \\\\\ne^{2x}=\\frac{41}{6}\\\\\n2x=\\ln(41)-\\ln(6)\\\\\nx=\\frac{\\ln(41)-\\ln(6)}{2}\n\\end{align}\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/solutions_problem_set_integrals.html#find-the-derivative",
+    "href": "notes/day4_integrals/solutions_problem_set_integrals.html#find-the-derivative",
+    "title": "Calculus Workshop",
+    "section": "2) Find the derivative:",
+    "text": "2) Find the derivative:\n\\[\nG(a)=\\frac{2\\ln(4a-2)}{e^{3a}}\n\\]\n\n\\[\\begin{align}\n\\frac{dG}{da}=\\frac{\\frac{8e^{3a}}{4a-2}-3e^{3a}\\ln(4a-2)}{[e^{3a}]^2}\n\\end{align}\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/solutions_problem_set_integrals.html#section",
+    "href": "notes/day4_integrals/solutions_problem_set_integrals.html#section",
+    "title": "Calculus Workshop",
+    "section": "1)",
+    "text": "1)\nThe marginal benefit of abatement (e.g. reducing) for carbon is given by:\n\\[\nMB=31-2Q\n\\]\nHowever there is also a marginal cost for carbon abatement given by:\n\\[\nMC=6+3Q\n\\]\nFind the total net benefit of carbon abatement to society at equilibrium. (Hint: To get equilibrium and the bounds of the integral, first set marginal benefit equal to marginal cost and solve for \\(Q^*\\). Then your integral bounds should be from 0 to \\(Q^*\\))\n\n\\[\\begin{align}\n31-2Q=6+3Q\\\\\n25=5Q \\\\\n5=Q^*\n\\end{align}\\]\n \n\\[\\begin{align}\n\\int^5_030-2Qdq \\\\\n30Q-Q^2|^5_0 \\\\\n30(5)-(5)^2=125\n\\end{align}\\]\n\n\\[\\begin{align}\n\\int^5_06+3Q dq\\\\\n6Q+\\frac{3x^2}{2}|^5_0\\\\\n6(5)+\\frac{3(5)^2}{2}=67.5\n\\end{align}\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/solutions_problem_set_integrals.html#section-1",
+    "href": "notes/day4_integrals/solutions_problem_set_integrals.html#section-1",
+    "title": "Calculus Workshop",
+    "section": "2)",
+    "text": "2)\nTake the Integrals\n\\[\\begin{align}\n\\text{A) }y=\\frac{3}{x^2}, y(1)=5&  &\\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\\text{C) } \\int^4_2\\frac{1}{2}x\n\\end{align}\\]\n\n\n\\[\\begin{align}\n\\int\\frac{3}{x^2} dx\\\\\n-3x^{-3}+C\\\\\n-3(1)^{-3}+C=5\\\\\nC=8\\\\\nx^{-3}+8\n\\end{align}\\]\n\\[\\begin{align}\n\\int\\ g(t)=3t^5-2t^3+16t-7 dt\\\\\n\\frac{t^6}{2}-\\frac{t^4}{2}+8t^2-7t+C\\\\\n\\end{align}\\]\n\\[\\begin{align}\n\\int^4_2\\frac{1}{2}x dx\\\\\n\\frac{1}{4}x^2|^4_2\\\\\n\\frac{1}{4}(4)^2-\\frac{1}{4}(2)^2=3\n\\end{align}\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/solutions_problem_set_integrals.html#section-2",
+    "href": "notes/day4_integrals/solutions_problem_set_integrals.html#section-2",
+    "title": "Calculus Workshop",
+    "section": "3)",
+    "text": "3)\nA model for the rate of change in ozone concentrations over time between 1962-1984 is given by \\(\\frac{dC}{dt}=2t+20\\). Where \\(C\\) is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?\n\\[\\begin{align}\n\\frac{dC}{dt}&=2t+20\\\\\ndC&=2t+20 dt \\\\\n\\int dC&=\\int 2t+20 dt \\\\\nC&=t^2+20t+D\\\\\n30&=2^2+20(2)+D \\\\\nD&=-14\n\\end{align}\\]\nNow that we know D we can solve for the concentration in 1982\n\\[\n20^2+20*(20)-14=\\text{ 786ppm}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/day4_integrals.html",
+    "href": "notes/day4_integrals/day4_integrals.html",
+    "title": "Day 4: Integrals",
+    "section": "",
+    "text": "This unit covers basic introduction to integration.\n\n\nAlgebra lecture slides\nContents\n\nNatural logarithms and its derivative\nIntegrals\n\nArea under curve and geometric motivation\nRiemann sums and the integral as a limit\n\nFundamental Theorem of Calculus\nRules of integration\n\nLinearity\nIntegrating a constant\nPower rule\n\nInitial value problems\nDefinite and indefinite integrals Area between two curves\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions",
     "crumbs": [
-      "Day 3: Derivatives"
+      "Day 4: Integrals"
     ]
   },
   {
-    "objectID": "notes/day3_derivatives/day3_derivatives.html#lecture-materials",
-    "href": "notes/day3_derivatives/day3_derivatives.html#lecture-materials",
-    "title": "Day 3: Derivatives",
+    "objectID": "notes/day4_integrals/day4_integrals.html#lecture-materials",
+    "href": "notes/day4_integrals/day4_integrals.html#lecture-materials",
+    "title": "Day 4: Integrals",
     "section": "",
-    "text": "Limits lecture slides\nContents\n\nProduct rule\nQuotient rule\nChain rule\nThe number \\(e\\) and exponential functions\nDerivative of exponential functions\nHigher order derivatives\nApplications of derivatives\nCritical points and local maxima and minima",
+    "text": "Algebra lecture slides\nContents\n\nNatural logarithms and its derivative\nIntegrals\n\nArea under curve and geometric motivation\nRiemann sums and the integral as a limit\n\nFundamental Theorem of Calculus\nRules of integration\n\nLinearity\nIntegrating a constant\nPower rule\n\nInitial value problems\nDefinite and indefinite integrals Area between two curves",
     "crumbs": [
-      "Day 3: Derivatives"
+      "Day 4: Integrals"
     ]
   },
   {
-    "objectID": "notes/day3_derivatives/day3_derivatives.html#problem-set",
-    "href": "notes/day3_derivatives/day3_derivatives.html#problem-set",
-    "title": "Day 3: Derivatives",
+    "objectID": "notes/day4_integrals/day4_integrals.html#problem-set",
+    "href": "notes/day4_integrals/day4_integrals.html#problem-set",
+    "title": "Day 4: Integrals",
     "section": "",
     "text": "Click here to see the problem set.",
     "crumbs": [
-      "Day 3: Derivatives"
+      "Day 4: Integrals"
     ]
   },
   {
-    "objectID": "notes/day3_derivatives/day3_derivatives.html#problem-set-solution",
-    "href": "notes/day3_derivatives/day3_derivatives.html#problem-set-solution",
-    "title": "Day 3: Derivatives",
+    "objectID": "notes/day4_integrals/day4_integrals.html#problem-set-solutions",
+    "href": "notes/day4_integrals/day4_integrals.html#problem-set-solutions",
+    "title": "Day 4: Integrals",
     "section": "",
     "text": "Solutions",
     "crumbs": [
-      "Day 3: Derivatives"
+      "Day 4: Integrals"
     ]
   }
 ]

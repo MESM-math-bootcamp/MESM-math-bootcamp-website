@@ -1,0 +1,17 @@
+{
+  "hash": "eaa1973b5d9fd678af108d5994402750",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Calculus Workshop\"\nsubtitle: \"Integration Problem Set\"\nauthor: \"Nathan Grimes\"\ndate: \"2023-09-19\"\noutput: pdf_document\n---\n\n\n\n*Answer the following questions to the best of your ability. Feel free to work with anyone in the cohort, though I would encourage attempting on your own first to make sure you fully understand the concepts.*\n\n# Logarithms\n\n## 1) Solve for x\n\n$ln(x+2)=12$\n\n$e^{3x+1}=16$\n\n$6e^{4x}=41e^{2x}$\n\n## 2) Find the derivative:\n\n$$\nG(a)=\\frac{2\\ln(4a-2)}{e^{3a}}\n$$\n\n\n# Reimann Sum\n\n1) Approximate the area under the curve $f(x)=3x^2-6x+10$ on the interval $[6,12]$ with 6 uniform rectangles. \n\nDoes the position of the rectangle make a difference? Desribe in words,show mathmatically, or draw on the graph how evaluating the rectangle in different ways might lead to slighly different approximations.\n\n\n::: {.cell}\n::: {.cell-output-display}\n![](problem_set_integrals_files/figure-html/unnamed-chunk-1-1.png){width=672}\n:::\n:::\n\n\n# Intergrals\n\n\n## 1)\nThe marginal benefit of abatement (e.g. reducing) for carbon is given by:\n\n$$\nMB=31-2Q\n$$\n\nHowever there is also a marginal cost for carbon abatement given by:\n\n$$\nMC=6+3Q\n$$\n\nFind the total net benefit of carbon abatement to society at equilibrium. (Hint: To get equilibrium and the bounds of the integral, first set marginal benefit equal to marginal cost and solve for $Q^*$. Then your integral bounds should be from 0 to $Q^*$)\n\n## 2)\n\nTake the Integrals\n\n\\begin{align}\n\\text{A) }y=\\frac{3}{x^2}, y(0)=5&  &\\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\\text{C) } \\int^4_2\\frac{1}{2}x\n\\end{align}\n\n\n## 3)\n\nA model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\\frac{dC}{dt}=2t+20$. Where $C$ is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?\n",
+    "supporting": [
+      "problem_set_integrals_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
