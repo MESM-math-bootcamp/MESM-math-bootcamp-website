@@ -289,7 +289,7 @@ $$
 
 ## {#d-ln-blank data-menu-title="Natural logs"}
 
-[Derivative of Natural Log]{.slide-title}
+[Derivative of natural log]{.slide-title}
 
 <hr>
 
@@ -487,6 +487,9 @@ The initial population is 50,000 individuals.
 
 **2. Instantaneous growth rate at $t = 6$ months**
 
+:::: {.columns}
+
+::: {.column width="50%"}
 The derivative of $P(t)$ is:
 
 $$
@@ -497,6 +500,9 @@ P'(t) &= \frac{d}{dt} \big[200 \, \ln(1 + 0.5 t) + 50 \big] \\
 \end{aligned}
 $$
 
+:::
+
+::: {.column width="50%"}
 At $t = 6$:
 
 $$
@@ -507,6 +513,11 @@ P'(6) &= \frac{100}{1 + 0.5 \cdot 6} \\
        &= 25
 \end{aligned}
 $$
+
+:::
+
+::::
+
 
 The population is growing at 25,000 individuals per month at $t = 6$.
 
@@ -526,11 +537,7 @@ $P'(t) = \frac{100}{1 + 0.5 t}$
 <div class="custom-subtitle">Integration Conceputally</div>
 </div>
 
-## {#xkcd data-menu-title="Integration"}
-
-```{r out.width="55%",fig.align='center'}
-knitr::include_graphics("https://imgs.xkcd.com/comics/differentiation_and_integration.png")
-```
+<!----------------------------------------------------->
 
 ## {#auc data-menu-title="Area under the curve"}
 
@@ -542,44 +549,25 @@ knitr::include_graphics("https://imgs.xkcd.com/comics/differentiation_and_integr
 knitr::include_graphics("images/area.png")
 ```
 
+<!----------------------------------------------------->
 
 ## {#rect-approx data-menu-title="Area under the curve"}
 
-[We can approximate the area by summing the area of easy to calculate rectangles]{.slide-title}
+[How do we find the area under this curve?]{.slide-title}
 
 <hr>
+
+Areas of rectangles are easy to find (base $\times$ height!). We can approximate the are by adding the area of rectangles.
 
 ```{r}
 knitr::include_graphics("images/reimann.png")
 ```
 
+<!----------------------------------------------------->
 
-## {#rect data-menu-title="Reimann Sum"}
+## {#riemann-sum data-menu-title="Riemann Sum"}
 
-[How do we make the rectangles]{.slide-title}
-
-<hr>
-1. Start at one end of the interval $[a,b]$
-
-2. Evaluate the function at $f(a)$
-
-3. Step away from $a$ by some small amount called $\Delta x$
-
-4. Multiply $f(a)\Delta x$
-
-5. Repeat the same steps above, but keep moving the function evaluation to new intervals
-
-6. Sum up all (k) rectangles
-
-$$
-\text{Area}=f(x_1)\Delta x+f(x_2)\Delta x+...f(x_k)\Delta x
-$$
-
-This is called a **Reimann Sum**
-
-## {#reinsum data-menu-title="Reimann Sum"}
-
-[Example of Reimann Sum]{.slide-title}
+[Riemann sums]{.slide-title}
 
 <hr>
 
@@ -590,28 +578,29 @@ Approximate the area under the curve from $[-3,3]$ with $\Delta x=1$ and $k=6$
 :::{.column width="30%"}
 ```{r}
 x=seq(-5,5,by=.1)
-y=x^3-12*x+2
+y=x^3-12*x+62
 
 x_tab=seq(-3,3,by=1)
-y_tab=x_tab^3-12*x_tab+2
-
+y_tab=x_tab^3-12*x_tab+62
 
 data.frame(x=x_tab,y=y_tab) %>% 
   knitr::kable()
-#DT::datatable(round(data.frame(x=x_tab,y=y_tab),2),
-              #fillContainer = FALSE, options = list(pageLength = 6))
 ```
 :::
 
 :::{.column width="70%"}
 
 ```{r,out.width="90%"}
+
 ggplot()+
   geom_line(aes(x=x,y=y),size=2.5,color="#003660")+
+  geom_hline(yintercept = 0, color = "black") +
+  geom_vline(xintercept = 0, color = "black") +
   theme_classic()+
-  annotate("segment",x=-3,xend=-3,y=11,yend=-63,linetype=1,color="#FEBC11",size=2)+
-  annotate("segment",x=3,xend=3,y=-7,yend=-63,color="#FEBC11",size=2)+
-  theme(text = element_text(size = 28))+
+  annotate("segment",x=-3,xend=-3,y=71,yend=0,linetype=1,color="#FEBC11",size=2)+
+  annotate("segment",x=3,xend=3,y=53,yend=0,color="#FEBC11",size=2)+
+  theme(text = element_text(size = 28),
+                axis.line = element_blank()) +   # remove default axis box
   scale_y_continuous(expand=c(0,0))+
   scale_x_continuous(breaks=seq(-5,5))
 ```
@@ -619,51 +608,73 @@ ggplot()+
 
 ::::
 
+<!----------------------------------------------------->
 
+## {#rect data-menu-title="Riemann Sum"}
 
-## {#exp-reimman data-menu-title="Reimann Sum"}
+[Riemann sums]{.slide-title}
 
-[Expanding Reimann Sums]{.slide-title}
+<hr>
+1. Start at one end of the interval $[a,b]$
+
+2. Evaluate the function at $f(a)$
+
+3. Step away from $a$ by some small amount called $\Delta x$
+
+4. Multiply $f(a)\Delta x$ to get the the area of the first rectangle.
+
+5. Repeat the same steps above, now starting with $\Delta x$ as the bottom left corner of the next rectangle. Repeat until you cover the area with rectangles of width $\Delta x$. 
+
+6. Sum up the area of all $k$ rectangles
+
+<span style="color:red">
+$$
+R(f(x), \Delta x)= \underbrace{f(x_1)\Delta x+f(x_2)\Delta x+...f(x_k)\Delta x}_{\text{Sum of area of rectangles with width $\Delta(x)$} }
+$$
+</span>
+
+This is called a **Riemann Sum**.
+
+<!----------------------------------------------------->
+
+## {#exp-reimman data-menu-title="Riemann Sum"}
+
+[Finer and finer Riemann sums]{.slide-title}
 
 <hr>
 
-- What if we try to make $\Delta x$ really small and the number of rectangles really big $(k\to \infty)$?
+- What if we try to make $\Delta x$ (the width of the rectangles) really small? So we let $\Delta x \to 0$. This will make the number of rectangles under the curve go to infinity.
 
-- Our estimation of the Area will get better and better with more rectangles
+- Our estimation of the area will get better and better with more rectangles.
 
-:::{.fragment .fade-in}
+:::: {.columns}
 
-```{r,fig.align='center'}
-knitr::include_graphics("images/riemann.gif")
-```
+::: {.column width="50%"}
+![](images/riemann.gif){fig-align="center" width="220%"}
 :::
 
+::: {.column width="50%"}
+<br>
 
-
-## {#integral data-menu-title="Integrals"}
-
-[Take the limits to infinity]{.slide-title}
-
-<hr>
-
-
-Take the area calculation we did before, but with infinitely many $ks$
-
+:::{.fragment .fade-in}
+Take the area calculation we did before, but let $\Delta x \to 0$
+<span style="color:red">
 $$
 \large
-\lim_{k\to\infty}R(f(x),\Delta x)=\text{True Area}
+\begin{align}
+\text{True Area} &= \lim_{\Delta x \to 0}R(f(x),\Delta x) \\
+                  &= \int^b_af(x)dx
+\end{align}
 $$
+</span>
 
-We formally call this an integral with the following notation:
+We formally call this <span style="color:red">**the integral of $f(x)$ from $a$ to $b$ with respect to $x$**</span>.
+:::
+:::
 
-$$
-\large
-\int^b_af(x)dx
-$$
+::::
 
-Verbally:
-
-*The Integral of $f(x)$ from $a$ to $b$ with respect to $x$*
+<!----------------------------------------------------->
 
 ## {#integral-calc data-menu-title="Integrals"}
 
@@ -676,6 +687,8 @@ Verbally:
 <br>
 
 - Luckily the $dx$ portion hints at the way to solve integrals
+
+
 
 
 ## {#fundamental data-menu-title="Fundamental Theorem of Calculus"}
