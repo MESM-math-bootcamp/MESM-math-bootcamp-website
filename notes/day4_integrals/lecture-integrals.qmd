@@ -688,8 +688,7 @@ We formally call this <span style="color:red">**the integral of $f(x)$ from $a$ 
 
 - Luckily the $dx$ portion hints at the way to solve integrals
 
-
-
+<!----------------------------------------------------->
 
 ## {#fundamental data-menu-title="Fundamental Theorem of Calculus"}
 
@@ -704,14 +703,23 @@ $$
 F(x)=\int^x_af(t)dt
 $$
 
-then $F'(x)=f(x)$ over $[a,b]$
+then $F'(x)=f(x)$ over $[a,b]$.
+
+. . .
+
+<br>
+
+This can be somewhat confusing. What it means intuitively is
+
+<div class="page-center">
+<span style="color:red">
+*to find the integral of $\int f(t) dt$ we need to find a function $F(x)$ whose derivative is $f(x)$.*
+</span>
+</div>
+
+. . .
 
 
-## {#ftoc data-menu-title="Fundamental Theorem of Calculus"}
-
-[Fundamental Theorem of Calculus means that Integrals are just Anti-Derivatives]{.slide-title}
-
-<hr>
 If we integrate a derivative, we should get the same function back as the original vice-versa
 
 $$
@@ -729,23 +737,36 @@ $$
 $$
 :::
 
+<!----------------------------------------------------->
+
 ## {#c data-menu-title="Constants of Integration"}
 
-[Where the heck did that C come from?]{.slide-title}
+[Where did that $C$ come from?]{.slide-title}
 
 <hr>
 
 ::::{.columns}
 :::{.column width="50%"}
-- Start with $x^2-4x+1$
 
-- $\frac{d}{dx}=2x-4$
+**Example** 
 
-- If we integrate, we'll have $x^2-4x+C$
+:::{.fragment .fade-in}
+- Start with $f(x) = x^2-4x+1$
 
-- There is no way of knowing what the x-intercept should be without additional information
+- Then $f'(x) = 2x-4$
+:::
 
-- We have to solve with an initial value problem
+:::{.fragment .fade-in}
+To find $\int 2x-4$ we need to find a function whose derivative is $2x-4$. What could it be?
+:::
+
+:::{.fragment .fade-in}
+- If we integrate, we'll have $\int 2x-4 = x^2-4x+C$. 
+
+- There is no way of knowing what the $c$ should be without additional information
+
+- $c$ is the $x$-intercept and we would have we have to solve for it with an initial value problem.
+:::
 
 :::
 :::{.column width="50%"}
@@ -755,35 +776,40 @@ knitr::include_graphics("images/c.png")
 :::
 ::::
 
+<!----------------------------------------------------->
+
 ## {#integratal-use data-menu-title="Why is Integration useful"}
 
-[Why is Integration Useful?]{.slide-title}
+[What is integration useful for?]{.slide-title}
 
 <hr>
-- Convert from rate of changes to total values
+- Convert from rate of change to total values
 
 <br>
 
-- Solve Differential Equations
+- Solving differential equations
 
     - i.e $\frac{dy}{dx}=2x-4$
     
-    - Logistic Growth is one example
+    <!-- - Logistic Growth is one example -->
     
 <br>    
 
-- Total area of curves
+- Calculatin the total area under a curve
 
     - Useful in policy evaluations
 
-
+<!----------------------------------------------------->
 
 ## {#tough data-menu-title="Integration is tough"}
 
-[Integration is tough]{.slide-title}
+[But also itegration can be tough]{.slide-title}
 
 <hr>
 
+:::: {.columns}
+
+::: {.column width="40%"}
 **Before integrating ask yourself:**
 
 1. What am I trying to solve?
@@ -792,15 +818,46 @@ knitr::include_graphics("images/c.png")
 
 2. Does it make sense to take an integral?
 
+:::
+
+::: {.column width="60%"}
+![Source [xkcd comics](https://xkcd.com/2117/)](images/xkcd.png)
+:::
+
+::::
+
+<!----------------------------------------------------->
+
 ## {#rules-cover data-menu-title="Rules of Integration" background-color="#003660"}
 
 <div class="page-center">
 <div class="custom-subtitle">Rules of Integration</div>
 </div>
+<!----------------------------------------------------->
 
-## {#sum-diff data-menu-title="Rules of Integration"}
+## {#notation-blank data-menu-title="Notation"}
 
-[Follow many of the same rules for derivatives]{.slide-title}
+[Notation]{.slide-title}
+
+<hr>
+
+<!----------------------------------------------------->
+
+## {#notation data-menu-title="Notation"}
+
+[Notation]{.slide-title}
+
+<hr>
+
+When you take an integral, the function in it can be in terms of any variable. This is just notation and it does not affect the result of the integration:
+
+$$\int f(x) dx = \int f(t) dt = \int f(u) du.$$
+
+<!----------------------------------------------------->
+
+## {#sum-diff-blank data-menu-title="Rules of Integration"}
+
+[Integration rules (1)]{.slide-title}
 
 <hr>
 
@@ -808,36 +865,71 @@ knitr::include_graphics("images/c.png")
 **Sum and Difference Rules**
 :::
 
-$$
-\begin{align}
-\int[f(x)+g(x)]dx=\int f(x)dx+\int g(x)dx \\
-\int[f(x)-g(x)]dx=\int f(x)dx-\int g(x)dx 
-\end{align}
-$$
+<!----------------------------------------------------->
 
-## {#constant data-menu-title="Rules of Integration"}
+## {#sum-diff data-menu-title="Rules of Integration"}
 
-[Rules of Integration]{.slide-title}
+[Integration rules (1)]{.slide-title}
 
 <hr>
 
 :::{.center-text}
-**Constant Rules**
+**Sum and Difference Rules**
 :::
 
+The integral of a sum is equal to the sum of the integrals:
 
 $$
-\begin{align}
-\int k dx&=kx+C \\
-\int kf(x)dx&=k\int f(x)dx
-\end{align}
+\int[f(x)+g(x)]dx=\int f(x)dx+\int g(x)dx
 $$
 
-- Second part says we can move multipliers outside the integration to simplify. 
+The integral of the difference is equal to the difference of the integrals: 
+
+$$\int[f(x)-g(x)]dx=\int f(x)dx-\int g(x)dx $$
+<!----------------------------------------------------->
+
+## {#constant-blank data-menu-title="Rules of Integration"}
+
+[Integration rules (2)]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Constant Rule**
+:::
+<!----------------------------------------------------->
+
+## {#constant data-menu-title="Rules of Integration"}
+
+[Integration rules (2)]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Constant Rule**
+:::
+
+When a function is mulitplied by a constant, the constant can be taken out to multiply the integral:
+
+$$
+\int cf(x)dx=c\int f(x)dx
+$$
+<!----------------------------------------------------->
+
+## {#power-blank data-menu-title="Rules of Integration"}
+
+[Integration rules (3)]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**Power Rule**
+:::
+<!----------------------------------------------------->
 
 ## {#power data-menu-title="Rules of Integration"}
 
-[Rules of Integration]{.slide-title}
+[Integration rules (3)]{.slide-title}
 
 <hr>
 
@@ -846,47 +938,68 @@ $$
 :::
 
 $$
-\int x^ndx=\frac{x^{n+1}}{n+1}+C \text{, n}\ne1
+\int x^ndx=\frac{x^{n+1}}{n+1}+C \text{, n}\ne -1
 $$
 
-- Workhorse rule of integration
-
+<!----------------------------------------------------->
 ## {#examples data-menu-title="Examples of Integration"}
 
 [Examples]{.slide-title}
 
 <hr>
 
-$$
-\begin{align}
-f(x)&=4 & &g(x)=2x^2  &f(x)=x^3-4x
-\end{align}
-$$
+✏️ [Evaluate the following integrals.]{style="color:green;"}
 
+
+:::: {.columns}
+
+::: {.column width="33%"}
+A) $\int f(x)=4$
+:::
+
+::: {.column width="33%"}
+B) $\int 2x^2$
+:::
+
+::: {.column width="33%"}
+C) $\int x^3-4x$
+:::
+
+::::
+
+<!----------------------------------------------------->
 ## {#ivp data-menu-title="Initial Value Problems"}
 
-[Initial Value Problems]{.slide-title}
+[Initial value problems]{.slide-title}
 
 <hr>
 
-```{r,fig.align='center',out.width="80%"}
-knitr::include_graphics("images/increase.PNG")
-```
+:::: {.columns}
 
+::: {.column width="50%"}
 
-- To find the C terms, we need extra information
+- To find the $C$ term in the integral, we need extra information
 
 - Often times that comes from being given an *initial value*
 
-- The start of the period we know that $y(0)=a$ or $y(12)=b$
+- This means being given some value of the function, e.g. $y(0)=a$ or $y(12)=b$
 
-- We use this information to solve for what C should be
+- We use this information to solve for what $C$ should be
+:::
 
+::: {.column width="50%"}
+```{r,out.width="75%"}
+knitr::include_graphics("images/c.png")
+```
+:::
 
+::::
 
-## {#ivp-ex  data-menu-title="Initial Value Problem"}
+<!----------------------------------------------------->
 
-[Initial Value Problem: Example]{.slide-title}
+## {#ivp-ex-blank  data-menu-title="Initial Value Problem"}
+
+[Example]{.slide-title}
 
 <hr>
 
@@ -896,66 +1009,94 @@ $$
 \frac{dC}{dx}=25-0.02x
 $$
 
-Where C is the cost ($), and x is the number of units produced. Given that producing 2 units of product costs \$10, what is the complete cost equation?
+Where $C$ is the cost (in dollars), and $x$ is the number of units produced. Given that producing 2 units of product costs \$10, what is the complete cost equation?
 
-:::{.fragment .fade-in}
+<!----------------------------------------------------->
+
+## {#ivp-ex  data-menu-title="Initial Value Problem"}
+
+[Example]{.slide-title}
+
+<hr>
+
+The marginal cost of producing $x$ units of a product is:
 
 $$
+\frac{dC}{dx}=25-0.02x
+$$
+
+Where $C$ is the cost (in dollars), and $x$ is the number of units produced. Given that producing 2 units of product costs \$10, what is the complete cost equation?
+
+We can integrate to find the original cost function $C$:
+
+$$C(x) = \int \frac{dC}{dx} dx = \int 25-0.02x.$$
+
+Then: 
+$$
 \begin{align}
-C(x)=&25x-\frac{.02x^2}{2}+D & \text{Solve with Power Rule}\\
-10&=25(2)-\frac{0.02(2)^2}{2}+D  &\text{ Sub in x=2}\\
+\int 25-0.02x =&25x-\frac{.02x^2}{2}+D & \text{Solve with Power Rule}\\
+10&=25(2)-\frac{0.02(2)^2}{2}+D  &\text{ Sub in $x=2$}\\
 -39.96&=D\\
 C(x)&=25x-\frac{0.2x^2}{2}-39.96
 \end{align}
 $$
-:::
 
-## {#definte data-menu-title="Definite vs Indefinite"}
+<!----------------------------------------------------->
 
-[Definite vs indefinite integrals]{.slide-title}
+## {#definte-1 data-menu-title="Definite vs Indefinite"}
+
+[Indefinite vs. dfinite integrals]{.slide-title}
 
 <hr>
-
-::::{.columns}
-
-:::{.column width="50%"}
-
-- Definite integrals have start and end values (aka bounds)
-
-- We must evaluate between the intervals by
-
-$$
-\begin{align}
-\int^b_axdx\\
-\frac{1}{2}x^2|^b_a\\
-\frac{1}{2}(b)^2-\frac{1}{2}(a)^2
-\end{align}
-$$
-
-:::
-
-:::{.column width="50%"}
-- Indefinite Integrals no bounds 
-
-- Need initial values to find integration constants
+- We have been working with **indefinite integrals**: there are no integration bounds
 
 $$
 \int f(x)dx
 $$
 
-:::
-::::
+- We need initial values to find integration constants.
+
+. . .
+
+- **Definite integrals** have start and end values $a$ and $b$:
+
+$$\int_a^b f(x) dx.$$
+
+<!-- - If $F(x) = \int f(x)dx$ then 
+
+$$\int_a^b f(x) dx = F(b) - F(a).$$ -->
+
+To find the area under the curve along an interval $[a,b]$, evaluate the antiderivative at the endpoints and subtract them.
+
+**Example**
+
+$$
+\begin{align}
+\int^b_axdx &= \frac{1}{2}x^2\Big|^b_a\\
+            &= \frac{1}{2}(b)^2-\frac{1}{2}(a)^2
+\end{align}
+$$
+
+<!----------------------------------------------------->
 
 ## {#def-solve data-menu-title="Definite Integral"}
 
-[Definite Integral: Example]{.slide-title}
+[Example]{.slide-title}
 
 <hr>
+
+✏️ [Evaluate the following integral.]{style="color:green;"}
+
+<span style="color:green">
+$$\int^2_{-1}3x^2dx$$
+</span>
+
+We have that:
 $$
 \begin{align}
-\int^2_{-1}3x^2dx \\
-x^3|^2_{-1}\\
-(2)^3-(-1)^3=9
+\int^2_{-1}3x^2dx &= x^3\Big|^2_{-1}\\
+&=(2)^3-(-1)^3 \\ 
+&=9
 \end{align}
 $$
 
