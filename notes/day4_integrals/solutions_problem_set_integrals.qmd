@@ -177,7 +177,7 @@ C)
 \frac{1}{4}(4)^2-\frac{1}{4}(2)^2=3
 \end{align}
 
-## 3)
+<!-- ## 3)
 
 A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$. Where $C$ is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?
 
@@ -195,4 +195,4 @@ Now that we know D we can solve for the concentration in 1982
 $$
 20^2+20*(20)-14=\text{ 786ppm}
 $$
-
+ -->

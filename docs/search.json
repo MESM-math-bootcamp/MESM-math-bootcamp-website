@@ -35,18 +35,11 @@
     "text": "2)\nTake the Integrals\n\\[\\begin{align}\n\\text{A) }y=\\frac{3}{x^2}, y(0)=5&  &\\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\\text{C) } \\int^4_2\\frac{1}{2}x\n\\end{align}\\]"
   },
   {
-    "objectID": "notes/day4_integrals/problem_set_integrals.html#section-2",
-    "href": "notes/day4_integrals/problem_set_integrals.html#section-2",
-    "title": "Calculus Workshop",
-    "section": "3)",
-    "text": "3)\nA model for the rate of change in ozone concentrations over time between 1962-1984 is given by \\(\\frac{dC}{dt}=2t+20\\). Where \\(C\\) is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?"
-  },
-  {
     "objectID": "notes/day4_integrals/lecture-integrals.html#title-slide",
     "href": "notes/day4_integrals/lecture-integrals.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Introduction to Integration\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 20, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Introduction to Integration\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 21, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#tr",
@@ -102,7 +95,7 @@
     "href": "notes/day4_integrals/lecture-integrals.html#d-ln-blank",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Derivative of Natural Log"
+    "text": "Derivative of natural log"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#d-ln",
@@ -151,7 +144,7 @@
     "href": "notes/day4_integrals/lecture-integrals.html#solutions-2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Solutions\n\n\nThe popuplation \\(P(t)\\) of an invasive plant species in a wetland (in thousands of individuals) grows according to \\[P(t) = 200\\ln(1+0.5 t) + 50 \\] where \\(t\\) is time in months.\n\n1. Initial population at \\(t = 0\\)\n\\[\n\\begin{aligned}\nP(0) &= 200 \\, \\ln(1 + 0.5 \\cdot 0) + 50 \\\\\n      &= 200 \\, \\ln(1) + 50 \\\\\n      &= 0 + 50 \\\\\n      &= 50\n\\end{aligned}\n\\]\nThe initial population is 50,000 individuals.\n2. Instantaneous growth rate at \\(t = 6\\) months\nThe derivative of \\(P(t)\\) is:\n\\[\n\\begin{aligned}\nP'(t) &= \\frac{d}{dt} \\big[200 \\, \\ln(1 + 0.5 t) + 50 \\big] \\\\\n      &= 200 \\cdot \\frac{1}{1 + 0.5 t} \\cdot 0.5 \\\\\n      &= \\frac{100}{1 + 0.5 t}\n\\end{aligned}\n\\]\nAt \\(t = 6\\):\n\\[\n\\begin{aligned}\nP'(6) &= \\frac{100}{1 + 0.5 \\cdot 6} \\\\\n       &= \\frac{100}{1 + 3} \\\\\n       &= \\frac{100}{4} \\\\\n       &= 25\n\\end{aligned}\n\\]\nThe population is growing at 25,000 individuals per month at \\(t = 6\\)."
+    "text": "Solutions\n\n\nThe popuplation \\(P(t)\\) of an invasive plant species in a wetland (in thousands of individuals) grows according to \\[P(t) = 200\\ln(1+0.5 t) + 50 \\] where \\(t\\) is time in months.\n\n1. Initial population at \\(t = 0\\)\n\\[\n\\begin{aligned}\nP(0) &= 200 \\, \\ln(1 + 0.5 \\cdot 0) + 50 \\\\\n      &= 200 \\, \\ln(1) + 50 \\\\\n      &= 0 + 50 \\\\\n      &= 50\n\\end{aligned}\n\\]\nThe initial population is 50,000 individuals.\n2. Instantaneous growth rate at \\(t = 6\\) months\n\n\nThe derivative of \\(P(t)\\) is:\n\\[\n\\begin{aligned}\nP'(t) &= \\frac{d}{dt} \\big[200 \\, \\ln(1 + 0.5 t) + 50 \\big] \\\\\n      &= 200 \\cdot \\frac{1}{1 + 0.5 t} \\cdot 0.5 \\\\\n      &= \\frac{100}{1 + 0.5 t}\n\\end{aligned}\n\\]\n\nAt \\(t = 6\\):\n\\[\n\\begin{aligned}\nP'(6) &= \\frac{100}{1 + 0.5 \\cdot 6} \\\\\n       &= \\frac{100}{1 + 3} \\\\\n       &= \\frac{100}{4} \\\\\n       &= 25\n\\end{aligned}\n\\]\n\nThe population is growing at 25,000 individuals per month at \\(t = 6\\)."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#integrate-concept",
@@ -172,35 +165,28 @@
     "href": "notes/day4_integrals/lecture-integrals.html#rect-approx",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "We can approximate the area by summing the area of easy to calculate rectangles"
+    "text": "How do we find the area under this curve?\n\nAreas of rectangles are easy to find (base \\(\\times\\) height!). We can approximate the are by adding the area of rectangles."
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#riemann-sum",
+    "href": "notes/day4_integrals/lecture-integrals.html#riemann-sum",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Riemann sums\n\nApproximate the area under the curve from \\([-3,3]\\) with \\(\\Delta x=1\\) and \\(k=6\\)\n\n\n\n\n\n\n\nx\ny\n\n\n\n\n-3\n71\n\n\n-2\n78\n\n\n-1\n73\n\n\n0\n62\n\n\n1\n51\n\n\n2\n46\n\n\n3\n53"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#rect",
     "href": "notes/day4_integrals/lecture-integrals.html#rect",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "How do we make the rectangles\n\n\nStart at one end of the interval \\([a,b]\\)\nEvaluate the function at \\(f(a)\\)\nStep away from \\(a\\) by some small amount called \\(\\Delta x\\)\nMultiply \\(f(a)\\Delta x\\)\nRepeat the same steps above, but keep moving the function evaluation to new intervals\nSum up all (k) rectangles\n\n\\[\n\\text{Area}=f(x_1)\\Delta x+f(x_2)\\Delta x+...f(x_k)\\Delta x\n\\]\nThis is called a Reimann Sum"
-  },
-  {
-    "objectID": "notes/day4_integrals/lecture-integrals.html#reinsum",
-    "href": "notes/day4_integrals/lecture-integrals.html#reinsum",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Example of Reimann Sum\n\nApproximate the area under the curve from \\([-3,3]\\) with \\(\\Delta x=1\\) and \\(k=6\\)\n\n\n\n\n\n\n\nx\ny\n\n\n\n\n-3\n11\n\n\n-2\n18\n\n\n-1\n13\n\n\n0\n2\n\n\n1\n-9\n\n\n2\n-14\n\n\n3\n-7"
+    "text": "Riemann sums\n\n\nStart at one end of the interval \\([a,b]\\)\nEvaluate the function at \\(f(a)\\)\nStep away from \\(a\\) by some small amount called \\(\\Delta x\\)\nMultiply \\(f(a)\\Delta x\\) to get the the area of the first rectangle.\nRepeat the same steps above, now starting with \\(\\Delta x\\) as the bottom left corner of the next rectangle. Repeat until you cover the area with rectangles of width \\(\\Delta x\\).\nSum up the area of all \\(k\\) rectangles\n\n \\[\nR(f(x), \\Delta x)= \\underbrace{f(x_1)\\Delta x+f(x_2)\\Delta x+...f(x_k)\\Delta x}_{\\text{Sum of area of rectangles with width $\\Delta(x)$} }\n\\] \nThis is called a Riemann Sum."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#exp-reimman",
     "href": "notes/day4_integrals/lecture-integrals.html#exp-reimman",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Expanding Reimann Sums\n\n\nWhat if we try to make \\(\\Delta x\\) really small and the number of rectangles really big \\((k\\to \\infty)\\)?\nOur estimation of the Area will get better and better with more rectangles"
-  },
-  {
-    "objectID": "notes/day4_integrals/lecture-integrals.html#integral",
-    "href": "notes/day4_integrals/lecture-integrals.html#integral",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Take the limits to infinity\n\nTake the area calculation we did before, but with infinitely many \\(ks\\)\n\\[\n\\large\n\\lim_{k\\to\\infty}R(f(x),\\Delta x)=\\text{True Area}\n\\]\nWe formally call this an integral with the following notation:\n\\[\n\\large\n\\int^b_af(x)dx\n\\]\nVerbally:\nThe Integral of \\(f(x)\\) from \\(a\\) to \\(b\\) with respect to \\(x\\)"
+    "text": "Finer and finer Riemann sums\n\n\nWhat if we try to make \\(\\Delta x\\) (the width of the rectangles) really small? So we let \\(\\Delta x \\to 0\\). This will make the number of rectangles under the curve go to infinity.\nOur estimation of the area will get better and better with more rectangles.\n\n\n\n\n\n\n\n\n\n\n\nTake the area calculation we did before, but let \\(\\Delta x \\to 0\\)  \\[\n\\large\n\\begin{align}\n\\text{True Area} &= \\lim_{\\Delta x \\to 0}R(f(x),\\Delta x) \\\\\n                  &= \\int^b_af(x)dx\n\\end{align}\n\\] \nWe formally call this the integral of \\(f(x)\\) from \\(a\\) to \\(b\\) with respect to \\(x\\)."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#integral-calc",
@@ -214,35 +200,28 @@
     "href": "notes/day4_integrals/lecture-integrals.html#fundamental",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Fundamental Theorem of Calculus\n\nIf \\(f(x)\\) is continuous over an interval \\([a,b]\\), and the function \\(F(x)\\) is defined by:\n\\[\n\\large\nF(x)=\\int^x_af(t)dt\n\\]\nthen \\(F'(x)=f(x)\\) over \\([a,b]\\)"
-  },
-  {
-    "objectID": "notes/day4_integrals/lecture-integrals.html#ftoc",
-    "href": "notes/day4_integrals/lecture-integrals.html#ftoc",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Fundamental Theorem of Calculus means that Integrals are just Anti-Derivatives\n\nIf we integrate a derivative, we should get the same function back as the original vice-versa\n\\[\n\\begin{align}\n\\frac{d}{dx}\\left[\\int f(x)dx\\right]&=f(x) &\\text{Differentiation is the inverse of integration}\n\\end{align}\n\\]\n\n\\[\n\\begin{align}\n\\int f'(x)&=f(x)+C &\\text{Integration is the inverse of differentiation}\n\\end{align}\n\\]"
+    "text": "Fundamental Theorem of Calculus\n\nIf \\(f(x)\\) is continuous over an interval \\([a,b]\\), and the function \\(F(x)\\) is defined by:\n\\[\n\\large\nF(x)=\\int^x_af(t)dt\n\\]\nthen \\(F'(x)=f(x)\\) over \\([a,b]\\).\n\n\nThis can be somewhat confusing. What it means intuitively is\n\n to find the integral of \\(\\int f(t) dt\\) we need to find a function \\(F(x)\\) whose derivative is \\(f(x)\\). \n\n\n\nIf we integrate a derivative, we should get the same function back as the original vice-versa\n\\[\n\\begin{align}\n\\frac{d}{dx}\\left[\\int f(x)dx\\right]&=f(x) &\\text{Differentiation is the inverse of integration}\n\\end{align}\n\\]\n\n\\[\n\\begin{align}\n\\int f'(x)&=f(x)+C &\\text{Integration is the inverse of differentiation}\n\\end{align}\n\\]"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#c",
     "href": "notes/day4_integrals/lecture-integrals.html#c",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Where the heck did that C come from?\n\n\n\n\nStart with \\(x^2-4x+1\\)\n\\(\\frac{d}{dx}=2x-4\\)\nIf we integrate, we’ll have \\(x^2-4x+C\\)\nThere is no way of knowing what the x-intercept should be without additional information\nWe have to solve with an initial value problem"
+    "text": "Where did that \\(C\\) come from?\n\n\n\nExample\n\n\nStart with \\(f(x) = x^2-4x+1\\)\nThen \\(f'(x) = 2x-4\\)\n\n\n\nTo find \\(\\int 2x-4\\) we need to find a function whose derivative is \\(2x-4\\). What could it be?\n\n\n\nIf we integrate, we’ll have \\(\\int 2x-4 = x^2-4x+C\\).\nThere is no way of knowing what the \\(c\\) should be without additional information\n\\(c\\) is the \\(x\\)-intercept and we would have we have to solve for it with an initial value problem."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#integratal-use",
     "href": "notes/day4_integrals/lecture-integrals.html#integratal-use",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Why is Integration Useful?\n\n\nConvert from rate of changes to total values\n\n\n\nSolve Differential Equations\n\ni.e \\(\\frac{dy}{dx}=2x-4\\)\nLogistic Growth is one example\n\n\n\n\nTotal area of curves\n\nUseful in policy evaluations"
+    "text": "What is integration useful for?\n\n\nConvert from rate of change to total values\n\n\n\nSolving differential equations\n\ni.e \\(\\frac{dy}{dx}=2x-4\\)\n\n\n\n\n\nCalculatin the total area under a curve\n\nUseful in policy evaluations"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#tough",
     "href": "notes/day4_integrals/lecture-integrals.html#tough",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Integration is tough\n\nBefore integrating ask yourself:\n\nWhat am I trying to solve?\n\n\n\nDoes it make sense to take an integral?"
+    "text": "But also itegration can be tough\n\n\n\nBefore integrating ask yourself:\n\nWhat am I trying to solve?\n\n\n\nDoes it make sense to take an integral?\n\n\n\n\n\nSource xkcd comics"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#rules-cover",
@@ -252,81 +231,123 @@
     "text": "Rules of Integration"
   },
   {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#notation-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#notation-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Notation"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#notation",
+    "href": "notes/day4_integrals/lecture-integrals.html#notation",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Notation\n\nWhen you take an integral, the function in it can be in terms of any variable. This is just notation and it does not affect the result of the integration:\n\\[\\int f(x) dx = \\int f(t) dt = \\int f(u) du.\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#sum-diff-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#sum-diff-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Integration rules (1)\n\n\nSum and Difference Rules"
+  },
+  {
     "objectID": "notes/day4_integrals/lecture-integrals.html#sum-diff",
     "href": "notes/day4_integrals/lecture-integrals.html#sum-diff",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Follow many of the same rules for derivatives\n\n\nSum and Difference Rules\n\n\\[\n\\begin{align}\n\\int[f(x)+g(x)]dx=\\int f(x)dx+\\int g(x)dx \\\\\n\\int[f(x)-g(x)]dx=\\int f(x)dx-\\int g(x)dx\n\\end{align}\n\\]"
+    "text": "Integration rules (1)\n\n\nSum and Difference Rules\n\nThe integral of a sum is equal to the sum of the integrals:\n\\[\n\\int[f(x)+g(x)]dx=\\int f(x)dx+\\int g(x)dx\n\\]\nThe integral of the difference is equal to the difference of the integrals:\n\\[\\int[f(x)-g(x)]dx=\\int f(x)dx-\\int g(x)dx \\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#constant-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#constant-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Integration rules (2)\n\n\nConstant Rule"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#constant",
     "href": "notes/day4_integrals/lecture-integrals.html#constant",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules of Integration\n\n\nConstant Rules\n\n\\[\n\\begin{align}\n\\int k dx&=kx+C \\\\\n\\int kf(x)dx&=k\\int f(x)dx\n\\end{align}\n\\]\n\nSecond part says we can move multipliers outside the integration to simplify."
+    "text": "Integration rules (2)\n\n\nConstant Rule\n\nWhen a function is mulitplied by a constant, the constant can be taken out to multiply the integral:\n\\[\n\\int cf(x)dx=c\\int f(x)dx\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#power-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#power-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Integration rules (3)\n\n\nPower Rule"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#power",
     "href": "notes/day4_integrals/lecture-integrals.html#power",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Rules of Integration\n\n\nPower Rule\n\n\\[\n\\int x^ndx=\\frac{x^{n+1}}{n+1}+C \\text{, n}\\ne1\n\\]\n\nWorkhorse rule of integration"
+    "text": "Integration rules (3)\n\n\nPower Rule\n\n\\[\n\\int x^ndx=\\frac{x^{n+1}}{n+1}+C \\text{, n}\\ne -1\n\\]"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#examples",
     "href": "notes/day4_integrals/lecture-integrals.html#examples",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Examples\n\n\\[\n\\begin{align}\nf(x)&=4 & &g(x)=2x^2  &f(x)=x^3-4x\n\\end{align}\n\\]"
+    "text": "Examples\n\n✏️ Evaluate the following integrals.\n\n\n\n\\(\\int f(x)=4\\)\n\n\n\n\\(\\int 2x^2\\)\n\n\n\n\\(\\int x^3-4x\\)"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#ivp",
     "href": "notes/day4_integrals/lecture-integrals.html#ivp",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Initial Value Problems\n\n\n\nTo find the C terms, we need extra information\nOften times that comes from being given an initial value\nThe start of the period we know that \\(y(0)=a\\) or \\(y(12)=b\\)\nWe use this information to solve for what C should be"
+    "text": "Initial value problems\n\n\n\n\nTo find the \\(C\\) term in the integral, we need extra information\nOften times that comes from being given an initial value\nThis means being given some value of the function, e.g. \\(y(0)=a\\) or \\(y(12)=b\\)\nWe use this information to solve for what \\(C\\) should be"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ivp-ex-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#ivp-ex-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example\n\nThe marginal cost of producing \\(x\\) units of a product is:\n\\[\n\\frac{dC}{dx}=25-0.02x\n\\]\nWhere \\(C\\) is the cost (in dollars), and \\(x\\) is the number of units produced. Given that producing 2 units of product costs $10, what is the complete cost equation?"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#ivp-ex",
     "href": "notes/day4_integrals/lecture-integrals.html#ivp-ex",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Initial Value Problem: Example\n\nThe marginal cost of producing \\(x\\) units of a product is:\n\\[\n\\frac{dC}{dx}=25-0.02x\n\\]\nWhere C is the cost ($), and x is the number of units produced. Given that producing 2 units of product costs $10, what is the complete cost equation?\n\n\\[\n\\begin{align}\nC(x)=&25x-\\frac{.02x^2}{2}+D & \\text{Solve with Power Rule}\\\\\n10&=25(2)-\\frac{0.02(2)^2}{2}+D  &\\text{ Sub in x=2}\\\\\n-39.96&=D\\\\\nC(x)&=25x-\\frac{0.2x^2}{2}-39.96\n\\end{align}\n\\]"
+    "text": "Example\n\nThe marginal cost of producing \\(x\\) units of a product is:\n\\[\n\\frac{dC}{dx}=25-0.02x\n\\]\nWhere \\(C\\) is the cost (in dollars), and \\(x\\) is the number of units produced. Given that producing 2 units of product costs $10, what is the complete cost equation?\nWe can integrate to find the original cost function \\(C\\):\n\\[C(x) = \\int \\frac{dC}{dx} dx = \\int 25-0.02x.\\]\nThen: \\[\n\\begin{align}\n\\int 25-0.02x =&25x-\\frac{.02x^2}{2}+D & \\text{Solve with Power Rule}\\\\\n10&=25(2)-\\frac{0.02(2)^2}{2}+D  &\\text{ Sub in $x=2$}\\\\\n-39.96&=D\\\\\nC(x)&=25x-\\frac{0.2x^2}{2}-39.96\n\\end{align}\n\\]"
   },
   {
-    "objectID": "notes/day4_integrals/lecture-integrals.html#definte",
-    "href": "notes/day4_integrals/lecture-integrals.html#definte",
+    "objectID": "notes/day4_integrals/lecture-integrals.html#definte-1",
+    "href": "notes/day4_integrals/lecture-integrals.html#definte-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Definite vs indefinite integrals\n\n\n\n\nDefinite integrals have start and end values (aka bounds)\nWe must evaluate between the intervals by\n\n\\[\n\\begin{align}\n\\int^b_axdx\\\\\n\\frac{1}{2}x^2|^b_a\\\\\n\\frac{1}{2}(b)^2-\\frac{1}{2}(a)^2\n\\end{align}\n\\]\n\n\nIndefinite Integrals no bounds\nNeed initial values to find integration constants\n\n\\[\n\\int f(x)dx\n\\]"
+    "text": "Indefinite vs. dfinite integrals\n\n\nWe have been working with indefinite integrals: there are no integration bounds\n\n\\[\n\\int f(x)dx\n\\]\n\nWe need initial values to find integration constants.\n\n\n\nDefinite integrals have start and end values \\(a\\) and \\(b\\):\n\n\\[\\int_a^b f(x) dx.\\]\n\nTo find the area under the curve along an interval \\([a,b]\\), evaluate the antiderivative at the endpoints and subtract them.\nExample\n\\[\n\\begin{align}\n\\int^b_axdx &= \\frac{1}{2}x^2\\Big|^b_a\\\\\n            &= \\frac{1}{2}(b)^2-\\frac{1}{2}(a)^2\n\\end{align}\n\\]"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#def-solve",
     "href": "notes/day4_integrals/lecture-integrals.html#def-solve",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Definite Integral: Example\n\n\\[\n\\begin{align}\n\\int^2_{-1}3x^2dx \\\\\nx^3|^2_{-1}\\\\\n(2)^3-(-1)^3=9\n\\end{align}\n\\]"
+    "text": "Example\n\n✏️ Evaluate the following integral.\n \\[\\int^2_{-1}3x^2dx\\] \nWe have that: \\[\n\\begin{align}\n\\int^2_{-1}3x^2dx &= x^3\\Big|^2_{-1}\\\\\n&=(2)^3-(-1)^3 \\\\\n&=9\n\\end{align}\n\\]"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#area",
     "href": "notes/day4_integrals/lecture-integrals.html#area",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Area between curves"
+    "text": "Area between two curves"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#area-ex1",
     "href": "notes/day4_integrals/lecture-integrals.html#area-ex1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Area between curves example\n\nFind the area of the shaded region in the graph below"
+    "text": "Example\n\n✏️ Find the area of the shaded region in the graph below."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#area-ex2",
     "href": "notes/day4_integrals/lecture-integrals.html#area-ex2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Area between curves example\n\n\\[\n\\small\n\\begin{align}\n\\int^1_0 \\sqrt{x}=\\frac{2}{3}x^\\frac{3}{2} \\\\\n\\int^1_0 x^2=\\frac{1}{3}x^3\n\\end{align}\n\\]\n\n\nThen get the area of each by solving the definite integral\n\n\\[\n\\small\n\\begin{align}\n\\frac{2}{3}(1)^{\\frac{3}{2}}-\\frac{2}{3}(0)^{\\frac{3}{2}}=\\frac{2}{3}\\\\\n\\frac{1}{3}(1)^3-\\frac{1}{3}(0)^3=\\frac{1}{3}\n\\end{align}\n\\]\n\n\n\nThen subtract the upper from the lower\n\n\\[\n\\small\n\\frac{2}{3}-\\frac{1}{3}=\\frac{1}{3}\n\\]"
+    "text": "Example\n\nWe need to compute\n\\[\\int^1_0 \\sqrt{x} - \\int^1_0 x^2.\\]\nCompute each piece carfully:\n\n\n\\[\n\\small\n\\begin{align}\n\\int^1_0 \\sqrt{x} &=\\frac{2}{3}x^\\frac{3}{2} \\Big|_0^1\\\\\n                  &= \\frac{2}{3}(1)^{\\frac{3}{2}}-\\frac{2}{3}(0)^{\\frac{3}{2}} \\\\\n                  &= \\frac{2}{3}.\n\\end{align}\n\\]\n\n\\[\n\\small\n\\begin{align}\n\\int^1_0 x^2 &=\\frac{1}{3}x^3\\Big|_0^1 \\\\\n            &= \\frac{1}{3}(1)^3-\\frac{1}{3}(0)^3 \\\\\n            &= \\frac{1}{3}.\n\\end{align}\n\\]\n\n\nThen subtract the upper from the lower:\n\\[\n\\small\n\\frac{2}{3}-\\frac{1}{3}=\\frac{1}{3}\n\\]"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#ta-2",
@@ -340,7 +361,42 @@
     "href": "notes/day4_integrals/lecture-integrals.html#ta2-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Explain and demonstrate how to approximate the area under the curve \\(f(x)=-9x^3+3x-9\\) on the interval [4,10] using a Riemann sum with \\(k=3\\)\nTake the Integrals\n\n\\[\n\\begin{align}\n\\text{A) }y=\\frac{3}{x^2}, y(0)=5&  &\\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\\text{C) } \\int^4_2\\frac{1}{2}x\n\\end{align}\n\\]\n\nA model for the rate of change in ozone concentrations over time between 1962-1984 is given by \\(\\frac{dC}{dt}=2t+20\\). Where \\(C\\) is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?"
+    "text": "Find the integrals of \\(y\\) and \\(g\\) and solve the integral in C.\n\n\\[\n\\begin{align}\n\\text{A) }y=\\frac{3}{x^2}, y(3)=2&  &\\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\\text{C) } \\int^4_2\\frac{1}{2}x\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ta2-A-solution",
+    "href": "notes/day4_integrals/lecture-integrals.html#ta2-A-solution",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution (A)\nWe have that\n\\[\n\\begin{aligned}\n\\int \\frac{3}{x^2}\\,dx\n&= 3 \\int x^{-2}\\,dx \\\\[6pt]\n&= 3 \\left( \\frac{x^{-1}}{-1} \\right) + C \\\\[6pt]\n&= -\\frac{3}{x} + C\n\\end{aligned}\n\\]\nWith the initial value \\(y(3)=2\\) we obtain\n\\[\n\\begin{align}\n2 &= y(3) \\\\\n  &= -\\frac{3}{3} + C \\\\\n  &= -1 + C \\\\\n3 &= C.\n\\end{align}\n\\]\nTherefore the solution is \\(-\\frac{3}{x} +3\\)."
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ta2-B-solution",
+    "href": "notes/day4_integrals/lecture-integrals.html#ta2-B-solution",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution (B)\nWe have that\n\\[\\begin{aligned}\n\\int \\bigl(3t^{5}-2t^{3}+16t-7\\bigr)\\,dt\n&= \\int 3t^{5}\\,dt - \\int 2t^{3}\\,dt + \\int 16t\\,dt - \\int 7\\,dt \\\\[6pt]\n&= 3\\frac{t^{6}}{6} - 2\\frac{t^{4}}{4} + 16\\frac{t^{2}}{2} - 7t + C \\\\[6pt]\n&= \\frac{t^{6}}{2} - \\frac{t^{4}}{2} + 8t^{2} - 7t + C\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ta2-C-solution",
+    "href": "notes/day4_integrals/lecture-integrals.html#ta2-C-solution",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution (C)\nWe get that\n\\[\\begin{aligned}\n\\int_{2}^{4} \\frac{1}{2}x\\,dx\n&= \\frac{1}{2}\\int_{2}^{4} x\\,dx \\\\[6pt]\n&= \\frac{1}{2}\\left[\\frac{x^{2}}{2}\\right]_{2}^{4} \\\\[6pt]\n&= \\frac{1}{4}\\bigl(4^{2}-2^{2}\\bigr) \\\\[6pt]\n&= \\frac{1}{4}(16-4) \\\\[6pt]\n&= 3\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ta2-2",
+    "href": "notes/day4_integrals/lecture-integrals.html#ta2-2",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "A model for the rate of change in ozone concentrations over time between 1962-1984 is given by \\(\\frac{dC}{dt}=2t+20\\), where \\(C\\) is the ozone concentration (ppm) and \\(t\\) is the elapsed time in years since 1962. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ta2-D-solution",
+    "href": "notes/day4_integrals/lecture-integrals.html#ta2-D-solution",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solution\nGiven:\n\\[\\frac{dC}{dt} = 2t + 20\\]\nIntegrate:\n\\[\\int dC = \\int (2t + 20)\\,dt\\]\n\\[C(t) = t^{2} + 20t + D\\]\nInitial condition:\n\\[C(2)=30 \\ \\  \\text{(since 1964 is 2 years after 1962)}\\]\n\\[30 = 2^{2} + 20\\cdot 2 + D\\]\n\\[D = 30 - 44 = -14\\]\nThus:\n\\[C(t) = t^{2} + 20t - 14\\]\nEvaluate at \\(t=20\\) (1982):\n\\[C(20) = 20^{2} + 20\\cdot 20 - 14\\]\n\\[= 400 + 400 - 14\\]\n\\[= 786 \\text{ ppm}\\]"
   },
   {
     "objectID": "notes/day3_derivatives/day3_derivatives.html",
@@ -1614,13 +1670,6 @@
     "title": "Calculus Workshop",
     "section": "2)",
     "text": "2)\nTake the Integrals\n\\[\\begin{align}\n\\text{A) }y=\\frac{3}{x^2}, y(1)=5&  &\\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\\text{C) } \\int^4_2\\frac{1}{2}x\n\\end{align}\\]\n\n\n\\[\\begin{align}\n\\int\\frac{3}{x^2} dx\\\\\n-3x^{-3}+C\\\\\n-3(1)^{-3}+C=5\\\\\nC=8\\\\\nx^{-3}+8\n\\end{align}\\]\n\\[\\begin{align}\n\\int\\ g(t)=3t^5-2t^3+16t-7 dt\\\\\n\\frac{t^6}{2}-\\frac{t^4}{2}+8t^2-7t+C\\\\\n\\end{align}\\]\n\\[\\begin{align}\n\\int^4_2\\frac{1}{2}x dx\\\\\n\\frac{1}{4}x^2|^4_2\\\\\n\\frac{1}{4}(4)^2-\\frac{1}{4}(2)^2=3\n\\end{align}\\]"
-  },
-  {
-    "objectID": "notes/day4_integrals/solutions_problem_set_integrals.html#section-2",
-    "href": "notes/day4_integrals/solutions_problem_set_integrals.html#section-2",
-    "title": "Calculus Workshop",
-    "section": "3)",
-    "text": "3)\nA model for the rate of change in ozone concentrations over time between 1962-1984 is given by \\(\\frac{dC}{dt}=2t+20\\). Where \\(C\\) is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?\n\\[\\begin{align}\n\\frac{dC}{dt}&=2t+20\\\\\ndC&=2t+20 dt \\\\\n\\int dC&=\\int 2t+20 dt \\\\\nC&=t^2+20t+D\\\\\n30&=2^2+20(2)+D \\\\\nD&=-14\n\\end{align}\\]\nNow that we know D we can solve for the concentration in 1982\n\\[\n20^2+20*(20)-14=\\text{ 786ppm}\n\\]"
   },
   {
     "objectID": "notes/day4_integrals/day4_integrals.html",
