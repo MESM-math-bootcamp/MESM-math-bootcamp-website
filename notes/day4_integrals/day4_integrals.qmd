@@ -4,7 +4,7 @@ This unit covers basic introduction to integration.
 
 ## Lecture materials
 
-[Algebra lecture slides](lecture-integrals.qmd)
+[Integrals lecture slides](lecture-integrals.qmd)
 
 **Contents**
 
