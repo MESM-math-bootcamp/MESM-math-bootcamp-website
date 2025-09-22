@@ -1155,7 +1155,7 @@ knitr::include_graphics("images/worm.PNG")
 ::::{.columns}
 :::{.column width="50%"}
 
-- $\color{green}{y=sin(3x+2)}$
+- $\color{green}{y=sin(3x)+2x}$
 
 <br>
 
