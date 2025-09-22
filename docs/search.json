@@ -39,7 +39,7 @@
     "href": "notes/day4_integrals/lecture-integrals.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Introduction to Integration\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 21, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Introduction to Integration\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 22, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#tr",
@@ -67,14 +67,28 @@
     "href": "notes/day4_integrals/lecture-integrals.html#ln-blank-2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Natural logarithms\n\nIf \\(y&gt;0\\) then \\(\\ln(x)\\) is the exponent you need to raise \\(e\\) to in order to get \\(y\\).\nThis means:\n\\[\n\\begin{align}\n\\ln(e^x) &= x \\\\\ne^{\\ln(y)} &= y\n\\end{align}\n\\]\nIn other words, \\(\\ln(x)\\) is the inverse of the exponential function \\(e^x\\).\n\nExamples\n\n\\(\\ln(e^3)\\)\n\\(\\ln(\\frac{1}{e})\\)\n\\(\\ln(1)\\)\n\\(\\ln(0)\\)\n\\(\\ln(-7)\\)"
+    "text": "Natural logarithms\n\nIf \\(y&gt;0\\), then \\(\\ln(x)\\) is the exponent you need to raise \\(e\\) to in order to get \\(y\\).\nThis means:\n\\[\n\\begin{align}\n\\ln(e^x) &= x \\\\\ne^{\\ln(y)} &= y\n\\end{align}\n\\]\nIn other words, \\(\\ln(x)\\) is the inverse of the exponential function \\(e^x\\).\n\nExamples\n\n\\(\\ln(e^3)\\)\n\\(\\ln(\\frac{1}{e})\\)\n\\(\\ln(1)\\)\n\\(\\ln(0)\\)\n\\(\\ln(-7)\\)"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#ln",
     "href": "notes/day4_integrals/lecture-integrals.html#ln",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Natural log properties\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProperties\n\n\\(\\ln (e^x)=x\\)\n\\(\\ln(xy)=\\ln x+\\ln y\\)\n\\(\\ln(\\frac{x}{y})=\\ln x-\\ln y\\)\n\\(\\ln(x^y)=y \\ln x\\)"
+    "text": "Natural logarithms\n\nIf \\(y&gt;0\\), then \\(\\ln(x)\\) is the exponent you need to raise \\(e\\) to in order to get \\(y\\).\nThis means:\n\\[\n\\begin{align}\n\\ln(e^x) &= x \\\\\ne^{\\ln(y)} &= y\n\\end{align}\n\\]\nIn other words, \\(\\ln(x)\\) is the inverse of the exponential function \\(e^x\\).\n\nExamples\n\n\\(\\ln(e^3) = 3\\) because 3 is the power of \\(e\\) needed to get \\(e^3\\).\n\\(\\ln(\\frac{1}{e}) = \\ln(e^{-1}) = -1\\)\n\\(\\ln(1) = 0\\) because 0 is the exponent we need to raise \\(e\\) to to get 1\n\\(\\ln(0)\\) does not exist, because there’s no number we can raise \\(e\\) to to get 0\n\\(\\ln(-7)\\) does not exist, because \\(e\\) to any number always be positive"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ln-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#ln-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Natural log properties"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#ln-properties",
+    "href": "notes/day4_integrals/lecture-integrals.html#ln-properties",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Natural log properties\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nProperties\n\n\\(\\ln (e^x)=x\\)\n\\(\\ln(xy)=\\ln x+\\ln y\\)\n\\(\\ln(\\frac{x}{y})=\\ln x-\\ln y\\)\n\\(\\ln(x^y)=y \\ln x\\)"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#ln-ex-blank",
@@ -89,13 +103,6 @@
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Using logarithms to solve equations\n\n✏️ Solve for \\(t\\) in the equation \\(Pe^{rt} = A\\).\n\\[\n\\begin{align}\nPe^{rt} &= A \\\\\ne^{rt} & = \\frac{A}{P} \\\\\nrt &= \\ln\\left(\\frac{A}{P}\\right) \\\\\nt &= \\frac{\\ln(A)-\\ln(P)}{r}\n\\end{align}\n\\]"
-  },
-  {
-    "objectID": "notes/day4_integrals/lecture-integrals.html#d-ln-blank",
-    "href": "notes/day4_integrals/lecture-integrals.html#d-ln-blank",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Derivative of natural log"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#d-ln",
@@ -130,7 +137,7 @@
     "href": "notes/day4_integrals/lecture-integrals.html#ta-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Solve these equations\n\n\\[\n\\begin{align}\n\\text{A)  }5+\\ln(3x)=7  &  &\\text{B) } e^{5x-0.2}=10\n\\end{align}\n\\]\n\n\nFind the derivative of \\(f(x)=x \\ln x.\\)\n\n\n\nThe popuplation \\(P(t)\\) of an invasive plant species in a wetland (in thousands of individuals) grows according to \\[P(t) = 200\\ln(1+0.5 t) + 50 \\] where \\(t\\) is time in months.\n\n\nWhat is the initial population at \\(t=0\\)?\nFind the instantaneous growth rate of the population at \\(t=6\\)."
+    "text": "Solve these equations\n\n\\[\n\\begin{align}\n\\text{A)  }5+\\ln(3x)=7  &  &\\text{B) } e^{5x-0.2}=10\n\\end{align}\n\\]\n\n\n\nFind the derivative of \\(f(x)=x \\ln x.\\)\n\n\n\n\n\nThe popuplation \\(P(t)\\) of an invasive plant species in a wetland (in thousands of individuals) grows according to \\[P(t) = 200\\ln(1+0.5 t) + 50 \\] where \\(t\\) is time in months.\n\n\nWhat is the initial population at \\(t=0\\)?\nFind the instantaneous growth rate of the population at \\(t=6\\)."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#solutions-1",
@@ -144,7 +151,7 @@
     "href": "notes/day4_integrals/lecture-integrals.html#solutions-2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Solutions\n\n\nThe popuplation \\(P(t)\\) of an invasive plant species in a wetland (in thousands of individuals) grows according to \\[P(t) = 200\\ln(1+0.5 t) + 50 \\] where \\(t\\) is time in months.\n\n1. Initial population at \\(t = 0\\)\n\\[\n\\begin{aligned}\nP(0) &= 200 \\, \\ln(1 + 0.5 \\cdot 0) + 50 \\\\\n      &= 200 \\, \\ln(1) + 50 \\\\\n      &= 0 + 50 \\\\\n      &= 50\n\\end{aligned}\n\\]\nThe initial population is 50,000 individuals.\n2. Instantaneous growth rate at \\(t = 6\\) months\n\n\nThe derivative of \\(P(t)\\) is:\n\\[\n\\begin{aligned}\nP'(t) &= \\frac{d}{dt} \\big[200 \\, \\ln(1 + 0.5 t) + 50 \\big] \\\\\n      &= 200 \\cdot \\frac{1}{1 + 0.5 t} \\cdot 0.5 \\\\\n      &= \\frac{100}{1 + 0.5 t}\n\\end{aligned}\n\\]\n\nAt \\(t = 6\\):\n\\[\n\\begin{aligned}\nP'(6) &= \\frac{100}{1 + 0.5 \\cdot 6} \\\\\n       &= \\frac{100}{1 + 3} \\\\\n       &= \\frac{100}{4} \\\\\n       &= 25\n\\end{aligned}\n\\]\n\nThe population is growing at 25,000 individuals per month at \\(t = 6\\)."
+    "text": "Solutions\n\n\nThe popuplation \\(P(t)\\) of an invasive plant species in a wetland (in thousands of individuals) grows according to \\(P(t) = 200\\ln(1+0.5 t) + 50\\) where \\(t\\) is time in months.\n\n1. Initial population at \\(t = 0\\)\n\\[\n\\begin{aligned}\nP(0) &= 200 \\, \\ln(1 + 0.5 \\cdot 0) + 50 \\\\\n      &= 200 \\, \\ln(1) + 50 \\\\\n      &= 0 + 50 \\\\\n      &= 50\n\\end{aligned}\n\\]\nThe initial population is 50,000 individuals.\n2. Instantaneous growth rate at \\(t = 6\\) months\n\n\nThe derivative of \\(P(t)\\) is:\n\\[\n\\begin{aligned}\nP'(t) &= \\frac{d}{dt} \\big[200 \\, \\ln(1 + 0.5 t) + 50 \\big] \\\\\n      &= 200 \\cdot \\frac{1}{1 + 0.5 t} \\cdot 0.5 \\\\\n      &= \\frac{100}{1 + 0.5 t}\n\\end{aligned}\n\\]\n\nAt \\(t = 6\\):\n\\[\n\\begin{aligned}\nP'(6) &= \\frac{100}{1 + 0.5 \\cdot 6} \\\\\n       &= \\frac{100}{1 + 3} \\\\\n       &= \\frac{100}{4} \\\\\n       &= 25\n\\end{aligned}\n\\]\n\nThe population is growing at 25,000 individuals per month at \\(t = 6\\)."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#integrate-concept",
@@ -165,21 +172,21 @@
     "href": "notes/day4_integrals/lecture-integrals.html#rect-approx",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "How do we find the area under this curve?\n\nAreas of rectangles are easy to find (base \\(\\times\\) height!). We can approximate the are by adding the area of rectangles."
+    "text": "How do we find the area under this curve?\n\nAreas of rectangles are easy to find (base times height!). We can approximate the area by adding the area of rectangles under the curve."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#riemann-sum",
     "href": "notes/day4_integrals/lecture-integrals.html#riemann-sum",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Riemann sums\n\nApproximate the area under the curve from \\([-3,3]\\) with \\(\\Delta x=1\\) and \\(k=6\\)\n\n\n\n\n\n\n\nx\ny\n\n\n\n\n-3\n71\n\n\n-2\n78\n\n\n-1\n73\n\n\n0\n62\n\n\n1\n51\n\n\n2\n46\n\n\n3\n53"
+    "text": "Example\n\nApproximate the area under the curve from \\([-3,3]\\) with \\(\\Delta x=1\\) and \\(k=6\\)\n\n\n\n\n\n\n\nx\ny\n\n\n\n\n-3\n71\n\n\n-2\n78\n\n\n-1\n73\n\n\n0\n62\n\n\n1\n51\n\n\n2\n46\n\n\n3\n53"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#rect",
     "href": "notes/day4_integrals/lecture-integrals.html#rect",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Riemann sums\n\n\nStart at one end of the interval \\([a,b]\\)\nEvaluate the function at \\(f(a)\\)\nStep away from \\(a\\) by some small amount called \\(\\Delta x\\)\nMultiply \\(f(a)\\Delta x\\) to get the the area of the first rectangle.\nRepeat the same steps above, now starting with \\(\\Delta x\\) as the bottom left corner of the next rectangle. Repeat until you cover the area with rectangles of width \\(\\Delta x\\).\nSum up the area of all \\(k\\) rectangles\n\n \\[\nR(f(x), \\Delta x)= \\underbrace{f(x_1)\\Delta x+f(x_2)\\Delta x+...f(x_k)\\Delta x}_{\\text{Sum of area of rectangles with width $\\Delta(x)$} }\n\\] \nThis is called a Riemann Sum."
+    "text": "Riemann sums\n\n\nStart at one end of the interval \\([a,b]\\)\nEvaluate the function at \\(f(a)\\).\nStep away from \\(a\\) by some small amount called \\(\\Delta x\\).\nMultiply \\(f(a)\\Delta x\\) to get the the area of the first rectangle.\nRepeat the same steps above, now starting with \\(\\Delta x\\) as the bottom left corner of the next rectangle. Repeat until you cover the area with rectangles of width \\(\\Delta x\\).\nSum up the area of all \\(k\\) rectangles.\n\n \\[\nR(f(x), \\Delta x)= \\underbrace{f(x_1)\\Delta x+f(x_2)\\Delta x+...f(x_k)\\Delta x}_{\\text{Sum of area of rectangles with width $\\Delta(x)$} }\n\\] \nThis is called a Riemann Sum."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#exp-reimman",
@@ -193,35 +200,35 @@
     "href": "notes/day4_integrals/lecture-integrals.html#integral-calc",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "How do we calculate\n\n\nTaking infinite sums is tedious to impossible by hand\n\n\n\nLuckily the \\(dx\\) portion hints at the way to solve integrals"
+    "text": "How do we calculate integrals?\n\n\nTaking infinite sums is impossible by hand\n\n\n\nLuckily, integrals and derivatives are related in a very useful way."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#fundamental",
     "href": "notes/day4_integrals/lecture-integrals.html#fundamental",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Fundamental Theorem of Calculus\n\nIf \\(f(x)\\) is continuous over an interval \\([a,b]\\), and the function \\(F(x)\\) is defined by:\n\\[\n\\large\nF(x)=\\int^x_af(t)dt\n\\]\nthen \\(F'(x)=f(x)\\) over \\([a,b]\\).\n\n\nThis can be somewhat confusing. What it means intuitively is\n\n to find the integral of \\(\\int f(t) dt\\) we need to find a function \\(F(x)\\) whose derivative is \\(f(x)\\). \n\n\n\nIf we integrate a derivative, we should get the same function back as the original vice-versa\n\\[\n\\begin{align}\n\\frac{d}{dx}\\left[\\int f(x)dx\\right]&=f(x) &\\text{Differentiation is the inverse of integration}\n\\end{align}\n\\]\n\n\\[\n\\begin{align}\n\\int f'(x)&=f(x)+C &\\text{Integration is the inverse of differentiation}\n\\end{align}\n\\]"
+    "text": "Fundamental Theorem of Calculus\n\nIf \\(f(x)\\) is continuous over an interval \\([a,b]\\), and the function \\(F(x)\\) is defined by:\n\\[\n\\large\nF(x)=\\int^x_af(t)dt\n\\]\nthen \\(F'(x)=f(x)\\) over \\([a,b]\\).\n\n\nThis can be somewhat confusing. What it means intuitively is\n\n to find the integral of \\(\\int f(t) dt\\) we need to find a function \\(F(x)\\) whose derivative is \\(f(x)\\). \n\n\n\nIf we integrate a derivative, we should get the same function back as the original vice-versa\n\\[\n\\begin{align}\n\\int f'(x)&=f(x)+C &\\text{Integration is the inverse of differentiation}\n\\end{align}\n\\]\n\n\\[\n\\begin{align}\n\\frac{d}{dx}\\left[\\int f(x)dx\\right]&=f(x) &\\text{Differentiation is the inverse of integration}\n\\end{align}\n\\]"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#c",
     "href": "notes/day4_integrals/lecture-integrals.html#c",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Where did that \\(C\\) come from?\n\n\n\nExample\n\n\nStart with \\(f(x) = x^2-4x+1\\)\nThen \\(f'(x) = 2x-4\\)\n\n\n\nTo find \\(\\int 2x-4\\) we need to find a function whose derivative is \\(2x-4\\). What could it be?\n\n\n\nIf we integrate, we’ll have \\(\\int 2x-4 = x^2-4x+C\\).\nThere is no way of knowing what the \\(c\\) should be without additional information\n\\(c\\) is the \\(x\\)-intercept and we would have we have to solve for it with an initial value problem."
+    "text": "Where did that \\(C\\) come from?\n\n\n\nExample\n\n\nStart with \\(f(x) = x^2-4x+1\\)\nThen \\(f'(x) = 2x-4\\)\n\n\n\nTo find \\(\\int 2x-4\\) we need to find a function whose derivative is \\(2x-4\\). What could it be?\n\n\n\nIf we integrate, we’ll have \\(\\int 2x-4 = x^2-4x+C\\).\nThere is no way of knowing what the \\(C\\) should be without additional information\n\\(C\\) is the \\(x\\)-intercept and we would have we have to solve for it with an initial value problem."
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#integratal-use",
     "href": "notes/day4_integrals/lecture-integrals.html#integratal-use",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "What is integration useful for?\n\n\nConvert from rate of change to total values\n\n\n\nSolving differential equations\n\ni.e \\(\\frac{dy}{dx}=2x-4\\)\n\n\n\n\n\nCalculatin the total area under a curve\n\nUseful in policy evaluations"
+    "text": "What is integration useful for?\n\n\nConvert from rate of change to total values\n\n\n\nSolving differential equations\n\ni.e \\(\\frac{dy}{dx}=2x-4\\)\n\n\n\n\n\nCalculating the total area under a curve\n\nUseful in policy evaluations"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#tough",
     "href": "notes/day4_integrals/lecture-integrals.html#tough",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "But also itegration can be tough\n\n\n\nBefore integrating ask yourself:\n\nWhat am I trying to solve?\n\n\n\nDoes it make sense to take an integral?\n\n\n\n\n\nSource xkcd comics"
+    "text": "But also… integration can be tough\n\n\n\nBefore integrating ask yourself:\n\nWhat am I trying to solve?\n\n\n\nDoes it make sense to take an integral?\n\n\n\n\n\nSource xkcd comics"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#rules-cover",
@@ -229,13 +236,6 @@
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Rules of Integration"
-  },
-  {
-    "objectID": "notes/day4_integrals/lecture-integrals.html#notation-blank",
-    "href": "notes/day4_integrals/lecture-integrals.html#notation-blank",
-    "title": "Bren Calculus Workshop",
-    "section": "",
-    "text": "Notation"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#notation",
@@ -315,11 +315,25 @@
     "text": "Example\n\nThe marginal cost of producing \\(x\\) units of a product is:\n\\[\n\\frac{dC}{dx}=25-0.02x\n\\]\nWhere \\(C\\) is the cost (in dollars), and \\(x\\) is the number of units produced. Given that producing 2 units of product costs $10, what is the complete cost equation?\nWe can integrate to find the original cost function \\(C\\):\n\\[C(x) = \\int \\frac{dC}{dx} dx = \\int 25-0.02x.\\]\nThen: \\[\n\\begin{align}\n\\int 25-0.02x =&25x-\\frac{.02x^2}{2}+D & \\text{Solve with Power Rule}\\\\\n10&=25(2)-\\frac{0.02(2)^2}{2}+D  &\\text{ Sub in $x=2$}\\\\\n-39.96&=D\\\\\nC(x)&=25x-\\frac{0.2x^2}{2}-39.96\n\\end{align}\n\\]"
   },
   {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#definte-1-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#definte-1-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Indefinite vs. dfinite integrals\n\n\nWe have been working with indefinite integrals.\n\n\\[\n\\int f(x)dx\n\\]\nThis means there are no integration bounds and we need initial values to find integration constants.\n\n\nDefinite integrals have start and end values \\(a\\) and \\(b\\):\n\n\\[\\int_a^b f(x) dx.\\]\n\nTo find the area under the curve along an interval \\([a,b]\\), evaluate the antiderivative at the endpoints and subtract them.\nExample"
+  },
+  {
     "objectID": "notes/day4_integrals/lecture-integrals.html#definte-1",
     "href": "notes/day4_integrals/lecture-integrals.html#definte-1",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Indefinite vs. dfinite integrals\n\n\nWe have been working with indefinite integrals: there are no integration bounds\n\n\\[\n\\int f(x)dx\n\\]\n\nWe need initial values to find integration constants.\n\n\n\nDefinite integrals have start and end values \\(a\\) and \\(b\\):\n\n\\[\\int_a^b f(x) dx.\\]\n\nTo find the area under the curve along an interval \\([a,b]\\), evaluate the antiderivative at the endpoints and subtract them.\nExample\n\\[\n\\begin{align}\n\\int^b_axdx &= \\frac{1}{2}x^2\\Big|^b_a\\\\\n            &= \\frac{1}{2}(b)^2-\\frac{1}{2}(a)^2\n\\end{align}\n\\]"
+    "text": "Indefinite vs. dfinite integrals\n\n\nWe have been working with indefinite integrals.\n\n\\[\n\\int f(x)dx\n\\]\nThis means there are no integration bounds and we need initial values to find integration constants.\n\n\nDefinite integrals have start and end values \\(a\\) and \\(b\\):\n\n\\[\\int_a^b f(x) dx.\\]\n\nTo find the area under the curve along an interval \\([a,b]\\), evaluate the antiderivative at the endpoints and subtract them.\nExample\n\n\n\\[\n\\begin{align}\n\\int^b_axdx &= \\frac{1}{2}x^2\\Big|^b_a\\\\\n            &= \\frac{1}{2}(b)^2-\\frac{1}{2}(a)^2\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day4_integrals/lecture-integrals.html#def-solve-blank",
+    "href": "notes/day4_integrals/lecture-integrals.html#def-solve-blank",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Example\n\n✏️ Evaluate the following integral.\n \\[\\int^2_{-1}3x^2dx\\]"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#def-solve",
@@ -347,7 +361,7 @@
     "href": "notes/day4_integrals/lecture-integrals.html#area-ex2",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Example\n\nWe need to compute\n\\[\\int^1_0 \\sqrt{x} - \\int^1_0 x^2.\\]\nCompute each piece carfully:\n\n\n\\[\n\\small\n\\begin{align}\n\\int^1_0 \\sqrt{x} &=\\frac{2}{3}x^\\frac{3}{2} \\Big|_0^1\\\\\n                  &= \\frac{2}{3}(1)^{\\frac{3}{2}}-\\frac{2}{3}(0)^{\\frac{3}{2}} \\\\\n                  &= \\frac{2}{3}.\n\\end{align}\n\\]\n\n\\[\n\\small\n\\begin{align}\n\\int^1_0 x^2 &=\\frac{1}{3}x^3\\Big|_0^1 \\\\\n            &= \\frac{1}{3}(1)^3-\\frac{1}{3}(0)^3 \\\\\n            &= \\frac{1}{3}.\n\\end{align}\n\\]\n\n\nThen subtract the upper from the lower:\n\\[\n\\small\n\\frac{2}{3}-\\frac{1}{3}=\\frac{1}{3}\n\\]"
+    "text": "Example\n\nWe need to compute\n\\[\\int^1_0 \\sqrt{x} - \\int^1_0 x^2.\\]\nCompute each piece carfully:\n\n\n\\[\n\\small\n\\begin{align}\n\\int^1_0 \\sqrt{x} &=\\frac{2}{3}x^\\frac{3}{2} \\Big|_0^1\\\\\n                  &= \\frac{2}{3}(1)^{\\frac{3}{2}}-\\frac{2}{3}(0)^{\\frac{3}{2}} \\\\\n                  &= \\frac{2}{3}.\n\\end{align}\n\\]\n\n\\[\n\\small\n\\begin{align}\n\\int^1_0 x^2 &=\\frac{1}{3}x^3\\Big|_0^1 \\\\\n            &= \\frac{1}{3}(1)^3-\\frac{1}{3}(0)^3 \\\\\n            &= \\frac{1}{3}.\n\\end{align}\n\\]\n\nThen subtract the upper from the lower:\n\\[\n\\small\n\\frac{2}{3}-\\frac{1}{3}=\\frac{1}{3}\n\\]"
   },
   {
     "objectID": "notes/day4_integrals/lecture-integrals.html#ta-2",

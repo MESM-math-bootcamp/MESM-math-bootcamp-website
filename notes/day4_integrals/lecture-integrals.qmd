@@ -107,7 +107,7 @@ Given $y$, what is the $x$ such that $e^x = y$?
 
 <hr>
 
-If $y>0$ then **$\ln(x)$ is the exponent you need to raise $e$ to in order to get $y$.**
+If $y>0$, then **$\ln(x)$ is the exponent you need to raise $e$ to in order to get $y$.**
 
 This means:
 
@@ -142,7 +142,7 @@ In other words, $\ln(x)$ is the inverse of the exponential function $e^x$.
 
 <hr>
 
-If $y>0$ then **$\ln(x)$ is the exponent you need to raise $e$ to in order to get $y$.**
+If $y>0$, then **$\ln(x)$ is the exponent you need to raise $e$ to in order to get $y$.**
 
 This means:
 
@@ -170,7 +170,7 @@ In other words, $\ln(x)$ is the inverse of the exponential function $e^x$.
 - $\ln(-7)$ does not exist, because $e$ to any number always be positive
 
 <!----------------------------------------------------->
-## {#ln data-menu-title="Properties of natural logarithm"}
+## {#ln-blank data-menu-title="Properties of natural logarithm"}
 
 [Natural log properties]{.slide-title}
 
@@ -179,7 +179,6 @@ In other words, $\ln(x)$ is the inverse of the exponential function $e^x$.
 ::::{.columns}
 :::{.column width="50%"}
 
-:::{.fragment .fade-in}
 ```{r,fig.dim=c(5,5.5), out.width="100%"}
 
 # Define x values
@@ -218,11 +217,64 @@ text(x = 0.2, y = 6, labels = "y", cex = 1.2)
 ```
 
 :::
+
+:::{.column width="50%"}
+
+:::
+
+::::
+
+<!----------------------------------------------------->
+## {#ln-properties data-menu-title="Properties of natural logarithm"}
+
+[Natural log properties]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+```{r,fig.dim=c(5,5.5), out.width="100%"}
+
+# Define x values
+x_exp <- seq(-2, 4, length.out = 500)          # for e^x
+x_log <- seq(0.001, 4, length.out = 500)       # for ln(x) (x>0 only)
+
+# Compute y values
+y_exp <- exp(x_exp)
+y_log <- log(x_log)
+
+# Base plot: no axes, no box, no margin labels
+plot(x_exp, y_exp, type = "l", col = "blue", lwd = 2,
+     xlab = "", ylab = "",
+     xlim = c(-2, 4), ylim = c(-2, 6),         
+     main = "",
+     axes = FALSE, frame.plot = FALSE)
+
+# Draw custom axes at x=0 and y=0
+axis(1, pos = 0)  # x-axis at y=0
+axis(2, pos = 0)  # y-axis at x=0
+
+# Add ln(x)
+lines(x_log, y_log, col = "red", lwd = 2)
+
+# Add the line y = x (dotted)
+abline(0, 1, lty = 2, col = "darkgreen")
+
+# Add legend (no box)
+legend("topleft", legend = c("e^x", "ln(x)", "y=x"),
+       col = c("blue", "red", "darkgreen"), lwd = c(2,2,1),
+       lty = c(1,1,2), bty = "n")
+
+# Add manual axis labels at the ends
+text(x = 4, y = -0.2, labels = "x", cex = 1.2)
+text(x = 0.2, y = 6, labels = "y", cex = 1.2) 
+```
+
 :::
 
 :::{.column width="50%"}
 
-:::{.fragment .fade-in}
 :::{.center-text}
 **Properties**
 :::
@@ -237,7 +289,6 @@ $\ln(\frac{x}{y})=\ln x-\ln y$
 $\ln(x^y)=y \ln x$
 :::
 
-:::
 ::::
 
 <!----------------------------------------------------->
@@ -284,14 +335,6 @@ rt &= \ln\left(\frac{A}{P}\right) \\
 t &= \frac{\ln(A)-\ln(P)}{r}
 \end{align}
 $$
-
-<!----------------------------------------------------->
-
-## {#d-ln-blank data-menu-title="Natural logs"}
-
-[Derivative of natural log]{.slide-title}
-
-<hr>
 
 <!----------------------------------------------------->
 
@@ -402,9 +445,13 @@ $$
 
 <br>
 
+. . .
+
 2) Find the derivative of $f(x)=x \ln x.$
 
 <br>
+
+. . .
 
 3) The popuplation $P(t)$ of an invasive plant species in a wetland (in thousands of individuals) grows according to 
 $$P(t) = 200\ln(1+0.5 t) + 50 $$
@@ -469,7 +516,7 @@ $$
 <hr>
 
 3) The popuplation $P(t)$ of an invasive plant species in a wetland (in thousands of individuals) grows according to 
-$$P(t) = 200\ln(1+0.5 t) + 50 $$
+$P(t) = 200\ln(1+0.5 t) + 50$
 where $t$ is time in months.
 
 **1. Initial population at $t = 0$**
@@ -557,7 +604,7 @@ knitr::include_graphics("images/area.png")
 
 <hr>
 
-Areas of rectangles are easy to find (base $\times$ height!). We can approximate the are by adding the area of rectangles.
+Areas of rectangles are easy to find (base times height!). We can approximate the area by adding the area of rectangles under the curve.
 
 ```{r}
 knitr::include_graphics("images/reimann.png")
@@ -567,7 +614,7 @@ knitr::include_graphics("images/reimann.png")
 
 ## {#riemann-sum data-menu-title="Riemann Sum"}
 
-[Riemann sums]{.slide-title}
+[Example]{.slide-title}
 
 <hr>
 
@@ -617,15 +664,15 @@ ggplot()+
 <hr>
 1. Start at one end of the interval $[a,b]$
 
-2. Evaluate the function at $f(a)$
+2. Evaluate the function at $f(a)$.
 
-3. Step away from $a$ by some small amount called $\Delta x$
+3. Step away from $a$ by some small amount called $\Delta x$.
 
 4. Multiply $f(a)\Delta x$ to get the the area of the first rectangle.
 
 5. Repeat the same steps above, now starting with $\Delta x$ as the bottom left corner of the next rectangle. Repeat until you cover the area with rectangles of width $\Delta x$. 
 
-6. Sum up the area of all $k$ rectangles
+6. Sum up the area of all $k$ rectangles.
 
 <span style="color:red">
 $$
@@ -650,7 +697,7 @@ This is called a **Riemann Sum**.
 :::: {.columns}
 
 ::: {.column width="50%"}
-![](images/riemann.gif){fig-align="center" width="220%"}
+![](images/riemann.gif){fig-align="center" width="90%"}
 :::
 
 ::: {.column width="50%"}
@@ -678,15 +725,15 @@ We formally call this <span style="color:red">**the integral of $f(x)$ from $a$ 
 
 ## {#integral-calc data-menu-title="Integrals"}
 
-[How do we calculate]{.slide-title}
+[How do we calculate integrals?]{.slide-title}
 
 <hr>
 
-- Taking infinite sums is tedious to impossible by hand
+- Taking infinite sums is impossible by hand
 
 <br>
 
-- Luckily the $dx$ portion hints at the way to solve integrals
+- Luckily, integrals and derivatives are related in a very useful way.
 
 <!----------------------------------------------------->
 
@@ -724,15 +771,14 @@ If we integrate a derivative, we should get the same function back as the origin
 
 $$
 \begin{align}
-\frac{d}{dx}\left[\int f(x)dx\right]&=f(x) &\text{Differentiation is the inverse of integration}
+\int f'(x)&=f(x)+C &\text{Integration is the inverse of differentiation}
 \end{align}
 $$
 
 :::{.fragment .fade-in}
-
 $$
 \begin{align}
-\int f'(x)&=f(x)+C &\text{Integration is the inverse of differentiation}
+\frac{d}{dx}\left[\int f(x)dx\right]&=f(x) &\text{Differentiation is the inverse of integration}
 \end{align}
 $$
 :::
@@ -763,9 +809,9 @@ To find $\int 2x-4$ we need to find a function whose derivative is $2x-4$. What 
 :::{.fragment .fade-in}
 - If we integrate, we'll have $\int 2x-4 = x^2-4x+C$. 
 
-- There is no way of knowing what the $c$ should be without additional information
+- There is no way of knowing what the $C$ should be without additional information
 
-- $c$ is the $x$-intercept and we would have we have to solve for it with an initial value problem.
+- $C$ is the $x$-intercept and we would have we have to solve for it with an initial value problem.
 :::
 
 :::
@@ -795,7 +841,7 @@ knitr::include_graphics("images/c.png")
     
 <br>    
 
-- Calculatin the total area under a curve
+- Calculating the total area under a curve
 
     - Useful in policy evaluations
 
@@ -803,7 +849,7 @@ knitr::include_graphics("images/c.png")
 
 ## {#tough data-menu-title="Integration is tough"}
 
-[But also itegration can be tough]{.slide-title}
+[But also... integration can be tough]{.slide-title}
 
 <hr>
 
@@ -821,7 +867,7 @@ knitr::include_graphics("images/c.png")
 :::
 
 ::: {.column width="60%"}
-![Source [xkcd comics](https://xkcd.com/2117/)](images/xkcd.png)
+![Source [xkcd comics](https://xkcd.com/2117/)](images/xkcd.png){width="80%"}
 :::
 
 ::::
@@ -833,13 +879,7 @@ knitr::include_graphics("images/c.png")
 <div class="page-center">
 <div class="custom-subtitle">Rules of Integration</div>
 </div>
-<!----------------------------------------------------->
 
-## {#notation-blank data-menu-title="Notation"}
-
-[Notation]{.slide-title}
-
-<hr>
 
 <!----------------------------------------------------->
 
@@ -1013,7 +1053,7 @@ Where $C$ is the cost (in dollars), and $x$ is the number of units produced. Giv
 
 <!----------------------------------------------------->
 
-## {#ivp-ex  data-menu-title="Initial Value Problem"}
+## {#ivp-ex  data-menu-title="Initial Value Problem" .smaller}
 
 [Example]{.slide-title}
 
@@ -1043,18 +1083,18 @@ $$
 
 <!----------------------------------------------------->
 
-## {#definte-1 data-menu-title="Definite vs Indefinite"}
+## {#definte-1-blank data-menu-title="Definite vs Indefinite"}
 
 [Indefinite vs. dfinite integrals]{.slide-title}
 
 <hr>
-- We have been working with **indefinite integrals**: there are no integration bounds
+- We have been working with **indefinite integrals**. 
 
 $$
 \int f(x)dx
 $$
 
-- We need initial values to find integration constants.
+This means there are no integration bounds and we need initial values to find integration constants.
 
 . . .
 
@@ -1070,12 +1110,58 @@ To find the area under the curve along an interval $[a,b]$, evaluate the antider
 
 **Example**
 
+
+<!----------------------------------------------------->
+
+## {#definte-1 data-menu-title="Definite vs Indefinite" .smaller}
+
+[Indefinite vs. dfinite integrals]{.slide-title}
+
+<hr>
+- We have been working with **indefinite integrals**. 
+
+$$
+\int f(x)dx
+$$
+
+This means there are no integration bounds and we need initial values to find integration constants.
+
+. . .
+
+- **Definite integrals** have start and end values $a$ and $b$:
+
+$$\int_a^b f(x) dx.$$
+
+<!-- - If $F(x) = \int f(x)dx$ then 
+
+$$\int_a^b f(x) dx = F(b) - F(a).$$ -->
+
+To find the area under the curve along an interval $[a,b]$, evaluate the antiderivative at the endpoints and subtract them.
+
+**Example**
+
+. . . 
+
 $$
 \begin{align}
 \int^b_axdx &= \frac{1}{2}x^2\Big|^b_a\\
             &= \frac{1}{2}(b)^2-\frac{1}{2}(a)^2
 \end{align}
 $$
+
+<!----------------------------------------------------->
+
+## {#def-solve-blank data-menu-title="Definite Integral"}
+
+[Example]{.slide-title}
+
+<hr>
+
+✏️ [Evaluate the following integral.]{style="color:green;"}
+
+<span style="color:green">
+$$\int^2_{-1}3x^2dx$$
+</span>
 
 <!----------------------------------------------------->
 
@@ -1122,9 +1208,19 @@ knitr::include_graphics("images/twocurve.png")
 
 ✏️ [Find the area of the shaded region in the graph below.]{style="color:green;"}
 
-![](images/diffxtwo.gif){fig-align="center" width="50%"}
+:::: {.columns}
 
+::: {.column width="40%"}
+![](images/diffxtwo.gif){fig-align="center" }
+:::
 
+::: {.column width="60%"}
+
+:::
+
+::::
+
+<!----------------------------------------------------->
 
 ## {#area-ex2 data-menu-title="Area between curves"}
 
@@ -1164,9 +1260,6 @@ $$
 
 ::::
 
-
-:::{.fragment .fade-in}
-
 Then subtract the upper from the lower:
 
 $$
@@ -1174,14 +1267,15 @@ $$
 \frac{2}{3}-\frac{1}{3}=\frac{1}{3}
 $$
 
-:::
-
+<!----------------------------------------------------->
 
 ## {#ta-2 data-menu-title="Team Assessment" background-color="#003660"}
 
 <div class="page-center">
 <div class="custom-subtitle">Team Assessment</div>
 </div>
+
+<!----------------------------------------------------->
 
 ## {#ta2-1 data-menu-title="Team Assessment 2 Questions"}
 

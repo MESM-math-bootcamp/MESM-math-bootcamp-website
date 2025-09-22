@@ -137,7 +137,7 @@
 <p><span class="center-text body-text-m blue-text">Bren School of Environmental Science &amp; Management</span></p>
 <p><br></p>
 <p><br></p>
-<p><span class="body-text-s blue-text"><strong>Last updated:</strong> Sep 21, 2025</span></p>
+<p><span class="body-text-s blue-text"><strong>Last updated:</strong> Sep 22, 2025</span></p>
 <p><br></p>
 <p><em>Materials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.</em></p>
 </section>
@@ -174,7 +174,7 @@
 <h2></h2>
 <p><span class="slide-title">Natural logarithms</span></p>
 <hr>
-<p>If <span class="math inline">\(y&gt;0\)</span> then <strong><span class="math inline">\(\ln(x)\)</span> is the exponent you need to raise <span class="math inline">\(e\)</span> to in order to get <span class="math inline">\(y\)</span>.</strong></p>
+<p>If <span class="math inline">\(y&gt;0\)</span>, then <strong><span class="math inline">\(\ln(x)\)</span> is the exponent you need to raise <span class="math inline">\(e\)</span> to in order to get <span class="math inline">\(y\)</span>.</strong></p>
 <p>This means:</p>
 <p><span class="math display">\[
 \begin{align}
@@ -198,7 +198,7 @@ e^{\ln(y)} &amp;= y
 <h2></h2>
 <p><span class="slide-title">Natural logarithms</span></p>
 <hr>
-<p>If <span class="math inline">\(y&gt;0\)</span> then <strong><span class="math inline">\(\ln(x)\)</span> is the exponent you need to raise <span class="math inline">\(e\)</span> to in order to get <span class="math inline">\(y\)</span>.</strong></p>
+<p>If <span class="math inline">\(y&gt;0\)</span>, then <strong><span class="math inline">\(\ln(x)\)</span> is the exponent you need to raise <span class="math inline">\(e\)</span> to in order to get <span class="math inline">\(y\)</span>.</strong></p>
 <p>This means:</p>
 <p><span class="math display">\[
 \begin{align}
@@ -218,13 +218,12 @@ e^{\ln(y)} &amp;= y
 </ul>
 <!----------------------------------------------------->
 </section>
-<section id="ln" class="slide level2" data-menu-title="Properties of natural logarithm">
+<section id="ln-blank" class="slide level2" data-menu-title="Properties of natural logarithm">
 <h2></h2>
 <p><span class="slide-title">Natural log properties</span></p>
 <hr>
 <div class="columns">
 <div class="column" style="width:50%;">
-<div class="fragment fade-in">
 <div class="cell">
 <div class="cell-output-display">
 <div>
@@ -234,9 +233,27 @@ e^{\ln(y)} &amp;= y
 </div>
 </div>
 </div>
+</div><div class="column" style="width:50%;">
+
+</div></div>
+<!----------------------------------------------------->
+</section>
+<section id="ln-properties" class="slide level2" data-menu-title="Properties of natural logarithm">
+<h2></h2>
+<p><span class="slide-title">Natural log properties</span></p>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure>
+<p><img data-src="lecture-integrals_files/figure-revealjs/unnamed-chunk-4-1.png" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
 </div>
 </div><div class="column" style="width:50%;">
-<div class="fragment fade-in">
 <div class="center-text">
 <p><strong>Properties</strong></p>
 </div>
@@ -244,7 +261,6 @@ e^{\ln(y)} &amp;= y
 <p><span class="math inline">\(\ln(xy)=\ln x+\ln y\)</span></p>
 <p><span class="math inline">\(\ln(\frac{x}{y})=\ln x-\ln y\)</span></p>
 <p><span class="math inline">\(\ln(x^y)=y \ln x\)</span></p>
-</div>
 </div></div>
 <!----------------------------------------------------->
 </section>
@@ -280,12 +296,6 @@ rt &amp;= \ln\left(\frac{A}{P}\right) \\
 t &amp;= \frac{\ln(A)-\ln(P)}{r}
 \end{align}
 \]</span></p>
-<!----------------------------------------------------->
-</section>
-<section id="d-ln-blank" class="slide level2" data-menu-title="Natural logs">
-<h2></h2>
-<p><span class="slide-title">Derivative of natural log</span></p>
-<hr>
 <!----------------------------------------------------->
 </section>
 <section id="d-ln" class="slide level2" data-menu-title="Natural logs">
@@ -374,10 +384,13 @@ Team Assessment
 \end{align}
 \]</span></p>
 <p><br></p>
+<div class="fragment">
 <ol start="2" type="1">
 <li>Find the derivative of <span class="math inline">\(f(x)=x \ln x.\)</span></li>
 </ol>
 <p><br></p>
+</div>
+<div class="fragment">
 <ol start="3" type="1">
 <li>The popuplation <span class="math inline">\(P(t)\)</span> of an invasive plant species in a wetland (in thousands of individuals) grows according to <span class="math display">\[P(t) = 200\ln(1+0.5 t) + 50 \]</span> where <span class="math inline">\(t\)</span> is time in months.</li>
 </ol>
@@ -386,6 +399,7 @@ Team Assessment
 <li>Find the instantaneous growth rate of the population at <span class="math inline">\(t=6\)</span>. <!-- C) Is the population increasing or decreasing after six months? --></li>
 </ol>
 <!----------------------------------------------------->
+</div>
 </section>
 <section id="solutions-1" class="slide level2" data-menu-title="Solutions">
 <h2></h2>
@@ -432,7 +446,7 @@ f'(x) = 1\ln(x) + x\frac{1}{x} = \ln(x) + 1.
 <p><span class="slide-title">Solutions</span></p>
 <hr>
 <ol start="3" type="1">
-<li>The popuplation <span class="math inline">\(P(t)\)</span> of an invasive plant species in a wetland (in thousands of individuals) grows according to <span class="math display">\[P(t) = 200\ln(1+0.5 t) + 50 \]</span> where <span class="math inline">\(t\)</span> is time in months.</li>
+<li>The popuplation <span class="math inline">\(P(t)\)</span> of an invasive plant species in a wetland (in thousands of individuals) grows according to <span class="math inline">\(P(t) = 200\ln(1+0.5 t) + 50\)</span> where <span class="math inline">\(t\)</span> is time in months.</li>
 </ol>
 <p><strong>1. Initial population at <span class="math inline">\(t = 0\)</span></strong></p>
 <p><span class="math display">\[
@@ -495,13 +509,13 @@ Integration Conceputally
 <h2></h2>
 <p><span class="slide-title">How do we find the area under this curve?</span></p>
 <hr>
-<p>Areas of rectangles are easy to find (base <span class="math inline">\(\times\)</span> height!). We can approximate the are by adding the area of rectangles.</p>
+<p>Areas of rectangles are easy to find (base times height!). We can approximate the area by adding the area of rectangles under the curve.</p>
 
 <!----------------------------------------------------->
 <img data-src="images/reimann.png" class="r-stretch"></section>
 <section id="riemann-sum" class="slide level2" data-menu-title="Riemann Sum">
 <h2></h2>
-<p><span class="slide-title">Riemann sums</span></p>
+<p><span class="slide-title">Example</span></p>
 <hr>
 <p>Approximate the area under the curve from <span class="math inline">\([-3,3]\)</span> with <span class="math inline">\(\Delta x=1\)</span> and <span class="math inline">\(k=6\)</span></p>
 <div class="columns">
@@ -553,7 +567,7 @@ Integration Conceputally
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="lecture-integrals_files/figure-revealjs/unnamed-chunk-7-1.png" style="width:90.0%"></p>
+<p><img data-src="lecture-integrals_files/figure-revealjs/unnamed-chunk-8-1.png" style="width:90.0%"></p>
 </figure>
 </div>
 </div>
@@ -567,11 +581,11 @@ Integration Conceputally
 <hr>
 <ol type="1">
 <li><p>Start at one end of the interval <span class="math inline">\([a,b]\)</span></p></li>
-<li><p>Evaluate the function at <span class="math inline">\(f(a)\)</span></p></li>
-<li><p>Step away from <span class="math inline">\(a\)</span> by some small amount called <span class="math inline">\(\Delta x\)</span></p></li>
+<li><p>Evaluate the function at <span class="math inline">\(f(a)\)</span>.</p></li>
+<li><p>Step away from <span class="math inline">\(a\)</span> by some small amount called <span class="math inline">\(\Delta x\)</span>.</p></li>
 <li><p>Multiply <span class="math inline">\(f(a)\Delta x\)</span> to get the the area of the first rectangle.</p></li>
 <li><p>Repeat the same steps above, now starting with <span class="math inline">\(\Delta x\)</span> as the bottom left corner of the next rectangle. Repeat until you cover the area with rectangles of width <span class="math inline">\(\Delta x\)</span>.</p></li>
-<li><p>Sum up the area of all <span class="math inline">\(k\)</span> rectangles</p></li>
+<li><p>Sum up the area of all <span class="math inline">\(k\)</span> rectangles.</p></li>
 </ol>
 <p><span style="color:red"> <span class="math display">\[
 R(f(x), \Delta x)= \underbrace{f(x_1)\Delta x+f(x_2)\Delta x+...f(x_k)\Delta x}_{\text{Sum of area of rectangles with width $\Delta(x)$} }
@@ -591,7 +605,7 @@ R(f(x), \Delta x)= \underbrace{f(x_1)\Delta x+f(x_2)\Delta x+...f(x_k)\Delta x}_
 <div class="column" style="width:50%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/riemann.gif" class="quarto-figure quarto-figure-center" style="width:220.0%"></p>
+<p><img data-src="images/riemann.gif" class="quarto-figure quarto-figure-center" style="width:90.0%"></p>
 </figure>
 </div>
 </div><div class="column" style="width:50%;">
@@ -611,14 +625,14 @@ R(f(x), \Delta x)= \underbrace{f(x_1)\Delta x+f(x_2)\Delta x+...f(x_k)\Delta x}_
 </section>
 <section id="integral-calc" class="slide level2" data-menu-title="Integrals">
 <h2></h2>
-<p><span class="slide-title">How do we calculate</span></p>
+<p><span class="slide-title">How do we calculate integrals?</span></p>
 <hr>
 <ul>
-<li>Taking infinite sums is tedious to impossible by hand</li>
+<li>Taking infinite sums is impossible by hand</li>
 </ul>
 <p><br></p>
 <ul>
-<li>Luckily the <span class="math inline">\(dx\)</span> portion hints at the way to solve integrals</li>
+<li>Luckily, integrals and derivatives are related in a very useful way.</li>
 </ul>
 <!----------------------------------------------------->
 </section>
@@ -643,13 +657,13 @@ F(x)=\int^x_af(t)dt
 <p>If we integrate a derivative, we should get the same function back as the original vice-versa</p>
 <p><span class="math display">\[
 \begin{align}
-\frac{d}{dx}\left[\int f(x)dx\right]&amp;=f(x) &amp;\text{Differentiation is the inverse of integration}
+\int f'(x)&amp;=f(x)+C &amp;\text{Integration is the inverse of differentiation}
 \end{align}
 \]</span></p>
 <div class="fragment fade-in">
 <p><span class="math display">\[
 \begin{align}
-\int f'(x)&amp;=f(x)+C &amp;\text{Integration is the inverse of differentiation}
+\frac{d}{dx}\left[\int f(x)dx\right]&amp;=f(x) &amp;\text{Differentiation is the inverse of integration}
 \end{align}
 \]</span></p>
 </div>
@@ -675,8 +689,8 @@ F(x)=\int^x_af(t)dt
 <div class="fragment fade-in">
 <ul>
 <li><p>If we integrate, we’ll have <span class="math inline">\(\int 2x-4 = x^2-4x+C\)</span>.</p></li>
-<li><p>There is no way of knowing what the <span class="math inline">\(c\)</span> should be without additional information</p></li>
-<li><p><span class="math inline">\(c\)</span> is the <span class="math inline">\(x\)</span>-intercept and we would have we have to solve for it with an initial value problem.</p></li>
+<li><p>There is no way of knowing what the <span class="math inline">\(C\)</span> should be without additional information</p></li>
+<li><p><span class="math inline">\(C\)</span> is the <span class="math inline">\(x\)</span>-intercept and we would have we have to solve for it with an initial value problem.</p></li>
 </ul>
 </div>
 </div><div class="column" style="width:50%;">
@@ -709,7 +723,7 @@ F(x)=\int^x_af(t)dt
 </ul>
 <p><br></p>
 <ul>
-<li><p>Calculatin the total area under a curve</p>
+<li><p>Calculating the total area under a curve</p>
 <ul>
 <li>Useful in policy evaluations</li>
 </ul></li>
@@ -718,7 +732,7 @@ F(x)=\int^x_af(t)dt
 </section>
 <section id="tough" class="slide level2" data-menu-title="Integration is tough">
 <h2></h2>
-<p><span class="slide-title">But also itegration can be tough</span></p>
+<p><span class="slide-title">But also… integration can be tough</span></p>
 <hr>
 <div class="columns">
 <div class="column" style="width:40%;">
@@ -733,7 +747,7 @@ F(x)=\int^x_af(t)dt
 </div><div class="column" style="width:60%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/xkcd.png"></p>
+<p><img data-src="images/xkcd.png" style="width:80.0%"></p>
 <figcaption>Source <a href="https://xkcd.com/2117/">xkcd comics</a></figcaption>
 </figure>
 </div>
@@ -747,12 +761,6 @@ F(x)=\int^x_af(t)dt
 Rules of Integration
 </div>
 </div>
-<!----------------------------------------------------->
-</section>
-<section id="notation-blank" class="slide level2" data-menu-title="Notation">
-<h2></h2>
-<p><span class="slide-title">Notation</span></p>
-<hr>
 <!----------------------------------------------------->
 </section>
 <section id="notation" class="slide level2" data-menu-title="Notation">
@@ -885,7 +893,7 @@ Rules of Integration
 <p>Where <span class="math inline">\(C\)</span> is the cost (in dollars), and <span class="math inline">\(x\)</span> is the number of units produced. Given that producing 2 units of product costs $10, what is the complete cost equation?</p>
 <!----------------------------------------------------->
 </section>
-<section id="ivp-ex" class="slide level2" data-menu-title="Initial Value Problem">
+<section id="ivp-ex" class="slide level2 smaller" data-menu-title="Initial Value Problem">
 <h2></h2>
 <p><span class="slide-title">Example</span></p>
 <hr>
@@ -906,19 +914,17 @@ C(x)&amp;=25x-\frac{0.2x^2}{2}-39.96
 \]</span></p>
 <!----------------------------------------------------->
 </section>
-<section id="definte-1" class="slide level2" data-menu-title="Definite vs Indefinite">
+<section id="definte-1-blank" class="slide level2" data-menu-title="Definite vs Indefinite">
 <h2></h2>
 <p><span class="slide-title">Indefinite vs.&nbsp;dfinite integrals</span></p>
 <hr>
 <ul>
-<li>We have been working with <strong>indefinite integrals</strong>: there are no integration bounds</li>
+<li>We have been working with <strong>indefinite integrals</strong>.</li>
 </ul>
 <p><span class="math display">\[
 \int f(x)dx
 \]</span></p>
-<ul>
-<li>We need initial values to find integration constants.</li>
-</ul>
+<p>This means there are no integration bounds and we need initial values to find integration constants.</p>
 <div class="fragment">
 <ul>
 <li><strong>Definite integrals</strong> have start and end values <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>:</li>
@@ -929,6 +935,32 @@ C(x)&amp;=25x-\frac{0.2x^2}{2}-39.96
 $$\int_a^b f(x) dx = F(b) - F(a).$$ -->
 <p>To find the area under the curve along an interval <span class="math inline">\([a,b]\)</span>, evaluate the antiderivative at the endpoints and subtract them.</p>
 <p><strong>Example</strong></p>
+<!----------------------------------------------------->
+</div>
+</section>
+<section id="definte-1" class="slide level2 smaller" data-menu-title="Definite vs Indefinite">
+<h2></h2>
+<p><span class="slide-title">Indefinite vs.&nbsp;dfinite integrals</span></p>
+<hr>
+<ul>
+<li>We have been working with <strong>indefinite integrals</strong>.</li>
+</ul>
+<p><span class="math display">\[
+\int f(x)dx
+\]</span></p>
+<p>This means there are no integration bounds and we need initial values to find integration constants.</p>
+<div class="fragment">
+<ul>
+<li><strong>Definite integrals</strong> have start and end values <span class="math inline">\(a\)</span> and <span class="math inline">\(b\)</span>:</li>
+</ul>
+<p><span class="math display">\[\int_a^b f(x) dx.\]</span></p>
+<!-- - If $F(x) = \int f(x)dx$ then 
+
+$$\int_a^b f(x) dx = F(b) - F(a).$$ -->
+<p>To find the area under the curve along an interval <span class="math inline">\([a,b]\)</span>, evaluate the antiderivative at the endpoints and subtract them.</p>
+<p><strong>Example</strong></p>
+</div>
+<div class="fragment">
 <p><span class="math display">\[
 \begin{align}
 \int^b_axdx &amp;= \frac{1}{2}x^2\Big|^b_a\\
@@ -937,6 +969,14 @@ $$\int_a^b f(x) dx = F(b) - F(a).$$ -->
 \]</span></p>
 <!----------------------------------------------------->
 </div>
+</section>
+<section id="def-solve-blank" class="slide level2" data-menu-title="Definite Integral">
+<h2></h2>
+<p><span class="slide-title">Example</span></p>
+<hr>
+<p>✏️ <span style="color:green;">Evaluate the following integral.</span></p>
+<p><span style="color:green"> <span class="math display">\[\int^2_{-1}3x^2dx\]</span> </span></p>
+<!----------------------------------------------------->
 </section>
 <section id="def-solve" class="slide level2" data-menu-title="Definite Integral">
 <h2></h2>
@@ -965,8 +1005,18 @@ $$\int_a^b f(x) dx = F(b) - F(a).$$ -->
 <p><span class="slide-title">Example</span></p>
 <hr>
 <p>✏️ <span style="color:green;">Find the area of the shaded region in the graph below.</span></p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="images/diffxtwo.gif" class="quarto-figure quarto-figure-center"></p>
+</figure>
+</div>
+</div><div class="column" style="width:60%;">
 
-<img data-src="images/diffxtwo.gif" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+</div></div>
+<!----------------------------------------------------->
+</section>
 <section id="area-ex2" class="slide level2" data-menu-title="Area between curves">
 <h2></h2>
 <p><span class="slide-title">Example</span></p>
@@ -994,13 +1044,12 @@ $$\int_a^b f(x) dx = F(b) - F(a).$$ -->
 \end{align}
 \]</span></p>
 </div></div>
-<div class="fragment fade-in">
 <p>Then subtract the upper from the lower:</p>
 <p><span class="math display">\[
 \small
 \frac{2}{3}-\frac{1}{3}=\frac{1}{3}
 \]</span></p>
-</div>
+<!----------------------------------------------------->
 </section>
 <section id="ta-2" class="slide level2" data-menu-title="Team Assessment" data-background-color="#003660">
 <h2></h2>
@@ -1009,6 +1058,7 @@ $$\int_a^b f(x) dx = F(b) - F(a).$$ -->
 Team Assessment
 </div>
 </div>
+<!----------------------------------------------------->
 </section>
 <section id="ta2-1" class="slide level2" data-menu-title="Team Assessment 2 Questions">
 <h2></h2>
