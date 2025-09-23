@@ -308,47 +308,65 @@ knitr::include_graphics("images/ramsey.jpg")
 
 :::
 :::: -->
+## {#ode-steps-blank data-menu-title="Steps for solving"}
 
-## {#ode-steps data-menu-title="Steps for solving"}
-
-[Steps to solving ODEs]{.slide-title}
-
-<hr>
-
-1. Move like terms to the same side, including differentials (dx,dy)
-
-2. Apply the integral to both sides
-
-3. Rearrange equations to isolate in terms of dependent variable
-
-4. Use initial conditions (if given) to find C values
-
-5. Evaluate the bounds if definite intervals are given
-
-<!----------------------------------------------------->
-
-## {#ode data-menu-title="Integration"}
-
-[Practice Differential Equations]{.slide-title}
+[Separation of variables]{.slide-title}
 
 <hr>
 
-$$
-\frac{dy}{dx}=4y
-$$
+:::: {.columns}
 
-:::{.fragment .fade-in}
+::: {.column width="40%"}
 
-$$
-\frac{dy}{4y}=dx
-$$
+A first-order ODE of the form $\frac{dy}{dx} = f(x)g(y)$ can be solved in the following steps:
+
 
 :::
 
-:::{.fragment .fade-in}
+::: {.column width="60%"}
+<div class="page-center">
+✏️ [Solve for $y$ in $\frac{dy}{dx}=4y$]{style="color:green;"}
+</div>
+
+:::
+
+::::
+
+## {#ode-steps data-menu-title="Steps for solving"}
+
+[Separation of variables]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+A first-order ODE of the form $\frac{dy}{dx} = f(x)g(y)$ can be solved in the following steps:
+
+1. Move like terms to the same side, including differentials $dx\text{ and } dy$. *This is a convenient shorthand for more involved calculus steps.*
+
+
+2. Apply the integral to both sides.
+
+
+3. Rearrange equations to isolate in terms of dependent variable.
+
+
+4. Use initial conditions (if given) to find $C$ values.
+
+
+5. Evaluate the bounds if definite intervals are given.
+:::
+
+::: {.column width="60%"}
+<div class="page-center">
+✏️ [Solve for $y$ in $\frac{dy}{dx}=4y$]{style="color:green;"}
+</div>
 
 $$
 \begin{align}
+\frac{dy}{4y}& =dx \\
 \int\frac{dy}{4y}&=\int dx\\
 \frac{1}{4}\ln y&=x+C_1 \\
 \ln y&=4x+C_2\\
@@ -357,8 +375,9 @@ y&=e^{C_2}e^{4x} \\
 y&=Ce^{4x}
 \end{align}
 $$
-
 :::
+
+::::
 
 
 ## {#ta data-menu-title="Team Assessment" background-color="#003660"}
@@ -369,192 +388,63 @@ $$
 
 ## {#ta-q1 data-menu-title="Team Assessment Question 1"}
 
-An oil spill of the coast of Santa Barbara is spreading rapidly. Previous spills and an analysis of the current indicate that the oil is spreading at a daily rate of:
+1) Verify that $$\int \frac{1}{ax+b} dx = \frac{\ln(ax+b)}{a}.$$
+
+. . .
+
+2) An oil spill off the coast of Santa Barbara is spreading rapidly. Previous spills and an analysis of the current data indicate that the oil is spreading at a daily rate of:
 
 $$
-\frac{dA}{dt}=-0.001A+60
+\frac{dA}{dt}=-0.001A+60,
 $$
 
-Where A is the area of the oil spill in $km^2$ and t is the time in days.
+where $A$ is the area of the oil spill in $km^2$ and $t$ is the time in days.
 
-If after the first day the oil has spread to 25 $km^2$, find an equation to show the spread of oil in total area.
+A) Find an equation that models the spread of oil in total area. Hint: exercise 1.
 
-When will the oil spill cover all of the Santa Barbara Channel (~5850 $km^2$)?
-
-Hint:(The integral of $\frac{1}{ax+b}=\frac{ln(ax+b)}{a}$ Think reverse chain rule)
+B) After the first day the oil has spread to 25 $km^2$. What steps would you take to find when will the oil spill cover all of the Santa Barbara Channel (~5850 $km^2$)? *You don't need to compute it, just come up with a solid plan.*
 
 
+## {#ta-solutions data-menu-title="Team Assessment Question 1" .smaller}
 
-<!-- 
-## {#trans data-menu-title="Numerical Calculus" background-color="#003660"}
+[Solution 2.a.]{.slide-title}
+
+We are given the differential equation:
+
+$$
+\frac{dA}{dt} = -0.001 A + 60
+$$
+
+Step 1: Rearrange for separation of variables
+
+$$
+\frac{dA}{dt} = 60 - 0.001 A \quad \implies \quad \frac{dA}{60 - 0.001 A} = dt
+$$
+
+Step 2: Integrate both sides
+
+$$\int \frac{1}{60 - 0.001 A} \, dA = \int dt$$
+
+
+Using the hint:
+
+$$-1000 \ln(60 - 0.001 A) = t + C_1$$
+
+Step 3: Solve for \(A\)
+
+$$\ln(60 - 0.001 A) = -0.001 (t + C_1)$$
+
+$$60 - 0.001 A = e^{-0.001 (t + C_1)} = C e^{-0.001 t} \quad (\text{combine constants})$$
+
+$$0.001 A = 60 - C e^{-0.001 t}$$
+
+$$\boxed{A(t) = 60000 - C e^{-0.001 t} \text{, \  where $C$ is an arbitrary constant.}}$$
+
+<!----------------------------------------------------->
+
+## {#wrap-up data-menu-title="Team Assessment" background-color="#003660"}
 
 <div class="page-center">
-<div class="custom-subtitle">Numerical Calculus</div>
+<div class="custom-subtitle">Wrap up!</div>
 </div>
 
-
-## {#functions data-menu-title="Functions in R"}
-
-[Functions in R]{.slide-title}
-
-<hr>
-
-
-- Like functions in math, R functions are like baking recipes
-
-```{r,eval=FALSE,echo=TRUE}
-
-#cake       #recipe name (Ingredients)
-output    <-  mean         (x,...)
-```
-
-
-<br>
-
-<br>
-
-:::{.fragment .fade-in}
-
-```{r,echo=TRUE}
-x<-mean(1:5,na.rm=TRUE)
-x
-```
-
-- But where are the steps?
-
-:::
-
-## {#r-func data-menu-title="R functions documentation"}
-
-[All functions have documentation]{.slide-title}
-
-<hr>
-
-- Any built in function in R describes the function and how to use it
-
-<br>
-
-```{r,eval=FALSE,echo=TRUE}
-?seq
-```
-
-<br>
-
-- Use Google to have more intuitive explanations 
-
-<br>
-
-- [Source Code is always available, but very difficult to comprehend](https://github.com/SurajGupta/r-source/blob/master/src/library/base/R/seq.R)
-
-## {#mu-fun data-menu-title="My first function"}
-
-[We can make our own functions]{.slide-title}
-
-<hr>
-
-```{r,echo=TRUE}
-#Name i will give   Tell R we want to     Ingredients
-#my function        make a function      List
-my_first_fun       <-  function        (x,a)   {
-  
-  # Steps
-  y=x+2*a
-  
-  return(y)  #The cake output
-  
-} # End the function steps
-```
-
-
-<br>
-
-::: {.fragment}
-
-
-```{r, echo=TRUE}
-my_first_fun(x=1,a=2)
-```
-
-:::
-
-## {#r-pieces data-menu-title="Key Pieces"}
-
-[Key pieces of R functions]{.slide-title}
-
-<hr>
-
-1. *Name* - What are we going to call our function?
-
-<br>
-
-2.  *Ingredients*  - What goes into our function
-
-<br>
-
-3. *Steps*  - All the instructions we apply within our function contained within $\{\}$
-
-    - Order of steps matter (i.e. can't evaluate z=w+x if x or w have not been created)
-    
-<br>
-
-4. *Output* - What do we want the function to put out? (By default it is the last object, explicit with `return()`)
-
-## {#r-arrange data-menu-title="Function arrangement"}
-
-[Can you arrange this function into the correct order?]{.slide-title}
-
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-A)
-```{r,echo=TRUE,eval=FALSE}
-b=(a+x)*y
-```
-
-B)
-```{r,eval=FALSE,echo=TRUE}
-}
-```
-
-C)
-```{r,eval=FALSE,echo=TRUE}
-a=x+y
-```
-
-
-:::
-:::{.column width="50%"}
-
-D)
-```{r,eval=FALSE,echo=TRUE}
-add_multiply<-function(x,y){
-```
-
-
-E)
-```{r,eval=FALSE,echo=TRUE}
-  return(b)
-```
-:::
-::::
-
-## {#order data-menu-title="Arrange Solution"}
-
-[Solution]{.slide-title}
-
-<hr>
-
-```{r, echo=TRUE,eval=FALSE}
-add_multiply<-function(x,y){
-  
-  a=x+y
-  
-  b=(a+x)*y
-  
-  return(b)
-}
-
-```
- -->
