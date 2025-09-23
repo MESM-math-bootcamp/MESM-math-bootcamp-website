@@ -522,7 +522,7 @@ $$\boxed{A(t) = 60000 - C e^{-0.001 t} \text{, \  where $C$ is an arbitrary cons
 - <span style="color:#330033"><b>🌊 A bit of ODEs</b></span>
 :::
 
-![](images/otter.gif){fig-align="center" width="30%"}
+![](images/otter.gif){fig-align="center" width="15%"}
 
 ::::
 
