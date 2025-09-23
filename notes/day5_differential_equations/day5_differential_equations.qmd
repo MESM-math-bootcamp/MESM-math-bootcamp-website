@@ -4,7 +4,7 @@ This unit covers basic introduction to differential equations.
 
 ## Lecture materials
 
-[Differential equations lecture slides](lecture-diffeqs.qmd)
+[Differential equations lecture slides](lecture-diffeq.qmd)
 
 **Contents**
 

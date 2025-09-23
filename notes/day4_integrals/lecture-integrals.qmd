@@ -994,15 +994,15 @@ $$
 :::: {.columns}
 
 ::: {.column width="33%"}
-A) $\int f(x)=4$
+A) $\int 4 dx$
 :::
 
 ::: {.column width="33%"}
-B) $\int 2x^2$
+B) $\int 2x^2 dx$
 :::
 
 ::: {.column width="33%"}
-C) $\int x^3-4x$
+C) $\int x^3-4x dx$
 :::
 
 ::::
@@ -1043,13 +1043,15 @@ knitr::include_graphics("images/c.png")
 
 <hr>
 
-The marginal cost of producing $x$ units of a product is:
+✏️ [The marginal cost of producing $x$ units of a product is:]{style="color:green;"}
 
+[
 $$
 \frac{dC}{dx}=25-0.02x
 $$
+]{style="color:green;"}
 
-Where $C$ is the cost (in dollars), and $x$ is the number of units produced. Given that producing 2 units of product costs \$10, what is the complete cost equation?
+[Where $C$ is the cost (in dollars), and $x$ is the number of units produced. Given that producing 2 units of product costs \$10, what is the complete cost equation?]{style="color:green;"}
 
 <!----------------------------------------------------->
 
@@ -1059,13 +1061,15 @@ Where $C$ is the cost (in dollars), and $x$ is the number of units produced. Giv
 
 <hr>
 
-The marginal cost of producing $x$ units of a product is:
+✏️ [The marginal cost of producing $x$ units of a product is:]{style="color:green;"}
 
+[
 $$
 \frac{dC}{dx}=25-0.02x
 $$
+]{style="color:green;"}
 
-Where $C$ is the cost (in dollars), and $x$ is the number of units produced. Given that producing 2 units of product costs \$10, what is the complete cost equation?
+[Where $C$ is the cost (in dollars), and $x$ is the number of units produced. Given that producing 2 units of product costs \$10, what is the complete cost equation?]{style="color:green;"}
 
 We can integrate to find the original cost function $C$:
 
@@ -1088,7 +1092,7 @@ $$
 [Indefinite vs. dfinite integrals]{.slide-title}
 
 <hr>
-- We have been working with **indefinite integrals**. 
+- We have been working with **indefinite integrals** of the form
 
 $$
 \int f(x)dx
@@ -1211,7 +1215,9 @@ knitr::include_graphics("images/twocurve.png")
 :::: {.columns}
 
 ::: {.column width="40%"}
-![](images/diffxtwo.gif){fig-align="center" }
+![](images/diffxtwo.gif){fig-align="center"}
+
+![](images/twocurve.png){fig-align="center"}
 :::
 
 ::: {.column width="60%"}

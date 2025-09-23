@@ -448,3 +448,90 @@ $$\boxed{A(t) = 60000 - C e^{-0.001 t} \text{, \  where $C$ is an arbitrary cons
 <div class="custom-subtitle">Wrap up!</div>
 </div>
 
+<!----------------------------------------------------->
+
+## {#recap data-menu-title="We reviewed A LOT" .smaller}
+
+[We reviewed A LOT]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+- <span style="color:#D6001C"><b>🔢 Solving first-degree equations</b></span>  
+- <span style="color:#FF6600"><b>✖️ Exponents</b></span>  
+- <span style="color:#CC9900"><b>📐 Polynomials</b></span>  
+- <span style="color:#669900"><b>🔑 Fundamental theorem of algebra</b></span>  
+- <span style="color:#006633"><b>📏 Quadratic formula</b></span>  
+- <span style="color:#006699"><b>📊 Graphing</b></span>  
+- <span style="color:#003366"><b>📈 Linear equations</b></span>  
+- <span style="color:#660099"><b>↗️ Slope as a rate of change</b></span>  
+- <span style="color:#990066"><b>⚡ Average vs instantaneous rate of change</b></span>  
+- <span style="color:#CC3366"><b>🧩 Definition of functions / vertical line test</b></span>  
+- <span style="color:#006666"><b>🌊 Continuity</b></span>  
+- <span style="color:#660033"><b>🔎 Limits</b></span>  
+- <span style="color:#993300"><b>🖊️ Derivatives</b></span>  
+- <span style="color:#663300"><b>✏️ Derivative as the limit of avg. rate of change</b></span>  
+- <span style="color:#330000"><b>🛤️ Tangent lines</b></span>  
+- <span style="color:#336633"><b>⚖️ Differentiability vs. continuity</b></span>  
+- <span style="color:#333300"><b>📝 Rules for differentiation</b></span>  
+- <span style="color:#996600"><b>🔹 Constant rule</b></span>  
+- <span style="color:#660000"><b>💪 Power rule</b></span>  
+- <span style="color:#003300"><b>➕ Sum and difference rule</b></span>  
+- <span style="color:#990000"><b>✖️ Product rule</b></span>  
+- <span style="color:#CC3300"><b>➗ Quotient rule</b></span>  
+- <span style="color:#FF3300"><b>🔗 Chain rule</b></span>  
+
+:::
+
+::: {.column width="60%"}
+
+- <span style="color:#336666"><b>🌱 The number e and exponential functions</b></span>  
+- <span style="color:#003399"><b>📈 Higher order derivatives</b></span>  
+- <span style="color:#330066"><b>⬆️ Using derivatives to identify where f(x) is increasing or decreasing</b></span>  
+- <span style="color:#660099"><b>🎯 Finding critical points of functions and min/max</b></span>  
+- <span style="color:#990099"><b>🔢 Natural logarithms</b></span>  
+- <span style="color:#993366"><b>∫ Integrals</b></span>  
+- <span style="color:#660066"><b>🧮 Riemann sums</b></span>  
+- <span style="color:#330066"><b>📜 Fundamental Theorem of Calculus</b></span>  
+- <span style="color:#003366"><b>📐 Rules of integration</b></span>  
+- <span style="color:#003333"><b>🔹 Linearity</b></span>  
+- <span style="color:#336633"><b>🖊️ Integrating a constant</b></span>  
+- <span style="color:#663300"><b>💪 Power rule</b></span>  
+- <span style="color:#660000"><b>✏️ Initial value problems</b></span>  
+- <span style="color:#333300"><b>🧾 Definite and indefinite integrals</b></span>  
+- <span style="color:#996600"><b>📏 Are between two curves</b></span>  
+- <span style="color:#330033"><b>🌊 A tiny bit of ODEs</b></span>
+
+![](images/otter.gif){fig-align="center" width="40%"}
+:::
+
+::::
+
+<!----------------------------------------------------->
+
+## {#last-exercise data-menu-title="Last exercise"}
+
+[Last exercise]{.slide-title}
+
+<hr>
+
+Share with your team:
+
+<br>
+
+1. Something you did during the workshop that you feel good about and/or something meaning you learned or remembered in the past five sessions.
+
+<br>
+
+2. Something you want to keep improving on during your time Bren. This could be math related or more general. 
+
+. . .
+
+<br>
+<br>
+
+<div style="font-size:4rem; text-align:center; font-weight:bold;">
+🎉 Have a great Fall Quarter! 🍂
+</div>

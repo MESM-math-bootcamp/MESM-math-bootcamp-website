@@ -68,6 +68,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -177,7 +206,10 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#day-5-differential-equations" id="toc-day-5-differential-equations" class="nav-link active" data-scroll-target="#day-5-differential-equations">Day 5: Differential Equations</a></li>
+  <li><a href="#day-5-differential-equations" id="toc-day-5-differential-equations" class="nav-link active" data-scroll-target="#day-5-differential-equations">Day 5: Differential Equations</a>
+  <ul class="collapse">
+  <li><a href="#lecture-materials" id="toc-lecture-materials" class="nav-link" data-scroll-target="#lecture-materials">Lecture materials</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -189,8 +221,24 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="day-5-differential-equations" class="level1">
 <h1>Day 5: Differential Equations</h1>
+<p>This unit covers basic introduction to differential equations.</p>
+<section id="lecture-materials" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-materials">Lecture materials</h2>
+<p><a href="../../notes/day5_differential_equations/lecture-diffeq.html">Differential equations lecture slides</a></p>
+<p><strong>Contents</strong></p>
+<ul>
+<li>Integral of the exponential function</li>
+<li>Integral of <span class="math inline">\(1/x\)</span> and <span class="math inline">\(ln(x)\)</span></li>
+<li>Differential equations:
+<ul>
+<li>Motivation and examples</li>
+<li>Phase diagrams</li>
+<li>Steps to solving ODEs</li>
+</ul></li>
+</ul>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
