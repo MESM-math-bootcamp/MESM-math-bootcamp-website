@@ -179,7 +179,7 @@ is a differential equation in which we want to find a function $y(x)$ such that 
 
 ## {#ln-ex data-menu-title="Natural Logs"}
 
-[Differential wquations help us understand changing environments]{.slide-title}
+[Differential equations help us understand changing environments]{.slide-title}
 
 <hr>
 
@@ -203,7 +203,7 @@ where $N_1, N_2$ are the popylation of prey and preadtor respectively.
 :::
 
 ::: {.column width="60%"}
-![](images/lv.jpg){fig-align="center" width="90%"}
+![](images/lv.jpg){fig-align="center" width="65%"}
 :::
 
 ::::
@@ -308,6 +308,15 @@ knitr::include_graphics("images/ramsey.jpg")
 
 :::
 :::: -->
+
+<!----------------------------------------------------->
+
+## {#solving-diff-eq data-menu-title="Solving Differential Equations" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Solving Differential Equations</div>
+</div>
+
 ## {#ode-steps-blank data-menu-title="Steps for solving"}
 
 [Separation of variables]{.slide-title}
@@ -450,6 +459,18 @@ $$\boxed{A(t) = 60000 - C e^{-0.001 t} \text{, \  where $C$ is an arbitrary cons
 
 <!----------------------------------------------------->
 
+## {#survey data-menu-title="Please fill out this survery"}
+
+[Please fill out our exit survey!]{.slide-title}
+
+![](images/exit-survey-qr.png){fig-align="center"}
+
+[Or you can click on this link.](https://forms.gle/GCWwaqftKoaHUDYR9)
+
+
+
+<!----------------------------------------------------->
+
 ## {#recap data-menu-title="We reviewed A LOT" .smaller}
 
 [We reviewed A LOT]{.slide-title}
@@ -458,7 +479,7 @@ $$\boxed{A(t) = 60000 - C e^{-0.001 t} \text{, \  where $C$ is an arbitrary cons
 
 :::: {.columns}
 
-::: {.column width="40%"}
+::: {.column width="33%"}
 - <span style="color:#D6001C"><b>🔢 Solving first-degree equations</b></span>  
 - <span style="color:#FF6600"><b>✖️ Exponents</b></span>  
 - <span style="color:#CC9900"><b>📐 Polynomials</b></span>  
@@ -467,14 +488,15 @@ $$\boxed{A(t) = 60000 - C e^{-0.001 t} \text{, \  where $C$ is an arbitrary cons
 - <span style="color:#006699"><b>📊 Graphing</b></span>  
 - <span style="color:#003366"><b>📈 Linear equations</b></span>  
 - <span style="color:#660099"><b>↗️ Slope as a rate of change</b></span>  
-- <span style="color:#990066"><b>⚡ Average vs instantaneous rate of change</b></span>  
-- <span style="color:#CC3366"><b>🧩 Definition of functions / vertical line test</b></span>  
+- <span style="color:#CC3366"><b>🧩 Definition of functions </b></span>  
 - <span style="color:#006666"><b>🌊 Continuity</b></span>  
 - <span style="color:#660033"><b>🔎 Limits</b></span>  
-- <span style="color:#993300"><b>🖊️ Derivatives</b></span>  
-- <span style="color:#663300"><b>✏️ Derivative as the limit of avg. rate of change</b></span>  
+:::
+
+::: {.column width="33%"}
+
+- <span style="color:#993300"><b>🖊️ Derivatives and rate of change</b></span>  
 - <span style="color:#330000"><b>🛤️ Tangent lines</b></span>  
-- <span style="color:#336633"><b>⚖️ Differentiability vs. continuity</b></span>  
 - <span style="color:#333300"><b>📝 Rules for differentiation</b></span>  
 - <span style="color:#996600"><b>🔹 Constant rule</b></span>  
 - <span style="color:#660000"><b>💪 Power rule</b></span>  
@@ -482,30 +504,25 @@ $$\boxed{A(t) = 60000 - C e^{-0.001 t} \text{, \  where $C$ is an arbitrary cons
 - <span style="color:#990000"><b>✖️ Product rule</b></span>  
 - <span style="color:#CC3300"><b>➗ Quotient rule</b></span>  
 - <span style="color:#FF3300"><b>🔗 Chain rule</b></span>  
-
+- <span style="color:#336666"><b>🌱 The number e and exp()</b></span>  
+- <span style="color:#003399"><b>📈 Higher order derivatives</b></span>    
 :::
 
-::: {.column width="60%"}
-
-- <span style="color:#336666"><b>🌱 The number e and exponential functions</b></span>  
-- <span style="color:#003399"><b>📈 Higher order derivatives</b></span>  
-- <span style="color:#330066"><b>⬆️ Using derivatives to identify where f(x) is increasing or decreasing</b></span>  
-- <span style="color:#660099"><b>🎯 Finding critical points of functions and min/max</b></span>  
+::: {.column width="33%"}
+- <span style="color:#660099"><b>🎯 Critical points and min/max</b></span>  
 - <span style="color:#990099"><b>🔢 Natural logarithms</b></span>  
 - <span style="color:#993366"><b>∫ Integrals</b></span>  
 - <span style="color:#660066"><b>🧮 Riemann sums</b></span>  
 - <span style="color:#330066"><b>📜 Fundamental Theorem of Calculus</b></span>  
-- <span style="color:#003366"><b>📐 Rules of integration</b></span>  
-- <span style="color:#003333"><b>🔹 Linearity</b></span>  
-- <span style="color:#336633"><b>🖊️ Integrating a constant</b></span>  
+- <span style="color:#003366"><b>📐 Rules of integration</b></span>    
 - <span style="color:#663300"><b>💪 Power rule</b></span>  
 - <span style="color:#660000"><b>✏️ Initial value problems</b></span>  
 - <span style="color:#333300"><b>🧾 Definite and indefinite integrals</b></span>  
-- <span style="color:#996600"><b>📏 Are between two curves</b></span>  
-- <span style="color:#330033"><b>🌊 A tiny bit of ODEs</b></span>
-
-![](images/otter.gif){fig-align="center" width="40%"}
+- <span style="color:#996600"><b>📏 Area between two curves</b></span>  
+- <span style="color:#330033"><b>🌊 A bit of ODEs</b></span>
 :::
+
+![](images/otter.gif){fig-align="center" width="30%"}
 
 ::::
 

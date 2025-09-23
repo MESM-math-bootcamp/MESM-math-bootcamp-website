@@ -532,7 +532,7 @@
     "href": "notes/day5_differential_equations/lecture-diffeq.html#title-slide",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Differential Equations and Numerical Calculus\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 22, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
+    "text": "Differential Equations and Numerical Calculus\nBren Calculus Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\n\nLast updated: Sep 23, 2025\n\nMaterials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop."
   },
   {
     "objectID": "notes/day5_differential_equations/lecture-diffeq.html#ln",
@@ -588,7 +588,7 @@
     "href": "notes/day5_differential_equations/lecture-diffeq.html#ln-ex",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "Differential wquations help us understand changing environments\n\n\n\n\nFor some natural phenomena it can be easier to describe them in terms of derivatives than give an explicit function.\n\nExample\nLotka-Volterra models to describe preadtor prey dynamics: \\[\n\\begin{align}\n\\frac{dN_1}{dt}&=r_1N_1\\left(\\frac{K_1-N_1-\\alpha N_2}{K_1}\\right)\\\\\n\\frac{dN_2}{dt}&=r_2N_2\\left(\\frac{K_2-N_2-\\beta N_1}{K_2}\\right)\n\\end{align}\n\\]\nwhere \\(N_1, N_2\\) are the popylation of prey and preadtor respectively."
+    "text": "Differential equations help us understand changing environments\n\n\n\n\nFor some natural phenomena it can be easier to describe them in terms of derivatives than give an explicit function.\n\nExample\nLotka-Volterra models to describe preadtor prey dynamics: \\[\n\\begin{align}\n\\frac{dN_1}{dt}&=r_1N_1\\left(\\frac{K_1-N_1-\\alpha N_2}{K_1}\\right)\\\\\n\\frac{dN_2}{dt}&=r_2N_2\\left(\\frac{K_2-N_2-\\beta N_1}{K_2}\\right)\n\\end{align}\n\\]\nwhere \\(N_1, N_2\\) are the popylation of prey and preadtor respectively."
   },
   {
     "objectID": "notes/day5_differential_equations/lecture-diffeq.html#lok-model",
@@ -603,6 +603,13 @@
     "title": "Bren Calculus Workshop",
     "section": "",
     "text": "Where will you run into ODEs?\n\n\n\n\nESM 201: Ecology of Managed Ecosystems\n\nLotka-Volterra Models \\[\n\\begin{align}\n\\frac{dN_1}{dt}&=r_1N_1\\left(\\frac{K_1-N_1-\\alpha N_2}{K_1}\\right)\\\\\n\\frac{dN_2}{dt}&=r_2N_2\\left(\\frac{K_2-N_2-\\beta N_1}{K_2}\\right)\n\\end{align}\n\\]\n\n\nESM 222: Pollution Risk Management\n\nGroundwater transport of absorbed contaminant \\[\n\\frac{\\partial C}{\\partial t}=\\left(\\frac{D}{R}\\frac{\\partial^2t}{\\partial x^2}\\right)-\\left(\\frac{v}{R}\\frac{\\partial C}{\\partial x}\\right)-\\frac{k}{R}C\n\\]"
+  },
+  {
+    "objectID": "notes/day5_differential_equations/lecture-diffeq.html#solving-diff-eq",
+    "href": "notes/day5_differential_equations/lecture-diffeq.html#solving-diff-eq",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Solving Differential Equations"
   },
   {
     "objectID": "notes/day5_differential_equations/lecture-diffeq.html#ode-steps-blank",
@@ -647,11 +654,18 @@
     "text": "Wrap up!"
   },
   {
+    "objectID": "notes/day5_differential_equations/lecture-diffeq.html#survey",
+    "href": "notes/day5_differential_equations/lecture-diffeq.html#survey",
+    "title": "Bren Calculus Workshop",
+    "section": "",
+    "text": "Please fill out our exit survey!\n\nOr you can click on this link."
+  },
+  {
     "objectID": "notes/day5_differential_equations/lecture-diffeq.html#recap",
     "href": "notes/day5_differential_equations/lecture-diffeq.html#recap",
     "title": "Bren Calculus Workshop",
     "section": "",
-    "text": "We reviewed A LOT\n\n\n\n\n🔢 Solving first-degree equations\n\n✖️ Exponents\n\n📐 Polynomials\n\n🔑 Fundamental theorem of algebra\n\n📏 Quadratic formula\n\n📊 Graphing\n\n📈 Linear equations\n\n↗️ Slope as a rate of change\n\n⚡ Average vs instantaneous rate of change\n\n🧩 Definition of functions / vertical line test\n\n🌊 Continuity\n\n🔎 Limits\n\n🖊️ Derivatives\n\n✏️ Derivative as the limit of avg. rate of change\n\n🛤️ Tangent lines\n\n⚖️ Differentiability vs. continuity\n\n📝 Rules for differentiation\n\n🔹 Constant rule\n\n💪 Power rule\n\n➕ Sum and difference rule\n\n✖️ Product rule\n\n➗ Quotient rule\n\n🔗 Chain rule\n\n\n\n🌱 The number e and exponential functions\n\n📈 Higher order derivatives\n\n⬆️ Using derivatives to identify where f(x) is increasing or decreasing\n\n🎯 Finding critical points of functions and min/max\n\n🔢 Natural logarithms\n\n∫ Integrals\n\n🧮 Riemann sums\n\n📜 Fundamental Theorem of Calculus\n\n📐 Rules of integration\n\n🔹 Linearity\n\n🖊️ Integrating a constant\n\n💪 Power rule\n\n✏️ Initial value problems\n\n🧾 Definite and indefinite integrals\n\n📏 Are between two curves\n\n🌊 A tiny bit of ODEs"
+    "text": "We reviewed A LOT\n\n\n\n\n🔢 Solving first-degree equations\n\n✖️ Exponents\n\n📐 Polynomials\n\n🔑 Fundamental theorem of algebra\n\n📏 Quadratic formula\n\n📊 Graphing\n\n📈 Linear equations\n\n↗️ Slope as a rate of change\n\n🧩 Definition of functions \n\n🌊 Continuity\n\n🔎 Limits\n\n\n\n\n🖊️ Derivatives and rate of change\n\n🛤️ Tangent lines\n\n📝 Rules for differentiation\n\n🔹 Constant rule\n\n💪 Power rule\n\n➕ Sum and difference rule\n\n✖️ Product rule\n\n➗ Quotient rule\n\n🔗 Chain rule\n\n🌱 The number e and exp()\n\n📈 Higher order derivatives\n\n\n\n\n🎯 Critical points and min/max\n\n🔢 Natural logarithms\n\n∫ Integrals\n\n🧮 Riemann sums\n\n📜 Fundamental Theorem of Calculus\n\n📐 Rules of integration\n\n💪 Power rule\n\n✏️ Initial value problems\n\n🧾 Definite and indefinite integrals\n\n📏 Area between two curves\n\n🌊 A bit of ODEs"
   },
   {
     "objectID": "notes/day5_differential_equations/lecture-diffeq.html#last-exercise",
