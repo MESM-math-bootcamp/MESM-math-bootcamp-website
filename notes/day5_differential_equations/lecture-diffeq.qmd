@@ -175,49 +175,109 @@ is a differential equation in which we want to find a function $y(x)$ such that 
 
 ✏️ [Check that $y(x) = -x -1$ is a solution for this differential equation.]{style="color:green;"}
 
+<!----------------------------------------------------->
 
 ## {#ln-ex data-menu-title="Natural Logs"}
 
-[Differential Equations help us understand changing environments]{.slide-title}
+[Differential wquations help us understand changing environments]{.slide-title}
 
 <hr>
 
-- Variables often change with each other and affects over time are extremely important
 
-```{r,out.width="60%",fig.align='center'}
-knitr::include_graphics("images/sir.png")
-```
+:::: {.columns}
 
-## {#lok data-menu-title="Lokta"}
+::: {.column width="40%"}
+- For some natural phenomena it can be easier to describe them in terms of derivatives than give an explicit function.
 
-[Predator-Prey Dyanmics are classic ecological cases of differential equations]{.slide-title}
+**Example**
 
-<hr>
+[Lotka-Volterra models](https://en.wikipedia.org/wiki/Lotka–Volterra_equations) to describe preadtor prey dynamics:
+$$
+\begin{align}
+\frac{dN_1}{dt}&=r_1N_1\left(\frac{K_1-N_1-\alpha N_2}{K_1}\right)\\
+\frac{dN_2}{dt}&=r_2N_2\left(\frac{K_2-N_2-\beta N_1}{K_2}\right)
+\end{align}
+$$
 
-```{r,out.width="55%",fig.align="center"}
-knitr::include_graphics("images/lv.jpg")
-```
+where $N_1, N_2$ are the popylation of prey and preadtor respectively.
+:::
 
+::: {.column width="60%"}
+![](images/lv.jpg){fig-align="center" width="90%"}
+:::
+
+::::
+
+
+<!----------------------------------------------------->
 
 ## {#lok-model data-menu-title="Demonstration"}
 
-[Differential Equations are systems in motion]{.slide-title}
+[Differential equations are systems in motion]{.slide-title}
 
 <hr>
 
-```{r, fig.align='center'}
-knitr::include_graphics("images/pred.gif")
-```
+:::: {.columns}
+
+::: {.column width="40%"}
+- Differential equations relate a quantity to its rate of change. 
+- By specifying how something changes, we are describing a process over time. 
+- We are finding whole trajectories or behaviors over time. 
+:::
+
+::: {.column width="60%"}
+![[Phase space](https://en.wikipedia.org/wiki/Lotka–Volterra_equations)](images/pred.gif){fig-align="center" width="90%"}
+:::
+::::
+
+<!----------------------------------------------------->
 
 ## {#ground data-menu-title="Groundwater"}
 
-[Groundwater velocity]{.slide-title}
+[Where will you run into ODEs?]{.slide-title}
 
 <hr>
 
-```{r, fig.align='center'}
-knitr::include_graphics("images/groundwater.png")
-```
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- ESM 201: Ecology of Managed Ecosystems
+
+Lotka-Volterra Models 
+$$
+\begin{align}
+\frac{dN_1}{dt}&=r_1N_1\left(\frac{K_1-N_1-\alpha N_2}{K_1}\right)\\
+\frac{dN_2}{dt}&=r_2N_2\left(\frac{K_2-N_2-\beta N_1}{K_2}\right)
+\end{align}
+$$
+
+<!--
+ Predator-prey dynamics.
+ A pair of first-order nonlinear differential equations, frequently used to describe the dynamics of biological systems in which two species interact, one as a predator and the other as prey. The populations change through time according to the pair of equations.
+-->
+
+- ESM 222: Pollution Risk Management
+
+ Groundwater transport of absorbed contaminant
+$$
+\frac{\partial C}{\partial t}=\left(\frac{D}{R}\frac{\partial^2t}{\partial x^2}\right)-\left(\frac{v}{R}\frac{\partial C}{\partial x}\right)-\frac{k}{R}C
+$$
+
+<!--
+Contaminants moving and breaking down in groundwater.
+
+Widely used in hydrogeology and environmental engineering to model how contaminants move and break down in groundwater.
+-->
+:::
+
+::: {.column width="50%"}
+![](images/lynx-hare-300.jpg){fig-align="center" width="70%"}
+
+![](images/pollution.jpg){fig-align="center" width="70%"}
+:::
+::::
 
 
 
@@ -251,7 +311,7 @@ knitr::include_graphics("images/ramsey.jpg")
 
 ## {#ode-steps data-menu-title="Steps for solving"}
 
-[Steps to Solving ODEs]{.slide-title}
+[Steps to solving ODEs]{.slide-title}
 
 <hr>
 
@@ -265,6 +325,7 @@ knitr::include_graphics("images/ramsey.jpg")
 
 5. Evaluate the bounds if definite intervals are given
 
+<!----------------------------------------------------->
 
 ## {#ode data-menu-title="Integration"}
 
@@ -321,6 +382,8 @@ If after the first day the oil has spread to 25 $km^2$, find an equation to show
 When will the oil spill cover all of the Santa Barbara Channel (~5850 $km^2$)?
 
 Hint:(The integral of $\frac{1}{ax+b}=\frac{ln(ax+b)}{a}$ Think reverse chain rule)
+
+
 
 <!-- 
 ## {#trans data-menu-title="Numerical Calculus" background-color="#003660"}
