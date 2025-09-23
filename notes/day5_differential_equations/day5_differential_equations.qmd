@@ -1,1 +1,17 @@
 # Day 5: Differential Equations
+
+This unit covers basic introduction to differential equations.
+
+## Lecture materials
+
+[Differential equations lecture slides](lecture-diffeqs.qmd)
+
+**Contents**
+
+- Integral of the exponential function
+- Integral of $1/x$ and $ln(x)$
+- Differential equations:
+    - Motivation and examples
+    - Phase diagrams
+    - Steps to solving ODEs
+

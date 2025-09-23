@@ -4,20 +4,18 @@
 SOURCE_FOLDER="/Users/c_galazgarcia/Documents/MESM-math-bootcamp/bren-math-workshop/lectures/img"
 
 # Define the destination folder in your project
-DEST_FOLDER="/Users/c_galazgarcia/Documents/MESM-math-bootcamp/MESM-math-bootcamp-website/notes/day4_integrals/images"
+DEST_FOLDER="/Users/c_galazgarcia/Documents/MESM-math-bootcamp/MESM-math-bootcamp-website/notes/day5_differential_equations/images"
 
 # Create the destination folder if it doesn't exist
 mkdir -p "$DEST_FOLDER"
 
 # List of image files to copy
 IMAGES=(
-  "area.png" 
-  "reimann.png" 
-  "riemann.gif" 
-  "c.png" 
-  "increase.PNG" 
-  "twocurve.png" 
-  "diffxtwo.gif"
+  "sir.png"
+  "lv.jpg"
+  "pred.gif"
+  "groundwater.png"
+  "ramsey.jpg"
 )
 
 # Copy each image from the source folder to the destination folder

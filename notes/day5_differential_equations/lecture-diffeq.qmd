@@ -1,0 +1,442 @@
+---
+format: 
+  revealjs:
+    chalkboard: false
+    slide-number: true
+    show-slide-number: print
+    theme:
+     - ucsb-media.scss
+    logo: img/bren-logo.png
+    html-math-method: mathjax
+    include-in-header:
+      - text: |
+          <script>
+          MathJax = {
+            options: {
+              menuOptions: {
+                settings: {
+                  assistiveMml: false
+                }
+              }
+            }
+          };
+          </script>
+embed-resources: true
+---
+
+## {#title-slide data-menu-title="Title Slide" background=.white}
+
+[Differential Equations and Numerical Calculus]{.custom-title .blue-text}
+
+[Bren Calculus Workshop]{.custom-subtitle .gold}
+
+<hr class="hr-teal">
+
+[Nathaniel Grimes]{.body-text-l .center-text .blue-text}
+
+[Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
+
+[**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
+
+## {#ta2-1 data-menu-title="Team Assessment 2 Questions"}
+
+
+2) Take the Integrals
+
+$$
+\begin{align}
+\text{A) }y=\frac{3}{x^2}, y(0)=5&  &\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\text{C) } \int^4_2\frac{1}{2}x
+\end{align}
+$$
+
+3) A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$. Where $C$ is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?
+
+## {#ln data-menu-title="Natural Logs"}
+
+[Exponent rules in Integration]{.slide-title}
+
+<hr>
+
+
+$$
+\large
+\int e^xdx=e^x+C
+$$
+
+<br>
+
+- If the x term gets more complex, we need integration by parts or substitution. ***Very Complicated and We will not cover!***
+
+- Numerical Calculus will handle this for us
+
+## {#int-ln data-menu-title="Natural logs"}
+
+[Natural Logs in Integration ]{.slide-title}
+
+<hr>
+
+$$
+\large
+\int \frac{1}{x}=\ln x+C
+$$
+
+$$
+\begin{align}
+\int \ln x&=x\ln x-x+C  
+\end{align}
+$$
+
+<br>
+
+- No easy chain rule equivalent in Integration
+
+- This is solved by integration by parts
+
+
+## {#diffeq data-menu-title="Diff Eq"}
+
+[Differential Equations help us study how things interact together over time ]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+**X and Y are not independent, they change with each other**
+:::
+
+$$
+\large
+\frac{dy}{dx}=4y+2x
+$$
+
+- What are taking the integral with respect too?
+
+<br>
+
+- What do we do with the 4y?
+
+<br>
+
+- What about the dy?
+
+
+## {#ln-ex data-menu-title="Natural Logs"}
+
+[Differential Equations help us understand changing environments]{.slide-title}
+
+<hr>
+
+- Variables often change with each other and affects over time are extremely important
+
+```{r,out.width="60%",fig.align='center'}
+knitr::include_graphics("img/sir.png")
+```
+
+## {#lok data-menu-title="Lokta"}
+
+[Predator-Prey Dyanmics are classic ecological cases of differential equations]{.slide-title}
+
+<hr>
+
+```{r,out.width="55%",fig.align="center"}
+knitr::include_graphics("img/lv.jpg")
+```
+
+
+## {#lok-model data-menu-title="Demonstration"}
+
+[Differential Equations are systems in motion]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+knitr::include_graphics("img/pred.gif")
+```
+
+## {#ground data-menu-title="Groundwater"}
+
+[Groundwater velocity]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+knitr::include_graphics("img/groundwater.png")
+```
+
+
+## {#difficult data-menu-title="ODE are difficult"}
+
+[We can use phase diagrams to understand the system]{.slide-title}
+
+<hr>
+
+
+::::{.columns}
+:::{.column width="50%"}
+
+```{r}
+knitr::include_graphics("img/ramsey.jpg")
+```
+
+:::
+:::{.column width="50%"}
+
+- Find isoclines (where $dy/dx=0$)
+
+- Determine the direction of the flow
+
+- Find the equilibrium points
+
+- Determine the stability of the equilibrium points
+
+:::
+::::
+## {#ode-steps data-menu-title="Steps for solving"}
+
+[Steps to Solving ODEs]{.slide-title}
+
+<hr>
+
+1. Move like terms to the same side, including differentials (dx,dy)
+
+2. Apply the integral to both sides
+
+3. Rearrange equations to isolate in terms of dependent variable
+
+4. Use initial conditions (if given) to find C values
+
+5. Evaluate the bounds if definite intervals are given
+
+
+## {#ode data-menu-title="Integration"}
+
+[Practice Differential Equations]{.slide-title}
+
+<hr>
+
+$$
+\frac{dy}{dx}=4y
+$$
+
+:::{.fragment .fade-in}
+
+$$
+\frac{dy}{4y}=dx
+$$
+
+:::
+
+:::{.fragment .fade-in}
+
+$$
+\begin{align}
+\int\frac{dy}{4y}&=\int dx\\
+\frac{1}{4}\ln y&=x+C_1 \\
+\ln y&=4x+C_2\\
+y&=e^{4x+C_2} \\
+y&=e^{C_2}e^{4x} \\
+y&=Ce^{4x}
+\end{align}
+$$
+
+:::
+
+
+## {#ta data-menu-title="Team Assessment" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Team Assessment</div>
+</div>
+
+## {#ta-q1 data-menu-title="Team Assessment Question 1"}
+
+An oil spill of the coast of Santa Barbara is spreading rapidly. Previous spills and an analysis of the current indicate that the oil is spreading at a daily rate of:
+
+$$
+\frac{dA}{dt}=-0.001A+60
+$$
+
+Where A is the area of the oil spill in $km^2$ and t is the time in days.
+
+If after the first day the oil has spread to 25 $km^2$, find an equation to show the spread of oil in total area.
+
+When will the oil spill cover all of the Santa Barbara Channel (~5850 $km^2$)?
+
+Hint:(The integral of $\frac{1}{ax+b}=\frac{ln(ax+b)}{a}$ Think reverse chain rule)
+
+
+## {#trans data-menu-title="Numerical Calculus" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Numerical Calculus</div>
+</div>
+
+
+## {#functions data-menu-title="Functions in R"}
+
+[Functions in R]{.slide-title}
+
+<hr>
+
+
+- Like functions in math, R functions are like baking recipes
+
+```{r,eval=FALSE,echo=TRUE}
+
+#cake       #recipe name (Ingredients)
+output    <-  mean         (x,...)
+```
+
+
+<br>
+
+<br>
+
+:::{.fragment .fade-in}
+
+```{r,echo=TRUE}
+x<-mean(1:5,na.rm=TRUE)
+x
+```
+
+- But where are the steps?
+
+:::
+
+## {#r-func data-menu-title="R functions documentation"}
+
+[All functions have documentation]{.slide-title}
+
+<hr>
+
+- Any built in function in R describes the function and how to use it
+
+<br>
+
+```{r,eval=FALSE,echo=TRUE}
+?seq
+```
+
+<br>
+
+- Use Google to have more intuitive explanations 
+
+<br>
+
+- [Source Code is always available, but very difficult to comprehend](https://github.com/SurajGupta/r-source/blob/master/src/library/base/R/seq.R)
+
+## {#mu-fun data-menu-title="My first function"}
+
+[We can make our own functions]{.slide-title}
+
+<hr>
+
+```{r,echo=TRUE}
+#Name i will give   Tell R we want to     Ingredients
+#my function        make a function      List
+my_first_fun       <-  function        (x,a)   {
+  
+  # Steps
+  y=x+2*a
+  
+  return(y)  #The cake output
+  
+} # End the function steps
+```
+
+
+<br>
+
+::: {.fragment}
+
+
+```{r, echo=TRUE}
+my_first_fun(x=1,a=2)
+```
+
+:::
+
+## {#r-pieces data-menu-title="Key Pieces"}
+
+[Key pieces of R functions]{.slide-title}
+
+<hr>
+
+1. *Name* - What are we going to call our function?
+
+<br>
+
+2.  *Ingredients*  - What goes into our function
+
+<br>
+
+3. *Steps*  - All the instructions we apply within our function contained within $\{\}$
+
+    - Order of steps matter (i.e. can't evaluate z=w+x if x or w have not been created)
+    
+<br>
+
+4. *Output* - What do we want the function to put out? (By default it is the last object, explicit with `return()`)
+
+## {#r-arrange data-menu-title="Function arrangement"}
+
+[Can you arrange this function into the correct order?]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+A)
+```{r,echo=TRUE,eval=FALSE}
+b=(a+x)*y
+```
+
+B)
+```{r,eval=FALSE,echo=TRUE}
+}
+```
+
+C)
+```{r,eval=FALSE,echo=TRUE}
+a=x+y
+```
+
+
+:::
+:::{.column width="50%"}
+
+D)
+```{r,eval=FALSE,echo=TRUE}
+add_multiply<-function(x,y){
+```
+
+
+E)
+```{r,eval=FALSE,echo=TRUE}
+  return(b)
+```
+:::
+::::
+
+## {#order data-menu-title="Arrange Solution"}
+
+[Solution]{.slide-title}
+
+<hr>
+
+```{r, echo=TRUE,eval=FALSE}
+add_multiply<-function(x,y){
+  
+  a=x+y
+  
+  b=(a+x)*y
+  
+  return(b)
+}
+
+```
+
+
+
+
+
