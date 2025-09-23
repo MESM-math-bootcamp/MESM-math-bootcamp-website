@@ -1,27 +1,12 @@
 ---
 format: 
   revealjs:
-    chalkboard: false
+    chalkboard: true
     slide-number: true
     show-slide-number: print
     theme:
-     - ucsb-media.scss
-    logo: img/bren-logo.png
+     - ../../ucsb-media.scss    
     html-math-method: mathjax
-    include-in-header:
-      - text: |
-          <script>
-          MathJax = {
-            options: {
-              menuOptions: {
-                settings: {
-                  assistiveMml: false
-                }
-              }
-            }
-          };
-          </script>
-embed-resources: true
 ---
 
 ## {#title-slide data-menu-title="Title Slide" background=.white}
@@ -32,12 +17,21 @@ embed-resources: true
 
 <hr class="hr-teal">
 
-[Nathaniel Grimes]{.body-text-l .center-text .blue-text}
+[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .blue-text}
 
 [Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
 
+<br>
+
+<br>
+
 [**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
 
+<br>
+
+*Materials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.*
+
+<!--
 ## {#ta2-1 data-menu-title="Team Assessment 2 Questions"}
 
 
@@ -50,13 +44,15 @@ $$
 $$
 
 3) A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$. Where $C$ is the ozone concentration (ppm) and t is the elapsed time in years. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?
+-->
 
 ## {#ln data-menu-title="Natural Logs"}
 
-[Exponent rules in Integration]{.slide-title}
+[Integral of the exponential function]{.slide-title}
 
 <hr>
 
+Since $\frac{d}{dx}e^x = e^x$, we have that
 
 $$
 \large
@@ -65,20 +61,34 @@ $$
 
 <br>
 
-- If the x term gets more complex, we need integration by parts or substitution. ***Very Complicated and We will not cover!***
+- If the $x$ term gets more complex, we need [integration by parts](https://tutorial.math.lamar.edu/classes/calcii/integrationbyparts.aspx) or [substitution](https://tutorial.math.lamar.edu/classes/calci/substitutionruleindefinite.aspx). 
 
-- Numerical Calculus will handle this for us
+*This can get complicated and ee will not cover it in the workshop.*
 
-## {#int-ln data-menu-title="Natural logs"}
 
-[Natural Logs in Integration ]{.slide-title}
+## {#int-ln-blank data-menu-title="Natural logs"}
+
+[Natural logs in integration]{.slide-title}
 
 <hr>
 
+<!----------------------------------------------------->
+
+## {#int-ln data-menu-title="Natural logs"}
+
+[Natural logs in integration]{.slide-title}
+
+<hr>
+
+Since $\frac{d}{dx} \ln(x) = \frac{1}{x}$ we have that
+
 $$
 \large
-\int \frac{1}{x}=\ln x+C
+\int \frac{1}{x}=\ln x+C.
 $$
+
+
+On the other hand, we have that
 
 $$
 \begin{align}
@@ -86,37 +96,84 @@ $$
 \end{align}
 $$
 
+
+This is computed using [integration by parts](https://www.youtube.com/watch?v=iw5eLJV0Sj4&embeds_referring_euri=https%3A%2F%2Fwww.khanacademy.org%2F&embeds_referring_origin=https%3A%2F%2Fwww.khanacademy.org).
+
+✏️ [How would you check this second integral is correct?]{style="color:green;"}
+
+<!----------------------------------------------------->
+
+## {#intro-diff-eq data-menu-title="Team Assessment" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Introduction to Differential Equations</div>
+</div>
+
+<!----------------------------------------------------->
+
+
+## {#diffeq-blank-1 data-menu-title="Diff Eq"}
+
+[What is a differential equation?]{.slide-title}
+
+<hr>
+
+<!----------------------------------------------------->
+
+
+## {#diffeq-blank-2 data-menu-title="Diff Eq"}
+
+[What is a differential equation?]{.slide-title}
+
+<hr>
+
+A **differential equation** is any equation which contains derivatives. 
+
+The goal of the differential equation is to find a function that satisfies the equation. 
+
+**Ordinary differential equations (ODEs)** are differential equations with ordinary derivatives (the ones we have been working with). 
+
+<span style="font-size: 0.8em;">
+*Sometimes functions have more than one variable and we can take **partial derivatives** with respect to each variable. Differential equations with partial derivatives are called **partial differential equations (PDEs)**.*
+</span>
+
 <br>
 
-- No easy chain rule equivalent in Integration
+**Example**
 
-- This is solved by integration by parts
+
+<!----------------------------------------------------->
 
 
 ## {#diffeq data-menu-title="Diff Eq"}
 
-[Differential Equations help us study how things interact together over time ]{.slide-title}
+[What is a differential equation?]{.slide-title}
 
 <hr>
 
-:::{.center-text}
-**X and Y are not independent, they change with each other**
-:::
+A **differential equation** is any equation which contains derivatives. 
 
-$$
-\large
-\frac{dy}{dx}=4y+2x
-$$
+The goal of the differential equation is to find a function that satisfies the equation. 
 
-- What are taking the integral with respect too?
+**Ordinary differential equations (ODEs)** are differential equations with ordinary derivatives (the ones we have been working with). 
 
-<br>
-
-- What do we do with the 4y?
+<span style="font-size: 0.8em;">
+*Sometimes functions have more than one variable and we can take **partial derivatives** with respect to each variable. Differential equations with partial derivatives are called **partial differential equations (PDEs)**.*
+</span>
 
 <br>
 
-- What about the dy?
+**Example**
+
+The equation
+
+$$
+y' = y + x
+$$
+
+is a differential equation in which we want to find a function $y(x)$ such that its derivative equals the function plus $x$.
+
+✏️ [Check that $y(x) = -x -1$ is a solution for this differential equation.]{style="color:green;"}
 
 
 ## {#ln-ex data-menu-title="Natural Logs"}
@@ -128,7 +185,7 @@ $$
 - Variables often change with each other and affects over time are extremely important
 
 ```{r,out.width="60%",fig.align='center'}
-knitr::include_graphics("img/sir.png")
+knitr::include_graphics("images/sir.png")
 ```
 
 ## {#lok data-menu-title="Lokta"}
@@ -138,7 +195,7 @@ knitr::include_graphics("img/sir.png")
 <hr>
 
 ```{r,out.width="55%",fig.align="center"}
-knitr::include_graphics("img/lv.jpg")
+knitr::include_graphics("images/lv.jpg")
 ```
 
 
@@ -149,7 +206,7 @@ knitr::include_graphics("img/lv.jpg")
 <hr>
 
 ```{r, fig.align='center'}
-knitr::include_graphics("img/pred.gif")
+knitr::include_graphics("images/pred.gif")
 ```
 
 ## {#ground data-menu-title="Groundwater"}
@@ -159,11 +216,12 @@ knitr::include_graphics("img/pred.gif")
 <hr>
 
 ```{r, fig.align='center'}
-knitr::include_graphics("img/groundwater.png")
+knitr::include_graphics("images/groundwater.png")
 ```
 
 
-## {#difficult data-menu-title="ODE are difficult"}
+
+<!-- ## {#difficult data-menu-title="ODE are difficult"}
 
 [We can use phase diagrams to understand the system]{.slide-title}
 
@@ -174,7 +232,7 @@ knitr::include_graphics("img/groundwater.png")
 :::{.column width="50%"}
 
 ```{r}
-knitr::include_graphics("img/ramsey.jpg")
+knitr::include_graphics("images/ramsey.jpg")
 ```
 
 :::
@@ -189,7 +247,8 @@ knitr::include_graphics("img/ramsey.jpg")
 - Determine the stability of the equilibrium points
 
 :::
-::::
+:::: -->
+
 ## {#ode-steps data-menu-title="Steps for solving"}
 
 [Steps to Solving ODEs]{.slide-title}
@@ -263,7 +322,7 @@ When will the oil spill cover all of the Santa Barbara Channel (~5850 $km^2$)?
 
 Hint:(The integral of $\frac{1}{ax+b}=\frac{ln(ax+b)}{a}$ Think reverse chain rule)
 
-
+<!-- 
 ## {#trans data-menu-title="Numerical Calculus" background-color="#003660"}
 
 <div class="page-center">
@@ -435,8 +494,4 @@ add_multiply<-function(x,y){
 }
 
 ```
-
-
-
-
-
+ -->
