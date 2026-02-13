@@ -54,7 +54,7 @@ MESM-math-bootcamp-website/
 │   ├── day1_algebra/                 # Day 1: Algebra materials
 │   │   ├── images/                   # Images for algebra content
 │   │   ├── day1_algebra.qmd         # Day 1 main page
-│   │   ├── in-lecture-exercises-limits.pdf
+│   │   ├── in-lecture-exercises-limits.pdf  # Preview exercises for Day 2
 │   │   ├── lecture-algebra.qmd      # Algebra lecture slides
 │   │   ├── problem_set_algebra.qmd  # Algebra problem set
 │   │   └── solutions_problem_set_algebra.qmd
