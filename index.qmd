@@ -2,7 +2,7 @@
 
 # Welcome!
 
-Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2025 session. This workshop is part of the [UCSB Master of Environmental Science and Management](https://bren.ucsb.edu/masters-programs/master-environmental-science-and-management) at the [Bren School of Environmnetal Science and Management](https://bren.ucsb.edu).
+Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2026 session. This workshop is part of the [UCSB Master of Environmental Science and Management](https://bren.ucsb.edu/masters-programs/master-environmental-science-and-management) at the [Bren School of Environmnetal Science and Management](https://bren.ucsb.edu).
 
 ## Workshop description
 
@@ -18,7 +18,7 @@ The primary workshop objectives are as follows:
 [**Carmen Galaz García**](https://bren.ucsb.edu/people/carmen-galaz-garcia-0) (she/her/hers)
 
 - E-mail: c_galazgarcia@ucsb.edu
-- Student hours: Thursday 2 pm -3 pm @ Bren Hall 4424
+- Student hours: By appointment or right after the sessions end
 
 <!-- ## Syllabus
 
