@@ -471,7 +471,7 @@ knitr::include_graphics("images/exp_comic.png")
 - Notation: 
 
     - Function: $f(x) = y$
-    - 1st derivative: $f'(x)$ or $\frac{dy}{dx}f$
+    - 1st derivative: $f'(x)$ or $\frac{dy}{dx}$
     - 2nd derivative: $f''(x)$ or $\frac{d^2y}{dx^2}$
     - nth derivative: $f^{(n)}(x)$ or $\frac{d^ny}{dx^n}$
 

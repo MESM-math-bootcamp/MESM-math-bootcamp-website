@@ -355,7 +355,7 @@ $$
 Hint: Try to do numerical approximations or draw the graph of this function. 
 
 
-## {#mean-girls data-menu-title="We broke the universe"}
+## {#mean-girls data-menu-title="Mean girls"}
 
 [No limit at a discontinuity]{.slide-title}
 
@@ -554,7 +554,7 @@ Part 2:
 
 <hr>
 
-Recall average rate of change and instantaneous
+Recall average and instantaneous rate of change
 
 ```{r echo=FALSE,fig.align='center',out.width="50%"}
 knitr::include_graphics("images/trex.PNG")
@@ -782,7 +782,7 @@ p4
 
 **What if we let $\Delta x=0$?**
 
-Then we would have a slope line that only touches our function at exactly $x$.
+Then we would have a slope line that only touches the graph at exactly $x$.
 <!--
 ```{r,fig.align='center'}
 knitr::include_graphics("images/tangent_line.png")
@@ -800,7 +800,9 @@ p5<-p0+
 p5
 ```
 
+:::{.center-text .teal-text}
 These very special types of lines are called **tangent lines**.
+:::
 
 <!---------------------------------------------------------->
 
@@ -859,6 +861,22 @@ $$
 -->
 
 <!---------------------------------------------------------->
+
+## {#deriv9 data-menu-title="Derivative"} 
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+knitr::include_graphics("images/derivative_9.jpg")
+```
+
+::: {.footer}
+*Artwork by [Allison Horst](https://allisonhorst.com/)*
+:::
+
+
 
 ## {#diff-func data-menu-title="Not all functions are differentiable"}
 

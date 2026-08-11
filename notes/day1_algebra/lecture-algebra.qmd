@@ -35,7 +35,7 @@ format:
 
 [Please fill out this survey]{.slide-title}
 
-![](images/survey2025-qrcode.png){fig-align="center"}
+![](images/eds212-2026-entrance-survey.png){fig-align="center"}
 
 [Or you can click on this link.](https://forms.gle/1jhjkgVrPxpjo4UU7)
 

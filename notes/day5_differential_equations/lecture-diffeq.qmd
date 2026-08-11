@@ -191,7 +191,7 @@ is a differential equation in which we want to find a function $y(x)$ such that 
 
 **Example**
 
-[Lotka-Volterra models](https://en.wikipedia.org/wiki/Lotka–Volterra_equations) to describe preadtor prey dynamics:
+[Lotka-Volterra models](https://en.wikipedia.org/wiki/Lotka–Volterra_equations) to describe predator prey dynamics:
 $$
 \begin{align}
 \frac{dN_1}{dt}&=r_1N_1\left(\frac{K_1-N_1-\alpha N_2}{K_1}\right)\\
@@ -199,7 +199,7 @@ $$
 \end{align}
 $$
 
-where $N_1, N_2$ are the popylation of prey and preadtor respectively.
+where $N_1, N_2$ are the population of prey and preadtor respectively.
 :::
 
 ::: {.column width="60%"}
