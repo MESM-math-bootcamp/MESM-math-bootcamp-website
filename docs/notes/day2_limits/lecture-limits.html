@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<link href="../../images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.33">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
   <title>Bren Calculus Workshop – lecture-limits</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +17,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -28,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-73b98051fc68f440f95a8b85692f1a71.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-47abf7ff7a5eed8d849cff35fd183f8e.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -137,7 +141,7 @@
 <p><span class="center-text body-text-m blue-text">Bren School of Environmental Science &amp; Management</span></p>
 <p><br></p>
 <p><br></p>
-<p><span class="body-text-s blue-text"><strong>Last updated:</strong> Sep 18, 2025</span></p>
+<p><span class="body-text-s blue-text"><strong>Last updated:</strong> Aug 14, 2026</span></p>
 <p><br></p>
 <p><em>Materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop.</em></p>
 <!--------------------------------------------------------------------------->
@@ -177,7 +181,7 @@
 <div class="cell-output-display">
 <div>
 <figure>
-<p><img data-src="images/cake.png"></p>
+<p><img data-src="images/cake.png" width="1076"></p>
 </figure>
 </div>
 </div>
@@ -420,7 +424,7 @@ x, &amp; \text{ if } x\geq 0 \\
 <p>Hint: Try to do numerical approximations or draw the graph of this function.</p>
 </div>
 </section>
-<section id="mean-girls" class="slide level2" data-menu-title="We broke the universe">
+<section id="mean-girls" class="slide level2" data-menu-title="Mean girls">
 <h2></h2>
 <p><span class="slide-title">No limit at a discontinuity</span></p>
 <hr>
@@ -592,7 +596,7 @@ Introduction to Derivatives
 <h2></h2>
 <p><span class="slide-title">Putting it all together</span></p>
 <hr>
-<p>Recall average rate of change and instantaneous</p>
+<p>Recall average and instantaneous rate of change</p>
 
 <img data-src="images/trex.PNG" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><p>Taking the average rate of change to a set limit will eventually converge to the instantaneous.</p>
 </section>
@@ -649,19 +653,19 @@ Introduction to Derivatives
 <p><span class="slide-title">Tangent lines</span></p>
 <hr>
 <p><strong>What if we let <span class="math inline">\(\Delta x=0\)</span>?</strong></p>
-<p>Then we would have a slope line that only touches our function at exactly <span class="math inline">\(x\)</span>. <!--
-
+<p>Then we would have a slope line that only touches the graph at exactly <span class="math inline">\(x\)</span>. <!--
 
 ::: {.cell layout-align="center"}
 ::: {.cell-output-display}
-![](images/tangent_line.png){fig-align='center'}
+![](images/tangent_line.png){fig-align='center' width=206}
 :::
 :::
-
 
 --></p>
 
-<img data-src="lecture-limits_files/figure-revealjs/unnamed-chunk-21-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>These very special types of lines are called <strong>tangent lines</strong>.</p>
+<img data-src="lecture-limits_files/figure-revealjs/unnamed-chunk-21-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><div class="center-text teal-text">
+<p>These very special types of lines are called <strong>tangent lines</strong>.</p>
+</div>
 <!---------------------------------------------------------->
 </section>
 <section id="recap" class="slide level2" data-menu-title="Recap in math notation">
@@ -705,6 +709,13 @@ $$
 <!---------------------------------------------------------->
 </div>
 </section>
+<section id="deriv9" class="slide level2" data-menu-title="Derivative">
+<h2></h2>
+
+<img data-src="images/derivative_9.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><div class="footer">
+<p><em>Artwork by <a href="https://allisonhorst.com/">Allison Horst</a></em></p>
+</div>
+</section>
 <section id="diff-func" class="slide level2" data-menu-title="Not all functions are differentiable">
 <h2></h2>
 <p><span class="slide-title">Not all functions are differentiable</span></p>
@@ -725,7 +736,7 @@ x  &amp;, x \geq 0\\
 <div class="cell-output-display">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="lecture-limits_files/figure-revealjs/unnamed-chunk-22-1.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></p>
+<p><img data-src="lecture-limits_files/figure-revealjs/unnamed-chunk-23-1.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></p>
 </figure>
 </div>
 </div>
@@ -1100,7 +1111,7 @@ Team Assessment
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1212,13 +1223,14 @@ Team Assessment
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

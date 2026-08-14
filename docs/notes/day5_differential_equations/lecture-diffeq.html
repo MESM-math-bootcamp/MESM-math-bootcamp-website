@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"><head>
+<link href="../../images/favicon.png" rel="icon" type="image/png">
 <script src="../../site_libs/clipboard/clipboard.min.js"></script>
 <script src="../../site_libs/quarto-html/tabby.min.js"></script>
 <script src="../../site_libs/quarto-html/popper.min.js"></script>
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.33">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
   <title>Bren Calculus Workshop – lecture-diffeq</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -16,6 +17,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -28,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-73b98051fc68f440f95a8b85692f1a71.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-47abf7ff7a5eed8d849cff35fd183f8e.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -137,7 +141,7 @@
 <p><span class="center-text body-text-m blue-text">Bren School of Environmental Science &amp; Management</span></p>
 <p><br></p>
 <p><br></p>
-<p><span class="body-text-s blue-text"><strong>Last updated:</strong> Sep 23, 2025</span></p>
+<p><span class="body-text-s blue-text"><strong>Last updated:</strong> Aug 14, 2026</span></p>
 <p><br></p>
 <p><em>Materials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.</em></p>
 <!--
@@ -250,13 +254,13 @@ y' = y + x
 <li>For some natural phenomena it can be easier to describe them in terms of derivatives than give an explicit function.</li>
 </ul>
 <p><strong>Example</strong></p>
-<p><a href="https://en.wikipedia.org/wiki/Lotka–Volterra_equations">Lotka-Volterra models</a> to describe preadtor prey dynamics: <span class="math display">\[
+<p><a href="https://en.wikipedia.org/wiki/Lotka–Volterra_equations">Lotka-Volterra models</a> to describe predator prey dynamics: <span class="math display">\[
 \begin{align}
 \frac{dN_1}{dt}&amp;=r_1N_1\left(\frac{K_1-N_1-\alpha N_2}{K_1}\right)\\
 \frac{dN_2}{dt}&amp;=r_2N_2\left(\frac{K_2-N_2-\beta N_1}{K_2}\right)
 \end{align}
 \]</span></p>
-<p>where <span class="math inline">\(N_1, N_2\)</span> are the popylation of prey and preadtor respectively.</p>
+<p>where <span class="math inline">\(N_1, N_2\)</span> are the population of prey and preadtor respectively.</p>
 </div><div class="column" style="width:60%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
@@ -891,13 +895,14 @@ Wrap up!
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy
