@@ -23,6 +23,7 @@ website:
             url: https://github.com/MESM-math-bootcamp/MESM-math-bootcamp-website/issues
 
   sidebar:
+    id: daily-materials
     title: "Daily materials"
     style: docked
     contents:
@@ -30,32 +31,12 @@ website:
         href: index.qmd
       - text: day 1 - algebra
         href: notes/day1_algebra/day1_algebra.qmd
-        contents:
-          - text: Problem set
-            href: notes/day1_algebra/problem_set_algebra.qmd
-          - text: Solutions
-            href: notes/day1_algebra/solutions_problem_set_algebra.qmd
       - text: day 2 - limits
         href: notes/day2_limits/day2_limits.qmd
-        contents:
-          - text: Problem set
-            href: notes/day2_limits/problem_set_limits.qmd
-          - text: Solutions
-            href: notes/day2_limits/solutions_problem_set_limits.qmd
       - text: day 3 - derivatives
         href: notes/day3_derivatives/day3_derivatives.qmd
-        contents:
-          - text: Problem set
-            href: notes/day3_derivatives/problem_set_derivatives.qmd
-          - text: Solutions
-            href: notes/day3_derivatives/solutions_problem_set_derivative.qmd
       - text: day 4 - integrals
         href: notes/day4_integrals/day4_integrals.qmd
-        contents:
-          - text: Problem set
-            href: notes/day4_integrals/problem_set_integrals.qmd
-          - text: Solutions
-            href: notes/day4_integrals/solutions_problem_set_integrals.qmd
       - text: day 5 - differential equations
         href: notes/day5_differential_equations/day5_differential_equations.qmd
 

@@ -1,4 +1,7 @@
 ---
+sidebar: daily-materials
+execute:
+  freeze: true
 author: "Nathaniel Grimes, adapted by C. Galaz García"
 ---
 # Algebra and Graphing Problem Set

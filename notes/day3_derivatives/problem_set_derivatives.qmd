@@ -1,4 +1,5 @@
 ---
+sidebar: daily-materials
 author: "Nathaniel Grimes"
 ---
 
