@@ -196,18 +196,63 @@ We expect all students will:
 <div class="custom-subtitle">Math in Environmental Science</div>
 </div>
 
+---
+
+## {#why-math data-menu-title="Why math?"} 
+
+[Why am I taking a math class?]{.slide-title}
+
+<hr>
+
+<br>
+<br>
+<br>
+
+::: {.center-text .body-text-xl}
+or, 
+
+<br>
+
+*Why do I have to know math when a computer will do it for me?*
+:::
+
+---
+
+## {#warm-up data-menu-title="Brain warm-up"} 
+
+[A quantitative brain warm-up]{.slide-title}
+
+<hr>
+
+<br>
+
+::: {.center-text .body-text-l .teal-text}
+MESM students have diverse work & academic histories
+:::
+
+**This course (re)introduces math concepts and tools that:** 
+
+- Focus on applications to environmental data science
+- Are specifically relevant for MEDS projects, coursework
+- Provide an entryway into building computational skills
+- Refresh quantitative thinking skills generally
+- Refresh essentials like units, conversions, notation, **language**
+
+--- 
+
 ## {#des data-menu-title="describe"}
 
 [Share with the person next to you:]{.slide-title}
 
-<br>
+<hr>
 
 [What has been your life or professional experience with math? Best friend ever, mortal enemy, or something in between?]{.slide-title}
-
 
 <br>
 
 [How do you see math being relevant to solving environmental problems?]{.slide-title}
+
+---
 
 ## {#math-lang data-menu-title="Math is a Language"}
 
@@ -233,7 +278,9 @@ We expect all students will:
 
 <br>
 
-[We need to understand the math to make decisions on it!]{.center-text .body-text-m .blue-text}
+[We need to understand the math to responsibly make decisions on it!]{.center-text .body-text-m .blue-text}
+
+---
 
 
 ## {#math-bren data-menu-title="Math at Bren"}
@@ -289,89 +336,235 @@ Widely used in hydrogeology and environmental engineering to model how contamina
 
 - [Quantifying Greenhouse Gas (GHG) Emissions Associated with Global Seafood Production (MEDS Capstone)](https://bren.ucsb.edu/projects/quantifying-greenhouse-gas-ghg-emissions-associated-global-seafood-production)
 
-<!--
-- [My own research on image analysis to identify invasive plant species](https://www.sciencedirect.com/science/article/pii/S1574954124001018)
--->
 :::
 :::
 
+---
 
+## {#warm-up-overview data-menu-title="Warm-up overview"} 
 
-## {#algebra data-menu-title=Algebra" background-color="#003660"}
-
-<div class="page-center">
-<div class="custom-subtitle">Algebra</div>
-</div>
-
-
-
-## {#alge-rules data-menu-title="Rules of Algebra"}
-
-[Rules of Algebra]{.slide-title}
+[Today: Math brain warm up]{.slide-title}
 
 <hr>
 
-1.  Never change an equation. Instead, we rewrite them into more useful forms
+::: {.body-text-m}
+- Algebra review
+- Rules of exponents
+- Units
+:::
 
-2.  Manipulate BOTH sides of an equation with the SAME PROCEDURE.
+
+---
+
+## {#algebra-review data-menu-title="Algebra review" background-color="#003660"}
+
+
+<div class="page-center">
+<div class="custom-subtitle">Algebra review</div>
+</div>
+
+---
+
+## {#rules-of-algebra data-menu-title="Rules of algebra"} 
+
+[Rules of algebra]{.slide-title}
+
+<hr>
+
+[**You can get far with a few rules:**]{.body-text-l}
+
+::: {.body-text-m}
+1.  Follow order of operations (a.k.a. PEDMAS)
+
+
+2. Never change an equation. Instead, rewrite them into more useful forms
+
+3. Manipulate BOTH sides of an equation with the SAME PROCEDURE.
 
 <span style="color: red;">
 Always add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the equation. 
 </span>
 
-3.  Order of Operations, a.k.a. PEDMAS: (P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract
+:::
 
+---
 
-## {#pedmas-use-1 data-menu-title="PEDMAS important for what order to manipulate equations"}
+## {#PEMDAS data-menu-title="PEMDAS"} 
 
-[PEDMAS important for what order to manipulate equations]{.slide-title}
+[Order of operations (P-E-DM-AS)]{.slide-title}
 
 <hr>
 
+<br>
+
+[**P** - Parentheses]{.body-text-l}
+
+<br>
+
+[**E** - Exponents]{.body-text-l}
+
+<br>
+
+[**D/M** - Division / multiplication]{.body-text-l}
+
+<br>
+
+[**A/S** - Addition / subtraction]{.body-text-l}
+
+---
+
+## {#PEMDAS-practice data-menu-title="PEMDAS practice"} 
+
+[Order of operations practice problems]{.slide-title}
+
+<hr>
+
+✏️ [Take a minute to solve these individually.]{style="color:green;"  .body-text-m}
+
+<br>
+
+* Simplify $\frac{4-6}{2}(3+1)-\frac{1+2*4}{3}$
+
+<br>
+
+* Simplify $3x+4(8x-6x) -(2y-5)+\frac{2x(1-3)}{2}$
+
+<br>
+
+* If we are given the values of $x=-3$ and $y=2$, what would be the value of $z$?
 $$
 z = 4*(y-4)+(x+1)^2
 $$
 
-If we are given the values of $x=-3$ and $y=2$, what would be the value of $z$?
+---
 
-✏️ [Take a minute to solve this individually.]{style="color:green;"}
+## {#PEMDAS-practice-solution-1 data-menu-title="PEMDAS practice: solution 1"} 
 
-## {#pedmas-use-2 data-menu-title="PEDMAS important for what order to manipulate equations"}
-
-[PEDMAS important for what order to manipulate equations]{.slide-title}
+[Order of operations practice problems]{.slide-title}
 
 <hr>
 
-If we are given the values of $x=-3$ and $y=2$, what would be the value of $z$?
+💡 [Let's see a solution!]{style="color:green;" .body-text-m}
 
-💡 [Let's see a solution!]{style="color:green;"}
+<br>
 
-$$
-\begin{align}
-z &= 4*(y-4)+(x+1)^2 \\
-  &= 4*(2-4)+(-3+1)^2 \\
-  &= 4*(-2)+(-2)^2 \\
-  &= -8 + 4 \\
-  &= -4.
-\end{align}
-$$
+:::: {.columns}
 
-## {#flex-eq-1 data-menu-title="Often times we want flexible equations"}
+::: {.column width="40%"}
+[$\frac{4-6}{2}(3+1)-\frac{1+2*4}{3}$]{.body-text-m}
+:::
 
-[Often times we want flexible equations]{.slide-title}
+::: {.column width="60%"}
+[$3x+4(8x-6x) -(2y-5)+\frac{2x(1-3)}{2}$]{.body-text-m}
+:::
+
+::::
+
+---
+
+## {#PEMDAS-practice-solution-2 data-menu-title="PEMDAS practice: solution 2"}
+
+[Order of operations practice problems]{.slide-title}
 
 <hr>
+
+💡 [Let's see a solution!]{style="color:green;" .body-text-m}
+
+[If we are given the values of $x=-3$ and $y=2$, what would be the value of $z$?
+$$
+z = 4*(y-4)+(x+1)^2
+$$]{.body-text-m}
+
+---
+
+## {#PEMDAS-practice-solution-1-answer data-menu-title="Practice solutions"}
+
+[Practice solutions]{.slide-title}
+
+<hr>
+
+$$
+\small
+\begin{aligned}
+\frac{4-6}{2}(3+1)-\frac{1+2*4}{3} &= \frac{-2}{2}(4)-\frac{9}{3} \\
+&= -1(4)-3 \\
+&= -4-3 \\
+&= -7
+\end{aligned}
+$$
+
+$$
+\small
+\begin{aligned}
+3x+4(8x-6x) -(2y-5)+\frac{2x(1-3)}{2} &= 3x+4(2x)-2y+5+\frac{2x-6x}{2} \\
+&= 3x+8x-2y+5+\frac{-4x}{2} \\
+&= 3x+8x-2y+5-2x \\
+&= 9x-2y+5
+\end{aligned}
+$$
+
+
+$$
+\small
+\begin{aligned}
+z = 4(y-4)+(x+1)^2 &= 4(2-4)+(-3+1)^2 \\
+&= 4(-2)+(-2)^2 \\
+&= -8+4 \\
+z&=-4
+\end{aligned}
+$$
+
+--- 
+
+## {#equations-solved-1 data-menu-title="Equations solved"} 
+
+[Solving equations]{.slide-title}
+
+<hr>
+
+Equations help us find unknown values that satisfy certain conditions. 
+
+Remember the rules:
+
+2. Never change an equation. Instead, we rewrite them into more useful forms
+
+3. Manipulate BOTH sides of an equation with the SAME PROCEDURE.
+
+<span style="color: red;">
+Always add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the equation. 
+</span>
+
+
+--- 
+
+## {#equations-solved-2 data-menu-title="Equations solved"} 
+
+[Solving equations]{.slide-title}
+
+<hr>
+
+Equations help us find unknown values that satisfy certain conditions. 
+
+Remember the rules:
+
+2. Never change an equation. Instead, we rewrite them into more useful forms
+
+3. Manipulate BOTH sides of an equation with the SAME PROCEDURE.
+
+<span style="color: red;">
+Always add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the equation. 
+</span>
+
+**Example**
 
 Prices are important in economics, but not always available for environmental goods.
 
-<br>
 
 :::{.center-text}
 **How do we get prices if we know quantity?**
 :::
 
 $$
-\require{cancel}
 \begin{aligned}
 Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
 \end{aligned}
@@ -379,9 +572,12 @@ $$
 
 ✏️ [Take a minute to solve this individually.]{style="color:green;"}
 
-## {#flex-eq-3 data-menu-title="Often times we want flexible equations"}
 
-[Often times we want flexible equations]{.slide-title}
+---
+
+## {#solving-equations-2 data-menu-title="Solving equations"}
+
+[Solving equations]{.slide-title}
 
 <hr>
 
@@ -389,14 +585,35 @@ $$
 
 Prices are important in economics, but not always available for environmental goods. 
 
-<br>
+:::{.center-text}
+**How do we get prices if we know quantity?**
+:::
+
+$$
+\begin{aligned}
+Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
+\end{aligned}
+$$
+
+---
+
+
+## {#solving-equations-3 data-menu-title="Solving equations"}
+
+[Solving equations]{.slide-title}
+
+<hr>
+
+💡 [Let's see a solution!]{style="color:green;"}
+
+Prices are important in economics, but not always available for environmental goods. 
+
 
 :::{.center-text}
 **How do we get prices if we know quantity?**
 :::
 
 $$
-\require{cancel}
 \begin{aligned}
 Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
 80Q&=\frac{(400-P)\cancel{80}}{\cancel{80}}  &\text{ Multiply both sides by 80} \\
@@ -408,7 +625,7 @@ $$
 
 ## {#practice-alge-1 data-menu-title="Easy to make mistakes"}
 
-[It can be easy to make mistakes while doing algebra. Practice makes perfect!]{.slide-title}
+[It can be easy to make mistakes while doing algebra. Practice is key!]{.slide-title}
 
 <hr>
 
@@ -428,7 +645,7 @@ Solve all in terms of $x$
 
 ## {#practice-alge-2 data-menu-title="Easy to make mistakes"}
 
-[It can be easy to make mistakes while doing algebra. Practice makes perfect!]{.slide-title}
+[It can be easy to make mistakes while doing algebra. Practice is key!]{.slide-title}
 
 <hr>
 
@@ -453,7 +670,7 @@ Solve all in terms of $x$
 ::::
 ## {#practice-alge-3 data-menu-title="Easy to make mistakes"}
 
-[It can be easy to make mistakes while doing algebra. Practice makes perfect!]{.slide-title}
+[It can be easy to make mistakes while doing algebra. Practice is key!]{.slide-title}
 
 <hr>
 
@@ -466,13 +683,14 @@ Solve all in terms of $x$
 
 ## {#practice-alge-4 data-menu-title="Solutions"}
 
-[Practice Solutions]{.slide-title}
+[Practice solutions]{.slide-title}
 
 <hr>
 
-:::columns
+:::: {.columns}
 
 :::{.column width=50%}
+
 $$
 \small
 \begin{aligned}
@@ -483,7 +701,10 @@ $$
 x&=2
 \end{aligned}
 $$
-<br>
+
+:::
+
+:::{.column width=50%}
 
 $$
 \small
@@ -498,8 +719,16 @@ x&=\frac{-14}{9}\\
 $$
 
 :::
+:::
 
-:::{.column width=50%}
+---
+
+## {#practice-alge-5 data-menu-title="Solutions"}
+
+[Practice solutions]{.slide-title}
+
+<hr>
+
 $$
 \small
 \begin{aligned}
@@ -510,10 +739,28 @@ $$
 x&=\frac{5+b+2c-21a}{11}
 \end{aligned}
 $$
-:::
-:::
 
-<!--------------------------------------------------------------------------->
+---
+
+## {#break data-menu-title="5 minute break"} 
+
+[Let's take a 5 minute break]{.slide-title}
+
+<hr>
+
+![image: Flaticon.com](images/coffee-break.png)
+
+---
+
+## {#rules-of-exponents data-menu-title="Rules of exponents" background-color="#003660"}
+
+
+<div class="page-center">
+<div class="custom-subtitle">Rules of exponents</div>
+</div>
+
+---
+
 ## {#exponents data-menu-title="Exponents"}
 
 [Exponents make algebra more interesting!]{.slide-title}
@@ -534,10 +781,11 @@ $$x^n = x \text{ to the power of } n.$$
 
 Intuitively, the **exponent** $n$ tells us how many times to multiply the **basis** $x$ by itself:
 
-$$x^n = \underbrace{x * x * ... * x}_{n \text{ times}}$$
+$$x^n = \underbrace{x \times x \times \ldots \times x}_{n \text{ times}}$$
 
 But the exponent can be any (real) number, not only integers!
-<!--------------------------------------------------------------------------->
+
+---
 
 ## {#exponents-applications-1 data-menu-title="What are exponents good for?"}
 
@@ -549,10 +797,6 @@ But the exponent can be any (real) number, not only integers!
 
 ::: {.column width="50%" style="text-align: center;"}
 They can describe really big numbers
-
-<!--
-![](images/milky-way.jpg)
--->
 
 <img src="images/milky-way.jpg" width="250"/>
 
@@ -576,9 +820,16 @@ $$10^{-10} \text{ m}$$
 
 This way, we can use exponents to describe exponential growth and decay. Many environmental variables behave in this way. 
 
-<!--------------------------------------------------------------------------->
+---
+
 ## {#exponents-rules-blank-1 data-menu-title="Exponents Rules (1)"}
 [Rules and properties of exponents (1)]{.slide-title}
+
+<div style="position: absolute; bottom: 550px; right: 1000px; font-size: 1em;">                                                                               
+  ✏️                    
+</div>  
+
+
 
 <hr>
 (1) Product rule:
@@ -599,11 +850,17 @@ This way, we can use exponents to describe exponential growth and decay. Many en
 
 (5) Fractional exponent means take the $n$-th root:
 
-<!--------------------------------------------------------------------------->
+---
+
 ## {#exponents-rules-blank-2 data-menu-title="Exponents Rules (2)"}
 [Rules and properties of exponents (2)]{.slide-title}
 
 <hr>
+
+<div style="position: absolute; bottom: 550px; right: 1000px; font-size: 1em;">                                                                               
+  ✏️                    
+</div>  
+
 
 (6) Power of a power means multiply the exponents: 
 
@@ -619,9 +876,8 @@ This way, we can use exponents to describe exponential growth and decay. Many en
 
 (9) If $a$ is the $n$-th root of $x$, then $a$ to the $n$ equals $x$:
 
+---
 
-
-<!--------------------------------------------------------------------------->
 ## {#exponents-rules-1 data-menu-title="Exponents Rules (1)"}
 [Rules and properties of exponents (1)]{.slide-title}
 
@@ -644,7 +900,8 @@ This way, we can use exponents to describe exponential growth and decay. Many en
 
 (5) Fractional exponent means take the $n$-th root: $x^{\frac{1}{n}} = \sqrt[n]{x}$
 
-<!--------------------------------------------------------------------------->
+---
+
 ## {#exponents-rules-2 data-menu-title="Exponents Rules (2)"}
 [Rules and properties of exponents (2)]{.slide-title}
 
@@ -667,6 +924,8 @@ This way, we can use exponents to describe exponential growth and decay. Many en
 $$
 a = \sqrt[n]{x} \Rightarrow a^n = x
 $$
+
+---
 
 ## {#exponents-table data-menu-title="Rules of exponents"}
 
@@ -699,17 +958,18 @@ $$
 \end{array}
 $$
 
+---
 
-<!--------------------------------------------------------------------------->
-## {#exponents-practice data-menu-title="Exponents practice"}
+## {#exponents-practice-set-up data-menu-title="Exponents practice"}
 [Exponents practice]{.slide-title}
 
 <hr>
-✏️ [Simplify the following.]{style="color:green;"}
 
 :::: {.columns}
 
 ::: {.column width="40%"}
+✏️ [Simplify the following.]{style="color:green;"}
+
 (A) $\frac{6^5}{6^3}$
 
 <br>
@@ -717,12 +977,9 @@ $$
 (B) $(x^2y)^4$
 
 <br>
-<br>
 
 (C) $\frac{x^5y^6}{xy^2}$
 
-<br>
-<br>
 
 (D) $\frac{24x^6}{12x^{-8}}$
 
@@ -759,7 +1016,7 @@ $$
 ::::
 
 <!--------------------------------------------------------------------------->
-## {#exponents-practice-solution data-menu-title="Exponents practice"}
+## {#exponents-practice data-menu-title="Exponents practice"}
 [Exponents practice]{.slide-title}
 
 <hr>
@@ -769,7 +1026,7 @@ $$
 
 <br>
 
-(B) $(x^2y)^4 = (x^2)^4*y^2 = x^8y^2$
+(B) $(x^2y)^4 = (x^2)^4*y^4 = x^8y^4$
 
 <br>
 <br>
@@ -782,9 +1039,53 @@ $$
 (D) $\frac{24x^6}{12x^{-8}} = 2x^6x^{(-(-8))}=2x^6x^8 = 2x^{6+8} = 2x^{14}$
 
 
+---
 
-<!--------------------------------------------------------------------------->
-## {#polynomials data-menu-title="Polynomials"}
+## {#FOIL data-menu-title="FOIL"} 
+
+[Multiplying expressions (FOIL)]{.slide-title}
+
+<hr>
+
+<br>
+
+[**F**irst, **O**utside, **I**nside, **L**ast]{.body-text-l}
+
+<br>
+
+[**Example:**]{.body-text-m}
+
+[$$(2x+5)(x-3)$$]{.body-text-m}
+✏️ [Expand this expression.]{style="color:green;"}
+
+---
+
+## {#FOIL-solution data-menu-title="FOIL"} 
+
+[Multiplying expressions (FOIL)]{.slide-title}
+
+<hr>
+
+<br>
+
+[**F**irst, **O**utside, **I**nside, **L**ast]{.body-text-l}
+
+<br>
+
+[**Example:**]{.body-text-m}
+
+[$$(2x+5)(x-3)$$]{.body-text-m}
+✏️ [Let's see a solution.]{style="color:green;"}
+
+[$$= (2x \times x) (2x \times -3) (5 \times x) (5 \times -3)$$]{.body-text-m}
+
+[$$= 2x^2 - 6x + 5x - 15$$]{.body-text-m}
+
+[$$=2x^2-x-15$$]{.body-text-m}
+
+---
+
+## {#polynomials-1 data-menu-title="Polynomials"}
 
 [Polynomials describe more complex relationships through exponents]{.slide-title}
 
@@ -803,7 +1104,27 @@ $$
 - each $a_ix^i$ is called a **term** of the polynomial,
 - $n$ is called the **degree** of the polynomial, this is the largest exponent in the polynomial.
 
-. . . 
+
+---
+
+## {#polynomials-2 data-menu-title="Polynomials"}
+
+[Polynomials describe more complex relationships through exponents]{.slide-title}
+
+<hr>
+
+A polynomial is a function of the form:
+$$
+\large
+\begin{align}
+a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0
+\end{align}
+$$
+
+- $x$ is the **variable** 
+- $a_i$ are **constants** (fixed numbers) that are called the **coefficients** of the polynomial
+- each $a_ix^i$ is called a **term** of the polynomial,
+- $n$ is called the **degree** of the polynomial, this is the largest exponent in the polynomial.
 
 *Example:*
 
@@ -813,29 +1134,34 @@ $$
 
 Polynomials often represent real world data better than a linear function.
 
+---
 
-<!--------------------------------------------------------------------------->
-## {#fundamental data-menu-title="Fundamental Theorem of Algebra"}
+
+## {#fundamental-1 data-menu-title="Fundamental Theorem of Algebra"}
 
 [Fundamental Theorem of Algebra]{.slide-title}
 
 <hr>
 
-<br>
-
+:::{.body-text-m}
 A **zero**, **root**, or **solution** for a polynomial is a value of $x$ that makes the polynomial equal to zero.
+:::
 
-<!--
-<img src="images/polynomial_zeros.png" width="250"/>
+---
 
-![](images/polynomial_zeros.png)
--->
+## {#fundamental-2 data-menu-title="Fundamental Theorem of Algebra"}
+
+[Fundamental Theorem of Algebra]{.slide-title}
+
+<hr>
+
+:::{.body-text-m}
+A **zero**, **root**, or **solution** for a polynomial is a value of $x$ that makes the polynomial equal to zero.
+:::
 
 <br>
 
-. . .
-
-:::{.center-text .body-text-m}
+:::{.center-text}
 *Fundamental Theorem of Algebra*
 :::
 A polynomial
@@ -843,15 +1169,16 @@ $$
 a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0
 $$
 
-of degree $n$ has exactly $n$ roots $r_1, \ldots, r_n$ and it can be refactored as
+of degree $n$ has exactly $n$ roots $r_1, \ldots, r_n$ and it can be factored as
 
 $$
 c(x-r_1) ... (x-r_n)
 $$
 
-The numbers $c$ and $r_1, \ldots, r_n$ may be complex!
+The roots $r_1, \ldots, r_n$ may be complex numbers!
 
-<!--------------------------------------------------------------------------->
+---
+
 ## {#example-linear data-menu-title="Example: linear equation"}
 
 [Example: linear equation]{.slide-title}
@@ -1053,524 +1380,3 @@ $$
 \end{align}
 $$
 
-## {#graphs data-menu-title=Graphing" background-color="#003660"}
-
-<div class="page-center">
-<div class="custom-subtitle">Graphs</div>
-</div>
-
-
-## {#graph-demo data-menu-title="Which graph looks better"}
-
-[Graphs bring visual connection to math and data]{.slide-title}
-
-<hr>
-:::{.center-text}
-**Which looks better and is easier to understand?**
-:::
-
-:::: {.columns}
-::: {.column width="50%"}
-```{r}
-library(DT)
-library(tidyverse)
-
-car<-mtcars %>% 
-  select(mpg,cyl,disp,hp)
-DT::datatable(car,
-              fillContainer = FALSE, options = list(pageLength = 4))
-```
-
-:::
-
-:::{.column width="50%"}
-```{r,echo=FALSE, fig.width=6, fig.height=6,out.width="90%",fig.align='right'}
-ggplot(mtcars, aes(x=as.factor(cyl), y=mpg)) + 
-    geom_boxplot(fill="slateblue", alpha=0.2) + 
-    xlab("Number of Cylinders")+
-  theme_classic()+
-  theme(text = element_text(size = 28)) 
-```
-:::
-::::
-
-## {#xy-coordinates data-menu-title="xy coordinates"}
-
-[The $xy$ coordinate system]{.slide-title}
-
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-Graphs move in a 2-dimensional plane with a coordinate system using two axes:
-
-- $x$-axis (horizontal axis)
-
-- $y$-axis (vertical axis)
-
-
-<br>
-
-Axes units must be defined depending on the application.
-
-:::{.incremental}
-
-We use pairs of numbers to place data:
-
-- A point on the $xy$ plane with **coordinates** $(a,b)$ means the point is located at $a$ on the $x$-axis and at $b$ on the $y$-axis.
-
-- Where would (2,-1) go on the graph?
-
-:::
-:::
-:::{.column width="50%"}
-
-```{r echo=FALSE}
-knitr::include_graphics("images/cart.png")
-```
-:::
-::::
-
-## {#graph-series data-menu-title="Graphs series of points to make lines"}
-
-[We can join series of points to make graphs]{.slide-title}
-
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-```{r echo=FALSE}
-set.seed(1)
-x=seq(0,10)
-y=x+1.5*rnorm(10)
-pdf<-data.frame(x=x,y=y)
-
-DT::datatable(round(pdf,2),
-              fillContainer = FALSE, options = list(pageLength = 6))
-```
-
-:::
-:::{.column width="50%"}
-
-```{r, echo=FALSE,fig.height=5.5,fig.width=5,out.width="90%"}
-ggplot(pdf,aes(x=x,y=y))+
-  geom_point(size=4)+
-  geom_path(linewidth=2)+
-  geom_smooth(method="lm",se=FALSE,size=2)+
-  annotate("text",x=2.9,y=8,label="Blue Regression Line\ny=0.856x+0.44",size=6)+
-  theme_classic()+
-  theme(text = element_text(size = 28)) 
-```
-
-:::
-::::
-
-## {#graph-seafood data-menu-title="Seafood depletion"}
-
-[Real life example: seafood depletion]{.slide-title}
-
-![](images/headline.PNG){fig-align="center" width="50%"}
-
-<!-- ```{r echo=FALSE,fig.align='center',out.width="60%"}
-knitr::include_graphics("images/headline.PNG")
-``` -->
-
-:::{.fragment .fade-in}
-<!-- ```{r echo=FALSE,fig.align='center',out.width="70%"}
-knitr::include_graphics("images/worm.PNG")
-``` -->
-![](images/worm.PNG){fig-align="center" width="50%"}
-:::
-
-## {#graph-fcn data-menu-title="Most functions can be shown on graphs"}
-
-[Functions on a single variable and a single output can be graphed]{.slide-title}
-
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-- $\color{green}{y=sin(3x)+2x}$
-
-<br>
-
-- $\color{red}{y=0.5x^3+x^2-5x}$
-
-<br>
-
-- $\color{blue}{y=0.85x+0.44}$
-
-:::
-:::{.column width="50%"}
-
-```{r echo=FALSE}
-
-x=seq(0,10,by=0.01)
-sn=sin(3*x)+2*x
-pol=-0.2*x^3+2*x^2-2*x
-reg=x*0.85+0.44
-
-p2df=data.frame(sin=sn,polynomial=pol,linear=reg,x=x) %>% 
-  pivot_longer(cols=!x,values_to="values",names_to = "fun")
-```
-
-
-```{r echo=FALSE, fig.align='center',fig.dim=c(6,8),out.width="70%"}
-p1<-ggplot(p2df,aes(x=x,y=values,color=fun))+
-  geom_path(linewidth=3)+
-  theme_classic()+
-  scale_color_manual(values=c("blue","red","darkgreen"),name="Function Type")+
-  labs(y="y")+
-  theme(text = element_text(size = 28)) +
-  geom_hline(yintercept=0,color="black",size=1.5)+
-  scale_x_continuous(expand = c(0, 0),limits = c(0,11)) +
-  scale_y_continuous(expand = c(0, 0),limits=c(-22,22))+
-  theme(legend.position = c(.5,.25))
-  
-p1
-  
-```
-:::
-::::
-
-## {#graph-ingredients data-menu-title="Two key ingredients to graphs"}
-
-[Two key ingredients to graphs]{.slide-title}
-
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-
-Intercepts
-
-- $x$-intercept
-
-  - Where does the graph intersect the $x$-axis? 
-  - In other words, for what values of $x$ do we have $(x,0)$ be part of the graph?
-    
-- $y$-intercept
-
-    - Where does  the graph intersect the $y$-axis? 
-    - In other words, for what value of $y$ do we have $(0,y)$ be part of the graph?
-    
-
-:::
-
-:::{.column width="50%"}
-:::{.center-text}
-What are the intercepts of the polynomial function in red?
-:::
-
-```{r echo=FALSE,fig.align='center',fig.dim=c(6,8),out.width="70%"}
-p1+theme(legend.position = "none")
-  
-```
-:::
-::::
-
-
-## {#slope-int data-menu-title="Slope-Intercept Form"}
-
-[Linear functions: slope-intercept form]{.slide-title}
-
-<hr>
-
-Easiest model to describe linear relationship between two variables!
-
-$$
-\huge
-\begin{align}
-\underbrace{y}_{\text{output}}=\overbrace{m}^{\text{Slope}}\underbrace{x}_{\text{input}}+\overbrace{b}^{\text{$y$ intercept}}
-\end{align}
-$$
-
-<br>
-
-- The **slope** tells us how quickly is the line changing. 
-
-
-## {#slope-def data-menu-title="Definition of Slope"}
-
-[How to calculate the slope?]{.slide-title}
-
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-
-Slope = 
-
-vertical change per unit of horizontal change.
-
-$$
-m=\frac{\Delta y}{\Delta x}=\frac{y_2-y_1}{x_2-x_1}
-$$
-
-Horizontal Slope: $m=0$
-
-Vertical Slope: $m$ is undefined
-
-:::
-
-:::{.column width="50%"}
-
-:::{.center-text}
-**Rise over Run**
-:::
-
-```{r echo=FALSE,fig.align='center',out.width="80%"}
-knitr::include_graphics("images/slope.PNG")
-```
-
-:::
-::::
-
-## {#slope-roc data-menu-title="Slope represents rate of change"}
-
-[Slope represents rate of change]{.slide-title}
-
-<hr>
-
-```{r echo=FALSE,fig.align='center',out.width="90%"}
-knitr::include_graphics("images/loa.PNG")
-```
-
-## {#slope-avg cdata-menu-title="can be average or instantaneous"}
-
-[Slope can be *average* or *instantaneous*]{.slide-title}
-
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-
-- Rise over run can always be used to find average rate of change between two parts of a graph
-
-
-:::
-
-:::{.column width="50%"}
-
-- Instantaneous rate of change leads us to ✨calculus✨.
-
-:::
-::::
-
-```{r echo=FALSE,fig.align='center',out.width="50%"}
-knitr::include_graphics("images/trex.PNG")
-```
-
-
-## {#ta-2 data-menu-title="Team" background-color="#003660"}
-
-<div class="page-center">
-<div class="custom-subtitle">Team Assessment</div>
-</div>
-
-## {#ta-q2 data-menu-title="Team Assesment 2"}
-
-<!--TODO: we need some equitable way of having them interact with each other.-->
-
-Your team measured the concentrations of pesticides in a lake exposed to agricultural runoff. You have the following equation describing the total amount of pesticides in the lake if runoff is stopped from the farm by a new policy incentive reducing pesticides use:
-
-$$
-\begin{aligned}
-&y=(8-2t)(t+2) \\
-&\text{Where } y \text{ is pesticde concentration in ppb} \\
-&\text{and } t \text{ is time in years}.
-\end{aligned}
-$$
-
-Work with your team to 
-
-- **first** discuss conceptually how you would solve *all* the following tasks, do not write anything!
-
-- **second** work out with pen and paper the solutions to verify the ideas you discussed.
-
-1) What kind of equation is this? Would it be useful to write it in another form?
-
-2) How long will it take for the pesticide concentration in the lake to reach zero? Since the equation is a polynomial describe why one solution is more applicable than the other.
-
-3) Present your findings (choose between a graph or table).
-
-4) What is the average change in concentration from year 0 to year 4?
-
-5) Explain to your client why concentrations might behave the way they were modeled.
-
-## {#ta-sol21 data-menu-title="Team Assesment 2 Solutions"}
-
-[Solution 1]{.slide-title}
-<hr>
-
-Let's expand out the equation so it becomes easier to graph.
-
-$$
-\begin{aligned}
-y&=(-2t+8)(t+2) \\
-y&=\overbrace{-2t^2}^{\text{First}}-\overbrace{4t}^{\text{Outside}}+\overbrace{8t}^{\text{Inside}}+\overbrace{16}^{\text{Last}}\\
-y&=-2t^2+4t+16
-\end{aligned}
-$$
-
-## {#ta-q2-sol2 data-menu-title="Team Assesment 2 Solutions"}
-
-[Solution 2]{.slide-title}
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-:::{.center-text}
-Use the Quadratic Formula
-:::
-
-$$
-\begin{aligned}
-0&=-2t^2+4t+16 \\
-0&=\frac{-4\pm\sqrt{4^2-4(-2)(16)}}{2(-2)}\\
-0&=\frac{-4\pm\sqrt{16+128}}{-4} \\
-&t=4\text{, } t=-2
-\end{aligned}
-$$
-:::
-:::{.column width="50%"}
-:::{.center-text}
-Use the factors
-:::
-
-$$
-\begin{aligned}
-2t-8=0 \\
-t=\frac{8}{2}\\
-t=4
-\end{aligned}
-$$
-
-:::
-
-::::
-
-## {#ta-q2-sol3 data-menu-title="Team Assesment 2 Solutions"}
-
-[Solution 3]{.slide-title}
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-```{r, echo=FALSE,out.width="90%",fig.dim=c(5,5)}
-t=seq(-2,4)
-y=-2*t^2+4*t+16
-df<-data.frame(t=t,y=y)
-p<-df %>% 
-  ggplot(aes(x=t,y=y))+
-  geom_line(color="#003660",linewidth=3)+
-  labs(x="Years",y="Pesticide Concentration")+
-  scale_x_continuous(expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0, 0),limits = c(-2,22))+
-  theme_classic()+
-  theme(text = element_text(size = 28)) 
-
-p
-```
-:::
-:::{.column width="50%"}
-```{r eval=FALSE,echo=TRUE}
-t=seq(-2,4)
-y=-2*t^2+4*t+16
-df<-data.frame(t=t,y=y)
-p<-df %>% 
-  ggplot(aes(x=t,y=y))+
-  geom_line(color="#003660",linewidth=3)+
-  labs(x="Years",y="Pesticide Concentration")+
-  scale_x_continuous(expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0, 0),limits = c(-2,22))+
-  theme_classic()+
-  theme(text = element_text(size = 28)) 
-
-p
-```
-:::
-
-::::
-
-## {#ta-q2-sol4 data-menu-title="Team Assesment 4 Solutions"}
-
-[Solution 4]{.slide-title}
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-```{r, echo=FALSE,out.width="90%",fig.dim=c(5,5.5)}
-p2<-df %>% 
-  filter(t>=0) %>% 
-  ggplot(aes(x=t,y=y))+
-  geom_line(color="#003660",linewidth=3)+
-  labs(x="Years",y="Pesticide Concentration")+
-  scale_x_continuous(expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0, 0),limits=c(-2,22))+
-  geom_hline(yintercept = 0)+
-  annotate("segment",x=0,xend=4,y=16,yend=0,color="#FEBC11",linewidth=2)+
-  theme_classic()+
-  theme(text = element_text(size = 28)) 
-
-p2
-```
-:::
-:::{.column width="50%"}
-```{r eval=FALSE,echo=TRUE}
-p2<-df %>% 
-  filter(t>=0) %>% 
-  ggplot(aes(x=t,y=y))+
-  geom_line(color="#003660",linewidth=3)+
-  labs(x="Years",y="Pesticide Concentration")+
-  scale_x_continuous(expand = c(0, 0)) +
-  scale_y_continuous(expand = c(0, 0),limits=c(-2,22))+
-  geom_hline(yintercept = 0)+
-  annotate("segment",x=0,xend=4,y=16,yend=0,color="#FEBC11",linewidth=2)+
-  theme_classic()+
-  theme(text = element_text(size = 28)) 
-
-p2
-```
-
-Use rise over run:
-
-$$
-\frac{\Delta y}{\Delta x}=\frac{0-16}{4-0}=-4
-$$
-
-Pesticides are removed from the lake at an average rate of 4 ppb per year.
-:::
-
-::::
-
-## {#ta-q2-sol5 data-menu-title="Team Assesment 5 Solutions"}
-
-[Solution 5]{.slide-title}
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-```{r, echo=FALSE,out.width="90%",fig.dim=c(5,5.5)}
-
-p2
-```
-:::
-:::{.column width="50%"}
-Pesticide concentrations might initially increase in the lake from residual particles in the soil being washed into the lake. Then a mixture microbial activity and other chemical process reduce the pesticides to more inert components. 
-
-(You will learn the actual answer in ESM 202: Environmental Biogeochemistry)
-:::
-
-::::
-
-<!--TODO: include review of what we covered-->
