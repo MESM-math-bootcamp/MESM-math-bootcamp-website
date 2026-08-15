@@ -1,12 +1,12 @@
 ---
-title: "Bren Calculus Workshop"
+title: "Bren Math Workshop"
 subtitle: "Master of Environmental Science and Management (MESM)"
 description: "Summer 2026"
 title-block-banner: false
 toc: false
 ---
 
-Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2026 session. This workshop is part of the [UCSB Master of Environmental Science and Management](https://bren.ucsb.edu/masters-programs/master-environmental-science-and-management) at the [Bren School of Environmental Science and Management](https://bren.ucsb.edu).
+Welcome to the course materials for the Bren Math Workshop! In this website you will find all the materials for the Summer 2026 session. This workshop is part of the [UCSB Master of Environmental Science and Management](https://bren.ucsb.edu/masters-programs/master-environmental-science-and-management) at the [Bren School of Environmental Science and Management](https://bren.ucsb.edu).
 
 ## Workshop description
 
@@ -27,3 +27,10 @@ The primary workshop objectives are as follows:
 <!-- ## Syllabus
 
 [Click here to see the syllabus.](https://docs.google.com/document/d/14dcg7u3n1rEz-fReZcO8Gnddk3hEGi8u4DKTroWdonU/edit?usp=share_link){target="_blank"}   -->
+
+## Acknowledgements
+
+The materials for the Bren Math Workshop were originally developed and taught by [Nathan Grimes](https://bren.ucsb.edu/people/nathan-grimes). This new website houses materials which are reused, adapted, and expanded from, and inspired by the previous instructors' work.
+
+
+<!-- [Allison Horst](https://allisonhorst.github.io/){target="_blank"}. It has since been taught and adapted by [Ruth Oliver](https://www.oliverlab.org){target="_blank"}, [Sam Shanny-Csik](https://samanthacsik.github.io){target="_blank"} and, most recently, myself, [Carmen Galaz García](https://bren.ucsb.edu/people/carmen-galaz-garcia).  -->

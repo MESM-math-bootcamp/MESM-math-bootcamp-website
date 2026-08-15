@@ -4,7 +4,7 @@ This unit covers basic introduction of algebra and how to use graphs to convey e
 
 ## Lecture materials
 
-[Algebra lecture slides](lecture-algebra.qmd)
+[Algebra lecture slides](lecture-algebra.qmd){target="_blank"}
 
 **Contents**
 

@@ -6,63 +6,50 @@ format:
     show-slide-number: print
     theme:
      - ../../ucsb-media.scss    
+
 ---
 
-## {#title-slide data-menu-title="Title Slide" background=.white}
+## {#title-slide data-menu-title="Title Slide" background="#053660"} 
 
-[Introduction and Warm Up Algebra]{.custom-title .blue-text}
+[Bren Math Workshop]{.custom-title}
 
-[Bren Calculus Workshop]{.custom-subtitle .gold}
+[*Day 1: Algebra refresher, units*]{.custom-subtitle}
 
 <hr class="hr-teal">
 
-[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .blue-text}
+---
 
-[Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
-
-<br>
-
-<br>
-
-[**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
-
-<br>
-
-*Materials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.*
+## {#basics-title data-menu-title="EDS 212 basics" background-color="#003660"}
 
 
-## {#survey data-menu-title="Please fill out this survery"}
+<div class="page-center">
+<div class="custom-subtitle">Bren Math Workshop basics</div>
+</div>
 
-[Please fill out this survey]{.slide-title}
+---
 
-![](images/eds212-2026-entrance-survey.png){fig-align="center"}
+## {#welcome data-menu-title="Welcome to Bren Math Workshop!"} 
 
-[Or you can click on this link.](https://forms.gle/1jhjkgVrPxpjo4UU7)
-
-## {#obj data-menu-title="Workshop Objectives"}
-
-[Workshop Objectives]{.slide-title}
+[Welcome to the Bren Math Workshop]{.slide-title}
 
 <hr>
 
-![](images/limits_horst.jpg){fig-align="center"}
+<br>
 
-1.  Shake off the math dust
+- **Instructor:** Carmen Galaz García
+- **Course hours:** Daily 12:00pm - 2:00pm PST (except for Day 5, which is 12:30pm - 2:30pm PST)
+- **Location:** Bren Hall 1414
+- **Website:** [https://mesm-math-bootcamp.github.io/MESM-math-bootcamp-website/](https://mesm-math-bootcamp.github.io/MESM-math-bootcamp-website/)
 
-2.  Equip students with the math skills to succeed in all Bren Courses
+---
 
-3.  Explore how valuable math is to environmental science
+## {#about-instructor data-menu-title="About your instructor"}
 
-4.  Build a collaborative environment, crucial for success at Bren
-
-
-## {#about-me data-menu-title="About me"}
-
-[About me]{.slide-title}
+[About your instructor]{.slide-title .smaller}
 
 <hr>
 
-:::: {.columns}
+::: {.columns}
 
 ::: {.column width="60%"}
 
@@ -85,55 +72,67 @@ Before:
 :::
 
 ::: {.column width="40%"}
-![](images/Carmen4.jpg){fig-align="center" width="70%"}
+![](images/carmen.png){fig-align="center" width="60%"}
 
-![](images/bren-hex.png){fig-align="center"}
+![](images/bren-hex.png){fig-align="center" width="40%"}
 :::
-::::
-
-
-<!--
-## {#tbl data-menu-title="Team Based Learning"}
-
-[We will be using team based learning]{.slide-title}
-
-<hr>
-
--   Science and policy are done collaboratively
-
--   TBL shows better learning outcomes than traditional lecturing
-
-    -   [In Math](https://www.tandfonline.com/doi/pdf/10.1080/10511970.2018.1542417?casa_token=We71OsRHNuQAAAAA:U4I567tQynbXcFHplLpIkkamtpfUf1GqCgIKBP453cVdHJ8b3mP-yymXkVNOc4JJ4aZfJxpGvU766Q)
-
-    -   [For Women especially](https://www.tandfonline.com/doi/pdf/10.1080/00220485.2017.1397571?casa_token=d394sBXFFSEAAAAA:Sa68G6KKjBzxy6aD9KBnRH7W5xChBl_PYfy-Yeck2YlOCoDOxp903xu_6S9yTpFTwqVtugWK23im2Q)
-
-    -   [Higher engagement](https://www.lifescied.org/doi/pdf/10.1187/cbe.17-03-0055)
-
--   We'll be doing a TBL Lite\*, because I know orientation week is busy and school hasn't officially started
-
-    -   Keep extra pre-class work and assessments to a minimum
-
-## {#team-form data-menu-title="Team Formation"}
-
-[Team Formation]{.slide-title}
-
-<hr>
-
-Live coding demonstration
-
-::: aside
-Basically I'm using a constrained k-means algorithm to group everyone into equally balanced groups then pulling randomly from each to create balanced groups based on the likert scale responses of the survey. Full explanation will be included in a write up to see how code works
 :::
 
--->
+---
 
-## {#exp data-menu-title="Team Expectations"}
+## {#about-you data-menu-title="About you"} 
 
-[Student Expectations]{.slide-title}
+[About you!]{.slide-title}
 
 <hr>
 
-We expect all team students will:
+
+![image: Flaticon.com](images/diversity.png)
+
+---
+
+## {#topics data-menu-title="Topics"} 
+
+[Topics overview]{.slide-title}
+
+<hr>
+
+::: {.body-text-l}
+- **Day 1:** Algebra refresher; Units
+- **Day 2:** Unit conversions; Functions; Graphing; 
+- **Day 3:** Exponential functions and logarithms; Limits
+- **Day 4:**  Derivatives 
+- **Day 5:**  Integration & ODEs
+:::
+
+---
+
+## {#objectives data-menu-title="Workshop Objectives"}
+
+[Workshop Objectives]{.slide-title}
+
+<hr>
+
+::: {.body-text-l}
+1.  Shake off the math dust
+
+2.  Exercise core math skills needed to succeed in your Bren courses
+
+3.  Explore how valuable math is to environmental data science
+
+4.  Build a collaborative environment and get to know your cohort
+:::
+
+---
+
+## {#expectations-1 data-menu-title="Student Expectations"}
+
+[Student expectations]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+We expect all students will:
 
 - Support and encourage all classmates
 
@@ -141,17 +140,55 @@ We expect all team students will:
 
 - Bring a collaborative attitude and communicate respectfully
 
-- See opportunities to share kownledge as a chance to deepend understanding
+- See opportunities to share kownledge as a chance to deepen understanding
 
-- Complete all in-class assessments
+- Complete all in-class exercises
+:::
 
-. . .
+---
+
+## {#expectations-2 data-menu-title="Team Expectations"}
+
+[Student expectations]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+We expect all students will:
+
+- Support and encourage all classmates
+
+- Be open to learning from each other
+
+- Bring a collaborative attitude and communicate respectfully
+
+- See opportunities to share kownledge as a chance to deepen understanding
+
+- Complete all in-class exercises
+
+:::
 
 **Logistics**
 
 - No food in BH 1414
 - If you are feeling sick: stay home and take care of yourself! Please mask up if you are not feeling 100%.
 
+
+---
+
+## {#survey data-menu-title="Please fill out this survery"}
+
+[Please fill out this survey]{.slide-title}
+
+<hr>
+
+![](images/mesm-math-workshop-2026-entrance-survey.png){fig-align="center"}
+
+::: {.center-text .body-text-l}
+[Or you can click on this link.](https://forms.gle/rmhQpyu6ze33fGaK6)
+:::
+
+---
 
 ## {#math-envs data-menu-title="Math in Environmental Science" background-color="#003660"}
 
@@ -722,7 +759,7 @@ $$
 ::::
 
 <!--------------------------------------------------------------------------->
-## {#exponents-practice data-menu-title="Exponents practice"}
+## {#exponents-practice-solution data-menu-title="Exponents practice"}
 [Exponents practice]{.slide-title}
 
 <hr>
