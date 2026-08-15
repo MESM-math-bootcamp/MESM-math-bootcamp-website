@@ -31,72 +31,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    html { -webkit-text-size-adjust: 100%; }
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-47abf7ff7a5eed8d849cff35fd183f8e.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -192,56 +126,50 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
-  <script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
-  <link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
-  <script src="../../site_libs/datatables-binding-0.34.0/datatables.js"></script>
-  <script src="../../site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-  <link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.min.css" rel="stylesheet">
-  <link href="../../site_libs/dt-core-1.13.6/css/jquery.dataTables.extra.css" rel="stylesheet">
-  <script src="../../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
-  <link href="../../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
-  <script src="../../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+  <script>
+  (function loadCancelExtension(){
+    if (window.MathJax && window.MathJax.Hub) {
+      MathJax.Hub.Config({ TeX: { extensions: ["cancel.js"] } });
+    } else {
+      setTimeout(loadCancelExtension, 20);
+    }
+  })();
+  </script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
     <div class="slides">
 
 
-<section id="title-slide" class="slide level2 center" data-menu-title="Title Slide" data-background=".white">
+<section id="title-slide" class="slide level2 center" data-menu-title="Title Slide" data-background="#053660">
 <h2></h2>
-<p><span class="custom-title blue-text">Introduction and Warm Up Algebra</span></p>
-<p><span class="custom-subtitle gold">Bren Calculus Workshop</span></p>
+<p><span class="custom-title">Bren Math Workshop</span></p>
+<p><span class="custom-subtitle"><em>Day 1: Algebra refresher, units</em></span></p>
 <hr class="hr-teal">
-<p><span class="body-text-l center-text blue-text">Carmen Galaz García, Ph.D.</span></p>
-<p><span class="center-text body-text-m blue-text">Bren School of Environmental Science &amp; Management</span></p>
-<p><br></p>
-<p><br></p>
-<p><span class="body-text-s blue-text"><strong>Last updated:</strong> Aug 14, 2026</span></p>
-<p><br></p>
-<p><em>Materials have been adapted and expanded from Nathaniel Grimes work for the Bren Calculus Workshop.</em></p>
 </section>
-<section id="survey" class="slide level2" data-menu-title="Please fill out this survery">
+<section id="basics-title" class="slide level2" data-menu-title="EDS 212 basics" data-background-color="#003660">
 <h2></h2>
-<p><span class="slide-title">Please fill out this survey</span></p>
-
-<img data-src="images/eds212-2026-entrance-survey.png" class="quarto-figure quarto-figure-center r-stretch"><p><a href="https://forms.gle/1jhjkgVrPxpjo4UU7">Or you can click on this link.</a></p>
+<div class="page-center">
+<div class="custom-subtitle">
+Bren Math Workshop basics
+</div>
+</div>
 </section>
-<section id="obj" class="slide level2" data-menu-title="Workshop Objectives">
+<section id="welcome" class="slide level2" data-menu-title="Welcome to Bren Math Workshop!">
 <h2></h2>
-<p><span class="slide-title">Workshop Objectives</span></p>
+<p><span class="slide-title">Welcome to the Bren Math Workshop</span></p>
 <hr>
-
-<img data-src="images/limits_horst.jpg" class="quarto-figure quarto-figure-center r-stretch"><ol type="1">
-<li><p>Shake off the math dust</p></li>
-<li><p>Equip students with the math skills to succeed in all Bren Courses</p></li>
-<li><p>Explore how valuable math is to environmental science</p></li>
-<li><p>Build a collaborative environment, crucial for success at Bren</p></li>
-</ol>
+<p><br></p>
+<ul>
+<li><strong>Instructor:</strong> Carmen Galaz García</li>
+<li><strong>Course hours:</strong> Daily 12:00pm - 2:00pm PST (except for Day 5, which is 12:30pm - 2:30pm PST)</li>
+<li><strong>Location:</strong> Bren Hall 1414</li>
+<li><strong>Website:</strong> <a href="https://mesm-math-bootcamp.github.io/MESM-math-bootcamp-website/">https://mesm-math-bootcamp.github.io/MESM-math-bootcamp-website/</a></li>
+</ul>
 </section>
-<section id="about-me" class="slide level2" data-menu-title="About me">
+<section id="about-instructor" class="slide level2" data-menu-title="About your instructor">
 <h2></h2>
-<p><span class="slide-title">About me</span></p>
+<p><span class="slide-title smaller">About your instructor</span></p>
 <hr>
 <div class="columns">
 <div class="column" style="width:60%;">
@@ -263,68 +191,91 @@
 </div><div class="column" style="width:40%;">
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/Carmen4.jpg" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
+<p><img data-src="images/carmen.png" class="quarto-figure quarto-figure-center" style="width:60.0%"></p>
 </figure>
 </div>
 <div class="quarto-figure quarto-figure-center">
 <figure>
-<p><img data-src="images/bren-hex.png" class="quarto-figure quarto-figure-center"></p>
+<p><img data-src="images/bren-hex.png" class="quarto-figure quarto-figure-center" style="width:40.0%"></p>
 </figure>
 </div>
 </div></div>
-<!--
-## {#tbl data-menu-title="Team Based Learning"}
-
-[We will be using team based learning]{.slide-title}
-
-<hr>
-
--   Science and policy are done collaboratively
-
--   TBL shows better learning outcomes than traditional lecturing
-
-    -   [In Math](https://www.tandfonline.com/doi/pdf/10.1080/10511970.2018.1542417?casa_token=We71OsRHNuQAAAAA:U4I567tQynbXcFHplLpIkkamtpfUf1GqCgIKBP453cVdHJ8b3mP-yymXkVNOc4JJ4aZfJxpGvU766Q)
-
-    -   [For Women especially](https://www.tandfonline.com/doi/pdf/10.1080/00220485.2017.1397571?casa_token=d394sBXFFSEAAAAA:Sa68G6KKjBzxy6aD9KBnRH7W5xChBl_PYfy-Yeck2YlOCoDOxp903xu_6S9yTpFTwqVtugWK23im2Q)
-
-    -   [Higher engagement](https://www.lifescied.org/doi/pdf/10.1187/cbe.17-03-0055)
-
--   We'll be doing a TBL Lite\*, because I know orientation week is busy and school hasn't officially started
-
-    -   Keep extra pre-class work and assessments to a minimum
-
-## {#team-form data-menu-title="Team Formation"}
-
-[Team Formation]{.slide-title}
-
-<hr>
-
-Live coding demonstration
-
-::: aside
-Basically I'm using a constrained k-means algorithm to group everyone into equally balanced groups then pulling randomly from each to create balanced groups based on the likert scale responses of the survey. Full explanation will be included in a write up to see how code works
-:::
-
--->
 </section>
-<section id="exp" class="slide level2" data-menu-title="Team Expectations">
+<section id="about-you" class="slide level2" data-menu-title="About you">
 <h2></h2>
-<p><span class="slide-title">Student Expectations</span></p>
+<p><span class="slide-title">About you!</span></p>
 <hr>
-<p>We expect all team students will:</p>
+
+<img data-src="images/diversity.png" class="r-stretch quarto-figure-center"><p class="caption">image: Flaticon.com</p></section>
+<section id="topics" class="slide level2" data-menu-title="Topics">
+<h2></h2>
+<p><span class="slide-title">Topics overview</span></p>
+<hr>
+<div class="body-text-l">
 <ul>
-<li><p>Support and encourage all classmates</p></li>
-<li><p>Be open to learning from each other</p></li>
-<li><p>Bring a collaborative attitude and communicate respectfully</p></li>
-<li><p>See opportunities to share kownledge as a chance to deepend understanding</p></li>
-<li><p>Complete all in-class assessments</p></li>
+<li><strong>Day 1:</strong> Algebra refresher; Units</li>
+<li><strong>Day 2:</strong> Unit conversions; Functions; Graphing;</li>
+<li><strong>Day 3:</strong> Exponential functions and logarithms; Limits</li>
+<li><strong>Day 4:</strong> Derivatives</li>
+<li><strong>Day 5:</strong> Integration &amp; ODEs</li>
 </ul>
-<div class="fragment">
+</div>
+</section>
+<section id="objectives" class="slide level2" data-menu-title="Workshop Objectives">
+<h2></h2>
+<p><span class="slide-title">Workshop Objectives</span></p>
+<hr>
+<div class="body-text-l">
+<ol type="1">
+<li><p>🧹 Shake off the math dust</p></li>
+<li><p>💪 Exercise core math skills needed to succeed in your Bren courses</p></li>
+<li><p>🌎 Explore how valuable math is to environmental data science</p></li>
+<li><p>🤝 Build a collaborative environment and get to know your cohort</p></li>
+</ol>
+</div>
+</section>
+<section id="expectations-1" class="slide level2" data-menu-title="Student Expectations">
+<h2></h2>
+<p><span class="slide-title">Student expectations</span></p>
+<hr>
+<div class="body-text-m">
+<p>We expect all students will:</p>
+<ul>
+<li><p>🤗 Support and encourage all classmates</p></li>
+<li><p>🌱 Be open to learning from each other</p></li>
+<li><p>🙌 Bring a collaborative attitude and communicate respectfully</p></li>
+<li><p>💡 See opportunities to share kownledge as a chance to deepen understanding</p></li>
+<li><p>✅ Complete all in-class exercises</p></li>
+</ul>
+</div>
+</section>
+<section id="expectations-2" class="slide level2" data-menu-title="Team Expectations">
+<h2></h2>
+<p><span class="slide-title">Student expectations</span></p>
+<hr>
+<div class="body-text-m">
+<p>We expect all students will:</p>
+<ul>
+<li><p>🤗 Support and encourage all classmates</p></li>
+<li><p>🌱 Be open to learning from each other</p></li>
+<li><p>🙌 Bring a collaborative attitude and communicate respectfully</p></li>
+<li><p>💡 See opportunities to share kownledge as a chance to deepen understanding</p></li>
+<li><p>✅ Complete all in-class exercises</p></li>
+</ul>
+</div>
 <p><strong>Logistics</strong></p>
 <ul>
 <li>No food in BH 1414</li>
 <li>If you are feeling sick: stay home and take care of yourself! Please mask up if you are not feeling 100%.</li>
 </ul>
+</section>
+<section id="survey" class="slide level2" data-menu-title="Please fill out this survery">
+<h2></h2>
+<p><span class="slide-title">Please fill out this survey</span></p>
+<hr>
+
+<img data-src="images/mesm-math-workshop-2026-entrance-survey.png" class="quarto-figure quarto-figure-center r-stretch"><div class="center-text body-text-l">
+<p><a href="https://forms.gle/rmhQpyu6ze33fGaK6">Or you can click on this link.</a></p>
 </div>
 </section>
 <section id="math-envs" class="slide level2" data-menu-title="Math in Environmental Science" data-background-color="#003660">
@@ -335,10 +286,38 @@ Math in Environmental Science
 </div>
 </div>
 </section>
+<section id="why-math" class="slide level2" data-menu-title="Why math?">
+<h2></h2>
+<p><span class="slide-title">Why am I taking a math class?</span></p>
+<hr>
+<p><br> <br> <br></p>
+<div class="center-text body-text-xl">
+<p>or,</p>
+<p><br></p>
+<p><em>Why do I have to know math when a computer will do it for me?</em></p>
+</div>
+</section>
+<section id="warm-up" class="slide level2" data-menu-title="Brain warm-up">
+<h2></h2>
+<p><span class="slide-title">A quantitative brain warm-up</span></p>
+<hr>
+<p><br></p>
+<div class="center-text body-text-l teal-text">
+<p>MESM students have diverse work &amp; academic histories</p>
+</div>
+<p><strong>This course (re)introduces math concepts and tools that:</strong></p>
+<ul>
+<li>Focus on applications to environmental data science</li>
+<li>Are specifically relevant for MEDS projects, coursework</li>
+<li>Provide an entryway into building computational skills</li>
+<li>Refresh quantitative thinking skills generally</li>
+<li>Refresh essentials like units, conversions, notation, <strong>language</strong></li>
+</ul>
+</section>
 <section id="des" class="slide level2" data-menu-title="describe">
 <h2></h2>
 <p><span class="slide-title">Share with the person next to you:</span></p>
-<p><br></p>
+<hr>
 <p><span class="slide-title">What has been your life or professional experience with math? Best friend ever, mortal enemy, or something in between?</span></p>
 <p><br></p>
 <p><span class="slide-title">How do you see math being relevant to solving environmental problems?</span></p>
@@ -358,7 +337,7 @@ Math in Environmental Science
 <li><p>Helps us support arguments that can transform policy and actions</p></li>
 </ul>
 <p><br></p>
-<p><span class="center-text body-text-m blue-text">We need to understand the math to make decisions on it!</span></p>
+<p><span class="center-text body-text-m blue-text">We need to understand the math to responsibly make decisions on it!</span></p>
 </section>
 <section id="math-bren" class="slide level2" data-menu-title="Math at Bren">
 <h2></h2>
@@ -401,87 +380,189 @@ Widely used in hydrogeology and environmental engineering to model how contamina
 <li><p><a href="https://bren.ucsb.edu/projects/applying-portfolio-theory-improve-spatial-recovery-planning-pacific-salmon">Applying Portfolio Theory (A mix of calculus and stochastic linear algebra) to salmon stocks (MESM GP)</a></p></li>
 <li><p><a href="https://bren.ucsb.edu/projects/quantifying-greenhouse-gas-ghg-emissions-associated-global-seafood-production">Quantifying Greenhouse Gas (GHG) Emissions Associated with Global Seafood Production (MEDS Capstone)</a></p></li>
 </ul>
-<!--
-- [My own research on image analysis to identify invasive plant species](https://www.sciencedirect.com/science/article/pii/S1574954124001018)
--->
 </div></div>
 </section>
-<section id="algebra" class="slide level2" data-menu-title="Algebra&quot;" data-background-color="#003660">
+<section id="warm-up-overview" class="slide level2" data-menu-title="Warm-up overview">
+<h2></h2>
+<p><span class="slide-title">Today: Math brain warm up</span></p>
+<hr>
+<div class="body-text-m">
+<ul>
+<li>Algebra review</li>
+<li>Rules of exponents</li>
+<li>Units</li>
+</ul>
+</div>
+</section>
+<section id="algebra-review" class="slide level2" data-menu-title="Algebra review" data-background-color="#003660">
 <h2></h2>
 <div class="page-center">
 <div class="custom-subtitle">
-Algebra
+Algebra review
 </div>
 </div>
 </section>
-<section id="alge-rules" class="slide level2" data-menu-title="Rules of Algebra">
+<section id="rules-of-algebra" class="slide level2" data-menu-title="Rules of algebra">
 <h2></h2>
-<p><span class="slide-title">Rules of Algebra</span></p>
+<p><span class="slide-title">Rules of algebra</span></p>
 <hr>
+<p><span class="body-text-l"><strong>You can get far with a few rules:</strong></span></p>
+<div class="body-text-m">
 <ol type="1">
+<li><p>Follow order of operations (a.k.a. PEDMAS)</p></li>
+<li><p>Never change an equation. Instead, rewrite them into more useful forms</p></li>
+<li><p>Manipulate BOTH sides of an equation with the SAME PROCEDURE.</p></li>
+</ol>
+<p><span style="color: red;"> Always add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the equation. </span></p>
+</div>
+</section>
+<section id="PEMDAS" class="slide level2" data-menu-title="PEMDAS">
+<h2></h2>
+<p><span class="slide-title">Order of operations (P-E-DM-AS)</span></p>
+<hr>
+<p><br></p>
+<p><span class="body-text-l"><strong>P</strong> - Parentheses</span></p>
+<p><br></p>
+<p><span class="body-text-l"><strong>E</strong> - Exponents</span></p>
+<p><br></p>
+<p><span class="body-text-l"><strong>D/M</strong> - Division / multiplication</span></p>
+<p><br></p>
+<p><span class="body-text-l"><strong>A/S</strong> - Addition / subtraction</span></p>
+</section>
+<section id="PEMDAS-practice" class="slide level2" data-menu-title="PEMDAS practice">
+<h2></h2>
+<p><span class="slide-title">Order of operations practice problems</span></p>
+<hr>
+<p>✏️ <span class="body-text-m" style="color:green;">Take a minute to solve these individually.</span></p>
+<p><br></p>
+<ul>
+<li>Simplify <span class="math inline">\(\frac{4-6}{2}(3+1)-\frac{1+2*4}{3}\)</span></li>
+</ul>
+<p><br></p>
+<ul>
+<li>Simplify <span class="math inline">\(3x+4(8x-6x) -(2y-5)+\frac{2x(1-3)}{2}\)</span></li>
+</ul>
+<p><br></p>
+<ul>
+<li>If we are given the values of <span class="math inline">\(x=-3\)</span> and <span class="math inline">\(y=2\)</span>, what would be the value of <span class="math inline">\(z\)</span>? <span class="math display">\[
+z = 4*(y-4)+(x+1)^2
+\]</span></li>
+</ul>
+</section>
+<section id="PEMDAS-practice-solution-1" class="slide level2" data-menu-title="PEMDAS practice: solution 1">
+<h2></h2>
+<p><span class="slide-title">Order of operations practice problems</span></p>
+<hr>
+<p>💡 <span class="body-text-m" style="color:green;">Let’s see a solution!</span></p>
+<p><br></p>
+<div class="columns">
+<div class="column" style="width:40%;">
+<p><span class="body-text-m"><span class="math inline">\(\frac{4-6}{2}(3+1)-\frac{1+2*4}{3}\)</span></span></p>
+</div><div class="column" style="width:60%;">
+<p><span class="body-text-m"><span class="math inline">\(3x+4(8x-6x) -(2y-5)+\frac{2x(1-3)}{2}\)</span></span></p>
+</div></div>
+</section>
+<section id="PEMDAS-practice-solution-2" class="slide level2" data-menu-title="PEMDAS practice: solution 2">
+<h2></h2>
+<p><span class="slide-title">Order of operations practice problems</span></p>
+<hr>
+<p>💡 <span class="body-text-m" style="color:green;">Let’s see a solution!</span></p>
+<p><span class="body-text-m">If we are given the values of <span class="math inline">\(x=-3\)</span> and <span class="math inline">\(y=2\)</span>, what would be the value of <span class="math inline">\(z\)</span>? <span class="math display">\[
+z = 4*(y-4)+(x+1)^2
+\]</span></span></p>
+</section>
+<section id="PEMDAS-practice-solution-1-answer" class="slide level2" data-menu-title="Practice solutions">
+<h2></h2>
+<p><span class="slide-title">Practice solutions</span></p>
+<hr>
+<p><span class="math display">\[
+\small
+\begin{aligned}
+\frac{4-6}{2}(3+1)-\frac{1+2*4}{3} &amp;= \frac{-2}{2}(4)-\frac{9}{3} \\
+&amp;= -1(4)-3 \\
+&amp;= -4-3 \\
+&amp;= -7
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\small
+\begin{aligned}
+3x+4(8x-6x) -(2y-5)+\frac{2x(1-3)}{2} &amp;= 3x+4(2x)-2y+5+\frac{2x-6x}{2} \\
+&amp;= 3x+8x-2y+5+\frac{-4x}{2} \\
+&amp;= 3x+8x-2y+5-2x \\
+&amp;= 9x-2y+5
+\end{aligned}
+\]</span></p>
+<p><span class="math display">\[
+\small
+\begin{aligned}
+z = 4(y-4)+(x+1)^2 &amp;= 4(2-4)+(-3+1)^2 \\
+&amp;= 4(-2)+(-2)^2 \\
+&amp;= -8+4 \\
+z&amp;=-4
+\end{aligned}
+\]</span></p>
+</section>
+<section id="equations-solved-1" class="slide level2" data-menu-title="Equations solved">
+<h2></h2>
+<p><span class="slide-title">Solving equations</span></p>
+<hr>
+<p>Equations help us find unknown values that satisfy certain conditions.</p>
+<p>Remember the rules:</p>
+<ol start="2" type="1">
 <li><p>Never change an equation. Instead, we rewrite them into more useful forms</p></li>
 <li><p>Manipulate BOTH sides of an equation with the SAME PROCEDURE.</p></li>
 </ol>
 <p><span style="color: red;"> Always add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the equation. </span></p>
-<ol start="3" type="1">
-<li>Order of Operations, a.k.a. PEDMAS: (P)aranthesis (E)xponents (D)ivide (M)ultiply (A)dd (S)ubtract</li>
+</section>
+<section id="equations-solved-2" class="slide level2" data-menu-title="Equations solved">
+<h2></h2>
+<p><span class="slide-title">Solving equations</span></p>
+<hr>
+<p>Equations help us find unknown values that satisfy certain conditions.</p>
+<p>Remember the rules:</p>
+<ol start="2" type="1">
+<li><p>Never change an equation. Instead, we rewrite them into more useful forms</p></li>
+<li><p>Manipulate BOTH sides of an equation with the SAME PROCEDURE.</p></li>
 </ol>
-</section>
-<section id="pedmas-use-1" class="slide level2" data-menu-title="PEDMAS important for what order to manipulate equations">
-<h2></h2>
-<p><span class="slide-title">PEDMAS important for what order to manipulate equations</span></p>
-<hr>
-<p><span class="math display">\[
-z = 4*(y-4)+(x+1)^2
-\]</span></p>
-<p>If we are given the values of <span class="math inline">\(x=-3\)</span> and <span class="math inline">\(y=2\)</span>, what would be the value of <span class="math inline">\(z\)</span>?</p>
-<p>✏️ <span style="color:green;">Take a minute to solve this individually.</span></p>
-</section>
-<section id="pedmas-use-2" class="slide level2" data-menu-title="PEDMAS important for what order to manipulate equations">
-<h2></h2>
-<p><span class="slide-title">PEDMAS important for what order to manipulate equations</span></p>
-<hr>
-<p>If we are given the values of <span class="math inline">\(x=-3\)</span> and <span class="math inline">\(y=2\)</span>, what would be the value of <span class="math inline">\(z\)</span>?</p>
-<p>💡 <span style="color:green;">Let’s see a solution!</span></p>
-<p><span class="math display">\[
-\begin{align}
-z &amp;= 4*(y-4)+(x+1)^2 \\
-  &amp;= 4*(2-4)+(-3+1)^2 \\
-  &amp;= 4*(-2)+(-2)^2 \\
-  &amp;= -8 + 4 \\
-  &amp;= -4.
-\end{align}
-\]</span></p>
-</section>
-<section id="flex-eq-1" class="slide level2" data-menu-title="Often times we want flexible equations">
-<h2></h2>
-<p><span class="slide-title">Often times we want flexible equations</span></p>
-<hr>
+<p><span style="color: red;"> Always add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the equation. </span></p>
+<p><strong>Example</strong></p>
 <p>Prices are important in economics, but not always available for environmental goods.</p>
-<p><br></p>
 <div class="center-text">
 <p><strong>How do we get prices if we know quantity?</strong></p>
 </div>
 <p><span class="math display">\[
-\require{cancel}
 \begin{aligned}
 Q&amp;=\frac{(400-P)}{80} &amp;\text{Isolate P in terms of Q} \\
 \end{aligned}
 \]</span></p>
 <p>✏️ <span style="color:green;">Take a minute to solve this individually.</span></p>
 </section>
-<section id="flex-eq-3" class="slide level2" data-menu-title="Often times we want flexible equations">
+<section id="solving-equations-2" class="slide level2" data-menu-title="Solving equations">
 <h2></h2>
-<p><span class="slide-title">Often times we want flexible equations</span></p>
+<p><span class="slide-title">Solving equations</span></p>
 <hr>
 <p>💡 <span style="color:green;">Let’s see a solution!</span></p>
 <p>Prices are important in economics, but not always available for environmental goods.</p>
-<p><br></p>
 <div class="center-text">
 <p><strong>How do we get prices if we know quantity?</strong></p>
 </div>
 <p><span class="math display">\[
-\require{cancel}
+\begin{aligned}
+Q&amp;=\frac{(400-P)}{80} &amp;\text{Isolate P in terms of Q} \\
+\end{aligned}
+\]</span></p>
+</section>
+<section id="solving-equations-3" class="slide level2" data-menu-title="Solving equations">
+<h2></h2>
+<p><span class="slide-title">Solving equations</span></p>
+<hr>
+<p>💡 <span style="color:green;">Let’s see a solution!</span></p>
+<p>Prices are important in economics, but not always available for environmental goods.</p>
+<div class="center-text">
+<p><strong>How do we get prices if we know quantity?</strong></p>
+</div>
+<p><span class="math display">\[
 \begin{aligned}
 Q&amp;=\frac{(400-P)}{80} &amp;\text{Isolate P in terms of Q} \\
 80Q&amp;=\frac{(400-P)\cancel{80}}{\cancel{80}}  &amp;\text{ Multiply both sides by 80} \\
@@ -493,7 +574,7 @@ Q&amp;=\frac{(400-P)}{80} &amp;\text{Isolate P in terms of Q} \\
 </section>
 <section id="practice-alge-1" class="slide level2" data-menu-title="Easy to make mistakes">
 <h2></h2>
-<p><span class="slide-title">It can be easy to make mistakes while doing algebra. Practice makes perfect!</span></p>
+<p><span class="slide-title">It can be easy to make mistakes while doing algebra. Practice is key!</span></p>
 <hr>
 <p>Solve all in terms of <span class="math inline">\(x\)</span></p>
 <ol type="A">
@@ -511,7 +592,7 @@ Q&amp;=\frac{(400-P)}{80} &amp;\text{Isolate P in terms of Q} \\
 </section>
 <section id="practice-alge-2" class="slide level2" data-menu-title="Easy to make mistakes">
 <h2></h2>
-<p><span class="slide-title">It can be easy to make mistakes while doing algebra. Practice makes perfect!</span></p>
+<p><span class="slide-title">It can be easy to make mistakes while doing algebra. Practice is key!</span></p>
 <hr>
 <p>💡 <span style="color:green;">Let’s see a solution!</span></p>
 <p>Solve all in terms of <span class="math inline">\(x\)</span></p>
@@ -532,7 +613,7 @@ Q&amp;=\frac{(400-P)}{80} &amp;\text{Isolate P in terms of Q} \\
 </section>
 <section id="practice-alge-3" class="slide level2" data-menu-title="Easy to make mistakes">
 <h2></h2>
-<p><span class="slide-title">It can be easy to make mistakes while doing algebra. Practice makes perfect!</span></p>
+<p><span class="slide-title">It can be easy to make mistakes while doing algebra. Practice is key!</span></p>
 <hr>
 <p>💡 <span style="color:green;">Let’s see a solution!</span></p>
 <p>Solve all in terms of <span class="math inline">\(x\)</span></p>
@@ -542,7 +623,7 @@ Q&amp;=\frac{(400-P)}{80} &amp;\text{Isolate P in terms of Q} \\
 </section>
 <section id="practice-alge-4" class="slide level2" data-menu-title="Solutions">
 <h2></h2>
-<p><span class="slide-title">Practice Solutions</span></p>
+<p><span class="slide-title">Practice solutions</span></p>
 <hr>
 <div class="columns">
 <div class="column" style="width:50%;">
@@ -555,7 +636,8 @@ Q&amp;=\frac{(400-P)}{80} &amp;\text{Isolate P in terms of Q} \\
 14&amp;=7x \\
 x&amp;=2
 \end{aligned}
-\]</span> <br></p>
+\]</span></p>
+</div><div class="column" style="width:50%;">
 <p><span class="math display">\[
 \small
 \begin{aligned}
@@ -567,7 +649,12 @@ x&amp;=2
 x&amp;=\frac{-14}{9}\\
 \end{aligned}
 \]</span></p>
-</div><div class="column" style="width:50%;">
+</div></div>
+</section>
+<section id="practice-alge-5" class="slide level2" data-menu-title="Solutions">
+<h2></h2>
+<p><span class="slide-title">Practice solutions</span></p>
+<hr>
 <p><span class="math display">\[
 \small
 \begin{aligned}
@@ -578,8 +665,20 @@ x&amp;=\frac{-14}{9}\\
 x&amp;=\frac{5+b+2c-21a}{11}
 \end{aligned}
 \]</span></p>
-</div></div>
-<!--------------------------------------------------------------------------->
+</section>
+<section id="break" class="slide level2" data-menu-title="5 minute break">
+<h2></h2>
+<p><span class="slide-title">Let’s take a 5 minute break</span></p>
+<hr>
+
+<img data-src="images/coffee-break.png" class="r-stretch quarto-figure-center"><p class="caption">image: Flaticon.com</p></section>
+<section id="rules-of-exponents" class="slide level2" data-menu-title="Rules of exponents" data-background-color="#003660">
+<h2></h2>
+<div class="page-center">
+<div class="custom-subtitle">
+Rules of exponents
+</div>
+</div>
 </section>
 <section id="exponents" class="slide level2" data-menu-title="Exponents">
 <h2></h2>
@@ -592,8 +691,8 @@ x&amp;=\frac{5+b+2c-21a}{11}
 </div>
 <div class="fragment">
 <p>Intuitively, the <strong>exponent</strong> <span class="math inline">\(n\)</span> tells us how many times to multiply the <strong>basis</strong> <span class="math inline">\(x\)</span> by itself:</p>
-<p><span class="math display">\[x^n = \underbrace{x * x * ... * x}_{n \text{ times}}\]</span></p>
-<p>But the exponent can be any (real) number, not only integers! <!---------------------------------------------------------------------------></p>
+<p><span class="math display">\[x^n = \underbrace{x \times x \times \ldots \times x}_{n \text{ times}}\]</span></p>
+<p>But the exponent can be any (real) number, not only integers!</p>
 </div>
 </section>
 <section id="exponents-applications-1" class="slide level2" data-menu-title="What are exponents good for?">
@@ -603,9 +702,6 @@ x&amp;=\frac{5+b+2c-21a}{11}
 <div class="columns">
 <div class="column" style="text-align: center;">
 <p>They can describe really big numbers</p>
-<!--
-![](images/milky-way.jpg)
--->
 <p><img src="images/milky-way.jpg" width="250"></p>
 <p>Diameter of the Milky Way = 1,000,000,000,000,000,000,000 meters = <span class="math display">\[10^{21} \text{ m}\]</span></p>
 </div><div class="column" style="text-align: center;">
@@ -614,11 +710,13 @@ x&amp;=\frac{5+b+2c-21a}{11}
 <p>Diameter of a human red blood cell = 0.0000000001 meters = <span class="math display">\[10^{-10} \text{ m}\]</span></p>
 </div></div>
 <p>This way, we can use exponents to describe exponential growth and decay. Many environmental variables behave in this way.</p>
-<!--------------------------------------------------------------------------->
 </section>
 <section id="exponents-rules-blank-1" class="slide level2" data-menu-title="Exponents Rules (1)">
 <h2></h2>
 <p><span class="slide-title">Rules and properties of exponents (1)</span></p>
+<div style="position: absolute; bottom: 550px; right: 1000px; font-size: 1em;">
+<p>✏️</p>
+</div>
 <hr>
 <ol type="1">
 <li>Product rule:</li>
@@ -639,12 +737,14 @@ x&amp;=\frac{5+b+2c-21a}{11}
 <ol start="5" type="1">
 <li>Fractional exponent means take the <span class="math inline">\(n\)</span>-th root:</li>
 </ol>
-<!--------------------------------------------------------------------------->
 </section>
 <section id="exponents-rules-blank-2" class="slide level2" data-menu-title="Exponents Rules (2)">
 <h2></h2>
 <p><span class="slide-title">Rules and properties of exponents (2)</span></p>
 <hr>
+<div style="position: absolute; bottom: 550px; right: 1000px; font-size: 1em;">
+<p>✏️</p>
+</div>
 <ol start="6" type="1">
 <li>Power of a power means multiply the exponents:</li>
 </ol>
@@ -660,7 +760,6 @@ x&amp;=\frac{5+b+2c-21a}{11}
 <ol start="9" type="1">
 <li>If <span class="math inline">\(a\)</span> is the <span class="math inline">\(n\)</span>-th root of <span class="math inline">\(x\)</span>, then <span class="math inline">\(a\)</span> to the <span class="math inline">\(n\)</span> equals <span class="math inline">\(x\)</span>:</li>
 </ol>
-<!--------------------------------------------------------------------------->
 </section>
 <section id="exponents-rules-1" class="slide level2" data-menu-title="Exponents Rules (1)">
 <h2></h2>
@@ -685,7 +784,6 @@ x&amp;=\frac{5+b+2c-21a}{11}
 <ol start="5" type="1">
 <li>Fractional exponent means take the <span class="math inline">\(n\)</span>-th root: <span class="math inline">\(x^{\frac{1}{n}} = \sqrt[n]{x}\)</span></li>
 </ol>
-<!--------------------------------------------------------------------------->
 </section>
 <section id="exponents-rules-2" class="slide level2" data-menu-title="Exponents Rules (2)">
 <h2></h2>
@@ -739,15 +837,14 @@ a = \sqrt[n]{x} \Rightarrow a^n = x
 \hline
 \end{array}
 \]</span></p>
-<!--------------------------------------------------------------------------->
 </section>
-<section id="exponents-practice" class="slide level2" data-menu-title="Exponents practice">
+<section id="exponents-practice-set-up" class="slide level2" data-menu-title="Exponents practice">
 <h2></h2>
 <p><span class="slide-title">Exponents practice</span></p>
 <hr>
-<p>✏️ <span style="color:green;">Simplify the following.</span></p>
 <div class="columns">
 <div class="column" style="width:40%;">
+<p>✏️ <span style="color:green;">Simplify the following.</span></p>
 <ol type="A">
 <li><span class="math inline">\(\frac{6^5}{6^3}\)</span></li>
 </ol>
@@ -755,13 +852,10 @@ a = \sqrt[n]{x} \Rightarrow a^n = x
 <ol start="2" type="A">
 <li><span class="math inline">\((x^2y)^4\)</span></li>
 </ol>
-<p><br> <br></p>
+<p><br></p>
 <ol start="3" type="A">
-<li><span class="math inline">\(\frac{x^5y^6}{xy^2}\)</span></li>
-</ol>
-<p><br> <br></p>
-<ol start="4" type="A">
-<li><span class="math inline">\(\frac{24x^6}{12x^{-8}}\)</span></li>
+<li><p><span class="math inline">\(\frac{x^5y^6}{xy^2}\)</span></p></li>
+<li><p><span class="math inline">\(\frac{24x^6}{12x^{-8}}\)</span></p></li>
 </ol>
 </div><div class="column" style="width:60%;">
 <p><span class="math display">\[
@@ -802,7 +896,7 @@ a = \sqrt[n]{x} \Rightarrow a^n = x
 </ol>
 <p><br></p>
 <ol start="2" type="A">
-<li><span class="math inline">\((x^2y)^4 = (x^2)^4*y^2 = x^8y^2\)</span></li>
+<li><span class="math inline">\((x^2y)^4 = (x^2)^4*y^4 = x^8y^4\)</span></li>
 </ol>
 <p><br> <br></p>
 <ol start="3" type="A">
@@ -812,9 +906,31 @@ a = \sqrt[n]{x} \Rightarrow a^n = x
 <ol start="4" type="A">
 <li><span class="math inline">\(\frac{24x^6}{12x^{-8}} = 2x^6x^{(-(-8))}=2x^6x^8 = 2x^{6+8} = 2x^{14}\)</span></li>
 </ol>
-<!--------------------------------------------------------------------------->
 </section>
-<section id="polynomials" class="slide level2" data-menu-title="Polynomials">
+<section id="FOIL" class="slide level2" data-menu-title="FOIL">
+<h2></h2>
+<p><span class="slide-title">Multiplying expressions (FOIL)</span></p>
+<hr>
+<p><br></p>
+<p><span class="body-text-l"><strong>F</strong>irst, <strong>O</strong>utside, <strong>I</strong>nside, <strong>L</strong>ast</span></p>
+<p><br></p>
+<p><span class="body-text-m"><strong>Example:</strong></span></p>
+<p><span class="body-text-m"><span class="math display">\[(2x+5)(x-3)\]</span></span> ✏️ <span style="color:green;">Expand this expression.</span></p>
+</section>
+<section id="FOIL-solution" class="slide level2" data-menu-title="FOIL">
+<h2></h2>
+<p><span class="slide-title">Multiplying expressions (FOIL)</span></p>
+<hr>
+<p><br></p>
+<p><span class="body-text-l"><strong>F</strong>irst, <strong>O</strong>utside, <strong>I</strong>nside, <strong>L</strong>ast</span></p>
+<p><br></p>
+<p><span class="body-text-m"><strong>Example:</strong></span></p>
+<p><span class="body-text-m"><span class="math display">\[(2x+5)(x-3)\]</span></span> ✏️ <span style="color:green;">Let’s see a solution.</span></p>
+<p><span class="body-text-m"><span class="math display">\[= (2x \times x) (2x \times -3) (5 \times x) (5 \times -3)\]</span></span></p>
+<p><span class="body-text-m"><span class="math display">\[= 2x^2 - 6x + 5x - 15\]</span></span></p>
+<p><span class="body-text-m"><span class="math display">\[=2x^2-x-15\]</span></span></p>
+</section>
+<section id="polynomials-1" class="slide level2" data-menu-title="Polynomials">
 <h2></h2>
 <p><span class="slide-title">Polynomials describe more complex relationships through exponents</span></p>
 <hr>
@@ -830,42 +946,57 @@ a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0
 <li>each <span class="math inline">\(a_ix^i\)</span> is called a <strong>term</strong> of the polynomial,</li>
 <li><span class="math inline">\(n\)</span> is called the <strong>degree</strong> of the polynomial, this is the largest exponent in the polynomial.</li>
 </ul>
-<div class="fragment">
+</section>
+<section id="polynomials-2" class="slide level2" data-menu-title="Polynomials">
+<h2></h2>
+<p><span class="slide-title">Polynomials describe more complex relationships through exponents</span></p>
+<hr>
+<p>A polynomial is a function of the form: <span class="math display">\[
+\large
+\begin{align}
+a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0
+\end{align}
+\]</span></p>
+<ul>
+<li><span class="math inline">\(x\)</span> is the <strong>variable</strong></li>
+<li><span class="math inline">\(a_i\)</span> are <strong>constants</strong> (fixed numbers) that are called the <strong>coefficients</strong> of the polynomial</li>
+<li>each <span class="math inline">\(a_ix^i\)</span> is called a <strong>term</strong> of the polynomial,</li>
+<li><span class="math inline">\(n\)</span> is called the <strong>degree</strong> of the polynomial, this is the largest exponent in the polynomial.</li>
+</ul>
 <p><em>Example:</em></p>
 <ul>
 <li><p><span class="math inline">\(x^5 + x^2 - 1\)</span> is a polynomial of degree five with three terms.</p></li>
 <li><p>Linear functions like <span class="math inline">\(mx + c\)</span> where <span class="math inline">\(m\)</span> and <span class="math inline">\(c\)</span> are constants are polynomials of degree 1!</p></li>
 </ul>
 <p>Polynomials often represent real world data better than a linear function.</p>
-<!--------------------------------------------------------------------------->
-</div>
 </section>
-<section id="fundamental" class="slide level2" data-menu-title="Fundamental Theorem of Algebra">
+<section id="fundamental-1" class="slide level2" data-menu-title="Fundamental Theorem of Algebra">
 <h2></h2>
 <p><span class="slide-title">Fundamental Theorem of Algebra</span></p>
 <hr>
-<p><br></p>
+<div class="body-text-m">
 <p>A <strong>zero</strong>, <strong>root</strong>, or <strong>solution</strong> for a polynomial is a value of <span class="math inline">\(x\)</span> that makes the polynomial equal to zero.</p>
-<!--
-<img src="images/polynomial_zeros.png" width="250"/>
-
-![](images/polynomial_zeros.png)
--->
+</div>
+</section>
+<section id="fundamental-2" class="slide level2" data-menu-title="Fundamental Theorem of Algebra">
+<h2></h2>
+<p><span class="slide-title">Fundamental Theorem of Algebra</span></p>
+<hr>
+<div class="body-text-m">
+<p>A <strong>zero</strong>, <strong>root</strong>, or <strong>solution</strong> for a polynomial is a value of <span class="math inline">\(x\)</span> that makes the polynomial equal to zero.</p>
+</div>
 <p><br></p>
-<div class="fragment">
-<div class="center-text body-text-m">
+<div class="center-text">
 <p><em>Fundamental Theorem of Algebra</em></p>
 </div>
 <p>A polynomial <span class="math display">\[
 a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0
 \]</span></p>
-<p>of degree <span class="math inline">\(n\)</span> has exactly <span class="math inline">\(n\)</span> roots <span class="math inline">\(r_1, \ldots, r_n\)</span> and it can be refactored as</p>
+<p>of degree <span class="math inline">\(n\)</span> has exactly <span class="math inline">\(n\)</span> roots <span class="math inline">\(r_1, \ldots, r_n\)</span> and it can be factored as</p>
 <p><span class="math display">\[
 c(x-r_1) ... (x-r_n)
 \]</span></p>
-<p>The numbers <span class="math inline">\(c\)</span> and <span class="math inline">\(r_1, \ldots, r_n\)</span> may be complex!</p>
-<!--------------------------------------------------------------------------->
-</div>
+<p>The roots <span class="math inline">\(r_1, \ldots, r_n\)</span> may be complex numbers!</p>
 </section>
 <section id="example-linear" class="slide level2" data-menu-title="Example: linear equation">
 <h2></h2>
@@ -1038,413 +1169,6 @@ c=246
 6x^2-9x-6
 \end{align}
 \]</span></p>
-</section>
-<section id="graphs" class="slide level2" data-menu-title="Graphing&quot;" data-background-color="#003660">
-<h2></h2>
-<div class="page-center">
-<div class="custom-subtitle">
-Graphs
-</div>
-</div>
-</section>
-<section id="graph-demo" class="slide level2" data-menu-title="Which graph looks better">
-<h2></h2>
-<p><span class="slide-title">Graphs bring visual connection to math and data</span></p>
-<hr>
-<div class="center-text">
-<p><strong>Which looks better and is easier to understand?</strong></p>
-</div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-3eafe38222a9f38e3cae" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-3eafe38222a9f38e3cae">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant","Duster 360","Merc 240D","Merc 230","Merc 280","Merc 280C","Merc 450SE","Merc 450SL","Merc 450SLC","Cadillac Fleetwood","Lincoln Continental","Chrysler Imperial","Fiat 128","Honda Civic","Toyota Corolla","Toyota Corona","Dodge Challenger","AMC Javelin","Camaro Z28","Pontiac Firebird","Fiat X1-9","Porsche 914-2","Lotus Europa","Ford Pantera L","Ferrari Dino","Maserati Bora","Volvo 142E"],[21,21,22.8,21.4,18.7,18.1,14.3,24.4,22.8,19.2,17.8,16.4,17.3,15.2,10.4,10.4,14.7,32.4,30.4,33.9,21.5,15.5,15.2,13.3,19.2,27.3,26,30.4,15.8,19.7,15,21.4],[6,6,4,6,8,6,8,4,4,6,6,8,8,8,8,8,8,4,4,4,4,8,8,8,8,4,4,4,8,6,8,4],[160,160,108,258,360,225,360,146.7,140.8,167.6,167.6,275.8,275.8,275.8,472,460,440,78.7,75.7,71.09999999999999,120.1,318,304,350,400,79,120.3,95.09999999999999,351,145,301,121],[110,110,93,110,175,105,245,62,95,123,123,180,180,180,205,215,230,66,52,65,97,150,150,245,175,66,91,113,264,175,335,109]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":4,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"mpg","targets":1},{"name":"cyl","targets":2},{"name":"disp","targets":3},{"name":"hp","targets":4}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[4,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="cell" data-layout-align="right">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="lecture-algebra_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-right" style="width:90.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="xy-coordinates" class="slide level2" data-menu-title="xy coordinates">
-<h2></h2>
-<p><span class="slide-title">The <span class="math inline">\(xy\)</span> coordinate system</span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Graphs move in a 2-dimensional plane with a coordinate system using two axes:</p>
-<ul>
-<li><p><span class="math inline">\(x\)</span>-axis (horizontal axis)</p></li>
-<li><p><span class="math inline">\(y\)</span>-axis (vertical axis)</p></li>
-</ul>
-<p><br></p>
-<p>Axes units must be defined depending on the application.</p>
-<p>We use pairs of numbers to place data:</p>
-<ul>
-<li class="fragment"><p>A point on the <span class="math inline">\(xy\)</span> plane with <strong>coordinates</strong> <span class="math inline">\((a,b)\)</span> means the point is located at <span class="math inline">\(a\)</span> on the <span class="math inline">\(x\)</span>-axis and at <span class="math inline">\(b\)</span> on the <span class="math inline">\(y\)</span>-axis.</p></li>
-<li class="fragment"><p>Where would (2,-1) go on the graph?</p></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="images/cart.png" width="400"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="graph-series" class="slide level2" data-menu-title="Graphs series of points to make lines">
-<h2></h2>
-<p><span class="slide-title">We can join series of points to make graphs</span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-283630f2c717b99ffbbb" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-283630f2c717b99ffbbb">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],[0,1,2,3,4,5,6,7,8,9,10],[-0.9399999999999999,1.28,0.75,5.39,4.49,3.77,6.73,8.109999999999999,8.859999999999999,8.539999999999999,9.06]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>x<\/th>\n      <th>y<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":6,"columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"x","targets":1},{"name":"y","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[6,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="lecture-algebra_files/figure-revealjs/unnamed-chunk-5-1.png" style="width:90.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="graph-seafood" class="slide level2" data-menu-title="Seafood depletion">
-<h2></h2>
-<p><span class="slide-title">Real life example: seafood depletion</span></p>
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/headline.PNG" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
-</figure>
-</div>
-<!-- ```{r echo=FALSE,fig.align='center',out.width="60%"}
-knitr::include_graphics("images/headline.PNG")
-``` -->
-<div class="fragment fade-in">
-<!-- ```{r echo=FALSE,fig.align='center',out.width="70%"}
-knitr::include_graphics("images/worm.PNG")
-``` -->
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/worm.PNG" class="quarto-figure quarto-figure-center" style="width:50.0%"></p>
-</figure>
-</div>
-</div>
-</section>
-<section id="graph-fcn" class="slide level2" data-menu-title="Most functions can be shown on graphs">
-<h2></h2>
-<p><span class="slide-title">Functions on a single variable and a single output can be graphed</span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li><span class="math inline">\(\color{green}{y=sin(3x)+2x}\)</span></li>
-</ul>
-<p><br></p>
-<ul>
-<li><span class="math inline">\(\color{red}{y=0.5x^3+x^2-5x}\)</span></li>
-</ul>
-<p><br></p>
-<ul>
-<li><span class="math inline">\(\color{blue}{y=0.85x+0.44}\)</span></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="lecture-algebra_files/figure-revealjs/unnamed-chunk-7-1.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="graph-ingredients" class="slide level2" data-menu-title="Two key ingredients to graphs">
-<h2></h2>
-<p><span class="slide-title">Two key ingredients to graphs</span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Intercepts</p>
-<ul>
-<li><p><span class="math inline">\(x\)</span>-intercept</p>
-<ul>
-<li>Where does the graph intersect the <span class="math inline">\(x\)</span>-axis?</li>
-<li>In other words, for what values of <span class="math inline">\(x\)</span> do we have <span class="math inline">\((x,0)\)</span> be part of the graph?</li>
-</ul></li>
-<li><p><span class="math inline">\(y\)</span>-intercept</p>
-<ul>
-<li>Where does the graph intersect the <span class="math inline">\(y\)</span>-axis?</li>
-<li>In other words, for what value of <span class="math inline">\(y\)</span> do we have <span class="math inline">\((0,y)\)</span> be part of the graph?</li>
-</ul></li>
-</ul>
-</div><div class="column" style="width:50%;">
-<div class="center-text">
-<p>What are the intercepts of the polynomial function in red?</p>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="lecture-algebra_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center" style="width:70.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="slope-int" class="slide level2" data-menu-title="Slope-Intercept Form">
-<h2></h2>
-<p><span class="slide-title">Linear functions: slope-intercept form</span></p>
-<hr>
-<p>Easiest model to describe linear relationship between two variables!</p>
-<p><span class="math display">\[
-\huge
-\begin{align}
-\underbrace{y}_{\text{output}}=\overbrace{m}^{\text{Slope}}\underbrace{x}_{\text{input}}+\overbrace{b}^{\text{$y$ intercept}}
-\end{align}
-\]</span></p>
-<p><br></p>
-<ul>
-<li>The <strong>slope</strong> tells us how quickly is the line changing.</li>
-</ul>
-</section>
-<section id="slope-def" class="slide level2" data-menu-title="Definition of Slope">
-<h2></h2>
-<p><span class="slide-title">How to calculate the slope?</span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<p>Slope =</p>
-<p>vertical change per unit of horizontal change.</p>
-<p><span class="math display">\[
-m=\frac{\Delta y}{\Delta x}=\frac{y_2-y_1}{x_2-x_1}
-\]</span></p>
-<p>Horizontal Slope: <span class="math inline">\(m=0\)</span></p>
-<p>Vertical Slope: <span class="math inline">\(m\)</span> is undefined</p>
-</div><div class="column" style="width:50%;">
-<div class="center-text">
-<p><strong>Rise over Run</strong></p>
-</div>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="images/slope.PNG" class="quarto-figure quarto-figure-center" style="width:80.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div></div>
-</section>
-<section id="slope-roc" class="slide level2" data-menu-title="Slope represents rate of change">
-<h2></h2>
-<p><span class="slide-title">Slope represents rate of change</span></p>
-<hr>
-
-<img data-src="images/loa.PNG" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"></section>
-<section id="slope-avg" class="slide level2" data-cdata-menu-title="can be average or instantaneous">
-<h2></h2>
-<p><span class="slide-title">Slope can be <em>average</em> or <em>instantaneous</em></span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<ul>
-<li>Rise over run can always be used to find average rate of change between two parts of a graph</li>
-</ul>
-</div><div class="column" style="width:50%;">
-<ul>
-<li>Instantaneous rate of change leads us to ✨calculus✨.</li>
-</ul>
-</div></div>
-
-<img data-src="images/trex.PNG" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
-<section id="ta-2" class="slide level2" data-menu-title="Team" data-background-color="#003660">
-<h2></h2>
-<div class="page-center">
-<div class="custom-subtitle">
-Team Assessment
-</div>
-</div>
-</section>
-<section id="ta-q2" class="slide level2" data-menu-title="Team Assesment 2">
-<h2></h2>
-<!--TODO: we need some equitable way of having them interact with each other.-->
-<p>Your team measured the concentrations of pesticides in a lake exposed to agricultural runoff. You have the following equation describing the total amount of pesticides in the lake if runoff is stopped from the farm by a new policy incentive reducing pesticides use:</p>
-<p><span class="math display">\[
-\begin{aligned}
-&amp;y=(8-2t)(t+2) \\
-&amp;\text{Where } y \text{ is pesticde concentration in ppb} \\
-&amp;\text{and } t \text{ is time in years}.
-\end{aligned}
-\]</span></p>
-<p>Work with your team to</p>
-<ul>
-<li><p><strong>first</strong> discuss conceptually how you would solve <em>all</em> the following tasks, do not write anything!</p></li>
-<li><p><strong>second</strong> work out with pen and paper the solutions to verify the ideas you discussed.</p></li>
-</ul>
-<ol type="1">
-<li><p>What kind of equation is this? Would it be useful to write it in another form?</p></li>
-<li><p>How long will it take for the pesticide concentration in the lake to reach zero? Since the equation is a polynomial describe why one solution is more applicable than the other.</p></li>
-<li><p>Present your findings (choose between a graph or table).</p></li>
-<li><p>What is the average change in concentration from year 0 to year 4?</p></li>
-<li><p>Explain to your client why concentrations might behave the way they were modeled.</p></li>
-</ol>
-</section>
-<section id="ta-sol21" class="slide level2" data-menu-title="Team Assesment 2 Solutions">
-<h2></h2>
-<span class="slide-title">Solution 1</span>
-<hr>
-<p>Let’s expand out the equation so it becomes easier to graph.</p>
-<p><span class="math display">\[
-\begin{aligned}
-y&amp;=(-2t+8)(t+2) \\
-y&amp;=\overbrace{-2t^2}^{\text{First}}-\overbrace{4t}^{\text{Outside}}+\overbrace{8t}^{\text{Inside}}+\overbrace{16}^{\text{Last}}\\
-y&amp;=-2t^2+4t+16
-\end{aligned}
-\]</span></p>
-</section>
-<section id="ta-q2-sol2" class="slide level2" data-menu-title="Team Assesment 2 Solutions">
-<h2></h2>
-<span class="slide-title">Solution 2</span>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="center-text">
-<p>Use the Quadratic Formula</p>
-</div>
-<p><span class="math display">\[
-\begin{aligned}
-0&amp;=-2t^2+4t+16 \\
-0&amp;=\frac{-4\pm\sqrt{4^2-4(-2)(16)}}{2(-2)}\\
-0&amp;=\frac{-4\pm\sqrt{16+128}}{-4} \\
-&amp;t=4\text{, } t=-2
-\end{aligned}
-\]</span></p>
-</div><div class="column" style="width:50%;">
-<div class="center-text">
-<p>Use the factors</p>
-</div>
-<p><span class="math display">\[
-\begin{aligned}
-2t-8=0 \\
-t=\frac{8}{2}\\
-t=4
-\end{aligned}
-\]</span></p>
-</div></div>
-</section>
-<section id="ta-q2-sol3" class="slide level2" data-menu-title="Team Assesment 2 Solutions">
-<h2></h2>
-<span class="slide-title">Solution 3</span>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="lecture-algebra_files/figure-revealjs/unnamed-chunk-12-1.png" style="width:90.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a></a>t<span class="ot">=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="dv">4</span>)</span>
-<span id="cb1-2"><a></a>y<span class="ot">=</span><span class="sc">-</span><span class="dv">2</span><span class="sc">*</span>t<span class="sc">^</span><span class="dv">2</span><span class="sc">+</span><span class="dv">4</span><span class="sc">*</span>t<span class="sc">+</span><span class="dv">16</span></span>
-<span id="cb1-3"><a></a>df<span class="ot">&lt;-</span><span class="fu">data.frame</span>(<span class="at">t=</span>t,<span class="at">y=</span>y)</span>
-<span id="cb1-4"><a></a>p<span class="ot">&lt;-</span>df <span class="sc">%&gt;%</span> </span>
-<span id="cb1-5"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>t,<span class="at">y=</span>y))<span class="sc">+</span></span>
-<span id="cb1-6"><a></a>  <span class="fu">geom_line</span>(<span class="at">color=</span><span class="st">"#003660"</span>,<span class="at">linewidth=</span><span class="dv">3</span>)<span class="sc">+</span></span>
-<span id="cb1-7"><a></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Years"</span>,<span class="at">y=</span><span class="st">"Pesticide Concentration"</span>)<span class="sc">+</span></span>
-<span id="cb1-8"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
-<span id="cb1-9"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>),<span class="at">limits =</span> <span class="fu">c</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="dv">22</span>))<span class="sc">+</span></span>
-<span id="cb1-10"><a></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
-<span id="cb1-11"><a></a>  <span class="fu">theme</span>(<span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">28</span>)) </span>
-<span id="cb1-12"><a></a></span>
-<span id="cb1-13"><a></a>p</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-</div></div>
-</section>
-<section id="ta-q2-sol4" class="slide level2" data-menu-title="Team Assesment 4 Solutions">
-<h2></h2>
-<span class="slide-title">Solution 4</span>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="lecture-algebra_files/figure-revealjs/unnamed-chunk-14-1.png" style="width:90.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="cell">
-<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb2"><pre class="sourceCode numberSource r number-lines code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a></a>p2<span class="ot">&lt;-</span>df <span class="sc">%&gt;%</span> </span>
-<span id="cb2-2"><a></a>  <span class="fu">filter</span>(t<span class="sc">&gt;=</span><span class="dv">0</span>) <span class="sc">%&gt;%</span> </span>
-<span id="cb2-3"><a></a>  <span class="fu">ggplot</span>(<span class="fu">aes</span>(<span class="at">x=</span>t,<span class="at">y=</span>y))<span class="sc">+</span></span>
-<span id="cb2-4"><a></a>  <span class="fu">geom_line</span>(<span class="at">color=</span><span class="st">"#003660"</span>,<span class="at">linewidth=</span><span class="dv">3</span>)<span class="sc">+</span></span>
-<span id="cb2-5"><a></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Years"</span>,<span class="at">y=</span><span class="st">"Pesticide Concentration"</span>)<span class="sc">+</span></span>
-<span id="cb2-6"><a></a>  <span class="fu">scale_x_continuous</span>(<span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>)) <span class="sc">+</span></span>
-<span id="cb2-7"><a></a>  <span class="fu">scale_y_continuous</span>(<span class="at">expand =</span> <span class="fu">c</span>(<span class="dv">0</span>, <span class="dv">0</span>),<span class="at">limits=</span><span class="fu">c</span>(<span class="sc">-</span><span class="dv">2</span>,<span class="dv">22</span>))<span class="sc">+</span></span>
-<span id="cb2-8"><a></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept =</span> <span class="dv">0</span>)<span class="sc">+</span></span>
-<span id="cb2-9"><a></a>  <span class="fu">annotate</span>(<span class="st">"segment"</span>,<span class="at">x=</span><span class="dv">0</span>,<span class="at">xend=</span><span class="dv">4</span>,<span class="at">y=</span><span class="dv">16</span>,<span class="at">yend=</span><span class="dv">0</span>,<span class="at">color=</span><span class="st">"#FEBC11"</span>,<span class="at">linewidth=</span><span class="dv">2</span>)<span class="sc">+</span></span>
-<span id="cb2-10"><a></a>  <span class="fu">theme_classic</span>()<span class="sc">+</span></span>
-<span id="cb2-11"><a></a>  <span class="fu">theme</span>(<span class="at">text =</span> <span class="fu">element_text</span>(<span class="at">size =</span> <span class="dv">28</span>)) </span>
-<span id="cb2-12"><a></a></span>
-<span id="cb2-13"><a></a>p2</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</div>
-<p>Use rise over run:</p>
-<p><span class="math display">\[
-\frac{\Delta y}{\Delta x}=\frac{0-16}{4-0}=-4
-\]</span></p>
-<p>Pesticides are removed from the lake at an average rate of 4 ppb per year.</p>
-</div></div>
-</section>
-<section id="ta-q2-sol5" class="slide level2" data-menu-title="Team Assesment 5 Solutions">
-<h2></h2>
-<span class="slide-title">Solution 5</span>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="lecture-algebra_files/figure-revealjs/unnamed-chunk-16-1.png" style="width:90.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p>Pesticide concentrations might initially increase in the lake from residual particles in the soil being washed into the lake. Then a mixture microbial activity and other chemical process reduce the pesticides to more inert components.</p>
-<p>(You will learn the actual answer in ESM 202: Environmental Biogeochemistry)</p>
-</div></div>
-<!--TODO: include review of what we covered-->
 
 
 </section>
@@ -1665,44 +1389,6 @@ t=4
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
       window.document.addEventListener("DOMContentLoaded", function (event) {
         const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
@@ -1787,6 +1473,11 @@ t=4
               if (link.dataset.originalHref !== undefined) {
                 link.href = link.dataset.originalHref;
               }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
             }
           }
         function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {

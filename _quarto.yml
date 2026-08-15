@@ -21,6 +21,13 @@ website:
             url: https://github.com/MESM-math-bootcamp/MESM-math-bootcamp-website
           - text: Report a bug
             url: https://github.com/MESM-math-bootcamp/MESM-math-bootcamp-website/issues
+  
+  announcement: 
+    icon: hammer
+    dismissable: true
+    content: "This wesbite is currently under construction: all slides are being reviewed and updated. Please come back on September 15, 2026 for the updated version."
+    type: primary
+    position: below-navbar
 
   sidebar:
     id: daily-materials
@@ -56,3 +63,4 @@ format:
 
 editor: source
 
+link-external-newwindow: True

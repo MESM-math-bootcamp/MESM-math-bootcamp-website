@@ -1,11 +1,22 @@
 ---
-format: 
+format:
   revealjs:
     chalkboard: true
     slide-number: true
     show-slide-number: print
     theme:
-     - ../../ucsb-media.scss    
+     - ../../ucsb-media.scss
+    include-in-header:
+      text: |
+        <script>
+        (function loadCancelExtension(){
+          if (window.MathJax && window.MathJax.Hub) {
+            MathJax.Hub.Config({ TeX: { extensions: ["cancel.js"] } });
+          } else {
+            setTimeout(loadCancelExtension, 20);
+          }
+        })();
+        </script>
 
 ---
 
@@ -114,13 +125,13 @@ Before:
 <hr>
 
 ::: {.body-text-l}
-1.  Shake off the math dust
+1.  🧹 Shake off the math dust
 
-2.  Exercise core math skills needed to succeed in your Bren courses
+2.  💪 Exercise core math skills needed to succeed in your Bren courses
 
-3.  Explore how valuable math is to environmental data science
+3.  🌎 Explore how valuable math is to environmental data science
 
-4.  Build a collaborative environment and get to know your cohort
+4.  🤝 Build a collaborative environment and get to know your cohort
 :::
 
 ---
@@ -134,15 +145,15 @@ Before:
 ::: {.body-text-m}
 We expect all students will:
 
-- Support and encourage all classmates
+- 🤗 Support and encourage all classmates
 
-- Be open to learning from each other
+- 🌱 Be open to learning from each other
 
-- Bring a collaborative attitude and communicate respectfully
+- 🙌 Bring a collaborative attitude and communicate respectfully
 
-- See opportunities to share kownledge as a chance to deepen understanding
+- 💡 See opportunities to share kownledge as a chance to deepen understanding
 
-- Complete all in-class exercises
+- ✅ Complete all in-class exercises
 :::
 
 ---
@@ -156,15 +167,15 @@ We expect all students will:
 ::: {.body-text-m}
 We expect all students will:
 
-- Support and encourage all classmates
+- 🤗 Support and encourage all classmates
 
-- Be open to learning from each other
+- 🌱 Be open to learning from each other
 
-- Bring a collaborative attitude and communicate respectfully
+- 🙌 Bring a collaborative attitude and communicate respectfully
 
-- See opportunities to share kownledge as a chance to deepen understanding
+- 💡 See opportunities to share kownledge as a chance to deepen understanding
 
-- Complete all in-class exercises
+- ✅ Complete all in-class exercises
 
 :::
 

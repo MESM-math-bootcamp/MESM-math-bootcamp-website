@@ -8,7 +8,7 @@
 
 <meta name="description" content="Summer 2026">
 
-<title>Bren Calculus Workshop</title>
+<title>Bren Math Workshop – Bren Calculus Workshop</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -132,6 +132,9 @@ ul.task-list li input[type="checkbox"] {
         </a>
     </div>
   </nav>
+  <div id="quarto-announcement" data-announcement-id="a48e131e2e9e59e830342d316752bb6a" class="alert alert-primary hidden"><i class="bi bi-hammer quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>This wesbite is currently under construction: all slides are being reviewed and updated. Please come back on September 15, 2026 for the updated version.</p>
+</div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
@@ -186,7 +189,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Bren Calculus Workshop</h1>
+<h1 class="title">Bren Math Workshop</h1>
 <p class="subtitle lead">Master of Environmental Science and Management (MESM)</p>
 </div>
 
@@ -209,7 +212,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Welcome to the course materials for the Bren Calculus Workshop! In this website you will find all the materials for the Summer 2026 session. This workshop is part of the <a href="https://bren.ucsb.edu/masters-programs/master-environmental-science-and-management">UCSB Master of Environmental Science and Management</a> at the <a href="https://bren.ucsb.edu">Bren School of Environmental Science and Management</a>.</p>
+<p>Welcome to the course materials for the Bren Math Workshop! In this website you will find all the materials for the Summer 2026 session. This workshop is part of the <a href="https://bren.ucsb.edu/masters-programs/master-environmental-science-and-management">UCSB Master of Environmental Science and Management</a> at the <a href="https://bren.ucsb.edu">Bren School of Environmental Science and Management</a>.</p>
 <section id="workshop-description" class="level2">
 <h2 class="anchored" data-anchor-id="workshop-description">Workshop description</h2>
 <p>This 5-day workshop takes place during the MESM orientation week for incoming students. This workshop is meant to get everyone to a sufficient level to excel in all the courses offered at Bren. The primary workshop objectives are as follows:</p>
@@ -230,6 +233,11 @@ ul.task-list li input[type="checkbox"] {
 <!-- ## Syllabus
 
 [Click here to see the syllabus.](https://docs.google.com/document/d/14dcg7u3n1rEz-fReZcO8Gnddk3hEGi8u4DKTroWdonU/edit?usp=share_link){target="_blank"}   -->
+</section>
+<section id="acknowledgements" class="level2">
+<h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
+<p>The materials for the Bren Math Workshop were originally developed and taught by <a href="https://bren.ucsb.edu/people/nathan-grimes">Nathan Grimes</a>. This new website houses materials which are reused, adapted, and expanded from, and inspired by the previous instructors’ work.</p>
+<!-- [Allison Horst](https://allisonhorst.github.io/){target="_blank"}. It has since been taught and adapted by [Ruth Oliver](https://www.oliverlab.org){target="_blank"}, [Sam Shanny-Csik](https://samanthacsik.github.io){target="_blank"} and, most recently, myself, [Carmen Galaz García](https://bren.ucsb.edu/people/carmen-galaz-garcia).  -->
 
 
 </section>
@@ -322,6 +330,11 @@ ul.task-list li input[type="checkbox"] {
           if (link.dataset.originalHref !== undefined) {
             link.href = link.dataset.originalHref;
           }
+            // target, if specified
+            link.setAttribute("target", "_blank");
+            if (link.getAttribute("rel") === null) {
+              link.setAttribute("rel", "noopener");
+            }
         }
       }
     function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
