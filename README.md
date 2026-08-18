@@ -20,5 +20,9 @@ The primary workshop objectives are as follows:
 - Help transition to graduate school life
 - Build collaborative environment
 
+## Repository Structure
+
+For a detailed overview of the repository structure, see [FOLDER_TREE.md](FOLDER_TREE.md).
+
 ## Instructor
 [**Carmen Galaz García**](https://bren.ucsb.edu/people/carmen-galaz-garcia-0) (she/her/hers)
