@@ -11,10 +11,10 @@ execute:
 
 
 website:
-  title: "Bren Calculus Workshop"
+  title: "Bren Math Workshop"
   favicon: images/favicon.png
   navbar:
-    title: "Bren Calculus Workshop"
+    title: "Bren Math Workshop"
     right:
       - text: home
         href: index.qmd

@@ -8,27 +8,21 @@ format:
      - ../../ucsb-media.scss    
 ---
 
-## {#title-slide data-menu-title="Title Slide" background=.white}
+## {#title-slide data-menu-title="Title Slide" background="#053660"}
 
-[Rules and Applications of Derivatives]{.custom-title .blue-text}
+[Rules and Applications of Derivatives]{.custom-title}
 
-[Bren Calculus Workshop]{.custom-subtitle .gold}
+[Bren Math Workshop]{.custom-subtitle .gold}
 
 <hr class="hr-teal">
 
-[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .blue-text}
+[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .baby-blue-text}
 
-[Bren School of Environmental Science & Management]{.center-text .body-text-m .blue-text}
-
-<br>
+[Bren School of Environmental Science & Management]{.center-text .body-text-m .baby-blue-text}
 
 <br>
 
-[**Last updated:** `r format(Sys.time(), '%b %d, %Y')`]{.body-text-s .blue-text}
-
-<br>
-
-*Materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop.*
+[*Materials have been adapted from Nathaniel Grimes work for the Bren Math Workshop.*]{.baby-blue-text .body-text-s}
 
 <!---------------------------------------------------------------------->
 

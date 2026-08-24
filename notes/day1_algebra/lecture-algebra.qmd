@@ -24,6 +24,8 @@ format:
 
 <hr class="hr-teal">
 
+[*Materials have been adapted from Nathaniel Grimes work for the Bren Math Workshop.*]{.baby-blue-text .body-text-s}
+
 ---
 
 ## {#basics-title data-menu-title="EDS 212 basics" background-color="#003660"}

@@ -4,7 +4,7 @@
 
 ## Lecture Materials
 
-[Limits lecture slides](lecture-limits.qmd)
+[Limits lecture slides](lecture-limits.qmd){target="_blank"}
 
 **Contents**
 
