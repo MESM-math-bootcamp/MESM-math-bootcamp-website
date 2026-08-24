@@ -3,19 +3,15 @@ format:
   revealjs:
     chalkboard: true
     slide-number: true
-    show-slide-number: print
+    show-slide-number: all
     theme:
      - ../../ucsb-media.scss
     include-in-header:
       text: |
-        <script>
-        (function loadCancelExtension(){
-          if (window.MathJax && window.MathJax.Hub) {
-            MathJax.Hub.Config({ TeX: { extensions: ["cancel.js"] } });
-          } else {
-            setTimeout(loadCancelExtension, 20);
-          }
-        })();
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          TeX: { extensions: ["cancel.js"] }
+        });
         </script>
 
 ---
