@@ -3,7 +3,7 @@ format:
   revealjs:
     chalkboard: true
     slide-number: true
-    show-slide-number: print
+    show-slide-number: all
     theme:
      - ../../ucsb-media.scss    
 ---

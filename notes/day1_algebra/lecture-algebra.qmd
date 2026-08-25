@@ -3,7 +3,7 @@ format:
   revealjs:
     chalkboard: true
     slide-number: true
-    show-slide-number: print
+    show-slide-number: all
     theme:
      - ../../ucsb-media.scss
     include-in-header:
@@ -22,7 +22,7 @@ format:
 
 ## {#title-slide data-menu-title="Title Slide" background="#053660"} 
 
-[Bren Math Workshop]{.custom-title}
+[MESM Math Workshop]{.custom-title}
 
 [*Day 1: Algebra refresher, units*]{.custom-subtitle}
 
@@ -34,14 +34,14 @@ format:
 
 
 <div class="page-center">
-<div class="custom-subtitle">Bren Math Workshop basics</div>
+<div class="custom-subtitle">MESM Math Workshop basics</div>
 </div>
 
 ---
 
-## {#welcome data-menu-title="Welcome to Bren Math Workshop!"} 
+## {#welcome data-menu-title="Welcome to MESM Math Workshop!"} 
 
-[Welcome to the Bren Math Workshop]{.slide-title}
+[Welcome to the MESM Math Workshop]{.slide-title}
 
 <hr>
 
@@ -50,7 +50,10 @@ format:
 - **Instructor:** Carmen Galaz García
 - **Course hours:** Daily 12:00pm - 2:00pm PST (except for Day 5, which is 12:30pm - 2:30pm PST)
 - **Location:** Bren Hall 1414
-- **Website:** [https://mesm-math-bootcamp.github.io/MESM-math-bootcamp-website/](https://mesm-math-bootcamp.github.io/MESM-math-bootcamp-website/)
+- **Website:** [https://bit.ly/mesm-math-workshop](https://bit.ly/mesm-math-workshop)
+
+
+![](images/mesm-math-workshop-2026.png){fig-align="center" width="60%"}
 
 ---
 
@@ -109,8 +112,8 @@ Before:
 <hr>
 
 ::: {.body-text-l}
-- **Day 1:** Algebra refresher; Units
-- **Day 2:** Unit conversions; Functions; Graphing; 
+- **Day 1:** Algebra refresher; Units I
+- **Day 2:** Units II; Functions; Graphing; Linear functions
 - **Day 3:** Exponential functions and logarithms; Limits
 - **Day 4:**  Derivatives 
 - **Day 5:**  Integration & ODEs
@@ -1160,234 +1163,256 @@ A **zero**, **root**, or **solution** for a polynomial is a value of $x$ that ma
 
 ---
 
-## {#fundamental-2 data-menu-title="Fundamental Theorem of Algebra"}
+## {#units-title data-menu-title="Units" background-color="#003660"}
 
-[Fundamental Theorem of Algebra]{.slide-title}
 
-<hr>
+<div class="page-center">
+<div class="custom-subtitle">Units</div>
+</div>
 
-:::{.body-text-m}
-A **zero**, **root**, or **solution** for a polynomial is a value of $x$ that makes the polynomial equal to zero.
-:::
-
-<br>
-
-:::{.center-text}
-*Fundamental Theorem of Algebra*
-:::
-A polynomial
-$$
-a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0
-$$
-
-of degree $n$ has exactly $n$ roots $r_1, \ldots, r_n$ and it can be factored as
-
-$$
-c(x-r_1) ... (x-r_n)
-$$
-
-The roots $r_1, \ldots, r_n$ may be complex numbers!
 
 ---
 
-## {#example-linear data-menu-title="Example: linear equation"}
+## {#units-1 data-menu-title="Units"} 
 
-[Example: linear equation]{.slide-title}
+[UNITS. UNITS. UNITS.]{.slide-title}
+
+<hr>
+
+<br>
+
+::: {.body-text-m}
+Think about these statements, which all contain the same *value* of 4:
+
+<br>
+
+- There are four in the refrigerator.
+
+- There are four **burritos** in the refrigerator.
+
+- There are four **roaches** in the refrigerator.
+
+- There are four **million dollars** in the refrigerator.
+:::
+
+---
+
+## {#units-2 data-menu-title="Units"} 
+
+[UNITS. UNITS. UNITS.]{.slide-title}
 
 <hr>
 
-- A linear equation is just a 1st degree polynomial. How many solutions does it have?
+::: {.body-text-m}
+Think about this sign at New Cuyama. Anything odd here?
+:::
 
-$$
-3x+2=10x-12
-$$
+:::{.center-text}
+![](images/cuyama.jpeg){width="50%"}
+:::
 
-This can be rewritten as:
+---
 
-$$
-x - 2 = 0.
-$$
+## {#units-critical data-menu-title="Units are critical"} 
 
-So $r_1 = 2$ is the root. There is a single root because the degree is 1.
-
-. . . 
-
-<br>
-
-Finding the roots of $n$-th degree polynomials is much harder - we will let computers do it for us.
-
-- Let's zoom in on 2nd degree polynomials
-
-## {#example-second-degree data-menu-title="Example: second degree"}
-
-[Example: second degree polynomial]{.slide-title}
+[Units are critical in environmental science]{.slide-title2}
 
 <hr>
-What happens if $x=4$ or $x=-3$ in  $x^2-x-12$?
+
+<br>
+<br>
+
+::: {.center-text .body-text-l}
+We cannot responsibly work with data without knowing the units of **each variable we're working with**.
 
 <br>
 
-:::{.incremental}
-
-- This means 4 and 3 are roots of the polynomial $x^2-x-12$. 
-
-<br>
-
-- The only way to get $x^2-x-12=0$ is for $x$ to either be 4 or -3.
-
-<br>
-
-- We can rewrite 
-$$x^2-x-12 = (x-4)(x+3).$$
-
-<br>
-
-- Verify the factorization on the right. 
+That means we need to always **familiarize ourselves with variables**, carefully **check units and any unit conversions**, and understand **how units combine into the units of a dependent variable**.
 :::
 
 
-<!--
-## {#foil data-menu-title="FOIL"}
+---
 
-[(F)irst (O)utside (I)nside (L)ast]{.slide-title}
+## {#unit-conv data-menu-title="Unit conversions"} 
+
+[Dimensional analysis (unit conversions)]{.slide-title}
 
 <hr>
 
-Second degree polynomials can be rewritten as a product of their roots (solutions/zeros):
+In dimensional analysis, we multiply initial units by a sequence of **unit conversion factors** to arrive at the final desired units.
+
+**Example:** How many centimiters are there in 6 inches?
+
+✏️  [Let's solve this together.]{style="color:green;"}
 
 
-We can expand using FOIL!
+---
+
+## {#unit-conv-solution-1 data-menu-title="Unit conversions"} 
+
+[Dimensional analysis (unit conversions)]{.slide-title}
+
+<hr>
+
+In dimensional analysis, we multiply initial units by a sequence of **unit conversion factors** to arrive at the final desired units.
+
+**Example:** How many centimiters are there in 6 inches?
+
+We know: 1 inch = 2.54 cm. This gives us two unit conversion factors:
 
 
-[**Multiply each term in the adjacent polynomial and add together**]{.seagreen}
+$$ \frac{2.54 \text{ cm}}{1 \text{ in}} \text{ and } \frac{1 \text{ in}}{2.54 \text{ cm}}.$$
+Important: the fraction the numerator and denominator represent the same quantity. 
 
-$$
+Then we multiply by the *appropriate* conversion factor and simplify:
+
 \begin{align*}
-\text{First}&=x*x & \text{Outside}&=3x & \text{Inside}&=-4x & \text{Last}&=-12 \\
-x^2-&x-12=0 & &\text{Add all terms together}
+
+6 \text{ in} &= 6 \text{ in} \cdot  \frac{2.54 \text{ cm}}{1 \text{ in}}\\
+&= 6  \frac{2.54}{1} \cdot  \text{ in}\frac{\text{ cm}}{\text{ in}} \\
+&= 15.24 \cancel{\text{ in}}\frac{\text{ cm}}{\cancel{\text{ in}}} \\
+&= 15.24 \text{ cm}
 \end{align*}
-$$
 
--->
+---
 
-## {#quad data-menu-title="Quadratic Formula"}
+## {#unit-conv-2 data-menu-title="Unit conversions"} 
 
-[Quadratic Formula solves 2nd degree polynomials]{.slide-title}
+[Dimensional analysis (unit conversions)]{.slide-title}
 
 <hr>
 
-**For any second degree polynomial**
+**Example.** Convert $100 \frac{g}{cm^3}$ into units of $\frac{kg}{in^3}$, given that 1 cm^3^ = 0.061 in^3^.
 
-$$
-ax^2+bx+c=0
-$$
+✏️  [Let's solve this together.]{style="color:green;"}
 
-**The roots to can be found using the quadratic formula:**
+---
 
-$$
-x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}
-$$
+## {#unit-conv-2-solution data-menu-title="Unit conversions"} 
 
-. . .
+[Dimensional analysis (unit conversions)]{.slide-title}
 
-*Example:*
+<hr>
 
- Let's use the quadratic formula to find the solutions to $x^2-x-12=0$.
+**Example.** Convert $100 \frac{g}{cm^3}$ into units of $\frac{kg}{in^3}$, given that 1 cm^3^ = 0.061 in^3^.
+
+We need one unit conversion factor for $g$: 
+$\frac{1 \text{ kg}}{1000 \text{ g}}$.
+
+And another one for $\text{cm}^3$:
+$\frac{1 \text{ cm}^3}{0.061 \text{in}^3}$.
+
+Then we multiply by the conversion factors and simplify
+
+\begin{align*}
+
+100 \frac{\text{ g}}{\text{cm}^3} &= 100 \frac{\text{ g}}{\text{cm}^3} \cdot \frac{1 \text{ cm}^3}{0.061 \text{ in}^3} \cdot \frac{1 \text{ kg}}{1000 \text{ g}}\\
+&= 100 \frac{1}{0.061} \frac{1}{1000}\cdot \frac{\text{ g}}{\text{cm}^3} \frac{\text{ cm}^3}{ \text{ in}^3} \frac{ \text{ kg}}{\text{ g}}\\
+&= \frac{1}{0.61} \cdot \frac{\cancel{\text{ g}}}{\cancel{\text{cm}^3}} \frac{\cancel{\text{ cm}^3}}{ \text{ in}^3} \frac{ \text{ kg}}{\cancel{\text{ g}}}\\
+&=1.639\frac{kg}{in^3}
+\end{align*}
+
+---
+
+## {#unit-conv-practice data-menu-title="Unit conversions practice"} 
+
+[Unit conversion practice]{.slide-title}
+
+<hr>
+
+:::{style="color:green;"}
+1. Convert $8.1\frac{km}{s}$ to miles per hour, given that 1 km = 0.621 miles.
+
+<br>
 
 
-## {#ta data-menu-title=Team" background-color="#003660"}
+2. You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:
+
+-   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)
+-   **Company B:** 692 liters spilled (94% recovered)
+-   **Company C:** 18.1 gallons spilled (0% recovered)
+
+What is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.
+:::
+
+---
+
+## {#unit-conv-solutions-1 data-menu-title="Unit conversions practice"} 
+
+[Unit conversion practice: solutions]{.slide-title}
+
+<hr>
+
+1. Convert $8.1\frac{km}{s}$ to miles per hour, given that 1 km = 0.621 miles.
+
+✏️  [Let's see a solution!]{style="color:green;" .body-text-m}
+
+
+---
+
+## {#unit-conv-solutions-2 data-menu-title="Unit conversions practice" .smaller} 
+
+[Unit conversion practice: solutions]{.slide-title}
+
+<hr>
+
+2. You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:
+
+-   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)
+-   **Company B:** 692 liters spilled (94% recovered)
+-   **Company C:** 18.1 gallons spilled (0% recovered)
+
+What is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.
+
+✏️  [Let's see a solution!]{style="color:green;" .body-text-m}
+
+---
+
+## {#unit-conv-solutions-3 data-menu-title="Unit conversions practice" .smaller} 
+
+[Unit conversion practice: solutions]{.slide-title}
+
+<hr>
+
+1. 
+
+[$8.1\frac{km}{s} \times 60\frac{s}{min} \times 60\frac{min}{hr} \times 0.621\frac{mi}{km} = 18108.36 \frac{mi}{hr}$]{.body-text-m}
+
+2. You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:
+
+-   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)
+-   **Company B:** 692 liters spilled (94% recovered)
+-   **Company C:** 18.1 gallons spilled (0% recovered)
+
+What is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.
+
+[**Company A:** $14.6\text{ barrels} - 9.3\text{ barrels} = 5.3\text{ barrels unrecovered}$]{.body-text-m}
+
+[**Company B:** $692\text{ liters} \times (1-0.94) = 41.52\text{ liters unrecovered} \rightarrow 41.52\text{ L} \times \frac{1\text{ barrel}}{159\text{ L}} = 0.26\text{ barrels}$]{.body-text-m}
+
+[**Company C:** $18.1\text{ gallons} \times \frac{1\text{ barrel}}{42\text{ gal}} = 0.43\text{ barrels unrecovered}$]{.body-text-m}
+
+[**Total:** $5.3\text{ barrels} + 0.26\text{ barrels} + 0.43\text{ barrels} = 5.99\text{ barrels unrecovered}$]{.body-text-m}
+
+---
+
+## {#wrapping-up data-menu-title="Integration" background-color="#003660"}
 
 <div class="page-center">
-<div class="custom-subtitle">Team Assessment</div>
+<div class="custom-subtitle">Wrapping up...</div>
 </div>
 
-##
+---
 
-1) Identify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)
+## {#what-we-covered data-menu-title="What we covered today" }
 
-$$
-4x^2+x-14=0
-$$
 
-<br>
-
-2) Identify which numbers you should plug into which variable of the quadratic formula (e.g. a,b,c)
-
-$$
-256-\sqrt{44}x^2+.23x=10
-$$
-
-<br>
-
-3) What happens if $b^2-4ac$ is negative in the quadratic formula?
-
-<br>
-
-4) Expand $(3x-6)(2x+1)$
-
-## {#ta-sol-one data-menu-title="Solutions to first TA"}
-
-[Solutions]{.slide-title}
+[What we covered today]{.slide-title}
 
 <hr>
 
-$$
-4x^2+x-14=0
-$$
-
-
-$$
-\begin{aligned}
-a=4 \\
-b=1 \\
-c=-14
-\end{aligned}
-$$
-
-## {#ta-sol-two data-menu-title="Solutions to first TA"}
-
-[Solutions]{.slide-title}
-
-<hr>
-
-$$
-256-\sqrt{44} x^2+.23x=10
-$$
-
-
-$$
-\begin{aligned}
-a=\sqrt{44} \\
-b=.23 \\
-c=246
-\end{aligned}
-$$
-
-[This will probably be a nasty calculation, but that is what computers are for. The order does not matter, only that the $a$ corresponds to the square term, the $b$ to the 1st degree term, and the $c$ to the constant.]{.body-text-s .teal-text}
-
-## {#ta-sol-three data-menu-title="Solutions to first TA"}
-
-[Solutions]{.slide-title}
-
-<hr>
-
-3) What happens if $b^2-4ac$ is negative in the quadratic formula
-
-[There are no real solutions, but complex (imaginary) solutions. This means numbers of the form $a+ib$ where $i = \sqrt{-1}$. These can still be useful - but that's for another class!]{.teal-text}
-
-## {#ta-sol-four data-menu-title="Solutions to first TA"}
-
-[Solutions]{.slide-title}
-
-<hr>
-
-4) Expand $(3x-6)(2x+1)$
-
-$$
-\begin{align}
-(3x-6)(2x+1) \\
-6x^2+3x-12x-6 \\
-6x^2-9x-6
-\end{align}
-$$
-
+- <span style="color:#D6001C"><b>🔢 Algebra review</b></span>  
+- <span style="color:#003366"><b>🗺️ Solving equations</b></span>
+- <span style="color:#FF6600"><b>✖️ Exponents</b></span>  
+- <span style="color:#CC9900"><b>📐 Polynomials</b></span>  
+- <span style="color:#006699"><b>🌡  Units</b></span>  
