@@ -8,14 +8,10 @@ format:
      - ../../ucsb-media.scss
     include-in-header:
       text: |
-        <script>
-        (function loadCancelExtension(){
-          if (window.MathJax && window.MathJax.Hub) {
-            MathJax.Hub.Config({ TeX: { extensions: ["cancel.js"] } });
-          } else {
-            setTimeout(loadCancelExtension, 20);
-          }
-        })();
+        <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+          TeX: { extensions: ["cancel.js"] }
+        });
         </script>
 
 ---
@@ -27,6 +23,8 @@ format:
 [*Day 1: Algebra refresher, units*]{.custom-subtitle}
 
 <hr class="hr-teal">
+
+[*Materials have been adapted from Nathaniel Grimes work for the Bren Math Workshop.*]{.baby-blue-text .body-text-s}
 
 ---
 
