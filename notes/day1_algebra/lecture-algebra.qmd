@@ -575,16 +575,13 @@ Always add/substract/multiply/divide by the same number on both sides. More gene
 
 **Example**
 
-Prices are important in economics, but not always available for environmental goods.
-
-
 :::{.center-text}
-**How do we get prices if we know quantity?**
+**Isolate $y$ in terms of $x$:**
 :::
 
 $$
 \begin{aligned}
-Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
+x&=\frac{(400-y)}{80} \\
 \end{aligned}
 $$
 
@@ -601,15 +598,13 @@ $$
 
 💡 [Let's see a solution!]{style="color:green;"}
 
-Prices are important in economics, but not always available for environmental goods. 
-
 :::{.center-text}
-**How do we get prices if we know quantity?**
+**Isolate $y$ in terms of $x$:**
 :::
 
 $$
 \begin{aligned}
-Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
+x&=\frac{(400-y)}{80} \\
 \end{aligned}
 $$
 
@@ -624,22 +619,21 @@ $$
 
 💡 [Let's see a solution!]{style="color:green;"}
 
-Prices are important in economics, but not always available for environmental goods. 
-
-
 :::{.center-text}
-**How do we get prices if we know quantity?**
+**Isolate $y$ in terms of $x$:**
 :::
 
 $$
 \begin{aligned}
-Q&=\frac{(400-P)}{80} &\text{Isolate P in terms of Q} \\
-80Q&=\frac{(400-P)\cancel{80}}{\cancel{80}}  &\text{ Multiply both sides by 80} \\
-80Q-400&=\cancel{400}-\cancel{400} -P &\text{ Subtract both sides by 400} \\
--1(80Q-400)&=-P(-1) &\text{Multiply both sides by -1} \\
-400-80Q&=P  &\text{Flip terms for simplicity}
+x&=\frac{(400-y)}{80} \\
+80x&=\frac{(400-y)\cancel{80}}{\cancel{80}}  &\text{ Multiply both sides by 80} \\
+80x-400&=\cancel{400}-\cancel{400} -y &\text{ Subtract both sides by 400} \\
+-1(80x-400)&=-y(-1) &\text{Multiply both sides by -1} \\
+400-80x&=y  &\text{Flip terms for simplicity}
 \end{aligned}
 $$
+
+---
 
 ## {#practice-alge-1 data-menu-title="Easy to make mistakes"}
 
@@ -660,6 +654,8 @@ Solve all in terms of $x$
 (C) $3(x+7a)-5=b+2(c-4x)$
 
 ✏️ [Take a minute to solve these individually.]{style="color:green;"}
+
+---
 
 ## {#practice-alge-2 data-menu-title="Easy to make mistakes"}
 
@@ -686,6 +682,9 @@ Solve all in terms of $x$
 :::
 
 ::::
+
+---
+
 ## {#practice-alge-3 data-menu-title="Easy to make mistakes"}
 
 [It can be easy to make mistakes while doing algebra. Practice is key!]{.slide-title}
@@ -698,6 +697,7 @@ Solve all in terms of $x$
 
 (C) $3(x+7a)-5=b+2(c-4x)$
 
+---
 
 ## {#practice-alge-4 data-menu-title="Solutions"}
 
@@ -760,7 +760,153 @@ $$
 
 ---
 
-## {#break data-menu-title="5 minute break"} 
+## {#algebra-practice-four data-menu-title="Solving equations: practice"}
+
+<!-- Sources: ESM 201 Exercise Bank Ex. 3; ESM 202 Exercise Bank Ex. 6; ESM 203 Exercise Bank Ex. 9; price/quantity example moved from #equations-solved-2 -->
+
+[Solving equations: practice]{.slide-title}
+
+<hr>
+
+✏️ [Solve these individually.]{style="color:green;"}
+
+::: {.body-text-s}
+1) Prices are important in economics, but not always available for environmental goods. If we know quantity $Q=\dfrac{(400-P)}{80}$, isolate $P$ in terms of $Q$.
+
+<br>
+
+2) The logistic per-capita growth rate is $r\left(1-\dfrac{N}{K}\right)$, where $N$ is population size, $K$ is carrying capacity, and $r$ is the intrinsic growth rate. If this rate equals $0.02$ when $N=750$ and $K=1000$, solve for $r$.
+
+<br>
+
+3) A steady-state concentration balance for a pollutant $C$ (mg/L) in a mixed system is $3(C-5)+2C=40$. Solve for $C$.
+
+<br>
+
+4) A watershed's water balance is: change in storage per unit time = precipitation ($P$) − actual ET − river outflows ($Q$). At steady state (storage isn't changing), with actual evapotranspiration (ET) being 60% of precipitation and $Q=320$ mm/y, solve for $P$.
+:::
+
+---
+
+## {#algebra-practice-space-1 data-menu-title="Practice 1: space to solve"}
+
+[Solving equations: practice]{.slide-title}
+
+<hr>
+
+💡 [Let's see a solution!]{style="color:green;" .body-text-m}
+
+**1)** Prices are important in economics, but not always available for environmental goods. If we know quantity $Q=\dfrac{(400-P)}{80}$, isolate $P$ in terms of $Q$.
+
+---
+
+## {#algebra-practice-space-2 data-menu-title="Practice 2: space to solve"}
+
+[Solving equations: practice]{.slide-title}
+
+<hr>
+
+💡 [Let's see a solution!]{style="color:green;" .body-text-m}
+
+**2)** The logistic per-capita growth rate is $r\left(1-\dfrac{N}{K}\right)$, where $N$ is population size, $K$ is carrying capacity, and $r$ is the intrinsic growth rate. If this rate equals $0.02$ when $N=750$ and $K=1000$, solve for $r$.
+
+---
+
+## {#algebra-practice-space-3 data-menu-title="Practice 3: space to solve"}
+
+[Solving equations: practice]{.slide-title}
+
+<hr>
+
+💡 [Let's see a solution!]{style="color:green;" .body-text-m}
+
+**3)** A steady-state concentration balance for a pollutant $C$ (mg/L) in a mixed system is $3(C-5)+2C=40$. Solve for $C$.
+
+---
+
+## {#algebra-practice-space-4 data-menu-title="Practice 4: space to solve"}
+
+[Solving equations: practice]{.slide-title}
+
+<hr>
+
+💡 [Let's see a solution!]{style="color:green;" .body-text-m}
+
+**4)** A watershed's water balance is: change in storage per unit time = precipitation ($P$) − actual ET − river outflows ($Q$). At steady state (storage isn't changing), with actual evapotranspiration (ET) being 60% of precipitation and $Q=320$ mm/y, solve for $P$.
+
+---
+
+## {#algebra-practice-answer data-menu-title="Practice solutions"}
+
+[Practice solutions]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**1)**
+
+$$
+\small
+\begin{aligned}
+Q&=\frac{(400-P)}{80} \\
+80Q&=400-P \\
+80Q-400&=-P \\
+P&=400-80Q
+\end{aligned}
+$$
+:::
+
+::: {.column width="50%"}
+**2)**
+
+$$
+\small
+\begin{aligned}
+1-\frac{750}{1000} &= 0.25 \\
+0.25r &= 0.02 \\
+r &= 0.08 \text{ per year}
+\end{aligned}
+$$
+:::
+
+::::
+
+:::: {.columns}
+
+::: {.column width="50%"}
+**3)**
+
+$$
+\small
+\begin{aligned}
+3C-15+2C&=40\\
+5C&=55\\
+C&=11 \text{ mg/L}
+\end{aligned}
+$$
+:::
+
+::: {.column width="50%"}
+**4)**
+
+$$
+\small
+\begin{aligned}
+\text{storage} &= P - AET - Q \\
+0 &= P - 0.6P - Q \\
+0.4P &= 320 \\
+P &= 800 \text{ mm/y}
+\end{aligned}
+$$
+:::
+
+::::
+
+---
+
+## {#break data-menu-title="5 minute break"}
 
 [Let's take a 5 minute break]{.slide-title}
 

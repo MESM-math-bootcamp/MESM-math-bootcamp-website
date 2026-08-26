@@ -1,0 +1,153 @@
+---
+sidebar: daily-materials
+execute:
+  freeze: true
+author: "Carmen Galaz García, Nathaniel Grimes"
+---
+# Solutions: Day 1 Algebra and Units Problem Set
+
+::: {.callout-tip}
+## Instructions 
+These are the solutions to the [algebra problem set](problem_set_algebra.qmd). Click a solution to expand it and try each problem yourself first!
+:::
+
+## Basics
+
+**1)** Expand the following expressions:
+
+a) $(x+2)(3x-4)$
+
+b) $(x^2-2y)(x+y^3)$
+
+::: {.callout-note collapse="true" title="Solution"}
+a) $(x+2)(3x-4) = 3x^2-4x+6x-8 = 3x^2+2x-8$
+
+b) $(x^2-2y)(x+y^3) = x^3+x^2y^3-2yx-2y^4$
+:::
+
+**2)** Solve for $x$ in the following equations:
+
+a) $2x-4=3x+12$
+
+b) $-6ax+2b=x-5c$
+
+c) $2x^2+3x-4=0$
+
+d) $x^2-2x-5=0$
+
+::: {.callout-note collapse="true" title="Solution"}
+a)
+$$
+\begin{aligned}
+2x-4&=3x+12 \\
+2x&=3x+16 &\text{Add 4 to both sides}\\
+-x&=16 &\text{Subtract $3x$ from both sides}\\
+x&=-16
+\end{aligned}
+$$
+
+b)
+$$
+\begin{aligned}
+-6ax+2b&=x-5c \\
+-6ax&=x-5c-2b &\text{Subtract $2b$ from both sides} \\
+-6ax-x&=-5c-2b &\text{Subtract $x$} \\
+x(-6a-1)&=-5c-2b &\text{Factor out $x$}\\
+x&=\frac{-5c-2b}{-6a-1}
+\end{aligned}
+$$
+
+c)
+$$
+\begin{aligned}
+2x^2+3x-4&=0 \\
+x&=\frac{-3\pm\sqrt{3^2-4(2)(-4)}}{2(2)} \\
+x_1=\frac{-3+\sqrt{41}}{4}& \qquad x_2=\frac{-3-\sqrt{41}}{4} \\
+x_1\approx0.85 & \qquad x_2\approx-2.35
+\end{aligned}
+$$
+
+d)
+$$
+\begin{aligned}
+x^2-2x-5&=0 \\
+x&=\frac{-(-2)\pm\sqrt{(-2)^2-4(1)(-5)}}{2(1)} \\
+x_1=\frac{2+\sqrt{24}}{2}& \qquad x_2=\frac{2-\sqrt{24}}{2} \\
+x_1\approx3.45 & \qquad x_2\approx-1.45
+\end{aligned}
+$$
+:::
+
+## Applications from your core MESM courses
+
+### Level 1
+
+**3)** An organism's daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for Growth.
+
+::: {.callout-note collapse="true" title="Solution"}
+$120 = G + 50 + 15 \Rightarrow G = 120 - 65 = 55$ kcal/day.
+:::
+
+**4)** A tank's mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.
+
+::: {.callout-note collapse="true" title="Solution"}
+$50 = \text{out} + 30 \Rightarrow \text{out} = 20$ kg.
+:::
+
+**5)** At steady state, a watershed's water balance is $0 = P - AET - Q$, where $P$ is precipitation, $AET$ is actual evapotranspiration (water returned to the atmosphere), and $Q$ is streamflow (water leaving via the river). "Steady state" just means none of these are changing over time. If $P = 900$ mm/y and $AET = 550$ mm/y, solve for $Q$.
+
+::: {.callout-note collapse="true" title="Solution"}
+$Q = 900 - 550 = 350$ mm/y.
+:::
+
+### Level 2
+
+**6)** The maximum sustainable yield of a harvested population is $H = \dfrac{rK}{4}$. If the sustainable harvest is $H = 80$ individuals/year and the carrying capacity is $K = 800$, solve for the intrinsic growth rate $r$.
+
+::: {.callout-note collapse="true" title="Solution"}
+$80 = \dfrac{r \cdot 800}{4} = 200r \Rightarrow r = 0.4$ per year.
+:::
+
+**7)** The aridity index $AI$ is given by $AI = P/PET$ where $P$ is mean annyal precipitation and $PET$ is potential evapotranspiration. If $AI = 0.35$ and $PET = 1400$ mm/y, solve for $P$.
+
+::: {.callout-note collapse="true" title="Solution"}
+$P = 0.35 \times 1400 = 490$ mm/y.
+:::
+
+**8)** A stock solution is a concentrated "master" solution made at a known, accurate concentration that is meant to be diluted down into weaker "working solutions" for everyday use. How much of a 12% stock solution is needed to make 3 L of a 2% solution?
+
+::: {.callout-note collapse="true" title="Solution"}
+Dilution equation: $C_1V_1 = C_2V_2$.
+
+$12\% \cdot V_1 = 2\% \cdot 3\text{ L} \Rightarrow V_1 = \dfrac{2 \times 3}{12} = 0.5$ L.
+:::
+
+## Scenario
+
+**9)** [Representative Concentration Pathways (RCP)]((https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today's atmospheric carbon concentration sits at 416 ppm.
+
+a) If the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.
+
+b) Let's say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of $f(t)=\frac{-1}{8}t^2+6t+123.83$ where $t$ is each year and $f(t)$ is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?
+
+::: {.callout-note collapse="true" title="Solution"}
+a) Since the US's share of emissions stays constant at 14%, the US emits 14% of the 600 ppm plateau in 2100:
+
+$$
+\begin{aligned}
+600 \times 0.14 &= 84 \text{ ppm}\\
+84 \times 2.13 &= 178.92 \text{ gigaton}
+\end{aligned}
+$$
+
+b) We need the year(s) at which $f(t) = -\dfrac{1}{8}t^2+6t+123.83 = 0$. Using the quadratic formula with $a=-\frac18$, $b=6$, $c=123.83$:
+
+$$
+\begin{aligned}
+t &= \frac{-6\pm\sqrt{6^2-4\left(-\frac18\right)(123.83)}}{2\left(-\frac18\right)} \\
+t &\approx 63.58 \text{ years, or } t \approx -15.58 \text{ years}
+\end{aligned}
+$$
+
+We only care about the positive year, so the US eliminates its carbon footprint about **63.58 years** from now.
+:::
