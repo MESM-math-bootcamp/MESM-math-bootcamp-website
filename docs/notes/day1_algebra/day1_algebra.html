@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>day1_algebra – Bren Math Workshop</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -37,10 +40,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b427677ddefa5d93abdb57081dab58c5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ee4c798a696f410de894479ed283eeec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ed4180e93009920118d63e1acdfa493e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a57217462e498614a534451382d2c246.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -187,8 +190,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#day-1-algebra" id="toc-day-1-algebra" class="nav-link active" data-scroll-target="#day-1-algebra">Day 1: Algebra</a>
   <ul class="collapse">
   <li><a href="#lecture-materials" id="toc-lecture-materials" class="nav-link" data-scroll-target="#lecture-materials">Lecture materials</a></li>
-  <li><a href="#problem-set" id="toc-problem-set" class="nav-link" data-scroll-target="#problem-set">Problem set</a></li>
-  <li><a href="#problem-set-solutions" id="toc-problem-set-solutions" class="nav-link" data-scroll-target="#problem-set-solutions">Problem set solutions</a></li>
+  <li><a href="#problem-sets-solutions" id="toc-problem-sets-solutions" class="nav-link" data-scroll-target="#problem-sets-solutions">Problem sets (&amp; solutions)</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -213,13 +215,10 @@ ul.task-list li input[type="checkbox"] {
 <li><p>Graphing</p></li>
 </ul>
 </section>
-<section id="problem-set" class="level2">
-<h2 class="anchored" data-anchor-id="problem-set">Problem set</h2>
-<p><a href="../../notes/day1_algebra/problem_set_algebra.html">Click here to see the problem set.</a></p>
-</section>
-<section id="problem-set-solutions" class="level2">
-<h2 class="anchored" data-anchor-id="problem-set-solutions">Problem set solutions</h2>
-<p><a href="../../notes/day1_algebra/solutions_problem_set_algebra.html">Solutions</a></p>
+<section id="problem-sets-solutions" class="level2">
+<h2 class="anchored" data-anchor-id="problem-sets-solutions">Problem sets (&amp; solutions)</h2>
+<p><a href="../../notes/day1_algebra/problem_set_algebra.html"><strong>Algebra problem set</strong></a></p>
+<p><img src="../../notes/icons/homework.png" class="img-fluid" style="width:20.0%"></p>
 
 
 </section>
@@ -277,13 +276,14 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

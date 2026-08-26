@@ -573,34 +573,17 @@ Remember the rules:
 Always add/substract/multiply/divide by the same number on both sides. More generally, always apply the same function to both sides of the equation. 
 </span>
 
-**Example**
-
-:::{.center-text}
-**Isolate $y$ in terms of $x$:**
-:::
-
-$$
-\begin{aligned}
-x&=\frac{(400-y)}{80} \\
-\end{aligned}
-$$
-
-✏️ [Take a minute to solve this individually.]{style="color:green;"}
-
 
 ---
 
 ## {#solving-equations-2 data-menu-title="Solving equations"}
 
-[Solving equations]{.slide-title}
+[Solving equations: example]{.slide-title}
 
 <hr>
 
-💡 [Let's see a solution!]{style="color:green;"}
+✏️ Isolate $y$ in terms of $x$:
 
-:::{.center-text}
-**Isolate $y$ in terms of $x$:**
-:::
 
 $$
 \begin{aligned}
@@ -613,7 +596,7 @@ $$
 
 ## {#solving-equations-3 data-menu-title="Solving equations"}
 
-[Solving equations]{.slide-title}
+[Solving equations: example]{.slide-title}
 
 <hr>
 
@@ -637,11 +620,15 @@ $$
 
 ## {#practice-alge-1 data-menu-title="Easy to make mistakes"}
 
-[It can be easy to make mistakes while doing algebra. Practice is key!]{.slide-title}
+[Solving equations: Practice set 1]{.slide-title}
 
 <hr>
 
-Solve all in terms of $x$
+::::::{.teal-text}
+It can be easy to make mistakes while doing algebra. Practice is key!
+:::
+
+✏️ [Solve all in terms of $x$:]{style="color:green;"}
 
 (A)  $3x+2=10x-12$
 
@@ -653,17 +640,17 @@ Solve all in terms of $x$
 
 (C) $3(x+7a)-5=b+2(c-4x)$
 
-✏️ [Take a minute to solve these individually.]{style="color:green;"}
+
 
 ---
 
 ## {#practice-alge-2 data-menu-title="Easy to make mistakes"}
 
-[It can be easy to make mistakes while doing algebra. Practice is key!]{.slide-title}
+[Solving equations: Practice set 1]{.slide-title}
 
 <hr>
 
-💡 [Let's see a solution!]{style="color:green;"}
+✏️ [Let's see a solution!]{style="color:green;"}
 
 Solve all in terms of $x$
 
@@ -687,11 +674,11 @@ Solve all in terms of $x$
 
 ## {#practice-alge-3 data-menu-title="Easy to make mistakes"}
 
-[It can be easy to make mistakes while doing algebra. Practice is key!]{.slide-title}
+[Solving equations: Practice set 1]{.slide-title}
 
 <hr>
 
-💡 [Let's see a solution!]{style="color:green;"}
+✏️ [Let's see a solution!]{style="color:green;"}
 
 Solve all in terms of $x$
 
@@ -701,7 +688,7 @@ Solve all in terms of $x$
 
 ## {#practice-alge-4 data-menu-title="Solutions"}
 
-[Practice solutions]{.slide-title}
+[Practice set 1 solutions]{.slide-title}
 
 <hr>
 
@@ -743,7 +730,7 @@ $$
 
 ## {#practice-alge-5 data-menu-title="Solutions"}
 
-[Practice solutions]{.slide-title}
+[Practice set 1 solutions]{.slide-title}
 
 <hr>
 
@@ -764,7 +751,7 @@ $$
 
 <!-- Sources: ESM 201 Exercise Bank Ex. 3; ESM 202 Exercise Bank Ex. 6; ESM 203 Exercise Bank Ex. 9; price/quantity example moved from #equations-solved-2 -->
 
-[Solving equations: practice]{.slide-title}
+[Solving equations: Practice set 2]{.slide-title}
 
 <hr>
 
@@ -790,7 +777,7 @@ $$
 
 ## {#algebra-practice-space-1 data-menu-title="Practice 1: space to solve"}
 
-[Solving equations: practice]{.slide-title}
+[Solving equations: Practice set 2]{.slide-title}
 
 <hr>
 
@@ -802,7 +789,7 @@ $$
 
 ## {#algebra-practice-space-2 data-menu-title="Practice 2: space to solve"}
 
-[Solving equations: practice]{.slide-title}
+[Solving equations: Practice set 2]{.slide-title}
 
 <hr>
 
@@ -814,7 +801,7 @@ $$
 
 ## {#algebra-practice-space-3 data-menu-title="Practice 3: space to solve"}
 
-[Solving equations: practice]{.slide-title}
+[Solving equations: Practice set 2]{.slide-title}
 
 <hr>
 
@@ -826,7 +813,7 @@ $$
 
 ## {#algebra-practice-space-4 data-menu-title="Practice 4: space to solve"}
 
-[Solving equations: practice]{.slide-title}
+[Solving equations: Practice set 2]{.slide-title}
 
 <hr>
 
@@ -838,7 +825,7 @@ $$
 
 ## {#algebra-practice-answer data-menu-title="Practice solutions"}
 
-[Practice solutions]{.slide-title}
+[Practice set 2 solutions]{.slide-title}
 
 <hr>
 

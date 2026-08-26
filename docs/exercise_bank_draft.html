@@ -2,13 +2,16 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>Core Course Exercise Bank — Draft – Bren Math Workshop</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -37,10 +40,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-b427677ddefa5d93abdb57081dab58c5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-ee4c798a696f410de894479ed283eeec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-ed4180e93009920118d63e1acdfa493e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-a57217462e498614a534451382d2c246.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -72,7 +75,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -85,7 +88,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -215,14 +218,14 @@ window.Quarto = {
 <section id="esm-201" class="level3">
 <h3 class="anchored" data-anchor-id="esm-201">ESM 201</h3>
 <p><em>Source: instructor note — “basic algebra rather than actual calc” is the top concern for 201.</em></p>
-<p><strong>Intro.</strong> An organism’s daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for Growth.</p>
+<p><strong>Exercise 1 (Intro).</strong> An organism’s daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for Growth.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-1-contents" aria-controls="callout-1" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -232,14 +235,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> The maximum sustainable yield of a harvested population is <span class="math inline">\(H = \dfrac{rK}{4}\)</span>. If the sustainable harvest is <span class="math inline">\(H = 80\)</span> individuals/year and the carrying capacity is <span class="math inline">\(K = 800\)</span>, solve for the intrinsic growth rate <span class="math inline">\(r\)</span>.</p>
+<p><strong>Exercise 2 (Medium).</strong> The maximum sustainable yield of a harvested population is <span class="math inline">\(H = \dfrac{rK}{4}\)</span>. If the sustainable harvest is <span class="math inline">\(H = 80\)</span> individuals/year and the carrying capacity is <span class="math inline">\(K = 800\)</span>, solve for the intrinsic growth rate <span class="math inline">\(r\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -249,14 +252,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> The logistic per-capita growth rate is <span class="math inline">\(r\left(1 - \dfrac{N}{K}\right)\)</span>. If this rate equals <span class="math inline">\(0.02\)</span> when <span class="math inline">\(N = 750\)</span> and <span class="math inline">\(K = 1000\)</span>, solve for <span class="math inline">\(r\)</span>.</p>
+<p><strong>Exercise 3 (Hard).</strong> The logistic per-capita growth rate is <span class="math inline">\(r\left(1 - \dfrac{N}{K}\right)\)</span>. If this rate equals <span class="math inline">\(0.02\)</span> when <span class="math inline">\(N = 750\)</span> and <span class="math inline">\(K = 1000\)</span>, solve for <span class="math inline">\(r\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -270,14 +273,14 @@ Solution
 <section id="esm-202" class="level3">
 <h3 class="anchored" data-anchor-id="esm-202">ESM 202</h3>
 <p><em>Source: instructor note — unit conversions are the top priority, but basic algebra (e.g., mass-balance/dilution equations) is the step just before a conversion.</em></p>
-<p><strong>Intro.</strong> A tank’s mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.</p>
+<p><strong>Exercise 4 (Intro).</strong> A tank’s mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -287,14 +290,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> To dilute a stock solution, <span class="math inline">\(C_1V_1 = C_2V_2\)</span>. How much of a 12% stock solution is needed to make 3 L of a 2% solution?</p>
+<p><strong>Exercise 5 (Medium).</strong> To dilute a stock solution, <span class="math inline">\(C_1V_1 = C_2V_2\)</span>. How much of a 12% stock solution is needed to make 3 L of a 2% solution?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -304,14 +307,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A steady-state concentration balance is <span class="math inline">\(3(C - 5) + 2C = 40\)</span> (mg/L). Solve for <span class="math inline">\(C\)</span>.</p>
+<p><strong>Exercise 6 (Hard).</strong> A steady-state concentration balance is <span class="math inline">\(3(C - 5) + 2C = 40\)</span> (mg/L). Solve for <span class="math inline">\(C\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -325,14 +328,14 @@ Solution
 <section id="esm-203" class="level3">
 <h3 class="anchored" data-anchor-id="esm-203">ESM 203</h3>
 <p><em>Source: real formula from the ESM 203 quiz sheet — “Change in storage per unit time = precipitation − actual ET − river outflows.”</em></p>
-<p><strong>Intro.</strong> At steady state, <span class="math inline">\(0 = P - AET - Q\)</span>. If <span class="math inline">\(P = 900\)</span> mm/y and <span class="math inline">\(AET = 550\)</span> mm/y, solve for streamflow <span class="math inline">\(Q\)</span>.</p>
+<p><strong>Exercise 7 (Intro).</strong> At steady state, <span class="math inline">\(0 = P - AET - Q\)</span>. If <span class="math inline">\(P = 900\)</span> mm/y and <span class="math inline">\(AET = 550\)</span> mm/y, solve for streamflow <span class="math inline">\(Q\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -342,14 +345,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> The aridity index is <span class="math inline">\(AI = P/PET\)</span>. If <span class="math inline">\(AI = 0.35\)</span> and <span class="math inline">\(PET = 1400\)</span> mm/y, solve for <span class="math inline">\(P\)</span>.</p>
+<p><strong>Exercise 8 (Medium).</strong> The aridity index is <span class="math inline">\(AI = P/PET\)</span>. If <span class="math inline">\(AI = 0.35\)</span> and <span class="math inline">\(PET = 1400\)</span> mm/y, solve for <span class="math inline">\(P\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -359,14 +362,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> In a watershed, actual evapotranspiration is 60% of precipitation: <span class="math inline">\(AET = 0.6P\)</span>. At steady state, <span class="math inline">\(0 = P - 0.6P - Q\)</span>, and <span class="math inline">\(Q = 320\)</span> mm/y. Solve for <span class="math inline">\(P\)</span>.</p>
+<p><strong>Exercise 9 (Hard).</strong> In a watershed, actual evapotranspiration is 60% of precipitation: <span class="math inline">\(AET = 0.6P\)</span>. At steady state, <span class="math inline">\(0 = P - 0.6P - Q\)</span>, and <span class="math inline">\(Q = 320\)</span> mm/y. Solve for <span class="math inline">\(P\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -379,55 +382,55 @@ Solution
 </section>
 <section id="esm-204" class="level3">
 <h3 class="anchored" data-anchor-id="esm-204">ESM 204</h3>
-<p><em>Source: real HW1 “Food bank markets” problem — solving Demand = Supply for equilibrium price and quantity.</em></p>
-<p><strong>Intro.</strong> Demand: <span class="math inline">\(P = 40 - 2Q\)</span>. Supply: <span class="math inline">\(P = 10 + 3Q\)</span>. Solve for the equilibrium quantity and price.</p>
+<p><em>Source: single-formula algebra drawn from real 204 material — Anna Pede’s elasticity emphasis (HW1), the inverse-demand “isolate P” rearrangement that also appears in the Day 1 lecture, and a breakeven (quadratic-formula) framing of the profit function used in HW2’s marginal-cost material. Kept to one formula and one unknown, unlike the Demand = Supply system exercises below, which have been moved to Topic 4 (Equation of a line) since solving for an equilibrium is really finding where two lines intersect.</em></p>
+<p><strong>Exercise 10 (Intro).</strong> Price elasticity of demand is <span class="math inline">\(\varepsilon = \dfrac{\%\Delta Q}{\%\Delta P}\)</span>. A policy raises price by 15%, and demand is unit elastic (<span class="math inline">\(\varepsilon = -1\)</span>). Solve for the percent change in quantity, <span class="math inline">\(\%\Delta Q\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-10" class="callout-10-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><span class="math inline">\(40 - 2Q = 10 + 3Q \Rightarrow 30 = 5Q \Rightarrow Q = 6\)</span>. Then <span class="math inline">\(P = 40 - 2(6) = 28\)</span>.</p>
+<p><span class="math inline">\(\%\Delta Q = \varepsilon \times \%\Delta P = -1 \times 15\% = -15\%\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Demand: <span class="math inline">\(P = 450 - 0.15Q\)</span>. Supply: <span class="math inline">\(P = 10 + 0.1Q\)</span>. Solve for equilibrium <span class="math inline">\(Q\)</span> and <span class="math inline">\(P\)</span>.</p>
+<p><strong>Exercise 11 (Medium).</strong> Inverse demand is often written <span class="math inline">\(Q = \dfrac{a - P}{b}\)</span>. Isolate <span class="math inline">\(P\)</span> in terms of <span class="math inline">\(Q\)</span>, <span class="math inline">\(a\)</span>, and <span class="math inline">\(b\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-11" class="callout-11-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><span class="math inline">\(450 - 0.15Q = 10 + 0.1Q \Rightarrow 440 = 0.25Q \Rightarrow Q = 1760\)</span>. Then <span class="math inline">\(P = 10 + 0.1(1760) = 186\)</span>.</p>
+<p><span class="math inline">\(bQ = a - P \Rightarrow P = a - bQ\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Demand: <span class="math inline">\(P = 2(300 - 0.5Q)\)</span>. Supply: <span class="math inline">\(P = 50 + Q\)</span>. Solve for equilibrium <span class="math inline">\(Q\)</span> and <span class="math inline">\(P\)</span>.</p>
+<p><strong>Exercise 12 (Hard).</strong> A firm’s profit is <span class="math inline">\(\pi(Q) = 40Q - 0.5Q^2 - 200\)</span> (in $100s). At what output level(s) <span class="math inline">\(Q\)</span> does the firm break even (<span class="math inline">\(\pi = 0\)</span>)? Use the quadratic formula.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-12-contents" aria-controls="callout-12" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-12" class="callout-12-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Distribute first: <span class="math inline">\(P = 600 - Q\)</span>. Set equal to supply: <span class="math inline">\(600 - Q = 50 + Q \Rightarrow 550 = 2Q \Rightarrow Q = 275\)</span>, <span class="math inline">\(P = 325\)</span>.</p>
+<p>Set <span class="math inline">\(-0.5Q^2+40Q-200=0\)</span>, or equivalently <span class="math inline">\(Q^2-80Q+400=0\)</span>. Quadratic formula: <span class="math inline">\(Q=\dfrac{80\pm\sqrt{80^2-4(400)}}{2}=\dfrac{80\pm\sqrt{4800}}{2}\approx\dfrac{80\pm69.3}{2}\)</span>. So <span class="math inline">\(Q\approx74.6\)</span> or <span class="math inline">\(Q\approx5.4\)</span> — the firm breaks even at these two output levels (and earns positive profit for <span class="math inline">\(Q\)</span> between them).</p>
 </div>
 </div>
 </div>
@@ -439,14 +442,14 @@ Solution
 <section id="esm-202-1" class="level3">
 <h3 class="anchored" data-anchor-id="esm-202-1">ESM 202</h3>
 <p><em>Source: instructor note — “conversions between ppm and percent” called out as the single most important skill in 202.</em></p>
-<p><strong>Intro.</strong> Convert 250 ppm to a percentage.</p>
+<p><strong>Exercise 13 (Intro).</strong> Convert 250 ppm to a percentage.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-13-contents" aria-controls="callout-13" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -456,14 +459,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> A water sample is 0.015% contaminant by mass. Express this in ppm.</p>
+<p><strong>Exercise 14 (Medium).</strong> A water sample is 0.015% contaminant by mass. Express this in ppm.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-14-contents" aria-controls="callout-14" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -473,14 +476,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?</p>
+<p><strong>Exercise 15 (Hard).</strong> A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-15-contents" aria-controls="callout-15" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -494,14 +497,14 @@ Solution
 <section id="esm-203-1" class="level3">
 <h3 class="anchored" data-anchor-id="esm-203-1">ESM 203</h3>
 <p><em>Source: real quiz-prep slide examples — relative humidity, aridity index, and runoff ratio (all percent-based quantities).</em></p>
-<p><strong>Intro.</strong> Saturation vapor pressure at 10°C is 1.23 kPa; actual vapor pressure is 0.37 kPa. Find the relative humidity.</p>
+<p><strong>Exercise 16 (Intro).</strong> Saturation vapor pressure at 10°C is 1.23 kPa; actual vapor pressure is 0.37 kPa. Find the relative humidity.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-16-contents" aria-controls="callout-16" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -511,14 +514,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Annual precipitation is 620 mm/y and potential evapotranspiration is 1550 mm/y. Express the aridity index as a percent.</p>
+<p><strong>Exercise 17 (Medium).</strong> Annual precipitation is 620 mm/y and potential evapotranspiration is 1550 mm/y. Express the aridity index as a percent.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-17-contents" aria-controls="callout-17" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -528,14 +531,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A watershed receives 950 mm/y of precipitation. Actual evapotranspiration is 65% of precipitation. What is the runoff ratio?</p>
+<p><strong>Exercise 18 (Hard).</strong> A watershed receives 950 mm/y of precipitation. Actual evapotranspiration is 65% of precipitation. What is the runoff ratio?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-18-contents" aria-controls="callout-18" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -549,14 +552,14 @@ Solution
 <section id="esm-204-1" class="level3">
 <h3 class="anchored" data-anchor-id="esm-204-1">ESM 204</h3>
 <p><em>Source: instructor emphasis on elasticity/percent-change reasoning (HW1’s elasticity question).</em></p>
-<p><strong>Intro.</strong> A policy raises the price of a good from $20 to $23. What is the percent change in price?</p>
+<p><strong>Exercise 19 (Intro).</strong> A policy raises the price of a good from $20 to $23. What is the percent change in price?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-19-contents" aria-controls="callout-19" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -566,14 +569,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Quantity demanded falls from 500 to 425 units after the price increase above. What is the percent change in quantity?</p>
+<p><strong>Exercise 20 (Medium).</strong> Quantity demanded falls from 500 to 425 units after the price increase above. What is the percent change in quantity?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-20-contents" aria-controls="callout-20" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -583,14 +586,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Using the price change (+15%) and quantity change (−15%) above, compute the price elasticity of demand and state whether demand is elastic, unit elastic, or inelastic.</p>
+<p><strong>Exercise 21 (Hard).</strong> Using the price change (+15%) and quantity change (−15%) above, compute the price elasticity of demand and state whether demand is elastic, unit elastic, or inelastic.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-21-contents" aria-controls="callout-21" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -604,14 +607,14 @@ Solution
 <section id="esm-201-1" class="level3">
 <h3 class="anchored" data-anchor-id="esm-201-1">ESM 201</h3>
 <p><em>Source: general population percent-change reasoning (supports the instructor’s “basic math” emphasis, applied to population counts).</em></p>
-<p><strong>Intro.</strong> A population of 240 individuals grows to 264 the next year. What is the percent increase?</p>
+<p><strong>Exercise 22 (Intro).</strong> A population of 240 individuals grows to 264 the next year. What is the percent increase?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-22-contents" aria-controls="callout-22" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -621,14 +624,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> A population of 500 declines by 18%. What is the new population size?</p>
+<p><strong>Exercise 23 (Medium).</strong> A population of 500 declines by 18%. What is the new population size?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-23-contents" aria-controls="callout-23" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -638,14 +641,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A population grows 12% one year, then declines 12% the next. Starting from an index of 100, is the population back to its original size? Compute the net percent change.</p>
+<p><strong>Exercise 24 (Hard).</strong> A population grows 12% one year, then declines 12% the next. Starting from an index of 100, is the population back to its original size? Compute the net percent change.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-24-contents" aria-controls="callout-24" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -663,14 +666,14 @@ Solution
 <section id="esm-201-2" class="level3">
 <h3 class="anchored" data-anchor-id="esm-201-2">ESM 201</h3>
 <p><em>Source: instructor note — explicitly named exponent/fraction simplification (“<span class="math inline">\(2/k/2=\ldots\)</span>”) as a top concern.</em></p>
-<p><strong>Intro.</strong> Simplify: <span class="math inline">\(k^5 / k^2\)</span>.</p>
+<p><strong>Exercise 25 (Intro).</strong> Simplify: <span class="math inline">\(k^5 / k^2\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-25-contents" aria-controls="callout-25" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -680,14 +683,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Simplify: <span class="math inline">\((k^3)^2 / k^4\)</span>.</p>
+<p><strong>Exercise 26 (Medium).</strong> Simplify: <span class="math inline">\((k^3)^2 / k^4\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-26-contents" aria-controls="callout-26" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -697,14 +700,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A population’s growth factor per generation is <span class="math inline">\(\lambda = 1.2\)</span>. If <span class="math inline">\(N_0 = 50\)</span> and after several generations <span class="math inline">\(N(t) = 50 \times (1.2)^2 \times (1.2)^3\)</span>, simplify the exponent expression and compute <span class="math inline">\(N(t)\)</span>.</p>
+<p><strong>Exercise 27 (Hard).</strong> A population’s growth factor per generation is <span class="math inline">\(\lambda = 1.2\)</span>. If <span class="math inline">\(N_0 = 50\)</span> and after several generations <span class="math inline">\(N(t) = 50 \times (1.2)^2 \times (1.2)^3\)</span>, simplify the exponent expression and compute <span class="math inline">\(N(t)\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-27-contents" aria-controls="callout-27" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -718,14 +721,14 @@ Solution
 <section id="esm-203-2" class="level3">
 <h3 class="anchored" data-anchor-id="esm-203-2">ESM 203</h3>
 <p><em>Source: the Teten formula from ESM 203 Assignment 2, which has the form <span class="math inline">\(e = 6.112\,e^{(\ldots)}\)</span>.</em></p>
-<p><strong>Intro.</strong> Simplify <span class="math inline">\(e^3 \times e^2\)</span>, and name the exponent rule used.</p>
+<p><strong>Exercise 28 (Intro).</strong> Simplify <span class="math inline">\(e^3 \times e^2\)</span>, and name the exponent rule used.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-28-contents" aria-controls="callout-28" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -735,14 +738,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Given <span class="math inline">\(e^1 \approx 2.718\)</span> and <span class="math inline">\(e^2 \approx 7.389\)</span>, find <span class="math inline">\(e^3\)</span> using the product-of-powers rule (no calculator “<span class="math inline">\(e^x\)</span>” button).</p>
+<p><strong>Exercise 29 (Medium).</strong> Given <span class="math inline">\(e^1 \approx 2.718\)</span> and <span class="math inline">\(e^2 \approx 7.389\)</span>, find <span class="math inline">\(e^3\)</span> using the product-of-powers rule (no calculator “<span class="math inline">\(e^x\)</span>” button).</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-29-contents" aria-controls="callout-29" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -752,14 +755,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Using the Tetens formula <span class="math inline">\(e_s = 6.112 \cdot e^{\left(\frac{17.67(T-273.15)}{T-29.65}\right)}\)</span> (T in Kelvin), evaluate the saturation vapor pressure at <span class="math inline">\(T = 293.15\)</span> K (20°C).</p>
+<p><strong>Exercise 30 (Hard).</strong> Using the Tetens formula <span class="math inline">\(e_s = 6.112 \cdot e^{\left(\frac{17.67(T-273.15)}{T-29.65}\right)}\)</span> (T in Kelvin), evaluate the saturation vapor pressure at <span class="math inline">\(T = 293.15\)</span> K (20°C).</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-30-contents" aria-controls="callout-30" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -774,14 +777,14 @@ Solution
 <section id="esm-204-2" class="level3">
 <h3 class="anchored" data-anchor-id="esm-204-2">ESM 204</h3>
 <p><em>Source: HW4’s discount-rate sensitivity analysis, which is fundamentally repeated exponentiation of <span class="math inline">\((1+r)\)</span>.</em></p>
-<p><strong>Intro.</strong> Simplify <span class="math inline">\((1.05)^2 \times (1.05)^3\)</span> as a single power of 1.05. If 1.05 is an annual growth factor, what does the result represent?</p>
+<p><strong>Exercise 31 (Intro).</strong> Simplify <span class="math inline">\((1.05)^2 \times (1.05)^3\)</span> as a single power of 1.05. If 1.05 is an annual growth factor, what does the result represent?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-31-contents" aria-controls="callout-31" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-31-contents" aria-controls="callout-31" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -791,14 +794,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> A cost of $10,000 occurs in year 3. Using discount factor <span class="math inline">\(1/(1+r)^t\)</span> with <span class="math inline">\(r = 0.06\)</span>, find its present value.</p>
+<p><strong>Exercise 32 (Medium).</strong> A cost of $10,000 occurs in year 3. Using discount factor <span class="math inline">\(1/(1+r)^t\)</span> with <span class="math inline">\(r = 0.06\)</span>, find its present value.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-32-contents" aria-controls="callout-32" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-32-contents" aria-controls="callout-32" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -808,14 +811,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Compare the present value of $5,000 received in year 10 under <span class="math inline">\(r=0.03\)</span> vs.&nbsp;<span class="math inline">\(r=0.08\)</span>. By what percent does the higher discount rate reduce the present value?</p>
+<p><strong>Exercise 33 (Hard).</strong> Compare the present value of $5,000 received in year 10 under <span class="math inline">\(r=0.03\)</span> vs.&nbsp;<span class="math inline">\(r=0.08\)</span>. By what percent does the higher discount rate reduce the present value?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-33-contents" aria-controls="callout-33" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-33-contents" aria-controls="callout-33" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -833,14 +836,14 @@ Solution
 <section id="esm-204-3" class="level3">
 <h3 class="anchored" data-anchor-id="esm-204-3">ESM 204</h3>
 <p><em>Source: Anna Pede meeting notes — “equation of a line” named directly; grounded in supply/demand curves throughout HW1–HW2.</em></p>
-<p><strong>Intro.</strong> A demand curve is <span class="math inline">\(P = 50 - 2Q\)</span>. Identify the slope and the y-intercept, and state what each means economically.</p>
+<p><strong>Exercise 34 (Intro).</strong> A demand curve is <span class="math inline">\(P = 50 - 2Q\)</span>. Identify the slope and the y-intercept, and state what each means economically.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-34-contents" aria-controls="callout-34" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-34-contents" aria-controls="callout-34" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -850,14 +853,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> A supply curve passes through <span class="math inline">\((Q=0, P=10)\)</span> and <span class="math inline">\((Q=100, P=60)\)</span>. Find <span class="math inline">\(P(Q)\)</span> in slope-intercept form.</p>
+<p><strong>Exercise 35 (Medium).</strong> A supply curve passes through <span class="math inline">\((Q=0, P=10)\)</span> and <span class="math inline">\((Q=100, P=60)\)</span>. Find <span class="math inline">\(P(Q)\)</span> in slope-intercept form.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-35-contents" aria-controls="callout-35" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -867,14 +870,14 @@ Solution
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> At a price of $40, quantity demanded is 200 units; at $10, quantity demanded is 350 units. Find the inverse demand equation <span class="math inline">\(P(Q)\)</span> and the choke price.</p>
+<p><strong>Exercise 36 (Hard).</strong> At a price of $40, quantity demanded is 200 units; at $10, quantity demanded is 350 units. Find the inverse demand equation <span class="math inline">\(P(Q)\)</span> and the choke price.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-36-contents" aria-controls="callout-36" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -884,56 +887,108 @@ Solution
 </div>
 </div>
 </div>
-</section>
-<section id="esm-201-3" class="level3">
-<h3 class="anchored" data-anchor-id="esm-201-3">ESM 201</h3>
-<p><em>Source: instructor note — “equations for lines and hyperbolas” listed among 201’s core algebra needs.</em></p>
-<p><strong>Intro.</strong> A linear length–weight relationship for a fish species is <span class="math inline">\(W = 5L - 20\)</span> (grams, cm). What is the weight of a 15 cm fish?</p>
+<p><em>Source: real HW1 “Food bank markets” problem — solving Demand = Supply for equilibrium price and quantity. (Moved here from Topic 1: finding a market equilibrium is finding where two lines — demand and supply — intersect, so these fit more naturally alongside single-line exercises than among the single-formula algebra exercises above.)</em></p>
+<p><strong>Exercise 37 (Intro).</strong> Demand: <span class="math inline">\(P = 40 - 2Q\)</span>. Supply: <span class="math inline">\(P = 10 + 3Q\)</span>. Solve for the equilibrium quantity and price.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-37-contents" aria-controls="callout-37" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-37-contents" aria-controls="callout-37" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-37" class="callout-37-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><span class="math inline">\(W = 5(15) - 20 = 55\)</span> g.</p>
+<p><span class="math inline">\(40 - 2Q = 10 + 3Q \Rightarrow 30 = 5Q \Rightarrow Q = 6\)</span>. Then <span class="math inline">\(P = 40 - 2(6) = 28\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Two data points relate stream temperature <span class="math inline">\(T\)</span> (°C) to metabolic rate <span class="math inline">\(M\)</span>: <span class="math inline">\((T=10, M=20)\)</span> and <span class="math inline">\((T=20, M=50)\)</span>. Find <span class="math inline">\(M(T)\)</span>.</p>
+<p><strong>Exercise 38 (Medium).</strong> Demand: <span class="math inline">\(P = 450 - 0.15Q\)</span>. Supply: <span class="math inline">\(P = 10 + 0.1Q\)</span>. Solve for equilibrium <span class="math inline">\(Q\)</span> and <span class="math inline">\(P\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-38-contents" aria-controls="callout-38" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-38-contents" aria-controls="callout-38" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-38" class="callout-38-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p>Slope <span class="math inline">\(= (50-20)/(20-10) = 3\)</span>. <span class="math inline">\(M = 20 + 3(T-10) = 3T - 10\)</span>.</p>
+<p><span class="math inline">\(450 - 0.15Q = 10 + 0.1Q \Rightarrow 440 = 0.25Q \Rightarrow Q = 1760\)</span>. Then <span class="math inline">\(P = 10 + 0.1(1760) = 186\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Per-capita growth rate declines linearly with density: at <span class="math inline">\(N=0\)</span>, rate <span class="math inline">\(=0.3\)</span>/yr; at <span class="math inline">\(N=K=600\)</span>, rate <span class="math inline">\(=0\)</span>. Write the linear equation and find <span class="math inline">\(N\)</span> where the rate equals <span class="math inline">\(0.1\)</span>/yr.</p>
+<p><strong>Exercise 39 (Hard).</strong> Demand: <span class="math inline">\(P = 2(300 - 0.5Q)\)</span>. Supply: <span class="math inline">\(P = 50 + Q\)</span>. Solve for equilibrium <span class="math inline">\(Q\)</span> and <span class="math inline">\(P\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-39-contents" aria-controls="callout-39" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-39-contents" aria-controls="callout-39" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-39" class="callout-39-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Distribute first: <span class="math inline">\(P = 600 - Q\)</span>. Set equal to supply: <span class="math inline">\(600 - Q = 50 + Q \Rightarrow 550 = 2Q \Rightarrow Q = 275\)</span>, <span class="math inline">\(P = 325\)</span>.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="esm-201-3" class="level3">
+<h3 class="anchored" data-anchor-id="esm-201-3">ESM 201</h3>
+<p><em>Source: instructor note — “equations for lines and hyperbolas” listed among 201’s core algebra needs.</em></p>
+<p><strong>Exercise 40 (Intro).</strong> A linear length–weight relationship for a fish species is <span class="math inline">\(W = 5L - 20\)</span> (grams, cm). What is the weight of a 15 cm fish?</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-40-contents" aria-controls="callout-40" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-40" class="callout-40-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><span class="math inline">\(W = 5(15) - 20 = 55\)</span> g.</p>
+</div>
+</div>
+</div>
+<p><strong>Exercise 41 (Medium).</strong> Two data points relate stream temperature <span class="math inline">\(T\)</span> (°C) to metabolic rate <span class="math inline">\(M\)</span>: <span class="math inline">\((T=10, M=20)\)</span> and <span class="math inline">\((T=20, M=50)\)</span>. Find <span class="math inline">\(M(T)\)</span>.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-41-contents" aria-controls="callout-41" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-41" class="callout-41-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p>Slope <span class="math inline">\(= (50-20)/(20-10) = 3\)</span>. <span class="math inline">\(M = 20 + 3(T-10) = 3T - 10\)</span>.</p>
+</div>
+</div>
+</div>
+<p><strong>Exercise 42 (Hard).</strong> Per-capita growth rate declines linearly with density: at <span class="math inline">\(N=0\)</span>, rate <span class="math inline">\(=0.3\)</span>/yr; at <span class="math inline">\(N=K=600\)</span>, rate <span class="math inline">\(=0\)</span>. Write the linear equation and find <span class="math inline">\(N\)</span> where the rate equals <span class="math inline">\(0.1\)</span>/yr.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-42-contents" aria-controls="callout-42" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-42" class="callout-42-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Slope <span class="math inline">\(= (0-0.3)/(600-0) = -0.0005\)</span>. Rate<span class="math inline">\((N) = 0.3 - 0.0005N\)</span>. Set <span class="math inline">\(=0.1\)</span>: <span class="math inline">\(0.2 = 0.0005N \Rightarrow N = 400\)</span>. (This is the logistic per-capita rate <span class="math inline">\(r(1-N/K)\)</span> in disguise.)</p>
 </div>
@@ -943,52 +998,52 @@ Solution
 <section id="esm-203-3" class="level3">
 <h3 class="anchored" data-anchor-id="esm-203-3">ESM 203</h3>
 <p><em>Source: Darcy’s law from the ESM 203 quiz sheet — hydraulic head is linear in distance between wells.</em></p>
-<p><strong>Intro.</strong> Hydraulic head drops linearly from 80 m to 65 m over a horizontal distance of 500 m. Find the slope <span class="math inline">\(dh/dL\)</span>.</p>
+<p><strong>Exercise 43 (Intro).</strong> Hydraulic head drops linearly from 80 m to 65 m over a horizontal distance of 500 m. Find the slope <span class="math inline">\(dh/dL\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-40-contents" aria-controls="callout-40" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-43-contents" aria-controls="callout-43" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-40" class="callout-40-contents callout-collapse collapse">
+<div id="callout-43" class="callout-43-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\((65-80)/500 = -0.03\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Using <span class="math inline">\(dh/dL = -0.03\)</span> and hydraulic conductivity <span class="math inline">\(K = 0.015\)</span> m/day, use Darcy’s law <span class="math inline">\(q = -K(dh/dL)\)</span> to find the specific discharge.</p>
+<p><strong>Exercise 44 (Medium).</strong> Using <span class="math inline">\(dh/dL = -0.03\)</span> and hydraulic conductivity <span class="math inline">\(K = 0.015\)</span> m/day, use Darcy’s law <span class="math inline">\(q = -K(dh/dL)\)</span> to find the specific discharge.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-41-contents" aria-controls="callout-41" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-44-contents" aria-controls="callout-44" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-41" class="callout-41-contents callout-collapse collapse">
+<div id="callout-44" class="callout-44-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(q = -0.015 \times (-0.03) = 0.00045\)</span> m/day.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Two wells are 400 m apart. Well A has head 120 m; Well B has head 96 m. Write <span class="math inline">\(h(x)\)</span> as a linear function of distance <span class="math inline">\(x\)</span> from Well A, and predict the head at <span class="math inline">\(x=250\)</span> m.</p>
+<p><strong>Exercise 45 (Hard).</strong> Two wells are 400 m apart. Well A has head 120 m; Well B has head 96 m. Write <span class="math inline">\(h(x)\)</span> as a linear function of distance <span class="math inline">\(x\)</span> from Well A, and predict the head at <span class="math inline">\(x=250\)</span> m.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-42-contents" aria-controls="callout-42" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-45-contents" aria-controls="callout-45" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-42" class="callout-42-contents callout-collapse collapse">
+<div id="callout-45" class="callout-45-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Slope <span class="math inline">\(= (96-120)/400 = -0.06\)</span>. <span class="math inline">\(h(x) = 120 - 0.06x\)</span>. At <span class="math inline">\(x=250\)</span>: <span class="math inline">\(h = 120 - 15 = 105\)</span> m.</p>
 </div>
@@ -1002,52 +1057,52 @@ Solution
 <section id="esm-202-2" class="level3">
 <h3 class="anchored" data-anchor-id="esm-202-2">ESM 202</h3>
 <p><em>Source: instructor’s #1 priority — mL↔︎L, and mass/volume concentration units.</em></p>
-<p><strong>Intro.</strong> Convert 750 mL to liters.</p>
+<p><strong>Exercise 46 (Intro).</strong> Convert 750 mL to liters.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-43-contents" aria-controls="callout-43" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-46-contents" aria-controls="callout-46" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-43" class="callout-43-contents callout-collapse collapse">
+<div id="callout-46" class="callout-46-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(750 \text{ mL} = 0.75\)</span> L.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> A stock solution is 4 g/L. Express this in mg/mL.</p>
+<p><strong>Exercise 47 (Medium).</strong> A stock solution is 4 g/L. Express this in mg/mL.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-44-contents" aria-controls="callout-44" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-47-contents" aria-controls="callout-47" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-44" class="callout-44-contents callout-collapse collapse">
+<div id="callout-47" class="callout-47-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(4 \text{ g/L} = 4000 \text{ mg} / 1000 \text{ mL} = 4\)</span> mg/mL.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A pollutant concentration is 12 μg/mL. Convert this to kg/m³.</p>
+<p><strong>Exercise 48 (Hard).</strong> A pollutant concentration is 12 μg/mL. Convert this to kg/m³.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-45-contents" aria-controls="callout-45" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-48-contents" aria-controls="callout-48" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-45" class="callout-45-contents callout-collapse collapse">
+<div id="callout-48" class="callout-48-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(1 \text{ mL} = 10^{-6} \text{ m}^3\)</span>, so <span class="math inline">\(12\ \mu\text{g}/10^{-6}\text{ m}^3 = 12\times10^{6}\ \mu\text{g/m}^3\)</span>. Convert <span class="math inline">\(\mu\)</span>g to kg (<span class="math inline">\(1\ \mu\text{g} = 10^{-9}\)</span> kg): <span class="math inline">\(12\times10^{6} \times 10^{-9} = 0.012\)</span> kg/m³.</p>
 </div>
@@ -1057,52 +1112,52 @@ Solution
 <section id="esm-203-4" class="level3">
 <h3 class="anchored" data-anchor-id="esm-203-4">ESM 203</h3>
 <p><em>Source: real quiz-prep slide — the lake-area example and area/volume conversions flagged as a struggle point.</em></p>
-<p><strong>Intro.</strong> Convert an area of 3.2 km² to m².</p>
+<p><strong>Exercise 49 (Intro).</strong> Convert an area of 3.2 km² to m².</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-46-contents" aria-controls="callout-46" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-49-contents" aria-controls="callout-49" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-46" class="callout-46-contents callout-collapse collapse">
+<div id="callout-49" class="callout-49-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(3.2 \text{ km}^2 \times (1000\text{ m/km})^2 = 3.2\times10^{6}\)</span> m².</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> A lake has average depth 8 m and surface area 2.5 km². Using Volume = depth × area, find the volume in m³.</p>
+<p><strong>Exercise 50 (Medium).</strong> A lake has average depth 8 m and surface area 2.5 km². Using Volume = depth × area, find the volume in m³.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-47-contents" aria-controls="callout-47" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-50-contents" aria-controls="callout-50" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-47" class="callout-47-contents callout-collapse collapse">
+<div id="callout-50" class="callout-50-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Area <span class="math inline">\(= 2.5\times10^{6}\)</span> m². Volume <span class="math inline">\(= 8 \times 2.5\times10^{6} = 2\times10^{7}\)</span> m³.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.</p>
+<p><strong>Exercise 51 (Hard).</strong> A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-48-contents" aria-controls="callout-48" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-51-contents" aria-controls="callout-51" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-48" class="callout-48-contents callout-collapse collapse">
+<div id="callout-51" class="callout-51-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(45 \text{ mm} = 0.045\)</span> m. Area <span class="math inline">\(= 1800\times10^{6} = 1.8\times10^{9}\)</span> m². Volume <span class="math inline">\(= 0.045 \times 1.8\times10^{9} = 8.1\times10^{7}\)</span> m³/year.</p>
 </div>
@@ -1116,52 +1171,52 @@ Solution
 <section id="esm-204-4" class="level3">
 <h3 class="anchored" data-anchor-id="esm-204-4">ESM 204</h3>
 <p><em>Source: Anna Pede — reading graphs ranked the #1 most important math tool in the course; grounded in the kinked aggregate demand curve from HW1.</em></p>
-<p><strong>Intro.</strong> A supply-and-demand graph shows the demand curve hitting the y-axis at <span class="math inline">\(P=\$60\)</span> and the supply curve hitting it at <span class="math inline">\(P=\$5\)</span>. What does each y-intercept represent?</p>
+<p><strong>Exercise 52 (Intro).</strong> A supply-and-demand graph shows the demand curve hitting the y-axis at <span class="math inline">\(P=\$60\)</span> and the supply curve hitting it at <span class="math inline">\(P=\$5\)</span>. What does each y-intercept represent?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-49-contents" aria-controls="callout-49" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-52-contents" aria-controls="callout-52" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-49" class="callout-49-contents callout-collapse collapse">
+<div id="callout-52" class="callout-52-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Demand y-intercept = the choke price (maximum willingness to pay, at <span class="math inline">\(Q=0\)</span>). Supply y-intercept = the minimum price needed to induce any positive supply.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> An aggregate demand curve has a kink at <span class="math inline">\((Q=1000, P=\$400)\)</span> (as in the peanut-butter market from HW1). What does the kink tell you about the market, and which price range has more than one buyer group active?</p>
+<p><strong>Exercise 53 (Medium).</strong> An aggregate demand curve has a kink at <span class="math inline">\((Q=1000, P=\$400)\)</span> (as in the peanut-butter market from HW1). What does the kink tell you about the market, and which price range has more than one buyer group active?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-50-contents" aria-controls="callout-50" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-53-contents" aria-controls="callout-53" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-50" class="callout-50-contents callout-collapse collapse">
+<div id="callout-53" class="callout-53-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Above $400, only one demand segment is active; below $400, a second buyer group’s demand adds in, making the aggregate curve flatter (more responsive to price) below the kink.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A graph shows marginal benefit (MB) falling from $1200 to $0 as abatement rises from 0 to 800 tons, and marginal abatement cost (MAC) rising from $70 to $800, crossing MB near <span class="math inline">\((A{=}320, P{=}\$715)\)</span>. A dashed line $70 above MB represents the marginal external benefit (MEB). From the graph alone, how would you locate the socially optimal abatement level, and is it larger or smaller than the market equilibrium?</p>
+<p><strong>Exercise 54 (Hard).</strong> A graph shows marginal benefit (MB) falling from $1200 to $0 as abatement rises from 0 to 800 tons, and marginal abatement cost (MAC) rising from $70 to $800, crossing MB near <span class="math inline">\((A{=}320, P{=}\$715)\)</span>. A dashed line $70 above MB represents the marginal external benefit (MEB). From the graph alone, how would you locate the socially optimal abatement level, and is it larger or smaller than the market equilibrium?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-51-contents" aria-controls="callout-51" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-54-contents" aria-controls="callout-54" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-51" class="callout-51-contents callout-collapse collapse">
+<div id="callout-54" class="callout-54-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The socially optimal level is where MB shifted up by MEB (i.e., MSB) crosses MAC. Since MSB lies above MB everywhere, that crossing happens at a <strong>larger</strong> abatement quantity than the market equilibrium (MB–MAC crossing).</p>
 </div>
@@ -1171,52 +1226,52 @@ Solution
 <section id="esm-203-5" class="level3">
 <h3 class="anchored" data-anchor-id="esm-203-5">ESM 203</h3>
 <p><em>Source: the saturation vapor pressure curve and water-density-vs-temperature graph used in ESM 203 lecture/quiz materials.</em></p>
-<p><strong>Intro.</strong> A graph of saturation vapor pressure <span class="math inline">\(e_s\)</span> (kPa) vs.&nbsp;temperature (°C) starts near 0 at −30°C and reaches about 4.2 kPa at 30°C. Is the relationship linear or nonlinear, and how can you tell from the shape?</p>
+<p><strong>Exercise 55 (Intro).</strong> A graph of saturation vapor pressure <span class="math inline">\(e_s\)</span> (kPa) vs.&nbsp;temperature (°C) starts near 0 at −30°C and reaches about 4.2 kPa at 30°C. Is the relationship linear or nonlinear, and how can you tell from the shape?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-52-contents" aria-controls="callout-52" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-55-contents" aria-controls="callout-55" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-52" class="callout-52-contents callout-collapse collapse">
+<div id="callout-55" class="callout-55-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Nonlinear — the curve gets steeper as <span class="math inline">\(T\)</span> increases rather than rising at a constant rate, unlike a straight line.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> On that same graph, a parcel of air has actual vapor pressure 1.0 kPa. Reading across to the curve, it intersects at about <span class="math inline">\(T=7°C\)</span>. What does this temperature represent?</p>
+<p><strong>Exercise 56 (Medium).</strong> On that same graph, a parcel of air has actual vapor pressure 1.0 kPa. Reading across to the curve, it intersects at about <span class="math inline">\(T=7°C\)</span>. What does this temperature represent?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-53-contents" aria-controls="callout-53" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-56-contents" aria-controls="callout-56" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-53" class="callout-53-contents callout-collapse collapse">
+<div id="callout-56" class="callout-56-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The dew point temperature — the temperature at which the parcel would be saturated (RH = 100%) at its current actual vapor pressure.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A graph of water density (kg/m³) vs.&nbsp;temperature peaks near 1000 kg/m³ at about 4°C and decreases on both sides. Explain what this implies for how a lake freezes from the surface down rather than the bottom up.</p>
+<p><strong>Exercise 57 (Hard).</strong> A graph of water density (kg/m³) vs.&nbsp;temperature peaks near 1000 kg/m³ at about 4°C and decreases on both sides. Explain what this implies for how a lake freezes from the surface down rather than the bottom up.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-54-contents" aria-controls="callout-54" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-57-contents" aria-controls="callout-57" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-54" class="callout-54-contents callout-collapse collapse">
+<div id="callout-57" class="callout-57-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Water is densest at ~4°C, so 4°C water sinks to the bottom while colder water (and ice), being less dense, stays near the surface. That’s why lakes freeze top-down, insulating the water below and letting aquatic life survive winter.</p>
 </div>
@@ -1226,52 +1281,52 @@ Solution
 <section id="esm-201-4" class="level3">
 <h3 class="anchored" data-anchor-id="esm-201-4">ESM 201</h3>
 <p><em>Source: standard logistic growth curve reading, supporting the instructor’s “beginning calculus” and graph-based intuition for population dynamics.</em></p>
-<p><strong>Intro.</strong> A graph shows population size <span class="math inline">\(N(t)\)</span> rising in an S-shape, leveling off at <span class="math inline">\(N=1000\)</span>. What does that horizontal asymptote represent?</p>
+<p><strong>Exercise 58 (Intro).</strong> A graph shows population size <span class="math inline">\(N(t)\)</span> rising in an S-shape, leveling off at <span class="math inline">\(N=1000\)</span>. What does that horizontal asymptote represent?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-55-contents" aria-controls="callout-55" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-58-contents" aria-controls="callout-58" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-55" class="callout-55-contents callout-collapse collapse">
+<div id="callout-58" class="callout-58-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The carrying capacity, <span class="math inline">\(K\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> On a logistic growth curve, where (approximately) is the population growing fastest, and what fraction of carrying capacity does that typically correspond to?</p>
+<p><strong>Exercise 59 (Medium).</strong> On a logistic growth curve, where (approximately) is the population growing fastest, and what fraction of carrying capacity does that typically correspond to?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-56-contents" aria-controls="callout-56" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-59-contents" aria-controls="callout-59" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-56" class="callout-56-contents callout-collapse collapse">
+<div id="callout-59" class="callout-59-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>At the inflection point, typically <span class="math inline">\(N = K/2\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A graph plots per-capita growth rate <span class="math inline">\(\left(\frac{1}{N}\frac{dN}{dt}\right)\)</span> against population size <span class="math inline">\(N\)</span>, a straight line from <span class="math inline">\((N=0, \text{rate}=r_{max})\)</span> to <span class="math inline">\((N=K, \text{rate}=0)\)</span>. What do the two intercepts represent, and what does the negative slope mean biologically?</p>
+<p><strong>Exercise 60 (Hard).</strong> A graph plots per-capita growth rate <span class="math inline">\(\left(\frac{1}{N}\frac{dN}{dt}\right)\)</span> against population size <span class="math inline">\(N\)</span>, a straight line from <span class="math inline">\((N=0, \text{rate}=r_{max})\)</span> to <span class="math inline">\((N=K, \text{rate}=0)\)</span>. What do the two intercepts represent, and what does the negative slope mean biologically?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-57-contents" aria-controls="callout-57" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-60-contents" aria-controls="callout-60" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-57" class="callout-57-contents callout-collapse collapse">
+<div id="callout-60" class="callout-60-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Y-intercept = maximum per-capita growth rate (density-independent growth at low <span class="math inline">\(N\)</span>); x-intercept = carrying capacity, where growth rate hits zero. The negative slope reflects negative density dependence: as the population grows, resources become limiting and the per-capita growth rate declines.</p>
 </div>
@@ -1285,52 +1340,52 @@ Solution
 <section id="esm-201-5" class="level3">
 <h3 class="anchored" data-anchor-id="esm-201-5">ESM 201</h3>
 <p><em>Source: instructor note — “if they know dn/dt notation, and that (dn)/(Ndt) = (1/N)(dn/dt), I’ll be thrilled.”</em></p>
-<p><strong>Intro.</strong> In the notation <span class="math inline">\(dN/dt\)</span>, what does this represent in words, and what does <span class="math inline">\(dN/dt=0\)</span> mean?</p>
+<p><strong>Exercise 61 (Intro).</strong> In the notation <span class="math inline">\(dN/dt\)</span>, what does this represent in words, and what does <span class="math inline">\(dN/dt=0\)</span> mean?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-58-contents" aria-controls="callout-58" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-61-contents" aria-controls="callout-61" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-58" class="callout-58-contents callout-collapse collapse">
+<div id="callout-61" class="callout-61-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(dN/dt\)</span> is the instantaneous rate of change of population size with respect to time. <span class="math inline">\(dN/dt=0\)</span> means the population is momentarily neither growing nor shrinking.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Explain the difference between <span class="math inline">\(dN/dt\)</span> and <span class="math inline">\(\frac{1}{N}\frac{dN}{dt}\)</span>. Which is the per-capita growth rate, and why is it more useful for comparing populations of very different sizes?</p>
+<p><strong>Exercise 62 (Medium).</strong> Explain the difference between <span class="math inline">\(dN/dt\)</span> and <span class="math inline">\(\frac{1}{N}\frac{dN}{dt}\)</span>. Which is the per-capita growth rate, and why is it more useful for comparing populations of very different sizes?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-59-contents" aria-controls="callout-59" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-62-contents" aria-controls="callout-62" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-59" class="callout-59-contents callout-collapse collapse">
+<div id="callout-62" class="callout-62-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(dN/dt\)</span> is the absolute rate (individuals/time). <span class="math inline">\(\frac{1}{N}\frac{dN}{dt}\)</span> is the per-capita rate — it normalizes by population size, so populations of 10 and 10,000 can be fairly compared on the same scale.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Population 1 has <span class="math inline">\(dN/dt = 50\)</span> individuals/year at <span class="math inline">\(N=500\)</span>. Population 2 has <span class="math inline">\(dN/dt = 50\)</span> individuals/year at <span class="math inline">\(N=5000\)</span>. Compute the per-capita growth rate for each, and say which is growing “faster” in a relative sense.</p>
+<p><strong>Exercise 63 (Hard).</strong> Population 1 has <span class="math inline">\(dN/dt = 50\)</span> individuals/year at <span class="math inline">\(N=500\)</span>. Population 2 has <span class="math inline">\(dN/dt = 50\)</span> individuals/year at <span class="math inline">\(N=5000\)</span>. Compute the per-capita growth rate for each, and say which is growing “faster” in a relative sense.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-60-contents" aria-controls="callout-60" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-63-contents" aria-controls="callout-63" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-60" class="callout-60-contents callout-collapse collapse">
+<div id="callout-63" class="callout-63-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Pop 1: <span class="math inline">\(50/500 = 0.10\)</span>/yr (10%). Pop 2: <span class="math inline">\(50/5000 = 0.01\)</span>/yr (1%). Despite equal absolute growth, Population 1 is growing far faster in relative (per-capita) terms.</p>
 </div>
@@ -1340,52 +1395,52 @@ Solution
 <section id="esm-203-6" class="level3">
 <h3 class="anchored" data-anchor-id="esm-203-6">ESM 203</h3>
 <p><em>Source: real quiz formula — Darcy’s law, <span class="math inline">\(q = -K_H(dh/dL)\)</span>.</em></p>
-<p><strong>Intro.</strong> In Darcy’s law, what does <span class="math inline">\(dh/dL\)</span> represent physically, and why the negative sign?</p>
+<p><strong>Exercise 64 (Intro).</strong> In Darcy’s law, what does <span class="math inline">\(dh/dL\)</span> represent physically, and why the negative sign?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-61-contents" aria-controls="callout-61" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-64-contents" aria-controls="callout-64" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-61" class="callout-61-contents callout-collapse collapse">
+<div id="callout-64" class="callout-64-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(dh/dL\)</span> is the hydraulic gradient — the rate of change of head with distance. The negative sign ensures flow is directed from high head to low head (down-gradient).</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> If <span class="math inline">\(dh/dL = 0\)</span> between two wells, what does that imply about groundwater flow between them?</p>
+<p><strong>Exercise 65 (Medium).</strong> If <span class="math inline">\(dh/dL = 0\)</span> between two wells, what does that imply about groundwater flow between them?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-62-contents" aria-controls="callout-62" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-65-contents" aria-controls="callout-65" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-62" class="callout-62-contents callout-collapse collapse">
+<div id="callout-65" class="callout-65-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>No flow (<span class="math inline">\(q=0\)</span>) — there’s no gradient driving movement.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Head declines steeply near a pumping well and levels off farther away. Explain, using <span class="math inline">\(dh/dL\)</span>, why specific discharge <span class="math inline">\(q\)</span> is largest close to the well.</p>
+<p><strong>Exercise 66 (Hard).</strong> Head declines steeply near a pumping well and levels off farther away. Explain, using <span class="math inline">\(dh/dL\)</span>, why specific discharge <span class="math inline">\(q\)</span> is largest close to the well.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-63-contents" aria-controls="callout-63" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-66-contents" aria-controls="callout-66" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-63" class="callout-63-contents callout-collapse collapse">
+<div id="callout-66" class="callout-66-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(q\)</span> is proportional to <span class="math inline">\(dh/dL\)</span>. The gradient (steepness of head decline) is greatest near the pumping well, so <span class="math inline">\(q\)</span> is largest there and falls off as the gradient flattens with distance.</p>
 </div>
@@ -1395,52 +1450,52 @@ Solution
 <section id="esm-204-5" class="level3">
 <h3 class="anchored" data-anchor-id="esm-204-5">ESM 204</h3>
 <p><em>Source: marginal cost/benefit — the economic meaning of a derivative — appears throughout HW1–HW2.</em></p>
-<p><strong>Intro.</strong> If total cost is <span class="math inline">\(TC(Q)\)</span>, marginal cost is <span class="math inline">\(MC(Q) = dTC/dQ\)</span>. What does <span class="math inline">\(MC\)</span> represent in words?</p>
+<p><strong>Exercise 67 (Intro).</strong> If total cost is <span class="math inline">\(TC(Q)\)</span>, marginal cost is <span class="math inline">\(MC(Q) = dTC/dQ\)</span>. What does <span class="math inline">\(MC\)</span> represent in words?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-64-contents" aria-controls="callout-64" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-67-contents" aria-controls="callout-67" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-64" class="callout-64-contents callout-collapse collapse">
+<div id="callout-67" class="callout-67-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The additional cost of producing one more (infinitesimal) unit of output at output level <span class="math inline">\(Q\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> A marginal benefit curve is <span class="math inline">\(MB(A) = 800 - A\)</span>. What does it mean that <span class="math inline">\(MB\)</span> decreases with <span class="math inline">\(A\)</span>, and what is <span class="math inline">\(MB\)</span> at <span class="math inline">\(A=800\)</span>?</p>
+<p><strong>Exercise 68 (Medium).</strong> A marginal benefit curve is <span class="math inline">\(MB(A) = 800 - A\)</span>. What does it mean that <span class="math inline">\(MB\)</span> decreases with <span class="math inline">\(A\)</span>, and what is <span class="math inline">\(MB\)</span> at <span class="math inline">\(A=800\)</span>?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-65-contents" aria-controls="callout-65" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-68-contents" aria-controls="callout-68" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-65" class="callout-65-contents callout-collapse collapse">
+<div id="callout-68" class="callout-68-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Each additional ton abated brings a smaller benefit (diminishing marginal benefit). At <span class="math inline">\(A=800\)</span>, <span class="math inline">\(MB=0\)</span> — no further benefit from abating more.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Explain, using the idea of marginal (derivative) comparisons, why ignoring a positive marginal external benefit (MEB) leads a policymaker to choose too little abatement relative to the social optimum.</p>
+<p><strong>Exercise 69 (Hard).</strong> Explain, using the idea of marginal (derivative) comparisons, why ignoring a positive marginal external benefit (MEB) leads a policymaker to choose too little abatement relative to the social optimum.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-66-contents" aria-controls="callout-66" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-69-contents" aria-controls="callout-69" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-66" class="callout-66-contents callout-collapse collapse">
+<div id="callout-69" class="callout-69-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Marginal social benefit <span class="math inline">\(MSB = MB + MEB\)</span> exceeds <span class="math inline">\(MB\)</span> at every abatement level. The market stops at <span class="math inline">\(MB=MAC\)</span>; the social optimum is where <span class="math inline">\(MSB=MAC\)</span>, which — since <span class="math inline">\(MSB&gt;MB\)</span> — occurs at a higher <span class="math inline">\(A\)</span>. Ignoring MEB means stopping too early, at a point where the <em>full</em> social marginal benefit still exceeds marginal cost.</p>
 </div>
@@ -1454,52 +1509,52 @@ Solution
 <section id="esm-201-6" class="level3">
 <h3 class="anchored" data-anchor-id="esm-201-6">ESM 201</h3>
 <p><em>Source: instructor note — “beginning calculus especially derivatives &amp; simple differentiation.”</em></p>
-<p><strong>Intro.</strong> Find <span class="math inline">\(dN/dt\)</span> if <span class="math inline">\(N(t) = 5t^2 + 3t\)</span>, using the power rule.</p>
+<p><strong>Exercise 70 (Intro).</strong> Find <span class="math inline">\(dN/dt\)</span> if <span class="math inline">\(N(t) = 5t^2 + 3t\)</span>, using the power rule.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-67-contents" aria-controls="callout-67" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-70-contents" aria-controls="callout-70" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-67" class="callout-67-contents callout-collapse collapse">
+<div id="callout-70" class="callout-70-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(dN/dt = 10t + 3\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> For exponential growth <span class="math inline">\(N(t) = N_0 e^{rt}\)</span>, use the chain rule to show <span class="math inline">\(dN/dt = rN\)</span>.</p>
+<p><strong>Exercise 71 (Medium).</strong> For exponential growth <span class="math inline">\(N(t) = N_0 e^{rt}\)</span>, use the chain rule to show <span class="math inline">\(dN/dt = rN\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-68-contents" aria-controls="callout-68" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-71-contents" aria-controls="callout-71" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-68" class="callout-68-contents callout-collapse collapse">
+<div id="callout-71" class="callout-71-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(dN/dt = N_0 \cdot r \cdot e^{rt} = r\left(N_0 e^{rt}\right) = rN\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> For logistic growth, treat <span class="math inline">\(\frac{dN}{dt} = rN(1-N/K)\)</span> as a function of <span class="math inline">\(N\)</span>. Find <span class="math inline">\(\frac{d}{dN}\left[rN(1-N/K)\right]\)</span> and evaluate it at <span class="math inline">\(N=K/2\)</span> and <span class="math inline">\(N=K\)</span>. What does the sign tell you at each point?</p>
+<p><strong>Exercise 72 (Hard).</strong> For logistic growth, treat <span class="math inline">\(\frac{dN}{dt} = rN(1-N/K)\)</span> as a function of <span class="math inline">\(N\)</span>. Find <span class="math inline">\(\frac{d}{dN}\left[rN(1-N/K)\right]\)</span> and evaluate it at <span class="math inline">\(N=K/2\)</span> and <span class="math inline">\(N=K\)</span>. What does the sign tell you at each point?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-69-contents" aria-controls="callout-69" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-72-contents" aria-controls="callout-72" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-69" class="callout-69-contents callout-collapse collapse">
+<div id="callout-72" class="callout-72-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Expand: <span class="math inline">\(rN - rN^2/K\)</span>. Derivative: <span class="math inline">\(r - 2rN/K\)</span>. At <span class="math inline">\(N=K/2\)</span>: <span class="math inline">\(r - r = 0\)</span> (the inflection point — maximum growth rate). At <span class="math inline">\(N=K\)</span>: <span class="math inline">\(r - 2r = -r &lt; 0\)</span> (growth rate is decreasing there — a stable equilibrium).</p>
 </div>
@@ -1509,52 +1564,52 @@ Solution
 <section id="esm-203-7" class="level3">
 <h3 class="anchored" data-anchor-id="esm-203-7">ESM 203</h3>
 <p><em>Source: rates of change of head and vapor pressure, extending the Darcy’s law/Tetens-formula material in the ESM 203 quiz.</em></p>
-<p><strong>Intro.</strong> Hydraulic head is <span class="math inline">\(h(x) = 100 - 0.04x\)</span>. Find <span class="math inline">\(dh/dx\)</span>.</p>
+<p><strong>Exercise 73 (Intro).</strong> Hydraulic head is <span class="math inline">\(h(x) = 100 - 0.04x\)</span>. Find <span class="math inline">\(dh/dx\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-70-contents" aria-controls="callout-70" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-73-contents" aria-controls="callout-73" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-70" class="callout-70-contents callout-collapse collapse">
+<div id="callout-73" class="callout-73-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(dh/dx = -0.04\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Near 20°C, saturation vapor pressure is locally approximated by <span class="math inline">\(e_s(T) \approx 2.34 + 0.17(T-20)\)</span>. Find <span class="math inline">\(de_s/dT\)</span> and interpret it.</p>
+<p><strong>Exercise 74 (Medium).</strong> Near 20°C, saturation vapor pressure is locally approximated by <span class="math inline">\(e_s(T) \approx 2.34 + 0.17(T-20)\)</span>. Find <span class="math inline">\(de_s/dT\)</span> and interpret it.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-71-contents" aria-controls="callout-71" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-74-contents" aria-controls="callout-74" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-71" class="callout-71-contents callout-collapse collapse">
+<div id="callout-74" class="callout-74-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(de_s/dT = 0.17\)</span> kPa/°C — the approximate rate saturation vapor pressure increases per degree of warming near 20°C.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Using <span class="math inline">\(e_s(T) = 6.112\,e^{\left(\frac{17.67(T-273.15)}{T-29.65}\right)}\)</span>, explain qualitatively (from the shape of the curve, without fully differentiating) why <span class="math inline">\(de_s/dT\)</span> is larger at high temperatures than low ones, and what this implies for a warming climate.</p>
+<p><strong>Exercise 75 (Hard).</strong> Using <span class="math inline">\(e_s(T) = 6.112\,e^{\left(\frac{17.67(T-273.15)}{T-29.65}\right)}\)</span>, explain qualitatively (from the shape of the curve, without fully differentiating) why <span class="math inline">\(de_s/dT\)</span> is larger at high temperatures than low ones, and what this implies for a warming climate.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-72-contents" aria-controls="callout-72" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-75-contents" aria-controls="callout-75" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-72" class="callout-72-contents callout-collapse collapse">
+<div id="callout-75" class="callout-75-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(e_s\)</span> vs.&nbsp;<span class="math inline">\(T\)</span> is increasing and convex (curves upward), so its slope increases with <span class="math inline">\(T\)</span> — the same amount of warming produces a bigger jump in saturation vapor pressure at higher baseline temperatures. This is a key reason warmer air holds disproportionately more moisture, intensifying precipitation potential as the climate warms.</p>
 </div>
@@ -1564,52 +1619,52 @@ Solution
 <section id="esm-204-6" class="level3">
 <h3 class="anchored" data-anchor-id="esm-204-6">ESM 204</h3>
 <p><em>Source: power/chain rule applied to demand and cost functions throughout HW1–HW2.</em></p>
-<p><strong>Intro.</strong> Given inverse demand <span class="math inline">\(P(Q) = 100 - 4Q\)</span>, find <span class="math inline">\(dP/dQ\)</span>.</p>
+<p><strong>Exercise 76 (Intro).</strong> Given inverse demand <span class="math inline">\(P(Q) = 100 - 4Q\)</span>, find <span class="math inline">\(dP/dQ\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-73-contents" aria-controls="callout-73" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-76-contents" aria-controls="callout-76" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-73" class="callout-73-contents callout-collapse collapse">
+<div id="callout-76" class="callout-76-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(dP/dQ = -4\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Total abatement cost is <span class="math inline">\(TAC(A) = 70A + A^2\)</span>. Find <span class="math inline">\(MAC(A) = dTAC/dA\)</span> and evaluate at <span class="math inline">\(A=50\)</span>.</p>
+<p><strong>Exercise 77 (Medium).</strong> Total abatement cost is <span class="math inline">\(TAC(A) = 70A + A^2\)</span>. Find <span class="math inline">\(MAC(A) = dTAC/dA\)</span> and evaluate at <span class="math inline">\(A=50\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-74-contents" aria-controls="callout-74" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-77-contents" aria-controls="callout-77" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-74" class="callout-74-contents callout-collapse collapse">
+<div id="callout-77" class="callout-77-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(MAC(A) = 70 + 2A\)</span>. At <span class="math inline">\(A=50\)</span>: <span class="math inline">\(MAC = 170\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A firm’s profit is <span class="math inline">\(\pi(Q) = 40Q - 0.5Q^2 - 200\)</span>. Find the profit-maximizing <span class="math inline">\(Q^*\)</span> using <span class="math inline">\(d\pi/dQ=0\)</span>, and confirm it’s a maximum with the second derivative.</p>
+<p><strong>Exercise 78 (Hard).</strong> A firm’s profit is <span class="math inline">\(\pi(Q) = 40Q - 0.5Q^2 - 200\)</span>. Find the profit-maximizing <span class="math inline">\(Q^*\)</span> using <span class="math inline">\(d\pi/dQ=0\)</span>, and confirm it’s a maximum with the second derivative.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-75-contents" aria-controls="callout-75" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-78-contents" aria-controls="callout-78" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-75" class="callout-75-contents callout-collapse collapse">
+<div id="callout-78" class="callout-78-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(d\pi/dQ = 40 - Q = 0 \Rightarrow Q^* = 40\)</span>. Second derivative: <span class="math inline">\(d^2\pi/dQ^2 = -1 &lt; 0\)</span>, confirming a maximum. <span class="math inline">\(\pi(40) = 1600 - 800 - 200 = 600\)</span>.</p>
 </div>
@@ -1623,52 +1678,52 @@ Solution
 <section id="esm-204-7" class="level3">
 <h3 class="anchored" data-anchor-id="esm-204-7">ESM 204</h3>
 <p><em>Source: Anna Pede — “find integral = area under graph (surplus)”; real HW2 marginal-external-benefit example.</em></p>
-<p><strong>Intro.</strong> Marginal external benefit (MEB) is constant at $70/ton. What does <span class="math inline">\(\int_0^A MEB\,dA\)</span> represent, and why is it just <span class="math inline">\(MEB \times A\)</span> here?</p>
+<p><strong>Exercise 79 (Intro).</strong> Marginal external benefit (MEB) is constant at $70/ton. What does <span class="math inline">\(\int_0^A MEB\,dA\)</span> represent, and why is it just <span class="math inline">\(MEB \times A\)</span> here?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-76-contents" aria-controls="callout-76" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-79-contents" aria-controls="callout-79" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-76" class="callout-76-contents callout-collapse collapse">
+<div id="callout-79" class="callout-79-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>It’s the total external benefit from abating <span class="math inline">\(A\)</span> tons. Since MEB is constant, the area under the curve is a rectangle (height × width), so total benefit <span class="math inline">\(= MEB \times A\)</span> — no integration technique needed for a constant function.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> A marginal benefit curve is <span class="math inline">\(MB(A) = 1200 - 1.5A\)</span>. What does the total benefit of abating from 0 to 300 tons represent geometrically?</p>
+<p><strong>Exercise 80 (Medium).</strong> A marginal benefit curve is <span class="math inline">\(MB(A) = 1200 - 1.5A\)</span>. What does the total benefit of abating from 0 to 300 tons represent geometrically?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-77-contents" aria-controls="callout-77" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-80-contents" aria-controls="callout-80" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-77" class="callout-77-contents callout-collapse collapse">
+<div id="callout-80" class="callout-80-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The area under the <span class="math inline">\(MB\)</span> line between <span class="math inline">\(A=0\)</span> and <span class="math inline">\(A=300\)</span> — since <span class="math inline">\(MB\)</span> is linear and positive there, that area is a trapezoid (or a rectangle plus a triangle).</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Explain why deadweight loss (DWL) from an uncorrected externality is the triangular area between the marginal social benefit (MSB) curve and the MAC curve, between the market quantity and the social optimum — and why this is fundamentally an integral.</p>
+<p><strong>Exercise 81 (Hard).</strong> Explain why deadweight loss (DWL) from an uncorrected externality is the triangular area between the marginal social benefit (MSB) curve and the MAC curve, between the market quantity and the social optimum — and why this is fundamentally an integral.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-78-contents" aria-controls="callout-78" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-81-contents" aria-controls="callout-81" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-78" class="callout-78-contents callout-collapse collapse">
+<div id="callout-81" class="callout-81-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Between the market quantity and the social optimum, <span class="math inline">\(MSB(A) &gt; MAC(A)\)</span> at every point — each “missed” unit would have added net value. Summing (integrating) that gap <span class="math inline">\(MSB(A)-MAC(A)\)</span> over the missed range gives total forgone benefit; because both curves are lines, that integral’s shape is a triangle, i.e., the DWL.</p>
 </div>
@@ -1678,52 +1733,52 @@ Solution
 <section id="esm-201-7" class="level3">
 <h3 class="anchored" data-anchor-id="esm-201-7">ESM 201</h3>
 <p><em>Source: natural extension of the dN/dt material — cumulative population change as area under a rate curve.</em></p>
-<p><strong>Intro.</strong> A population grows at a roughly constant <span class="math inline">\(dN/dt = 40\)</span> individuals/year for 5 years. What does <span class="math inline">\(\int_0^5 \frac{dN}{dt}\,dt\)</span> represent, and what’s its value?</p>
+<p><strong>Exercise 82 (Intro).</strong> A population grows at a roughly constant <span class="math inline">\(dN/dt = 40\)</span> individuals/year for 5 years. What does <span class="math inline">\(\int_0^5 \frac{dN}{dt}\,dt\)</span> represent, and what’s its value?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-79-contents" aria-controls="callout-79" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-82-contents" aria-controls="callout-82" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-79" class="callout-79-contents callout-collapse collapse">
+<div id="callout-82" class="callout-82-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>The total change in population size over the 5 years — the area under the constant-rate line — <span class="math inline">\(= 40 \times 5 = 200\)</span> individuals.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> A recruitment rate declines linearly from 100/year to 20/year over 4 years. Find total recruitment over the 4 years using the area under this line.</p>
+<p><strong>Exercise 83 (Medium).</strong> A recruitment rate declines linearly from 100/year to 20/year over 4 years. Find total recruitment over the 4 years using the area under this line.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-80-contents" aria-controls="callout-80" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-83-contents" aria-controls="callout-83" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-80" class="callout-80-contents callout-collapse collapse">
+<div id="callout-83" class="callout-83-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Trapezoid area: <span class="math inline">\(\frac{100+20}{2} \times 4 = 240\)</span> individuals recruited.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A population’s birth rate rises linearly from 20/year to 80/year over 6 years, while a constant harvest of 30 individuals/year is removed throughout. Using areas under curves for each rate, find the net change in population over the 6 years.</p>
+<p><strong>Exercise 84 (Hard).</strong> A population’s birth rate rises linearly from 20/year to 80/year over 6 years, while a constant harvest of 30 individuals/year is removed throughout. Using areas under curves for each rate, find the net change in population over the 6 years.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-81-contents" aria-controls="callout-81" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-84-contents" aria-controls="callout-84" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-81" class="callout-81-contents callout-collapse collapse">
+<div id="callout-84" class="callout-84-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Births (trapezoid area): <span class="math inline">\(\frac{20+80}{2} \times 6 = 300\)</span> individuals. Harvest (rectangle area): <span class="math inline">\(30 \times 6 = 180\)</span> individuals. Net change <span class="math inline">\(= 300 - 180 = 120\)</span> individuals.</p>
 </div>
@@ -1737,52 +1792,52 @@ Solution
 <section id="esm-204-8" class="level3">
 <h3 class="anchored" data-anchor-id="esm-204-8">ESM 204</h3>
 <p><em>Source: real HW2 progression — marginal benefit → total benefit / consumer surplus via the power rule; real HW2 total-abatement-cost calculation.</em></p>
-<p><strong>Intro.</strong> Given <span class="math inline">\(MB(A) = 1200 - 1.5A\)</span>, find <span class="math inline">\(TB(A) = \int MB(A)\,dA\)</span> (with <span class="math inline">\(TB(0)=0\)</span>), and evaluate at <span class="math inline">\(A=300\)</span>.</p>
+<p><strong>Exercise 85 (Intro).</strong> Given <span class="math inline">\(MB(A) = 1200 - 1.5A\)</span>, find <span class="math inline">\(TB(A) = \int MB(A)\,dA\)</span> (with <span class="math inline">\(TB(0)=0\)</span>), and evaluate at <span class="math inline">\(A=300\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-82-contents" aria-controls="callout-82" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-85-contents" aria-controls="callout-85" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-82" class="callout-82-contents callout-collapse collapse">
+<div id="callout-85" class="callout-85-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(TB(A) = 1200A - 0.75A^2\)</span>. <span class="math inline">\(TB(300) = 1200(300) - 0.75(300)^2 = 360{,}000 - 67{,}500 = 292{,}500\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Demand is <span class="math inline">\(P(Q) = 500 - 0.1Q\)</span>. At <span class="math inline">\(Q^*=3000\)</span>, the equilibrium price is <span class="math inline">\(P^*=200\)</span>. Find consumer surplus by integrating <span class="math inline">\(P(Q)\)</span> from 0 to <span class="math inline">\(Q^*\)</span> and subtracting total expenditure <span class="math inline">\(P^*Q^*\)</span>.</p>
+<p><strong>Exercise 86 (Medium).</strong> Demand is <span class="math inline">\(P(Q) = 500 - 0.1Q\)</span>. At <span class="math inline">\(Q^*=3000\)</span>, the equilibrium price is <span class="math inline">\(P^*=200\)</span>. Find consumer surplus by integrating <span class="math inline">\(P(Q)\)</span> from 0 to <span class="math inline">\(Q^*\)</span> and subtracting total expenditure <span class="math inline">\(P^*Q^*\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-83-contents" aria-controls="callout-83" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-86-contents" aria-controls="callout-86" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-83" class="callout-83-contents callout-collapse collapse">
+<div id="callout-86" class="callout-86-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(\int_0^{3000}(500-0.1Q)\,dQ = \left[500Q - 0.05Q^2\right]_0^{3000} = 1{,}500{,}000 - 450{,}000 = 1{,}050{,}000\)</span>. <span class="math inline">\(CS = 1{,}050{,}000 - (200\times3000) = 1{,}050{,}000 - 600{,}000 = 450{,}000\)</span>. (Check: this matches the triangle formula <span class="math inline">\(\tfrac12 \times 3000 \times (500-200) = 450{,}000\)</span>.)</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> <span class="math inline">\(MAC(A) = 70 + 2A\)</span>. Find <span class="math inline">\(TAC(A)\)</span> by integrating, then compute the total cost of abating from 0 to 342.86 tons — and check it against the trapezoid-area method.</p>
+<p><strong>Exercise 87 (Hard).</strong> <span class="math inline">\(MAC(A) = 70 + 2A\)</span>. Find <span class="math inline">\(TAC(A)\)</span> by integrating, then compute the total cost of abating from 0 to 342.86 tons — and check it against the trapezoid-area method.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-84-contents" aria-controls="callout-84" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-87-contents" aria-controls="callout-87" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-84" class="callout-84-contents callout-collapse collapse">
+<div id="callout-87" class="callout-87-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(TAC(A) = 70A + A^2\)</span>. At <span class="math inline">\(A=342.86\)</span>: <span class="math inline">\(TAC \approx 70(342.86) + 342.86^2 \approx 24{,}000 + 117{,}551 \approx 141{,}551\)</span>.</p>
 <p>Check via trapezoid: <span class="math inline">\(MAC(0)=70\)</span>, <span class="math inline">\(MAC(342.86) = 70+2(342.86) \approx 755.7\)</span>. Area <span class="math inline">\(= \frac{70+755.7}{2}\times342.86 \approx 141{,}551\)</span> — matches.</p>
@@ -1793,52 +1848,52 @@ Solution
 <section id="esm-201-8" class="level3">
 <h3 class="anchored" data-anchor-id="esm-201-8">ESM 201</h3>
 <p><em>Source: extends the dN/dt power-rule material to recover N(t) or cumulative recruitment from a rate function.</em></p>
-<p><strong>Intro.</strong> <span class="math inline">\(dN/dt = 6t\)</span>. Find <span class="math inline">\(N(t)\)</span> given <span class="math inline">\(N(0)=50\)</span>.</p>
+<p><strong>Exercise 88 (Intro).</strong> <span class="math inline">\(dN/dt = 6t\)</span>. Find <span class="math inline">\(N(t)\)</span> given <span class="math inline">\(N(0)=50\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-85-contents" aria-controls="callout-85" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-88-contents" aria-controls="callout-88" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-85" class="callout-85-contents callout-collapse collapse">
+<div id="callout-88" class="callout-88-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(N(t) = 3t^2 + C\)</span>. <span class="math inline">\(N(0)=50 \Rightarrow C=50\)</span>. <span class="math inline">\(N(t) = 3t^2 + 50\)</span>.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> Recruitment rate is <span class="math inline">\(R(t) = 100 - 5t\)</span> individuals/year (for <span class="math inline">\(0 \le t \le 20\)</span>). Find total recruitment between <span class="math inline">\(t=0\)</span> and <span class="math inline">\(t=10\)</span>.</p>
+<p><strong>Exercise 89 (Medium).</strong> Recruitment rate is <span class="math inline">\(R(t) = 100 - 5t\)</span> individuals/year (for <span class="math inline">\(0 \le t \le 20\)</span>). Find total recruitment between <span class="math inline">\(t=0\)</span> and <span class="math inline">\(t=10\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-86-contents" aria-controls="callout-86" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-89-contents" aria-controls="callout-89" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-86" class="callout-86-contents callout-collapse collapse">
+<div id="callout-89" class="callout-89-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(\int_0^{10}(100-5t)\,dt = \left[100t - 2.5t^2\right]_0^{10} = 1000 - 250 = 750\)</span> individuals.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> A population’s net rate of change is <span class="math inline">\(dN/dt = 8t - 15\)</span> individuals/year (growth accelerating over time, offset by a constant harvest of 15/year). Find <span class="math inline">\(N(t)\)</span> given <span class="math inline">\(N(0)=100\)</span>, and compute <span class="math inline">\(N(5)\)</span>.</p>
+<p><strong>Exercise 90 (Hard).</strong> A population’s net rate of change is <span class="math inline">\(dN/dt = 8t - 15\)</span> individuals/year (growth accelerating over time, offset by a constant harvest of 15/year). Find <span class="math inline">\(N(t)\)</span> given <span class="math inline">\(N(0)=100\)</span>, and compute <span class="math inline">\(N(5)\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-87-contents" aria-controls="callout-87" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-90-contents" aria-controls="callout-90" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-87" class="callout-87-contents callout-collapse collapse">
+<div id="callout-90" class="callout-90-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(N(t) = 4t^2 - 15t + C\)</span>. <span class="math inline">\(N(0)=100 \Rightarrow C=100\)</span>. <span class="math inline">\(N(t) = 4t^2 - 15t + 100\)</span>. <span class="math inline">\(N(5) = 4(25) - 75 + 100 = 100-75+100=125\)</span> individuals.</p>
 </div>
@@ -1852,52 +1907,52 @@ Solution
 <section id="esm-201-9" class="level3">
 <h3 class="anchored" data-anchor-id="esm-201-9">ESM 201</h3>
 <p><em>Source: instructor note — Lotka-Volterra and logistic growth are the flagship applications for ESM 201.</em></p>
-<p><strong>Intro.</strong> Write the logistic growth equation <span class="math inline">\(\frac{dN}{dt} = rN\left(1-\frac{N}{K}\right)\)</span> and explain what each term represents (don’t solve it).</p>
+<p><strong>Exercise 91 (Intro).</strong> Write the logistic growth equation <span class="math inline">\(\frac{dN}{dt} = rN\left(1-\frac{N}{K}\right)\)</span> and explain what each term represents (don’t solve it).</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-88-contents" aria-controls="callout-88" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-91-contents" aria-controls="callout-91" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-88" class="callout-88-contents callout-collapse collapse">
+<div id="callout-91" class="callout-91-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(dN/dt\)</span>: rate of population change over time. <span class="math inline">\(r\)</span>: intrinsic (maximum per-capita) growth rate. <span class="math inline">\(N\)</span>: current population size. <span class="math inline">\(K\)</span>: carrying capacity. <span class="math inline">\((1-N/K)\)</span>: shrinks toward zero as <span class="math inline">\(N\)</span> approaches <span class="math inline">\(K\)</span>, representing resource limitation.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> With <span class="math inline">\(r=0.5\)</span>/yr and <span class="math inline">\(K=1000\)</span>, evaluate <span class="math inline">\(dN/dt\)</span> at <span class="math inline">\(N=200\)</span> and at <span class="math inline">\(N=900\)</span>. Why is growth faster at <span class="math inline">\(N=200\)</span>?</p>
+<p><strong>Exercise 92 (Medium).</strong> With <span class="math inline">\(r=0.5\)</span>/yr and <span class="math inline">\(K=1000\)</span>, evaluate <span class="math inline">\(dN/dt\)</span> at <span class="math inline">\(N=200\)</span> and at <span class="math inline">\(N=900\)</span>. Why is growth faster at <span class="math inline">\(N=200\)</span>?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-89-contents" aria-controls="callout-89" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-92-contents" aria-controls="callout-92" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-89" class="callout-89-contents callout-collapse collapse">
+<div id="callout-92" class="callout-92-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>At <span class="math inline">\(N=200\)</span>: <span class="math inline">\(0.5 \times 200 \times (1-0.2) = 100 \times 0.8 = 80\)</span>/yr. At <span class="math inline">\(N=900\)</span>: <span class="math inline">\(0.5 \times 900 \times (1-0.9) = 450 \times 0.1 = 45\)</span>/yr. Growth is faster at <span class="math inline">\(N=200\)</span> because it’s farther from carrying capacity, so the limiting term <span class="math inline">\((1-N/K)\)</span> is closer to 1.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> The Lotka-Volterra equations are <span class="math inline">\(\frac{dN}{dt} = aN - bNP\)</span> (prey) and <span class="math inline">\(\frac{dP}{dt} = cbNP - dP\)</span> (predator). What happens to <span class="math inline">\(dN/dt\)</span> if <span class="math inline">\(P=0\)</span>, and what does this reveal about <span class="math inline">\(dP/dt\)</span> at the same moment? What does this say about how the two equations are coupled?</p>
+<p><strong>Exercise 93 (Hard).</strong> The Lotka-Volterra equations are <span class="math inline">\(\frac{dN}{dt} = aN - bNP\)</span> (prey) and <span class="math inline">\(\frac{dP}{dt} = cbNP - dP\)</span> (predator). What happens to <span class="math inline">\(dN/dt\)</span> if <span class="math inline">\(P=0\)</span>, and what does this reveal about <span class="math inline">\(dP/dt\)</span> at the same moment? What does this say about how the two equations are coupled?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-90-contents" aria-controls="callout-90" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-93-contents" aria-controls="callout-93" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-90" class="callout-90-contents callout-collapse collapse">
+<div id="callout-93" class="callout-93-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>If <span class="math inline">\(P=0\)</span>: <span class="math inline">\(dN/dt = aN\)</span> (pure exponential prey growth — no predation loss). At the same moment, <span class="math inline">\(dP/dt = cbN(0) - d(0) = 0\)</span>: the predator population can’t grow from zero, since there are no prey-predator encounters to fuel reproduction. The two populations are coupled entirely through the interaction term <span class="math inline">\(bNP\)</span>, which vanishes whenever either population is zero.</p>
 </div>
@@ -1907,52 +1962,52 @@ Solution
 <section id="esm-204-9" class="level3">
 <h3 class="anchored" data-anchor-id="esm-204-9">ESM 204</h3>
 <p><em>Source: instructor note — “the simplest of differential equations” is used in 204, in the context of renewable-resource dynamics.</em></p>
-<p><strong>Intro.</strong> A resource stock evolves as <span class="math inline">\(\frac{dS}{dt} = gS - H\)</span>, where <span class="math inline">\(g\)</span> is a growth rate and <span class="math inline">\(H\)</span> a constant harvest rate. What condition on <span class="math inline">\(dS/dt\)</span> defines a “sustainable” harvest?</p>
+<p><strong>Exercise 94 (Intro).</strong> A resource stock evolves as <span class="math inline">\(\frac{dS}{dt} = gS - H\)</span>, where <span class="math inline">\(g\)</span> is a growth rate and <span class="math inline">\(H\)</span> a constant harvest rate. What condition on <span class="math inline">\(dS/dt\)</span> defines a “sustainable” harvest?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-91-contents" aria-controls="callout-91" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-94-contents" aria-controls="callout-94" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-91" class="callout-91-contents callout-collapse collapse">
+<div id="callout-94" class="callout-94-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Sustainability means <span class="math inline">\(dS/dt = 0\)</span>, i.e., <span class="math inline">\(H = gS\)</span>: the harvest exactly matches natural growth at the current stock size, so the stock is stable over time.</p>
 </div>
 </div>
 </div>
-<p><strong>Medium.</strong> With <span class="math inline">\(g=0.1\)</span>/year and current stock <span class="math inline">\(S=2000\)</span> tons, what harvest rate <span class="math inline">\(H\)</span> makes this a steady state?</p>
+<p><strong>Exercise 95 (Medium).</strong> With <span class="math inline">\(g=0.1\)</span>/year and current stock <span class="math inline">\(S=2000\)</span> tons, what harvest rate <span class="math inline">\(H\)</span> makes this a steady state?</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-92-contents" aria-controls="callout-92" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-95-contents" aria-controls="callout-95" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-92" class="callout-92-contents callout-collapse collapse">
+<div id="callout-95" class="callout-95-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><span class="math inline">\(H = gS = 0.1 \times 2000 = 200\)</span> tons/year.</p>
 </div>
 </div>
 </div>
-<p><strong>Hard.</strong> Suppose <span class="math inline">\(\frac{dS}{dt} = gS - H\)</span> with <span class="math inline">\(g=0.08\)</span>/year, but the harvest <span class="math inline">\(H\)</span> is fixed at 250 tons/year regardless of stock size (rather than adjusted proportionally). Find the stock level <span class="math inline">\(S^*\)</span> at which this fixed harvest is exactly sustainable, and explain what happens to <span class="math inline">\(dS/dt\)</span> if <span class="math inline">\(S\)</span> drifts above or below <span class="math inline">\(S^*\)</span>.</p>
+<p><strong>Exercise 96 (Hard).</strong> Suppose <span class="math inline">\(\frac{dS}{dt} = gS - H\)</span> with <span class="math inline">\(g=0.08\)</span>/year, but the harvest <span class="math inline">\(H\)</span> is fixed at 250 tons/year regardless of stock size (rather than adjusted proportionally). Find the stock level <span class="math inline">\(S^*\)</span> at which this fixed harvest is exactly sustainable, and explain what happens to <span class="math inline">\(dS/dt\)</span> if <span class="math inline">\(S\)</span> drifts above or below <span class="math inline">\(S^*\)</span>.</p>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-93-contents" aria-controls="callout-93" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-96-contents" aria-controls="callout-96" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-93" class="callout-93-contents callout-collapse collapse">
+<div id="callout-96" class="callout-96-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p>Steady state: <span class="math inline">\(gS^* = H \Rightarrow S^* = H/g = 250/0.08 = 3125\)</span> tons. If <span class="math inline">\(S &gt; S^*\)</span>: <span class="math inline">\(gS &gt; H\)</span>, so <span class="math inline">\(dS/dt &gt; 0\)</span> — the stock keeps growing, unboundedly in this simple model. If <span class="math inline">\(S &lt; S^*\)</span>: <span class="math inline">\(gS &lt; H\)</span>, so <span class="math inline">\(dS/dt &lt; 0\)</span> — the stock keeps shrinking toward zero. Unlike a harvest set <em>proportional</em> to stock size, a fixed-quantity harvest makes <span class="math inline">\(S^*\)</span> an <strong>unstable</strong> equilibrium rather than a stable one.</p>
 </div>
@@ -2015,13 +2070,14 @@ Solution
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy
