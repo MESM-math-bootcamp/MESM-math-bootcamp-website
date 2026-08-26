@@ -7,19 +7,16 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.9.38">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ea385d0e468b0dd5ea5bf0780b1290d9.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.7.33">
 
-  <title>Bren Calculus Workshop – lecture-derivative</title>
+  <title>Bren Math Workshop – lecture-derivative</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
-    /* Default styles provided by pandoc.
-    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -32,7 +29,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-47abf7ff7a5eed8d849cff35fd183f8e.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-73b98051fc68f440f95a8b85692f1a71.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -132,18 +129,15 @@
     <div class="slides">
 
 
-<section id="title-slide" class="slide level2 center" data-menu-title="Title Slide" data-background=".white">
+<section id="title-slide" class="slide level2 center" data-menu-title="Title Slide" data-background="#053660">
 <h2></h2>
-<p><span class="custom-title blue-text">Rules and Applications of Derivatives</span></p>
-<p><span class="custom-subtitle gold">Bren Calculus Workshop</span></p>
+<p><span class="custom-title">Rules and Applications of Derivatives</span></p>
+<p><span class="custom-subtitle gold">Bren Math Workshop</span></p>
 <hr class="hr-teal">
-<p><span class="body-text-l center-text blue-text">Carmen Galaz García, Ph.D.</span></p>
-<p><span class="center-text body-text-m blue-text">Bren School of Environmental Science &amp; Management</span></p>
+<p><span class="body-text-l center-text baby-blue-text">Carmen Galaz García, Ph.D.</span></p>
+<p><span class="center-text body-text-m baby-blue-text">Bren School of Environmental Science &amp; Management</span></p>
 <p><br></p>
-<p><br></p>
-<p><span class="body-text-s blue-text"><strong>Last updated:</strong> Aug 14, 2026</span></p>
-<p><br></p>
-<p><em>Materials have been adapted from Nathaniel Grimes work for the Bren Calculus Workshop.</em></p>
+<p><span class="baby-blue-text body-text-s"><em>Materials have been adapted from Nathaniel Grimes work for the Bren Math Workshop.</em></span></p>
 <!---------------------------------------------------------------------->
 </section>
 <section id="tr" class="slide level2" data-menu-title="Team Review">
@@ -1012,7 +1006,7 @@ B_B (\frac{16}{45})\  \approx 2.27.
         slideNumber: 'c/t',
 
         // 'all', 'print', or 'speaker'
-        showSlideNumber: 'print',
+        showSlideNumber: 'all',
 
         // Add the current slide number to the URL hash so that reloading the
         // page/copying the URL will return you to the same slide
@@ -1142,7 +1136,7 @@ B_B (\frac{16}{45})\  \approx 2.27.
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1254,14 +1248,13 @@ B_B (\frac{16}{45})\  \approx 2.27.
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-          const outerScaffold = trigger.parentElement.cloneNode(true);
-          const codeEl = outerScaffold.querySelector('code');
-          for (const childEl of codeEl.children) {
-            if (isCodeAnnotation(childEl)) {
-              childEl.remove();
+            const codeEl = trigger.previousElementSibling.cloneNode(true);
+            for (const childEl of codeEl.children) {
+              if (isCodeAnnotation(childEl)) {
+                childEl.remove();
+              }
             }
-          }
-          return codeEl.innerText;
+            return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

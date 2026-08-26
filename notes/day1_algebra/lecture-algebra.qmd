@@ -16,13 +16,19 @@ format:
 
 ---
 
-## {#title-slide data-menu-title="Title Slide" background="#053660"} 
+## {#title-slide data-menu-title="Title Slide" background="#053660"}
 
-[MESM Math Workshop]{.custom-title}
+[Algebra Refresher and Units]{.custom-title}
 
-[*Day 1: Algebra refresher, units*]{.custom-subtitle}
+[Bren Math Workshop]{.custom-subtitle .gold}
 
 <hr class="hr-teal">
+
+[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .baby-blue-text}
+
+[Bren School of Environmental Science & Management]{.center-text .body-text-m .baby-blue-text}
+
+<br>
 
 [*Materials have been adapted from Nathaniel Grimes work for the Bren Math Workshop.*]{.baby-blue-text .body-text-s}
 
