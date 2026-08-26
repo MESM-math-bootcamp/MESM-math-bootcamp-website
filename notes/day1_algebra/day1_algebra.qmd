@@ -1,20 +1,18 @@
-# Day 1: Algebra
+# Day 1: Algebra & Units
 
 This unit covers basic introduction of algebra and how to use graphs to convey environmental science.
 
 ## Lecture materials
 
-[Algebra lecture slides](lecture-algebra.qmd){target="_blank"}
+[Lecture slides](lecture-algebra.qmd){target="_blank"}
 
 **Contents**
 
--   Introductions
-
--   Math in environmental science
-
 -   Algebra review
 
--   Graphing
+-   Solving equations
+
+- Exponents
 
 ## Problem sets (& solutions)
 

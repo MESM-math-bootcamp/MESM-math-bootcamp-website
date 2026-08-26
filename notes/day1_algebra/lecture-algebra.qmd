@@ -1198,8 +1198,6 @@ $$
 
 <hr>
 
-<br>
-
 [**F**irst, **O**utside, **I**nside, **L**ast]{.body-text-l}
 
 <br>
@@ -1216,8 +1214,6 @@ $$
 [Multiplying expressions (FOIL)]{.slide-title}
 
 <hr>
-
-<br>
 
 [**F**irst, **O**utside, **I**nside, **L**ast]{.body-text-l}
 
@@ -1284,19 +1280,6 @@ $$
 - Linear functions like $mx + c$ where $m$ and $c$ are constants are polynomials of degree 1!
 
 Polynomials often represent real world data better than a linear function.
-
----
-
-
-## {#fundamental-1 data-menu-title="Fundamental Theorem of Algebra"}
-
-[Fundamental Theorem of Algebra]{.slide-title}
-
-<hr>
-
-:::{.body-text-m}
-A **zero**, **root**, or **solution** for a polynomial is a value of $x$ that makes the polynomial equal to zero.
-:::
 
 ---
 
@@ -1370,7 +1353,330 @@ That means we need to always **familiarize ourselves with variables**, carefully
 
 ---
 
-## {#unit-conv data-menu-title="Unit conversions"} 
+## {#metric-prefixes data-menu-title="Metric prefixes"}
+
+[Metric prefixes]{.slide-title}
+
+<hr>
+
+Metric units are built from a **base unit** (like meters, grams, or liters) plus a **prefix** that scales it by a power of 10.
+
+$$
+\begin{array}{|l|c|c|c|}
+\hline
+\textbf{Prefix} & \textbf{Symbol} & \textbf{Factor} & \textbf{Example} \\
+\hline
+\text{kilo} & \text{k} & 10^{3} & \text{km, kg, kL} \\
+\hline
+\text{hecto} & \text{h} & 10^{2} & \text{hm, hg, hL} \\
+\hline
+\text{deka} & \text{da} & 10^{1} & \text{dam, dag, daL} \\
+\hline
+\textit{(base unit)} & - & 10^{0} & \text{m, g, L} \\
+\hline
+\text{deci} & \text{d} & 10^{-1} & \text{dm, dg, dL} \\
+\hline
+\text{centi} & \text{c} & 10^{-2} & \text{cm, cg, cL} \\
+\hline
+\text{milli} & \text{m} & 10^{-3} & \text{mm, mg, mL} \\
+\hline
+\end{array}
+$$
+
+::: {.body-text-s}
+The **factor** means how many times to multiply the base unit by 10. For example, 1 km = $10^3$ m = 1000 m, and 1 cm = $10^{-2}$ m = 0.01 m.
+:::
+
+---
+
+## {#metric-prefixes-example data-menu-title="Metric prefixes: example"}
+
+[Metric prefixes]{.slide-title}
+
+<hr>
+
+**Example.** Convert 4.7 km into cm.
+
+✏️  [Let's solve this together.]{style="color:green;"}
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+:::
+
+
+::: {.column width="70%"}
+$$
+\begin{array}{|l|c|c|c|}
+\hline
+\textbf{Prefix} & \textbf{Symbol} & \textbf{Factor} & \textbf{Example} \\
+\hline
+\text{kilo} & \text{k} & 10^{3} & \text{km, kg, kL} \\
+\hline
+\text{hecto} & \text{h} & 10^{2} & \text{hm, hg, hL} \\
+\hline
+\text{deka} & \text{da} & 10^{1} & \text{dam, dag, daL} \\
+\hline
+\textit{(base unit)} & - & 10^{0} & \text{m, g, L} \\
+\hline
+\text{deci} & \text{d} & 10^{-1} & \text{dm, dg, dL} \\
+\hline
+\text{centi} & \text{c} & 10^{-2} & \text{cm, cg, cL} \\
+\hline
+\text{milli} & \text{m} & 10^{-3} & \text{mm, mg, mL} \\
+\hline
+\end{array}
+$$
+:::
+
+:::
+
+---
+
+## {#metric-prefixes-example-solution data-menu-title="Metric prefixes: example"}
+
+[Metric prefixes]{.slide-title}
+
+<hr>
+
+**Example.** Convert 4.7 km into cm.
+
+:::: {.columns}
+
+::: {.column width="30%"}
+Starting at **kilo** and ending at **centi**, we move **5 rows down** the table:
+
+kilo &rarr; hecto &rarr; deka &rarr; base &rarr; deci &rarr; centi
+
+So we multiply by $10^5$:
+
+\begin{align*}
+4.7 \text{ km} &= 4.7 \times 10^5 \text{ cm} \\
+&= 470{,}000 \text{ cm}
+\end{align*}
+
+:::
+
+
+::: {.column width="70%"}
+$$
+\begin{array}{|l|c|c|c|}
+\hline
+\textbf{Prefix} & \textbf{Symbol} & \textbf{Factor} & \textbf{Example} \\
+\hline
+\text{kilo} & \text{k} & 10^{3} & \text{km, kg, kL} \\
+\hline
+\text{hecto} & \text{h} & 10^{2} & \text{hm, hg, hL} \\
+\hline
+\text{deka} & \text{da} & 10^{1} & \text{dam, dag, daL} \\
+\hline
+\textit{(base unit)} & - & 10^{0} & \text{m, g, L} \\
+\hline
+\text{deci} & \text{d} & 10^{-1} & \text{dm, dg, dL} \\
+\hline
+\text{centi} & \text{c} & 10^{-2} & \text{cm, cg, cL} \\
+\hline
+\text{milli} & \text{m} & 10^{-3} & \text{mm, mg, mL} \\
+\hline
+\end{array}
+$$
+:::
+
+:::
+
+---
+
+## {#metric-prefixes-example-2 data-menu-title="Metric prefixes: example 2"}
+
+[Metric prefixes]{.slide-title}
+
+<hr>
+
+**Example.** Convert 750 mL into L.
+
+✏️  [Let's solve this together.]{style="color:green;"}
+
+
+:::: {.columns}
+
+::: {.column width="30%"}
+
+:::
+
+
+::: {.column width="70%"}
+$$
+\begin{array}{|l|c|c|c|}
+\hline
+\textbf{Prefix} & \textbf{Symbol} & \textbf{Factor} & \textbf{Example} \\
+\hline
+\text{kilo} & \text{k} & 10^{3} & \text{km, kg, kL} \\
+\hline
+\text{hecto} & \text{h} & 10^{2} & \text{hm, hg, hL} \\
+\hline
+\text{deka} & \text{da} & 10^{1} & \text{dam, dag, daL} \\
+\hline
+\textit{(base unit)} & - & 10^{0} & \text{m, g, L} \\
+\hline
+\text{deci} & \text{d} & 10^{-1} & \text{dm, dg, dL} \\
+\hline
+\text{centi} & \text{c} & 10^{-2} & \text{cm, cg, cL} \\
+\hline
+\text{milli} & \text{m} & 10^{-3} & \text{mm, mg, mL} \\
+\hline
+\end{array}
+$$
+:::
+
+:::
+
+---
+
+## {#metric-prefixes-example-2-solution data-menu-title="Metric prefixes: example 2"}
+
+[Metric prefixes]{.slide-title}
+
+<hr>
+
+**Example.** Convert 750 mL into L.
+
+:::: {.columns}
+
+::: {.column width="30%"}
+Starting at **milli** and ending at **base**, we move **3 rows up** the table:
+
+milli &rarr; centi &rarr; deci &rarr; base
+
+So we divide by $10^3$:
+
+\begin{align*}
+750 \text{ mL} &= \frac{750}{10^3} \text{ L} \\
+&= 0.75 \text{ L}
+\end{align*}
+
+:::
+
+
+::: {.column width="70%"}
+$$
+\begin{array}{|l|c|c|c|}
+\hline
+\textbf{Prefix} & \textbf{Symbol} & \textbf{Factor} & \textbf{Example} \\
+\hline
+\text{kilo} & \text{k} & 10^{3} & \text{km, kg, kL} \\
+\hline
+\text{hecto} & \text{h} & 10^{2} & \text{hm, hg, hL} \\
+\hline
+\text{deka} & \text{da} & 10^{1} & \text{dam, dag, daL} \\
+\hline
+\textit{(base unit)} & - & 10^{0} & \text{m, g, L} \\
+\hline
+\text{deci} & \text{d} & 10^{-1} & \text{dm, dg, dL} \\
+\hline
+\text{centi} & \text{c} & 10^{-2} & \text{cm, cg, cL} \\
+\hline
+\text{milli} & \text{m} & 10^{-3} & \text{mm, mg, mL} \\
+\hline
+\end{array}
+$$
+:::
+
+:::
+
+---
+
+## {#area-volume-conversions data-menu-title="Area & volume conversions"}
+
+[Converting areas and volumes]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+So far we've converted **linear** units (length). What about **area** (squared units) and **volume** (cubed units)?
+:::
+
+::: {.body-text-m}
+<span style="color: red;">To convert area units, **square** the linear conversion factor. To convert volume units, **cube** the linear conversion factor.</span>
+:::
+
+<br>
+
+Since $1 \text{ m} = 100 \text{ cm}$:
+
+\begin{align*}
+1 \text{ m}^2 &= (100 \text{ cm})^2 = 100^2 \text{ cm}^2 = 10{,}000 \text{ cm}^2 \\
+1 \text{ m}^3 &= (100 \text{ cm})^3 = 100^3 \text{ cm}^3 = 1{,}000{,}000 \text{ cm}^3
+\end{align*}
+
+---
+
+## {#area-conversion-example data-menu-title="Area conversion: example"}
+
+[Converting areas and volumes]{.slide-title}
+
+<hr>
+
+**Example.** Convert $3.5 \text{ m}^2$ into $\text{cm}^2$.
+
+✏️  [Let's solve this together.]{style="color:green;"}
+
+---
+
+## {#area-conversion-example-solution data-menu-title="Area conversion: example"}
+
+[Converting areas and volumes]{.slide-title}
+
+<hr>
+
+**Example.** Convert $3.5 \text{ m}^2$ into $\text{cm}^2$.
+
+::: {.body-text-m}
+The linear factor from meters to centimeters is $10^2$ (2 rows down the metric prefix table). For area, we **square** this factor:
+:::
+
+\begin{align*}
+3.5 \text{ m}^2 &= 3.5 \times (10^2)^2 \text{ cm}^2 \\
+&= 3.5 \times 10^4 \text{ cm}^2 \\
+&= 35{,}000 \text{ cm}^2
+\end{align*}
+
+---
+
+## {#volume-conversion-example data-menu-title="Volume conversion: example"}
+
+[Converting areas and volumes]{.slide-title}
+
+<hr>
+
+**Example.** Convert $2 \text{ m}^3$ into $\text{cm}^3$.
+
+✏️  [Let's solve this together.]{style="color:green;"}
+
+---
+
+## {#volume-conversion-example-solution data-menu-title="Volume conversion: example"}
+
+[Converting areas and volumes]{.slide-title}
+
+<hr>
+
+**Example.** Convert $2 \text{ m}^3$ into $\text{cm}^3$.
+
+::: {.body-text-m}
+The linear factor from meters to centimeters is $10^2$ (2 rows down the metric prefix table). For volume, we **cube** this factor:
+:::
+
+\begin{align*}
+2 \text{ m}^3 &= 2 \times (10^2)^3 \text{ cm}^3 \\
+&= 2 \times 10^6 \text{ cm}^3 \\
+&= 2{,}000{,}000 \text{ cm}^3
+\end{align*}
+
+---
+
+## {#unit-conv data-menu-title="Unit conversions"}
 
 [Dimensional analysis (unit conversions)]{.slide-title}
 
