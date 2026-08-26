@@ -16,10 +16,8 @@ This unit covers basic introduction of algebra and how to use graphs to convey e
 
 -   Graphing
 
-## Problem set
+## Problem sets (& solutions)
 
-[Click here to see the problem set.](problem_set_algebra.qmd)
+[**Algebra problem set**](problem_set_algebra.qmd)
 
-## Problem set solutions
-
-[Solutions](solutions_problem_set_algebra.qmd)
+![](/notes/icons/homework.png){width=20%}

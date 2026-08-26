@@ -27,19 +27,19 @@ A short *source* line under each course heading says what grounded that pairing 
 
 *Source: instructor note — "basic algebra rather than actual calc" is the top concern for 201.*
 
-**Intro.** An organism's daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for Growth.
+**Exercise 1 (Intro).** An organism's daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for Growth.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $120 = G + 50 + 15 \Rightarrow G = 120 - 65 = 55$ kcal/day.
 :::
 
-**Medium.** The maximum sustainable yield of a harvested population is $H = \dfrac{rK}{4}$. If the sustainable harvest is $H = 80$ individuals/year and the carrying capacity is $K = 800$, solve for the intrinsic growth rate $r$.
+**Exercise 2 (Medium).** The maximum sustainable yield of a harvested population is $H = \dfrac{rK}{4}$. If the sustainable harvest is $H = 80$ individuals/year and the carrying capacity is $K = 800$, solve for the intrinsic growth rate $r$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $80 = \dfrac{r \cdot 800}{4} = 200r \Rightarrow r = 0.4$ per year.
 :::
 
-**Hard.** The logistic per-capita growth rate is $r\left(1 - \dfrac{N}{K}\right)$. If this rate equals $0.02$ when $N = 750$ and $K = 1000$, solve for $r$.
+**Exercise 3 (Hard).** The logistic per-capita growth rate is $r\left(1 - \dfrac{N}{K}\right)$. If this rate equals $0.02$ when $N = 750$ and $K = 1000$, solve for $r$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $1 - \dfrac{750}{1000} = 0.25$, so $0.25r = 0.02 \Rightarrow r = 0.08$ per year.
@@ -49,19 +49,19 @@ $1 - \dfrac{750}{1000} = 0.25$, so $0.25r = 0.02 \Rightarrow r = 0.08$ per year.
 
 *Source: instructor note — unit conversions are the top priority, but basic algebra (e.g., mass-balance/dilution equations) is the step just before a conversion.*
 
-**Intro.** A tank's mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.
+**Exercise 4 (Intro).** A tank's mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $50 = \text{out} + 30 \Rightarrow \text{out} = 20$ kg.
 :::
 
-**Medium.** To dilute a stock solution, $C_1V_1 = C_2V_2$. How much of a 12% stock solution is needed to make 3 L of a 2% solution?
+**Exercise 5 (Medium).** To dilute a stock solution, $C_1V_1 = C_2V_2$. How much of a 12% stock solution is needed to make 3 L of a 2% solution?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $12\% \cdot V_1 = 2\% \cdot 3\text{ L} \Rightarrow V_1 = \dfrac{2 \times 3}{12} = 0.5$ L.
 :::
 
-**Hard.** A steady-state concentration balance is $3(C - 5) + 2C = 40$ (mg/L). Solve for $C$.
+**Exercise 6 (Hard).** A steady-state concentration balance is $3(C - 5) + 2C = 40$ (mg/L). Solve for $C$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $3C - 15 + 2C = 40 \Rightarrow 5C = 55 \Rightarrow C = 11$ mg/L.
@@ -71,19 +71,19 @@ $3C - 15 + 2C = 40 \Rightarrow 5C = 55 \Rightarrow C = 11$ mg/L.
 
 *Source: real formula from the ESM 203 quiz sheet — "Change in storage per unit time = precipitation − actual ET − river outflows."*
 
-**Intro.** At steady state, $0 = P - AET - Q$. If $P = 900$ mm/y and $AET = 550$ mm/y, solve for streamflow $Q$.
+**Exercise 7 (Intro).** At steady state, $0 = P - AET - Q$. If $P = 900$ mm/y and $AET = 550$ mm/y, solve for streamflow $Q$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $Q = 900 - 550 = 350$ mm/y.
 :::
 
-**Medium.** The aridity index is $AI = P/PET$. If $AI = 0.35$ and $PET = 1400$ mm/y, solve for $P$.
+**Exercise 8 (Medium).** The aridity index is $AI = P/PET$. If $AI = 0.35$ and $PET = 1400$ mm/y, solve for $P$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $P = 0.35 \times 1400 = 490$ mm/y.
 :::
 
-**Hard.** In a watershed, actual evapotranspiration is 60% of precipitation: $AET = 0.6P$. At steady state, $0 = P - 0.6P - Q$, and $Q = 320$ mm/y. Solve for $P$.
+**Exercise 9 (Hard).** In a watershed, actual evapotranspiration is 60% of precipitation: $AET = 0.6P$. At steady state, $0 = P - 0.6P - Q$, and $Q = 320$ mm/y. Solve for $P$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $P - 0.6P = 0.4P = 320 \Rightarrow P = 800$ mm/y.
@@ -91,24 +91,24 @@ $P - 0.6P = 0.4P = 320 \Rightarrow P = 800$ mm/y.
 
 ### ESM 204
 
-*Source: real HW1 "Food bank markets" problem — solving Demand = Supply for equilibrium price and quantity.*
+*Source: single-formula algebra drawn from real 204 material — Anna Pede's elasticity emphasis (HW1), the inverse-demand "isolate P" rearrangement that also appears in the Day 1 lecture, and a breakeven (quadratic-formula) framing of the profit function used in HW2's marginal-cost material. Kept to one formula and one unknown, unlike the Demand = Supply system exercises below, which have been moved to Topic 4 (Equation of a line) since solving for an equilibrium is really finding where two lines intersect.*
 
-**Intro.** Demand: $P = 40 - 2Q$. Supply: $P = 10 + 3Q$. Solve for the equilibrium quantity and price.
+**Exercise 10 (Intro).** Price elasticity of demand is $\varepsilon = \dfrac{\%\Delta Q}{\%\Delta P}$. A policy raises price by 15%, and demand is unit elastic ($\varepsilon = -1$). Solve for the percent change in quantity, $\%\Delta Q$.
 
 ::: {.callout-note collapse="true" title="Solution"}
-$40 - 2Q = 10 + 3Q \Rightarrow 30 = 5Q \Rightarrow Q = 6$. Then $P = 40 - 2(6) = 28$.
+$\%\Delta Q = \varepsilon \times \%\Delta P = -1 \times 15\% = -15\%$.
 :::
 
-**Medium.** Demand: $P = 450 - 0.15Q$. Supply: $P = 10 + 0.1Q$. Solve for equilibrium $Q$ and $P$.
+**Exercise 11 (Medium).** Inverse demand is often written $Q = \dfrac{a - P}{b}$. Isolate $P$ in terms of $Q$, $a$, and $b$.
 
 ::: {.callout-note collapse="true" title="Solution"}
-$450 - 0.15Q = 10 + 0.1Q \Rightarrow 440 = 0.25Q \Rightarrow Q = 1760$. Then $P = 10 + 0.1(1760) = 186$.
+$bQ = a - P \Rightarrow P = a - bQ$.
 :::
 
-**Hard.** Demand: $P = 2(300 - 0.5Q)$. Supply: $P = 50 + Q$. Solve for equilibrium $Q$ and $P$.
+**Exercise 12 (Hard).** A firm's profit is $\pi(Q) = 40Q - 0.5Q^2 - 200$ (in \$100s). At what output level(s) $Q$ does the firm break even ($\pi = 0$)? Use the quadratic formula.
 
 ::: {.callout-note collapse="true" title="Solution"}
-Distribute first: $P = 600 - Q$. Set equal to supply: $600 - Q = 50 + Q \Rightarrow 550 = 2Q \Rightarrow Q = 275$, $P = 325$.
+Set $-0.5Q^2+40Q-200=0$, or equivalently $Q^2-80Q+400=0$. Quadratic formula: $Q=\dfrac{80\pm\sqrt{80^2-4(400)}}{2}=\dfrac{80\pm\sqrt{4800}}{2}\approx\dfrac{80\pm69.3}{2}$. So $Q\approx74.6$ or $Q\approx5.4$ — the firm breaks even at these two output levels (and earns positive profit for $Q$ between them).
 :::
 
 ---
@@ -119,19 +119,19 @@ Distribute first: $P = 600 - Q$. Set equal to supply: $600 - Q = 50 + Q \Rightar
 
 *Source: instructor note — "conversions between ppm and percent" called out as the single most important skill in 202.*
 
-**Intro.** Convert 250 ppm to a percentage.
+**Exercise 13 (Intro).** Convert 250 ppm to a percentage.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $250 \text{ ppm} = \dfrac{250}{10{,}000}\% = 0.025\%$.
 :::
 
-**Medium.** A water sample is 0.015% contaminant by mass. Express this in ppm.
+**Exercise 14 (Medium).** A water sample is 0.015% contaminant by mass. Express this in ppm.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $0.015\% \times 10{,}000 = 150$ ppm.
 :::
 
-**Hard.** A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?
+**Exercise 15 (Hard).** A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?
 
 ::: {.callout-note collapse="true" title="Solution"}
 Organic matter: $2.4\% \times 500\text{ g} = 12$ g.
@@ -143,19 +143,19 @@ Ratio $= 12 / 0.19 \approx 63.2$.
 
 *Source: real quiz-prep slide examples — relative humidity, aridity index, and runoff ratio (all percent-based quantities).*
 
-**Intro.** Saturation vapor pressure at 10°C is 1.23 kPa; actual vapor pressure is 0.37 kPa. Find the relative humidity.
+**Exercise 16 (Intro).** Saturation vapor pressure at 10°C is 1.23 kPa; actual vapor pressure is 0.37 kPa. Find the relative humidity.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $RH = 0.37/1.23 \approx 30.1\%$.
 :::
 
-**Medium.** Annual precipitation is 620 mm/y and potential evapotranspiration is 1550 mm/y. Express the aridity index as a percent.
+**Exercise 17 (Medium).** Annual precipitation is 620 mm/y and potential evapotranspiration is 1550 mm/y. Express the aridity index as a percent.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $AI = 620/1550 = 0.40 = 40\%$.
 :::
 
-**Hard.** A watershed receives 950 mm/y of precipitation. Actual evapotranspiration is 65% of precipitation. What is the runoff ratio?
+**Exercise 18 (Hard).** A watershed receives 950 mm/y of precipitation. Actual evapotranspiration is 65% of precipitation. What is the runoff ratio?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $AET = 0.65 \times 950 = 617.5$ mm/y. Runoff $= 950 - 617.5 = 332.5$ mm/y. Runoff ratio $= 332.5/950 = 35\%$.
@@ -165,19 +165,19 @@ $AET = 0.65 \times 950 = 617.5$ mm/y. Runoff $= 950 - 617.5 = 332.5$ mm/y. Runof
 
 *Source: instructor emphasis on elasticity/percent-change reasoning (HW1's elasticity question).*
 
-**Intro.** A policy raises the price of a good from $20 to $23. What is the percent change in price?
+**Exercise 19 (Intro).** A policy raises the price of a good from $20 to $23. What is the percent change in price?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $\Delta P/P = 3/20 = 15\%$.
 :::
 
-**Medium.** Quantity demanded falls from 500 to 425 units after the price increase above. What is the percent change in quantity?
+**Exercise 20 (Medium).** Quantity demanded falls from 500 to 425 units after the price increase above. What is the percent change in quantity?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $\Delta Q/Q = -75/500 = -15\%$.
 :::
 
-**Hard.** Using the price change (+15%) and quantity change (−15%) above, compute the price elasticity of demand and state whether demand is elastic, unit elastic, or inelastic.
+**Exercise 21 (Hard).** Using the price change (+15%) and quantity change (−15%) above, compute the price elasticity of demand and state whether demand is elastic, unit elastic, or inelastic.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $\varepsilon = -15\%/15\% = -1$. $|\varepsilon| = 1$, so demand is **unit elastic**.
@@ -187,19 +187,19 @@ $\varepsilon = -15\%/15\% = -1$. $|\varepsilon| = 1$, so demand is **unit elasti
 
 *Source: general population percent-change reasoning (supports the instructor's "basic math" emphasis, applied to population counts).*
 
-**Intro.** A population of 240 individuals grows to 264 the next year. What is the percent increase?
+**Exercise 22 (Intro).** A population of 240 individuals grows to 264 the next year. What is the percent increase?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $24/240 = 10\%$.
 :::
 
-**Medium.** A population of 500 declines by 18%. What is the new population size?
+**Exercise 23 (Medium).** A population of 500 declines by 18%. What is the new population size?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $500 \times 0.82 = 410$.
 :::
 
-**Hard.** A population grows 12% one year, then declines 12% the next. Starting from an index of 100, is the population back to its original size? Compute the net percent change.
+**Exercise 24 (Hard).** A population grows 12% one year, then declines 12% the next. Starting from an index of 100, is the population back to its original size? Compute the net percent change.
 
 ::: {.callout-note collapse="true" title="Solution"}
 After +12%: $112$. After −12%: $112 \times 0.88 = 98.56$. Net change $= -1.44\%$ — **not** back to the original size, because successive percent changes don't cancel (the second change applies to a different base).
@@ -213,19 +213,19 @@ After +12%: $112$. After −12%: $112 \times 0.88 = 98.56$. Net change $= -1.44\
 
 *Source: instructor note — explicitly named exponent/fraction simplification ("$2/k/2=\ldots$") as a top concern.*
 
-**Intro.** Simplify: $k^5 / k^2$.
+**Exercise 25 (Intro).** Simplify: $k^5 / k^2$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $k^5/k^2 = k^{5-2} = k^3$.
 :::
 
-**Medium.** Simplify: $(k^3)^2 / k^4$.
+**Exercise 26 (Medium).** Simplify: $(k^3)^2 / k^4$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $(k^3)^2 = k^6$, so $k^6/k^4 = k^2$.
 :::
 
-**Hard.** A population's growth factor per generation is $\lambda = 1.2$. If $N_0 = 50$ and after several generations $N(t) = 50 \times (1.2)^2 \times (1.2)^3$, simplify the exponent expression and compute $N(t)$.
+**Exercise 27 (Hard).** A population's growth factor per generation is $\lambda = 1.2$. If $N_0 = 50$ and after several generations $N(t) = 50 \times (1.2)^2 \times (1.2)^3$, simplify the exponent expression and compute $N(t)$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $(1.2)^2 \times (1.2)^3 = (1.2)^5 \approx 2.488$. $N(t) = 50 \times 2.488 \approx 124.4$, i.e., about 124 individuals.
@@ -235,19 +235,19 @@ $(1.2)^2 \times (1.2)^3 = (1.2)^5 \approx 2.488$. $N(t) = 50 \times 2.488 \appro
 
 *Source: the Teten formula from ESM 203 Assignment 2, which has the form $e = 6.112\,e^{(\ldots)}$.*
 
-**Intro.** Simplify $e^3 \times e^2$, and name the exponent rule used.
+**Exercise 28 (Intro).** Simplify $e^3 \times e^2$, and name the exponent rule used.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $e^3 \times e^2 = e^5$ (product of powers with the same base: add the exponents).
 :::
 
-**Medium.** Given $e^1 \approx 2.718$ and $e^2 \approx 7.389$, find $e^3$ using the product-of-powers rule (no calculator "$e^x$" button).
+**Exercise 29 (Medium).** Given $e^1 \approx 2.718$ and $e^2 \approx 7.389$, find $e^3$ using the product-of-powers rule (no calculator "$e^x$" button).
 
 ::: {.callout-note collapse="true" title="Solution"}
 $e^3 = e^1 \times e^2 \approx 2.718 \times 7.389 \approx 20.09$.
 :::
 
-**Hard.** Using the Tetens formula $e_s = 6.112 \cdot e^{\left(\frac{17.67(T-273.15)}{T-29.65}\right)}$ (T in Kelvin), evaluate the saturation vapor pressure at $T = 293.15$ K (20°C).
+**Exercise 30 (Hard).** Using the Tetens formula $e_s = 6.112 \cdot e^{\left(\frac{17.67(T-273.15)}{T-29.65}\right)}$ (T in Kelvin), evaluate the saturation vapor pressure at $T = 293.15$ K (20°C).
 
 ::: {.callout-note collapse="true" title="Solution"}
 Exponent: $\dfrac{17.67 \times (293.15-273.15)}{293.15-29.65} = \dfrac{17.67 \times 20}{263.5} = \dfrac{353.4}{263.5} \approx 1.341$.
@@ -259,19 +259,19 @@ $e^{1.341} \approx 3.823$. $e_s = 6.112 \times 3.823 \approx 23.4$ hPa $\approx 
 
 *Source: HW4's discount-rate sensitivity analysis, which is fundamentally repeated exponentiation of $(1+r)$.*
 
-**Intro.** Simplify $(1.05)^2 \times (1.05)^3$ as a single power of 1.05. If 1.05 is an annual growth factor, what does the result represent?
+**Exercise 31 (Intro).** Simplify $(1.05)^2 \times (1.05)^3$ as a single power of 1.05. If 1.05 is an annual growth factor, what does the result represent?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $(1.05)^2 \times (1.05)^3 = (1.05)^5$ — growth compounded over 5 years.
 :::
 
-**Medium.** A cost of \$10,000 occurs in year 3. Using discount factor $1/(1+r)^t$ with $r = 0.06$, find its present value.
+**Exercise 32 (Medium).** A cost of \$10,000 occurs in year 3. Using discount factor $1/(1+r)^t$ with $r = 0.06$, find its present value.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $1.06^3 \approx 1.191$. $PV = 10{,}000/1.191 \approx \$8{,}397$.
 :::
 
-**Hard.** Compare the present value of \$5,000 received in year 10 under $r=0.03$ vs. $r=0.08$. By what percent does the higher discount rate reduce the present value?
+**Exercise 33 (Hard).** Compare the present value of \$5,000 received in year 10 under $r=0.03$ vs. $r=0.08$. By what percent does the higher discount rate reduce the present value?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $1.03^{10} \approx 1.344 \Rightarrow PV \approx 5000/1.344 \approx \$3{,}722$.
@@ -287,41 +287,61 @@ The higher discount rate reduces PV by about $(3722-2317)/3722 \approx 38\%$ —
 
 *Source: Anna Pede meeting notes — "equation of a line" named directly; grounded in supply/demand curves throughout HW1–HW2.*
 
-**Intro.** A demand curve is $P = 50 - 2Q$. Identify the slope and the y-intercept, and state what each means economically.
+**Exercise 34 (Intro).** A demand curve is $P = 50 - 2Q$. Identify the slope and the y-intercept, and state what each means economically.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Slope $= -2$ (price falls \$2 for each extra unit demanded); y-intercept $= 50$ (the "choke price" — the price at which quantity demanded is zero).
 :::
 
-**Medium.** A supply curve passes through $(Q=0, P=10)$ and $(Q=100, P=60)$. Find $P(Q)$ in slope-intercept form.
+**Exercise 35 (Medium).** A supply curve passes through $(Q=0, P=10)$ and $(Q=100, P=60)$. Find $P(Q)$ in slope-intercept form.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Slope $= (60-10)/(100-0) = 0.5$. $P = 10 + 0.5Q$.
 :::
 
-**Hard.** At a price of \$40, quantity demanded is 200 units; at \$10, quantity demanded is 350 units. Find the inverse demand equation $P(Q)$ and the choke price.
+**Exercise 36 (Hard).** At a price of \$40, quantity demanded is 200 units; at \$10, quantity demanded is 350 units. Find the inverse demand equation $P(Q)$ and the choke price.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Slope $= (40-10)/(200-350) = 30/(-150) = -0.2$. Using $(200, 40)$: $P - 40 = -0.2(Q-200) \Rightarrow P = 80 - 0.2Q$. Choke price (at $Q=0$): \$80.
+:::
+
+*Source: real HW1 "Food bank markets" problem — solving Demand = Supply for equilibrium price and quantity. (Moved here from Topic 1: finding a market equilibrium is finding where two lines — demand and supply — intersect, so these fit more naturally alongside single-line exercises than among the single-formula algebra exercises above.)*
+
+**Exercise 37 (Intro).** Demand: $P = 40 - 2Q$. Supply: $P = 10 + 3Q$. Solve for the equilibrium quantity and price.
+
+::: {.callout-note collapse="true" title="Solution"}
+$40 - 2Q = 10 + 3Q \Rightarrow 30 = 5Q \Rightarrow Q = 6$. Then $P = 40 - 2(6) = 28$.
+:::
+
+**Exercise 38 (Medium).** Demand: $P = 450 - 0.15Q$. Supply: $P = 10 + 0.1Q$. Solve for equilibrium $Q$ and $P$.
+
+::: {.callout-note collapse="true" title="Solution"}
+$450 - 0.15Q = 10 + 0.1Q \Rightarrow 440 = 0.25Q \Rightarrow Q = 1760$. Then $P = 10 + 0.1(1760) = 186$.
+:::
+
+**Exercise 39 (Hard).** Demand: $P = 2(300 - 0.5Q)$. Supply: $P = 50 + Q$. Solve for equilibrium $Q$ and $P$.
+
+::: {.callout-note collapse="true" title="Solution"}
+Distribute first: $P = 600 - Q$. Set equal to supply: $600 - Q = 50 + Q \Rightarrow 550 = 2Q \Rightarrow Q = 275$, $P = 325$.
 :::
 
 ### ESM 201
 
 *Source: instructor note — "equations for lines and hyperbolas" listed among 201's core algebra needs.*
 
-**Intro.** A linear length–weight relationship for a fish species is $W = 5L - 20$ (grams, cm). What is the weight of a 15 cm fish?
+**Exercise 40 (Intro).** A linear length–weight relationship for a fish species is $W = 5L - 20$ (grams, cm). What is the weight of a 15 cm fish?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $W = 5(15) - 20 = 55$ g.
 :::
 
-**Medium.** Two data points relate stream temperature $T$ (°C) to metabolic rate $M$: $(T=10, M=20)$ and $(T=20, M=50)$. Find $M(T)$.
+**Exercise 41 (Medium).** Two data points relate stream temperature $T$ (°C) to metabolic rate $M$: $(T=10, M=20)$ and $(T=20, M=50)$. Find $M(T)$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Slope $= (50-20)/(20-10) = 3$. $M = 20 + 3(T-10) = 3T - 10$.
 :::
 
-**Hard.** Per-capita growth rate declines linearly with density: at $N=0$, rate $=0.3$/yr; at $N=K=600$, rate $=0$. Write the linear equation and find $N$ where the rate equals $0.1$/yr.
+**Exercise 42 (Hard).** Per-capita growth rate declines linearly with density: at $N=0$, rate $=0.3$/yr; at $N=K=600$, rate $=0$. Write the linear equation and find $N$ where the rate equals $0.1$/yr.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Slope $= (0-0.3)/(600-0) = -0.0005$. Rate$(N) = 0.3 - 0.0005N$. Set $=0.1$: $0.2 = 0.0005N \Rightarrow N = 400$.
@@ -332,19 +352,19 @@ Slope $= (0-0.3)/(600-0) = -0.0005$. Rate$(N) = 0.3 - 0.0005N$. Set $=0.1$: $0.2
 
 *Source: Darcy's law from the ESM 203 quiz sheet — hydraulic head is linear in distance between wells.*
 
-**Intro.** Hydraulic head drops linearly from 80 m to 65 m over a horizontal distance of 500 m. Find the slope $dh/dL$.
+**Exercise 43 (Intro).** Hydraulic head drops linearly from 80 m to 65 m over a horizontal distance of 500 m. Find the slope $dh/dL$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $(65-80)/500 = -0.03$.
 :::
 
-**Medium.** Using $dh/dL = -0.03$ and hydraulic conductivity $K = 0.015$ m/day, use Darcy's law $q = -K(dh/dL)$ to find the specific discharge.
+**Exercise 44 (Medium).** Using $dh/dL = -0.03$ and hydraulic conductivity $K = 0.015$ m/day, use Darcy's law $q = -K(dh/dL)$ to find the specific discharge.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $q = -0.015 \times (-0.03) = 0.00045$ m/day.
 :::
 
-**Hard.** Two wells are 400 m apart. Well A has head 120 m; Well B has head 96 m. Write $h(x)$ as a linear function of distance $x$ from Well A, and predict the head at $x=250$ m.
+**Exercise 45 (Hard).** Two wells are 400 m apart. Well A has head 120 m; Well B has head 96 m. Write $h(x)$ as a linear function of distance $x$ from Well A, and predict the head at $x=250$ m.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Slope $= (96-120)/400 = -0.06$. $h(x) = 120 - 0.06x$. At $x=250$: $h = 120 - 15 = 105$ m.
@@ -358,19 +378,19 @@ Slope $= (96-120)/400 = -0.06$. $h(x) = 120 - 0.06x$. At $x=250$: $h = 120 - 15 
 
 *Source: instructor's #1 priority — mL↔L, and mass/volume concentration units.*
 
-**Intro.** Convert 750 mL to liters.
+**Exercise 46 (Intro).** Convert 750 mL to liters.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $750 \text{ mL} = 0.75$ L.
 :::
 
-**Medium.** A stock solution is 4 g/L. Express this in mg/mL.
+**Exercise 47 (Medium).** A stock solution is 4 g/L. Express this in mg/mL.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $4 \text{ g/L} = 4000 \text{ mg} / 1000 \text{ mL} = 4$ mg/mL.
 :::
 
-**Hard.** A pollutant concentration is 12 μg/mL. Convert this to kg/m³.
+**Exercise 48 (Hard).** A pollutant concentration is 12 μg/mL. Convert this to kg/m³.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $1 \text{ mL} = 10^{-6} \text{ m}^3$, so $12\ \mu\text{g}/10^{-6}\text{ m}^3 = 12\times10^{6}\ \mu\text{g/m}^3$.
@@ -381,19 +401,19 @@ Convert $\mu$g to kg ($1\ \mu\text{g} = 10^{-9}$ kg): $12\times10^{6} \times 10^
 
 *Source: real quiz-prep slide — the lake-area example and area/volume conversions flagged as a struggle point.*
 
-**Intro.** Convert an area of 3.2 km² to m².
+**Exercise 49 (Intro).** Convert an area of 3.2 km² to m².
 
 ::: {.callout-note collapse="true" title="Solution"}
 $3.2 \text{ km}^2 \times (1000\text{ m/km})^2 = 3.2\times10^{6}$ m².
 :::
 
-**Medium.** A lake has average depth 8 m and surface area 2.5 km². Using Volume = depth × area, find the volume in m³.
+**Exercise 50 (Medium).** A lake has average depth 8 m and surface area 2.5 km². Using Volume = depth × area, find the volume in m³.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Area $= 2.5\times10^{6}$ m². Volume $= 8 \times 2.5\times10^{6} = 2\times10^{7}$ m³.
 :::
 
-**Hard.** A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.
+**Exercise 51 (Hard).** A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $45 \text{ mm} = 0.045$ m. Area $= 1800\times10^{6} = 1.8\times10^{9}$ m². Volume $= 0.045 \times 1.8\times10^{9} = 8.1\times10^{7}$ m³/year.
@@ -407,19 +427,19 @@ $45 \text{ mm} = 0.045$ m. Area $= 1800\times10^{6} = 1.8\times10^{9}$ m². Volu
 
 *Source: Anna Pede — reading graphs ranked the #1 most important math tool in the course; grounded in the kinked aggregate demand curve from HW1.*
 
-**Intro.** A supply-and-demand graph shows the demand curve hitting the y-axis at $P=\$60$ and the supply curve hitting it at $P=\$5$. What does each y-intercept represent?
+**Exercise 52 (Intro).** A supply-and-demand graph shows the demand curve hitting the y-axis at $P=\$60$ and the supply curve hitting it at $P=\$5$. What does each y-intercept represent?
 
 ::: {.callout-note collapse="true" title="Solution"}
 Demand y-intercept = the choke price (maximum willingness to pay, at $Q=0$). Supply y-intercept = the minimum price needed to induce any positive supply.
 :::
 
-**Medium.** An aggregate demand curve has a kink at $(Q=1000, P=\$400)$ (as in the peanut-butter market from HW1). What does the kink tell you about the market, and which price range has more than one buyer group active?
+**Exercise 53 (Medium).** An aggregate demand curve has a kink at $(Q=1000, P=\$400)$ (as in the peanut-butter market from HW1). What does the kink tell you about the market, and which price range has more than one buyer group active?
 
 ::: {.callout-note collapse="true" title="Solution"}
 Above \$400, only one demand segment is active; below \$400, a second buyer group's demand adds in, making the aggregate curve flatter (more responsive to price) below the kink.
 :::
 
-**Hard.** A graph shows marginal benefit (MB) falling from \$1200 to \$0 as abatement rises from 0 to 800 tons, and marginal abatement cost (MAC) rising from \$70 to \$800, crossing MB near $(A{=}320, P{=}\$715)$. A dashed line \$70 above MB represents the marginal external benefit (MEB). From the graph alone, how would you locate the socially optimal abatement level, and is it larger or smaller than the market equilibrium?
+**Exercise 54 (Hard).** A graph shows marginal benefit (MB) falling from \$1200 to \$0 as abatement rises from 0 to 800 tons, and marginal abatement cost (MAC) rising from \$70 to \$800, crossing MB near $(A{=}320, P{=}\$715)$. A dashed line \$70 above MB represents the marginal external benefit (MEB). From the graph alone, how would you locate the socially optimal abatement level, and is it larger or smaller than the market equilibrium?
 
 ::: {.callout-note collapse="true" title="Solution"}
 The socially optimal level is where MB shifted up by MEB (i.e., MSB) crosses MAC. Since MSB lies above MB everywhere, that crossing happens at a **larger** abatement quantity than the market equilibrium (MB–MAC crossing).
@@ -429,19 +449,19 @@ The socially optimal level is where MB shifted up by MEB (i.e., MSB) crosses MAC
 
 *Source: the saturation vapor pressure curve and water-density-vs-temperature graph used in ESM 203 lecture/quiz materials.*
 
-**Intro.** A graph of saturation vapor pressure $e_s$ (kPa) vs. temperature (°C) starts near 0 at −30°C and reaches about 4.2 kPa at 30°C. Is the relationship linear or nonlinear, and how can you tell from the shape?
+**Exercise 55 (Intro).** A graph of saturation vapor pressure $e_s$ (kPa) vs. temperature (°C) starts near 0 at −30°C and reaches about 4.2 kPa at 30°C. Is the relationship linear or nonlinear, and how can you tell from the shape?
 
 ::: {.callout-note collapse="true" title="Solution"}
 Nonlinear — the curve gets steeper as $T$ increases rather than rising at a constant rate, unlike a straight line.
 :::
 
-**Medium.** On that same graph, a parcel of air has actual vapor pressure 1.0 kPa. Reading across to the curve, it intersects at about $T=7°C$. What does this temperature represent?
+**Exercise 56 (Medium).** On that same graph, a parcel of air has actual vapor pressure 1.0 kPa. Reading across to the curve, it intersects at about $T=7°C$. What does this temperature represent?
 
 ::: {.callout-note collapse="true" title="Solution"}
 The dew point temperature — the temperature at which the parcel would be saturated (RH = 100%) at its current actual vapor pressure.
 :::
 
-**Hard.** A graph of water density (kg/m³) vs. temperature peaks near 1000 kg/m³ at about 4°C and decreases on both sides. Explain what this implies for how a lake freezes from the surface down rather than the bottom up.
+**Exercise 57 (Hard).** A graph of water density (kg/m³) vs. temperature peaks near 1000 kg/m³ at about 4°C and decreases on both sides. Explain what this implies for how a lake freezes from the surface down rather than the bottom up.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Water is densest at ~4°C, so 4°C water sinks to the bottom while colder water (and ice), being less dense, stays near the surface. That's why lakes freeze top-down, insulating the water below and letting aquatic life survive winter.
@@ -451,19 +471,19 @@ Water is densest at ~4°C, so 4°C water sinks to the bottom while colder water 
 
 *Source: standard logistic growth curve reading, supporting the instructor's "beginning calculus" and graph-based intuition for population dynamics.*
 
-**Intro.** A graph shows population size $N(t)$ rising in an S-shape, leveling off at $N=1000$. What does that horizontal asymptote represent?
+**Exercise 58 (Intro).** A graph shows population size $N(t)$ rising in an S-shape, leveling off at $N=1000$. What does that horizontal asymptote represent?
 
 ::: {.callout-note collapse="true" title="Solution"}
 The carrying capacity, $K$.
 :::
 
-**Medium.** On a logistic growth curve, where (approximately) is the population growing fastest, and what fraction of carrying capacity does that typically correspond to?
+**Exercise 59 (Medium).** On a logistic growth curve, where (approximately) is the population growing fastest, and what fraction of carrying capacity does that typically correspond to?
 
 ::: {.callout-note collapse="true" title="Solution"}
 At the inflection point, typically $N = K/2$.
 :::
 
-**Hard.** A graph plots per-capita growth rate $\left(\frac{1}{N}\frac{dN}{dt}\right)$ against population size $N$, a straight line from $(N=0, \text{rate}=r_{max})$ to $(N=K, \text{rate}=0)$. What do the two intercepts represent, and what does the negative slope mean biologically?
+**Exercise 60 (Hard).** A graph plots per-capita growth rate $\left(\frac{1}{N}\frac{dN}{dt}\right)$ against population size $N$, a straight line from $(N=0, \text{rate}=r_{max})$ to $(N=K, \text{rate}=0)$. What do the two intercepts represent, and what does the negative slope mean biologically?
 
 ::: {.callout-note collapse="true" title="Solution"}
 Y-intercept = maximum per-capita growth rate (density-independent growth at low $N$); x-intercept = carrying capacity, where growth rate hits zero. The negative slope reflects negative density dependence: as the population grows, resources become limiting and the per-capita growth rate declines.
@@ -477,19 +497,19 @@ Y-intercept = maximum per-capita growth rate (density-independent growth at low 
 
 *Source: instructor note — "if they know dn/dt notation, and that (dn)/(Ndt) = (1/N)(dn/dt), I'll be thrilled."*
 
-**Intro.** In the notation $dN/dt$, what does this represent in words, and what does $dN/dt=0$ mean?
+**Exercise 61 (Intro).** In the notation $dN/dt$, what does this represent in words, and what does $dN/dt=0$ mean?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $dN/dt$ is the instantaneous rate of change of population size with respect to time. $dN/dt=0$ means the population is momentarily neither growing nor shrinking.
 :::
 
-**Medium.** Explain the difference between $dN/dt$ and $\frac{1}{N}\frac{dN}{dt}$. Which is the per-capita growth rate, and why is it more useful for comparing populations of very different sizes?
+**Exercise 62 (Medium).** Explain the difference between $dN/dt$ and $\frac{1}{N}\frac{dN}{dt}$. Which is the per-capita growth rate, and why is it more useful for comparing populations of very different sizes?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $dN/dt$ is the absolute rate (individuals/time). $\frac{1}{N}\frac{dN}{dt}$ is the per-capita rate — it normalizes by population size, so populations of 10 and 10,000 can be fairly compared on the same scale.
 :::
 
-**Hard.** Population 1 has $dN/dt = 50$ individuals/year at $N=500$. Population 2 has $dN/dt = 50$ individuals/year at $N=5000$. Compute the per-capita growth rate for each, and say which is growing "faster" in a relative sense.
+**Exercise 63 (Hard).** Population 1 has $dN/dt = 50$ individuals/year at $N=500$. Population 2 has $dN/dt = 50$ individuals/year at $N=5000$. Compute the per-capita growth rate for each, and say which is growing "faster" in a relative sense.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Pop 1: $50/500 = 0.10$/yr (10%). Pop 2: $50/5000 = 0.01$/yr (1%). Despite equal absolute growth, Population 1 is growing far faster in relative (per-capita) terms.
@@ -499,19 +519,19 @@ Pop 1: $50/500 = 0.10$/yr (10%). Pop 2: $50/5000 = 0.01$/yr (1%). Despite equal 
 
 *Source: real quiz formula — Darcy's law, $q = -K_H(dh/dL)$.*
 
-**Intro.** In Darcy's law, what does $dh/dL$ represent physically, and why the negative sign?
+**Exercise 64 (Intro).** In Darcy's law, what does $dh/dL$ represent physically, and why the negative sign?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $dh/dL$ is the hydraulic gradient — the rate of change of head with distance. The negative sign ensures flow is directed from high head to low head (down-gradient).
 :::
 
-**Medium.** If $dh/dL = 0$ between two wells, what does that imply about groundwater flow between them?
+**Exercise 65 (Medium).** If $dh/dL = 0$ between two wells, what does that imply about groundwater flow between them?
 
 ::: {.callout-note collapse="true" title="Solution"}
 No flow ($q=0$) — there's no gradient driving movement.
 :::
 
-**Hard.** Head declines steeply near a pumping well and levels off farther away. Explain, using $dh/dL$, why specific discharge $q$ is largest close to the well.
+**Exercise 66 (Hard).** Head declines steeply near a pumping well and levels off farther away. Explain, using $dh/dL$, why specific discharge $q$ is largest close to the well.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $q$ is proportional to $dh/dL$. The gradient (steepness of head decline) is greatest near the pumping well, so $q$ is largest there and falls off as the gradient flattens with distance.
@@ -521,19 +541,19 @@ $q$ is proportional to $dh/dL$. The gradient (steepness of head decline) is grea
 
 *Source: marginal cost/benefit — the economic meaning of a derivative — appears throughout HW1–HW2.*
 
-**Intro.** If total cost is $TC(Q)$, marginal cost is $MC(Q) = dTC/dQ$. What does $MC$ represent in words?
+**Exercise 67 (Intro).** If total cost is $TC(Q)$, marginal cost is $MC(Q) = dTC/dQ$. What does $MC$ represent in words?
 
 ::: {.callout-note collapse="true" title="Solution"}
 The additional cost of producing one more (infinitesimal) unit of output at output level $Q$.
 :::
 
-**Medium.** A marginal benefit curve is $MB(A) = 800 - A$. What does it mean that $MB$ decreases with $A$, and what is $MB$ at $A=800$?
+**Exercise 68 (Medium).** A marginal benefit curve is $MB(A) = 800 - A$. What does it mean that $MB$ decreases with $A$, and what is $MB$ at $A=800$?
 
 ::: {.callout-note collapse="true" title="Solution"}
 Each additional ton abated brings a smaller benefit (diminishing marginal benefit). At $A=800$, $MB=0$ — no further benefit from abating more.
 :::
 
-**Hard.** Explain, using the idea of marginal (derivative) comparisons, why ignoring a positive marginal external benefit (MEB) leads a policymaker to choose too little abatement relative to the social optimum.
+**Exercise 69 (Hard).** Explain, using the idea of marginal (derivative) comparisons, why ignoring a positive marginal external benefit (MEB) leads a policymaker to choose too little abatement relative to the social optimum.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Marginal social benefit $MSB = MB + MEB$ exceeds $MB$ at every abatement level. The market stops at $MB=MAC$; the social optimum is where $MSB=MAC$, which — since $MSB>MB$ — occurs at a higher $A$. Ignoring MEB means stopping too early, at a point where the *full* social marginal benefit still exceeds marginal cost.
@@ -547,19 +567,19 @@ Marginal social benefit $MSB = MB + MEB$ exceeds $MB$ at every abatement level. 
 
 *Source: instructor note — "beginning calculus especially derivatives & simple differentiation."*
 
-**Intro.** Find $dN/dt$ if $N(t) = 5t^2 + 3t$, using the power rule.
+**Exercise 70 (Intro).** Find $dN/dt$ if $N(t) = 5t^2 + 3t$, using the power rule.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $dN/dt = 10t + 3$.
 :::
 
-**Medium.** For exponential growth $N(t) = N_0 e^{rt}$, use the chain rule to show $dN/dt = rN$.
+**Exercise 71 (Medium).** For exponential growth $N(t) = N_0 e^{rt}$, use the chain rule to show $dN/dt = rN$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $dN/dt = N_0 \cdot r \cdot e^{rt} = r\left(N_0 e^{rt}\right) = rN$.
 :::
 
-**Hard.** For logistic growth, treat $\frac{dN}{dt} = rN(1-N/K)$ as a function of $N$. Find $\frac{d}{dN}\left[rN(1-N/K)\right]$ and evaluate it at $N=K/2$ and $N=K$. What does the sign tell you at each point?
+**Exercise 72 (Hard).** For logistic growth, treat $\frac{dN}{dt} = rN(1-N/K)$ as a function of $N$. Find $\frac{d}{dN}\left[rN(1-N/K)\right]$ and evaluate it at $N=K/2$ and $N=K$. What does the sign tell you at each point?
 
 ::: {.callout-note collapse="true" title="Solution"}
 Expand: $rN - rN^2/K$. Derivative: $r - 2rN/K$.
@@ -571,19 +591,19 @@ At $N=K$: $r - 2r = -r < 0$ (growth rate is decreasing there — a stable equili
 
 *Source: rates of change of head and vapor pressure, extending the Darcy's law/Tetens-formula material in the ESM 203 quiz.*
 
-**Intro.** Hydraulic head is $h(x) = 100 - 0.04x$. Find $dh/dx$.
+**Exercise 73 (Intro).** Hydraulic head is $h(x) = 100 - 0.04x$. Find $dh/dx$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $dh/dx = -0.04$.
 :::
 
-**Medium.** Near 20°C, saturation vapor pressure is locally approximated by $e_s(T) \approx 2.34 + 0.17(T-20)$. Find $de_s/dT$ and interpret it.
+**Exercise 74 (Medium).** Near 20°C, saturation vapor pressure is locally approximated by $e_s(T) \approx 2.34 + 0.17(T-20)$. Find $de_s/dT$ and interpret it.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $de_s/dT = 0.17$ kPa/°C — the approximate rate saturation vapor pressure increases per degree of warming near 20°C.
 :::
 
-**Hard.** Using $e_s(T) = 6.112\,e^{\left(\frac{17.67(T-273.15)}{T-29.65}\right)}$, explain qualitatively (from the shape of the curve, without fully differentiating) why $de_s/dT$ is larger at high temperatures than low ones, and what this implies for a warming climate.
+**Exercise 75 (Hard).** Using $e_s(T) = 6.112\,e^{\left(\frac{17.67(T-273.15)}{T-29.65}\right)}$, explain qualitatively (from the shape of the curve, without fully differentiating) why $de_s/dT$ is larger at high temperatures than low ones, and what this implies for a warming climate.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $e_s$ vs. $T$ is increasing and convex (curves upward), so its slope increases with $T$ — the same amount of warming produces a bigger jump in saturation vapor pressure at higher baseline temperatures. This is a key reason warmer air holds disproportionately more moisture, intensifying precipitation potential as the climate warms.
@@ -593,19 +613,19 @@ $e_s$ vs. $T$ is increasing and convex (curves upward), so its slope increases w
 
 *Source: power/chain rule applied to demand and cost functions throughout HW1–HW2.*
 
-**Intro.** Given inverse demand $P(Q) = 100 - 4Q$, find $dP/dQ$.
+**Exercise 76 (Intro).** Given inverse demand $P(Q) = 100 - 4Q$, find $dP/dQ$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $dP/dQ = -4$.
 :::
 
-**Medium.** Total abatement cost is $TAC(A) = 70A + A^2$. Find $MAC(A) = dTAC/dA$ and evaluate at $A=50$.
+**Exercise 77 (Medium).** Total abatement cost is $TAC(A) = 70A + A^2$. Find $MAC(A) = dTAC/dA$ and evaluate at $A=50$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $MAC(A) = 70 + 2A$. At $A=50$: $MAC = 170$.
 :::
 
-**Hard.** A firm's profit is $\pi(Q) = 40Q - 0.5Q^2 - 200$. Find the profit-maximizing $Q^*$ using $d\pi/dQ=0$, and confirm it's a maximum with the second derivative.
+**Exercise 78 (Hard).** A firm's profit is $\pi(Q) = 40Q - 0.5Q^2 - 200$. Find the profit-maximizing $Q^*$ using $d\pi/dQ=0$, and confirm it's a maximum with the second derivative.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $d\pi/dQ = 40 - Q = 0 \Rightarrow Q^* = 40$. Second derivative: $d^2\pi/dQ^2 = -1 < 0$, confirming a maximum. $\pi(40) = 1600 - 800 - 200 = 600$.
@@ -619,19 +639,19 @@ $d\pi/dQ = 40 - Q = 0 \Rightarrow Q^* = 40$. Second derivative: $d^2\pi/dQ^2 = -
 
 *Source: Anna Pede — "find integral = area under graph (surplus)"; real HW2 marginal-external-benefit example.*
 
-**Intro.** Marginal external benefit (MEB) is constant at \$70/ton. What does $\int_0^A MEB\,dA$ represent, and why is it just $MEB \times A$ here?
+**Exercise 79 (Intro).** Marginal external benefit (MEB) is constant at \$70/ton. What does $\int_0^A MEB\,dA$ represent, and why is it just $MEB \times A$ here?
 
 ::: {.callout-note collapse="true" title="Solution"}
 It's the total external benefit from abating $A$ tons. Since MEB is constant, the area under the curve is a rectangle (height × width), so total benefit $= MEB \times A$ — no integration technique needed for a constant function.
 :::
 
-**Medium.** A marginal benefit curve is $MB(A) = 1200 - 1.5A$. What does the total benefit of abating from 0 to 300 tons represent geometrically?
+**Exercise 80 (Medium).** A marginal benefit curve is $MB(A) = 1200 - 1.5A$. What does the total benefit of abating from 0 to 300 tons represent geometrically?
 
 ::: {.callout-note collapse="true" title="Solution"}
 The area under the $MB$ line between $A=0$ and $A=300$ — since $MB$ is linear and positive there, that area is a trapezoid (or a rectangle plus a triangle).
 :::
 
-**Hard.** Explain why deadweight loss (DWL) from an uncorrected externality is the triangular area between the marginal social benefit (MSB) curve and the MAC curve, between the market quantity and the social optimum — and why this is fundamentally an integral.
+**Exercise 81 (Hard).** Explain why deadweight loss (DWL) from an uncorrected externality is the triangular area between the marginal social benefit (MSB) curve and the MAC curve, between the market quantity and the social optimum — and why this is fundamentally an integral.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Between the market quantity and the social optimum, $MSB(A) > MAC(A)$ at every point — each "missed" unit would have added net value. Summing (integrating) that gap $MSB(A)-MAC(A)$ over the missed range gives total forgone benefit; because both curves are lines, that integral's shape is a triangle, i.e., the DWL.
@@ -641,19 +661,19 @@ Between the market quantity and the social optimum, $MSB(A) > MAC(A)$ at every p
 
 *Source: natural extension of the dN/dt material — cumulative population change as area under a rate curve.*
 
-**Intro.** A population grows at a roughly constant $dN/dt = 40$ individuals/year for 5 years. What does $\int_0^5 \frac{dN}{dt}\,dt$ represent, and what's its value?
+**Exercise 82 (Intro).** A population grows at a roughly constant $dN/dt = 40$ individuals/year for 5 years. What does $\int_0^5 \frac{dN}{dt}\,dt$ represent, and what's its value?
 
 ::: {.callout-note collapse="true" title="Solution"}
 The total change in population size over the 5 years — the area under the constant-rate line — $= 40 \times 5 = 200$ individuals.
 :::
 
-**Medium.** A recruitment rate declines linearly from 100/year to 20/year over 4 years. Find total recruitment over the 4 years using the area under this line.
+**Exercise 83 (Medium).** A recruitment rate declines linearly from 100/year to 20/year over 4 years. Find total recruitment over the 4 years using the area under this line.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Trapezoid area: $\frac{100+20}{2} \times 4 = 240$ individuals recruited.
 :::
 
-**Hard.** A population's birth rate rises linearly from 20/year to 80/year over 6 years, while a constant harvest of 30 individuals/year is removed throughout. Using areas under curves for each rate, find the net change in population over the 6 years.
+**Exercise 84 (Hard).** A population's birth rate rises linearly from 20/year to 80/year over 6 years, while a constant harvest of 30 individuals/year is removed throughout. Using areas under curves for each rate, find the net change in population over the 6 years.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Births (trapezoid area): $\frac{20+80}{2} \times 6 = 300$ individuals. Harvest (rectangle area): $30 \times 6 = 180$ individuals. Net change $= 300 - 180 = 120$ individuals.
@@ -667,13 +687,13 @@ Births (trapezoid area): $\frac{20+80}{2} \times 6 = 300$ individuals. Harvest (
 
 *Source: real HW2 progression — marginal benefit → total benefit / consumer surplus via the power rule; real HW2 total-abatement-cost calculation.*
 
-**Intro.** Given $MB(A) = 1200 - 1.5A$, find $TB(A) = \int MB(A)\,dA$ (with $TB(0)=0$), and evaluate at $A=300$.
+**Exercise 85 (Intro).** Given $MB(A) = 1200 - 1.5A$, find $TB(A) = \int MB(A)\,dA$ (with $TB(0)=0$), and evaluate at $A=300$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $TB(A) = 1200A - 0.75A^2$. $TB(300) = 1200(300) - 0.75(300)^2 = 360{,}000 - 67{,}500 = 292{,}500$.
 :::
 
-**Medium.** Demand is $P(Q) = 500 - 0.1Q$. At $Q^*=3000$, the equilibrium price is $P^*=200$. Find consumer surplus by integrating $P(Q)$ from 0 to $Q^*$ and subtracting total expenditure $P^*Q^*$.
+**Exercise 86 (Medium).** Demand is $P(Q) = 500 - 0.1Q$. At $Q^*=3000$, the equilibrium price is $P^*=200$. Find consumer surplus by integrating $P(Q)$ from 0 to $Q^*$ and subtracting total expenditure $P^*Q^*$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $\int_0^{3000}(500-0.1Q)\,dQ = \left[500Q - 0.05Q^2\right]_0^{3000} = 1{,}500{,}000 - 450{,}000 = 1{,}050{,}000$.
@@ -681,7 +701,7 @@ $CS = 1{,}050{,}000 - (200\times3000) = 1{,}050{,}000 - 600{,}000 = 450{,}000$.
 (Check: this matches the triangle formula $\tfrac12 \times 3000 \times (500-200) = 450{,}000$.)
 :::
 
-**Hard.** $MAC(A) = 70 + 2A$. Find $TAC(A)$ by integrating, then compute the total cost of abating from 0 to 342.86 tons — and check it against the trapezoid-area method.
+**Exercise 87 (Hard).** $MAC(A) = 70 + 2A$. Find $TAC(A)$ by integrating, then compute the total cost of abating from 0 to 342.86 tons — and check it against the trapezoid-area method.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $TAC(A) = 70A + A^2$. At $A=342.86$: $TAC \approx 70(342.86) + 342.86^2 \approx 24{,}000 + 117{,}551 \approx 141{,}551$.
@@ -693,19 +713,19 @@ Check via trapezoid: $MAC(0)=70$, $MAC(342.86) = 70+2(342.86) \approx 755.7$. Ar
 
 *Source: extends the dN/dt power-rule material to recover N(t) or cumulative recruitment from a rate function.*
 
-**Intro.** $dN/dt = 6t$. Find $N(t)$ given $N(0)=50$.
+**Exercise 88 (Intro).** $dN/dt = 6t$. Find $N(t)$ given $N(0)=50$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $N(t) = 3t^2 + C$. $N(0)=50 \Rightarrow C=50$. $N(t) = 3t^2 + 50$.
 :::
 
-**Medium.** Recruitment rate is $R(t) = 100 - 5t$ individuals/year (for $0 \le t \le 20$). Find total recruitment between $t=0$ and $t=10$.
+**Exercise 89 (Medium).** Recruitment rate is $R(t) = 100 - 5t$ individuals/year (for $0 \le t \le 20$). Find total recruitment between $t=0$ and $t=10$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $\int_0^{10}(100-5t)\,dt = \left[100t - 2.5t^2\right]_0^{10} = 1000 - 250 = 750$ individuals.
 :::
 
-**Hard.** A population's net rate of change is $dN/dt = 8t - 15$ individuals/year (growth accelerating over time, offset by a constant harvest of 15/year). Find $N(t)$ given $N(0)=100$, and compute $N(5)$.
+**Exercise 90 (Hard).** A population's net rate of change is $dN/dt = 8t - 15$ individuals/year (growth accelerating over time, offset by a constant harvest of 15/year). Find $N(t)$ given $N(0)=100$, and compute $N(5)$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 $N(t) = 4t^2 - 15t + C$. $N(0)=100 \Rightarrow C=100$. $N(t) = 4t^2 - 15t + 100$. $N(5) = 4(25) - 75 + 100 = 100-75+100=125$ individuals.
@@ -719,13 +739,13 @@ $N(t) = 4t^2 - 15t + C$. $N(0)=100 \Rightarrow C=100$. $N(t) = 4t^2 - 15t + 100$
 
 *Source: instructor note — Lotka-Volterra and logistic growth are the flagship applications for ESM 201.*
 
-**Intro.** Write the logistic growth equation $\frac{dN}{dt} = rN\left(1-\frac{N}{K}\right)$ and explain what each term represents (don't solve it).
+**Exercise 91 (Intro).** Write the logistic growth equation $\frac{dN}{dt} = rN\left(1-\frac{N}{K}\right)$ and explain what each term represents (don't solve it).
 
 ::: {.callout-note collapse="true" title="Solution"}
 $dN/dt$: rate of population change over time. $r$: intrinsic (maximum per-capita) growth rate. $N$: current population size. $K$: carrying capacity. $(1-N/K)$: shrinks toward zero as $N$ approaches $K$, representing resource limitation.
 :::
 
-**Medium.** With $r=0.5$/yr and $K=1000$, evaluate $dN/dt$ at $N=200$ and at $N=900$. Why is growth faster at $N=200$?
+**Exercise 92 (Medium).** With $r=0.5$/yr and $K=1000$, evaluate $dN/dt$ at $N=200$ and at $N=900$. Why is growth faster at $N=200$?
 
 ::: {.callout-note collapse="true" title="Solution"}
 At $N=200$: $0.5 \times 200 \times (1-0.2) = 100 \times 0.8 = 80$/yr.
@@ -733,7 +753,7 @@ At $N=900$: $0.5 \times 900 \times (1-0.9) = 450 \times 0.1 = 45$/yr.
 Growth is faster at $N=200$ because it's farther from carrying capacity, so the limiting term $(1-N/K)$ is closer to 1.
 :::
 
-**Hard.** The Lotka-Volterra equations are $\frac{dN}{dt} = aN - bNP$ (prey) and $\frac{dP}{dt} = cbNP - dP$ (predator). What happens to $dN/dt$ if $P=0$, and what does this reveal about $dP/dt$ at the same moment? What does this say about how the two equations are coupled?
+**Exercise 93 (Hard).** The Lotka-Volterra equations are $\frac{dN}{dt} = aN - bNP$ (prey) and $\frac{dP}{dt} = cbNP - dP$ (predator). What happens to $dN/dt$ if $P=0$, and what does this reveal about $dP/dt$ at the same moment? What does this say about how the two equations are coupled?
 
 ::: {.callout-note collapse="true" title="Solution"}
 If $P=0$: $dN/dt = aN$ (pure exponential prey growth — no predation loss). At the same moment, $dP/dt = cbN(0) - d(0) = 0$: the predator population can't grow from zero, since there are no prey-predator encounters to fuel reproduction. The two populations are coupled entirely through the interaction term $bNP$, which vanishes whenever either population is zero.
@@ -743,19 +763,19 @@ If $P=0$: $dN/dt = aN$ (pure exponential prey growth — no predation loss). At 
 
 *Source: instructor note — "the simplest of differential equations" is used in 204, in the context of renewable-resource dynamics.*
 
-**Intro.** A resource stock evolves as $\frac{dS}{dt} = gS - H$, where $g$ is a growth rate and $H$ a constant harvest rate. What condition on $dS/dt$ defines a "sustainable" harvest?
+**Exercise 94 (Intro).** A resource stock evolves as $\frac{dS}{dt} = gS - H$, where $g$ is a growth rate and $H$ a constant harvest rate. What condition on $dS/dt$ defines a "sustainable" harvest?
 
 ::: {.callout-note collapse="true" title="Solution"}
 Sustainability means $dS/dt = 0$, i.e., $H = gS$: the harvest exactly matches natural growth at the current stock size, so the stock is stable over time.
 :::
 
-**Medium.** With $g=0.1$/year and current stock $S=2000$ tons, what harvest rate $H$ makes this a steady state?
+**Exercise 95 (Medium).** With $g=0.1$/year and current stock $S=2000$ tons, what harvest rate $H$ makes this a steady state?
 
 ::: {.callout-note collapse="true" title="Solution"}
 $H = gS = 0.1 \times 2000 = 200$ tons/year.
 :::
 
-**Hard.** Suppose $\frac{dS}{dt} = gS - H$ with $g=0.08$/year, but the harvest $H$ is fixed at 250 tons/year regardless of stock size (rather than adjusted proportionally). Find the stock level $S^*$ at which this fixed harvest is exactly sustainable, and explain what happens to $dS/dt$ if $S$ drifts above or below $S^*$.
+**Exercise 96 (Hard).** Suppose $\frac{dS}{dt} = gS - H$ with $g=0.08$/year, but the harvest $H$ is fixed at 250 tons/year regardless of stock size (rather than adjusted proportionally). Find the stock level $S^*$ at which this fixed harvest is exactly sustainable, and explain what happens to $dS/dt$ if $S$ drifts above or below $S^*$.
 
 ::: {.callout-note collapse="true" title="Solution"}
 Steady state: $gS^* = H \Rightarrow S^* = H/g = 250/0.08 = 3125$ tons.

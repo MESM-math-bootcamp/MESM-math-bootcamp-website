@@ -13,13 +13,15 @@ library(tidyverse)
 ```
 
 ::: {.callout-tip}
-Attempt each problem on your own before checking the [solutions document](solutions_exercise_bank_algebra.qmd).
+## Instructions 
+
+Attempt each problem on your own before checking the [solutions](solutions_exercise_bank_algebra.qmd).
 Feel free to work with anyone in the cohort after giving the problems a try!
 :::
 
 
 
-## Algebra basics
+## Basics
 
 1) Expand the following expressions:
 
@@ -44,31 +46,31 @@ Feel free to work with anyone in the cohort after giving the problems a try!
 ### Level 1
 
 <!-- Source: ESM 201 Exercise Bank, Exercise 1 -->
-5) An organism's daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for Growth.
+3) An organism's daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for Growth.
 
 <!-- Source: ESM 202 Exercise Bank, Exercise 4 -->
-6) A tank's mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.
+4) A tank's mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.
 
 <!-- Source: ESM 203 Exercise Bank, Exercise 7 -->
-7) At steady state, a watershed's water balance is $0 = P - AET - Q$, where $P$ is precipitation, $AET$ is actual evapotranspiration (water returned to the atmosphere), and $Q$ is streamflow (water leaving via the river). "Steady state" just means none of these are changing over time. If $P = 900$ mm/y and $AET = 550$ mm/y, solve for $Q$. 
+5) At steady state, a watershed's water balance is $0 = P - AET - Q$, where $P$ is precipitation, $AET$ is actual evapotranspiration (water returned to the atmosphere), and $Q$ is streamflow (water leaving via the river). "Steady state" just means none of these are changing over time. If $P = 900$ mm/y and $AET = 550$ mm/y, solve for $Q$. 
 
  <!-- — think of a tiny watershed like a bathtub: water flows in from the tap ($P$), some evaporates out ($AET$), and the rest drains out the plug ($Q$). If the water level in the tub isn't changing, everything coming in has to be leaving one way or another. -->
 
 ### Level 2
 
 <!-- Source: ESM 201 Exercise Bank, Exercise 2 -->
-8) The maximum sustainable yield of a harvested population is $H = \dfrac{rK}{4}$. If the sustainable harvest is $H = 80$ individuals/year and the carrying capacity is $K = 800$, solve for the intrinsic growth rate $r$.
+6) The maximum sustainable yield of a harvested population is $H = \dfrac{rK}{4}$. If the sustainable harvest is $H = 80$ individuals/year and the carrying capacity is $K = 800$, solve for the intrinsic growth rate $r$.
 
 <!-- Source: ESM 203 Exercise Bank, Exercise 8 -->
-9) The aridity index $AI$ is given by $AI = P/PET$ where $P$ is mean annyal precipitation and $PET$ is potential evapotranspiration. If $AI = 0.35$ and $PET = 1400$ mm/y, solve for $P$.
+7) The aridity index $AI$ is given by $AI = P/PET$ where $P$ is mean annyal precipitation and $PET$ is potential evapotranspiration. If $AI = 0.35$ and $PET = 1400$ mm/y, solve for $P$.
 
 <!-- Source: ESM 202 Exercise Bank, Exercise 5 -->
-10) A stock solution is a concentrated "master" solution made at a known, accurate concentration that is meant to be diluted down into weaker "working solutions" for everyday use. How much of a 12% stock solution is needed to make 3 L of a 2% solution?
+8) A stock solution is a concentrated "master" solution made at a known, accurate concentration that is meant to be diluted down into weaker "working solutions" for everyday use. How much of a 12% stock solution is needed to make 3 L of a 2% solution?
 
 
 ## Scenario
 
-2) [Representative Concentration Pathways (RCP)]((https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)) are climate change scenarios that project future greenhouse gas concentrations in 2100. 
+9) [Representative Concentration Pathways (RCP)]((https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)) are climate change scenarios that project future greenhouse gas concentrations in 2100. 
 A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today's atmospheric carbon concentration sits at 416 ppm. 
 
 
