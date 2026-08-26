@@ -1361,130 +1361,32 @@ That means we need to always **familiarize ourselves with variables**, carefully
 
 Metric units are built from a **base unit** (like meters, grams, or liters) plus a **prefix** that scales it by a power of 10.
 
-$$
-\begin{array}{|l|c|c|c|}
-\hline
-\textbf{Prefix} & \textbf{Symbol} & \textbf{Factor} & \textbf{Example} \\
-\hline
-\text{kilo} & \text{k} & 10^{3} & \text{km, kg, kL} \\
-\hline
-\text{hecto} & \text{h} & 10^{2} & \text{hm, hg, hL} \\
-\hline
-\text{deka} & \text{da} & 10^{1} & \text{dam, dag, daL} \\
-\hline
-\textit{(base unit)} & - & 10^{0} & \text{m, g, L} \\
-\hline
-\text{deci} & \text{d} & 10^{-1} & \text{dm, dg, dL} \\
-\hline
-\text{centi} & \text{c} & 10^{-2} & \text{cm, cg, cL} \\
-\hline
-\text{milli} & \text{m} & 10^{-3} & \text{mm, mg, mL} \\
-\hline
-\end{array}
-$$
+:::{.center-text}
+![](images/metric-conversions-blank.png){width=80%}
+:::
 
 ::: {.body-text-s}
-The **factor** means how many times to multiply the base unit by 10. For example, 1 km = $10^3$ m = 1000 m, and 1 cm = $10^{-2}$ m = 0.01 m.
+The **factor** indicates how many times to multiply the base unit by 10. For example, 1 km = $10^3$ m = 1000 m, and 1 cm = $10^{-2}$ m = 0.01 m.
 :::
 
 ---
 
-## {#metric-prefixes-example data-menu-title="Metric prefixes: example"}
+## {#metric-prefixes-conversion data-menu-title="Metric prefixes"}
 
 [Metric prefixes]{.slide-title}
 
 <hr>
 
-**Example.** Convert 4.7 km into cm.
+Metric units are built from a **base unit** (like meters, grams, or liters) plus a **prefix** that scales it by a power of 10.
 
-✏️  [Let's solve this together.]{style="color:green;"}
-
-
-:::: {.columns}
-
-::: {.column width="30%"}
-
+:::{.center-text}
+![](images/metric-conversions.png){width=80%}
 :::
 
-
-::: {.column width="70%"}
-$$
-\begin{array}{|l|c|c|c|}
-\hline
-\textbf{Prefix} & \textbf{Symbol} & \textbf{Factor} & \textbf{Example} \\
-\hline
-\text{kilo} & \text{k} & 10^{3} & \text{km, kg, kL} \\
-\hline
-\text{hecto} & \text{h} & 10^{2} & \text{hm, hg, hL} \\
-\hline
-\text{deka} & \text{da} & 10^{1} & \text{dam, dag, daL} \\
-\hline
-\textit{(base unit)} & - & 10^{0} & \text{m, g, L} \\
-\hline
-\text{deci} & \text{d} & 10^{-1} & \text{dm, dg, dL} \\
-\hline
-\text{centi} & \text{c} & 10^{-2} & \text{cm, cg, cL} \\
-\hline
-\text{milli} & \text{m} & 10^{-3} & \text{mm, mg, mL} \\
-\hline
-\end{array}
-$$
+::: {.body-text-s}
+The **factor** indicates how many times to multiply the base unit by 10. For example, 1 km = $10^3$ m = 1000 m, and 1 cm = $10^{-2}$ m = 0.01 m.
 :::
 
-:::
-
----
-
-## {#metric-prefixes-example-solution data-menu-title="Metric prefixes: example"}
-
-[Metric prefixes]{.slide-title}
-
-<hr>
-
-**Example.** Convert 4.7 km into cm.
-
-:::: {.columns}
-
-::: {.column width="30%"}
-Starting at **kilo** and ending at **centi**, we move **5 rows down** the table:
-
-kilo &rarr; hecto &rarr; deka &rarr; base &rarr; deci &rarr; centi
-
-So we multiply by $10^5$:
-
-\begin{align*}
-4.7 \text{ km} &= 4.7 \times 10^5 \text{ cm} \\
-&= 470{,}000 \text{ cm}
-\end{align*}
-
-:::
-
-
-::: {.column width="70%"}
-$$
-\begin{array}{|l|c|c|c|}
-\hline
-\textbf{Prefix} & \textbf{Symbol} & \textbf{Factor} & \textbf{Example} \\
-\hline
-\text{kilo} & \text{k} & 10^{3} & \text{km, kg, kL} \\
-\hline
-\text{hecto} & \text{h} & 10^{2} & \text{hm, hg, hL} \\
-\hline
-\text{deka} & \text{da} & 10^{1} & \text{dam, dag, daL} \\
-\hline
-\textit{(base unit)} & - & 10^{0} & \text{m, g, L} \\
-\hline
-\text{deci} & \text{d} & 10^{-1} & \text{dm, dg, dL} \\
-\hline
-\text{centi} & \text{c} & 10^{-2} & \text{cm, cg, cL} \\
-\hline
-\text{milli} & \text{m} & 10^{-3} & \text{mm, mg, mL} \\
-\hline
-\end{array}
-$$
-:::
-
-:::
 
 ---
 
@@ -1501,33 +1403,13 @@ $$
 
 :::: {.columns}
 
-::: {.column width="30%"}
+::: {.column width="40%"}
 
 :::
 
 
-::: {.column width="70%"}
-$$
-\begin{array}{|l|c|c|c|}
-\hline
-\textbf{Prefix} & \textbf{Symbol} & \textbf{Factor} & \textbf{Example} \\
-\hline
-\text{kilo} & \text{k} & 10^{3} & \text{km, kg, kL} \\
-\hline
-\text{hecto} & \text{h} & 10^{2} & \text{hm, hg, hL} \\
-\hline
-\text{deka} & \text{da} & 10^{1} & \text{dam, dag, daL} \\
-\hline
-\textit{(base unit)} & - & 10^{0} & \text{m, g, L} \\
-\hline
-\text{deci} & \text{d} & 10^{-1} & \text{dm, dg, dL} \\
-\hline
-\text{centi} & \text{c} & 10^{-2} & \text{cm, cg, cL} \\
-\hline
-\text{milli} & \text{m} & 10^{-3} & \text{mm, mg, mL} \\
-\hline
-\end{array}
-$$
+::: {.column width="60%"}
+![](images/metric-conversions.png){width=80%}
 :::
 
 :::
@@ -1544,7 +1426,7 @@ $$
 
 :::: {.columns}
 
-::: {.column width="30%"}
+::: {.column width="40%"}
 Starting at **milli** and ending at **base**, we move **3 rows up** the table:
 
 milli &rarr; centi &rarr; deci &rarr; base
@@ -1559,28 +1441,72 @@ So we divide by $10^3$:
 :::
 
 
-::: {.column width="70%"}
-$$
-\begin{array}{|l|c|c|c|}
-\hline
-\textbf{Prefix} & \textbf{Symbol} & \textbf{Factor} & \textbf{Example} \\
-\hline
-\text{kilo} & \text{k} & 10^{3} & \text{km, kg, kL} \\
-\hline
-\text{hecto} & \text{h} & 10^{2} & \text{hm, hg, hL} \\
-\hline
-\text{deka} & \text{da} & 10^{1} & \text{dam, dag, daL} \\
-\hline
-\textit{(base unit)} & - & 10^{0} & \text{m, g, L} \\
-\hline
-\text{deci} & \text{d} & 10^{-1} & \text{dm, dg, dL} \\
-\hline
-\text{centi} & \text{c} & 10^{-2} & \text{cm, cg, cL} \\
-\hline
-\text{milli} & \text{m} & 10^{-3} & \text{mm, mg, mL} \\
-\hline
-\end{array}
-$$
+::: {.column width="60%"}
+![](images/metric-conversions.png){width=80%}
+:::
+
+:::
+
+
+
+
+---
+
+## {#metric-prefixes-example data-menu-title="Metric prefixes: example"}
+
+[Metric prefixes]{.slide-title}
+
+<hr>
+
+**Exercise.** Convert 4.7 km into cm.
+
+✏️  [Take a moment to compute it.]{style="color:green;"}
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+
+:::
+
+
+::: {.column width="60%"}
+:::{.center-text}
+![](images/metric-conversions.png)
+:::
+:::
+
+:::
+
+---
+
+## {#metric-prefixes-example-solution data-menu-title="Metric prefixes: example"}
+
+[Metric prefixes]{.slide-title}
+
+<hr>
+
+**Exercise.** Convert 4.7 km into cm.
+
+:::: {.columns}
+
+::: {.column width="40%"}
+Starting at **kilo** and ending at **centi**, we move **5 rows down** the table:
+
+kilo &rarr; hecto &rarr; deka &rarr; base &rarr; deci &rarr; centi
+
+So we multiply by $10^5$:
+
+\begin{align*}
+4.7 \text{ km} &= 4.7 \times 10^5 \text{ cm} \\
+&= 470{,}000 \text{ cm}
+\end{align*}
+
+:::
+
+
+::: {.column width="60%"}
+![](images/metric-conversions.png){width=80%}
 :::
 
 :::
