@@ -39,10 +39,10 @@ website:
     contents:
       - text: home
         href: index.qmd
-      - text: day 1 - algebra
+      - text: day 1 - algebra & units
         href: notes/day1_algebra/day1_algebra.qmd
-      - text: day 2 - limits
-        href: notes/day2_limits/day2_limits.qmd
+      - text: day 2 - functions & graphs
+        href: notes/day2_limits/day2_functions_graphs.qmd
       - text: day 3 - derivatives
         href: notes/day3_derivatives/day3_derivatives.qmd
       - text: day 4 - integrals

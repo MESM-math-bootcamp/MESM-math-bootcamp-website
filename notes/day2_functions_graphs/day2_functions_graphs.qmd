@@ -1,0 +1,28 @@
+# Day 2: Functions & Graphs
+
+<hr>
+
+::: {.body-text-m}
+
+[**Lecture slides**](lecture-functions-graphs.qmd){target="_blank"}
+
+:::
+
+**Contents**
+
+
+## Problem sets
+
+
+:::{.center-text}
+
+
+
+![](/notes/icons/homework-3.png){width=20%}
+
+[**Functions & graphs problem set**](problem_set_algebra.qmd)
+
+
+Solutions are linked through the problem sets.
+:::
+
