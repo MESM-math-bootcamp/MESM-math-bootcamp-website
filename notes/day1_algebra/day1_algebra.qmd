@@ -18,4 +18,6 @@ This unit covers basic introduction of algebra and how to use graphs to convey e
 
 [**Algebra problem set**](problem_set_algebra.qmd)
 
+[**Units problem set**](problem_set_units.qmd)
+
 ![](/notes/icons/homework.png){width=20%}
