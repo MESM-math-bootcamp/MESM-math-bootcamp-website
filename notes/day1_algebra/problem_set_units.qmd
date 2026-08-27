@@ -2,9 +2,8 @@
 sidebar: daily-materials
 execute:
   freeze: true
-author: "Carmen Galaz García, Nathaniel Grimes"
 ---
-# Day 1: Units problem set
+# Units Problem Set
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,message=FALSE,warning=FALSE)
@@ -32,31 +31,25 @@ Feel free to work with anyone in the cohort after giving the problems a try!
 
 ## Unit conversions
 
+4) Convert 2,300 mL to liters.
+
+5) Convert an area of 5.4 km² to m².
+
+6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.
+
+7) A saline stock is 6 g/L. Express this in mg/mL.
+
 <!-- Source: ESM 202 Exercise Bank, Exercise 48 -->
-4) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.
+8) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.
 
 <!-- Source: ESM 203 Exercise Bank, Exercise 51 -->
-5) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.
+9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.
 
 <!-- Source: Day 1 lecture slides, Unit conversions practice, exercise 2 -->
-6) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:
+10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:
 
     -   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)
     -   **Company B:** 692 liters spilled (94% recovered)
     -   **Company C:** 18.1 gallons spilled (0% recovered)
 
     What is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.
-
-## Practice exercises
-
-### Intro
-
-7) Convert 2,300 mL to liters.
-
-8) Convert an area of 5.4 km² to m².
-
-### Medium
-
-9) A saline stock is 6 g/L. Express this in mg/mL.
-
-10) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.

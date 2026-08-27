@@ -30,7 +30,7 @@ format:
 
 <br>
 
-[*Materials have been adapted from Nathaniel Grimes work for the Bren Math Workshop.*]{.baby-blue-text .body-text-s}
+[*Some materials have been adapted from Nathaniel Grimes work for the Bren Math Workshop.*]{.baby-blue-text .body-text-s}
 
 ---
 
@@ -1782,33 +1782,22 @@ We are converting **percent &rarr; ppm**, so we multiply by 10,000:
 
 <hr>
 
-1. Convert 120 ppm to a percentage.
-
 ✏️  [Let's see a solution!]{style="color:green;" .body-text-m}
 
----
+1. Convert 120 ppm to a percentage.
 
-## {#unit-conv-solutions-1 data-menu-title="Unit conversions practice"}
-
-[Unit conversion practice]{.slide-title}
-
-<hr>
+<br>
+<br>
+<br>
 
 2. Convert 3,400 mm to meters.
 
-✏️  [Let's see a solution!]{style="color:green;" .body-text-m}
-
----
-
-## {#unit-conv-solutions-2 data-menu-title="Unit conversions practice"}
-
-[Unit conversion practice]{.slide-title}
-
-<hr>
+<br>
+<br>
+<br>
 
 3. Convert an area of $3.2 \text{ km}^2$ to $\text{m}^2$.
 
-✏️  [Let's see a solution!]{style="color:green;" .body-text-m}
 
 ---
 
@@ -1877,7 +1866,7 @@ We are converting **percent &rarr; ppm**, so we multiply by 10,000:
 
 ---
 
-## {#wrapping-up data-menu-title="Integration" background-color="#003660"}
+## {#wrapping-up data-menu-title="Wrapping up" background-color="#003660"}
 
 <div class="page-center">
 <div class="custom-subtitle">Wrapping up...</div>

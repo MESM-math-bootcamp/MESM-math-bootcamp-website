@@ -1,0 +1,15 @@
+{
+  "hash": "fc59714559941f7488cb276a06f85e4a",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nsidebar: daily-materials\nexecute:\n  freeze: true\n---\n# Units Problem Set\n\n\n\n::: {.callout-tip}\n## Instructions\n\nAttempt each problem on your own before checking the [solutions](solutions_problem_set_units.qmd).\nFeel free to work with anyone in the cohort after giving the problems a try!\n:::\n\n## Percent & ppm conversions\n\n<!-- Source: ESM 202 Exercise Bank, Exercise 13 -->\n1) Convert 250 ppm to a percentage.\n\n<!-- Source: ESM 202 Exercise Bank, Exercise 14 -->\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n<!-- Source: ESM 202 Exercise Bank, Exercise 15 -->\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\n\n## Unit conversions\n\n4) Convert 2,300 mL to liters.\n\n5) Convert an area of 5.4 km² to m².\n\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n<!-- Source: ESM 202 Exercise Bank, Exercise 48 -->\n8) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n<!-- Source: ESM 203 Exercise Bank, Exercise 51 -->\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n<!-- Source: Day 1 lecture slides, Unit conversions practice, exercise 2 -->\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\n    -   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)\n    -   **Company B:** 692 liters spilled (94% recovered)\n    -   **Company C:** 18.1 gallons spilled (0% recovered)\n\n    What is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

@@ -2,9 +2,8 @@
 sidebar: daily-materials
 execute:
   freeze: true
-author: "Carmen Galaz García, Nathaniel Grimes"
 ---
-# Solutions: Day 1 Algebra and Units Problem Set
+# Solutions: Algebra Problem Set
 
 ::: {.callout-tip}
 ## Instructions 

@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,9 +10,6 @@
 
 <title>Bren Math Workshop</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -41,10 +38,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-ee4c798a696f410de894479ed283eeec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-b427677ddefa5d93abdb57081dab58c5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-a57217462e498614a534451382d2c246.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-ed4180e93009920118d63e1acdfa493e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -212,6 +209,12 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/limits_horst.jpg" class="img-fluid figure-img"></p>
+<figcaption>Artwork by <span class="citation" data-cites="allison_horst">@allison_horst</span></figcaption>
+</figure>
+</div>
 <p>Welcome to the course materials for the Bren Math Workshop! In this website you will find all the materials for the Summer 2026 session. This workshop is part of the <a href="https://bren.ucsb.edu/masters-programs/master-environmental-science-and-management">UCSB Master of Environmental Science and Management</a> at the <a href="https://bren.ucsb.edu">Bren School of Environmental Science and Management</a>.</p>
 <section id="workshop-description" class="level2">
 <h2 class="anchored" data-anchor-id="workshop-description">Workshop description</h2>
@@ -220,7 +223,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Reinforce math skills used in Bren courses</li>
 <li>Understand how math and calculus are used in environmental science</li>
 <li>Help transition to graduate school life</li>
-<li>Build collaborative environment</li>
+<li>Build a collaborative environment amongst students</li>
 </ul>
 </section>
 <section id="instructor" class="level2">
@@ -228,7 +231,7 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://bren.ucsb.edu/people/carmen-galaz-garcia-0"><strong>Carmen Galaz García</strong></a> (she/her/hers)</p>
 <ul>
 <li>E-mail: c_galazgarcia@ucsb.edu</li>
-<li>Student hours: By appointment or right after the sessions end</li>
+<li>Student hours: By appointment or right after the sessions ends</li>
 </ul>
 <!-- ## Syllabus
 
@@ -236,7 +239,7 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="acknowledgements" class="level2">
 <h2 class="anchored" data-anchor-id="acknowledgements">Acknowledgements</h2>
-<p>The materials for the Bren Math Workshop were originally developed and taught by <a href="https://bren.ucsb.edu/people/nathan-grimes">Nathan Grimes</a>. This new website houses materials which are reused, adapted, and expanded from, and inspired by the previous instructors’ work.</p>
+<p>The first materials for the Bren Math Workshop were developed and taught by <a href="https://bren.ucsb.edu/people/nathan-grimes">Nathan Grimes</a>. This new website houses materials which are reused, adapted, and expanded from the previous instructors’ work.</p>
 <!-- [Allison Horst](https://allisonhorst.github.io/){target="_blank"}. It has since been taught and adapted by [Ruth Oliver](https://www.oliverlab.org){target="_blank"}, [Sam Shanny-Csik](https://samanthacsik.github.io){target="_blank"} and, most recently, myself, [Carmen Galaz García](https://bren.ucsb.edu/people/carmen-galaz-garcia).  -->
 
 
@@ -294,14 +297,13 @@ ul.task-list li input[type="checkbox"] {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

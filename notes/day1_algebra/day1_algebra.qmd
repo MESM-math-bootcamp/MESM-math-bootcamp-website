@@ -1,23 +1,62 @@
 # Day 1: Algebra & Units
 
-This unit covers basic introduction of algebra and how to use graphs to convey environmental science.
 
-## Lecture materials
+<hr>
 
-[Lecture slides](lecture-algebra.qmd){target="_blank"}
+::: {.body-text-m}
+
+[**Lecture slides**](lecture-algebra.qmd){target="_blank"}
+
+:::
+
 
 **Contents**
 
--   Algebra review
+- 🔢 Algebra review
+- 🗺️ Solving equations
+- ✖️ Rules of exponents
+- 📏 Metric prefixes
+- 🧊 Area & volume conversions
+- ⚖️ Dimensional analysis (unit conversions)
+- 🧪 Parts per million (ppm)
 
--   Solving equations
+## Problem sets
 
-- Exponents
 
-## Problem sets (& solutions)
+:::: {.columns}
 
+::: {.column width="50%"}
+
+:::{.center-text}
 [**Algebra problem set**](problem_set_algebra.qmd)
 
+![](/notes/icons/homework.png){width=40%}
+
+:::
+
+:::
+
+
+::: {.column width="50%"}
+:::{.center-text}
 [**Units problem set**](problem_set_units.qmd)
 
-![](/notes/icons/homework.png){width=20%}
+![](/notes/icons/homework-2.png){width=40%}
+
+:::
+
+
+:::
+
+:::
+
+:::{.center-text}
+Solutions are linked through the problem sets.
+:::
+
+
+
+
+
+
+

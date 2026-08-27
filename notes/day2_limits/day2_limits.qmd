@@ -1,6 +1,6 @@
 # Day 2: Limits
 
-![Artwork by @allison_horst](images/limits_horst.jpg)
+
 
 ## Lecture Materials
 

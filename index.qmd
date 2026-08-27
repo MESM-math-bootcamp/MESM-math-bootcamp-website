@@ -6,6 +6,8 @@ title-block-banner: false
 toc: false
 ---
 
+![Artwork by @allison_horst](images/limits_horst.jpg)
+
 Welcome to the course materials for the Bren Math Workshop! In this website you will find all the materials for the Summer 2026 session. This workshop is part of the [UCSB Master of Environmental Science and Management](https://bren.ucsb.edu/masters-programs/master-environmental-science-and-management) at the [Bren School of Environmental Science and Management](https://bren.ucsb.edu).
 
 ## Workshop description
@@ -16,13 +18,13 @@ The primary workshop objectives are as follows:
 - Reinforce math skills used in Bren courses
 - Understand how math and calculus are used in environmental science
 - Help transition to graduate school life
-- Build collaborative environment
+- Build a collaborative environment amongst students
 
 ## Instructor
 [**Carmen Galaz García**](https://bren.ucsb.edu/people/carmen-galaz-garcia-0) (she/her/hers)
 
 - E-mail: c_galazgarcia@ucsb.edu
-- Student hours: By appointment or right after the sessions end
+- Student hours: By appointment or right after the sessions ends
 
 <!-- ## Syllabus
 
@@ -30,7 +32,7 @@ The primary workshop objectives are as follows:
 
 ## Acknowledgements
 
-The materials for the Bren Math Workshop were originally developed and taught by [Nathan Grimes](https://bren.ucsb.edu/people/nathan-grimes). This new website houses materials which are reused, adapted, and expanded from, and inspired by the previous instructors' work.
+The first materials for the Bren Math Workshop were developed and taught by [Nathan Grimes](https://bren.ucsb.edu/people/nathan-grimes). This new website houses materials which are reused, adapted, and expanded from the previous instructors' work.
 
 
 <!-- [Allison Horst](https://allisonhorst.github.io/){target="_blank"}. It has since been taught and adapted by [Ruth Oliver](https://www.oliverlab.org){target="_blank"}, [Sam Shanny-Csik](https://samanthacsik.github.io){target="_blank"} and, most recently, myself, [Carmen Galaz García](https://bren.ucsb.edu/people/carmen-galaz-garcia).  -->

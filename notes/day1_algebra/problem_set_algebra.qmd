@@ -2,9 +2,8 @@
 sidebar: daily-materials
 execute:
   freeze: true
-author: "Carmen Galaz García, Nathaniel Grimes"
 ---
-# Day 1: Algebra and units problem set
+# Algebra Problem Set
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,message=FALSE,warning=FALSE)
