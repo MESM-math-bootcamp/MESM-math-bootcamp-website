@@ -19,16 +19,27 @@ Attempt each problem on your own before checking the [solutions](solutions_probl
 Feel free to work with anyone in the cohort after giving the problems a try!
 :::
 
+## Percent & ppm conversions
+
+<!-- Source: ESM 202 Exercise Bank, Exercise 13 -->
+1) Convert 250 ppm to a percentage.
+
+<!-- Source: ESM 202 Exercise Bank, Exercise 14 -->
+2) A water sample is 0.015% contaminant by mass. Express this in ppm.
+
+<!-- Source: ESM 202 Exercise Bank, Exercise 15 -->
+3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?
+
 ## Unit conversions
 
 <!-- Source: ESM 202 Exercise Bank, Exercise 48 -->
-1) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.
+4) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.
 
 <!-- Source: ESM 203 Exercise Bank, Exercise 51 -->
-2) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.
+5) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.
 
 <!-- Source: Day 1 lecture slides, Unit conversions practice, exercise 2 -->
-3) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:
+6) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:
 
     -   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)
     -   **Company B:** 692 liters spilled (94% recovered)
@@ -40,12 +51,12 @@ Feel free to work with anyone in the cohort after giving the problems a try!
 
 ### Intro
 
-4) Convert 2,300 mL to liters.
+7) Convert 2,300 mL to liters.
 
-5) Convert an area of 5.4 km² to m².
+8) Convert an area of 5.4 km² to m².
 
 ### Medium
 
-6) A saline stock is 6 g/L. Express this in mg/mL.
+9) A saline stock is 6 g/L. Express this in mg/mL.
 
-7) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.
+10) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.

@@ -11,28 +11,112 @@ author: "Carmen Galaz García, Nathaniel Grimes"
 These are the solutions to the [units problem set](problem_set_units.qmd). Click a solution to expand it and try each problem yourself first!
 :::
 
-## Unit conversions
+## Percent & ppm conversions
 
-**1)** A pollutant concentration is 12 μg/mL. Convert this to kg/m³.
+**1)** Convert 250 ppm to a percentage.
 
 ::: {.callout-note collapse="true" title="Solution"}
-### Given
+**Given**
+
+- 250 ppm
+- $1\% = 10{,}000$ ppm
+
+**Step 1: Divide by 10,000 to convert ppm to percent**
+
+$$
+250 \text{ ppm} = \frac{250}{10{,}000}\% = 0.025\%
+$$
+
+**Answer**
+
+$$
+\boxed{0.025\%}
+$$
+:::
+
+**2)** A water sample is 0.015% contaminant by mass. Express this in ppm.
+
+::: {.callout-note collapse="true" title="Solution"}
+**Given**
+
+- 0.015% contaminant by mass
+- $1\% = 10{,}000$ ppm
+
+**Step 1: Multiply by 10,000 to convert percent to ppm**
+
+$$
+0.015\% \times 10{,}000 = 150 \text{ ppm}
+$$
+
+**Answer**
+
+$$
+\boxed{150 \text{ ppm}}
+$$
+:::
+
+**3)** A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?
+
+::: {.callout-note collapse="true" title="Solution"}
+**Given**
+
+- Sample mass = 500 g
+- Organic matter = 2.4% by mass
+- Heavy metal = 380 ppm by mass
+
+**Step 1: Find the mass of organic matter**
+
+$$
+2.4\% \times 500\text{ g} = 12\text{ g}
+$$
+
+**Step 2: Find the mass of heavy metal**
+
+Since ppm by mass is equivalent to mg/kg, first convert the sample mass to kg:
+
+$$
+500\text{ g} = 0.5\text{ kg}
+$$
+
+$$
+380 \text{ mg/kg} \times 0.5\text{ kg} = 190\text{ mg} = 0.19\text{ g}
+$$
+
+**Step 3: Take the ratio**
+
+$$
+\frac{12\text{ g}}{0.19\text{ g}} \approx 63.2
+$$
+
+**Answer**
+
+$$
+\boxed{63.2}
+$$
+:::
+
+## Unit conversions
+
+**4)** A pollutant concentration is 12 μg/mL. Convert this to kg/m³.
+
+::: {.callout-note collapse="true" title="Solution"}
+**Given**
 
 - Concentration = 12 μg/mL
 
-### Step 1: Convert mL to m³
+**Step 1: Convert mL to m³**
 
 $$
 1\text{ mL} = 10^{-6}\text{ m}^3
 $$
 
-### Step 2: Rewrite the concentration in μg/m³
+**Step 2: Rewrite the concentration in μg/m³**
 
 $$
 \frac{12\ \mu\text{g}}{10^{-6}\text{ m}^3} = 12\times10^{6}\ \mu\text{g/m}^3
 $$
 
-### Step 3: Convert μg to kg
+**Step 3: Convert μg to kg**
 
 $$
 1\ \mu\text{g} = 10^{-9}\text{ kg}
@@ -42,28 +126,28 @@ $$
 12\times10^{6} \times 10^{-9} = 0.012\text{ kg/m}^3
 $$
 
-### Answer
+**Answer**
 
 $$
 \boxed{0.012\text{ kg/m}^3}
 $$
 :::
 
-**2)** A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.
+**5)** A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.
 
 ::: {.callout-note collapse="true" title="Solution"}
-### Given
+**Given**
 
 - Precipitation = 45 mm/year
 - Watershed area = 1,800 km²
 
-### Step 1: Convert precipitation to meters
+**Step 1: Convert precipitation to meters**
 
 $$
 45\text{ mm} = \frac{45}{1000} = 0.045\text{ m}
 $$
 
-### Step 2: Convert area to square meters
+**Step 2: Convert area to square meters**
 
 $$
 1,800\text{ km}^2 = 1,800(1,000)^2
@@ -73,7 +157,7 @@ $$
 = 1.8 \times 10^9\text{ m}^2
 $$
 
-### Step 3: Calculate the annual precipitation volume
+**Step 3: Calculate the annual precipitation volume**
 
 Volume is calculated as:
 
@@ -91,14 +175,14 @@ $$
 V = 8.1 \times 10^7\text{ m}^3/\text{year}
 $$
 
-### Answer
+**Answer**
 
 $$
 \boxed{81,000,000\text{ m}^3/\text{year}}
 $$
 :::
 
-**3)** You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:
+**6)** You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:
 
 -   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)
 -   **Company B:** 692 liters spilled (94% recovered)
@@ -107,20 +191,20 @@ $$
 What is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.
 
 ::: {.callout-note collapse="true" title="Solution"}
-### Given
+**Given**
 
 - Company A: 14.6 barrels spilled, 9.3 barrels recovered
 - Company B: 692 L spilled, 94% recovered
 - Company C: 18.1 gallons spilled, 0% recovered
 - Conversions: 1 barrel = 42 gallons = 159 liters
 
-### Step 1: Company A's unrecovered oil (already in barrels)
+**Step 1: Company A's unrecovered oil (already in barrels)**
 
 $$
 14.6 - 9.3 = 5.3\text{ barrels}
 $$
 
-### Step 2: Company B's unrecovered oil, converted to barrels
+**Step 2: Company B's unrecovered oil, converted to barrels**
 
 $$
 692 \times (1 - 0.94) = 41.52\text{ L unrecovered}
@@ -130,19 +214,19 @@ $$
 41.52\text{ L} \times \frac{1\text{ barrel}}{159\text{ L}} = 0.26\text{ barrels}
 $$
 
-### Step 3: Company C's unrecovered oil, converted to barrels
+**Step 3: Company C's unrecovered oil, converted to barrels**
 
 $$
 18.1\text{ gal} \times \frac{1\text{ barrel}}{42\text{ gal}} = 0.43\text{ barrels}
 $$
 
-### Step 4: Add up all three companies' unrecovered oil
+**Step 4: Add up all three companies' unrecovered oil**
 
 $$
 5.3 + 0.26 + 0.43 = 5.99\text{ barrels}
 $$
 
-### Answer
+**Answer**
 
 $$
 \boxed{5.99\text{ barrels unrecovered}}
@@ -153,46 +237,46 @@ $$
 
 ### Intro
 
-**4)** Convert 2,300 mL to liters.
+**7)** Convert 2,300 mL to liters.
 
 ::: {.callout-note collapse="true" title="Solution"}
-### Given
+**Given**
 
 - Volume = 2,300 mL
 
-### Step 1: Convert mL to L
+**Step 1: Convert mL to L**
 
 $$
 2{,}300\text{ mL} = \frac{2{,}300}{1000} = 2.3\text{ L}
 $$
 
-### Answer
+**Answer**
 
 $$
 \boxed{2.3\text{ L}}
 $$
 :::
 
-**5)** Convert an area of 5.4 km² to m².
+**8)** Convert an area of 5.4 km² to m².
 
 ::: {.callout-note collapse="true" title="Solution"}
-### Given
+**Given**
 
 - Area = 5.4 km²
 
-### Step 1: Square the linear conversion factor
+**Step 1: Square the linear conversion factor**
 
 $$
 1\text{ km} = 1{,}000\text{ m} \implies 1\text{ km}^2 = (1{,}000)^2\text{ m}^2 = 10^6\text{ m}^2
 $$
 
-### Step 2: Apply the factor
+**Step 2: Apply the factor**
 
 $$
 5.4\text{ km}^2 = 5.4 \times 10^6\text{ m}^2
 $$
 
-### Answer
+**Answer**
 
 $$
 \boxed{5{,}400{,}000\text{ m}^2}
@@ -201,53 +285,53 @@ $$
 
 ### Medium
 
-**6)** A saline stock is 6 g/L. Express this in mg/mL.
+**9)** A saline stock is 6 g/L. Express this in mg/mL.
 
 ::: {.callout-note collapse="true" title="Solution"}
-### Given
+**Given**
 
 - Concentration = 6 g/L
 
-### Step 1: Convert grams to milligrams
+**Step 1: Convert grams to milligrams**
 
 $$
 6\text{ g} = 6{,}000\text{ mg}
 $$
 
-### Step 2: Convert liters to milliliters
+**Step 2: Convert liters to milliliters**
 
 $$
 1\text{ L} = 1{,}000\text{ mL}
 $$
 
-### Step 3: Divide to get the new concentration
+**Step 3: Divide to get the new concentration**
 
 $$
 \frac{6{,}000\text{ mg}}{1{,}000\text{ mL}} = 6\text{ mg/mL}
 $$
 
-### Answer
+**Answer**
 
 $$
 \boxed{6\text{ mg/mL}}
 $$
 :::
 
-**7)** A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.
+**10)** A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.
 
 ::: {.callout-note collapse="true" title="Solution"}
-### Given
+**Given**
 
 - Depth = 12 m
 - Surface area = 1.8 km²
 
-### Step 1: Convert area to square meters
+**Step 1: Convert area to square meters**
 
 $$
 1.8\text{ km}^2 = 1.8 \times (1{,}000)^2 = 1.8 \times 10^6\text{ m}^2
 $$
 
-### Step 2: Calculate the volume
+**Step 2: Calculate the volume**
 
 $$
 V = \text{depth} \times \text{area}
@@ -261,7 +345,7 @@ $$
 V = 2.16 \times 10^7\text{ m}^3
 $$
 
-### Answer
+**Answer**
 
 $$
 \boxed{21{,}600{,}000\text{ m}^3}
