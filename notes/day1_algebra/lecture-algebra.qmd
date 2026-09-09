@@ -116,9 +116,9 @@ Before:
 <hr>
 
 ::: {.body-text-l}
-- **Day 1:** Algebra refresher; Units I
-- **Day 2:** Units II; Functions; Graphing; Linear functions
-- **Day 3:** Exponential functions and logarithms; Limits
+- **Day 1:** Algebra refresher; Rules of exponents
+- **Day 2:** Units; Functions; Graphing; Exponential functions and logarithms
+- **Day 3:**  Linear functions; Limits
 - **Day 4:**  Derivatives 
 - **Day 5:**  Integration & ODEs
 :::
@@ -1282,6 +1282,134 @@ $$
 Polynomials often represent real world data better than a linear function.
 
 
+
+---
+
+## {#applications data-menu-title="Applications" background-color="#003660"}
+
+
+<div class="page-center">
+<div class="custom-subtitle">Applications</div>
+</div>
+
+
+---
+
+## {#esm-201-practice-blank data-menu-title="Rules of exponents: practice"}
+
+[Population growth at discrete times]{.slide-title}
+
+<hr>
+
+✏️ 
+
+---
+
+## {#esm-201-practice data-menu-title="Rules of exponents: practice"}
+
+[Population growth at discrete times]{.slide-title}
+
+<hr>
+
+::: {.body-text-s}
+A certain population size is measured at discrete time steps. We use the notation:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+- $N_0 =$  population at initial time
+- $N_t =$ population after $t$ time steps
+:::
+
+::: {.column width="50%"}
+- $b=$ per capita birth rate
+- $d=$ per capita death rate
+:::
+
+:::
+
+Assuming a closed population (no movement), we can model discrete growth by
+
+$$N_{t+1} = N_t + bN_t - dN_t.$$
+
+:::
+
+✏️ [Solve these individually.]{style="color:green;"}
+
+
+:::{style="color:green;"}
+(1) Simplify this expression by factoring out $N_t$ and subsituting $\lambda = 1 + b -d$. 
+
+(2) Calculate $N_1$, $N_2$, and $N_3$ and express these in terms of $N_0$. Find a pattern.
+
+(3) What is the general equation for the population size after $T$ time steps? Your answer should only use $\lambda$, $T$, and $N_0$.
+
+(4) What value of $\lambda$ would give a stable population across time?
+
+(5) Find a value of $\lambda$ for which the population grows and another for which it shrinks. More generally, for which values of $\lambda$ does $N$ shrink or grow?
+
+(6) Explain in your own words why $\lambda$ is the finite rate of population growth. 
+:::
+
+---
+
+## {#esm-201-practice-sols1 data-menu-title="Solutions 1"}
+
+[Population growth at discrete times]{.slide-title}
+
+<hr>
+
+
+:::{style="color:green;" .body-text-s}
+✏️ 
+
+(1) Simplify this expression by factoring out $N_t$ and subsituting $\lambda = 1 + b -d$. 
+
+(2) Calculate $N_1$, $N_2$, and $N_3$ and express these in terms of $N_0$. Find a pattern.
+
+(3) What is the general equation for the population size after $T$ time steps? Your answer should only use $\lambda$, $T$, and $N_0$.
+:::
+
+
+---
+
+## {#esm-201-practice-sols2 data-menu-title="Solutions 2"}
+
+[Population growth at discrete times]{.slide-title}
+
+<hr>
+
+:::{style="color:green;" .body-text-s}
+✏️ 
+
+(4) What value of $\lambda$ would give a stable population across time?
+
+(5) Find a value of $\lambda$ for which the population grows and another for which it shrinks. More generally, for which values of $\lambda$ does $N$ shrink or grow?
+
+(6) Explain in your own words why $\lambda$ is the finite rate of population growth. 
+
+:::
+
+---
+
+## {#esm-201-practice-full-solutions data-menu-title="Full Solutions"}
+
+[Population growth at discrete times]{.slide-title}
+
+<hr>
+
+**1)** $N_{t+1}=N_t(1+b-d)=\lambda N_t$
+
+**2)** $N_1=\lambda N_0,\ N_2=\lambda^2 N_0,\ N_3=\lambda^3 N_0$
+
+**3)** $N_T=\lambda^T N_0$
+
+**4)** $\lambda = 1$
+
+**5)** $\lambda>1$ grows (e.g. $\lambda=1.1$); $0\le\lambda<1$ shrinks (e.g. $\lambda=0.9$)
+
+**6)** Each time step multiplies $N_t$ by $\lambda$, so $\lambda$ *is* the finite (discrete-time) growth factor.
+
 ---
 
 ## {#wrapping-up data-menu-title="Wrapping up" background-color="#003660"}
@@ -1303,7 +1431,4 @@ Polynomials often represent real world data better than a linear function.
 - <span style="color:#003366"><b>🗺️ Solving equations</b></span>
 - <span style="color:#FF6600"><b>✖️ Exponents</b></span>
 - <span style="color:#CC9900"><b>📐 Polynomials</b></span>
-- <span style="color:#006699"><b>📏 Metric prefixes</b></span>
-- <span style="color:#339966"><b>🧊 Area & volume conversions</b></span>
-- <span style="color:#9933CC"><b>⚖️ Dimensional analysis (unit conversions)</b></span>
-- <span style="color:#CC3366"><b>🧪 Parts per million (ppm)</b></span>
+- <span style="color:#006699"><b>🐢 Applications from MESM courses</b></span>

@@ -5,8 +5,8 @@ format:
     # code-link: true
     highlight-style: a11y
     chalkboard: true
-    theme: 
-      - ../../meds-slides-styles.scss
+    theme:
+      - ../../ucsb-media.scss
 editor_options: 
   chunk_output_type: console
 ---
@@ -1940,7 +1940,10 @@ $$
 
 <hr>
 
-- <span style="color:#006699"><b>🌡  Units</b></span>  
+- <span style="color:#006699"><b>📏 Metric prefixes</b></span>
+- <span style="color:#339966"><b>🧊 Area & volume conversions</b></span>
+- <span style="color:#9933CC"><b>⚖️ Dimensional analysis (unit conversions)</b></span>
+- <span style="color:#CC3366"><b>🧪 Parts per million (ppm)</b></span>
 - <span style="color:#CC3366"><b>🧩 Definition of functions </b></span>  
 - <span style="color:#006699"><b>📊 Graphing</b></span>  
 - <span style="color:#006633"><b>💬 Reading graphs</b></span>  

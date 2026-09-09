@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>problem_set_units – Bren Math Workshop</title>
+<title>solutions_problem_set_units – Bren Math Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -184,7 +213,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#units-problem-set" id="toc-units-problem-set" class="nav-link active" data-scroll-target="#units-problem-set">Units Problem Set</a>
+  <li><a href="#solutions-units-problem-set" id="toc-solutions-units-problem-set" class="nav-link active" data-scroll-target="#solutions-units-problem-set">Solutions: Units Problem Set</a>
   <ul class="collapse">
   <li><a href="#percent-ppm-conversions" id="toc-percent-ppm-conversions" class="nav-link" data-scroll-target="#percent-ppm-conversions">Percent &amp; ppm conversions</a></li>
   <li><a href="#unit-conversions" id="toc-unit-conversions" class="nav-link" data-scroll-target="#unit-conversions">Unit conversions</a></li>
@@ -198,8 +227,8 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<section id="units-problem-set" class="level1">
-<h1>Units Problem Set</h1>
+<section id="solutions-units-problem-set" class="level1">
+<h1>Solutions: Units Problem Set</h1>
 <div class="callout callout-style-default callout-tip callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -210,50 +239,390 @@ Instructions
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Attempt each problem on your own before checking the <a href="../../notes/day1_algebra/solutions_problem_set_units.html">solutions</a>. Feel free to work with anyone in the cohort after giving the problems a try!</p>
+<p>These are the solutions to the <a href="../../notes/day2_functions_graphs/problem_set_units.html">units problem set</a>. Click a solution to expand it and try each problem yourself first!</p>
 </div>
 </div>
 <section id="percent-ppm-conversions" class="level2">
 <h2 class="anchored" data-anchor-id="percent-ppm-conversions">Percent &amp; ppm conversions</h2>
-<!-- Source: ESM 202 Exercise Bank, Exercise 13 -->
-<ol type="1">
-<li>Convert 250 ppm to a percentage.</li>
-</ol>
-<!-- Source: ESM 202 Exercise Bank, Exercise 14 -->
-<ol start="2" type="1">
-<li>A water sample is 0.015% contaminant by mass. Express this in ppm.</li>
-</ol>
-<!-- Source: ESM 202 Exercise Bank, Exercise 15 -->
-<ol start="3" type="1">
-<li>A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?</li>
-</ol>
+<p><strong>1)</strong> Convert 250 ppm to a percentage.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-2" class="callout-2-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Given</strong></p>
+<ul>
+<li>250 ppm</li>
+<li><span class="math inline">\(1\% = 10{,}000\)</span> ppm</li>
+</ul>
+<p><strong>Step 1: Divide by 10,000 to convert ppm to percent</strong></p>
+<p><span class="math display">\[
+250 \text{ ppm} = \frac{250}{10{,}000}\% = 0.025\%
+\]</span></p>
+<p><strong>Answer</strong></p>
+<p><span class="math display">\[
+\boxed{0.025\%}
+\]</span></p>
+</div>
+</div>
+</div>
+<p><strong>2)</strong> A water sample is 0.015% contaminant by mass. Express this in ppm.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-3" class="callout-3-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Given</strong></p>
+<ul>
+<li>0.015% contaminant by mass</li>
+<li><span class="math inline">\(1\% = 10{,}000\)</span> ppm</li>
+</ul>
+<p><strong>Step 1: Multiply by 10,000 to convert percent to ppm</strong></p>
+<p><span class="math display">\[
+0.015\% \times 10{,}000 = 150 \text{ ppm}
+\]</span></p>
+<p><strong>Answer</strong></p>
+<p><span class="math display">\[
+\boxed{150 \text{ ppm}}
+\]</span></p>
+</div>
+</div>
+</div>
+<p><strong>3)</strong> A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?</p>
+<p><strong>Heavy metal mass:</strong> <span class="math display">\[
+500\ \text{g} \times 380\ \text{ppm} = 500\ \text{g} \times 0.000380 = 0.19\ \text{g}
+\]</span></p>
+<p><strong>Ratio:</strong> <span class="math display">\[
+\frac{12\ \text{g}}{0.19\ \text{g}} \approx 63.2 : 1
+\]</span></p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-4" class="callout-4-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Given</strong></p>
+<ul>
+<li>Sample mass = 500 g</li>
+<li>Organic matter = 2.4% by mass</li>
+<li>Heavy metal = 380 ppm by mass</li>
+</ul>
+<p><strong>Step 1: Find the mass of organic matter</strong></p>
+<p><span class="math display">\[
+500\ \text{g} \times 2.4\% = 500 \text{g} * 2.4 / 100 = 12\ \text{g}
+\]</span></p>
+<p><strong>Step 2: Find the mass of heavy metal</strong></p>
+<p><span class="math display">\[
+500\ \text{g} \times 380\ \text{ppm} = 500\ \text{g} \times 0.000380 = 0.19\ \text{g}
+\]</span></p>
+<p><strong>Step 3: Take the ratio</strong></p>
+<p><span class="math display">\[
+\frac{12\text{ g}}{0.19\text{ g}} \approx 63.2
+\]</span></p>
+<p><strong>Answer</strong></p>
+<p><span class="math display">\[
+\boxed{63.2}
+\]</span></p>
+</div>
+</div>
+</div>
 </section>
 <section id="unit-conversions" class="level2">
 <h2 class="anchored" data-anchor-id="unit-conversions">Unit conversions</h2>
-<ol start="4" type="1">
-<li><p>Convert 2,300 mL to liters.</p></li>
-<li><p>Convert an area of 5.4 km² to m².</p></li>
-<li><p>A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.</p></li>
-<li><p>A saline stock is 6 g/L. Express this in mg/mL.</p></li>
-</ol>
-<!-- Source: ESM 202 Exercise Bank, Exercise 48 -->
-<ol start="8" type="1">
-<li>A pollutant concentration is 12 μg/mL. Convert this to kg/m³.</li>
-</ol>
-<!-- Source: ESM 203 Exercise Bank, Exercise 51 -->
-<ol start="9" type="1">
-<li>A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.</li>
-</ol>
-<!-- Source: Day 1 lecture slides, Unit conversions practice, exercise 2 -->
-<ol start="10" type="1">
-<li><p>You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:</p>
+<p><strong>4)</strong> Convert 2,300 mL to liters.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Given</strong></p>
+<ul>
+<li>Volume = 2,300 mL</li>
+</ul>
+<p><strong>Step 1: Convert mL to L</strong></p>
+<p><span class="math display">\[
+2{,}300\text{ mL} = \frac{2{,}300}{1000} = 2.3\text{ L}
+\]</span></p>
+<p><strong>Answer</strong></p>
+<p><span class="math display">\[
+\boxed{2.3\text{ L}}
+\]</span></p>
+</div>
+</div>
+</div>
+<p><strong>5)</strong> Convert an area of 5.4 km² to m².</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Given</strong></p>
+<ul>
+<li>Area = 5.4 km²</li>
+</ul>
+<p><strong>Step 1: Square the linear conversion factor</strong></p>
+<p><span class="math display">\[
+1\text{ km} = 1{,}000\text{ m} \implies 1\text{ km}^2 = (1{,}000)^2\text{ m}^2 = 10^6\text{ m}^2
+\]</span></p>
+<p><strong>Step 2: Apply the factor</strong></p>
+<p><span class="math display">\[
+5.4\text{ km}^2 = 5.4 \times 10^6\text{ m}^2
+\]</span></p>
+<p><strong>Answer</strong></p>
+<p><span class="math display">\[
+\boxed{5{,}400{,}000\text{ m}^2}
+\]</span></p>
+</div>
+</div>
+</div>
+<p><strong>6)</strong> A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Given</strong></p>
+<ul>
+<li>Depth = 12 m</li>
+<li>Surface area = 1.8 km²</li>
+</ul>
+<p><strong>Step 1: Convert area to square meters</strong></p>
+<p><span class="math display">\[
+1.8\text{ km}^2 = 1.8 \times (1{,}000)^2 = 1.8 \times 10^6\text{ m}^2
+\]</span></p>
+<p><strong>Step 2: Calculate the volume</strong></p>
+<p><span class="math display">\[
+V = \text{depth} \times \text{area}
+\]</span></p>
+<p><span class="math display">\[
+V = 12 \times 1.8\times10^6
+\]</span></p>
+<p><span class="math display">\[
+V = 2.16 \times 10^7\text{ m}^3
+\]</span></p>
+<p><strong>Answer</strong></p>
+<p><span class="math display">\[
+\boxed{21{,}600{,}000\text{ m}^3}
+\]</span></p>
+</div>
+</div>
+</div>
+<p><strong>7)</strong> A saline stock is 6 g/L. Express this in mg/mL.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-8-contents" aria-controls="callout-8" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-8" class="callout-8-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Given</strong></p>
+<ul>
+<li>Concentration = 6 g/L</li>
+</ul>
+<p><strong>Step 1: Convert grams to milligrams</strong></p>
+<p><span class="math display">\[
+6\text{ g} = 6{,}000\text{ mg}
+\]</span></p>
+<p><strong>Step 2: Convert liters to milliliters</strong></p>
+<p><span class="math display">\[
+1\text{ L} = 1{,}000\text{ mL}
+\]</span></p>
+<p><strong>Step 3: Divide to get the new concentration</strong></p>
+<p><span class="math display">\[
+\frac{6{,}000\text{ mg}}{1{,}000\text{ mL}} = 6\text{ mg/mL}
+\]</span></p>
+<p><strong>Answer</strong></p>
+<p><span class="math display">\[
+\boxed{6\text{ mg/mL}}
+\]</span></p>
+</div>
+</div>
+</div>
+<p><strong>8)</strong> One microgram (μg) is equivalent to <span class="math inline">\(1/10^6\)</span> grams and one meter cubed (m³) is equivalent to 1000 liters. A pollutant concentration is 12 μg/mL. Convert this to kg/m³.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-9-contents" aria-controls="callout-9" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-9" class="callout-9-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Given</strong></p>
+<ul>
+<li>Concentration = 12 μg/mL</li>
+<li><span class="math inline">\(1\ \mu\text{g} = 10^{-6}\text{ g}\)</span> and <span class="math inline">\(1\text{ m}^3 = 1000\text{ L}\)</span></li>
+</ul>
+<p><strong>Step 1: Find a conversion factor from micrograms to kilograms</strong></p>
+<p><span class="math display">\[
+1\ \mu\text{g} = 10^{-6}\text{ g} = 10^{-9}\text{ kg} \implies \frac{10^{-9}\text{ kg}}{1\ \mu\text{g}}
+\]</span></p>
+<p><strong>Step 2: Find a conversion factor from m³ to mL</strong></p>
+<p><span class="math display">\[
+1\text{ m}^3 = 1000\text{ L} = 10^{6}\text{ mL} \implies \frac{10^{6}\text{ mL}}{1\text{ m}^3}
+\]</span></p>
+<p><strong>Step 3: Multiply by the conversion factors, group numbers and units, and simplify</strong></p>
+<p><span class="math display">\[\begin{align*}
+12\ \frac{\mu\text{g}}{\text{mL}} &amp;= 12\ \frac{\mu\text{g}}{\text{mL}} \cdot \frac{10^{-9}\text{ kg}}{1\ \mu\text{g}} \cdot \frac{10^{6}\text{ mL}}{1\text{ m}^3}\\
+&amp;= \left(12 \times 10^{-9} \times 10^{6}\right) \cdot \left(\frac{\mu\text{g}}{\text{mL}}\cdot\frac{\text{kg}}{\mu\text{g}}\cdot\frac{\text{mL}}{\text{m}^3}\right)\\
+&amp;= 0.012\ \frac{\text{kg}}{\text{m}^3}
+\end{align*}\]</span></p>
+<p><strong>Answer</strong></p>
+<p><span class="math display">\[
+\boxed{0.012\text{ kg/m}^3}
+\]</span></p>
+</div>
+</div>
+</div>
+<p><strong>9)</strong> A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-10-contents" aria-controls="callout-10" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-10" class="callout-10-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Given</strong></p>
+<ul>
+<li>Precipitation = 45 mm/year</li>
+<li>Watershed area = 1,800 km²</li>
+</ul>
+<p><strong>Step 1: Convert precipitation to meters</strong></p>
+<p><span class="math display">\[
+45\text{ mm} = \frac{45}{1000} = 0.045\text{ m}
+\]</span></p>
+<p><strong>Step 2: Convert area to square meters</strong></p>
+<p><span class="math display">\[
+1,800\text{ km}^2 = 1,800(1,000)^2
+\]</span></p>
+<p><span class="math display">\[
+= 1.8 \times 10^9\text{ m}^2
+\]</span></p>
+<p><strong>Step 3: Calculate the annual precipitation volume</strong></p>
+<p>Volume is calculated as:</p>
+<p><span class="math display">\[
+V = P \times A
+\]</span></p>
+<p>Substitute the values:</p>
+<p><span class="math display">\[
+V = (0.045)(1.8 \times 10^9)
+\]</span></p>
+<p><span class="math display">\[
+V = 8.1 \times 10^7\text{ m}^3/\text{year}
+\]</span></p>
+<p><strong>Answer</strong></p>
+<p><span class="math display">\[
+\boxed{81,000,000\text{ m}^3/\text{year}}
+\]</span></p>
+</div>
+</div>
+</div>
+<p><strong>10)</strong> You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:</p>
 <ul>
 <li><strong>Company A:</strong> 14.6 barrels spilled (with 9.3 barrels recovered)</li>
 <li><strong>Company B:</strong> 692 liters spilled (94% recovered)</li>
 <li><strong>Company C:</strong> 18.1 gallons spilled (0% recovered)</li>
 </ul>
-<p>What is the total <em>unrecovered</em> amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.</p></li>
-</ol>
+<p>What is the total <em>unrecovered</em> amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.</p>
+<div class="callout callout-style-default callout-note callout-titled" title="Solution">
+<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-11-contents" aria-controls="callout-11" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Solution
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-11" class="callout-11-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong>Given</strong></p>
+<ul>
+<li>Company A: 14.6 barrels spilled, 9.3 barrels recovered</li>
+<li>Company B: 692 L spilled, 94% recovered</li>
+<li>Company C: 18.1 gallons spilled, 0% recovered</li>
+<li>Conversions: 1 barrel = 42 gallons = 159 liters</li>
+</ul>
+<p><strong>Step 1: Company A’s unrecovered oil (already in barrels)</strong></p>
+<p><span class="math display">\[
+14.6 - 9.3 = 5.3\text{ barrels}
+\]</span></p>
+<p><strong>Step 2: Company B’s unrecovered oil, converted to barrels</strong></p>
+<p><span class="math display">\[
+692 \times (1 - 0.94) = 41.52\text{ L unrecovered}
+\]</span></p>
+<p><span class="math display">\[
+41.52\text{ L} \times \frac{1\text{ barrel}}{159\text{ L}} = 0.26\text{ barrels}
+\]</span></p>
+<p><strong>Step 3: Company C’s unrecovered oil, converted to barrels</strong></p>
+<p><span class="math display">\[
+18.1\text{ gal} \times \frac{1\text{ barrel}}{42\text{ gal}} = 0.43\text{ barrels}
+\]</span></p>
+<p><strong>Step 4: Add up all three companies’ unrecovered oil</strong></p>
+<p><span class="math display">\[
+5.3 + 0.26 + 0.43 = 5.99\text{ barrels}
+\]</span></p>
+<p><strong>Answer</strong></p>
+<p><span class="math display">\[
+\boxed{5.99\text{ barrels unrecovered}}
+\]</span></p>
+</div>
+</div>
+</div>
 
 
 </section>
