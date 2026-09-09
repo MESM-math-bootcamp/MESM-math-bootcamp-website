@@ -893,9 +893,9 @@ $$
 
 ---
 
-## {#break data-menu-title="5 minute break"}
+## {#break data-menu-title="10 minute break"}
 
-[Let's take a 5 minute break]{.slide-title}
+[Let's take a 10 minute break]{.slide-title}
 
 <hr>
 

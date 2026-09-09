@@ -7,8 +7,8 @@
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
 <link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-c2894b54f4b00a27b9651b11dcf5df54.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
-  <meta name="generator" content="quarto-1.7.33">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-33269adcf1721b81efc5ea7fcfe7f0ee.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
 
   <title>Bren Math Workshop – lecture-functions-graphs</title>
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -17,6 +17,9 @@
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
   <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
   <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
     div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -29,7 +32,7 @@
       vertical-align: middle;
     }
   </style>
-  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-73b98051fc68f440f95a8b85692f1a71.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-47abf7ff7a5eed8d849cff35fd183f8e.css">
   <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
   <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
@@ -123,7 +126,7 @@
       margin-right: 0; 
     }
   </style>
-  <link href="../../site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet">
+  <link href="../../site_libs/htmltools-fill-0.5.9/fill.css" rel="stylesheet">
   <script src="../../site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
   <link href="../../site_libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet">
   <script src="../../site_libs/datatables-binding-0.34.0/datatables.js"></script>
@@ -133,6 +136,15 @@
   <script src="../../site_libs/dt-core-1.13.6/js/jquery.dataTables.min.js"></script>
   <link href="../../site_libs/crosstalk-1.2.2/css/crosstalk.min.css" rel="stylesheet">
   <script src="../../site_libs/crosstalk-1.2.2/js/crosstalk.min.js"></script>
+  <script>
+  (function loadCancelExtension(){
+    if (window.MathJax && window.MathJax.Hub) {
+      MathJax.Hub.Config({ TeX: { extensions: ["cancel.js"] } });
+    } else {
+      setTimeout(loadCancelExtension, 20);
+    }
+  })();
+  </script>
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -141,7 +153,7 @@
 
 <section id="title-slide" class="slide level2 center" data-menu-title="Title Slide" data-background="#053660">
 <h2></h2>
-<p><span class="custom-title">Functions, Graphs, Exponents and Logarithms</span></p>
+<p><span class="custom-title">Functions, Graphs, <span class="math inline">\(e^x\)</span> and Logarithms</span></p>
 <p><span class="custom-subtitle gold">Bren Math Workshop</span></p>
 <hr class="hr-teal">
 <p><span class="body-text-l center-text baby-blue-text">Carmen Galaz García, Ph.D.</span></p>
@@ -513,6 +525,12 @@ Units
 <p><br></p>
 <p><span class="body-text-m"><strong>6.</strong> Area <span class="math inline">\(= 2.5\times10^{6}\)</span> m². Volume <span class="math inline">\(= 8 \times 2.5\times10^{6} = 2\times10^{7}\)</span> m³</span></p>
 </section>
+<section id="break" class="slide level2" data-menu-title="5 minute break">
+<h2></h2>
+<p><span class="slide-title">Let’s take a 10 minute break</span></p>
+<hr>
+
+<img data-src="images/coffee-break.png" class="r-stretch quarto-figure-center"><p class="caption">image: Flaticon.com</p></section>
 <section id="eds212-basics" class="slide level2" data-menu-title="EDS 212 basics" data-background-color="#003660">
 <h2></h2>
 <div class="page-center">
@@ -649,8 +667,8 @@ Graphs
 <div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-08cd198271b469ddefd9" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-08cd198271b469ddefd9">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"mpg","targets":1},{"name":"cyl","targets":2},{"name":"disp","targets":3},{"name":"hp","targets":4}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-98532051b02baff6ac62" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-98532051b02baff6ac62">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["Mazda RX4","Mazda RX4 Wag","Datsun 710","Hornet 4 Drive","Hornet Sportabout","Valiant"],[21,21,22.8,21.4,18.7,18.1],[6,6,4,6,8,6],[160,160,108,258,360,225],[110,110,93,110,175,105]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>mpg<\/th>\n      <th>cyl<\/th>\n      <th>disp<\/th>\n      <th>hp<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":10,"columnDefs":[{"className":"dt-right","targets":[1,2,3,4]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"mpg","targets":1},{"name":"cyl","targets":2},{"name":"disp","targets":3},{"name":"hp","targets":4}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -703,8 +721,8 @@ Graphs
 <div class="column" style="width:50%;">
 <div class="cell">
 <div class="cell-output-display">
-<div class="datatables html-widget html-fill-item" id="htmlwidget-56c34ca335bbf42ad43d" style="width:100%;height:auto;"></div>
-<script type="application/json" data-for="htmlwidget-56c34ca335bbf42ad43d">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],[0,1,2,3,4,5,6,7,8,9,10],[-0.9399999999999999,1.28,0.75,5.39,4.49,3.77,6.73,8.109999999999999,8.859999999999999,8.539999999999999,9.06]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>x<\/th>\n      <th>y<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":6,"columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"x","targets":1},{"name":"y","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[6,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
+<div class="datatables html-widget html-fill-item" id="htmlwidget-c6de7412a772a6304f1b" style="width:100%;height:auto;"></div>
+<script type="application/json" data-for="htmlwidget-c6de7412a772a6304f1b">{"x":{"filter":"none","vertical":false,"fillContainer":false,"data":[["1","2","3","4","5","6","7","8","9","10","11"],[0,1,2,3,4,5,6,7,8,9,10],[-0.9399999999999999,1.28,0.75,5.39,4.49,3.77,6.73,8.109999999999999,8.859999999999999,8.539999999999999,9.06]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>x<\/th>\n      <th>y<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"pageLength":6,"columnDefs":[{"className":"dt-right","targets":[1,2]},{"orderable":false,"targets":0},{"name":" ","targets":0},{"name":"x","targets":1},{"name":"y","targets":2}],"order":[],"autoWidth":false,"orderClasses":false,"lengthMenu":[6,10,25,50,100]}},"evals":[],"jsHooks":[]}</script>
 </div>
 </div>
 </div><div class="column" style="width:50%;">
@@ -990,347 +1008,11 @@ Graphs
 <hr>
 
 <img data-src="images/mono_lake_graph.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
-<section id="break" class="slide level2" data-menu-title="5 minute break">
-<h2></h2>
-<p><span class="slide-title">Let’s take a 5 minute break</span></p>
-<hr>
-
-<img data-src="images/coffee-break.png" class="r-stretch quarto-figure-center"><p class="caption">image: Flaticon.com</p></section>
-<section id="exponential-function-title" class="slide level2" data-menu-title="The exponential function" data-background-color="#003660">
-<h2></h2>
-<div class="page-center">
-<div class="custom-subtitle">
-The exponential function
-</div>
-</div>
-</section>
-<section id="number-e-1" class="slide level2" data-menu-title="The number $e$">
-<h2></h2>
-<!-- 
-A very nice slide deck Carmen made to explain what e is to my 34A summer 2020 students.
-https://docs.google.com/presentation/d/1uztsfd9fwG49lxsDgxhyQZVsbFQDkmszsSkQdDivz2Q/edit?usp=sharing
--->
-<p><span class="slide-title">The number <span class="math inline">\(e\)</span></span></p>
-<hr>
-<p>The <strong>number <span class="math inline">\(e\)</span> is a constant</strong> in mathematics, it is approximately <span class="math inline">\(e\approx 2.72\)</span>, but really its decimals continue infinitely without any pattern:</p>
-<div class="center-text teal-text">
-<p><span class="math inline">\(e = 2.71828182845904523536...\)</span></p>
-</div>
-<div class="fragment">
-<p>It’s exact value can be described as <span class="math display">\[
-e = 1 + 1 + \frac{1}{1*2} + \frac{1}{1*2*3} + \frac{1}{1*2*3*4} + \frac{1}{1*2*3*4*5} + ...
-\]</span></p>
-</div>
-<div class="fragment">
-<p>Like any other number, <span class="math inline">\(e\)</span> follows normal power properties:</p>
-<p><span class="math display">\[
-\begin{align}
-e^x\cdot e^y &amp;=&amp; ?\\
-\frac{1}{e^x} &amp;=&amp; ?\\
-\frac{e^x}{e^y} &amp;=&amp; ?\\
-(e^x)^r &amp;=&amp; ?
-\end{align}
-\]</span></p>
-<p>✏️ <span style="color:green;">Take a moment to write these with a single exponent.</span></p>
-</div>
-</section>
-<section id="number-e-2" class="slide level2" data-menu-title="The number $e$">
-<h2></h2>
-<!-- 
-A very nice slide deck Carmen made to explain what e is to my 34A summer 2020 students.
-https://docs.google.com/presentation/d/1uztsfd9fwG49lxsDgxhyQZVsbFQDkmszsSkQdDivz2Q/edit?usp=sharing
--->
-<p><span class="slide-title">The number <span class="math inline">\(e\)</span></span></p>
-<hr>
-<p>The <strong>number <span class="math inline">\(e\)</span> is a constant</strong> in mathematics, it is approximately <span class="math inline">\(e\approx 2.72\)</span>, but really its decimals continue infinitely without any pattern:</p>
-<div class="center-text teal-text">
-<p><span class="math inline">\(e = 2.71828182845904523536...\)</span></p>
-</div>
-<p>It’s exact value can be described as <span class="math display">\[
-e = 1 + 1 + \frac{1}{1*2} + \frac{1}{1*2*3} + \frac{1}{1*2*3*4} + \frac{1}{1*2*3*4*5} + ...
-\]</span></p>
-<p>Like any other number, <span class="math inline">\(e\)</span> follows normal power properties:</p>
-<p><span class="math display">\[
-\begin{align}
-e^{x+y}&amp;=&amp;e^x\cdot e^y \\
-e^{-x}&amp;=&amp;\frac{1}{e^x}\\
-e^{x-y}&amp;=&amp;\frac{e^x}{e^y}\\
-e^{rx}&amp;=&amp;(e^x)^r
-\end{align}
-\]</span></p>
-<!---------------------------------------------------------------------->
-</section>
-<section id="exponential-function" class="slide level2" data-menu-title="The exponential function $e^x$">
-<h2></h2>
-<p><span class="slide-title">The exponential funciton</span></p>
-<hr>
-<p>The <strong>exponential function <span class="math inline">\(e^x\)</span></strong> is the number <span class="math inline">\(e\)</span> raised to the <span class="math inline">\(x\)</span> power.</p>
-<p>In function notation you may sometimes see it as</p>
-<p><span class="math display">\[ f(x) = e^x \ \ \text{ or } \ \ \text{exp}(x).\]</span></p>
-
-<img data-src="lecture-functions-graphs_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"></section>
-<section id="e-common" class="slide level2" data-menu-title="e common">
-<h2></h2>
-<p><span class="slide-title">Why is the exponential function so common?</span></p>
-<hr>
-<p><br></p>
-<div class="body-text-l">
-<ul>
-<li><p><strong>One reason:</strong> Exponential trends show up a LOT in environmental science (the proportional change is the same over each time span)</p></li>
-<li><p><strong>Math reason:</strong> Turns out it’s a very useful value for calculus</p></li>
-</ul>
-</div>
-</section>
-<section id="aquaculture" class="slide level2" data-menu-title="Aquaculture example">
-<h2></h2>
-<p><span class="slide-title">A real-world example:</span></p>
-<hr>
-
-<img data-src="images/fisheries-aquaculture.png" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><div class="footer">
-<p>Source: <a href="https://ourworldindata.org/grapher/capture-fisheries-vs-aquaculture">Our World in Data</a></p>
-</div>
-</section>
-<section id="cant-grow-forever" class="slide level2" data-menu-title="Can't grow forever">
-<h2></h2>
-<p><span class="slide-title2">But populations can’t grow exponentially forever</span></p>
-<hr>
-
-<img data-src="images/paramecium.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:90.0%"><div class="center-text body-text-s gray-text">
-<p>Gause, G. F. 1934. The Struggle for Existence. Baltimore: Williams and Wilkins.</p>
-</div>
-</section>
-<section id="logistic-growth" class="slide level2" data-menu-title="Logistic growth">
-<h2></h2>
-<p><span class="slide-title">Logistic growth</span></p>
-<hr>
-<p><span class="body-text-l"><span class="math display">\[N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}\]</span></span></p>
-<p><br></p>
-<p><span class="body-text-m">Where <span class="math inline">\(N_t\)</span> is the population size at time <span class="math inline">\(t\)</span>, <span class="math inline">\(K\)</span> is the carrying capacity, <span class="math inline">\(N_0\)</span> is the initial population size, and <span class="math inline">\(r\)</span> is a growth rate.</span></p>
-<p><br></p>
-<div class="fragment">
-<p>✏️ <span style="color:green;">What should be the value of the formula when <span class="math inline">\(t=0\)</span>? Confirm your answer by substituting.</span></p>
-</div>
-<div class="fragment">
-<div class="center-text body-text-m teal-text">
-<p>We should always <em>understand the components of formulas and equations</em> - both conceptually and mathematically.</p>
-</div>
-</div>
-</section>
-<section id="logistic-growth-example" class="slide level2" data-menu-title="Logistic growth: Example">
-<h2></h2>
-<p><span class="slide-title">Logistic growth: Example</span></p>
-<hr>
-<p>What is <span class="body-text-m"><span class="math display">\[N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}\]</span></span> when t = 0?</p>
-</section>
-<section id="logistic-growth-solution" class="slide level2" data-menu-title="Logistic growth: Solution">
-<h2></h2>
-<p><span class="slide-title">Solution</span></p>
-<hr>
-<p><span class="math display">\[
-\begin{aligned}
-N_0 &amp;= \frac{K}{1+[\frac{K-N_0}{N_0}]e^{-r(0)}} &amp;\text{Substitute } t=0 \\
-&amp;= \frac{K}{1+[\frac{K-N_0}{N_0}](1)} &amp;e^{0}=1 \\
-&amp;= \frac{K}{\frac{N_0 + (K-N_0)}{N_0}} &amp;\text{Combine terms in the denominator} \\
-&amp;= \frac{K}{\frac{K}{N_0}} &amp;N_0 + (K-N_0) = K \\
-&amp;= N_0
-\end{aligned}
-\]</span></p>
-</section>
-<section id="logistic-growth-Qs" class="slide level2" data-menu-title="Logistic growth (Qs)">
-<h2></h2>
-<p><span class="slide-title">Logistic growth</span></p>
-<hr>
-<p><br></p>
-<p><span class="body-text-l"><span class="math display">\[N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}\]</span></span></p>
-<p><br></p>
-<div class="body-text-m">
-<ol type="1">
-<li><p>Why might we expect logistic growth for many populations?</p></li>
-<li><p>What variables <em>besides</em> time would influence the actual population?</p></li>
-</ol>
-<!-- 3. Why, mathematically, does the logistic growth expression take the shape it does? What happens as the population becomes very close to the carrying capacity? -->
-</div>
-<!-- [A brief explanation of the math with derivatives.](https://sites.math.duke.edu/education/ccp/materials/diffeq/logistic/logi1.html) -->
-<aside class="notes">
-<ol type="1">
-<li><p>Pops grow slowly at the start when there are few individuals. Grow more quickly (exponentially) when enough individuals are in a pop and resources are abundant. Plateau when resources become depleted.</p></li>
-<li><p>The number of individuals and the amount of resources</p></li>
-</ol>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="logarithms-title" class="slide level2" data-menu-title="Logarithms" data-background-color="#003660">
-<h2></h2>
-<div class="page-center">
-<div class="custom-subtitle">
-Logarithms
-</div>
-</div>
-</section>
-<section id="logarithms" class="slide level2" data-menu-title="Logarithms">
-<h2></h2>
-<p><span class="slide-title">Logarithms</span></p>
-<hr>
-<p><br></p>
-<p><span class="body-text-m"><span class="math inline">\(\log_a(b)\)</span> is the exponent you need to raise <span class="math inline">\(a\)</span> to get a value of <span class="math inline">\(b\)</span></span></p>
-<p><br></p>
-<p><span class="body-text-l"><strong>For example:</strong></span></p>
-<ul>
-<li><span class="math inline">\(\log_2(8)=x\)</span> asks “to what power do I have to raise 2, to get a value of 8?”</li>
-<li><span class="math inline">\(\log_{105}(1)=x\)</span> asks “to what power do I have to raise 105, to get a value of 1?”</li>
-</ul>
-<!----------------------------------------------------->
-</section>
-<section id="ln-blank-1" class="slide level2" data-menu-title="Natural Logs">
-<h2></h2>
-<p><span class="slide-title">Natural logarithms</span></p>
-<hr>
-<div style="position: absolute; bottom: 550px; right: 1000px; font-size: 1em;">
-<p>✏️</p>
-</div>
-<!----------------------------------------------------->
-</section>
-<section id="ln-blank-2" class="slide level2" data-menu-title="Natural Logs">
-<h2></h2>
-<p><span class="slide-title">Natural logarithms</span></p>
-<hr>
-<p>If <span class="math inline">\(y&gt;0\)</span>, then <strong><span class="math inline">\(\ln(x)\)</span> is the exponent you need to raise <span class="math inline">\(e\)</span> to in order to get <span class="math inline">\(y\)</span>.</strong></p>
-<p>This means:</p>
-<p><span class="math display">\[
-\begin{align}
-\ln(e^x) &amp;= x \\
-e^{\ln(y)} &amp;= y
-\end{align}
-\]</span></p>
-<p>In other words, <span class="math inline">\(\ln(x)\)</span> is the inverse of the exponential function <span class="math inline">\(e^x\)</span>.</p>
-<p><br></p>
-<p><strong>✏️ Examples</strong></p>
-<ul>
-<li><p><span class="math inline">\(\ln(e^3)\)</span></p></li>
-<li><p><span class="math inline">\(\ln(\frac{1}{e})\)</span></p></li>
-<li><p><span class="math inline">\(\ln(1)\)</span></p></li>
-<li><p><span class="math inline">\(\ln(0)\)</span></p></li>
-<li><p><span class="math inline">\(\ln(-7)\)</span></p></li>
-</ul>
-<!----------------------------------------------------->
-</section>
-<section id="ln" class="slide level2" data-menu-title="Natural Logs">
-<h2></h2>
-<p><span class="slide-title">Natural logarithms</span></p>
-<hr>
-<p>If <span class="math inline">\(y&gt;0\)</span>, then <strong><span class="math inline">\(\ln(x)\)</span> is the exponent you need to raise <span class="math inline">\(e\)</span> to in order to get <span class="math inline">\(y\)</span>.</strong></p>
-<p>This means:</p>
-<p><span class="math display">\[
-\begin{align}
-\ln(e^x) &amp;= x \\
-e^{\ln(y)} &amp;= y
-\end{align}
-\]</span></p>
-<p>In other words, <span class="math inline">\(\ln(x)\)</span> is the inverse of the exponential function <span class="math inline">\(e^x\)</span>.</p>
-<p><br></p>
-<p><strong>Examples</strong></p>
-<ul>
-<li><p><span class="math inline">\(\ln(e^3) = 3\)</span> because 3 is the power of <span class="math inline">\(e\)</span> needed to get <span class="math inline">\(e^3\)</span>.</p></li>
-<li><p><span class="math inline">\(\ln(\frac{1}{e}) = \ln(e^{-1}) = -1\)</span></p></li>
-<li><p><span class="math inline">\(\ln(1) = 0\)</span> because 0 is the exponent we need to raise <span class="math inline">\(e\)</span> to to get 1</p></li>
-<li><p><span class="math inline">\(\ln(0)\)</span> does not exist, because there’s no number we can raise <span class="math inline">\(e\)</span> to to get 0</p></li>
-<li><p><span class="math inline">\(\ln(-7)\)</span> does not exist, because <span class="math inline">\(e\)</span> to any number always be positive</p></li>
-</ul>
-<!----------------------------------------------------->
-</section>
-<section id="ln-blank" class="slide level2" data-menu-title="Properties of natural logarithm">
-<h2></h2>
-<p><span class="slide-title">Natural log properties</span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="lecture-functions-graphs_files/figure-revealjs/unnamed-chunk-14-1.png" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p>✏️</p>
-</div></div>
-<!----------------------------------------------------->
-</section>
-<section id="ln-properties" class="slide level2" data-menu-title="Properties of natural logarithm">
-<h2></h2>
-<p><span class="slide-title">Natural log properties</span></p>
-<hr>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure>
-<p><img data-src="lecture-functions-graphs_files/figure-revealjs/unnamed-chunk-15-1.png" style="width:100.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="center-text">
-<p><strong>Properties</strong></p>
-</div>
-<p><span class="math inline">\(\ln (e^x)=x\)</span></p>
-<p><span class="math inline">\(\ln(xy)=\ln x+\ln y\)</span></p>
-<p><span class="math inline">\(\ln(\frac{x}{y})=\ln x-\ln y\)</span></p>
-<p><span class="math inline">\(\ln(x^y)=y \ln x\)</span></p>
-</div></div>
-<!----------------------------------------------------->
-</section>
-<section id="ln-ex-blank" class="slide level2" data-menu-title="Natural Logs">
-<h2></h2>
-<p><span class="slide-title">Using logarithms to solve equations</span></p>
-<hr>
-<p>✏️ <span style="color:green;">Solve for <span class="math inline">\(t\)</span> in the equation <span class="math inline">\(Pe^{rt} = A\)</span>.</span></p>
-<div class="columns">
-<div class="column" style="width:70%;">
-
-</div><div class="column" style="width:30%;">
-<div class="center-text">
-<p><strong>Properties</strong></p>
-</div>
-<p><span class="math inline">\(\ln (e^x)=x\)</span></p>
-<p><span class="math inline">\(\ln(xy)=\ln x+\ln y\)</span></p>
-<p><span class="math inline">\(\ln(\frac{x}{y})=\ln x-\ln y\)</span></p>
-<p><span class="math inline">\(\ln(x^y)=y \ln x\)</span></p>
-</div></div>
-<!----------------------------------------------------->
-</section>
-<section id="ln-ex" class="slide level2" data-menu-title="Natural Logs">
-<h2></h2>
-<p><span class="slide-title">Using logarithms to solve equations</span></p>
-<hr>
-<p>✏️ <span style="color:green;">Solve for <span class="math inline">\(t\)</span> in the equation <span class="math inline">\(Pe^{rt} = A\)</span>.</span></p>
-<p><span class="math display">\[
-\begin{align}
-Pe^{rt} &amp;= A \\
-e^{rt} &amp; = \frac{A}{P} \\
-rt &amp;= \ln\left(\frac{A}{P}\right) \\
-t &amp;= \frac{\ln(A)-\ln(P)}{r}
-\end{align}
-\]</span></p>
-</section>
 <section id="end-of-day" class="slide level2" data-menu-title="End of day 2!" data-background-color="#003660">
 <h2></h2>
 <div class="page-center">
 <div class="custom-subtitle">
-End of day 2!
+Wrapping up…
 </div>
 </div>
 </section>
@@ -1347,13 +1029,7 @@ End of day 2!
 </li>
 <li><span style="color:#006699"><b>📊 Graphing</b></span><br>
 </li>
-<li><span style="color:#006633"><b>💬 Reading graphs</b></span><br>
-</li>
-<li><span style="color:#336666"><b>🌱 The number e and exp()</b></span><br>
-</li>
-<li><span style="color:#003399"><b>🐰 Logistic growth</b></span><br>
-</li>
-<li><span style="color:#990099"><b>🪵 Natural logarithms</b></span></li>
+<li><span style="color:#006633"><b>💬 Reading graphs</b></span></li>
 </ul>
 
 
@@ -1549,7 +1225,7 @@ End of day 2!
         margin: 0.1,
 
         math: {
-          mathjax: 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.9/MathJax.js',
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
           config: 'TeX-AMS_HTML-full',
           tex2jax: {
             inlineMath: [['\\(','\\)']],
@@ -1661,13 +1337,14 @@ End of day 2!
           e.clearSelection();
         }
         const getTextToCopy = function(trigger) {
-            const codeEl = trigger.previousElementSibling.cloneNode(true);
-            for (const childEl of codeEl.children) {
-              if (isCodeAnnotation(childEl)) {
-                childEl.remove();
-              }
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
             }
-            return codeEl.innerText;
+          }
+          return codeEl.innerText;
         }
         const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
           text: getTextToCopy

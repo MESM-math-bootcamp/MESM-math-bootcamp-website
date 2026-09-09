@@ -5,7 +5,7 @@ description: Conventions for building/editing the revealjs lecture slide decks (
 
 # Lecture slide conventions
 
-These apply to every `notes/dayN_*/lecture-*.qmd` deck (revealjs, theme `ucsb-media.scss`, `chalkboard: true`, MathJax with the `cancel.js` extension for showing cancelled terms in algebra steps).
+These apply to every `notes/dayN_*/lecture-*.qmd` deck (revealjs, theme `ucsb-media.scss`, `chalkboard: true`).
 
 ## Slide structure
 
@@ -35,6 +35,36 @@ Never merge the exercise-statement slide and the space-to-solve slide into one �
 ## Pulling exercises from the exercise bank
 
 - When a slide exercise is sourced from `exercise_bank_draft.qmd`, note it with an HTML comment on the line *after* the slide's `##` heading (see the gotcha above), e.g. `<!-- Source: ESM 201 Exercise Bank, Exercise 3 -->`. This is for the instructor's own tracking — never visible to students.
+
+## `\cancel{}` needs an explicit MathJax extension — check this whenever a deck uses it
+
+Revealjs decks render math via reveal.js's bundled math plugin, which loads **MathJax v2** with the combined config `TeX-AMS_HTML-full`. That config does *not* autoload the `cancel` extension, so `\cancel{80}` (or `\bcancel`, `\xcancel`, `\cancelto`) shows up as literal red text reading `\cancel` instead of a struck-through term — this is silent (no build warning/error), so it only shows up on visual inspection.
+
+**Fix:** any deck that uses `\cancel` (e.g. showing terms cancelling out in an algebra/unit-conversion step) needs this in its own `format.revealjs` front matter (this is per-file, not inherited from `_quarto.yml` — revealjs format options aren't set at the project level in this repo):
+
+```yaml
+format:
+  revealjs:
+    ...
+    include-in-header:
+      text: |
+        <script>
+        (function loadCancelExtension(){
+          if (window.MathJax && window.MathJax.Hub) {
+            MathJax.Hub.Config({ TeX: { extensions: ["cancel.js"] } });
+          } else {
+            setTimeout(loadCancelExtension, 20);
+          }
+        })();
+        </script>
+```
+
+This polls until reveal.js's async-loaded MathJax v2 instance exists, then registers the extension — a plain `MathJax.Hub.Config(...)` call placed too early (before the dynamically-injected MathJax script has run) fails silently because `window.MathJax` doesn't exist yet.
+
+**Whenever you add or edit a lecture deck:**
+1. `grep -n '\\cancel' notes/dayN_*/lecture-*.qmd` (or check the specific file you're editing) — if it uses `\cancel` and doesn't already have `cancel.js` in its `include-in-header`, add the block above.
+2. After rendering (`quarto render <file> --to revealjs`), verify visually — open the slide, or check the rendered HTML for `menclose notation="updiagonalstrike"` nodes and confirm there's no literal `\cancel` text rendered in red (search the rendered `.html` for `mathcolor="red"` near a `\cancel` string — that pattern means the extension isn't loading).
+3. Currently `notes/day1_algebra/lecture-algebra.qmd` and `notes/day2_functions_graphs/lecture-functions-graphs.qmd` use `\cancel` and both have the fix — keep this list current if you add `\cancel` elsewhere.
 
 ## Fitting content without shrinking prose
 

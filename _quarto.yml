@@ -28,7 +28,7 @@ website:
   announcement: 
     icon: hammer
     dismissable: true
-    content: "This wesbite is currently under construction: all slides are being reviewed and updated. Please come back on September 15, 2026 for the updated version."
+    content: "This wesbite is currently under construction: all slides and problem sets are being reviewed and updated. Please come back on September 15, 2026 for the updated version."
     type: primary
     position: below-navbar
 
@@ -39,16 +39,16 @@ website:
     contents:
       - text: home
         href: index.qmd
-      - text: day 1 - algebra & units
+      - text: day 1 - algebra review
         href: notes/day1_algebra/day1_algebra.qmd
-      - text: day 2 - functions & graphs
+      - text: day 2 - units and graphs
         href: notes/day2_functions_graphs/day2_functions_graphs.qmd
-      - text: day 3 - derivatives
-        href: notes/day3_derivatives/day3_derivatives.qmd
-      - text: day 4 - integrals
-        href: notes/day4_integrals/day4_integrals.qmd
-      - text: day 5 - differential equations
-        href: notes/day5_differential_equations/day5_differential_equations.qmd
+      # - text: day 3 - linear functions, $e^x$ and $log$
+      #   href: notes/day3_derivatives/day3_derivatives.qmd
+      # - text: day 4 - limits and derivatives
+      #   href: notes/day4_integrals/day4_integrals.qmd
+      # - text: day 5 - integrals and differential equations
+      #   href: notes/day5_differential_equations/day5_differential_equations.qmd
 
   page-footer:
     background: dark
