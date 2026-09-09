@@ -3,6 +3,7 @@ sidebar: daily-materials
 execute:
   freeze: true
 ---
+
 # Algebra Problem Set
 
 ```{r setup, include=FALSE}

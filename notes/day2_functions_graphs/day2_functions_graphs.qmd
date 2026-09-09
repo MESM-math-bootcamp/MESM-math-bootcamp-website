@@ -10,19 +10,43 @@
 
 **Contents**
 
+- 📏 Metric prefixes
+- 🧊 Area & volume conversions
+- ⚖️ Dimensional analysis (unit conversions)
+- 🧪 Parts per million (ppm)
+- 🐟 Applications to MESM courses
+
 
 ## Problem sets
 
 
+
+:::: {.columns}
+
+::: {.column width="50%"}
 :::{.center-text}
+[**Units problem set**](problem_set_units.qmd)
 
+![](/notes/icons/homework-2.png){width=40%}
 
-
-![](/notes/icons/homework-3.png){width=20%}
-
-[**Functions & graphs problem set**](problem_set_algebra.qmd)
-
-
-Solutions are linked through the problem sets.
 :::
 
+:::
+
+::: {.column width="50%"}
+
+:::{.center-text}
+[**Functions & graphs problem set**](problem_set_algebra.qmd)
+
+![](/notes/icons/homework-3.png){width=40%}
+
+:::
+
+:::
+
+:::
+
+
+:::{.center-text}
+Solutions are linked through the problem sets.
+:::

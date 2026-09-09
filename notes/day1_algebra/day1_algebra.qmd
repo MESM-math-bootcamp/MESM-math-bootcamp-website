@@ -15,38 +15,17 @@
 - 🔢 Algebra review
 - 🗺️ Solving equations
 - ✖️ Rules of exponents
-- 📏 Metric prefixes
-- 🧊 Area & volume conversions
-- ⚖️ Dimensional analysis (unit conversions)
-- 🧪 Parts per million (ppm)
+- 🐢 Applications to MESM courses
+
 
 ## Problem sets
 
 
-:::: {.columns}
-
-::: {.column width="50%"}
 
 :::{.center-text}
 [**Algebra problem set**](problem_set_algebra.qmd)
 
-![](/notes/icons/homework.png){width=40%}
-
-:::
-
-:::
-
-
-::: {.column width="50%"}
-:::{.center-text}
-[**Units problem set**](problem_set_units.qmd)
-
-![](/notes/icons/homework-2.png){width=40%}
-
-:::
-
-
-:::
+![](/notes/icons/homework.png){width=20%}
 
 :::
 
