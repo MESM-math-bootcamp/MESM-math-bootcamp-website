@@ -1,0 +1,82 @@
+## Logistic per-capita growth rate
+
+*This is a simple exercise for students to practice algebra.*
+
+The logistic per-capita growth rate is $r(1-NK)$, where $N$ is population size, $K$ is carrying capacity, and $r$ is the intrinsic growth rate. If this rate equals 0.02 when $N=750$ and $K=1000$, solve for $r$.
+
+
+## Population growth at discrete times
+
+*This is an exercise for students to practice algebraic manipulations and rules of exponents.*
+
+A certain population size (number of individuals) is measured at discrete time steps. We use the notation
+
+- $N_0 =$  population at initial time
+- $N_t =$ population after $t$ time steps
+
+[Make a diagram here]
+
+We also have that:
+
+- $b=$ per capita birth rate
+- $d=$ per capita death rate
+
+Assuming a closed population (no movement), we can model discrete growth by
+
+$$N_{t+1} = N_t + bN_t - dN_t.$$
+
+(1) Simplify this expression by facotring out $N_t$ and subsituting $\lambda = 1 + b -d$. 
+
+(2) Calculate $N_1$, $N_2$, and $N_3$ and express these in terms of $N_0$. Find a pattern.
+
+(3) What is the general equation for the population size after $T$ time steps? Your answer should only use $\lambda$, $T$, and $N_0$.
+
+(4) What value of $\lambda$ would give a stable population across time?
+
+(5) Find a value of $\lambda$ for which the population grows and another for which it shrinks. More generally, for which values of $\lambda$ does $N$ shrink or grow?
+
+(6) Explain in your own words why $\lambda$ is the finite rate of population growth. 
+
+
+## Continutous population growth
+
+*This is an exercise for students to practice manipulating $e^x$ and logarithms.*
+
+Previously, we explored population growth at discrete time steps. Now, population at *any time* $t$ is given by
+
+$$N(t) = N_0e^{rt}$$
+
+where
+
+- $r=$ per capita intrinsic growth rate
+- $N_0=$ initial population size = population at $t= 0$
+
+(1) What per capita intrinsic growth rate would make the population remain stable across time?
+
+
+
+(2) Are the following statements true or false? Explain your reasoning. 
+
+> 2.1 If $r=\ln(\frac{1}{2})$, then the population will be a half of its original size at $t=2$. 
+
+> 2.2 When $r<0$ the population is growing. 
+
+(3) Assuming $r>0$, when will the population double?
+
+(4) In this scenario, the population growth rate $r$ is constant. What environmental constraints could cause the population to increases or decreases at different rates as the population itself grows? I.e. what could cause the growth rate to change together with the population?
+
+## Continuous population growth
+
+*This is an exercise for students to understand what an ODE is, practice derivatives, and use separation of variables to solve an ODE.*
+
+Using the BIDE model, the per capita growth rate of a population $N$ with respect to time $t$ can be written as
+
+$$\frac{1}{N}\frac{dN}{dt} = r,$$
+
+where $r$, the intrinsic growth rate, is constant. 
+
+(1) Explain why the previous equation is an ordinary differential equation. 
+
+(2) Verify that $N_0\cdot e^{rt}$ is a solution for this differential equation. 
+
+(3) Obtain the solution in (2) by solving the ODE using separation of variables. 
