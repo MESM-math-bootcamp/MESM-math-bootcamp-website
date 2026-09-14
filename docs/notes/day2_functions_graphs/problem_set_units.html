@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -128,8 +157,8 @@ ul.task-list li input[type="checkbox"] {
         </a>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="399dc8b86d7e5b95987161af31251a08" class="alert alert-primary hidden"><i class="bi bi-hammer quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>This wesbite is currently under construction: all slides and problem sets are being reviewed and updated. Please come back on September 15, 2026 for the updated version.</p>
+  <div id="quarto-announcement" data-announcement-id="b65c0039467b8f7f668b717c5fe9bfa5" class="alert alert-primary hidden"><i class="bi bi-hammer quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>This wesbite is currently under construction: all slides and problem sets are being reviewed and updated. Please come back on September 16, 2026 for the updated version.</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
@@ -170,6 +199,7 @@ ul.task-list li input[type="checkbox"] {
   <ul class="collapse">
   <li><a href="#percent-ppm-conversions" id="toc-percent-ppm-conversions" class="nav-link" data-scroll-target="#percent-ppm-conversions">Percent &amp; ppm conversions</a></li>
   <li><a href="#unit-conversions" id="toc-unit-conversions" class="nav-link" data-scroll-target="#unit-conversions">Unit conversions</a></li>
+  <li><a href="#graphs" id="toc-graphs" class="nav-link" data-scroll-target="#graphs">Graphs</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -235,6 +265,28 @@ Instructions
 <li><strong>Company C:</strong> 18.1 gallons spilled (0% recovered)</li>
 </ul>
 <p>What is the total <em>unrecovered</em> amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.</p></li>
+</ol>
+</section>
+<section id="graphs" class="level2">
+<h2 class="anchored" data-anchor-id="graphs">Graphs</h2>
+<ol start="11" type="1">
+<li>A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as <span class="math display">\[
+P = 25 - 0.05Q
+\]</span> where <span class="math inline">\(Q\)</span> = number of households subscribed in hundreds and <span class="math inline">\(P\)</span> = the monthly fee ($) a household is willing to pay.</li>
+</ol>
+<div class="cell">
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="problem_set_units_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="480"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol type="a">
+<li>Write one sentence describing what the graph shows.</li>
+<li>Interpret what the <span class="math inline">\(y\)</span>-intercept means in this context.</li>
+<li>Interpret what the <span class="math inline">\(x\)</span>-intercept means in this context.</li>
 </ol>
 
 

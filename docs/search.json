@@ -1208,7 +1208,7 @@
     "href": "notes/day2_functions_graphs/solutions_problem_set_units.html",
     "title": "Solutions: Units Problem Set",
     "section": "",
-    "text": "Instructions\n\n\n\nThese are the solutions to the units problem set. Click a solution to expand it and try each problem yourself first!\n\n\n\n\n1) Convert 250 ppm to a percentage.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n250 ppm\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Divide by 10,000 to convert ppm to percent\n\\[\n250 \\text{ ppm} = \\frac{250}{10{,}000}\\% = 0.025\\%\n\\]\nAnswer\n\\[\n\\boxed{0.025\\%}\n\\]\n\n\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n0.015% contaminant by mass\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Multiply by 10,000 to convert percent to ppm\n\\[\n0.015\\% \\times 10{,}000 = 150 \\text{ ppm}\n\\]\nAnswer\n\\[\n\\boxed{150 \\text{ ppm}}\n\\]\n\n\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\nHeavy metal mass: \\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nRatio: \\[\n\\frac{12\\ \\text{g}}{0.19\\ \\text{g}} \\approx 63.2 : 1\n\\]\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nSample mass = 500 g\nOrganic matter = 2.4% by mass\nHeavy metal = 380 ppm by mass\n\nStep 1: Find the mass of organic matter\n\\[\n500\\ \\text{g} \\times 2.4\\% = 500 \\text{g} * 2.4 / 100 = 12\\ \\text{g}\n\\]\nStep 2: Find the mass of heavy metal\n\\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nStep 3: Take the ratio\n\\[\n\\frac{12\\text{ g}}{0.19\\text{ g}} \\approx 63.2\n\\]\nAnswer\n\\[\n\\boxed{63.2}\n\\]\n\n\n\n\n\n\n4) Convert 2,300 mL to liters.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nVolume = 2,300 mL\n\nStep 1: Convert mL to L\n\\[\n2{,}300\\text{ mL} = \\frac{2{,}300}{1000} = 2.3\\text{ L}\n\\]\nAnswer\n\\[\n\\boxed{2.3\\text{ L}}\n\\]\n\n\n\n5) Convert an area of 5.4 km² to m².\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nArea = 5.4 km²\n\nStep 1: Square the linear conversion factor\n\\[\n1\\text{ km} = 1{,}000\\text{ m} \\implies 1\\text{ km}^2 = (1{,}000)^2\\text{ m}^2 = 10^6\\text{ m}^2\n\\]\nStep 2: Apply the factor\n\\[\n5.4\\text{ km}^2 = 5.4 \\times 10^6\\text{ m}^2\n\\]\nAnswer\n\\[\n\\boxed{5{,}400{,}000\\text{ m}^2}\n\\]\n\n\n\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nDepth = 12 m\nSurface area = 1.8 km²\n\nStep 1: Convert area to square meters\n\\[\n1.8\\text{ km}^2 = 1.8 \\times (1{,}000)^2 = 1.8 \\times 10^6\\text{ m}^2\n\\]\nStep 2: Calculate the volume\n\\[\nV = \\text{depth} \\times \\text{area}\n\\]\n\\[\nV = 12 \\times 1.8\\times10^6\n\\]\n\\[\nV = 2.16 \\times 10^7\\text{ m}^3\n\\]\nAnswer\n\\[\n\\boxed{21{,}600{,}000\\text{ m}^3}\n\\]\n\n\n\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 6 g/L\n\nStep 1: Convert grams to milligrams\n\\[\n6\\text{ g} = 6{,}000\\text{ mg}\n\\]\nStep 2: Convert liters to milliliters\n\\[\n1\\text{ L} = 1{,}000\\text{ mL}\n\\]\nStep 3: Divide to get the new concentration\n\\[\n\\frac{6{,}000\\text{ mg}}{1{,}000\\text{ mL}} = 6\\text{ mg/mL}\n\\]\nAnswer\n\\[\n\\boxed{6\\text{ mg/mL}}\n\\]\n\n\n\n8) One microgram (μg) is equivalent to \\(1/10^6\\) grams and one meter cubed (m³) is equivalent to 1000 liters. A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 12 μg/mL\n\\(1\\ \\mu\\text{g} = 10^{-6}\\text{ g}\\) and \\(1\\text{ m}^3 = 1000\\text{ L}\\)\n\nStep 1: Find a conversion factor from micrograms to kilograms\n\\[\n1\\ \\mu\\text{g} = 10^{-6}\\text{ g} = 10^{-9}\\text{ kg} \\implies \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}}\n\\]\nStep 2: Find a conversion factor from m³ to mL\n\\[\n1\\text{ m}^3 = 1000\\text{ L} = 10^{6}\\text{ mL} \\implies \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\n\\]\nStep 3: Multiply by the conversion factors, group numbers and units, and simplify\n\\[\\begin{align*}\n12\\ \\frac{\\mu\\text{g}}{\\text{mL}} &= 12\\ \\frac{\\mu\\text{g}}{\\text{mL}} \\cdot \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}} \\cdot \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\\\\\n&= \\left(12 \\times 10^{-9} \\times 10^{6}\\right) \\cdot \\left(\\frac{\\mu\\text{g}}{\\text{mL}}\\cdot\\frac{\\text{kg}}{\\mu\\text{g}}\\cdot\\frac{\\text{mL}}{\\text{m}^3}\\right)\\\\\n&= 0.012\\ \\frac{\\text{kg}}{\\text{m}^3}\n\\end{align*}\\]\nAnswer\n\\[\n\\boxed{0.012\\text{ kg/m}^3}\n\\]\n\n\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nPrecipitation = 45 mm/year\nWatershed area = 1,800 km²\n\nStep 1: Convert precipitation to meters\n\\[\n45\\text{ mm} = \\frac{45}{1000} = 0.045\\text{ m}\n\\]\nStep 2: Convert area to square meters\n\\[\n1,800\\text{ km}^2 = 1,800(1,000)^2\n\\]\n\\[\n= 1.8 \\times 10^9\\text{ m}^2\n\\]\nStep 3: Calculate the annual precipitation volume\nVolume is calculated as:\n\\[\nV = P \\times A\n\\]\nSubstitute the values:\n\\[\nV = (0.045)(1.8 \\times 10^9)\n\\]\n\\[\nV = 8.1 \\times 10^7\\text{ m}^3/\\text{year}\n\\]\nAnswer\n\\[\n\\boxed{81,000,000\\text{ m}^3/\\text{year}}\n\\]\n\n\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nCompany A: 14.6 barrels spilled, 9.3 barrels recovered\nCompany B: 692 L spilled, 94% recovered\nCompany C: 18.1 gallons spilled, 0% recovered\nConversions: 1 barrel = 42 gallons = 159 liters\n\nStep 1: Company A’s unrecovered oil (already in barrels)\n\\[\n14.6 - 9.3 = 5.3\\text{ barrels}\n\\]\nStep 2: Company B’s unrecovered oil, converted to barrels\n\\[\n692 \\times (1 - 0.94) = 41.52\\text{ L unrecovered}\n\\]\n\\[\n41.52\\text{ L} \\times \\frac{1\\text{ barrel}}{159\\text{ L}} = 0.26\\text{ barrels}\n\\]\nStep 3: Company C’s unrecovered oil, converted to barrels\n\\[\n18.1\\text{ gal} \\times \\frac{1\\text{ barrel}}{42\\text{ gal}} = 0.43\\text{ barrels}\n\\]\nStep 4: Add up all three companies’ unrecovered oil\n\\[\n5.3 + 0.26 + 0.43 = 5.99\\text{ barrels}\n\\]\nAnswer\n\\[\n\\boxed{5.99\\text{ barrels unrecovered}}\n\\]"
+    "text": "Instructions\n\n\n\nThese are the solutions to the units problem set. Click a solution to expand it and try each problem yourself first!\n\n\n\n\n1) Convert 250 ppm to a percentage.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n250 ppm\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Divide by 10,000 to convert ppm to percent\n\\[\n250 \\text{ ppm} = \\frac{250}{10{,}000}\\% = 0.025\\%\n\\]\nAnswer\n\\[\n\\boxed{0.025\\%}\n\\]\n\n\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n0.015% contaminant by mass\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Multiply by 10,000 to convert percent to ppm\n\\[\n0.015\\% \\times 10{,}000 = 150 \\text{ ppm}\n\\]\nAnswer\n\\[\n\\boxed{150 \\text{ ppm}}\n\\]\n\n\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\nHeavy metal mass: \\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nRatio: \\[\n\\frac{12\\ \\text{g}}{0.19\\ \\text{g}} \\approx 63.2 : 1\n\\]\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nSample mass = 500 g\nOrganic matter = 2.4% by mass\nHeavy metal = 380 ppm by mass\n\nStep 1: Find the mass of organic matter\n\\[\n500\\ \\text{g} \\times 2.4\\% = 500 \\text{g} * 2.4 / 100 = 12\\ \\text{g}\n\\]\nStep 2: Find the mass of heavy metal\n\\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nStep 3: Take the ratio\n\\[\n\\frac{12\\text{ g}}{0.19\\text{ g}} \\approx 63.2\n\\]\nAnswer\n\\[\n\\boxed{63.2}\n\\]\n\n\n\n\n\n\n4) Convert 2,300 mL to liters.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nVolume = 2,300 mL\n\nStep 1: Convert mL to L\n\\[\n2{,}300\\text{ mL} = \\frac{2{,}300}{1000} = 2.3\\text{ L}\n\\]\nAnswer\n\\[\n\\boxed{2.3\\text{ L}}\n\\]\n\n\n\n5) Convert an area of 5.4 km² to m².\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nArea = 5.4 km²\n\nStep 1: Square the linear conversion factor\n\\[\n1\\text{ km} = 1{,}000\\text{ m} \\implies 1\\text{ km}^2 = (1{,}000)^2\\text{ m}^2 = 10^6\\text{ m}^2\n\\]\nStep 2: Apply the factor\n\\[\n5.4\\text{ km}^2 = 5.4 \\times 10^6\\text{ m}^2\n\\]\nAnswer\n\\[\n\\boxed{5{,}400{,}000\\text{ m}^2}\n\\]\n\n\n\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nDepth = 12 m\nSurface area = 1.8 km²\n\nStep 1: Convert area to square meters\n\\[\n1.8\\text{ km}^2 = 1.8 \\times (1{,}000)^2 = 1.8 \\times 10^6\\text{ m}^2\n\\]\nStep 2: Calculate the volume\n\\[\nV = \\text{depth} \\times \\text{area}\n\\]\n\\[\nV = 12 \\times 1.8\\times10^6\n\\]\n\\[\nV = 2.16 \\times 10^7\\text{ m}^3\n\\]\nAnswer\n\\[\n\\boxed{21{,}600{,}000\\text{ m}^3}\n\\]\n\n\n\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 6 g/L\n\nStep 1: Convert grams to milligrams\n\\[\n6\\text{ g} = 6{,}000\\text{ mg}\n\\]\nStep 2: Convert liters to milliliters\n\\[\n1\\text{ L} = 1{,}000\\text{ mL}\n\\]\nStep 3: Divide to get the new concentration\n\\[\n\\frac{6{,}000\\text{ mg}}{1{,}000\\text{ mL}} = 6\\text{ mg/mL}\n\\]\nAnswer\n\\[\n\\boxed{6\\text{ mg/mL}}\n\\]\n\n\n\n8) One microgram (μg) is equivalent to \\(1/10^6\\) grams and one meter cubed (m³) is equivalent to 1000 liters. A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 12 μg/mL\n\\(1\\ \\mu\\text{g} = 10^{-6}\\text{ g}\\) and \\(1\\text{ m}^3 = 1000\\text{ L}\\)\n\nStep 1: Find a conversion factor from micrograms to kilograms\n\\[\n1\\ \\mu\\text{g} = 10^{-6}\\text{ g} = 10^{-9}\\text{ kg} \\implies \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}}\n\\]\nStep 2: Find a conversion factor from m³ to mL\n\\[\n1\\text{ m}^3 = 1000\\text{ L} = 10^{6}\\text{ mL} \\implies \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\n\\]\nStep 3: Multiply by the conversion factors, group numbers and units, and simplify\n\\[\\begin{align*}\n12\\ \\frac{\\mu\\text{g}}{\\text{mL}} &= 12\\ \\frac{\\mu\\text{g}}{\\text{mL}} \\cdot \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}} \\cdot \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\\\\\n&= \\left(12 \\times 10^{-9} \\times 10^{6}\\right) \\cdot \\left(\\frac{\\mu\\text{g}}{\\text{mL}}\\cdot\\frac{\\text{kg}}{\\mu\\text{g}}\\cdot\\frac{\\text{mL}}{\\text{m}^3}\\right)\\\\\n&= 0.012\\ \\frac{\\text{kg}}{\\text{m}^3}\n\\end{align*}\\]\nAnswer\n\\[\n\\boxed{0.012\\text{ kg/m}^3}\n\\]\n\n\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nPrecipitation = 45 mm/year\nWatershed area = 1,800 km²\n\nStep 1: Convert precipitation to meters\n\\[\n45\\text{ mm} = \\frac{45}{1000} = 0.045\\text{ m}\n\\]\nStep 2: Convert area to square meters\n\\[\n1,800\\text{ km}^2 = 1,800(1,000)^2\n\\]\n\\[\n= 1.8 \\times 10^9\\text{ m}^2\n\\]\nStep 3: Calculate the annual precipitation volume\nVolume is calculated as:\n\\[\nV = P \\times A\n\\]\nSubstitute the values:\n\\[\nV = (0.045)(1.8 \\times 10^9)\n\\]\n\\[\nV = 8.1 \\times 10^7\\text{ m}^3/\\text{year}\n\\]\nAnswer\n\\[\n\\boxed{81,000,000\\text{ m}^3/\\text{year}}\n\\]\n\n\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nCompany A: 14.6 barrels spilled, 9.3 barrels recovered\nCompany B: 692 L spilled, 94% recovered\nCompany C: 18.1 gallons spilled, 0% recovered\nConversions: 1 barrel = 42 gallons = 159 liters\n\nStep 1: Company A’s unrecovered oil (already in barrels)\n\\[\n14.6 - 9.3 = 5.3\\text{ barrels}\n\\]\nStep 2: Company B’s unrecovered oil, converted to barrels\n\\[\n692 \\times (1 - 0.94) = 41.52\\text{ L unrecovered}\n\\]\n\\[\n41.52\\text{ L} \\times \\frac{1\\text{ barrel}}{159\\text{ L}} = 0.26\\text{ barrels}\n\\]\nStep 3: Company C’s unrecovered oil, converted to barrels\n\\[\n18.1\\text{ gal} \\times \\frac{1\\text{ barrel}}{42\\text{ gal}} = 0.43\\text{ barrels}\n\\]\nStep 4: Add up all three companies’ unrecovered oil\n\\[\n5.3 + 0.26 + 0.43 = 5.99\\text{ barrels}\n\\]\nAnswer\n\\[\n\\boxed{5.99\\text{ barrels unrecovered}}\n\\]\n\n\n\n\n\n\n11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nIn one sentence, describe what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) On the \\(x\\) axis we have hunderds of households subscribed and on the \\(y\\) axis we have monthly fee in dollars. The plot shows a linear demand curve. We can see that as the monthly fee drops, more households are willing to subscribe to the compost program.\nb)\nThe \\(y\\)-intercept is $25/month, this is the highest fee at which any household is still willing to subscribe. Above $25, quantity demanded drops to zero.\nc)\nThe \\(x\\)-intercept is \\(Q=500\\) (i.e., 500 hundred = 50,000 households). This is the number of households that would subscribe if the service were free. This is the maximum possible demand for the program."
   },
   {
     "objectID": "notes/day2_functions_graphs/solutions_problem_set_units.html#percent-ppm-conversions",
@@ -1225,11 +1225,18 @@
     "text": "4) Convert 2,300 mL to liters.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nVolume = 2,300 mL\n\nStep 1: Convert mL to L\n\\[\n2{,}300\\text{ mL} = \\frac{2{,}300}{1000} = 2.3\\text{ L}\n\\]\nAnswer\n\\[\n\\boxed{2.3\\text{ L}}\n\\]\n\n\n\n5) Convert an area of 5.4 km² to m².\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nArea = 5.4 km²\n\nStep 1: Square the linear conversion factor\n\\[\n1\\text{ km} = 1{,}000\\text{ m} \\implies 1\\text{ km}^2 = (1{,}000)^2\\text{ m}^2 = 10^6\\text{ m}^2\n\\]\nStep 2: Apply the factor\n\\[\n5.4\\text{ km}^2 = 5.4 \\times 10^6\\text{ m}^2\n\\]\nAnswer\n\\[\n\\boxed{5{,}400{,}000\\text{ m}^2}\n\\]\n\n\n\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nDepth = 12 m\nSurface area = 1.8 km²\n\nStep 1: Convert area to square meters\n\\[\n1.8\\text{ km}^2 = 1.8 \\times (1{,}000)^2 = 1.8 \\times 10^6\\text{ m}^2\n\\]\nStep 2: Calculate the volume\n\\[\nV = \\text{depth} \\times \\text{area}\n\\]\n\\[\nV = 12 \\times 1.8\\times10^6\n\\]\n\\[\nV = 2.16 \\times 10^7\\text{ m}^3\n\\]\nAnswer\n\\[\n\\boxed{21{,}600{,}000\\text{ m}^3}\n\\]\n\n\n\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 6 g/L\n\nStep 1: Convert grams to milligrams\n\\[\n6\\text{ g} = 6{,}000\\text{ mg}\n\\]\nStep 2: Convert liters to milliliters\n\\[\n1\\text{ L} = 1{,}000\\text{ mL}\n\\]\nStep 3: Divide to get the new concentration\n\\[\n\\frac{6{,}000\\text{ mg}}{1{,}000\\text{ mL}} = 6\\text{ mg/mL}\n\\]\nAnswer\n\\[\n\\boxed{6\\text{ mg/mL}}\n\\]\n\n\n\n8) One microgram (μg) is equivalent to \\(1/10^6\\) grams and one meter cubed (m³) is equivalent to 1000 liters. A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 12 μg/mL\n\\(1\\ \\mu\\text{g} = 10^{-6}\\text{ g}\\) and \\(1\\text{ m}^3 = 1000\\text{ L}\\)\n\nStep 1: Find a conversion factor from micrograms to kilograms\n\\[\n1\\ \\mu\\text{g} = 10^{-6}\\text{ g} = 10^{-9}\\text{ kg} \\implies \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}}\n\\]\nStep 2: Find a conversion factor from m³ to mL\n\\[\n1\\text{ m}^3 = 1000\\text{ L} = 10^{6}\\text{ mL} \\implies \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\n\\]\nStep 3: Multiply by the conversion factors, group numbers and units, and simplify\n\\[\\begin{align*}\n12\\ \\frac{\\mu\\text{g}}{\\text{mL}} &= 12\\ \\frac{\\mu\\text{g}}{\\text{mL}} \\cdot \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}} \\cdot \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\\\\\n&= \\left(12 \\times 10^{-9} \\times 10^{6}\\right) \\cdot \\left(\\frac{\\mu\\text{g}}{\\text{mL}}\\cdot\\frac{\\text{kg}}{\\mu\\text{g}}\\cdot\\frac{\\text{mL}}{\\text{m}^3}\\right)\\\\\n&= 0.012\\ \\frac{\\text{kg}}{\\text{m}^3}\n\\end{align*}\\]\nAnswer\n\\[\n\\boxed{0.012\\text{ kg/m}^3}\n\\]\n\n\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nPrecipitation = 45 mm/year\nWatershed area = 1,800 km²\n\nStep 1: Convert precipitation to meters\n\\[\n45\\text{ mm} = \\frac{45}{1000} = 0.045\\text{ m}\n\\]\nStep 2: Convert area to square meters\n\\[\n1,800\\text{ km}^2 = 1,800(1,000)^2\n\\]\n\\[\n= 1.8 \\times 10^9\\text{ m}^2\n\\]\nStep 3: Calculate the annual precipitation volume\nVolume is calculated as:\n\\[\nV = P \\times A\n\\]\nSubstitute the values:\n\\[\nV = (0.045)(1.8 \\times 10^9)\n\\]\n\\[\nV = 8.1 \\times 10^7\\text{ m}^3/\\text{year}\n\\]\nAnswer\n\\[\n\\boxed{81,000,000\\text{ m}^3/\\text{year}}\n\\]\n\n\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nCompany A: 14.6 barrels spilled, 9.3 barrels recovered\nCompany B: 692 L spilled, 94% recovered\nCompany C: 18.1 gallons spilled, 0% recovered\nConversions: 1 barrel = 42 gallons = 159 liters\n\nStep 1: Company A’s unrecovered oil (already in barrels)\n\\[\n14.6 - 9.3 = 5.3\\text{ barrels}\n\\]\nStep 2: Company B’s unrecovered oil, converted to barrels\n\\[\n692 \\times (1 - 0.94) = 41.52\\text{ L unrecovered}\n\\]\n\\[\n41.52\\text{ L} \\times \\frac{1\\text{ barrel}}{159\\text{ L}} = 0.26\\text{ barrels}\n\\]\nStep 3: Company C’s unrecovered oil, converted to barrels\n\\[\n18.1\\text{ gal} \\times \\frac{1\\text{ barrel}}{42\\text{ gal}} = 0.43\\text{ barrels}\n\\]\nStep 4: Add up all three companies’ unrecovered oil\n\\[\n5.3 + 0.26 + 0.43 = 5.99\\text{ barrels}\n\\]\nAnswer\n\\[\n\\boxed{5.99\\text{ barrels unrecovered}}\n\\]"
   },
   {
+    "objectID": "notes/day2_functions_graphs/solutions_problem_set_units.html#graphs",
+    "href": "notes/day2_functions_graphs/solutions_problem_set_units.html#graphs",
+    "title": "Solutions: Units Problem Set",
+    "section": "",
+    "text": "11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nIn one sentence, describe what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) On the \\(x\\) axis we have hunderds of households subscribed and on the \\(y\\) axis we have monthly fee in dollars. The plot shows a linear demand curve. We can see that as the monthly fee drops, more households are willing to subscribe to the compost program.\nb)\nThe \\(y\\)-intercept is $25/month, this is the highest fee at which any household is still willing to subscribe. Above $25, quantity demanded drops to zero.\nc)\nThe \\(x\\)-intercept is \\(Q=500\\) (i.e., 500 hundred = 50,000 households). This is the number of households that would subscribe if the service were free. This is the maximum possible demand for the program."
+  },
+  {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#title-slide",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#title-slide",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Functions, Graphs, \\(e^x\\) and Logarithms\nBren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\nSome materials have been adapted from Nathaniel Grimes work for the Bren Math Workshop."
+    "text": "Day 2: Bren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-title",
@@ -1264,14 +1271,14 @@
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Metric prefixes\n\nMetric units are built from a base unit (like meters, grams, or liters) plus a prefix that scales it by a power of 10.\n\n\n\n\nThe factor indicates how many times to multiply the base unit by 10. For example, 1 km = \\(10^3\\) m = 1000 m, and 1 cm = \\(10^{-2}\\) m = 0.01 m."
+    "text": "Metric prefixes\n\nMetric units are built from a base unit (like meters, grams, or liters) plus a prefix that scales it by a power of 10.\n\n\n\nThe factor indicates how many times to multiply the base unit by 10.\nExample: 1 km = \\(10^3\\) m = 1000 m, and 1 cm = \\(10^{-2}\\) m = 0.01 m."
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-conversion",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-conversion",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Metric prefixes\n\nMetric units are built from a base unit (like meters, grams, or liters) plus a prefix that scales it by a power of 10.\n\n\n\n\nThe factor indicates how many times to multiply the base unit by 10. For example, 1 km = \\(10^3\\) m = 1000 m, and 1 cm = \\(10^{-2}\\) m = 0.01 m."
+    "text": "Metric prefixes\n\nMetric units are built from a base unit (like meters, grams, or liters) plus a prefix that scales it by a power of 10.\n\n\n\nThe factor indicates how many times to multiply the base unit by 10.\nExample: 1 km = \\(10^3\\) m = 1000 m, and 1 cm = \\(10^{-2}\\) m = 0.01 m."
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-2",
@@ -1313,28 +1320,28 @@
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Converting areas and volumes\n\nExample. Convert \\(3.5 \\text{ m}^2\\) into \\(\\text{cm}^2\\).\n✏️ Let’s solve this together."
+    "text": "Converting areas and volumes\n\n\n\nExample. Convert \\(3.5 \\text{ m}^2\\) into \\(\\text{cm}^2\\).\n✏️ Let’s solve this together."
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example-solution",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example-solution",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Converting areas and volumes\n\nExample. Convert \\(3.5 \\text{ m}^2\\) into \\(\\text{cm}^2\\).\n\nThe linear factor from meters to centimeters is \\(10^2\\) (2 rows down the metric prefix table). For area, we square this factor:\n\n\\[\\begin{align*}\n3.5 \\text{ m}^2 &= 3.5 \\times (10^2)^2 \\text{ cm}^2 \\\\\n&= 3.5 \\times 10^4 \\text{ cm}^2 \\\\\n&= 35{,}000 \\text{ cm}^2\n\\end{align*}\\]"
+    "text": "Converting areas and volumes\n\n\n\nExample. Convert \\(3.5 \\text{ m}^2\\) into \\(\\text{cm}^2\\).\n\nThe linear factor from meters to centimeters is \\(10^2\\) (2 rows down the metric prefix table). For area, we square this factor:\n\n\\[\\begin{align*}\n3.5 \\text{ m}^2 &= 3.5 \\times (10^2)^2 \\text{ cm}^2 \\\\\n&= 3.5 \\times 10^4 \\text{ cm}^2 \\\\\n&= 35{,}000 \\text{ cm}^2.\n\\end{align*}\\]"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Converting areas and volumes\n\nExercise. Convert \\(2 \\text{ m}^3\\) into \\(\\text{cm}^3\\).\n✏️ Take a moment to solve this."
+    "text": "Converting areas and volumes\n\n\n\n\nExercise. Convert \\(2 \\text{ m}^3\\) into \\(\\text{cm}^3\\).\n✏️ Take a moment to solve this."
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example-solution",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example-solution",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Converting areas and volumes\n\nExercise. Convert \\(2 \\text{ m}^3\\) into \\(\\text{cm}^3\\).\n\nThe linear factor from meters to centimeters is \\(10^2\\) (2 rows down the metric prefix table). For volume, we cube this factor:\n\n\\[\\begin{align*}\n2 \\text{ m}^3 &= 2 \\times (10^2)^3 \\text{ cm}^3 \\\\\n&= 2 \\times 10^6 \\text{ cm}^3 \\\\\n&= 2{,}000{,}000 \\text{ cm}^3\n\\end{align*}\\]"
+    "text": "Converting areas and volumes\n\n\n\nExercise. Convert \\(2 \\text{ m}^3\\) into \\(\\text{cm}^3\\).\n\nThe linear factor from meters to centimeters is \\(10^2\\) (2 rows down the metric prefix table). For volume, we cube this factor:\n\n\\[\\begin{align*}\n2 \\text{ m}^3 &= 2 \\times (10^2)^3 \\text{ cm}^3 \\\\\n&= 2 \\times 10^6 \\text{ cm}^3 \\\\\n&= 2{,}000{,}000 \\text{ cm}^3.\n\\end{align*}\\]"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv",
@@ -1362,14 +1369,21 @@
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-2-solution",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Dimensional analysis (unit conversions)\n\nExample. Convert \\(100 \\frac{g}{cm^3}\\) into units of \\(\\frac{kg}{in^3}\\), given that 1 cm3 = 0.061 in3.\nWe need one unit conversion factor for \\(g\\): \\(\\frac{1 \\text{ kg}}{1000 \\text{ g}}\\).\nAnd another one for \\(\\text{cm}^3\\): \\(\\frac{1 \\text{ cm}^3}{0.061 \\text{in}^3}\\).\nThen we multiply by the conversion factors and simplify\n\\[\\begin{align*}\n\n100 \\frac{\\text{ g}}{\\text{cm}^3} &= 100 \\frac{\\text{ g}}{\\text{cm}^3} \\cdot \\frac{1 \\text{ cm}^3}{0.061 \\text{ in}^3} \\cdot \\frac{1 \\text{ kg}}{1000 \\text{ g}}\\\\\n&= 100 \\frac{1}{0.061} \\frac{1}{1000}\\cdot \\frac{\\text{ g}}{\\text{cm}^3} \\frac{\\text{ cm}^3}{ \\text{ in}^3} \\frac{ \\text{ kg}}{\\text{ g}}\\\\\n&= \\frac{1}{0.61} \\cdot \\frac{\\cancel{\\text{ g}}}{\\cancel{\\text{cm}^3}} \\frac{\\cancel{\\text{ cm}^3}}{ \\text{ in}^3} \\frac{ \\text{ kg}}{\\cancel{\\text{ g}}}\\\\\n&=1.639\\frac{kg}{in^3}\n\\end{align*}\\]"
+    "text": "Dimensional analysis (unit conversions)\n\nExample. Convert \\(100 \\frac{g}{cm^3}\\) into units of \\(\\frac{kg}{in^3}\\), given that 1 cm3 = 0.061 in3.\nWe need one unit conversion factor for \\(g\\): \\(\\frac{1 \\text{ kg}}{1000 \\text{ g}}\\).\nAnd another one for \\(\\text{cm}^3\\): \\(\\frac{1 \\text{ cm}^3}{0.061 \\text{in}^3}\\).\nThen we multiply by the conversion factors and simplify\n\\[\\begin{align*}\n\n100 \\frac{\\text{ g}}{\\text{cm}^3} &= 100 \\frac{\\text{ g}}{\\text{cm}^3} \\cdot \\frac{1 \\text{ cm}^3}{0.061 \\text{ in}^3} \\cdot \\frac{1 \\text{ kg}}{1000 \\text{ g}}\\\\\n&= 100 \\frac{1}{0.061} \\frac{1}{1000}\\cdot \\frac{\\text{ g}}{\\text{cm}^3} \\frac{\\text{ cm}^3}{ \\text{ in}^3} \\frac{ \\text{ kg}}{\\text{ g}}\\\\\n&= \\frac{1}{0.61} \\cdot \\frac{\\cancel{\\text{ g}}}{\\cancel{\\text{cm}^3}} \\frac{\\cancel{\\text{ cm}^3}}{ \\text{ in}^3} \\frac{ \\text{ kg}}{\\cancel{\\text{ g}}}\\\\\n&=1.639\\frac{kg}{in^3}.\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-blank",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Parts per million (ppm)\n\n\nParts per million (ppm) is another way of writing a fraction (just like percentage) but suited to very small concentrations (e.g. a contaminant in water or soil).\n\n✏️"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Parts per million (ppm)\n\n\nParts per million (ppm) is another way of writing a fraction — just like percent — but suited to very small concentrations (e.g. a contaminant in water or soil).\n\n\n\\[\n1\\% = \\frac{1}{100} \\qquad \\qquad 1 \\text{ ppm} = \\frac{1}{1{,}000{,}000}\n\\]\nFrom these fractions we see we need 10,000 ppm to get 1%, so 1% = 10,000 ppm.\nTo convert percent → ppm, multiply by 10,000. \nTo convert ppm → percent, divide by 10,000."
+    "text": "Parts per million (ppm)\n\n\nParts per million (ppm) is another way of writing a fraction (just like percentage) but suited to very small concentrations (e.g. a contaminant in water or soil).\n\n\nWe have that:\n\\[\n1\\% = \\frac{1}{100} \\qquad \\qquad 1 \\text{ ppm} = \\frac{1}{1{,}000{,}000}\n\\]\nFrom these fractions we see we need 10,000 ppm to get 1%, so 1% = 10,000 ppm.\nTo convert percent → ppm, multiply percentage by 10,000. \nTo convert ppm → percent, divide ppm by 10,000."
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-example",
@@ -1512,11 +1526,18 @@
     "text": "Why graphs?\n\nGraphs are a way for us to more easily process trends or patterns that may be more challenging to understand in a table or list.\n\nWhich could be easier to understand?"
   },
   {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-1",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-1",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs generally move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\n\nAxes units must be defined depending on the application.\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\nWhere would (2,-1) go on the graph?"
+    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs generally move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\nAxes units must be defined depending on the application."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-2",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs generally move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\nAxes units must be defined depending on the application.\n\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\n\nWhere would (2,-1) go on the graph?"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-series",
@@ -1537,63 +1558,49 @@
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-1",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Two key ingredients to graphs\n\n\n\nIntercepts\n\n\\(x\\)-intercept\n\nWhere does the graph intersect the \\(x\\)-axis?\nIn other words, for what values of \\(x\\) do we have \\((x,0)\\) be part of the graph?\n\n\n\n\nWhat are the intercepts of the polynomial function in red?"
+    "text": "Two key ingredients to graphs\n\n\n\nIntercepts\n\n\\(x\\)-intercept\n\nWhere does the graph intersect the \\(x\\)-axis?\nIn other words, for what values of \\(x\\) do we have \\((x,0)\\) be part of the graph?\n\n\n\n\nWhat are the \\(x\\) and \\(y\\) intercepts of the polynomial function in red?"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-2",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-2",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Two key ingredients to graphs\n\n\n\nIntercepts\n\n\\(x\\)-intercept\n\nWhere does the graph intersect the \\(x\\)-axis?\nIn other words, for what values of \\(x\\) do we have \\((x,0)\\) be part of the graph?\n\n\\(y\\)-intercept\n\nWhere does the graph intersect the \\(y\\)-axis?\nIn other words, for what value of \\(y\\) do we have \\((0,y)\\) be part of the graph?\n\n\n\n\nWhat are the intercepts of the polynomial function in red?"
+    "text": "Two key ingredients to graphs\n\n\n\nIntercepts\n\n\\(x\\)-intercept\n\nWhere does the graph intersect the \\(x\\)-axis?\nIn other words, for what values of \\(x\\) do we have \\((x,0)\\) be part of the graph?\n\n\\(y\\)-intercept\n\nWhere does the graph intersect the \\(y\\)-axis?\nIn other words, for what value of \\(y\\) do we have \\((0,y)\\) be part of the graph?\n\n\n\n\nWhat are the \\(x\\) and \\(y\\) intercepts of the polynomial function in red?"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Intercepts practice\n\n✏️ Take a minute to solve this individually.\nA supply-and-demand graph shows the demand curve hitting the \\(y\\)-axis at \\(P=\\$60\\) and the supply curve hitting it at \\(P=\\$5\\). What does each \\(y\\)-intercept represent?"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1-solve",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1-solve",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Intercepts practice\n\nA supply-and-demand graph shows the demand curve hitting the \\(y\\)-axis at \\(P=\\$60\\) and the supply curve hitting it at \\(P=\\$5\\). What does each \\(y\\)-intercept represent?\n✏️ Let’s see a solution!"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Intercepts practice\n\n\n\n✏️ Take a minute to solve this individually.\nA graph shows a population’s per-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), as a function of its population size \\(N\\).\nWhat does the \\(y\\)-intercept represent? What does the \\(x\\)-intercept represent?"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solve",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solve",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Intercepts practice\n\n\n\nA graph shows a population’s per-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), as a function of its population size \\(N\\).\nWhat does the \\(y\\)-intercept represent? What does the \\(x\\)-intercept represent?\n✏️ Let’s see a solution!"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-3",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-3",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Intercepts practice\n\n\n\n✏️ Take a minute to solve this individually.\nA reservoir is being drained for irrigation. The graph below shows its storage volume \\(V\\) (in millions of cubic meters) as a function of time \\(t\\) (in years).\nWhat does the \\(y\\)-intercept represent? What does the \\(x\\)-intercept represent?"
+    "text": "Intercepts practice\n\n✏️ Solve these individually.\n\n\n\n\nA reservoir is being drained for irrigation. The graph shows its storage volume (in millions of cubic meters) as a function of time (in years).\n\n\nWhen will the reservoir be empty? Are you using the \\(x\\) or \\(y\\) intercept?\nWhat is the initial volume of the reservoir? Are you using the \\(x\\) or \\(y\\) intercept?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation size is denoted by \\(N\\), this is the total number of individuals. Per-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), is a function of \\(N\\). What does the \\(y\\)-intercept of \\(\\frac{1}{N}\\frac{dN}{dt}\\) represent? What does its \\(x\\)-intercept represent?"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-3-solve",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-3-solve",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Intercepts practice\n\n\n\nA reservoir is being drained for irrigation. The graph below shows its storage volume \\(V\\) (in millions of cubic meters) as a function of time \\(t\\) (in years).\nWhat does the \\(y\\)-intercept represent? What does the \\(x\\)-intercept represent?\n✏️ Let’s see a solution!"
+    "text": "Intercepts practice (1)\n\n\n\n\nWhen will the reservoir be empty? Are you using the \\(x\\) or \\(y\\) intercept?\nWhat is the initial volume of the reservoir? Are you using the \\(x\\) or \\(y\\) intercept?\n\n✏️ Let’s see a solution!"
   },
   {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-solutions",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-solutions",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1-solutions",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1-solutions",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Solutions\n\n1. Supply and demand. Demand \\(y\\)-intercept (\\(P=\\$60\\)) = the choke price — the maximum price at which anyone is willing to buy, i.e. quantity demanded is zero. Supply \\(y\\)-intercept (\\(P=\\$5\\)) = the minimum price needed to induce any positive supply — below it, no one is willing to sell.\n2. Per-capita growth rate. \\(y\\)-intercept (\\(N=0\\), rate \\(=0.4\\)) = the intrinsic growth rate \\(r\\) — the population’s maximum per-capita growth rate when it is small and not yet resource-limited. \\(x\\)-intercept (\\(N=100\\), rate \\(=0\\)) = the carrying capacity \\(K\\) — the population size at which per-capita growth stops.\n3. Reservoir storage. \\(y\\)-intercept (\\(t=0\\), \\(V=50\\)) = the reservoir’s initial storage volume. \\(x\\)-intercept (\\(t=10\\), \\(V=0\\)) = the time at which the reservoir is completely drained."
+    "text": "Intercepts practice (1)\n\n\n\n\nWhen will the reservoir be empty? Are you using the \\(x\\) or \\(y\\) intercept?\nWhat is the initial volume of the reservoir? Are you using the \\(x\\) or \\(y\\) intercept?\n\n✏️ Let’s see a solution!\n\n\n\n\n\n\n\n\n\n\n\nThe reservoir will be empty after 10 years. To identify this we look at the \\(x\\)-intercept, which happens at \\((10,0)\\).\nThe initial volume of water in the reservoir is 50 cubic meters. To identify this we look at the \\(y\\)-intercept, which happens at \\((0, 50)\\)."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solve",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solve",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Intercepts practice (2)\n\n\n\nPopulation size is denoted by \\(N\\), this is the total number of individuals.\nPer-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), is a function of \\(N\\).\n\nWhat does the \\(y\\)-intercept of \\(\\frac{1}{N}\\frac{dN}{dt}\\) represent?\nWhat does its \\(x\\)-intercept represent?\n\n\n\n\n\n\n\n\n\n\n\n\n✏️ Let’s see a solution!"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solution",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Intercepts practice (2)\n\n\n\nPopulation size is denoted by \\(N\\), this is the total number of individuals.\nPer-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), is a function of \\(N\\).\n\nWhat does the \\(y\\)-intercept of \\(\\frac{1}{N}\\frac{dN}{dt}\\) represent?\nWhat does its \\(x\\)-intercept represent?\n\n\n\n\n\n\n\n\n\n\n\n\n✏️ Let’s see a solution!\n\n\\(y\\)-intercept = the population’s maximum per-capita growth rate when it is small and not yet resource-limited. This is known as the intrinsic growth rate \\(r\\).\n\\(x\\)-intercept = the population size at which per-capita growth stops. This is known as the carrying capacity \\(K\\)."
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-title",
@@ -1691,7 +1698,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#title-slide",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Algebra Review\nBren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management"
+    "text": "Day 2: Bren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#basics-title",
@@ -2348,18 +2355,18 @@
     "href": "notes/day2_functions_graphs/day2_functions_graphs.html",
     "title": "Day 2: Units & Graphs",
     "section": "",
-    "text": "Lecture slides\n\nContents\n\n📏 Metric prefixes\n🧊 Area & volume conversions\n⚖️ Dimensional analysis (unit conversions)\n🧪 Parts per million (ppm)\n🐟 Applications to MESM courses\n🧩 Definition of functions\n📊 Graphing\n\n\n\n\n\n\nUnits problem set\n\n\n\n\nFunctions & graphs problem set\n\n\n\n\n\nSolutions are linked through the problem sets.",
+    "text": "Lecture slides\n\nContents\n\n📏 Metric prefixes\n🧊 Area & volume conversions\n⚖️ Dimensional analysis (unit conversions)\n🧪 Parts per million (ppm)\n🧩 Definition of functions\n📈 \\(x\\) and \\(y\\) intercepts\n📊 Graphing\n🐟 Applications to MESM courses\n\n\n\n\nUnits & graphs problem set\n\n\n\nSolutions are linked through the problem sets.",
     "crumbs": [
       "home",
       "day 2 - units and graphs"
     ]
   },
   {
-    "objectID": "notes/day2_functions_graphs/day2_functions_graphs.html#problem-sets",
-    "href": "notes/day2_functions_graphs/day2_functions_graphs.html#problem-sets",
+    "objectID": "notes/day2_functions_graphs/day2_functions_graphs.html#problem-set",
+    "href": "notes/day2_functions_graphs/day2_functions_graphs.html#problem-set",
     "title": "Day 2: Units & Graphs",
     "section": "",
-    "text": "Units problem set\n\n\n\n\nFunctions & graphs problem set\n\n\n\n\n\nSolutions are linked through the problem sets.",
+    "text": "Units & graphs problem set\n\n\n\nSolutions are linked through the problem sets.",
     "crumbs": [
       "home",
       "day 2 - units and graphs"
@@ -2370,7 +2377,7 @@
     "href": "notes/day2_functions_graphs/problem_set_units.html",
     "title": "Units Problem Set",
     "section": "",
-    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\n\n\nConvert 250 ppm to a percentage.\n\n\n\nA water sample is 0.015% contaminant by mass. Express this in ppm.\n\n\n\nA 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\n\n\n\n\n\nConvert 2,300 mL to liters.\nConvert an area of 5.4 km² to m².\nA reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\nA saline stock is 6 g/L. Express this in mg/mL.\n\n\n\nA pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\nA watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\nYou are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed."
+    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\n\n\nConvert 250 ppm to a percentage.\n\n\n\nA water sample is 0.015% contaminant by mass. Express this in ppm.\n\n\n\nA 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\n\n\n\n\n\nConvert 2,300 mL to liters.\nConvert an area of 5.4 km² to m².\nA reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\nA saline stock is 6 g/L. Express this in mg/mL.\n\n\n\nA pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\nA watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\nYou are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n\n\nA city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\n\nWrite one sentence describing what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context."
   },
   {
     "objectID": "notes/day2_functions_graphs/problem_set_units.html#percent-ppm-conversions",
@@ -2385,6 +2392,13 @@
     "title": "Units Problem Set",
     "section": "",
     "text": "Convert 2,300 mL to liters.\nConvert an area of 5.4 km² to m².\nA reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\nA saline stock is 6 g/L. Express this in mg/mL.\n\n\n\nA pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\nA watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\nYou are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/problem_set_units.html#graphs",
+    "href": "notes/day2_functions_graphs/problem_set_units.html#graphs",
+    "title": "Units Problem Set",
+    "section": "",
+    "text": "A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\n\nWrite one sentence describing what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context."
   },
   {
     "objectID": "notes/day2_limits/day2_limits.html",

@@ -28,7 +28,7 @@ website:
   announcement: 
     icon: hammer
     dismissable: true
-    content: "This wesbite is currently under construction: all slides and problem sets are being reviewed and updated. Please come back on September 15, 2026 for the updated version."
+    content: "This wesbite is currently under construction: all slides and problem sets are being reviewed and updated. Please come back on September 16, 2026 for the updated version."
     type: primary
     position: below-navbar
 

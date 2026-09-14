@@ -56,6 +56,22 @@ Feel free to work with anyone in the cohort after giving the problems a try!
 
 ## Graphs
 
-A supply-and-demand graph shows the demand curve hitting the $y$-axis at $P=\$60$ and the supply curve hitting it at $P=\$5$. What does each $y$-intercept represent?
+11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as
+$$
+P = 25 - 0.05Q
+$$
+where $Q$ = number of households subscribed in hundreds and $P$ = the monthly fee (\$) a household is willing to pay.
 
-**1. Supply and demand.** Demand $y$-intercept ($P=\$60$) = the *choke price* — the maximum price at which anyone is willing to buy, i.e. quantity demanded is zero. Supply $y$-intercept ($P=\$5$) = the minimum price needed to induce any positive supply — below it, no one is willing to sell.
+```{r, echo=FALSE, fig.width=5, fig.height=4}
+Q <- seq(0, 500, by = 10)
+P <- 25 - 0.05 * Q
+
+ggplot(data.frame(Q, P), aes(x = Q, y = P)) +
+  geom_line(linewidth = 1) +
+  labs(x = "Households subscribed (hundreds)", y = "Monthly fee ($)") +
+  theme_classic()
+```
+
+a) Write one sentence describing what the graph shows.
+b) Interpret what the $y$-intercept means in this context.
+c) Interpret what the $x$-intercept means in this context.

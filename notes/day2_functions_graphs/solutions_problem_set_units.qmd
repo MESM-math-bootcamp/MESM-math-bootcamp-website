@@ -5,6 +5,12 @@ execute:
 ---
 # Solutions: Units Problem Set
 
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE, warning = FALSE)
+
+library(tidyverse)
+```
+
 ::: {.callout-tip}
 ## Instructions
 These are the solutions to the [units problem set](problem_set_units.qmd). Click a solution to expand it and try each problem yourself first!
@@ -347,4 +353,40 @@ $$
 $$
 \boxed{5.99\text{ barrels unrecovered}}
 $$
+:::
+
+## Graphs
+
+**11)** A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as
+$$
+P = 25 - 0.05Q
+$$
+where $Q$ = number of households subscribed in hundreds and $P$ = the monthly fee (\$) a household is willing to pay.
+
+
+```{r, echo=FALSE, fig.width=5, fig.height=4}
+Q <- seq(0, 500, by = 10)
+P <- 25 - 0.05 * Q
+
+ggplot(data.frame(Q, P), aes(x = Q, y = P)) +
+  geom_line(linewidth = 1) +
+  labs(x = "Households subscribed (hundreds)", y = "Monthly fee ($)") +
+  theme_classic()
+```
+
+a) In one sentence, describe what the graph shows.
+b) Interpret what the $y$-intercept means in this context.
+c) Interpret what the $x$-intercept means in this context.
+
+::: {.callout-note collapse="true" title="Solution"}
+**a)** On the $x$ axis we have hunderds of households subscribed and on the $y$ axis we have monthly fee in dollars. The plot shows a linear demand curve. We can see that as the monthly fee drops, more households are willing to subscribe to the compost program.
+
+**b)**
+
+The $y$-intercept is \$25/month, this is the highest fee at which any household is still willing to subscribe. Above \$25, quantity demanded drops to zero.
+
+**c)**
+
+The $x$-intercept is $Q=500$ (i.e., 500 hundred = 50,000 households). This is the number of households that would subscribe if the service were free. This is the maximum possible demand for the program.
+
 :::

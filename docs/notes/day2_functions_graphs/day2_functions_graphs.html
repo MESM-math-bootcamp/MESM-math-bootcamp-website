@@ -71,6 +71,35 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 </head>
 
@@ -128,8 +157,8 @@ ul.task-list li input[type="checkbox"] {
         </a>
     </div>
   </nav>
-  <div id="quarto-announcement" data-announcement-id="399dc8b86d7e5b95987161af31251a08" class="alert alert-primary hidden"><i class="bi bi-hammer quarto-announcement-icon"></i><div class="quarto-announcement-content">
-<p>This wesbite is currently under construction: all slides and problem sets are being reviewed and updated. Please come back on September 15, 2026 for the updated version.</p>
+  <div id="quarto-announcement" data-announcement-id="b65c0039467b8f7f668b717c5fe9bfa5" class="alert alert-primary hidden"><i class="bi bi-hammer quarto-announcement-icon"></i><div class="quarto-announcement-content">
+<p>This wesbite is currently under construction: all slides and problem sets are being reviewed and updated. Please come back on September 16, 2026 for the updated version.</p>
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
@@ -168,7 +197,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#day-2-units-graphs" id="toc-day-2-units-graphs" class="nav-link active" data-scroll-target="#day-2-units-graphs">Day 2: Units &amp; Graphs</a>
   <ul class="collapse">
-  <li><a href="#problem-sets" id="toc-problem-sets" class="nav-link" data-scroll-target="#problem-sets">Problem sets</a></li>
+  <li><a href="#problem-set" id="toc-problem-set" class="nav-link" data-scroll-target="#problem-set">Problem set</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -191,24 +220,16 @@ ul.task-list li input[type="checkbox"] {
 <li>🧊 Area &amp; volume conversions</li>
 <li>⚖️ Dimensional analysis (unit conversions)</li>
 <li>🧪 Parts per million (ppm)</li>
-<li>🐟 Applications to MESM courses</li>
 <li>🧩 Definition of functions</li>
+<li>📈 <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> intercepts</li>
 <li>📊 Graphing</li>
+<li>🐟 Applications to MESM courses</li>
 </ul>
-<section id="problem-sets" class="level2">
-<h2 class="anchored" data-anchor-id="problem-sets">Problem sets</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
+<section id="problem-set" class="level2">
+<h2 class="anchored" data-anchor-id="problem-set">Problem set</h2>
 <div class="center-text">
-<p><a href="../../notes/day2_functions_graphs/problem_set_units.html"><strong>Units problem set</strong></a></p>
-<p><img src="../../notes/icons/homework-2.png" class="img-fluid" style="width:40.0%"></p>
-</div>
-</div><div class="column" style="width:50%;">
-<div class="center-text">
-<p><a href=""><strong>Functions &amp; graphs problem set</strong></a></p>
-<p><img src="../../notes/icons/homework-3.png" class="img-fluid" style="width:40.0%"></p>
-</div>
-</div>
+<p><a href="../../notes/day2_functions_graphs/problem_set_units.html"><strong>Units &amp; graphs problem set</strong></a></p>
+<p><img src="../../notes/icons/homework-2.png" class="img-fluid" style="width:25.0%"></p>
 </div>
 <div class="center-text">
 <p>Solutions are linked through the problem sets.</p>

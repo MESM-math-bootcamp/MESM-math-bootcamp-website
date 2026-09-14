@@ -14,10 +14,10 @@
 - 🧊 Area & volume conversions
 - ⚖️ Dimensional analysis (unit conversions)
 - 🧪 Parts per million (ppm)
-- 🐟 Applications to MESM courses
 - 🧩 Definition of functions
 - 📈 $x$ and $y$ intercepts
 - 📊 Graphing
+- 🐟 Applications to MESM courses
 
 
 ## Problem set
