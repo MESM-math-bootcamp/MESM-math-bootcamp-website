@@ -1617,32 +1617,32 @@
     "text": "Understanding graphs\n\n\nWhen you look at graphs, the first things you should ask:\n\n\nWhat variables are being plotted (e.g. x- & y-axis, including units)?\n\n\n\nWhat values are plotted (e.g. raw values, transformed, means, etc.)?\n\n\n\nWhat are the overall takeaways (e.g. trends, maxima, minima, axes intercepts) and am I understanding them responsibly?"
   },
   {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-1",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-1",
     "title": "Bren Math Workshop",
     "section": "",
     "text": "Reading graphs (in general)\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
   },
   {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-3",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-3",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-2",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-2",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Reading graphs (in general)\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”\n\n\nSource: TylerVigen.com"
+    "text": "Reading graphs (in general)\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-1",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-1",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Reading graphs practice\n\n\n💬 Partner 1 gets to read the graph for the first variable.\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
+    "text": "💬 Partner 1: read the graph to your partner.\n\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-2",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-2",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Reading graphs practice\n\n\n💬 Partner 2 gets to read the plot for the second variable, provide context for the data, and hypothesise an explanation.\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”\n\n\n\n\n\n\nSource: TylerVigen.com"
+    "text": "💬 Partner 2: read the graph to your partner.\n\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
   },
   {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-mono-lake",
@@ -1659,11 +1659,18 @@
     "text": "Wrapping up…"
   },
   {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#problem-set",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#problem-set",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Get some extra practice!\n\n\n\nUnits & graphs problem set"
+  },
+  {
     "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#what-we-covered",
     "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#what-we-covered",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "What we covered today\n\n\n📏 Metric prefixes\n🧊 Area & volume conversions\n⚖️ Dimensional analysis (unit conversions)\n🧪 Parts per million (ppm)\n🧩 Definition of functions \n\n📊 Graphing\n\n💬 Reading graphs"
+    "text": "What we covered today\n\n\n📏 Metric prefixes\n🧊 Area & volume conversions\n⚖️ Dimensional analysis (unit conversions)\n🧪 Parts per million (ppm)\n🧩 Definition of functions \n\n📊 Graphing\n\n📈 \\(x\\) and \\(y\\) intercepts\n💬 Reading graphs\n\n🐟 Applications to MESM courses"
   },
   {
     "objectID": "notes/day1_algebra/solutions_exercise_bank_algebra.html",

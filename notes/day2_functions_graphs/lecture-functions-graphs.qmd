@@ -1452,74 +1452,69 @@ axis(2, at = seq(y_min, y_max, by = 0.1), cex.axis=2)
 
 ---
 
-## {#reading-graphs data-menu-title="Graphs explanation"} 
+## {#reading-graphs-1 data-menu-title="Graphs explanation"} 
 
 [Reading graphs (in general)]{.slide-title}
 
 <hr>
 
 >"On the x-axis we have [x-variable] measured in  [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings]."
-
-. . .
-
-![](/course-materials/slides/images/correlation-1-wind-power.png){width="50%" fig-align="center"}
 
 ---
 
-
-## {#reading-graphs-3 data-menu-title="Graphs explanation"} 
+## {#reading-graphs-2 data-menu-title="Graphs explanation"}
 
 [Reading graphs (in general)]{.slide-title}
 
 <hr>
 
+
 >"On the x-axis we have [x-variable] measured in  [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings]."
 
 
-![Source: [TylerVigen.com](https://www.tylervigen.com/spurious/correlation/1362_butter-consumption_correlates-with_wind-power-generated-in-lithuania)](/course-materials/slides/images/correlation-1-both.png){width="80%" fig-align="center"}
+```{r, echo=FALSE, fig.width=6, fig.height=5, out.width="60%", fig.align="center"}
+t <- seq(0, 10, length.out = 200)
+pop <- 100 / (1 + 50 * exp(-2 * t))
+logistic_df <- data.frame(time = t, population = pop)
+
+ggplot(logistic_df, aes(x = time, y = population)) +
+  geom_line(linewidth = 2, color = "slateblue") +
+  labs(x = "Time (years)", y = "Population size (individuals)") +
+  theme_classic() +
+  theme(text = element_text(size = 22))
+```
 
 ---
 
 ## {#graphs-reading-practice-1 data-menu-title="Graphs explanation"} 
 
-[Reading graphs practice]{.slide-title3}
+[💬 [Partner 1: read the graph to your partner.]{style="color:green;"}]{.slide-title3}
 
 <hr>
 ::: {.body-text-s}
 
-💬 [Partner 1 gets to read the graph for the first variable.]{style="color:green;"}
+
 
 >"On the x-axis we have [x-variable] measured in  [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings]."
 
 :::
 
-. . .
 
-![](/course-materials/slides/images/correlation-2-thomas.png){width="55%" fig-align="center"}
-
-<!-- 
-[Possibly with additional context as useful for the audience to put those findings into perspective (e.g. "this reduction represents an 82% decline in rainbowfish stocks along the Narnia Coast since 1991").]{.body-text-m}  -->
+![](images/co2-emissions-per-capita.png){width="90%" fig-align="center"}
 
 ---
 
 ## {#graphs-reading-practice-2 data-menu-title="Graphs explanation"} 
 
-[Reading graphs practice]{.slide-title3}
-
+[💬 [Partner 2: read the graph to your partner.]{style="color:green;"}]{.slide-title3}
 <hr>
 
-::: {.body-text-s}
-
-💬 [Partner 2 gets to read the plot for the second variable, provide context for the data, and hypothesise an explanation.]{style="color:green;"}
-
+:::{.body-text-s}
 >"On the x-axis we have [x-variable] measured in  [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings]."
-
 :::
 
-. . .
 
-
-![Source: [TylerVigen.com](https://www.tylervigen.com/spurious/correlation/1882_popularity-of-the-first-name-thomas_correlates-with_motor-vehicle-thefts-in-maine)](/course-materials/slides/images/correlation-2-thomas-vehicle-thefts.png){width="55%" fig-align="center"}
+![](images/population.png){ fig-align="center" width="90%" }
 
 ---
 
@@ -1547,6 +1542,22 @@ knitr::include_graphics("images/mono_lake_graph.png")
 
 ---
 
+## {#problem-set data-menu-title="Problem set" }
+
+[Get some extra practice!]{.slide-title}
+
+<hr>
+
+<br>
+
+:::{.center-text}
+[**Units & graphs problem set**](problem_set_units.qmd)
+
+![](/notes/icons/homework-2.png){width=25%}
+:::
+
+---
+
 ## {#what-we-covered data-menu-title="What we covered today" }
 
 
@@ -1558,6 +1569,8 @@ knitr::include_graphics("images/mono_lake_graph.png")
 - <span style="color:#339966"><b>🧊 Area & volume conversions</b></span>
 - <span style="color:#9933CC"><b>⚖️ Dimensional analysis (unit conversions)</b></span>
 - <span style="color:#CC3366"><b>🧪 Parts per million (ppm)</b></span>
-- <span style="color:#CC3366"><b>🧩 Definition of functions </b></span>  
+- <span style="color:#E47200"><b>🧩 Definition of functions </b></span>  
 - <span style="color:#006699"><b>📊 Graphing</b></span>  
+- <span style="color:#EDC001"><b>📈 $x$ and $y$ intercepts</b></span>
 - <span style="color:#006633"><b>💬 Reading graphs</b></span>  
+- <span style="color:#808000"><b>🐟 Applications to MESM courses</b></span>  
