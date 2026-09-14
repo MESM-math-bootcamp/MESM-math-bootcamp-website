@@ -18,9 +18,8 @@ format:
 
 ## {#title-slide data-menu-title="Title Slide" background="#053660"}
 
-[Algebra Review]{.custom-title}
+[Day 2: Bren Math Workshop]{.custom-title}
 
-[Bren Math Workshop]{.custom-subtitle .gold}
 
 <hr class="hr-teal">
 
