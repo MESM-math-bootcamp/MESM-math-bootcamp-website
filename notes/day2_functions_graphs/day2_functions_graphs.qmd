@@ -16,35 +16,16 @@
 - 🧪 Parts per million (ppm)
 - 🐟 Applications to MESM courses
 - 🧩 Definition of functions
+- 📈 $x$ and $y$ intercepts
 - 📊 Graphing
 
 
-## Problem sets
-
-
-
-:::: {.columns}
-
-::: {.column width="50%"}
-:::{.center-text}
-[**Units problem set**](problem_set_units.qmd)
-
-![](/notes/icons/homework-2.png){width=40%}
-
-:::
-
-:::
-
-::: {.column width="50%"}
+## Problem set
 
 :::{.center-text}
-[**Functions & graphs problem set**]()
+[**Units & graphs problem set**](problem_set_units.qmd)
 
-![](/notes/icons/homework-3.png){width=40%}
-
-:::
-
-:::
+![](/notes/icons/homework-2.png){width=25%}
 
 :::
 

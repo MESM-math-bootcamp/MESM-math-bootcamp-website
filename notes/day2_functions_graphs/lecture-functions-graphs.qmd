@@ -919,7 +919,7 @@ ggplot(mtcars, aes(x=as.factor(cyl), y=mpg)) +
 
 ---
 
-## {#xy-coordinates data-menu-title="xy coordinates"}
+## {#xy-coordinates-1 data-menu-title="xy coordinates"}
 
 [The $xy$ coordinate system]{.slide-title}
 
@@ -935,20 +935,49 @@ Graphs generally move in a 2-dimensional plane with a coordinate system using tw
 - $y$-axis (vertical axis)
 
 
+Axes units must be defined depending on the application.
+
 <br>
+
+:::
+
+:::{.column width="50%"}
+
+```{r echo=FALSE}
+knitr::include_graphics("images/cart.png")
+```
+:::
+::::
+
+---
+
+## {#xy-coordinates-2 data-menu-title="xy coordinates"}
+
+[The $xy$ coordinate system]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+Graphs generally move in a 2-dimensional plane with a coordinate system using two axes:
+
+- $x$-axis (horizontal axis)
+
+- $y$-axis (vertical axis)
+
 
 Axes units must be defined depending on the application.
 
-:::{.incremental}
+<br>
 
 We use pairs of numbers to place data:
 
 - A point on the $xy$ plane with **coordinates** $(a,b)$ means the point is located at $a$ on the $x$-axis and at $b$ on the $y$-axis.
 
-- Where would (2,-1) go on the graph?
+[Where would (2,-1) go on the graph?]{style="color:green"}
+:::
 
-:::
-:::
 :::{.column width="50%"}
 
 ```{r echo=FALSE}
@@ -1045,7 +1074,7 @@ Intercepts
 
 :::{.column width="50%"}
 :::{.center-text}
-What are the intercepts of the polynomial function in red?
+What are the $x$ and $y$ intercepts of the polynomial function in red?
 :::
 ![](images/graphs-examples.png){width=60%}
 :::
@@ -1080,7 +1109,7 @@ Intercepts
 
 :::{.column width="50%"}
 :::{.center-text}
-What are the intercepts of the polynomial function in red?
+What are the $x$ and $y$ intercepts of the polynomial function in red?
 :::
 
 ![](images/graphs-examples.png){width=60%}
@@ -1099,150 +1128,24 @@ What are the intercepts of the polynomial function in red?
 
 <hr>
 
-✏️ [Take a minute to solve this individually.]{style="color:green;"}
+✏️ [Solve these individually.]{style="color:green;"}
 
-A supply-and-demand graph shows the demand curve hitting the $y$-axis at $P=\$60$ and the supply curve hitting it at $P=\$5$. What does each $y$-intercept represent?
+:::: {.columns}
 
----
+::: {.column width="40%"}
 
-## {#intercepts-practice-1-solve data-menu-title="Intercepts practice"}
+:::{style="color:green;"}
+(1) A reservoir is being drained for irrigation. The graph shows its storage volume (in millions of cubic meters) as a function of time (in years).
 
-[Intercepts practice]{.slide-title}
+- When will the reservoir be empty? Are you using the $x$ or $y$ intercept? 
 
-<hr>
-
-A supply-and-demand graph shows the demand curve hitting the $y$-axis at $P=\$60$ and the supply curve hitting it at $P=\$5$. What does each $y$-intercept represent?
-
-✏️ [Let's see a solution!]{style="color:green;"}
-
----
-
-## {#intercepts-practice-2 data-menu-title="Intercepts practice"}
-
-[Intercepts practice]{.slide-title}
-
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-✏️ [Take a minute to solve this individually.]{style="color:green;"}
-
-A graph shows a population's per-capita growth rate, $\frac{1}{N}\frac{dN}{dt}$, as a function of its population size $N$.
-
-What does the $y$-intercept represent? What does the $x$-intercept represent?
-
+- What is the initial volume of the reservoir? Are you using the $x$ or $y$ intercept?
+:::
 :::
 
-:::{.column width="50%"}
+::: {.column width="60%"}
 
-```{r echo=FALSE,fig.align='center',out.width="90%"}
-x_min <- 0
-x_max <- 120
-y_min <- -0.1
-y_max <- 0.5
-
-r <- 0.4
-K <- 100
-
-x <- seq(x_min, x_max, length.out = 100)
-y <- r - (r / K) * x
-
-plot(x, y, type = "l", lwd = 4, col = "seagreen",
-     xlim = c(x_min, x_max), ylim = c(y_min, y_max),
-     xlab = "Population size, N",
-     ylab = "Per-capita growth rate, (1/N)(dN/dt)",
-     xaxt = "n", yaxt = "n")
-
-abline(h = seq(y_min, y_max, by = 0.1), col = "lightgray", lty = "dotted")
-abline(v = seq(x_min, x_max, by = 20), col = "lightgray", lty = "dotted")
-
-abline(h = 0, v = 0, col = "gray50")
-
-lines(x, y, lwd = 2)
-
-axis(1, at = seq(x_min, x_max, by = 20))
-axis(2, at = seq(y_min, y_max, by = 0.1))
-```
-
-:::
-::::
-
----
-
-## {#intercepts-practice-2-solve data-menu-title="Intercepts practice"}
-
-[Intercepts practice]{.slide-title}
-
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-A graph shows a population's per-capita growth rate, $\frac{1}{N}\frac{dN}{dt}$, as a function of its population size $N$.
-
-What does the $y$-intercept represent? What does the $x$-intercept represent?
-
-✏️ [Let's see a solution!]{style="color:green;"}
-
-:::
-
-:::{.column width="50%"}
-
-```{r echo=FALSE,fig.align='center',out.width="90%"}
-x_min <- 0
-x_max <- 120
-y_min <- -0.1
-y_max <- 0.5
-
-r <- 0.4
-K <- 100
-
-x <- seq(x_min, x_max, length.out = 100)
-y <- r - (r / K) * x
-
-plot(x, y, type = "l", lwd = 4, col = "seagreen",
-     xlim = c(x_min, x_max), ylim = c(y_min, y_max),
-     xlab = "Population size, N",
-     ylab = "Per-capita growth rate, (1/N)(dN/dt)",
-     xaxt = "n", yaxt = "n")
-
-abline(h = seq(y_min, y_max, by = 0.1), col = "lightgray", lty = "dotted")
-abline(v = seq(x_min, x_max, by = 20), col = "lightgray", lty = "dotted")
-
-abline(h = 0, v = 0, col = "gray50")
-
-lines(x, y, lwd = 2)
-
-axis(1, at = seq(x_min, x_max, by = 20))
-axis(2, at = seq(y_min, y_max, by = 0.1))
-```
-
-:::
-::::
-
----
-
-## {#intercepts-practice-3 data-menu-title="Intercepts practice"}
-
-[Intercepts practice]{.slide-title}
-
-<hr>
-
-::::{.columns}
-:::{.column width="50%"}
-
-✏️ [Take a minute to solve this individually.]{style="color:green;"}
-
-A reservoir is being drained for irrigation. The graph below shows its storage volume $V$ (in millions of cubic meters) as a function of time $t$ (in years).
-
-What does the $y$-intercept represent? What does the $x$-intercept represent?
-
-:::
-
-:::{.column width="50%"}
-
-```{r echo=FALSE,fig.align='center',out.width="90%"}
+```{r echo=FALSE,fig.align='center',out.width="100%"}
 x_min <- 0
 x_max <- 14
 y_min <- -20
@@ -1256,9 +1159,10 @@ y <- V0 - rate * x
 
 plot(x, y, type = "l", lwd = 4, col = "steelblue",
      xlim = c(x_min, x_max), ylim = c(y_min, y_max),
-     xlab = "Time, t (years)",
-     ylab = "Reservoir storage, V (million cubic meters)",
-     xaxt = "n", yaxt = "n")
+     xlab = "Time (years)",
+     ylab = "Storage (million cubic meters)",
+     xaxt = "n", yaxt = "n",
+     cex.lab=2)
 
 abline(h = seq(y_min, y_max, by = 10), col = "lightgray", lty = "dotted")
 abline(v = seq(x_min, x_max, by = 2), col = "lightgray", lty = "dotted")
@@ -1267,27 +1171,35 @@ abline(h = 0, v = 0, col = "gray50")
 
 lines(x, y, lwd = 2)
 
-axis(1, at = seq(x_min, x_max, by = 2))
-axis(2, at = seq(y_min, y_max, by = 10))
+axis(1, at = seq(x_min, x_max, by = 2), cex.axis=2)
+axis(2, at = seq(y_min, y_max, by = 10), cex.axis=2)
 ```
 
 :::
-::::
+
+:::
+
+:::{style="color:green;"}
+(2) **Population size** is denoted by $N$, this is the total number of individuals.
+**Per-capita growth rate**, $\frac{1}{N}\frac{dN}{dt}$, is a function of $N$.
+What does the $y$-intercept of $\frac{1}{N}\frac{dN}{dt}$ represent? What does its $x$-intercept represent?
+:::
 
 ---
 
 ## {#intercepts-practice-3-solve data-menu-title="Intercepts practice"}
 
-[Intercepts practice]{.slide-title}
+[Intercepts practice (1)]{.slide-title}
 
 <hr>
 
 ::::{.columns}
-:::{.column width="50%"}
+:::{.column width="50%" }
 
-A reservoir is being drained for irrigation. The graph below shows its storage volume $V$ (in millions of cubic meters) as a function of time $t$ (in years).
+- When will the reservoir be empty? Are you using the $x$ or $y$ intercept? 
 
-What does the $y$-intercept represent? What does the $x$-intercept represent?
+- What is the initial volume of the reservoir? Are you using the $x$ or $y$ intercept?
+
 
 ✏️ [Let's see a solution!]{style="color:green;"}
 
@@ -1295,7 +1207,8 @@ What does the $y$-intercept represent? What does the $x$-intercept represent?
 
 :::{.column width="50%"}
 
-```{r echo=FALSE,fig.align='center',out.width="90%"}
+
+```{r echo=FALSE,fig.align='center',out.width="100%"}
 x_min <- 0
 x_max <- 14
 y_min <- -20
@@ -1309,9 +1222,10 @@ y <- V0 - rate * x
 
 plot(x, y, type = "l", lwd = 4, col = "steelblue",
      xlim = c(x_min, x_max), ylim = c(y_min, y_max),
-     xlab = "Time, t (years)",
-     ylab = "Reservoir storage, V (million cubic meters)",
-     xaxt = "n", yaxt = "n")
+     xlab = "Time (years)",
+     ylab = "Storage (million cubic meters)",
+     xaxt = "n", yaxt = "n",
+     cex.lab=2)
 
 abline(h = seq(y_min, y_max, by = 10), col = "lightgray", lty = "dotted")
 abline(v = seq(x_min, x_max, by = 2), col = "lightgray", lty = "dotted")
@@ -1320,26 +1234,188 @@ abline(h = 0, v = 0, col = "gray50")
 
 lines(x, y, lwd = 2)
 
-axis(1, at = seq(x_min, x_max, by = 2))
-axis(2, at = seq(y_min, y_max, by = 10))
+axis(1, at = seq(x_min, x_max, by = 2), cex.axis=2)
+axis(2, at = seq(y_min, y_max, by = 10), cex.axis=2)
+```
+:::
+::::
+
+
+---
+
+## {#intercepts-practice-1-solutions data-menu-title="Intercepts practice"}
+
+[Intercepts practice (1)]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%" }
+
+- When will the reservoir be empty? Are you using the $x$ or $y$ intercept? 
+
+- What is the initial volume of the reservoir? Are you using the $x$ or $y$ intercept?
+
+
+✏️ [Let's see a solution!]{style="color:green;"}
+
+:::
+
+:::{.column width="50%"}
+
+
+```{r echo=FALSE,fig.align='center',out.width="100%"}
+x_min <- 0
+x_max <- 14
+y_min <- -20
+y_max <- 60
+
+V0 <- 50
+rate <- 5
+
+x <- seq(x_min, x_max, length.out = 100)
+y <- V0 - rate * x
+
+plot(x, y, type = "l", lwd = 4, col = "steelblue",
+     xlim = c(x_min, x_max), ylim = c(y_min, y_max),
+     xlab = "Time (years)",
+     ylab = "Storage (million cubic meters)",
+     xaxt = "n", yaxt = "n",
+     cex.lab=2)
+
+abline(h = seq(y_min, y_max, by = 10), col = "lightgray", lty = "dotted")
+abline(v = seq(x_min, x_max, by = 2), col = "lightgray", lty = "dotted")
+
+abline(h = 0, v = 0, col = "gray50")
+
+lines(x, y, lwd = 2)
+
+axis(1, at = seq(x_min, x_max, by = 2), cex.axis=2)
+axis(2, at = seq(y_min, y_max, by = 10), cex.axis=2)
+```
+:::
+::::
+
+
+The reservoir will be empty after 10 years. To identify this we look at the $x$-intercept, which happens at $(10,0)$. 
+
+The initial volume of water in the reservoir is 50 cubic meters. To identify this we look at the $y$-intercept, which happens at $(0, 50)$. 
+
+---
+
+## {#intercepts-practice-2-solve data-menu-title="Intercepts practice"}
+
+[Intercepts practice (2)]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+**Population size** is denoted by $N$, this is the total number of individuals.
+
+**Per-capita growth rate**, $\frac{1}{N}\frac{dN}{dt}$, is a function of $N$.
+
+- What does the $y$-intercept of $\frac{1}{N}\frac{dN}{dt}$ represent? 
+- What does its $x$-intercept represent?
+
+:::
+
+:::{.column width="50%"}
+
+```{r echo=FALSE,fig.align='center',out.width="90%"}
+x_min <- 0
+x_max <- 120
+y_min <- -0.1
+y_max <- 0.5
+
+r <- 0.4
+K <- 100
+
+x <- seq(x_min, x_max, length.out = 100)
+y <- r - (r / K) * x
+
+plot(x, y, type = "l", lwd = 4, col = "seagreen",
+     xlim = c(x_min, x_max), ylim = c(y_min, y_max),
+     xlab = "Population size, N",
+     ylab = "(1/N)(dN/dt)",
+     xaxt = "n", yaxt = "n", cex.lab=2)
+
+abline(h = seq(y_min, y_max, by = 0.1), col = "lightgray", lty = "dotted")
+abline(v = seq(x_min, x_max, by = 20), col = "lightgray", lty = "dotted")
+
+abline(h = 0, v = 0, col = "gray50")
+
+lines(x, y, lwd = 2)
+
+axis(1, at = seq(x_min, x_max, by = 20), cex.axis=2)
+axis(2, at = seq(y_min, y_max, by = 0.1), cex.axis=2)
 ```
 
 :::
 ::::
 
+✏️ [Let's see a solution!]{style="color:green;"}
+
 ---
 
-## {#intercepts-practice-solutions data-menu-title="Intercepts practice: solutions" .smaller}
+## {#intercepts-practice-2-solution data-menu-title="Intercepts practice"}
 
-[Solutions]{.slide-title}
+[Intercepts practice (2)]{.slide-title}
 
 <hr>
 
-**1. Supply and demand.** Demand $y$-intercept ($P=\$60$) = the *choke price* — the maximum price at which anyone is willing to buy, i.e. quantity demanded is zero. Supply $y$-intercept ($P=\$5$) = the minimum price needed to induce any positive supply — below it, no one is willing to sell.
+::::{.columns}
+:::{.column width="50%"}
 
-**2. Per-capita growth rate.** $y$-intercept ($N=0$, rate $=0.4$) = the *intrinsic growth rate* $r$ — the population's maximum per-capita growth rate when it is small and not yet resource-limited. $x$-intercept ($N=100$, rate $=0$) = the *carrying capacity* $K$ — the population size at which per-capita growth stops.
+**Population size** is denoted by $N$, this is the total number of individuals.
 
-**3. Reservoir storage.** $y$-intercept ($t=0$, $V=50$) = the reservoir's *initial storage volume*. $x$-intercept ($t=10$, $V=0$) = the *time at which the reservoir is completely drained*.
+**Per-capita growth rate**, $\frac{1}{N}\frac{dN}{dt}$, is a function of $N$.
+
+- What does the $y$-intercept of $\frac{1}{N}\frac{dN}{dt}$ represent? 
+- What does its $x$-intercept represent?
+
+:::
+
+:::{.column width="50%"}
+
+```{r echo=FALSE,fig.align='center',out.width="90%"}
+x_min <- 0
+x_max <- 120
+y_min <- -0.1
+y_max <- 0.5
+
+r <- 0.4
+K <- 100
+
+x <- seq(x_min, x_max, length.out = 100)
+y <- r - (r / K) * x
+
+plot(x, y, type = "l", lwd = 4, col = "seagreen",
+     xlim = c(x_min, x_max), ylim = c(y_min, y_max),
+     xlab = "Population size, N",
+     ylab = "(1/N)(dN/dt)",
+     xaxt = "n", yaxt = "n", cex.lab=2)
+
+abline(h = seq(y_min, y_max, by = 0.1), col = "lightgray", lty = "dotted")
+abline(v = seq(x_min, x_max, by = 20), col = "lightgray", lty = "dotted")
+
+abline(h = 0, v = 0, col = "gray50")
+
+lines(x, y, lwd = 2)
+
+axis(1, at = seq(x_min, x_max, by = 20), cex.axis=2)
+axis(2, at = seq(y_min, y_max, by = 0.1), cex.axis=2)
+```
+
+:::
+::::
+
+✏️ [Let's see a solution!]{style="color:green;"}
+
+- $y$-intercept = the population's maximum per-capita growth rate when it is small and not yet resource-limited. This is known as the *intrinsic growth rate* $r$.
+
+-  $x$-intercept = the population size at which per-capita growth stops. This is known as the *carrying capacity* $K$.
 
 ---
 
@@ -1349,7 +1425,6 @@ axis(2, at = seq(y_min, y_max, by = 10))
 <div class="page-center">
 <div class="custom-subtitle">"Reading" graphs</div>
 </div>
-
 
 ---
 

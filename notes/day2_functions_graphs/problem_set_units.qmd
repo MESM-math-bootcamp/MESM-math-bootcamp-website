@@ -53,3 +53,9 @@ Feel free to work with anyone in the cohort after giving the problems a try!
     -   **Company C:** 18.1 gallons spilled (0% recovered)
 
     What is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.
+
+## Graphs
+
+A supply-and-demand graph shows the demand curve hitting the $y$-axis at $P=\$60$ and the supply curve hitting it at $P=\$5$. What does each $y$-intercept represent?
+
+**1. Supply and demand.** Demand $y$-intercept ($P=\$60$) = the *choke price* — the maximum price at which anyone is willing to buy, i.e. quantity demanded is zero. Supply $y$-intercept ($P=\$5$) = the minimum price needed to induce any positive supply — below it, no one is willing to sell.
