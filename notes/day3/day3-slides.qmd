@@ -1,0 +1,39 @@
+---
+format:
+  revealjs:
+    slide-number: true
+    # code-link: true
+    highlight-style: a11y
+    chalkboard: true
+    theme:
+      - ../../ucsb-media.scss
+    include-in-header:
+      text: |
+        <script>
+        (function loadCancelExtension(){
+          if (window.MathJax && window.MathJax.Hub) {
+            MathJax.Hub.Config({ TeX: { extensions: ["cancel.js"] } });
+          } else {
+            setTimeout(loadCancelExtension, 20);
+          }
+        })();
+        </script>
+editor_options:
+  chunk_output_type: console
+---
+
+## {#title-slide data-menu-title="Title Slide" background="#053660"}
+
+[Day 2: Bren Math Workshop]{.custom-title}
+
+<hr class="hr-teal">
+
+[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .baby-blue-text}
+
+[Bren School of Environmental Science & Management]{.center-text .body-text-m .baby-blue-text}
+
+<br>
+
+{{< include ../_exp-and-log/_slides-exp-and-log.qmd >}}
+
+{{< include ../_linear-functions/_linear-functions-slides.qmd >}}

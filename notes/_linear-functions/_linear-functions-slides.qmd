@@ -2,7 +2,6 @@
 
 ## {#lines-title data-menu-title="Lines" background-color="#003660"}
 
-
 <div class="page-center">
 <div class="custom-subtitle">Linear functions</div>
 </div>
@@ -85,7 +84,7 @@ $$b = y_1 - mx_1.$$
 :::{.column width="50%"}
 
 ```{r echo=FALSE,fig.align='center',out.width="80%"}
-knitr::include_graphics("images/slope.PNG")
+knitr::include_graphics("../_linear-functions/images/slope.PNG")
 ```
 
 :::
@@ -356,7 +355,7 @@ Same idea as in a line!
 
 Ice-core data before 1958. Mauna Loa data after 1958. 
 
-![Source:[The Keeling Curve](https://keelingcurve.ucsd.edu)](images/loa.PNG)
+![Source:[The Keeling Curve](https://keelingcurve.ucsd.edu)](../_linear-functions/images/loa.PNG)
 
 ---
 
@@ -395,7 +394,7 @@ Ice-core data before 1958. Mauna Loa data after 1958.
 #| echo: false
 #| out-width: "100%"
 #| fig-align: "center"
-knitr::include_graphics("images/cod_graph.jpg")
+knitr::include_graphics("../_linear-functions/images/cod_graph.jpg")
 ```
 
 
@@ -424,7 +423,7 @@ knitr::include_graphics("images/cod_graph.jpg")
 ::::
 
 ```{r echo=FALSE,fig.align='center',out.width="50%"}
-knitr::include_graphics("images/trex.PNG")
+knitr::include_graphics("../_linear-functions/images/trex.PNG")
 ```
 
 

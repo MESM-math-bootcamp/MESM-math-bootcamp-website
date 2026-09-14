@@ -1,0 +1,26 @@
+# Day 2: Units & Graphs
+
+<hr>
+
+::: {.body-text-m}
+
+[**Lecture slides**](day3-slides.qmd){target="_blank"}
+
+:::
+
+**Contents**
+
+
+## Problem set
+
+:::{.center-text}
+[**Units & graphs problem set**]()
+
+![](/notes/icons/homework-3.png){width=25%}
+
+:::
+
+
+:::{.center-text}
+Solutions are linked through the problem sets.
+:::

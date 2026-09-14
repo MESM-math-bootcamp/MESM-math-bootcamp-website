@@ -167,7 +167,7 @@ ggplot()+
 #| echo: false
 #| out-width: "100%"
 #| fig-align: "center"
-knitr::include_graphics("images/fisheries-aquaculture.png")
+knitr::include_graphics("../day2_functions_graphs/images/fisheries-aquaculture.png")
 ```
 
 ::: {.footer}
@@ -187,7 +187,7 @@ Source: [Our World in Data](https://ourworldindata.org/grapher/capture-fisheries
 #| echo: false
 #| out-width: "90%"
 #| fig-align: "center"
-knitr::include_graphics("images/paramecium.jpg")
+knitr::include_graphics("../day2_functions_graphs/images/paramecium.jpg")
 ```
 
 ::: {.center-text .body-text-s .gray-text}
