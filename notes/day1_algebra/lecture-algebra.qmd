@@ -28,9 +28,6 @@ format:
 
 [Bren School of Environmental Science & Management]{.center-text .body-text-m .baby-blue-text}
 
-<br>
-
-[*Some materials have been adapted from Nathaniel Grimes work for the Bren Math Workshop.*]{.baby-blue-text .body-text-s}
 
 ---
 
@@ -749,15 +746,12 @@ $$
 
 ## {#algebra-practice-four data-menu-title="Solving equations: practice"}
 
-<!-- Sources: ESM 201 Exercise Bank Ex. 3; ESM 202 Exercise Bank Ex. 6; ESM 203 Exercise Bank Ex. 9; price/quantity example moved from #equations-solved-2 -->
-
 [Solving equations: Practice set 2]{.slide-title}
 
 <hr>
+✏️
 
-✏️ [Solve these individually.]{style="color:green;"}
-
-::: {.body-text-s}
+::: {.body-text-s style="color:green;"}
 1) Prices are important in economics, but not always available for environmental goods. If we know quantity $Q=\dfrac{(400-P)}{80}$, isolate $P$ in terms of $Q$.
 
 <br>
@@ -766,11 +760,13 @@ $$
 
 <br>
 
-3) A steady-state concentration balance for a pollutant $C$ (mg/L) in a mixed system is $3(C-5)+2C=40$. Solve for $C$.
+3) A watershed's water balance equation is: 
 
-<br>
+:::{.center-text}
+change in storage per unit time = precipitation ($P$) − actual evapotranspiration (ET) − river outflows ($Q$). 
+:::
 
-4) A watershed's water balance is: change in storage per unit time = precipitation ($P$) − actual ET − river outflows ($Q$). At steady state (storage isn't changing), with actual evapotranspiration (ET) being 60% of precipitation and $Q=320$ mm/y, solve for $P$.
+At steady state (storage isn't changing), actual evapotranspiration (ET) is 60% of precipitation and river outflow is $320$ mm/y. Solve for precipitation. 
 :::
 
 ---
@@ -799,18 +795,6 @@ $$
 
 ---
 
-## {#algebra-practice-space-3 data-menu-title="Practice 3: space to solve"}
-
-[Solving equations: Practice set 2]{.slide-title}
-
-<hr>
-
-💡 [Let's see a solution!]{style="color:green;" .body-text-m}
-
-**3)** A steady-state concentration balance for a pollutant $C$ (mg/L) in a mixed system is $3(C-5)+2C=40$. Solve for $C$.
-
----
-
 ## {#algebra-practice-space-4 data-menu-title="Practice 4: space to solve"}
 
 [Solving equations: Practice set 2]{.slide-title}
@@ -819,7 +803,7 @@ $$
 
 💡 [Let's see a solution!]{style="color:green;" .body-text-m}
 
-**4)** A watershed's water balance is: change in storage per unit time = precipitation ($P$) − actual ET − river outflows ($Q$). At steady state (storage isn't changing), with actual evapotranspiration (ET) being 60% of precipitation and $Q=320$ mm/y, solve for $P$.
+**3)** A watershed's water balance is: change in storage per unit time = precipitation ($P$) − actual ET − river outflows ($Q$). At steady state (storage isn't changing), with actual evapotranspiration (ET) being 60% of precipitation and $Q=320$ mm/y, solve for $P$.
 
 ---
 
@@ -860,23 +844,7 @@ $$
 
 ::::
 
-:::: {.columns}
-
-::: {.column width="50%"}
 **3)**
-
-$$
-\small
-\begin{aligned}
-3C-15+2C&=40\\
-5C&=55\\
-C&=11 \text{ mg/L}
-\end{aligned}
-$$
-:::
-
-::: {.column width="50%"}
-**4)**
 
 $$
 \small
@@ -887,9 +855,6 @@ $$
 P &= 800 \text{ mm/y}
 \end{aligned}
 $$
-:::
-
-::::
 
 ---
 
@@ -1281,6 +1246,133 @@ $$
 
 Polynomials often represent real world data better than a linear function.
 
+---
+
+## {#fundamental-blank data-menu-title="Fundamental Theorem of Algebra"}
+
+[Roots of polynomials]{.slide-title}
+
+<hr>
+
+✏️ 
+
+---
+
+## {#fundamental data-menu-title="Fundamental Theorem of Algebra"}
+
+[Roots of polynomials]{.slide-title}
+
+<hr>
+
+A **zero**, **root**, or **solution** for a polynomial is a value of $x$ that makes the polynomial equal to zero.
+
+
+:::{.center-text}
+*Fundamental Theorem of Algebra*
+:::
+A polynomial
+$$
+a_nx^n+a_{n-1}x^{n-1}+...+a_1x+a_0
+$$
+
+of degree $n$ has exactly $n$ roots $r_1, \ldots, r_n$ and it can be refactored as
+
+$$
+c(x-r_1) ... (x-r_n).
+$$
+
+::: {.body-text-s}
+The numbers $c$ and $r_1, \ldots, r_n$ may be complex!
+:::
+
+**Example:**
+
+Consider the function $x - 2$, this is just a 1st degree polynomial. It has a single root, $r_1=2$. 
+
+---
+
+## {#example-second-degree-1 data-menu-title="Example: second degree"}
+
+[Example: second degree polynomial]{.slide-title}
+
+<hr>
+
+:::{style="color:green;"}
+✏️ Check: What happens if $x=4$ or $x=-3$ in  $x^2-x-12$?
+:::
+
+<br>
+
+---
+
+## {#example-second-degree-2 data-menu-title="Example: second degree"}
+
+[Example: second degree polynomial]{.slide-title}
+
+<hr>
+
+:::{style="color:green;"}
+✏️ Check: What happens if $x=4$ or $x=-3$ in  $x^2-x-12$?
+:::
+
+<br>
+
+
+- This means 4 and 3 are roots of the polynomial $x^2-x-12$. 
+
+- The only way to get $x^2-x-12=0$ is for $x$ to either be 4 or -3.
+
+- We can rewrite 
+$$x^2-x-12 = (x-4)(x+3).$$
+
+<br>
+
+✏️  Check: Verify the factorization on the right. 
+
+---
+
+## {#quad-blank data-menu-title="Quadratic Formula"}
+
+[Quadratic Formula finds roots of 2nd degree polynomials]{.slide-title}
+
+<hr>
+
+✏️ 
+
+---
+
+## {#quad data-menu-title="Quadratic Formula"}
+
+[Quadratic Formula finds roots of 2nd degree polynomials]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+For any second degree polynomial
+
+$$
+ax^2+bx+c=0,
+$$
+
+the roots to can be found using the **quadratic formula**:
+
+$$
+x=\frac{-b\pm\sqrt{b^2-4ac}}{2a}.
+$$
+:::
+
+::: {.column width="60%"}
+:::{style="color:green;"}
+✏️  Use the quadratic formula to find the solutions to $x^2-x-12=0$.
+:::
+:::
+
+:::
+
+
+
 
 
 ---
@@ -1417,6 +1509,26 @@ $$N_{t+1} = N_t + bN_t - dN_t.$$
 <div class="page-center">
 <div class="custom-subtitle">Wrapping up...</div>
 </div>
+
+---
+
+## {#problem-set data-menu-title="Problem set" }
+
+[Get some extra practice!]{.slide-title}
+
+<hr>
+
+<br>
+
+
+:::{.center-text}
+[**Algebra problem set**](problem_set_algebra.qmd)
+
+![](/notes/icons/homework.png){width=30%}
+
+:::
+
+
 
 ---
 

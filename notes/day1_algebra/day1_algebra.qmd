@@ -15,6 +15,7 @@
 - 🔢 Algebra review
 - 🗺️ Solving equations
 - ✖️ Rules of exponents
+- 📐 Polynomials
 - 🐢 Applications from MESM courses
 
 

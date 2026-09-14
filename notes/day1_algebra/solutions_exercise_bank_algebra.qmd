@@ -123,11 +123,13 @@ $12\% \cdot V_1 = 2\% \cdot 3\text{ L} \Rightarrow V_1 = \dfrac{2 \times 3}{12} 
 
 ## Scenario
 
-**9)** [Representative Concentration Pathways (RCP)]((https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today's atmospheric carbon concentration sits at 416 ppm.
+**9)** [Representative Concentration Pathways (RCP)]((https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection (RCP 4.5) indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today's atmospheric carbon concentration sits at 416 ppm.
 
 a) If the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.
 
-b) Let's say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of $f(t)=\frac{-1}{8}t^2+6t+123.83$ where $t$ is each year and $f(t)$ is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?
+  b) Starting in 2026 ($t = 0$), an ambitious US policy is modeled to reduce annual carbon emissions along the trajectory
+$$f(t) = -\frac{1}{8}t^2 + 6t + 124$$
+where $t$ is years since 2026 and $f(t)$ is US emissions (GT/year). In what year does the US reach zero net carbon emissions?
 
 ::: {.callout-note collapse="true" title="Solution"}
 a) Since the US's share of emissions stays constant at 14%, the US emits 14% of the 600 ppm plateau in 2100:
@@ -139,14 +141,17 @@ $$
 \end{aligned}
 $$
 
-b) We need the year(s) at which $f(t) = -\dfrac{1}{8}t^2+6t+123.83 = 0$. Using the quadratic formula with $a=-\frac18$, $b=6$, $c=123.83$:
+b) We need the year(s) at which $f(t) = -\dfrac{1}{8}t^2+6t+124 = 0$. In other words, we need to find the roots of this second degree polynomial. To do so, we can use the quadratic formula with $a=-\frac18$, $b=6$, $c=124$
 
 $$
-\begin{aligned}
-t &= \frac{-6\pm\sqrt{6^2-4\left(-\frac18\right)(123.83)}}{2\left(-\frac18\right)} \\
-t &\approx 63.58 \text{ years, or } t \approx -15.58 \text{ years}
-\end{aligned}
+t = \frac{-6\pm\sqrt{6^2-4\left(-\frac18\right)(124)}}{2\left(-\frac18\right)}.
 $$
 
-We only care about the positive year, so the US eliminates its carbon footprint about **63.58 years** from now.
+Solving it we get the roots:
+
+$$
+t_1 \approx 63.6 \text{ years, or } t_2 \approx -15.6 \text{ years}
+$$
+
+We only care about the positive year, so the US eliminates its carbon footprint about 63.6 years from 2026. So the US would reach zero net carbon emissions in 2089.
 :::

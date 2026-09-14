@@ -2,16 +2,13 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.9.38">
+<meta name="generator" content="quarto-1.7.33">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
 <title>problem_set_algebra – Bren Math Workshop</title>
 <style>
-/* Default styles provided by pandoc.
-** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
-*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -40,10 +37,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ee4c798a696f410de894479ed283eeec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b427677ddefa5d93abdb57081dab58c5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-a57217462e498614a534451382d2c246.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-ed4180e93009920118d63e1acdfa493e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -75,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -88,7 +85,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+      if (mathElements[i].tagName == "SPAN") {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -225,7 +222,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-<span class="screen-reader-only">Tip</span>Instructions
+Instructions
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -255,7 +252,7 @@ window.Quarto = {
 <h3 class="anchored" data-anchor-id="level-1">Level 1</h3>
 <!-- Source: ESM 201 Exercise Bank, Exercise 1 -->
 <ol start="3" type="1">
-<li>An organism’s daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for Growth.</li>
+<li>An organism’s daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for growth.</li>
 </ol>
 <!-- Source: ESM 202 Exercise Bank, Exercise 4 -->
 <ol start="4" type="1">
@@ -285,12 +282,10 @@ window.Quarto = {
 </section>
 <section id="scenario" class="level2">
 <h2 class="anchored" data-anchor-id="scenario">Scenario</h2>
-<ol start="9" type="1">
-<li><a href="(https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)">Representative Concentration Pathways (RCP)</a> are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.</li>
-</ol>
+<p><strong>9)</strong> <a href="(https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)">Representative Concentration Pathways (RCP)</a> are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection (RCP 4.5) indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.</p>
 <ol type="a">
 <li><p>If the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.</p></li>
-<li><p>Let’s say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of <span class="math inline">\(f(t)=\frac{-1}{8}t^2+6t+123.83\)</span> where <span class="math inline">\(t\)</span> is each year and <span class="math inline">\(f(t)\)</span> is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?</p></li>
+<li><p>Starting in 2026 (<span class="math inline">\(t = 0\)</span>), an ambitious US policy is modeled to reduce annual carbon emissions along the trajectory <span class="math display">\[f(t) = -\frac{1}{8}t^2 + 6t + 124\]</span> where <span class="math inline">\(t\)</span> is years since 2026 and <span class="math inline">\(f(t)\)</span> is US emissions (GT/year). In what year does the US reach zero net carbon emissions?</p></li>
 </ol>
 
 
@@ -349,14 +344,13 @@ window.Quarto = {
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-      const outerScaffold = trigger.parentElement.cloneNode(true);
-      const codeEl = outerScaffold.querySelector('code');
-      for (const childEl of codeEl.children) {
-        if (isCodeAnnotation(childEl)) {
-          childEl.remove();
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
         }
-      }
-      return codeEl.innerText;
+        return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

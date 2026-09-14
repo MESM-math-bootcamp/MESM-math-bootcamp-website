@@ -46,7 +46,7 @@ Feel free to work with anyone in the cohort after giving the problems a try!
 ### Level 1
 
 <!-- Source: ESM 201 Exercise Bank, Exercise 1 -->
-3) An organism's daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for Growth.
+3) An organism's daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for growth.
 
 <!-- Source: ESM 202 Exercise Bank, Exercise 4 -->
 4) A tank's mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.
@@ -70,10 +70,11 @@ Feel free to work with anyone in the cohort after giving the problems a try!
 
 ## Scenario
 
-9) [Representative Concentration Pathways (RCP)]((https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)) are climate change scenarios that project future greenhouse gas concentrations in 2100. 
-A new RCP projection indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today's atmospheric carbon concentration sits at 416 ppm. 
+**9)** [Representative Concentration Pathways (RCP)]((https://en.wikipedia.org/wiki/Representative_Concentration_Pathway)) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection (RCP 4.5) indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today's atmospheric carbon concentration sits at 416 ppm.
 
 
   a) If the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.
 
-  b) Let's say the US decides to pursue an ambitious policy to extract their contribution of carbon from the air. Climatologists model that this policy would have a trajectory of $f(t)=\frac{-1}{8}t^2+6t+123.83$ where $t$ is each year and $f(t)$ is the amount of carbon released by the US. When will the United States eliminate their carbon footprint?
+  b) Starting in 2026 ($t = 0$), an ambitious US policy is modeled to reduce annual carbon emissions along the trajectory
+$$f(t) = -\frac{1}{8}t^2 + 6t + 124$$
+where $t$ is years since 2026 and $f(t)$ is US emissions (GT/year). In what year does the US reach zero net carbon emissions?
