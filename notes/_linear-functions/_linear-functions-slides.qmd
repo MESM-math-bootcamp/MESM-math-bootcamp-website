@@ -1,4 +1,29 @@
 ---
+format:
+  revealjs:
+    slide-number: true
+    # code-link: true
+    highlight-style: a11y
+    chalkboard: true
+    theme:
+      - ../../ucsb-media.scss
+    include-in-header:
+      text: |
+        <script>
+        (function loadCancelExtension(){
+          if (window.MathJax && window.MathJax.Hub) {
+            MathJax.Hub.Config({ TeX: { extensions: ["cancel.js"] } });
+          } else {
+            setTimeout(loadCancelExtension, 20);
+          }
+        })();
+        </script>
+editor_options:
+  chunk_output_type: console
+---
+
+
+---
 
 ## {#lines-title data-menu-title="Lines" background-color="#003660"}
 
