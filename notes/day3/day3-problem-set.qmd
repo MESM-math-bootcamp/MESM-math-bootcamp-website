@@ -104,7 +104,6 @@ b) Interpret the slope in a full sentence, including units.
 **5)** The growth of sharks can be modeled using [von Bertalanffy curves](https://en.wikipedia.org/wiki/Von_Bertalanffy_function). Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.
 
 ```{r}
-
 #| echo: false
 
 vb<-function(a,l,k,t0){

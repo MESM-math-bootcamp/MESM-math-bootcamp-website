@@ -187,8 +187,7 @@ $DO(depth) = -0.6 \cdot depth + 9$
 **5)** The growth of sharks can be modeled using [von Bertalanffy curves](https://en.wikipedia.org/wiki/Von_Bertalanffy_function). Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.
 
 ```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
+#| echo: false
 
 vb<-function(a,l,k,t0){
   l*(1-exp(-k*(a-t0)))
