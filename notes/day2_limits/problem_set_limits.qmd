@@ -1,6 +1,6 @@
 ---
 sidebar: daily-materials
-author: "Nathaniel Grimes, Carmen Galaz García"
+author: "Carmen Galaz García, Nathaniel Grimes"  
 ---
 
 # Limits and Derivatives Problem Set

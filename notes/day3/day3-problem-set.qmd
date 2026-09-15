@@ -2,8 +2,9 @@
 sidebar: daily-materials
 execute:
   freeze: true
+author: "Carmen Galaz García, Nathaniel Grimes"  
 ---
-# Units Problem Set
+# $e^x$, Logs, and Lines Problem Set
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,message=FALSE,warning=FALSE)
@@ -14,23 +15,27 @@ library(tidyverse)
 ::: {.callout-tip}
 ## Instructions
 
-Attempt each problem on your own before checking the [solutions](day3-problem-set-solutions.qmd.qmd).
+Attempt each problem on your own before checking the [solutions](day3-problem-set-solutions.qmd).
 Feel free to work with anyone in the cohort after giving the problems a try!
 :::
 
 
 ## $e^x$ and logarithms
 
-## Linear functions
+**1)** Forestry officials discover an invasion of an invasive insect in a county park. They estimate the insect population grows exponentially, following $N(t) = N_0 e^{rt}$, where $N_0$ is the initial number of egg masses counted per hectare, and $t$ is time in years since detection.
+
+At detection ($t=0$), officials count $N_0 = 150$ egg masses per hectare. Four years later, the count has grown to $400$ egg masses per hectare.
+
+a) Solve for the growth rate $r$.
+b) Forestry regulators will impose a mandatory quarantine zone if the population reaches $5{,}000$ egg masses per hectare. Using your value of $r$, solve for the time $t$ at which this threshold will be reached.
+c) State your answer to (b) as a full sentence.
+
+## Lines and linear functions
+
+**2)** Find the equation of each of the following lines:
 
 
-6) Find the slope and $y$-intercept of the following lines. 
-
-<!-- TODO: this needs to be expanded into finidng the equation of the lines-->
-
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
+```{r, echo=FALSE}
 
 x=seq(-5,5)
 
@@ -90,52 +95,16 @@ cowplot::plot_grid(p1,p2,p3,p4,labels=c("A","B","C","D"))
 
 ```
 
-7) The growth of sharks can be modeled using [von Bertalanffy curves](https://en.wikipedia.org/wiki/Von_Bertalanffy_function). Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.
 
-```{r}
-#| code-fold: true
-#| code-summary: "Show the code"
+**3)** A stream's water temperature increases as you move downstream from a shaded headwater spring. At a monitoring station 2 km downstream, the water temperature is 14°C. At a station 5 km downstream, the temperature is 20°C. Assume temperature increases linearly with distance downstream.
 
-vb<-function(a,l,k,t0){
-  l*(1-exp(-k*(a-t0)))
-}
+a) Find the equation for water temperature $T$ (°C) as a function of distance downstream $x$ (km).
+b) Create a plot showing the line. Clearly label the axes, including units, and add a title.
+c) What is the $y$-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence.
 
-x=seq(0,30)
+## Slope as a rate of change
 
-length=vb(x,214.8,.13,-1.62)
-
-p1<-ggplot()+
-  geom_point(aes(x=x,y=length),color="black",size=3)+
-  geom_line(aes(x=x,y=length),color="black",size=2)+
-  theme_bw()+
-  scale_y_continuous(breaks=seq(35,215,5))+
-  scale_x_continuous(breaks=seq(0,32,by=2))+
-  labs(x="Age (years)",y="Length (cm)")
-
-p1
-```
-
-  a) What is the average slope from ages 0 to 8? From 20 to 30?
-    
-  b) What are the units of the average slopes and why would they change for a shark as they get older?
-    
-  c) How would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?
-  
-  
-  ![Picture of a scalloped hammerhead shark.](images/scalloped_hammerhead_shark.jpg)
-
-
-## Exercise 2
-
-A stream's water temperature increases as you move downstream from a shaded headwater spring. At a monitoring station 2 km downstream, the water temperature is 14°C. At a station 5 km downstream, the temperature is 20°C. Assume temperature increases linearly with distance downstream.
-
-(a) Find the equation for water temperature $T$ (°C) as a function of distance downstream $x$ (km).
-(b) Create a plot showing the line. Clearly label the axes, including units, and add a title.
-(c) What is the $y$-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence.
-
-## Exercise 3
-
-Researchers plotted [dissolved oxygen (DO)](https://www.epa.gov/system/files/documents/2021-07/parameter-factsheet_do.pdf) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.
+**4)** Researchers plotted [dissolved oxygen (DO)](https://www.epa.gov/system/files/documents/2021-07/parameter-factsheet_do.pdf) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.
 
 ```{r}
 #| echo: false
@@ -155,12 +124,10 @@ axis(2, at = seq(0, 10, by = 1))
 lines(depth, DO, lwd = 2)
 ```
 
-(a) Write the equation for dissolved oxygen, $DO$, as a function of depth.
-(b) Interpret the slope in a full sentence, including units.
+a) Write the equation for dissolved oxygen, $DO$, as a function of depth.
+b) Interpret the slope in a full sentence, including units.
 
-## Exercise 4
-
-The city has begun a 20-day, round-the-clock grading and paving phase for a highway-widening project that cuts directly through the Westside neighborhood, a community that already bears a disproportionate share of the region's industrial pollution and truck traffic. In response, a community air-quality monitoring group tracked the additional fine particulate matter concentration, $P(t)$ (µg/m³ of PM2.5 above baseline), in the neighborhood's air over the 20 days of that construction phase.
+**5)** The city has begun a 20-day, round-the-clock grading and paving phase for a highway-widening project that cuts directly through the Westside neighborhood, a community that already bears a disproportionate share of the region's industrial pollution and truck traffic. In response, a community air-quality monitoring group tracked the additional fine particulate matter concentration, $P(t)$ (µg/m³ of PM2.5 above baseline), in the neighborhood's air over the 20 days of that construction phase.
 
 :::: {.columns}
 ::: {.column width="35%"}
@@ -190,5 +157,41 @@ segments(2, 8*2-0.4*2^2, 6, 8*6-0.4*6^2, col = "#FEBC11", lwd = 2, lty = 2)
 :::
 ::::
 
-(a) Calculate the average rate of change in additional PM2.5 concentration between day 2 and day 6.
-(b) Write your answer as a full sentence, with units, without overstating certainty.
+a) Calculate the average rate of change in additional PM2.5 concentration between day 2 and day 6.
+b) Write your answer as a full sentence, with units, without overstating certainty.
+
+**6)** The growth of sharks can be modeled using [von Bertalanffy curves](https://en.wikipedia.org/wiki/Von_Bertalanffy_function). Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.
+
+```{r}
+#| code-fold: true
+#| code-summary: "Show the code"
+
+vb<-function(a,l,k,t0){
+  l*(1-exp(-k*(a-t0)))
+}
+
+x=seq(0,30)
+
+length=vb(x,214.8,.13,-1.62)
+
+p1<-ggplot()+
+  geom_point(aes(x=x,y=length),color="black",size=3)+
+  geom_line(aes(x=x,y=length),color="black",size=2)+
+  theme_bw()+
+  scale_y_continuous(breaks=seq(35,215,5))+
+  scale_x_continuous(breaks=seq(0,32,by=2))+
+  labs(x="Age (years)",y="Length (cm)")
+
+p1
+```
+
+a) What is the average slope from ages 0 to 8? From 20 to 30? Include units.
+b) What does the average slope represent in this scenari and why would these slopes change for a shark as they get older? Write you answer in complete sentences.
+c) How would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?
+
+![Scalloped hammerhead shark (Sphyrna lewini) off Costa Rica. [By Kris-Mikael Krister.](https://en.wikipedia.org/wiki/Scalloped_hammerhead#/media/File:Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg) CC BY 2.0 ](images/Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg)
+
+---
+
+
+*All the functions and example data are synthetic and were generated (some with the aid of Claude Code) for the purpose of this lesson.*

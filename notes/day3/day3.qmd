@@ -1,4 +1,4 @@
-# Day 2: Units & Graphs
+# Day 3: exp, logs, and lines
 
 <hr>
 
@@ -10,6 +10,13 @@
 
 **Contents**
 
+- 🌱 The number e and exp()
+- 🪵 Natural logarithms
+- 🐰 Exponential growth
+- 🦠 Logistic growth
+- 📈 Linear functions
+- ↗️ Slope as a rate of change
+-  🚜 Applications from MESM courses
 
 ## Problem set
 
