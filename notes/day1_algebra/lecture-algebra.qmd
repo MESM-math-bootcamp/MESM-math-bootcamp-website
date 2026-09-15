@@ -1370,10 +1370,6 @@ $$
 
 :::
 
-
-
-
-
 ---
 
 ## {#applications data-menu-title="Applications" background-color="#003660"}
@@ -1382,7 +1378,6 @@ $$
 <div class="page-center">
 <div class="custom-subtitle">Applications</div>
 </div>
-
 
 ---
 

@@ -1,4 +1,4 @@
-# Day 3: exp, logs, and lines
+# Day 3: Lines, $e^x$, and Logarithms
 
 <hr>
 
@@ -10,7 +10,7 @@
 
 **Contents**
 
-- 🌱 The number e and exp()
+- 🌱 The number $e$ and $e^x$
 - 🪵 Natural logarithms
 - 🐰 Exponential growth
 - 🦠 Logistic growth
@@ -21,7 +21,7 @@
 ## Problem set
 
 :::{.center-text}
-[**Units & graphs problem set**](day3-problem-set.qmd)
+[**exp, logs and lines problem set**](day3-problem-set.qmd)
 
 ![](/notes/icons/homework-3.png){width=25%}
 
