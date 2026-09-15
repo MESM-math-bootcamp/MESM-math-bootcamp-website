@@ -232,3 +232,5 @@ Slopes are in units of length over age, so the slope indicates the growth in cen
 
 We would need to apply calculus to find the true answer, but we can approximate it reasonably well by finding the smallest possible difference between two points around age 12. In this case we can use $\frac{175-172}{13-12}$ to get an approximate instaneous rate of growth of 3 cm per year. -->
 :::
+
+![Scalloped hammerhead shark (Sphyrna lewini) off Costa Rica. [By Kris-Mikael Krister.](https://en.wikipedia.org/wiki/Scalloped_hammerhead#/media/File:Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg) CC BY 2.0 ](images/Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg)
