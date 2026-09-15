@@ -503,7 +503,7 @@ $$
 
 ---
 
-## {#esm-201-practice-blank data-menu-title="Rules of exponents: practice"}
+## {#exponential-growth-practice data-menu-title="Rules of exponents: practice"}
 
 [Exponential growth]{.slide-title}
 
@@ -519,18 +519,20 @@ where
 - $N_0=$ initial population size = population at $t= 0$
 
 
+✏️ [Take a minute to solve these individually.]{style="color:green;"}
+
 ::: {.body-text-s style="color:green;"}
 (1) What per capita intrinsic growth rate would make the population remain stable across time?
 
-(2) Are the following statements true or false? Explain your reasoning. 
+(2) Are the following statements true or false? Explain your reasoning.
 
-  - If $r=\ln(\frac{1}{2})$, then the population will be half of its original size at $t=2$. 
+  - If $r=\ln(\frac{1}{2})$, then the population will be half of its original size at $t=2$.
 
-  - When $r<0$ the population is growing. 
+  - If $r=\ln(4)$, then the population will be four times its original size at $t=1$.
 
-(3) Assuming $r>0$, when will the population double?
+(3) Make a hypothesis about how $r$ being positive or negative is related to growth or decay of $N(t)$.
 
-(4) In this scenario, the population growth rate $r$ is constant. What environmental constraints could cause the population to increases or decreases at different rates as the population itself grows? I.e. what could cause the growth rate to change together with the population?
+(4) Assuming $r>0$, when will the population double?
 :::
 
 ---
@@ -548,10 +550,10 @@ where
 
   - If $r=\ln(\frac{1}{2})$, then the population will be half of its original size at $t=2$. 
 
-  - When $r<0$ the population is growing. 
+  - If $r=\ln(4)$, then the population will be four times its original size at $t=1$. 
 :::
 
-✏️  [Let's see a solution!]{style="color:green;" .body-text-m}
+✏️  [Let's see a solution!]{style="color:green;"}
 
 ---
 
@@ -562,28 +564,101 @@ where
 <hr>
 
 ::: {style="color:green;"}
-(3) Assuming $r>0$, when will the population double?
+(3) Make a hypothesis about how $r$ being positive or negative is related to growth or decay of $N(t)$.
+
+(4) Assuming $r>0$, when will the population double?
 :::
 
-✏️  [Let's see a solution!]{style="color:green;" .body-text-m}
+✏️  [Let's see a solution!]{style="color:green;"}
 
 ---
 
-## {#exp-growth-solutions-3 data-menu-title="Unit conversions practice"}
+## {#exp-growth-solutions-answer data-menu-title="Exponential growth: Solutions"}
 
-[Exponential growth practice]{.slide-title}
+[Solutions]{.slide-title}
 
 <hr>
 
-::: {style="color:green;"}
-(4) In this scenario, the population growth rate $r$ is constant. What environmental constraints could cause the population to increases or decreases at different rates as the population itself grows? I.e. what could cause the growth rate to change together with the population?
+
+**(1)** A stable population means $N(t)=N_0$ for every $t$, so we need $e^{rt}=1$ for all $t$, which requires $r=0$.
+
+<br>
+
+**(2)**
+
+- *False.* $N(2)=N_0e^{2\ln(1/2)}=N_0\left(\frac{1}{2}\right)^2=\frac{N_0}{4}$, a **quarter** of $N_0$, not a half.
+
+- *True.* $N(1)=N_0e^{\ln(4)}=N_0\cdot 4=4N_0$.
+
+
+**(3)** The sign of $r$ determines whether $N(t)$ **grows** ($r>0$) or **decays** ($r<0$). See the plot on the next slide!
+
+<br>
+
+**(4)** Solve $N_0e^{rt}=2N_0$ for $t$:
+$$
+\small
+e^{rt}=2 \ \Rightarrow \ rt=\ln(2) \ \Rightarrow \ t=\frac{\ln(2)}{r}
+$$
+
+
+
+---
+
+## {#exponential-growth-plot data-menu-title="Rules of exponents: practice"}
+
+[Exponential growth]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="40%"}
+:::{.body-text-s}
+When a population grows at a rate that is directly proportional to its size, we can model the population size at a time $t$ as
+
+$$N(t) = N_0e^{rt}$$
+
+where
+
+- $r=$ per capita intrinsic growth rate
+- $N_0=$ initial population size = population at $t= 0$
 :::
 
-✏️  [Let's see a solution!]{style="color:green;" .body-text-m}
+:::
 
---- 
 
-## {#cant-grow-forever data-menu-title="Can't grow forever"} 
+::: {.column width="60%"}
+
+```{r, echo=FALSE, fig.width=5, fig.height=3.6, out.width="80%", fig.align="center"}
+t <- seq(0, 5, length.out = 200)
+growth_df <- rbind(
+  data.frame(t = t, N = exp(0.6 * t), r = "r > 0"),
+  data.frame(t = t, N = exp(-0.6 * t), r = "r < 0")
+)
+
+ggplot(growth_df, aes(x = t, y = N, color = r)) +
+  geom_line(linewidth = 2, show.legend = FALSE) +
+  scale_color_manual(values = c("r > 0" = "seagreen", "r < 0" = "firebrick")) +
+  annotate("text", x = 3.7, y = exp(0.6 * 3.7) * 1.35, label = "r > 0",
+           color = "seagreen", hjust = 0.5, vjust = 0, size = 6, fontface = "bold") +
+  annotate("text", x = 3.7, y = exp(-0.6 * 3.7) + 1.6, label = "r < 0",
+           color = "firebrick", hjust = 0.5, vjust = 0, size = 6, fontface = "bold") +
+  scale_y_continuous(expand = expansion(mult = c(0.02, 0.1))) +
+  labs(x = "Time (t)", y = "N(t)") +
+  theme_classic() +
+  theme(text = element_text(size = 20), plot.title = element_text(hjust = 0.5))
+```
+
+:::
+
+::::
+
+
+[What environmental constraints could cause the population to not follow exponential growth?]{style="color:green;"}
+
+---
+
+## {#cant-grow-forever data-menu-title="Can't grow forever"}
 
 [But populations can't grow exponentially forever]{.slide-title2}
 
@@ -690,7 +765,7 @@ $$
 
 <hr>
 
-![image: Flaticon.com](images/coffee-break.png)
+![image: Flaticon.com](../day2_functions_graphs/images/coffee-break.png)
 
 ---
 
@@ -712,7 +787,7 @@ $$
 
 
 :::{.center-text}
-[**Algebra problem set**]()
+[**Problem set**]()
 
 ![](/notes/icons/homework.png){width=30%}
 

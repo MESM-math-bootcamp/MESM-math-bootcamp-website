@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nathaniel Grimes, Carmen Galaz García">
 
-<title>solutions_problem_set_limits – Bren Math Workshop</title>
+<title>day3 – Bren Math Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -153,7 +152,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../notes/day3/day3.html">day 3 - linear functions, <span class="math inline">\(e^x\)</span> and <span class="math inline">\(log\)</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -163,29 +162,7 @@ window.Quarto = {
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-body">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Nathaniel Grimes, Carmen Galaz García </p>
-            </div>
-    </div>
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -210,7 +187,7 @@ window.Quarto = {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../notes/day3/day3.html" class="sidebar-item-text sidebar-link">
+  <a href="../../notes/day3/day3.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">day 3 - linear functions, <span class="math inline">\(e^x\)</span> and <span class="math inline">\(log\)</span></span></a>
   </div>
 </li>
@@ -224,7 +201,10 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#limits-and-derivatives-problem-set-solutions" id="toc-limits-and-derivatives-problem-set-solutions" class="nav-link active" data-scroll-target="#limits-and-derivatives-problem-set-solutions">Limits and Derivatives Problem Set Solutions</a></li>
+  <li><a href="#day-2-units-graphs" id="toc-day-2-units-graphs" class="nav-link active" data-scroll-target="#day-2-units-graphs">Day 2: Units &amp; Graphs</a>
+  <ul class="collapse">
+  <li><a href="#problem-set" id="toc-problem-set" class="nav-link" data-scroll-target="#problem-set">Problem set</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -234,201 +214,25 @@ window.Quarto = {
 
 
 
-
-<section id="limits-and-derivatives-problem-set-solutions" class="level1">
-<h1>Limits and Derivatives Problem Set Solutions</h1>
-<p><em>Answer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!</em></p>
-<ol type="1">
-<li>Which of these graphs depict functions and which do not?</li>
-</ol>
-<p><span style="color:blue"> Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function. </span></p>
-<ol start="2" type="1">
-<li>Investigate what is the value of the following limits:</li>
-</ol>
-<ol type="a">
-<li></li>
-</ol>
-<p><span class="math display">\[
-\lim_{x\to -2^-}\frac{4x}{x+2}
-\]</span></p>
-<p><span style="color:blue">To investigate this limit we can evaluate the function <span class="math inline">\(\frac{4x}{x+2}\)</span> from the left with values getting closer to -2. We can see from the approximation below that <span class="math inline">\(y = \frac{4x}{x+2}\)</span> rapidly increases with values closer to -2. So, we can say the limit goes to infinity. </span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">x</td>
-<td style="text-align: right;">-2.5</td>
-<td style="text-align: right;">-2.1</td>
-<td style="text-align: right;">-2.01</td>
-<td style="text-align: right;">-2.001</td>
-<td style="text-align: right;">-2.0001</td>
-<td style="text-align: right;">-2.00001</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">y</td>
-<td style="text-align: right;">20.0</td>
-<td style="text-align: right;">84.0</td>
-<td style="text-align: right;">804.00</td>
-<td style="text-align: right;">8004.000</td>
-<td style="text-align: right;">80004.0000</td>
-<td style="text-align: right;">800003.99999</td>
-</tr>
-</tbody>
-</table>
+<section id="day-2-units-graphs" class="level1">
+<h1>Day 2: Units &amp; Graphs</h1>
+<hr>
+<div class="body-text-m">
+<p><a href="../../notes/day3/day3-slides.html" target="_blank"><strong>Lecture slides</strong></a></p>
 </div>
+<p><strong>Contents</strong></p>
+<section id="problem-set" class="level2">
+<h2 class="anchored" data-anchor-id="problem-set">Problem set</h2>
+<div class="center-text">
+<p><a href="../../notes/day3/day3-problem-set.html"><strong>Units &amp; graphs problem set</strong></a></p>
+<p><img src="../../notes/icons/homework-3.png" class="img-fluid" style="width:25.0%"></p>
 </div>
-<p><span style="color:blue"> We can also plot the function to have a visual understanding of its behavior near -2. </span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="solutions_problem_set_limits_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
-</figure>
+<div class="center-text">
+<p>Solutions are linked through the problem sets.</p>
 </div>
-</div>
-</div>
-<ol start="2" type="a">
-<li></li>
-</ol>
-<p><span class="math display">\[
-\lim_{x\to 3}2^x
-\]</span></p>
-<p><span style="color:blue"> To investigate this limit we can evaluate the function <span class="math inline">\(2^x\)</span> with values of <span class="math inline">\(x\)</span> approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say <span class="math inline">\(\lim_{x\to 3}2^x=8\)</span>. </span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 4%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 10%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">x</td>
-<td style="text-align: right;">2.500000</td>
-<td style="text-align: right;">2.900000</td>
-<td style="text-align: right;">2.99000</td>
-<td style="text-align: right;">2.999000</td>
-<td style="text-align: right;">3.001000</td>
-<td style="text-align: right;">3.010000</td>
-<td style="text-align: right;">3.100000</td>
-<td style="text-align: right;">3.50000</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">y</td>
-<td style="text-align: right;">5.656854</td>
-<td style="text-align: right;">7.464264</td>
-<td style="text-align: right;">7.94474</td>
-<td style="text-align: right;">7.994457</td>
-<td style="text-align: right;">8.005547</td>
-<td style="text-align: right;">8.055644</td>
-<td style="text-align: right;">8.574188</td>
-<td style="text-align: right;">11.31371</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p><span style="color:blue"> We can also graph this function and see it is continuous. So <span class="math inline">\(\lim_{x\to 3}2^x = 2^3 = 8\)</span>. </span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="solutions_problem_set_limits_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<ol start="3" type="1">
-<li>Determine the value of <span class="math inline">\(b\)</span> to make <span class="math inline">\(h(x)\)</span> continuous at <span class="math inline">\(x=-3\)</span>. Explain your reasoning using limits.</li>
-</ol>
-<p><span class="math display">\[
-h(x)=\begin{cases}
-bx^2-\frac{3}{2}x-5 &amp;x&lt;-3 \\
--2x-9 &amp;x\ge-3
-\end{cases}
-\]</span></p>
-<p><span style="color:blue">This function is broken down into two “pieces”: it equals <span class="math inline">\(bx^2 - \frac{3}{2}x - 5\)</span> when <span class="math inline">\(x\)</span> is less than -3, and it equals <span class="math inline">\(-2x-9\)</span> when <span class="math inline">\(x\)</span> is greater or equal to -3. To connect these two pieces and make <span class="math inline">\(h(x)\)</span> continuous we need both pieces to approach the same value at <span class="math inline">\(x=-3\)</span>. In other words, we need that </span></p>
-<p><span style="color:blue"> <span class="math display">\[ -3 = h(x) = \lim_{x\to-3} h(x).\]</span> </span></p>
-<p><span style="color:blue"> Let’s calculate the side limits to see what’s going on with <span class="math inline">\(\lim_{x\to-3} h(x)\)</span>. From the left-hand side we have that </span></p>
-<p><span style="color:blue">xw <span class="math display">\[\lim_{x\to-3^-} h(x) = \lim_{x\to-3^-} bx^2 - \frac{3}{2}x - 5 = 9b + \frac{9}{2}.\]</span> </span></p>
-<p><span style="color:blue">a8670390NCEAS</span></p>
-<p>From the right-hand side we have that </p>
-<p><span style="color:blue"> <span class="math display">\[
-\lim_{x\to-3^+} h(x) = \lim_{x\to-3^+} -2x-9 = -3
-\]</span> </span></p>
-<p><span style="color:blue"> If we want <span class="math inline">\(h(x)\)</span> to be continuous at <span class="math inline">\(x=-3\)</span> we then need </span></p>
-<p><span style="color:blue"> <span class="math display">\[ -3 = h(x) = \lim_{x\to-3^-} h(x) = \lim_{x\to-3^+} h(x) =  9b + \frac{9}{2} \]</span> </span></p>
-<p><span style="color:blue"> Solving this equation we obtain that </span></p>
-<p><span style="color:blue"> <span class="math display">\[
-\begin{align}
-9b=\frac{-5}{2}\\
-b=\frac{-5}{18}.
-\end{align}
-\]</span> </span></p>
-<ol start="4" type="1">
-<li>Let <span class="math inline">\(f(x) = 2x^2+4\)</span>. Calculate <span class="math inline">\(f'(x)\)</span> and <span class="math inline">\(f'(-3)\)</span>.</li>
-</ol>
-<p><span style="color:blue"> <span class="math display">\[\begin{align}
-f(x)  &amp;= 2x^2+4\\
-f'(x) &amp;= 4x\\
-f'(-3) &amp;=4(-3)\\
-      &amp;=-12
-\end{align}\]</span> </span></p>
-<ol start="5" type="1">
-<li>Calculate the derivative of <span class="math inline">\(g(x) = x^4-5x^3+x-5\)</span> at <span class="math inline">\(x=5\)</span>.</li>
-</ol>
-<p><span style="color:blue"> <span class="math display">\[\begin{align}
-g(x) &amp;= x^4-5x^3+x-5 \\
-g'(x) &amp;= 4x^3-15x^2+1 \\
-g'(5) &amp;= 4(5)^3-15(5)^2+1\\
-&amp;=126
-\end{align}\]</span> </span></p>
-<ol start="6" type="1">
-<li>What is the instantaneous rate of change of <span class="math inline">\(h(x) = \frac{5}{x^2}\)</span> at <span class="math inline">\(x=2\)</span>?</li>
-</ol>
-<p><span style="color:blue"> We have that </span></p>
-<p><span style="color:blue"> <span class="math display">\[
-h(x) = \frac{5}{x^2} = 5x^{-2}
-\]</span> </span></p>
-<p><span style="color:blue"> Then, </span></p>
-<p><span style="color:blue"> <span class="math display">\[\begin{align}
-h'(x) &amp; =-10x^{-3}\\
-h'(2) &amp;= -10(2)^{-3}\\
-&amp; = -\frac{10}{8}\\
-&amp;=-1.25.
-\end{align}\]</span> </span></p>
-<ol start="7" type="1">
-<li></li>
-</ol>
-<ol type="a">
-<li><p>Approximate the slope of the tangent line in the graph below at <span class="math inline">\(x=2\)</span>.</p></li>
-<li><p>Write a short paragraph describing how the slope of the tangent line represents the derivative.</p></li>
-</ol>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="solutions_problem_set_limits_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<p><span style="color:blue"> a. First, we draw a tangent line to the graph at <span class="math inline">\(x=2\)</span>, this is the red line plotted with the graph.</span></p>
-<p>Using rise over run we can take two points on the tangent line to find the slope. Let’s use <span class="math inline">\((2,1)\)</span> and <span class="math inline">\((1,-1)\)</span> as our points on the tangent, then </p>
-<p><span style="color:blue"> <span class="math display">\[
-slope=\frac{1- (-1)}{2-1}=2.
-\]</span> </span></p>
-<p><span style="color:blue"> b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative. </span></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

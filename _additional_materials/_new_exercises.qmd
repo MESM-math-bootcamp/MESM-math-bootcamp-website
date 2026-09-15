@@ -53,8 +53,6 @@ where
 
 (1) What per capita intrinsic growth rate would make the population remain stable across time?
 
-
-
 (2) Are the following statements true or false? Explain your reasoning. 
 
 > 2.1 If $r=\ln(\frac{1}{2})$, then the population will be a half of its original size at $t=2$. 

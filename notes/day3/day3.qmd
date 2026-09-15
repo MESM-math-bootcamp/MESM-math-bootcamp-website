@@ -14,7 +14,7 @@
 ## Problem set
 
 :::{.center-text}
-[**Units & graphs problem set**]()
+[**Units & graphs problem set**](day3-problem-set.qmd)
 
 ![](/notes/icons/homework-3.png){width=25%}
 

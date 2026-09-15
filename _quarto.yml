@@ -43,8 +43,8 @@ website:
         href: notes/day1_algebra/day1_algebra.qmd
       - text: day 2 - units and graphs
         href: notes/day2_functions_graphs/day2_functions_graphs.qmd
-      # - text: day 3 - linear functions, $e^x$ and $log$
-      #   href: notes/day3_derivatives/day3_derivatives.qmd
+      - text: day 3 - linear functions, $e^x$ and $log$
+        href: notes/day3/day3.qmd
       # - text: day 4 - limits and derivatives
       #   href: notes/day4_integrals/day4_integrals.qmd
       # - text: day 5 - integrals and differential equations

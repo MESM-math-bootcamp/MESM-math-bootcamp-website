@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Nathaniel Grimes, Carmen Galaz García">
 
-<title>solutions_problem_set_limits – Bren Math Workshop</title>
+<title>day3-problem-set – Bren Math Workshop</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -163,29 +197,7 @@ window.Quarto = {
 </div><i class="bi bi-x-lg quarto-announcement-action"></i></div>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta column-body">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p>Nathaniel Grimes, Carmen Galaz García </p>
-            </div>
-    </div>
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
+<header id="title-block-header" class="quarto-title-block"></header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-full page-navbar">
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
     <div class="sidebar-menu-container"> 
@@ -224,7 +236,14 @@ window.Quarto = {
     <h2 id="toc-title">On this page</h2>
    
   <ul>
-  <li><a href="#limits-and-derivatives-problem-set-solutions" id="toc-limits-and-derivatives-problem-set-solutions" class="nav-link active" data-scroll-target="#limits-and-derivatives-problem-set-solutions">Limits and Derivatives Problem Set Solutions</a></li>
+  <li><a href="#units-problem-set" id="toc-units-problem-set" class="nav-link active" data-scroll-target="#units-problem-set">Units Problem Set</a>
+  <ul class="collapse">
+  <li><a href="#ex-and-logarithms" id="toc-ex-and-logarithms" class="nav-link" data-scroll-target="#ex-and-logarithms"><span class="math inline">\(e^x\)</span> and logarithms</a></li>
+  <li><a href="#linear-functions" id="toc-linear-functions" class="nav-link" data-scroll-target="#linear-functions">Linear functions</a></li>
+  <li><a href="#exercise-2" id="toc-exercise-2" class="nav-link" data-scroll-target="#exercise-2">Exercise 2</a></li>
+  <li><a href="#exercise-3" id="toc-exercise-3" class="nav-link" data-scroll-target="#exercise-3">Exercise 3</a></li>
+  <li><a href="#exercise-4" id="toc-exercise-4" class="nav-link" data-scroll-target="#exercise-4">Exercise 4</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -234,201 +253,221 @@ window.Quarto = {
 
 
 
-
-<section id="limits-and-derivatives-problem-set-solutions" class="level1">
-<h1>Limits and Derivatives Problem Set Solutions</h1>
-<p><em>Answer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!</em></p>
-<ol type="1">
-<li>Which of these graphs depict functions and which do not?</li>
-</ol>
-<p><span style="color:blue"> Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function. </span></p>
-<ol start="2" type="1">
-<li>Investigate what is the value of the following limits:</li>
-</ol>
-<ol type="a">
-<li></li>
-</ol>
-<p><span class="math display">\[
-\lim_{x\to -2^-}\frac{4x}{x+2}
-\]</span></p>
-<p><span style="color:blue">To investigate this limit we can evaluate the function <span class="math inline">\(\frac{4x}{x+2}\)</span> from the left with values getting closer to -2. We can see from the approximation below that <span class="math inline">\(y = \frac{4x}{x+2}\)</span> rapidly increases with values closer to -2. So, we can say the limit goes to infinity. </span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">x</td>
-<td style="text-align: right;">-2.5</td>
-<td style="text-align: right;">-2.1</td>
-<td style="text-align: right;">-2.01</td>
-<td style="text-align: right;">-2.001</td>
-<td style="text-align: right;">-2.0001</td>
-<td style="text-align: right;">-2.00001</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">y</td>
-<td style="text-align: right;">20.0</td>
-<td style="text-align: right;">84.0</td>
-<td style="text-align: right;">804.00</td>
-<td style="text-align: right;">8004.000</td>
-<td style="text-align: right;">80004.0000</td>
-<td style="text-align: right;">800003.99999</td>
-</tr>
-</tbody>
-</table>
+<section id="units-problem-set" class="level1">
+<h1>Units Problem Set</h1>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Instructions
 </div>
 </div>
-<p><span style="color:blue"> We can also plot the function to have a visual understanding of its behavior near -2. </span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="solutions_problem_set_limits_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
-</figure>
+<div class="callout-body-container callout-body">
+<p>Attempt each problem on your own before checking the <a href="day3-problem-set-solutions.qmd.qmd">solutions</a>. Feel free to work with anyone in the cohort after giving the problems a try!</p>
 </div>
 </div>
-</div>
-<ol start="2" type="a">
-<li></li>
-</ol>
-<p><span class="math display">\[
-\lim_{x\to 3}2^x
-\]</span></p>
-<p><span style="color:blue"> To investigate this limit we can evaluate the function <span class="math inline">\(2^x\)</span> with values of <span class="math inline">\(x\)</span> approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say <span class="math inline">\(\lim_{x\to 3}2^x=8\)</span>. </span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<table class="caption-top table table-sm table-striped small">
-<colgroup>
-<col style="width: 4%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 10%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-<col style="width: 12%">
-</colgroup>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">x</td>
-<td style="text-align: right;">2.500000</td>
-<td style="text-align: right;">2.900000</td>
-<td style="text-align: right;">2.99000</td>
-<td style="text-align: right;">2.999000</td>
-<td style="text-align: right;">3.001000</td>
-<td style="text-align: right;">3.010000</td>
-<td style="text-align: right;">3.100000</td>
-<td style="text-align: right;">3.50000</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">y</td>
-<td style="text-align: right;">5.656854</td>
-<td style="text-align: right;">7.464264</td>
-<td style="text-align: right;">7.94474</td>
-<td style="text-align: right;">7.994457</td>
-<td style="text-align: right;">8.005547</td>
-<td style="text-align: right;">8.055644</td>
-<td style="text-align: right;">8.574188</td>
-<td style="text-align: right;">11.31371</td>
-</tr>
-</tbody>
-</table>
-</div>
-</div>
-<p><span style="color:blue"> We can also graph this function and see it is continuous. So <span class="math inline">\(\lim_{x\to 3}2^x = 2^3 = 8\)</span>. </span></p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="solutions_problem_set_limits_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<ol start="3" type="1">
-<li>Determine the value of <span class="math inline">\(b\)</span> to make <span class="math inline">\(h(x)\)</span> continuous at <span class="math inline">\(x=-3\)</span>. Explain your reasoning using limits.</li>
-</ol>
-<p><span class="math display">\[
-h(x)=\begin{cases}
-bx^2-\frac{3}{2}x-5 &amp;x&lt;-3 \\
--2x-9 &amp;x\ge-3
-\end{cases}
-\]</span></p>
-<p><span style="color:blue">This function is broken down into two “pieces”: it equals <span class="math inline">\(bx^2 - \frac{3}{2}x - 5\)</span> when <span class="math inline">\(x\)</span> is less than -3, and it equals <span class="math inline">\(-2x-9\)</span> when <span class="math inline">\(x\)</span> is greater or equal to -3. To connect these two pieces and make <span class="math inline">\(h(x)\)</span> continuous we need both pieces to approach the same value at <span class="math inline">\(x=-3\)</span>. In other words, we need that </span></p>
-<p><span style="color:blue"> <span class="math display">\[ -3 = h(x) = \lim_{x\to-3} h(x).\]</span> </span></p>
-<p><span style="color:blue"> Let’s calculate the side limits to see what’s going on with <span class="math inline">\(\lim_{x\to-3} h(x)\)</span>. From the left-hand side we have that </span></p>
-<p><span style="color:blue">xw <span class="math display">\[\lim_{x\to-3^-} h(x) = \lim_{x\to-3^-} bx^2 - \frac{3}{2}x - 5 = 9b + \frac{9}{2}.\]</span> </span></p>
-<p><span style="color:blue">a8670390NCEAS</span></p>
-<p>From the right-hand side we have that </p>
-<p><span style="color:blue"> <span class="math display">\[
-\lim_{x\to-3^+} h(x) = \lim_{x\to-3^+} -2x-9 = -3
-\]</span> </span></p>
-<p><span style="color:blue"> If we want <span class="math inline">\(h(x)\)</span> to be continuous at <span class="math inline">\(x=-3\)</span> we then need </span></p>
-<p><span style="color:blue"> <span class="math display">\[ -3 = h(x) = \lim_{x\to-3^-} h(x) = \lim_{x\to-3^+} h(x) =  9b + \frac{9}{2} \]</span> </span></p>
-<p><span style="color:blue"> Solving this equation we obtain that </span></p>
-<p><span style="color:blue"> <span class="math display">\[
-\begin{align}
-9b=\frac{-5}{2}\\
-b=\frac{-5}{18}.
-\end{align}
-\]</span> </span></p>
-<ol start="4" type="1">
-<li>Let <span class="math inline">\(f(x) = 2x^2+4\)</span>. Calculate <span class="math inline">\(f'(x)\)</span> and <span class="math inline">\(f'(-3)\)</span>.</li>
-</ol>
-<p><span style="color:blue"> <span class="math display">\[\begin{align}
-f(x)  &amp;= 2x^2+4\\
-f'(x) &amp;= 4x\\
-f'(-3) &amp;=4(-3)\\
-      &amp;=-12
-\end{align}\]</span> </span></p>
-<ol start="5" type="1">
-<li>Calculate the derivative of <span class="math inline">\(g(x) = x^4-5x^3+x-5\)</span> at <span class="math inline">\(x=5\)</span>.</li>
-</ol>
-<p><span style="color:blue"> <span class="math display">\[\begin{align}
-g(x) &amp;= x^4-5x^3+x-5 \\
-g'(x) &amp;= 4x^3-15x^2+1 \\
-g'(5) &amp;= 4(5)^3-15(5)^2+1\\
-&amp;=126
-\end{align}\]</span> </span></p>
+<section id="ex-and-logarithms" class="level2">
+<h2 class="anchored" data-anchor-id="ex-and-logarithms"><span class="math inline">\(e^x\)</span> and logarithms</h2>
+</section>
+<section id="linear-functions" class="level2">
+<h2 class="anchored" data-anchor-id="linear-functions">Linear functions</h2>
 <ol start="6" type="1">
-<li>What is the instantaneous rate of change of <span class="math inline">\(h(x) = \frac{5}{x^2}\)</span> at <span class="math inline">\(x=2\)</span>?</li>
+<li>Find the slope and <span class="math inline">\(y\)</span>-intercept of the following lines.</li>
 </ol>
-<p><span style="color:blue"> We have that </span></p>
-<p><span style="color:blue"> <span class="math display">\[
-h(x) = \frac{5}{x^2} = 5x^{-2}
-\]</span> </span></p>
-<p><span style="color:blue"> Then, </span></p>
-<p><span style="color:blue"> <span class="math display">\[\begin{align}
-h'(x) &amp; =-10x^{-3}\\
-h'(2) &amp;= -10(2)^{-3}\\
-&amp; = -\frac{10}{8}\\
-&amp;=-1.25.
-\end{align}\]</span> </span></p>
-<ol start="7" type="1">
-<li></li>
-</ol>
-<ol type="a">
-<li><p>Approximate the slope of the tangent line in the graph below at <span class="math inline">\(x=2\)</span>.</p></li>
-<li><p>Write a short paragraph describing how the slope of the tangent line represents the derivative.</p></li>
-</ol>
-<div class="cell" data-layout-align="center">
+<!-- TODO: this needs to be expanded into finidng the equation of the lines-->
+<div class="cell">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="dv">2</span><span class="sc">*</span>x<span class="sc">+</span><span class="dv">5</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>w<span class="ot">=</span>(<span class="dv">1</span><span class="sc">/</span><span class="dv">3</span>)<span class="sc">*</span>x<span class="dv">-1</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a>z<span class="ot">=</span>x<span class="fl">-0.5</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>u<span class="ot">=</span><span class="sc">-</span><span class="dv">3</span><span class="sc">*</span>x<span class="sc">+</span><span class="dv">2</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>p1<span class="ot">&lt;-</span><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>y),<span class="at">size=</span><span class="dv">3</span>,<span class="at">color=</span><span class="st">"black"</span>)<span class="sc">+</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>y),<span class="at">size=</span><span class="dv">2</span>,<span class="at">color=</span><span class="st">"black"</span>)<span class="sc">+</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.line =</span> <span class="fu">element_blank</span>())<span class="sc">+</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">15</span>,<span class="dv">2</span>))<span class="sc">+</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>,<span class="at">by=</span><span class="dv">1</span>))<span class="sc">+</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">""</span>,<span class="at">y=</span><span class="st">""</span>)</span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>p2<span class="ot">&lt;-</span><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>w),<span class="at">size=</span><span class="dv">3</span>,<span class="at">color=</span><span class="st">"blue"</span>)<span class="sc">+</span></span>
+<span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>w),<span class="at">size=</span><span class="dv">2</span>,<span class="at">color=</span><span class="st">"blue"</span>)<span class="sc">+</span></span>
+<span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.line =</span> <span class="fu">element_blank</span>())<span class="sc">+</span></span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">3</span>,<span class="dv">3</span>,<span class="dv">1</span>))<span class="sc">+</span></span>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>,<span class="at">by=</span><span class="dv">1</span>))<span class="sc">+</span></span>
+<span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">""</span>,<span class="at">y=</span><span class="st">""</span>)</span>
+<span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-33"><a href="#cb1-33" aria-hidden="true" tabindex="-1"></a>p3<span class="ot">&lt;-</span><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb1-34"><a href="#cb1-34" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb1-35"><a href="#cb1-35" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb1-36"><a href="#cb1-36" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>z),<span class="at">size=</span><span class="dv">3</span>,<span class="at">color=</span><span class="st">"red"</span>)<span class="sc">+</span></span>
+<span id="cb1-37"><a href="#cb1-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>z),<span class="at">size=</span><span class="dv">2</span>,<span class="at">color=</span><span class="st">"red"</span>)<span class="sc">+</span></span>
+<span id="cb1-38"><a href="#cb1-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb1-39"><a href="#cb1-39" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.line =</span> <span class="fu">element_blank</span>())<span class="sc">+</span></span>
+<span id="cb1-40"><a href="#cb1-40" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>,<span class="dv">1</span>))<span class="sc">+</span></span>
+<span id="cb1-41"><a href="#cb1-41" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>,<span class="at">by=</span><span class="dv">1</span>))<span class="sc">+</span></span>
+<span id="cb1-42"><a href="#cb1-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">""</span>,<span class="at">y=</span><span class="st">""</span>)</span>
+<span id="cb1-43"><a href="#cb1-43" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-44"><a href="#cb1-44" aria-hidden="true" tabindex="-1"></a>p4<span class="ot">&lt;-</span><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb1-45"><a href="#cb1-45" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_hline</span>(<span class="at">yintercept=</span><span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_vline</span>(<span class="at">xintercept =</span> <span class="dv">0</span>)<span class="sc">+</span></span>
+<span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>u),<span class="at">size=</span><span class="dv">3</span>,<span class="at">color=</span><span class="st">"darkgreen"</span>)<span class="sc">+</span></span>
+<span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>u),<span class="at">size=</span><span class="dv">2</span>,<span class="at">color=</span><span class="st">"darkgreen"</span>)<span class="sc">+</span></span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme</span>(<span class="at">axis.line =</span> <span class="fu">element_blank</span>())<span class="sc">+</span></span>
+<span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">15</span>,<span class="dv">15</span>,<span class="dv">2</span>))<span class="sc">+</span></span>
+<span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>,<span class="at">by=</span><span class="dv">1</span>))<span class="sc">+</span></span>
+<span id="cb1-53"><a href="#cb1-53" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">""</span>,<span class="at">y=</span><span class="st">""</span>)</span>
+<span id="cb1-54"><a href="#cb1-54" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-55"><a href="#cb1-55" aria-hidden="true" tabindex="-1"></a>cowplot<span class="sc">::</span><span class="fu">plot_grid</span>(p1,p2,p3,p4,<span class="at">labels=</span><span class="fu">c</span>(<span class="st">"A"</span>,<span class="st">"B"</span>,<span class="st">"C"</span>,<span class="st">"D"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
 <div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
+<div>
 <figure class="figure">
-<p><img src="solutions_problem_set_limits_files/figure-html/unnamed-chunk-5-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" width="672"></p>
+<p><img src="day3-problem-set_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid figure-img" width="672"></p>
 </figure>
 </div>
 </div>
 </div>
-<p><span style="color:blue"> a. First, we draw a tangent line to the graph at <span class="math inline">\(x=2\)</span>, this is the red line plotted with the graph.</span></p>
-<p>Using rise over run we can take two points on the tangent line to find the slope. Let’s use <span class="math inline">\((2,1)\)</span> and <span class="math inline">\((1,-1)\)</span> as our points on the tangent, then </p>
-<p><span style="color:blue"> <span class="math display">\[
-slope=\frac{1- (-1)}{2-1}=2.
-\]</span> </span></p>
-<p><span style="color:blue"> b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative. </span></p>
+<ol start="7" type="1">
+<li>The growth of sharks can be modeled using <a href="https://en.wikipedia.org/wiki/Von_Bertalanffy_function">von Bertalanffy curves</a>. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.</li>
+</ol>
+<div class="cell">
+<details class="code-fold">
+<summary>Show the code</summary>
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>vb<span class="ot">&lt;-</span><span class="cf">function</span>(a,l,k,t0){</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>  l<span class="sc">*</span>(<span class="dv">1</span><span class="sc">-</span><span class="fu">exp</span>(<span class="sc">-</span>k<span class="sc">*</span>(a<span class="sc">-</span>t0)))</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">30</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>length<span class="ot">=</span><span class="fu">vb</span>(x,<span class="fl">214.8</span>,.<span class="dv">13</span>,<span class="sc">-</span><span class="fl">1.62</span>)</span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>p1<span class="ot">&lt;-</span><span class="fu">ggplot</span>()<span class="sc">+</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_point</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>length),<span class="at">color=</span><span class="st">"black"</span>,<span class="at">size=</span><span class="dv">3</span>)<span class="sc">+</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>  <span class="fu">geom_line</span>(<span class="fu">aes</span>(<span class="at">x=</span>x,<span class="at">y=</span>length),<span class="at">color=</span><span class="st">"black"</span>,<span class="at">size=</span><span class="dv">2</span>)<span class="sc">+</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>  <span class="fu">theme_bw</span>()<span class="sc">+</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_y_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">35</span>,<span class="dv">215</span>,<span class="dv">5</span>))<span class="sc">+</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="dv">0</span>,<span class="dv">32</span>,<span class="at">by=</span><span class="dv">2</span>))<span class="sc">+</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">"Age (years)"</span>,<span class="at">y=</span><span class="st">"Length (cm)"</span>)</span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>p1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</details>
+<div class="cell-output-display">
+<div>
+<figure class="figure">
+<p><img src="day3-problem-set_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid figure-img" width="672"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol type="a">
+<li><p>What is the average slope from ages 0 to 8? From 20 to 30?</p></li>
+<li><p>What are the units of the average slopes and why would they change for a shark as they get older?</p></li>
+<li><p>How would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/scalloped_hammerhead_shark.jpg" class="img-fluid figure-img"></p>
+<figcaption>Picture of a scalloped hammerhead shark.</figcaption>
+</figure>
+</div>
+</section>
+<section id="exercise-2" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-2">Exercise 2</h2>
+<p>A stream’s water temperature increases as you move downstream from a shaded headwater spring. At a monitoring station 2 km downstream, the water temperature is 14°C. At a station 5 km downstream, the temperature is 20°C. Assume temperature increases linearly with distance downstream.</p>
+<ol type="a">
+<li>Find the equation for water temperature <span class="math inline">\(T\)</span> (°C) as a function of distance downstream <span class="math inline">\(x\)</span> (km).</li>
+<li>Create a plot showing the line. Clearly label the axes, including units, and add a title.</li>
+<li>What is the <span class="math inline">\(y\)</span>-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence.</li>
+</ol>
+</section>
+<section id="exercise-3" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-3">Exercise 3</h2>
+<p>Researchers plotted <a href="https://www.epa.gov/system/files/documents/2021-07/parameter-factsheet_do.pdf">dissolved oxygen (DO)</a> concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.</p>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="day3-problem-set_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<ol type="a">
+<li>Write the equation for dissolved oxygen, <span class="math inline">\(DO\)</span>, as a function of depth.</li>
+<li>Interpret the slope in a full sentence, including units.</li>
+</ol>
+</section>
+<section id="exercise-4" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-4">Exercise 4</h2>
+<p>The city has begun a 20-day, round-the-clock grading and paving phase for a highway-widening project that cuts directly through the Westside neighborhood, a community that already bears a disproportionate share of the region’s industrial pollution and truck traffic. In response, a community air-quality monitoring group tracked the additional fine particulate matter concentration, <span class="math inline">\(P(t)\)</span> (µg/m³ of PM2.5 above baseline), in the neighborhood’s air over the 20 days of that construction phase.</p>
+<div class="columns">
+<div class="column" style="width:35%;">
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(t\)</span> (days)</th>
+<th style="text-align: center;"><span class="math inline">\(P(t)\)</span> (µg/m³)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">14.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">33.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">40.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">33.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">14.4</td>
+</tr>
+</tbody>
+</table>
+</div><div class="column" style="width:65%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="day3-problem-set_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:95.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+<ol type="a">
+<li>Calculate the average rate of change in additional PM2.5 concentration between day 2 and day 6.</li>
+<li>Write your answer as a full sentence, with units, without overstating certainty.</li>
+</ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
