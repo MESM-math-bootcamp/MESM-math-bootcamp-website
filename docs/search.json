@@ -905,59 +905,52 @@
   {
     "objectID": "notes/day3/day3.html",
     "href": "notes/day3/day3.html",
-    "title": "Day 2: Units & Graphs",
+    "title": "Day 3: Lines, \\(e^x\\), and Logarithms",
     "section": "",
-    "text": "Lecture slides\n\nContents\n\n\n\nUnits & graphs problem set\n\n\n\nSolutions are linked through the problem sets.",
+    "text": "Lecture slides\n\nContents\n\n🌱 The number \\(e\\) and \\(e^x\\)\n🪵 Natural logarithms\n🐰 Exponential growth\n🦠 Logistic growth\n📈 Linear functions\n↗️ Slope as a rate of change\n🚜 Applications from MESM courses\n\n\n\n\nexp, logs and lines problem set\n\n\n\nSolutions are linked through the problem sets.",
     "crumbs": [
       "home",
-      "day 3 - linear functions, $e^x$ and $log$"
+      "day 3 - exp, logs, and lines"
     ]
   },
   {
     "objectID": "notes/day3/day3.html#problem-set",
     "href": "notes/day3/day3.html#problem-set",
-    "title": "Day 2: Units & Graphs",
+    "title": "Day 3: Lines, \\(e^x\\), and Logarithms",
     "section": "",
-    "text": "Units & graphs problem set\n\n\n\nSolutions are linked through the problem sets.",
+    "text": "exp, logs and lines problem set\n\n\n\nSolutions are linked through the problem sets.",
     "crumbs": [
       "home",
-      "day 3 - linear functions, $e^x$ and $log$"
+      "day 3 - exp, logs, and lines"
     ]
   },
   {
     "objectID": "notes/day3/day3-problem-set.html",
     "href": "notes/day3/day3-problem-set.html",
-    "title": "Units Problem Set",
+    "title": "\\(e^x\\), Logs, and Lines Problem Set",
     "section": "",
-    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\n\n\n\n\nFind the slope and \\(y\\)-intercept of the following lines.\n\n\n\n\nShow the code\nx=seq(-5,5)\n\ny=2*x+5\n\nw=(1/3)*x-1\n\nz=x-0.5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np2&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=w),size=3,color=\"blue\")+\n  geom_line(aes(x=x,y=w),size=2,color=\"blue\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-3,3,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np3&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=z),size=3,color=\"red\")+\n  geom_line(aes(x=x,y=z),size=2,color=\"red\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,5,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p2,p3,p4,labels=c(\"A\",\"B\",\"C\",\"D\"))\n\n\n\n\n\n\n\n\n\n\nThe growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\nWhat are the units of the average slopes and why would they change for a shark as they get older?\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n\n\n\nPicture of a scalloped hammerhead shark.\n\n\n\n\n\nA stream’s water temperature increases as you move downstream from a shaded headwater spring. At a monitoring station 2 km downstream, the water temperature is 14°C. At a station 5 km downstream, the temperature is 20°C. Assume temperature increases linearly with distance downstream.\n\nFind the equation for water temperature \\(T\\) (°C) as a function of distance downstream \\(x\\) (km).\nCreate a plot showing the line. Clearly label the axes, including units, and add a title.\nWhat is the \\(y\\)-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence.\n\n\n\n\nResearchers plotted dissolved oxygen (DO) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.\n\n\n\n\n\n\n\n\n\n\nWrite the equation for dissolved oxygen, \\(DO\\), as a function of depth.\nInterpret the slope in a full sentence, including units.\n\n\n\n\nThe city has begun a 20-day, round-the-clock grading and paving phase for a highway-widening project that cuts directly through the Westside neighborhood, a community that already bears a disproportionate share of the region’s industrial pollution and truck traffic. In response, a community air-quality monitoring group tracked the additional fine particulate matter concentration, \\(P(t)\\) (µg/m³ of PM2.5 above baseline), in the neighborhood’s air over the 20 days of that construction phase.\n\n\n\n\n\n\\(t\\) (days)\n\\(P(t)\\) (µg/m³)\n\n\n\n\n2\n14.4\n\n\n6\n33.6\n\n\n10\n40.0\n\n\n14\n33.6\n\n\n18\n14.4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalculate the average rate of change in additional PM2.5 concentration between day 2 and day 6.\nWrite your answer as a full sentence, with units, without overstating certainty."
+    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\n1) Forestry officials discover an invasion of an invasive insect in a county park. They estimate the insect population grows exponentially, following \\(N(t) = N_0 e^{rt}\\), where \\(N_0\\) is the initial number of egg masses counted per hectare, and \\(t\\) is time in years since detection.\nAt detection (\\(t=0\\)), officials count \\(N_0 = 150\\) egg masses per hectare. Four years later, the count has grown to \\(400\\) egg masses per hectare.\n\nSolve for the growth rate \\(r\\).\nForestry regulators will impose a mandatory quarantine zone if the population reaches \\(5{,}000\\) egg masses per hectare. Using your value of \\(r\\), solve for the time \\(t\\) at which this threshold will be reached.\nState your answer to (b) as a full sentence.\n\n\n\n\n2) Find the equation of each of the following lines:\n\n\n\n\n\n\n\n\n\n3) A stream’s water temperature increases as you move downstream from a shaded headwater spring. At a monitoring station 2 km downstream, the water temperature is 14°C. At a station 5 km downstream, the temperature is 20°C. Assume temperature increases linearly with distance downstream.\n\nFind the equation for water temperature \\(T\\) (°C) as a function of distance downstream \\(x\\) (km).\nCreate a plot showing the line. Clearly label the axes, including units, and add a title.\nWhat is the \\(y\\)-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence.\n\n\n\n\n4) Researchers plotted dissolved oxygen (DO) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.\n\n\n\n\n\n\n\n\n\n\nWrite the equation for dissolved oxygen, \\(DO\\), as a function of depth.\nInterpret the slope in a full sentence, including units.\n\n5) The growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n#| echo: false\n\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30? Include units.\nWhat does the average slope represent in this scenario and why would these slopes change for a shark as they get older? Write you answers in complete sentences. \n\n\n\n\nScalloped hammerhead shark (Sphyrna lewini) off Costa Rica. By Kris-Mikael Krister. CC BY 2.0\n\n\n\nAll the functions and example data are synthetic and were generated (some with the aid of Claude Code) for the purpose of this lesson."
   },
   {
-    "objectID": "notes/day3/day3-problem-set.html#linear-functions",
-    "href": "notes/day3/day3-problem-set.html#linear-functions",
-    "title": "Units Problem Set",
+    "objectID": "notes/day3/day3-problem-set.html#ex-and-logarithms",
+    "href": "notes/day3/day3-problem-set.html#ex-and-logarithms",
+    "title": "\\(e^x\\), Logs, and Lines Problem Set",
     "section": "",
-    "text": "Find the slope and \\(y\\)-intercept of the following lines.\n\n\n\n\nShow the code\nx=seq(-5,5)\n\ny=2*x+5\n\nw=(1/3)*x-1\n\nz=x-0.5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np2&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=w),size=3,color=\"blue\")+\n  geom_line(aes(x=x,y=w),size=2,color=\"blue\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-3,3,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np3&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=z),size=3,color=\"red\")+\n  geom_line(aes(x=x,y=z),size=2,color=\"red\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,5,1))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p2,p3,p4,labels=c(\"A\",\"B\",\"C\",\"D\"))\n\n\n\n\n\n\n\n\n\n\nThe growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\nWhat are the units of the average slopes and why would they change for a shark as they get older?\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n\n\n\nPicture of a scalloped hammerhead shark."
+    "text": "1) Forestry officials discover an invasion of an invasive insect in a county park. They estimate the insect population grows exponentially, following \\(N(t) = N_0 e^{rt}\\), where \\(N_0\\) is the initial number of egg masses counted per hectare, and \\(t\\) is time in years since detection.\nAt detection (\\(t=0\\)), officials count \\(N_0 = 150\\) egg masses per hectare. Four years later, the count has grown to \\(400\\) egg masses per hectare.\n\nSolve for the growth rate \\(r\\).\nForestry regulators will impose a mandatory quarantine zone if the population reaches \\(5{,}000\\) egg masses per hectare. Using your value of \\(r\\), solve for the time \\(t\\) at which this threshold will be reached.\nState your answer to (b) as a full sentence."
   },
   {
-    "objectID": "notes/day3/day3-problem-set.html#exercise-2",
-    "href": "notes/day3/day3-problem-set.html#exercise-2",
-    "title": "Units Problem Set",
+    "objectID": "notes/day3/day3-problem-set.html#lines-and-linear-functions",
+    "href": "notes/day3/day3-problem-set.html#lines-and-linear-functions",
+    "title": "\\(e^x\\), Logs, and Lines Problem Set",
     "section": "",
-    "text": "A stream’s water temperature increases as you move downstream from a shaded headwater spring. At a monitoring station 2 km downstream, the water temperature is 14°C. At a station 5 km downstream, the temperature is 20°C. Assume temperature increases linearly with distance downstream.\n\nFind the equation for water temperature \\(T\\) (°C) as a function of distance downstream \\(x\\) (km).\nCreate a plot showing the line. Clearly label the axes, including units, and add a title.\nWhat is the \\(y\\)-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence."
+    "text": "2) Find the equation of each of the following lines:\n\n\n\n\n\n\n\n\n\n3) A stream’s water temperature increases as you move downstream from a shaded headwater spring. At a monitoring station 2 km downstream, the water temperature is 14°C. At a station 5 km downstream, the temperature is 20°C. Assume temperature increases linearly with distance downstream.\n\nFind the equation for water temperature \\(T\\) (°C) as a function of distance downstream \\(x\\) (km).\nCreate a plot showing the line. Clearly label the axes, including units, and add a title.\nWhat is the \\(y\\)-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence."
   },
   {
-    "objectID": "notes/day3/day3-problem-set.html#exercise-3",
-    "href": "notes/day3/day3-problem-set.html#exercise-3",
-    "title": "Units Problem Set",
+    "objectID": "notes/day3/day3-problem-set.html#slope-as-a-rate-of-change",
+    "href": "notes/day3/day3-problem-set.html#slope-as-a-rate-of-change",
+    "title": "\\(e^x\\), Logs, and Lines Problem Set",
     "section": "",
-    "text": "Researchers plotted dissolved oxygen (DO) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.\n\n\n\n\n\n\n\n\n\n\nWrite the equation for dissolved oxygen, \\(DO\\), as a function of depth.\nInterpret the slope in a full sentence, including units."
-  },
-  {
-    "objectID": "notes/day3/day3-problem-set.html#exercise-4",
-    "href": "notes/day3/day3-problem-set.html#exercise-4",
-    "title": "Units Problem Set",
-    "section": "",
-    "text": "The city has begun a 20-day, round-the-clock grading and paving phase for a highway-widening project that cuts directly through the Westside neighborhood, a community that already bears a disproportionate share of the region’s industrial pollution and truck traffic. In response, a community air-quality monitoring group tracked the additional fine particulate matter concentration, \\(P(t)\\) (µg/m³ of PM2.5 above baseline), in the neighborhood’s air over the 20 days of that construction phase.\n\n\n\n\n\n\\(t\\) (days)\n\\(P(t)\\) (µg/m³)\n\n\n\n\n2\n14.4\n\n\n6\n33.6\n\n\n10\n40.0\n\n\n14\n33.6\n\n\n18\n14.4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalculate the average rate of change in additional PM2.5 concentration between day 2 and day 6.\nWrite your answer as a full sentence, with units, without overstating certainty."
+    "text": "4) Researchers plotted dissolved oxygen (DO) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.\n\n\n\n\n\n\n\n\n\n\nWrite the equation for dissolved oxygen, \\(DO\\), as a function of depth.\nInterpret the slope in a full sentence, including units.\n\n5) The growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n#| echo: false\n\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30? Include units.\nWhat does the average slope represent in this scenario and why would these slopes change for a shark as they get older? Write you answers in complete sentences. \n\n\n\n\nScalloped hammerhead shark (Sphyrna lewini) off Costa Rica. By Kris-Mikael Krister. CC BY 2.0\n\n\n\nAll the functions and example data are synthetic and were generated (some with the aid of Claude Code) for the purpose of this lesson."
   },
   {
     "objectID": "notes/day2_limits/solutions_problem_set_limits.html",
@@ -2391,21 +2384,21 @@
     "href": "notes/day1_algebra/problem_set_algebra.html",
     "title": "Algebra Problem Set",
     "section": "",
-    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\n\nExpand the following expressions:\n\n\\((x+2)(3x-4)\\)\n\\((x^2-2y)(x+y^3)\\)\n\nSolve for \\(x\\) in the following equations:\n\n\\(2x-4=3x+12\\)\n\\(-6ax+2b=x-5c\\)\n\\(2x^2+3x-4=0\\)\n\\(x^2-2x-5=0\\)\n\n\n\n\n\n\n\n\n\nAn organism’s daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for growth.\n\n\n\nA tank’s mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.\n\n\n\nAt steady state, a watershed’s water balance is \\(0 = P - AET - Q\\), where \\(P\\) is precipitation, \\(AET\\) is actual evapotranspiration (water returned to the atmosphere), and \\(Q\\) is streamflow (water leaving via the river). “Steady state” just means none of these are changing over time. If \\(P = 900\\) mm/y and \\(AET = 550\\) mm/y, solve for \\(Q\\).\n\n\n\n\n\n\n\nThe maximum sustainable yield of a harvested population is \\(H = \\dfrac{rK}{4}\\). If the sustainable harvest is \\(H = 80\\) individuals/year and the carrying capacity is \\(K = 800\\), solve for the intrinsic growth rate \\(r\\).\n\n\n\nThe aridity index \\(AI\\) is given by \\(AI = P/PET\\) where \\(P\\) is mean annyal precipitation and \\(PET\\) is potential evapotranspiration. If \\(AI = 0.35\\) and \\(PET = 1400\\) mm/y, solve for \\(P\\).\n\n\n\nA stock solution is a concentrated “master” solution made at a known, accurate concentration that is meant to be diluted down into weaker “working solutions” for everyday use. How much of a 12% stock solution is needed to make 3 L of a 2% solution?\n\n\n\n\n\n9) Representative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection (RCP 4.5) indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.\nStarting in 2026 (\\(t = 0\\)), an ambitious US policy is modeled to reduce annual carbon emissions along the trajectory \\[f(t) = -\\frac{1}{8}t^2 + 6t + 124\\] where \\(t\\) is years since 2026 and \\(f(t)\\) is US emissions (GT/year). In what year does the US reach zero net carbon emissions?"
+    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\n1) Expand the following expressions:\na) $(x+2)(3x-4)$\n\nb) $(x^2-2y)(x+y^3)$\n2) Solve for \\(x\\) in the following equations:\na) $2x-4=3x+12$\n\nb) $-6ax+2b=x-5c$\n\nc) $2x^2+3x-4=0$\n\nd) $x^2-2x-5=0$\n\n\n\n\n\n\n3) An organism’s daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for growth.\n\n4) A tank’s mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.\n\n5) At steady state, a watershed’s water balance is \\(0 = P - AET - Q\\), where \\(P\\) is precipitation, \\(AET\\) is actual evapotranspiration (water returned to the atmosphere), and \\(Q\\) is streamflow (water leaving via the river). “Steady state” just means none of these are changing over time. If \\(P = 900\\) mm/y and \\(AET = 550\\) mm/y, solve for \\(Q\\).\n\n\n\n\n\n6) The maximum sustainable yield of a harvested population is \\(H = \\dfrac{rK}{4}\\). If the sustainable harvest is \\(H = 80\\) individuals/year and the carrying capacity is \\(K = 800\\), solve for the intrinsic growth rate \\(r\\).\n\n7) The aridity index \\(AI\\) is given by \\(AI = P/PET\\) where \\(P\\) is mean annyal precipitation and \\(PET\\) is potential evapotranspiration. If \\(AI = 0.35\\) and \\(PET = 1400\\) mm/y, solve for \\(P\\).\n\n8) A stock solution is a concentrated “master” solution made at a known, accurate concentration that is meant to be diluted down into weaker “working solutions” for everyday use. How much of a 12% stock solution is needed to make 3 L of a 2% solution?\n\n\n\n\n9) Representative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection (RCP 4.5) indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.\nStarting in 2026 (\\(t = 0\\)), an ambitious US policy is modeled to reduce annual carbon emissions along the trajectory \\[f(t) = -\\frac{1}{8}t^2 + 6t + 124\\] where \\(t\\) is years since 2026 and \\(f(t)\\) is US emissions (GT/year). In what year does the US reach zero net carbon emissions?"
   },
   {
     "objectID": "notes/day1_algebra/problem_set_algebra.html#basics",
     "href": "notes/day1_algebra/problem_set_algebra.html#basics",
     "title": "Algebra Problem Set",
     "section": "",
-    "text": "Expand the following expressions:\n\n\\((x+2)(3x-4)\\)\n\\((x^2-2y)(x+y^3)\\)\n\nSolve for \\(x\\) in the following equations:\n\n\\(2x-4=3x+12\\)\n\\(-6ax+2b=x-5c\\)\n\\(2x^2+3x-4=0\\)\n\\(x^2-2x-5=0\\)"
+    "text": "1) Expand the following expressions:\na) $(x+2)(3x-4)$\n\nb) $(x^2-2y)(x+y^3)$\n2) Solve for \\(x\\) in the following equations:\na) $2x-4=3x+12$\n\nb) $-6ax+2b=x-5c$\n\nc) $2x^2+3x-4=0$\n\nd) $x^2-2x-5=0$"
   },
   {
     "objectID": "notes/day1_algebra/problem_set_algebra.html#applications-from-your-core-mesm-courses",
     "href": "notes/day1_algebra/problem_set_algebra.html#applications-from-your-core-mesm-courses",
     "title": "Algebra Problem Set",
     "section": "",
-    "text": "An organism’s daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for growth.\n\n\n\nA tank’s mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.\n\n\n\nAt steady state, a watershed’s water balance is \\(0 = P - AET - Q\\), where \\(P\\) is precipitation, \\(AET\\) is actual evapotranspiration (water returned to the atmosphere), and \\(Q\\) is streamflow (water leaving via the river). “Steady state” just means none of these are changing over time. If \\(P = 900\\) mm/y and \\(AET = 550\\) mm/y, solve for \\(Q\\).\n\n\n\n\n\n\n\nThe maximum sustainable yield of a harvested population is \\(H = \\dfrac{rK}{4}\\). If the sustainable harvest is \\(H = 80\\) individuals/year and the carrying capacity is \\(K = 800\\), solve for the intrinsic growth rate \\(r\\).\n\n\n\nThe aridity index \\(AI\\) is given by \\(AI = P/PET\\) where \\(P\\) is mean annyal precipitation and \\(PET\\) is potential evapotranspiration. If \\(AI = 0.35\\) and \\(PET = 1400\\) mm/y, solve for \\(P\\).\n\n\n\nA stock solution is a concentrated “master” solution made at a known, accurate concentration that is meant to be diluted down into weaker “working solutions” for everyday use. How much of a 12% stock solution is needed to make 3 L of a 2% solution?"
+    "text": "3) An organism’s daily energy budget splits intake between growth, metabolism, and reproduction: Intake = Growth + Metabolism + Reproduction. If daily intake is 120 kcal, metabolism is 50 kcal, and reproduction is 15 kcal, solve for growth.\n\n4) A tank’s mass balance is Mass in = Mass out + Mass accumulated. If 50 kg entered and 30 kg accumulated, solve for the mass that left.\n\n5) At steady state, a watershed’s water balance is \\(0 = P - AET - Q\\), where \\(P\\) is precipitation, \\(AET\\) is actual evapotranspiration (water returned to the atmosphere), and \\(Q\\) is streamflow (water leaving via the river). “Steady state” just means none of these are changing over time. If \\(P = 900\\) mm/y and \\(AET = 550\\) mm/y, solve for \\(Q\\).\n\n\n\n\n\n6) The maximum sustainable yield of a harvested population is \\(H = \\dfrac{rK}{4}\\). If the sustainable harvest is \\(H = 80\\) individuals/year and the carrying capacity is \\(K = 800\\), solve for the intrinsic growth rate \\(r\\).\n\n7) The aridity index \\(AI\\) is given by \\(AI = P/PET\\) where \\(P\\) is mean annyal precipitation and \\(PET\\) is potential evapotranspiration. If \\(AI = 0.35\\) and \\(PET = 1400\\) mm/y, solve for \\(P\\).\n\n8) A stock solution is a concentrated “master” solution made at a known, accurate concentration that is meant to be diluted down into weaker “working solutions” for everyday use. How much of a 12% stock solution is needed to make 3 L of a 2% solution?"
   },
   {
     "objectID": "notes/day1_algebra/problem_set_algebra.html#scenario",
@@ -2441,28 +2434,28 @@
     "href": "notes/day2_functions_graphs/problem_set_units.html",
     "title": "Units Problem Set",
     "section": "",
-    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\n\n\nConvert 250 ppm to a percentage.\n\n\n\nA water sample is 0.015% contaminant by mass. Express this in ppm.\n\n\n\nA 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\n\n\n\n\n\nConvert 2,300 mL to liters.\nConvert an area of 5.4 km² to m².\nA reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\nA saline stock is 6 g/L. Express this in mg/mL.\n\n\n\nA pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\nA watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\nYou are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n\n\nA city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\n\nWrite one sentence describing what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context."
+    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\n\n1) Convert 250 ppm to a percentage.\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\n\n\n\n4) Convert 2,300 mL to liters.\n5) Convert an area of 5.4 km² to m².\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n8) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n-   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)\n-   **Company B:** 692 liters spilled (94% recovered)\n-   **Company C:** 18.1 gallons spilled (0% recovered)\n\nWhat is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nWrite one sentence describing what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context."
   },
   {
     "objectID": "notes/day2_functions_graphs/problem_set_units.html#percent-ppm-conversions",
     "href": "notes/day2_functions_graphs/problem_set_units.html#percent-ppm-conversions",
     "title": "Units Problem Set",
     "section": "",
-    "text": "Convert 250 ppm to a percentage.\n\n\n\nA water sample is 0.015% contaminant by mass. Express this in ppm.\n\n\n\nA 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?"
+    "text": "1) Convert 250 ppm to a percentage.\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?"
   },
   {
     "objectID": "notes/day2_functions_graphs/problem_set_units.html#unit-conversions",
     "href": "notes/day2_functions_graphs/problem_set_units.html#unit-conversions",
     "title": "Units Problem Set",
     "section": "",
-    "text": "Convert 2,300 mL to liters.\nConvert an area of 5.4 km² to m².\nA reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\nA saline stock is 6 g/L. Express this in mg/mL.\n\n\n\nA pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\nA watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\nYou are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed."
+    "text": "4) Convert 2,300 mL to liters.\n5) Convert an area of 5.4 km² to m².\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n8) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n-   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)\n-   **Company B:** 692 liters spilled (94% recovered)\n-   **Company C:** 18.1 gallons spilled (0% recovered)\n\nWhat is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed."
   },
   {
     "objectID": "notes/day2_functions_graphs/problem_set_units.html#graphs",
     "href": "notes/day2_functions_graphs/problem_set_units.html#graphs",
     "title": "Units Problem Set",
     "section": "",
-    "text": "A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\n\nWrite one sentence describing what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context."
+    "text": "11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nWrite one sentence describing what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context."
   },
   {
     "objectID": "notes/day2_limits/day2_limits.html",
@@ -2498,6 +2491,34 @@
     "title": "Limits and Derivatives Problem Set",
     "section": "",
     "text": "Limits and Derivatives Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\n\n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n\n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n\n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n\n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative."
+  },
+  {
+    "objectID": "notes/day3/day3-problem-set-solutions.html",
+    "href": "notes/day3/day3-problem-set-solutions.html",
+    "title": "Solutions: \\(e^x\\), Logs, and Lines Problem Set",
+    "section": "",
+    "text": "Instructions\n\n\n\nThese are the solutions to the \\(e^x\\), logs, and lines problem set. Click a solution to expand it and try each problem yourself first!\n\n\n\n\n1) Forestry officials discover an invasion of an invasive insect in a county park. They estimate the insect population grows exponentially, following \\(N(t) = N_0 e^{rt}\\), where \\(N_0\\) is the initial number of egg masses counted per hectare, and \\(t\\) is time in years since detection.\nAt detection (\\(t=0\\)), officials count \\(N_0 = 150\\) egg masses per hectare. Four years later, the count has grown to \\(400\\) egg masses per hectare.\n\nSolve for the growth rate \\(r\\).\nForestry regulators will impose a mandatory quarantine zone if the population reaches \\(5{,}000\\) egg masses per hectare. Using your value of \\(r\\), solve for the time \\(t\\) at which this threshold will be reached.\nState your answer to (b) as a full sentence.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) \\[\n\\begin{aligned}\n400 &= 150e^{4r} \\\\\n\\frac{400}{150} &= e^{4r} \\\\\n\\ln\\!\\left(\\frac{400}{150}\\right) &= 4r \\\\\nr &= \\frac{\\ln(2.667)}{4} \\approx 0.245\n\\end{aligned}\n\\]\nb) \\[\n\\begin{aligned}\n5000 &= 150e^{0.245t} \\\\\n\\frac{5000}{150} &= e^{0.245t} \\\\\n\\ln(33.33) &= 0.245t \\\\\nt &= \\frac{\\ln(33.33)}{0.245} \\approx 14.3\n\\end{aligned}\n\\]\nc)\nIf the current growth trend continues, the insect population is expected to reach the quarantine threshold of 5,000 egg masses per hectare about 14.3 years after it was first detected.\n\n\n\n\n\n\n2) Find the slope and \\(y\\)-intercept of the following lines.\n\n\nShow the code\n#|\nx=seq(-5,5)\n\ny=2*x+5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p4,labels=c(\"A\",\"D\"))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\nThe slope for graph A is 2 with a \\(y\\)-intercept of 5.\nThe slope for graph D is -3 with a \\(y\\)-intercept of 2\n\n\n\n3) A stream’s water temperature increases as you move downstream from a shaded headwater spring. At a monitoring station 2 km downstream, the water temperature is 14°C. At a station 5 km downstream, the temperature is 20°C. Assume temperature increases linearly with distance downstream.\n\nFind the equation for water temperature \\(T\\) (°C) as a function of distance downstream \\(x\\) (km).\nCreate a plot showing the line. Clearly label the axes, including units, and add a title.\nWhat is the \\(y\\)-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) Using the two points \\((2, 14)\\) and \\((5, 20)\\):\n\\[\nm = \\frac{20-14}{5-2} = \\frac{6}{3} = 2\n\\]\nUsing point-slope form with \\((2,14)\\): \\[\nT - 14 = 2(x-2) \\ \\Rightarrow \\ T = 2x + 10\n\\]\nb)\n\n\n\n\n\n\n\n\n\nc) The \\(y\\)-intercept is \\(b = 10\\).\n“According to this model, the water at the very start of the stream (right at the headwater spring, 0 km downstream) is predicted to be 10°C.”\n\n\n\n\n\n\n4) Researchers plotted dissolved oxygen (DO) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.\n\n\n\n\n\n\n\n\n\n\nWrite the equation for dissolved oxygen, \\(DO\\), as a function of depth.\nInterpret the slope in a full sentence, including units.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) The line passes through \\((0, 9)\\) and \\((10, 3)\\), so:\n\n\\(y\\)-intercept: \\(9\\)\nslope: \\(\\frac{3-9}{10-0} = \\frac{-6}{10} = -0.6\\)\n\n\\(DO(depth) = -0.6 \\cdot depth + 9\\)\nb)\n“For every additional meter of depth, dissolved oxygen concentration decreases by an average of 0.6 mg/L, starting from a surface concentration of about 9 mg/L.”\n\n\n\n5) The growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\nWhat are the units of the average slopes and why would they change for a shark as they get older?\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na)\nThe average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{155-40}{8-0} = 14.375\\]\nThe average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{210-200}{30-20} =1 \\]\nThis tells us that the average rate of change for sharks between the ages of 0 to 8 was 14.375. For the ages, 20 to 30 the average change was 1.\nb)\nSlopes are in units of length over age, so the slope indicates the growth in centimeters every year. As animals get older, ther slow down their growth. Less energy is spent in growing and more invested in reproductive energy."
+  },
+  {
+    "objectID": "notes/day3/day3-problem-set-solutions.html#ex-and-logarithms",
+    "href": "notes/day3/day3-problem-set-solutions.html#ex-and-logarithms",
+    "title": "Solutions: \\(e^x\\), Logs, and Lines Problem Set",
+    "section": "",
+    "text": "1) Forestry officials discover an invasion of an invasive insect in a county park. They estimate the insect population grows exponentially, following \\(N(t) = N_0 e^{rt}\\), where \\(N_0\\) is the initial number of egg masses counted per hectare, and \\(t\\) is time in years since detection.\nAt detection (\\(t=0\\)), officials count \\(N_0 = 150\\) egg masses per hectare. Four years later, the count has grown to \\(400\\) egg masses per hectare.\n\nSolve for the growth rate \\(r\\).\nForestry regulators will impose a mandatory quarantine zone if the population reaches \\(5{,}000\\) egg masses per hectare. Using your value of \\(r\\), solve for the time \\(t\\) at which this threshold will be reached.\nState your answer to (b) as a full sentence.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) \\[\n\\begin{aligned}\n400 &= 150e^{4r} \\\\\n\\frac{400}{150} &= e^{4r} \\\\\n\\ln\\!\\left(\\frac{400}{150}\\right) &= 4r \\\\\nr &= \\frac{\\ln(2.667)}{4} \\approx 0.245\n\\end{aligned}\n\\]\nb) \\[\n\\begin{aligned}\n5000 &= 150e^{0.245t} \\\\\n\\frac{5000}{150} &= e^{0.245t} \\\\\n\\ln(33.33) &= 0.245t \\\\\nt &= \\frac{\\ln(33.33)}{0.245} \\approx 14.3\n\\end{aligned}\n\\]\nc)\nIf the current growth trend continues, the insect population is expected to reach the quarantine threshold of 5,000 egg masses per hectare about 14.3 years after it was first detected."
+  },
+  {
+    "objectID": "notes/day3/day3-problem-set-solutions.html#lines-and-linear-functions",
+    "href": "notes/day3/day3-problem-set-solutions.html#lines-and-linear-functions",
+    "title": "Solutions: \\(e^x\\), Logs, and Lines Problem Set",
+    "section": "",
+    "text": "2) Find the slope and \\(y\\)-intercept of the following lines.\n\n\nShow the code\n#|\nx=seq(-5,5)\n\ny=2*x+5\n\nu=-3*x+2\n\np1&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=y),size=3,color=\"black\")+\n  geom_line(aes(x=x,y=y),size=2,color=\"black\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-5,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\np4&lt;-ggplot()+\n  geom_hline(yintercept=0)+\n  geom_vline(xintercept = 0)+\n  geom_point(aes(x=x,y=u),size=3,color=\"darkgreen\")+\n  geom_line(aes(x=x,y=u),size=2,color=\"darkgreen\")+\n  theme_bw()+\n  theme(axis.line = element_blank())+\n  scale_y_continuous(breaks=seq(-15,15,2))+\n  scale_x_continuous(breaks=seq(-5,5,by=1))+\n  labs(x=\"\",y=\"\")\n\ncowplot::plot_grid(p1,p4,labels=c(\"A\",\"D\"))\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\nThe slope for graph A is 2 with a \\(y\\)-intercept of 5.\nThe slope for graph D is -3 with a \\(y\\)-intercept of 2\n\n\n\n3) A stream’s water temperature increases as you move downstream from a shaded headwater spring. At a monitoring station 2 km downstream, the water temperature is 14°C. At a station 5 km downstream, the temperature is 20°C. Assume temperature increases linearly with distance downstream.\n\nFind the equation for water temperature \\(T\\) (°C) as a function of distance downstream \\(x\\) (km).\nCreate a plot showing the line. Clearly label the axes, including units, and add a title.\nWhat is the \\(y\\)-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) Using the two points \\((2, 14)\\) and \\((5, 20)\\):\n\\[\nm = \\frac{20-14}{5-2} = \\frac{6}{3} = 2\n\\]\nUsing point-slope form with \\((2,14)\\): \\[\nT - 14 = 2(x-2) \\ \\Rightarrow \\ T = 2x + 10\n\\]\nb)\n\n\n\n\n\n\n\n\n\nc) The \\(y\\)-intercept is \\(b = 10\\).\n“According to this model, the water at the very start of the stream (right at the headwater spring, 0 km downstream) is predicted to be 10°C.”"
+  },
+  {
+    "objectID": "notes/day3/day3-problem-set-solutions.html#slope-as-a-rate-of-change",
+    "href": "notes/day3/day3-problem-set-solutions.html#slope-as-a-rate-of-change",
+    "title": "Solutions: \\(e^x\\), Logs, and Lines Problem Set",
+    "section": "",
+    "text": "4) Researchers plotted dissolved oxygen (DO) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.\n\n\n\n\n\n\n\n\n\n\nWrite the equation for dissolved oxygen, \\(DO\\), as a function of depth.\nInterpret the slope in a full sentence, including units.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) The line passes through \\((0, 9)\\) and \\((10, 3)\\), so:\n\n\\(y\\)-intercept: \\(9\\)\nslope: \\(\\frac{3-9}{10-0} = \\frac{-6}{10} = -0.6\\)\n\n\\(DO(depth) = -0.6 \\cdot depth + 9\\)\nb)\n“For every additional meter of depth, dissolved oxygen concentration decreases by an average of 0.6 mg/L, starting from a surface concentration of about 9 mg/L.”\n\n\n\n5) The growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\nShow the code\nvb&lt;-function(a,l,k,t0){\n  l*(1-exp(-k*(a-t0)))\n}\n\nx=seq(0,30)\n\nlength=vb(x,214.8,.13,-1.62)\n\np1&lt;-ggplot()+\n  geom_point(aes(x=x,y=length),color=\"black\",size=3)+\n  geom_line(aes(x=x,y=length),color=\"black\",size=2)+\n  theme_bw()+\n  scale_y_continuous(breaks=seq(35,215,5))+\n  scale_x_continuous(breaks=seq(0,32,by=2))+\n  labs(x=\"Age (years)\",y=\"Length (cm)\")\n\np1\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30?\nWhat are the units of the average slopes and why would they change for a shark as they get older?\nHow would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na)\nThe average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{155-40}{8-0} = 14.375\\]\nThe average slope from ages 0 to 8 can be calcualted by: \\[ slope = \\frac{210-200}{30-20} =1 \\]\nThis tells us that the average rate of change for sharks between the ages of 0 to 8 was 14.375. For the ages, 20 to 30 the average change was 1.\nb)\nSlopes are in units of length over age, so the slope indicates the growth in centimeters every year. As animals get older, ther slow down their growth. Less energy is spent in growing and more invested in reproductive energy."
   },
   {
     "objectID": "notes/day3/day3-slides.html#title-slide",
@@ -2710,6 +2731,202 @@
     "text": "Let’s take a 10 minute break\n\n\nimage: Flaticon.com"
   },
   {
+    "objectID": "notes/day3/day3-slides.html#lines-title",
+    "href": "notes/day3/day3-slides.html#lines-title",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Linear functions"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#slope-int-blank",
+    "href": "notes/day3/day3-slides.html#slope-int-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Linear functions: slope-intercept form\n\n\n✏️"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#slope-int",
+    "href": "notes/day3/day3-slides.html#slope-int",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Linear functions: slope-intercept form\n\n\nEasiest model to describe linear relationship between two variables!\n\\[\n\\huge\n\\begin{align}\n\\underbrace{y}_{\\text{output}}=\\overbrace{m}^{\\text{Slope}}\\underbrace{x}_{\\text{input}}+\\overbrace{b}^{\\text{$y$ intercept}}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#find-line-eq-blank",
+    "href": "notes/day3/day3-slides.html#find-line-eq-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Finding the equation of a line\n\n\n✏️"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#find-line-eq-2",
+    "href": "notes/day3/day3-slides.html#find-line-eq-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Finding the equation of a line\n\nGiven two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) on the line:\n\n\n\nFind \\(m\\), the slope, by using the two points:\n\n\\[\nm=\\frac{\\Delta y}{\\Delta x}=\\frac{y_2-y_1}{x_2-x_1}.\n\\]\n\nFind \\(b\\), the y-intercept:\n\nSince \\((x_1, y_1)\\) is on the line, it satisfies:\n\\[y_1 = mx_1+ b.\\] We can solve for \\(b\\) to obtain:\n\\[b = y_1 - mx_1.\\]"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#line-equation-practice-1",
+    "href": "notes/day3/day3-slides.html#line-equation-practice-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Equation of a line: practice\n\n\n\nFind the equation of the line that:\n\npasses through \\((3,5)\\) and \\((2,-1)\\).\npasses through \\((2,-5)\\) and has \\(x\\)-intercept equal to 4.\nhas the following graph:\n\n\n\n\n- Make a graph showing the line that passes through (3,-1) and has slope equal to 2."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#line-equation-practice-sol-1",
+    "href": "notes/day3/day3-slides.html#line-equation-practice-sol-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Equation of a line: practice\n\nA. Find the equation of the line that passes through \\((3,5)\\) and \\((2,-1)\\).\n✏️ Let’s see a solution."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#line-equation-practice-sol-2",
+    "href": "notes/day3/day3-slides.html#line-equation-practice-sol-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Equation of a line: practice\n\nB. Find the equation of the line that passes through \\((2,-5)\\) and has \\(x\\)-intercept equal to 4.\n✏️ Let’s see a solution."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#line-equation-practice-3",
+    "href": "notes/day3/day3-slides.html#line-equation-practice-3",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Equation of a line: practice\n\nC. Find the equation of the line that has the following graph:\n✏️ Let’s see a solution."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#line-equation-practice-solutions-summary",
+    "href": "notes/day3/day3-slides.html#line-equation-practice-solutions-summary",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solutions\n\n\nPasses through \\((3,5)\\) and \\((2,-1)\\):\n\n\\[\n\\begin{aligned}\nm &= \\frac{5-(-1)}{3-2} = 6 &\\text{Compute the slope} \\\\\ny - 5 &= 6(x-3) &\\text{Point-slope form using (3,5)} \\\\\ny &= 6x - 13 &\\text{Simplify}\n\\end{aligned}\n\\]\n\nPasses through \\((2,-5)\\) and has \\(x\\)-intercept equal to 4:\n\n\\[\n\\begin{aligned}\nm &= \\frac{0-(-5)}{4-2} = \\frac{5}{2} &\\text{Compute the slope using the } x\\text{-intercept } (4,0) \\\\\ny - 0 &= \\frac{5}{2}(x-4) &\\text{Point-slope form} \\\\\ny &= \\frac{5}{2}x - 10 &\\text{Simplify}\n\\end{aligned}\n\\]\n\nHas the given graph: \\(y = \\frac{3}{2}x+1\\)\n\n\\[\n\\begin{aligned}\n\\text{slope} &= \\frac{\\text{rise}}{\\text{run}} = \\frac{3}{2} &\\text{Read from the graph} \\\\\ny\\text{-intercept} &= 1 &\\text{Read from the graph} \\\\\ny &= \\frac{3}{2}x + 1 &\\text{Equation of the line}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#line-equation-practice-4",
+    "href": "notes/day3/day3-slides.html#line-equation-practice-4",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solutions\n\nMake a graph showing the line that passes through (3,-1) and has slope equal to 2.\n✏️ Let’s see a solution.\n\\[\n\\begin{aligned}\ny - (-1) &= 2(x-3) &\\text{Point-slope form} \\\\\ny &= 2x - 7 &\\text{Simplify}\n\\end{aligned}\n\\]"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#applications-2",
+    "href": "notes/day3/day3-slides.html#applications-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Applications"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#supply-demand-practice",
+    "href": "notes/day3/day3-slides.html#supply-demand-practice",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Supply and demand\n\nA regional market for albacore tuna is described below, where \\(Q\\) is quantity in thousands of pounds sold per week and \\(P\\) is price in $ per pound.\n✏️ Take a minute to solve these individually.\n\n\nA fishery’s weekly supply curve for tuna passes through \\((Q,P) = (0, 20)\\) and \\((100, 70)\\). Find the supply curve \\(S(Q)\\) in slope-intercept form.\n\n\n\nAt a price of $70/lb, weekly quantity demanded is 40 (thousand lbs); at $20/lb, quantity demanded is 140 (thousand lbs). Find the inverse demand equation \\(D(Q)\\).\n\n\n\nPlot \\(S(Q)\\) and \\(D(Q)\\) on the same axes, with quantity on the \\(x\\)-axis and price on the \\(y\\)-axis. Label both axes clearly, including units.\n\n\n\nFind the price and quantity at which supply equals demand and interpret this point in one sentence."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#supply-demand-sol-1",
+    "href": "notes/day3/day3-slides.html#supply-demand-sol-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Supply and demand\n\n\nA fishery’s weekly supply curve for tuna passes through \\((Q,P) = (0, 20)\\) and \\((100, 70)\\). Find the supply curve \\(S(Q)\\) in slope-intercept form.\nAt a price of $70/lb, weekly quantity demanded is 40 (thousand lbs); at $20/lb, quantity demanded is 140 (thousand lbs). Find the inverse demand equation \\(D(Q)\\).\n\n✏️ Let’s see a solution."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#supply-demand-sol-3",
+    "href": "notes/day3/day3-slides.html#supply-demand-sol-3",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Supply and demand\n\n\nPlot \\(S(Q)\\) and \\(D(Q)\\) on the same axes, with quantity on the \\(x\\)-axis and price on the \\(y\\)-axis. Label both axes clearly, including units.\n\n✏️ Let’s see a solution."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#supply-demand-sol-4",
+    "href": "notes/day3/day3-slides.html#supply-demand-sol-4",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Supply and demand\n\n\nFind the price and quantity at which supply equals demand and interpret this point in one sentence.\n\n✏️ Let’s see a solution."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#supply-demand-solutions-summary",
+    "href": "notes/day3/day3-slides.html#supply-demand-solutions-summary",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solutions\n\n\nSupply passes through \\((0,20)\\) and \\((100,70)\\):\n\n\\[\n\\begin{aligned}\nm &= \\frac{70-20}{100-0} = 0.5 &\\text{Compute the slope} \\\\\nS(Q) &= 20 + 0.5Q &\\text{Use the } y\\text{-intercept } (0,20)\n\\end{aligned}\n\\]\n\nDemand passes through \\((Q,P)=(40,70)\\) and \\((140,20)\\):\n\n\\[\n\\begin{aligned}\nm &= \\frac{20-70}{140-40} = -0.5 &\\text{Compute the slope} \\\\\nP &= -0.5Q + c \\Rightarrow 70 = -0.5(40) + c \\Rightarrow c =90 &\\text{Using } (40,70) \\\\\nD(Q) &= 90 - 0.5Q &\\text{Simplify}\n\\end{aligned}\n\\]\n\nSet \\(S(Q) = D(Q)\\):\n\n\\[\n\\begin{aligned}\n20 + 0.5Q &= 90 - 0.5Q &\\text{Set supply equal to demand} \\\\\nQ &= 70 &\\text{Solve for } Q \\\\\nP &= 20 + 0.5(70) = 55 &\\text{Plug into either curve}\n\\end{aligned}\n\\]\nAt a price of $55/lb, fishers supply exactly 70 (thousand lbs/week) of tuna and buyers demand exactly that same amount."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#supply-demand-solutions-2",
+    "href": "notes/day3/day3-slides.html#supply-demand-solutions-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solutions\n\n\n\\(S(Q)\\) and \\(D(Q)\\) plotted together:"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#interpreting-slope",
+    "href": "notes/day3/day3-slides.html#interpreting-slope",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Interpreting the slope"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#avg-rate-of-change-blank",
+    "href": "notes/day3/day3-slides.html#avg-rate-of-change-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Slope (average)\n\n\n\n\nSometimes, it can be useful to find the average rate of change of a function.\n\n✏️"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#avg-rate-of-change",
+    "href": "notes/day3/day3-slides.html#avg-rate-of-change",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Slope (average)\n\n\n\n\nSometimes, it can be useful to find the average rate of change of a function.\nBetween any two points \\((x_1,y_1)\\) and \\((x_2,y_2)\\) on the graph of a function, the slope is found by:\n\n\\[m=\\frac{\\Delta y}{\\Delta x}=\\frac{y_2-y_1}{x_2-x_1}\\]\nSame idea as in a line!"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#slope-roc",
+    "href": "notes/day3/day3-slides.html#slope-roc",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Slope represents rate of change\n\nIce-core data before 1958. Mauna Loa data after 1958.\n\nSource:The Keeling Curve"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#practice-out-loud",
+    "href": "notes/day3/day3-slides.html#practice-out-loud",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Get into the practice of saying the meaning out loud\n\n\nAs if you’re explaining it to someone unfamiliar with the data\nIncluding units\nWithout overstating certainty\n\nFor example:\n\n“Between 1972 and 2020 the price of hobbit homes increased by an average of $2,450 per year”\n\n\ndiffers from\n\n\n“Between 1972 and 2020 the price of hobbit homes increased by $2,450 per year.”"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#slope-practice",
+    "href": "notes/day3/day3-slides.html#slope-practice",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Slope practice\n\n\n✏️ A city has begun a 20-day, round-the-clock grading and paving phase for a highway-widening project that cuts directly through a neighborhood. In response, a community air-quality monitoring group tracked the additional fine particulate matter concentration, \\(P(t)\\) (µg/m³ of PM2.5 above baseline), in the neighborhood’s air over the 20 days of that construction phase.\n\n\n\n\n\n\n\n\\(t\\) (days)\n\\(P(t)\\) (µg/m³)\n\n\n\n\n2\n14.4\n\n\n6\n33.6\n\n\n10\n40.0\n\n\n14\n33.6\n\n\n18\n14.4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalculate the average rate of change in additional PM2.5 concentration between day 2 and day 6. Represent this graphically on the plot.\nWrite your answer as a full sentence, with units, without overstating certainty."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#slope-practice-blank",
+    "href": "notes/day3/day3-slides.html#slope-practice-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Slope practice\n\n\n\n\n\n\\(P(t)\\) measures µg/m³ of PM2.5 above baseline in the neighborhood’s air over the 20 days of that construction phase.\n\n\n\n\n\\(t\\) (days)\n\\(P(t)\\) (µg/m³)\n\n\n\n\n2\n14.4\n\n\n6\n33.6\n\n\n10\n40.0\n\n\n14\n33.6\n\n\n18\n14.4\n\n\n\n\nCalculate the average rate of change in additional PM2.5 concentration between day 2 and day 6. Represent this graphically on the plot.\nWrite your answer as a full sentence, with units, without overstating certainty.\n\n\n\n\n\n\n\n\n\n\n\n\n✏️"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#slope-practice-solution",
+    "href": "notes/day3/day3-slides.html#slope-practice-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Slope practice\n\n\n\n\\[\n\\text{average rate of change} = \\frac{P(6) - P(2)}{6-2} = \\frac{33.6 - 14.4}{4} = \\frac{19.2}{4} = 4.8 \\ \\frac{\\mu\\text{g/m}^3}{\\text{day}}\n\\]\n\n\n\nBetween day 2 and day 6 of the grading phase, additional PM2.5 concentration in the neighborhood increased by an average of 4.8 µg/m³ per day."
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#whole-story",
+    "href": "notes/day3/day3-slides.html#whole-story",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "The average slope of a continuous function rarely tells the whole story"
+  },
+  {
+    "objectID": "notes/day3/day3-slides.html#slope-avg",
+    "href": "notes/day3/day3-slides.html#slope-avg",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Slope can be average or instantaneous\n\n\n\n\nRise over run can always be used to find average rate of change between two parts of a graph\n\n\n\nInstantaneous rate of change leads us to ✨calculus✨."
+  },
+  {
     "objectID": "notes/day3/day3-slides.html#wrapping-up",
     "href": "notes/day3/day3-slides.html#wrapping-up",
     "title": "Bren Math Workshop",
@@ -2728,7 +2945,7 @@
     "href": "notes/day3/day3-slides.html#what-we-covered",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "What we covered today\n\n\n🔢 Algebra review\n🗺️ Solving equations\n✖️ Exponents\n📐 Polynomials\n🐢 Applications from MESM courses"
+    "text": "What we covered today\n\n\n🌱 The number e and exp()\n🐰 Exponential growth\n🦠 Logistic growth\n🪵 Natural logarithms\n📈 Linear functions\n↗️ Slope as a rate of change\n 🚜 Applications from MESM courses"
   },
   {
     "objectID": "notes/day3_derivatives/day3_derivatives.html",
