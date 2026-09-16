@@ -1867,7 +1867,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#warm-up-overview",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Today: Math brain warm up\n\n\n\nAlgebra review\nRules of exponents\nUnits"
+    "text": "Today: Math brain warm up\n\n\n\nAlgebra review\nRules of exponents\nApplications"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#algebra-review",
@@ -2049,7 +2049,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#exponents-rules-blank-1",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Rules and properties of exponents (1)\n\n✏️\n\n\n\nProduct rule:\n\n\n\nQuotient rule:\n\n\n\nAny non-negative \\(x\\) to the power of 0 equals 1:\n\n\n\nNegative exponent means divide:\n\n\n\nFractional exponent means take the \\(n\\)-th root:"
+    "text": "Rules and properties of exponents (1)\n\n✏️\n\n\n\nProduct rule:\n\n\n\nQuotient rule:\n\n\n\nAny non-negative \\(x\\) to the power of 0 equals 1:\n\n\n\nNegative exponent means divide:\nFractional exponent means take the \\(n\\)-th root:"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-rules-blank-2",
@@ -2063,7 +2063,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#exponents-rules-1",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Rules and properties of exponents (1)\n\n\nProduct rule: \\(x^a * x^b = x^{a+b}\\)\n\n\n\nQuotient rule: \\(\\frac{x^a}{x^b} = x^{a-b}, \\ \\ \\text{for } x \\neq 0\\)\n\n\n\nAny non-negative \\(x\\) to the power of 0 equals 1: \\(x^0 = 1, \\ \\ \\text{for } x \\neq 0\\)\n\n\n\nNegative exponent means divide: \\(x^{-a} = \\frac{1}{x^a}, \\ \\ \\text{for } x \\neq 0\\)\n\n\n\nFractional exponent means take the \\(n\\)-th root: \\(x^{\\frac{1}{n}} = \\sqrt[n]{x}\\)"
+    "text": "Rules and properties of exponents (1)\n\n\nProduct rule: \\(x^a * x^b = x^{a+b}\\)\n\n\n\nQuotient rule: \\(\\frac{x^a}{x^b} = x^{a-b}, \\ \\ \\text{for } x \\neq 0\\)\n\n\n\nAny non-negative \\(x\\) to the power of 0 equals 1: \\(x^0 = 1, \\ \\ \\text{for } x \\neq 0\\)\n\n\n\nNegative exponent means divide: \\(x^{-a} = \\frac{1}{x^a}, \\ \\ \\text{for } x \\neq 0\\)\nFractional exponent means take the \\(n\\)-th root: \\(x^{\\frac{1}{n}} = \\sqrt[n]{x}\\)"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-rules-2",
@@ -2084,14 +2084,14 @@
     "href": "notes/day1_algebra/lecture-algebra.html#exponents-practice-set-up",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Exponents practice\n\n\n\n✏️ Simplify the following.\n\n\\(\\frac{6^5}{6^3}\\)\n\n\n\n\\((x^2y)^4\\)\n\n\n\n\\(\\frac{x^5y^6}{xy^2}\\)\n\\(\\frac{24x^6}{12x^{-8}}\\)\n\n\n\\[\n\\begin{array}{|l|l|}\n\\hline\n\\textbf{Rule} & \\textbf{Expression} \\\\\n\\hline\n\\text{Product Rule} & x^{a} \\cdot x^{b} = x^{a+b} \\\\\n\\hline\n\\text{Quotient Rule} & \\frac{x^{a}}{x^{b}} = x^{a-b}, \\quad x \\neq 0 \\\\\n\\hline\n\\text{Zero Exponent} & x^{0} = 1, \\quad x \\neq 0 \\\\\n\\hline\n\\text{Negative Exponent} & x^{-a} = \\frac{1}{x^{a}}, \\quad x \\neq 0 \\\\\n\\hline\n\\text{Fractional Exponent} & x^{\\frac{1}{n}} = \\sqrt[n]{x} \\\\\n\\hline\n\\text{Power of a Power} & (x^{a})^{b} = x^{ab} \\\\\n\\hline\n\\text{Power of a Product} & (xy)^{a} = x^{a}y^{a} \\\\\n\\hline\n\\text{Power of a Quotient} & \\left(\\frac{x}{y}\\right)^{a} = \\frac{x^{a}}{y^{a}} \\\\\n\\hline\n\\text{$n$-th Root Definition} & a = \\sqrt[n]{x} \\quad \\Rightarrow \\quad a^{n} = x \\\\\n\\hline\n\\end{array}\n\\]"
+    "text": "Exponents practice\n\n\n\n✏️ Simplify the following.\n\n\\(\\frac{6^5}{6^3}\\)\n\n\n\n\\((x^2y)^4\\)\n\n\n\n\\(\\frac{x^5y^6}{xy^2}\\)\n\n\n\n\\(\\frac{24x^6}{12x^{-8}}\\)\n\n\n\\[\n\\begin{array}{|l|l|}\n\\hline\n\\textbf{Rule} & \\textbf{Expression} \\\\\n\\hline\n\\text{Product Rule} & x^{a} \\cdot x^{b} = x^{a+b} \\\\\n\\hline\n\\text{Quotient Rule} & \\frac{x^{a}}{x^{b}} = x^{a-b}, \\quad x \\neq 0 \\\\\n\\hline\n\\text{Zero Exponent} & x^{0} = 1, \\quad x \\neq 0 \\\\\n\\hline\n\\text{Negative Exponent} & x^{-a} = \\frac{1}{x^{a}}, \\quad x \\neq 0 \\\\\n\\hline\n\\text{Fractional Exponent} & x^{\\frac{1}{n}} = \\sqrt[n]{x} \\\\\n\\hline\n\\text{Power of a Power} & (x^{a})^{b} = x^{ab} \\\\\n\\hline\n\\text{Power of a Product} & (xy)^{a} = x^{a}y^{a} \\\\\n\\hline\n\\text{Power of a Quotient} & \\left(\\frac{x}{y}\\right)^{a} = \\frac{x^{a}}{y^{a}} \\\\\n\\hline\n\\text{$n$-th Root Definition} & a = \\sqrt[n]{x} \\quad \\Rightarrow \\quad a^{n} = x \\\\\n\\hline\n\\end{array}\n\\]"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#exponents-practice",
     "href": "notes/day1_algebra/lecture-algebra.html#exponents-practice",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Exponents practice\n\n✏️ Let’s see a solution.\n\n\\(\\frac{6^5}{6^3} = 6^{5-3} = 6^2\\)\n\n\n\n\\((x^2y)^4 = (x^2)^4*y^4 = x^8y^4\\)\n\n \n\n\\(\\frac{x^5y^6}{xy^2} = \\frac{x^5}{x}*\\frac{y^6}{y^2} = x^{5-1}*y^{6-2} = x^4y^4 = (xy)^4\\)\n\n \n\n\\(\\frac{24x^6}{12x^{-8}} = 2x^6x^{(-(-8))}=2x^6x^8 = 2x^{6+8} = 2x^{14}\\)"
+    "text": "Exponents practice\n\n✏️ Let’s see a solution.\n\n\\(\\frac{6^5}{6^3} = 6^{5-3} = 6^2\\)\n\n\n\n\\((x^2y)^4 = (x^2)^4*y^4 = x^8y^4\\)\n\n\n\n\\(\\frac{x^5y^6}{xy^2} = \\frac{x^5}{x}*\\frac{y^6}{y^2} = x^{5-1}*y^{6-2} = x^4y^4 = (xy)^4\\)\n\n\n\n\\(\\frac{24x^6}{12x^{-8}} = 2x^6x^{(-(-8))}=2x^6x^8 = 2x^{6+8} = 2x^{14}\\)"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#FOIL",
