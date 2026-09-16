@@ -1,0 +1,20 @@
+---
+sidebar: daily-materials
+execute:
+  freeze: true
+---
+
+# Day 3 partner pairs
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE)
+
+library(tidyverse)
+```
+
+Find your name below to see who'll be your main collaborator today.
+
+```{r}
+read_csv("day3-pairs.csv", show_col_types = FALSE) %>%
+  knitr::kable()
+```

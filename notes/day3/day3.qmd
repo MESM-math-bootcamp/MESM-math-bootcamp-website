@@ -2,6 +2,14 @@
 
 <hr>
 
+## Partner pairs
+
+:::{.center-text}
+[**See who you're paired with today**](day3-pairs.qmd)
+:::
+
+## Session materials
+
 ::: {.body-text-m}
 
 [**Lecture slides**](day3-slides.qmd){target="_blank"}

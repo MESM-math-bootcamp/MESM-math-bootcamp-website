@@ -1,6 +1,6 @@
 ---
 name: lecture-slide-conventions
-description: Conventions for building/editing the revealjs lecture slide decks (lecture-*.qmd, or dayN/dayN-slides.qmd assembled from shared topic partials) in this workshop — slide structure, the exercise → space-to-solve → answer sequence, color/emoji labels, a pandoc gotcha that creates invisible blank slides, cross-folder image path breakage, and unclosed-div warnings that silently swallow every later slide. Use when creating, restructuring, or adding practice problems to any day's lecture slides, or when a render fails/warns or an image doesn't show.
+description: Conventions for building/editing the revealjs lecture slide decks (lecture-*.qmd, or dayN/dayN-slides.qmd assembled from shared topic partials) in this workshop — slide structure, the exercise → space-to-solve → answer sequence (including multi-part scenario exercises), color/emoji labels, R plot styling (large fonts, no .scrollable), a pandoc gotcha that creates invisible blank slides, cross-folder image path breakage, unclosed-div warnings that silently swallow every later slide, and duplicate slide ids. Use when creating, restructuring, or adding practice problems to any day's lecture slides, when generating a plot for a slide, or when a render fails/warns or an image doesn't show.
 ---
 
 # Lecture slide conventions
@@ -26,13 +26,33 @@ The site is mid-restructure: some days are being split into shared, reusable top
 
 ## The exercise → space-to-solve → answer sequence
 
-This is the standard pattern for in-class practice (see `#PEMDAS-practice` → `#PEMDAS-practice-solution-1-answer` as the canonical example, or the `#algebra-practice-*` slides in Day 1):
+This is the standard pattern for in-class practice (see `#PEMDAS-practice` → `#PEMDAS-practice-solution-1-answer` as the canonical example, the `#algebra-practice-*` slides in Day 1, or `#supply-demand-*` in Day 3 for a multi-part scenario exercise):
 
-1. **Exercise slide** — states the problem(s) in full (not paraphrased). Labeled with ✏️ and green text: `✏️ [Take a minute to solve this individually.]{style="color:green;"}` (or "...these individually" for multiple problems).
-2. **Space-to-solve slide(s)** — one per exercise, restating that exercise's full text (so students don't have to flip back to remember it), leaving room for chalkboard work. Labeled with ✏️ and green text: `✏️ [Let's see a solution!]{style="color:green;"}` — this same label is reused here as the cue that solving is about to start, even though the actual worked answer comes on the next slide.
-3. **Answer slide(s)** — full worked solution in LaTeX `aligned` blocks, one step per line, with reasons as `&\text{...}` comments where helpful. When several exercises' solutions can fit together, combine them in a `:::: {.columns}` grid (two per row) rather than spreading one-per-slide — wrap each solution's math in `\small` when doing this.
+1. **Exercise slide** — states the problem(s) in full (not paraphrased). Labeled with ✏️ and green text: `✏️ [Take a minute to solve this individually.]{style="color:green;"}` (or "...these individually" for multiple problems). When the exercise has several numbered sub-parts, list them as `(1) ... (2) ... (3) ...` inside a single `::: {.body-text-s style="color:green;"}` block, separated by `<br>` between items so they don't run together.
+2. **Space-to-solve slide(s)** — restating each exercise's full text (so students don't have to flip back to remember it), leaving room for chalkboard work. Labeled with ✏️ and green text: `✏️ [Let's see a solution!]{style="color:green;"}` — this same label is reused here as the cue that solving is about to start, even though the actual worked answer comes on the next slide. For a multi-part exercise, don't force a rigid one-slide-per-part rule — group sub-parts that are the same *kind* of task onto one slide (e.g. `#supply-demand-sol-1` covers both "find the supply curve" and "find the demand curve" since both are "find the line from two points"), but give a sub-part that's a genuinely different task (e.g. "make a plot", "solve for where they intersect") its own slide.
+3. **Answer slide(s)** — full worked solution in LaTeX `aligned` blocks, one step per line, with reasons as `&\text{...}` comments where helpful. When several exercises' solutions can fit together, combine them in a `:::: {.columns}` grid (two per row) rather than spreading one-per-slide — wrap each solution's math in `\small` when doing this. It's fine to reuse the same generic slide title (e.g. `[Solutions]{.slide-title}`) across more than one answer slide when the solution has to be split (see "Fitting content" below) — the `data-menu-title` still needs to stay unique.
 
 Never merge the exercise-statement slide and the space-to-solve slide into one — they're always separate slides, even when the answer slides get combined onto a single slide.
+
+### Temporarily shelving a drafted slide
+
+To draft a slide but keep it out of the live deck for now (e.g. a wrap-up/concept slide you're not ready to commit to), wrap its `##` heading *and* its content in an HTML comment — but leave the `---` separators on both sides of the comment uncommented, so the slides before and after it still separate correctly:
+
+```
+---
+
+<!-- ## {#shelved-slide-id ...}
+
+[Shelved slide]{.slide-title}
+...
+-->
+
+---
+
+## {#next-real-slide ...}
+```
+
+This is different from the "never put a comment between `---` and `##`" gotcha above — that gotcha is about a *stray* comment creating an accidental empty slide; this is about deliberately commenting out an *entire* slide (heading included) so no phantom slide is created.
 
 ## Pulling exercises from the exercise bank
 
@@ -112,3 +132,18 @@ grep -n '<section id="\|class="columns"' docs/path/to/file.html
 ## Fitting content without shrinking prose
 
 If a slide's content doesn't fit, prefer splitting into more slides over shrinking exercise/explanation text. The one accepted exception is combining several *already-worked* solutions onto one slide, where wrapping each LaTeX block in `\small` inside a `.columns` grid avoids leaving a slide mostly blank — check with the instructor before assuming more than ~4 short solutions will fit on one slide together.
+
+**Do not use the `.scrollable` slide class as a fix for overflowing content** — this repo has explicitly opted out of it, even though it's a real, supported Quarto/revealjs feature. If a solutions slide (worked math + a plot, say) overflows the fixed slide height, split it into multiple slides instead, reusing the same slide title and `.smaller` if needed (e.g. Day 3's `#supply-demand-solutions-summary` holds the algebra for parts (1),(2),(4), while a separate `#supply-demand-solutions-2` right after it holds just the plot for part (3)).
+
+## Duplicate slide ids
+
+Section-divider slides tend to get reused generic titles ("Applications", "Interpreting the slope", etc.) across different topics within the same deck. Since `slide-id` becomes the HTML `id` attribute, giving two divider slides the same id is a real bug (`grep -n '^## {#' path/to/file.qmd | sort | uniq -d` on just the id portion will surface it) — pandoc only warns about it at render time (`[WARNING] Duplicate identifier '...'`) rather than failing, so it's easy to miss. Suffix the repeat with `-2`, `-3`, etc. (e.g. `#applications` and `#applications-2`) rather than leaving the collision.
+
+## R plot styling for slides
+
+Plots generated for these decks (base R `plot()`/`ggplot()`) should use large text, since they're presented to a room, not read up close:
+
+- `cex.lab = 2`, `cex.axis = 2` on `plot()`, and `cex = 2` on any `legend()` call.
+- `lwd = 4` for curves, secant/reference lines, and axis lines drawn via `abline()`.
+
+**Watch for axis-label clipping** once `cex.lab` gets this large — base R's default margins (sized for small text) can cut off a `ylab` at the left edge. Fix by widening the left margin before plotting, e.g. `par(mar = c(5, 6, 2, 2))`.

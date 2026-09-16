@@ -907,7 +907,29 @@
     "href": "notes/day3/day3.html",
     "title": "Day 3: Lines, \\(e^x\\), and Logarithms",
     "section": "",
-    "text": "Lecture slides\n\nContents\n\n🌱 The number \\(e\\) and \\(e^x\\)\n🪵 Natural logarithms\n🐰 Exponential growth\n🦠 Logistic growth\n📈 Linear functions\n↗️ Slope as a rate of change\n🚜 Applications from MESM courses\n\n\n\n\nexp, logs and lines problem set\n\n\n\nSolutions are linked through the problem sets.",
+    "text": "See who you’re paired with today\n\n\n\n\n\nLecture slides\n\nContents\n\n🌱 The number \\(e\\) and \\(e^x\\)\n🪵 Natural logarithms\n🐰 Exponential growth\n🦠 Logistic growth\n📈 Linear functions\n↗️ Slope as a rate of change\n🚜 Applications from MESM courses\n\n\n\n\n\nexp, logs and lines problem set\n\n\n\nSolutions are linked through the problem sets.",
+    "crumbs": [
+      "home",
+      "day 3 - exp, logs, and lines"
+    ]
+  },
+  {
+    "objectID": "notes/day3/day3.html#partner-pairs",
+    "href": "notes/day3/day3.html#partner-pairs",
+    "title": "Day 3: Lines, \\(e^x\\), and Logarithms",
+    "section": "",
+    "text": "See who you’re paired with today",
+    "crumbs": [
+      "home",
+      "day 3 - exp, logs, and lines"
+    ]
+  },
+  {
+    "objectID": "notes/day3/day3.html#session-materials",
+    "href": "notes/day3/day3.html#session-materials",
+    "title": "Day 3: Lines, \\(e^x\\), and Logarithms",
+    "section": "",
+    "text": "Lecture slides\n\nContents\n\n🌱 The number \\(e\\) and \\(e^x\\)\n🪵 Natural logarithms\n🐰 Exponential growth\n🦠 Logistic growth\n📈 Linear functions\n↗️ Slope as a rate of change\n🚜 Applications from MESM courses",
     "crumbs": [
       "home",
       "day 3 - exp, logs, and lines"
@@ -953,774 +975,118 @@
     "text": "4) Researchers plotted dissolved oxygen (DO) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.\n\n\n\n\n\n\n\n\n\n\nWrite the equation for dissolved oxygen, \\(DO\\), as a function of depth.\nInterpret the slope in a full sentence, including units.\n\n5) The growth of sharks can be modeled using von Bertalanffy curves. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.\n\n\n\n\n\n\n\n\n\n\nWhat is the average slope from ages 0 to 8? From 20 to 30? Include units.\nWhat does the average slope represent in this scenario and why would these slopes change for a shark as they get older? Write you answers in complete sentences. \n\n\n\n\nScalloped hammerhead shark (Sphyrna lewini) off Costa Rica. By Kris-Mikael Krister. CC BY 2.0\n\n\n\nAll the functions and example data are synthetic and were generated (some with the aid of Claude Code) for the purpose of this lesson."
   },
   {
-    "objectID": "notes/day2_limits/solutions_problem_set_limits.html",
-    "href": "notes/day2_limits/solutions_problem_set_limits.html",
-    "title": "Limits and Derivatives Problem Set Solutions",
+    "objectID": "notes/day3/day3-pairs.html",
+    "href": "notes/day3/day3-pairs.html",
+    "title": "Day 3 partner pairs",
     "section": "",
-    "text": "Limits and Derivatives Problem Set Solutions\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function. \n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\nTo investigate this limit we can evaluate the function \\(\\frac{4x}{x+2}\\) from the left with values getting closer to -2. We can see from the approximation below that \\(y = \\frac{4x}{x+2}\\) rapidly increases with values closer to -2. So, we can say the limit goes to infinity. \n\n\n\n\n\nx\n-2.5\n-2.1\n-2.01\n-2.001\n-2.0001\n-2.00001\n\n\ny\n20.0\n84.0\n804.00\n8004.000\n80004.0000\n800003.99999\n\n\n\n\n\n We can also plot the function to have a visual understanding of its behavior near -2. \n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n To investigate this limit we can evaluate the function \\(2^x\\) with values of \\(x\\) approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say \\(\\lim_{x\\to 3}2^x=8\\). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nx\n2.500000\n2.900000\n2.99000\n2.999000\n3.001000\n3.010000\n3.100000\n3.50000\n\n\ny\n5.656854\n7.464264\n7.94474\n7.994457\n8.005547\n8.055644\n8.574188\n11.31371\n\n\n\n\n\n We can also graph this function and see it is continuous. So \\(\\lim_{x\\to 3}2^x = 2^3 = 8\\). \n\n\n\n\n\n\n\n\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\nThis function is broken down into two “pieces”: it equals \\(bx^2 - \\frac{3}{2}x - 5\\) when \\(x\\) is less than -3, and it equals \\(-2x-9\\) when \\(x\\) is greater or equal to -3. To connect these two pieces and make \\(h(x)\\) continuous we need both pieces to approach the same value at \\(x=-3\\). In other words, we need that \n \\[ -3 = h(x) = \\lim_{x\\to-3} h(x).\\] \n Let’s calculate the side limits to see what’s going on with \\(\\lim_{x\\to-3} h(x)\\). From the left-hand side we have that \nxw \\[\\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^-} bx^2 - \\frac{3}{2}x - 5 = 9b + \\frac{9}{2}.\\] \na8670390NCEAS\nFrom the right-hand side we have that \n \\[\n\\lim_{x\\to-3^+} h(x) = \\lim_{x\\to-3^+} -2x-9 = -3\n\\] \n If we want \\(h(x)\\) to be continuous at \\(x=-3\\) we then need \n \\[ -3 = h(x) = \\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^+} h(x) =  9b + \\frac{9}{2} \\] \n Solving this equation we obtain that \n \\[\n\\begin{align}\n9b=\\frac{-5}{2}\\\\\nb=\\frac{-5}{18}.\n\\end{align}\n\\] \n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n \\[\\begin{align}\nf(x)  &= 2x^2+4\\\\\nf'(x) &= 4x\\\\\nf'(-3) &=4(-3)\\\\\n      &=-12\n\\end{align}\\] \n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n \\[\\begin{align}\ng(x) &= x^4-5x^3+x-5 \\\\\ng'(x) &= 4x^3-15x^2+1 \\\\\ng'(5) &= 4(5)^3-15(5)^2+1\\\\\n&=126\n\\end{align}\\] \n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n We have that \n \\[\nh(x) = \\frac{5}{x^2} = 5x^{-2}\n\\] \n Then, \n \\[\\begin{align}\nh'(x) & =-10x^{-3}\\\\\nh'(2) &= -10(2)^{-3}\\\\\n& = -\\frac{10}{8}\\\\\n&=-1.25.\n\\end{align}\\] \n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative.\n\n\n\n\n\n\n\n\n\n\n a. First, we draw a tangent line to the graph at \\(x=2\\), this is the red line plotted with the graph.\nUsing rise over run we can take two points on the tangent line to find the slope. Let’s use \\((2,1)\\) and \\((1,-1)\\) as our points on the tangent, then \n \\[\nslope=\\frac{1- (-1)}{2-1}=2.\n\\] \n b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative."
+    "text": "Day 3 partner pairs\nFind your name below to see who’ll be your main collaborator today.\n\n\n\n\n\n\n\n\n\nPartner 1\nPartner 2\n\n\n\n\nAdeline Kikut\nArthur Ethan Gill\n\n\nAlexis Hadinger\nCaroline Sandberg\n\n\nAlexis isabella Vierra\nSophia Rose Girguis\n\n\nAlyssa Marie Ambrosini\nHannah Cravets\n\n\nAndres Flores\nLauren Olivia Pong\n\n\nAnna Lorraine Benjamin\nGabriella sofia Getacho\n\n\nAshley Jordan Caras\nYadhvi garg\n\n\nBailey Thieben\nSpencer Mayer\n\n\nBani BADWAL\nSteve Lee Patterson\n\n\nBrice Bain murray\nJuliet Ann Wall\n\n\nCara Ashley Gutierrez\nHayley elizabeth Willner\n\n\nCasey Andrews\nKatherine Grace Ackley\n\n\nChristianna elizabeth Hadsell\nOrreal Amar\n\n\nChristopher Petersen\nDemitri George Ablakhad\n\n\nCian Michael Matthews-Schott\nRachael Marie Meyer\n\n\nClaire Watson\nSean Lee\n\n\nClara Sophie Fischer\nHuzair Latif\n\n\nCoby Jolish\nNina Katherine Merz\n\n\nColton Danial Joseph Bowers\nRyan William Graul\n\n\nDagny Olivia Bare\nLillie Grace Roberts\n\n\nDaniel Chavez\nSydney Allen\n\n\nDaniela Ceballos\nHannah Catherine Palmer\n\n\nDiego Bier\nJules Kloner\n\n\nElle Mary de Alessandrini\nNicole Wang\n\n\nEmily McFerson\nEve Adelson\n\n\nEva Jacqueline Chahbazian\nZara Khalid\n\n\nGrace Nicole Williams\nIslay Hana Talbot\n\n\nHannah Jurado\nSummer Rose Wilson\n\n\nHelena Econn\nMaranda Jasmine Jordahl\n\n\nJack Ruston Severson\nKayla Venezia Geronimo-Anctil\n\n\nJamie Carol Helmick\nSophia Grace Hermelin\n\n\nJasmine Marie Jackson\nVeronica Eve Lee\n\n\nJasmine Rebollar\nMaya Bhadury\n\n\nJonathan Ryan Hurtik\nMartin Alexander Gonzalez\n\n\nJulia Benko\nLily Byrne\n\n\nKahena Judith Babaci Wilhite\nValeria Viera\n\n\nKaitlin Lindsay Cartwright\nSean Charles Reagan\n\n\nKara Rachel Siglin\nSaif Ali Khan Durrani\n\n\nKatherine James Brook\nKyra Allen\n\n\nKatherine Josephine Stephenson\nMaximillian Ted Gutierrez\n\n\nKatja Mikaela Reinwald\nLorenza Patricia Misel\n\n\nKiana Roman / Valentina Helene Hogenhuis\nVenisha Saxena\n\n\nLeah Hall Stednick\nMagdalene Dayle Sutch\n\n\nMadeline Hill\nMax Joseph Arquilevich\n\n\nMandeera Adithya Wijetunga\nSantiago Dent\n\n\nMaximilian Gustafson Wassmer\nSonya Delilah Adler\n\n\nMiranda Nichole Schmidt\nSophie Alice Hudson\n\n\nOdette Eriantha Finn\nTaylor Clary\n\n\nSuzanne Claire Shilstone\nWesley Kristian Trimble"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#title-slide",
-    "href": "notes/day2_limits/lecture-limits.html#title-slide",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_limits/problem_set_limits.html",
+    "href": "notes/day2_limits/problem_set_limits.html",
+    "title": "Limits and Derivatives Problem Set",
     "section": "",
-    "text": "Limits and Intro to Derivatives\nBren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Math Workshop."
+    "text": "Limits and Derivatives Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\n\n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n\n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n\n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n\n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#tr",
-    "href": "notes/day2_limits/lecture-limits.html#tr",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_limits/day2_limits.html",
+    "href": "notes/day2_limits/day2_limits.html",
+    "title": "Day 2: Limits",
     "section": "",
-    "text": "Team Review\n\n\nHow did everyone feel about the problem set?\nAny questions?\nDiscuss with study partner"
+    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#fun-bake",
-    "href": "notes/day2_limits/lecture-limits.html#fun-bake",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_limits/day2_limits.html#lecture-materials",
+    "href": "notes/day2_limits/day2_limits.html#lecture-materials",
+    "title": "Day 2: Limits",
     "section": "",
-    "text": "Functions are like baking recipes\n\n\n\n\nAssemble all your ingredients.\n\nIn a function, these are the independent variables like \\(x\\).\n\nFollow the instructions to mix, bake, and decorate\n\nThese are the mathematical instructions in the function about how to manipulate the independent variables.\n\nEnd up with final product!\n\nThis is the ouput \\(f(x)\\) or dependent variable.\n\nTypically we use the notation \\(f(x)=x\\), but we can always use different representations like \\(g(x)=x\\) or \\(y=x\\)."
+    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#function-definition",
-    "href": "notes/day2_limits/lecture-limits.html#function-definition",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_limits/day2_limits.html#problem-set",
+    "href": "notes/day2_limits/day2_limits.html#problem-set",
+    "title": "Day 2: Limits",
     "section": "",
-    "text": "What is a function?\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\n🤔 Are these functions?"
+    "text": "Click here to see the problem set."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#continuity",
-    "href": "notes/day2_limits/lecture-limits.html#continuity",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_limits/day2_limits.html#problem-set-solution",
+    "href": "notes/day2_limits/day2_limits.html#problem-set-solution",
+    "title": "Day 2: Limits",
     "section": "",
-    "text": "Continuity\n\nIntuitively, a function is continuous if there are no ‘breaks’ in the graph of the function. This means you are able to draw the whole graph without lifting your pencil.\nTo define it formally we need to understand limits.\n\nA function is discontinuous if it’s not continuous! So there are ‘breaks’ or ‘gaps’ in its graph.\n\n\n\n\nContinuous\n\n\n\n\n\n\n\n\nDiscontinuous"
+    "text": "Solutions"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#limits",
-    "href": "notes/day2_limits/lecture-limits.html#limits",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_functions_graphs/problem_set_units.html",
+    "href": "notes/day2_functions_graphs/problem_set_units.html",
+    "title": "Units Problem Set",
     "section": "",
-    "text": "Limits\n\nDefinition\nWe say a number \\(L\\) is the limit of a function \\(f(x)\\) as its variable \\(x\\) approaches a number \\(c\\), if the function’s output values \\(f(x)\\) approach \\(L\\) when \\(x\\) get closer to \\(c\\).\n\nWe write this symbolically as:\n\\[\n\\large\n\\lim_{x\\to c} f(x)=L\n\\]\n\nWe read this as: “The limit of \\(f(x)\\) as \\(x\\) approaches \\(c\\) is \\(L\\).”"
+    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\n\n1) Convert 250 ppm to a percentage.\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\n\n\n\n4) Convert 2,300 mL to liters.\n5) Convert an area of 5.4 km² to m².\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n8) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n-   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)\n-   **Company B:** 692 liters spilled (94% recovered)\n-   **Company C:** 18.1 gallons spilled (0% recovered)\n\nWhat is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nWrite one sentence describing what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-ex",
-    "href": "notes/day2_limits/lecture-limits.html#lim-ex",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_functions_graphs/problem_set_units.html#percent-ppm-conversions",
+    "href": "notes/day2_functions_graphs/problem_set_units.html#percent-ppm-conversions",
+    "title": "Units Problem Set",
     "section": "",
-    "text": "Example: numerical\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\nWe need to examine the values of \\(f(x)\\) as \\(x\\) gets closer to 2 from both sides.\n\n\n\n\n\n\n\n\n\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, we say that “The limit of \\(2x^2-4\\) as \\(x\\) approaches 2 is 4” and we can write it like this:\n\\[\n\\lim_{x\\to 2}(2x^2-4)=4\n\\]"
+    "text": "1) Convert 250 ppm to a percentage.\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?"
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
-    "href": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_functions_graphs/problem_set_units.html#unit-conversions",
+    "href": "notes/day2_functions_graphs/problem_set_units.html#unit-conversions",
+    "title": "Units Problem Set",
     "section": "",
-    "text": "Example: graph\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, \\(\\lim_{x\\to 2}(2x^2-4)=4\\)."
+    "text": "4) Convert 2,300 mL to liters.\n5) Convert an area of 5.4 km² to m².\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n8) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n-   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)\n-   **Company B:** 692 liters spilled (94% recovered)\n-   **Company C:** 18.1 gallons spilled (0% recovered)\n\nWhat is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#continuity-revisited",
-    "href": "notes/day2_limits/lecture-limits.html#continuity-revisited",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_functions_graphs/problem_set_units.html#graphs",
+    "href": "notes/day2_functions_graphs/problem_set_units.html#graphs",
+    "title": "Units Problem Set",
     "section": "",
-    "text": "Continuity revisited\n\n\n\nA function \\(f(x)\\) is continuous at \\(x=c\\) if\n\\[\n\\lim_{x\\to c}f(x)=f(c).\n\\]\nSo, if a function is continuous, we just need to evaluate the function to obtain the limit.\nExample\n\\(f(x) = 2x^2-4\\) is a continuous function. So we can obtain the limit as \\(x\\to 2\\) by evaluating the function\n\\[\\lim_{x\\to 2}(2x^2-4)= f(2) = 4.\\]"
+    "text": "11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nWrite one sentence describing what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context."
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-defined",
-    "href": "notes/day2_limits/lecture-limits.html#lim-defined",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_functions_graphs/day2_functions_graphs.html",
+    "href": "notes/day2_functions_graphs/day2_functions_graphs.html",
+    "title": "Day 2: Units & Graphs",
     "section": "",
-    "text": "Limit at a discontinuity\n\n\nDiscontinuous functions can still have limits at a discontinuity.\n\nExample\nLet \\[\nf(x) = x+1 , \\text{ if x $\\neq$ 2}\n\\]\n✏️ Draw a graph of \\(f(x)\\). Then try calculating \\(\\lim_{x\\to 2} f(x)\\).\n\n\n\n\n\n\n\n\n\nThe value \\(f(2)\\) may not exist, but we can still find a limit because \\(f(x)\\) consistently approaches 3 from both directions as \\(x\\to 2\\)."
+    "text": "See who you’re paired with today\n\n\n\n\n\nLecture slides\n\nContents\n\n📏 Metric prefixes\n🧊 Area & volume conversions\n⚖️ Dimensional analysis (unit conversions)\n🧪 Parts per million (ppm)\n🧩 Definition of functions\n📈 \\(x\\) and \\(y\\) intercepts\n📊 Graphing\n🐟 Applications to MESM courses\n\n\n\n\n\nUnits & graphs problem set\n\n\n\nSolutions are linked through the problem sets.",
+    "crumbs": [
+      "home",
+      "day 2 - units and graphs"
+    ]
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#lim-discon",
-    "href": "notes/day2_limits/lecture-limits.html#lim-discon",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_functions_graphs/day2_functions_graphs.html#partner-pairs",
+    "href": "notes/day2_functions_graphs/day2_functions_graphs.html#partner-pairs",
+    "title": "Day 2: Units & Graphs",
     "section": "",
-    "text": "No limit at a discontinuity\n\n\nBut other times discontinuous functions don’t have a limit at a discontinuity.\n\nExample\nThe function \\(|x|\\) is the absolute value function. It is such that\n\\[\n|x| =\n\\begin{cases}\nx, & \\text{ if } x\\geq 0 \\\\\n-x, & \\text{ if } x &lt;0\n\\end{cases}\n.\n\\]\n\n\n✏️ Is the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\n✏️ Try calculating: \\[\n\\lim_{x\\to 2}\\frac{|x-2|}{x-2}.\n\\]\n\nHint: Try to do numerical approximations or draw the graph of this function."
+    "text": "See who you’re paired with today",
+    "crumbs": [
+      "home",
+      "day 2 - units and graphs"
+    ]
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#mean-girls",
-    "href": "notes/day2_limits/lecture-limits.html#mean-girls",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_functions_graphs/day2_functions_graphs.html#session-materials",
+    "href": "notes/day2_functions_graphs/day2_functions_graphs.html#session-materials",
+    "title": "Day 2: Units & Graphs",
     "section": "",
-    "text": "No limit at a discontinuity\n\nIs the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\nThis function is not even defined at \\(x=2\\) since it would require us to divide by zero, which is undefined.\n\n\nTry calculating \\(\\lim_{x\\to 2}\\frac{|x-2|}{x-2}\\).\nLet’s investigate:"
+    "text": "Lecture slides\n\nContents\n\n📏 Metric prefixes\n🧊 Area & volume conversions\n⚖️ Dimensional analysis (unit conversions)\n🧪 Parts per million (ppm)\n🧩 Definition of functions\n📈 \\(x\\) and \\(y\\) intercepts\n📊 Graphing\n🐟 Applications to MESM courses",
+    "crumbs": [
+      "home",
+      "day 2 - units and graphs"
+    ]
   },
   {
-    "objectID": "notes/day2_limits/lecture-limits.html#graph",
-    "href": "notes/day2_limits/lecture-limits.html#graph",
-    "title": "Bren Math Workshop",
+    "objectID": "notes/day2_functions_graphs/day2_functions_graphs.html#problem-set",
+    "href": "notes/day2_functions_graphs/day2_functions_graphs.html#problem-set",
+    "title": "Day 2: Units & Graphs",
     "section": "",
-    "text": "No limit at a discontinuity\n\nThe function \\(\\frac{|x-2|}{x-2}\\) approaches different values from either side at \\(x=2\\).\n\n\n\nTherefore… the limit does not exist!"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#side-limits",
-    "href": "notes/day2_limits/lecture-limits.html#side-limits",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Side limits\n\nThough the function \\(f(x) = \\frac{|x-2|}{x-2}\\) had no limit at \\(x=2\\), it clearly was approaching certain values when we considered only values of \\(x\\) from one side or the other:\n\n\n\n\n\n\n\n\n\n\n\nIn this case we say that\n\n\n\\[\n\\lim_{x\\to 2^-} f(x) = -1\n\\]\nThe limit of \\(f(x)\\) as \\(x\\) approaches 2 from the left is -1.\n\nNotice the small - subscript on the 2.\n\n\\[\n\\lim_{x\\to 2^+} f(x) = 1\n\\]\nThe limit of \\(f(x)\\) as \\(x\\) approaches 2 from the right is 1.\n\nNotice the small + subscript on the 2."
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta",
-    "href": "notes/day2_limits/lecture-limits.html#ta",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Team Assessment"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-1",
-    "href": "notes/day2_limits/lecture-limits.html#ta-1-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Task 1: Match the graphs (a,b,c) with the limits (1,2,3).\n\nPart 1:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to3}g(x)=0\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to-4}g(x)=3\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3} g(x)= \\text{DNE}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-2",
-    "href": "notes/day2_limits/lecture-limits.html#ta-1-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Part 2:\n\n2) Can you think of examples where discontinuous functions might exist in environmental science?\n\n3) As a team, draw graphs to exemplify two of these statements:\n\n\\(\\lim_{x\\to 4^-} f(x)\\) and \\(\\lim_{x\\to 4^+}f(x)\\) are both infinite\n\\(\\lim_{x\\to 3} f(x)=2\\), but \\(f(3)=0\\)\n\\(\\lim_{x\\to 5^-} f(x)=4\\) and \\(\\lim_{x\\to 5^+} f(x)=2\\)\n\\(\\lim_{x\\to -3} f(x)=-5\\) but \\(f(-3)=-5\\)"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#intro-derv",
-    "href": "notes/day2_limits/lecture-limits.html#intro-derv",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Introduction to Derivatives"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#alltogether",
-    "href": "notes/day2_limits/lecture-limits.html#alltogether",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Putting it all together\n\nRecall average and instantaneous rate of change\n\nTaking the average rate of change to a set limit will eventually converge to the instantaneous."
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#average-slope",
-    "href": "notes/day2_limits/lecture-limits.html#average-slope",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Average slope\n\n\nStart with:\n\nNearby point:\n\nAverage slope:"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#average-slope-filled",
-    "href": "notes/day2_limits/lecture-limits.html#average-slope-filled",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Average slope\n\n\nStart with a point \\((x,f(x))\\) on the graph.\nA nearby point can be \\((x+\\Delta x, f(x+\\Delta x))\\), where \\(\\Delta x\\) is a short distance from \\(x\\).\n\nThe average slope between \\((x,f(x))\\) and \\((x+\\Delta x, f(x+\\Delta x))\\) is given by\n \\[\\text{average slope} = \\frac{f(x+\\Delta x) - f(x)}{(x+\\Delta x)-x} = \\frac{f(x+\\Delta x) - f(x)}{\\Delta x}.\\] \nWhat happens when \\(\\Delta x\\) becomes smaller and smaller?"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-1",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "What happens when \\(\\Delta x \\to 0\\)?"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-2",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "What happens when \\(\\Delta x \\to 0\\)?"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-3",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-3",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "What happens when \\(\\Delta x \\to 0\\)?"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-4",
-    "href": "notes/day2_limits/lecture-limits.html#walkthrough-4",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "What happens when \\(\\Delta x \\to 0\\)?"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#tangent",
-    "href": "notes/day2_limits/lecture-limits.html#tangent",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Tangent lines\n\nWhat if we let \\(\\Delta x=0\\)?\nThen we would have a slope line that only touches the graph at exactly \\(x\\). \n\n\nThese very special types of lines are called tangent lines."
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#recap",
-    "href": "notes/day2_limits/lecture-limits.html#recap",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Derivative definition\n\nRemember the slope of the line that passes between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) is:\n\\[\\text{slope}=\\frac{y_2-y_1}{x_2-x_1}.\\]\n\nIf we have a function \\(f(x)\\), then \\((x,f(x))\\) represents a point on its graph.\n\n\nChoose a different point on the graph that is \\(\\Delta x\\) away: \\((x+\\Delta x,f(x+\\Delta x))\\).\n\n\nPlug these pointson the graph of \\(f(x)\\) into the slope equation:\n\\[\n\\text{slope}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}.\n\\]\n\n\nWhen we let \\(\\Delta x \\to 0\\) we get the slope of the tangent line at \\(x\\)\n \\[\n\\large\nf'(x)=\\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\] \nThis is the derivative of \\(f\\) at \\(x\\). Also denoted \\(\\frac{df}{dx}\\)."
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#deriv9",
-    "href": "notes/day2_limits/lecture-limits.html#deriv9",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Artwork by Allison Horst"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-func",
-    "href": "notes/day2_limits/lecture-limits.html#diff-func",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Not all functions are differentiable\n\n\nAll differentiable functions are continuous, but not all continuous functions are differentiable.\n\n\n\nThe absolute value function \\(|x|\\) is one example, this is defined by \\[|x| =\n\\begin{cases}\nx  &, x \\geq 0\\\\\n-x &, x&lt;0\n\\end{cases}.\\]\n\nIt’s graph is:"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#calc",
-    "href": "notes/day2_limits/lecture-limits.html#calc",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Calculus and derivatives are used to study change"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#envs-change",
-    "href": "notes/day2_limits/lecture-limits.html#envs-change",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Environmental Science studies change"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#envs-change2",
-    "href": "notes/day2_limits/lecture-limits.html#envs-change2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Environmental Science studies change"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#envs-change3",
-    "href": "notes/day2_limits/lecture-limits.html#envs-change3",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Environmental Science studies change"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1-blank",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-1-blank",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Rules for differentiation (1)\n\nConstant Rule\n     \nPower Rule"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Rules for differentiation (1)\n\nConstant Rule\nLet \\(c\\) be a constant (so, a number). If \\(f(x) = c\\), then \\(f'(x)=0\\). Equivalently\n\\[\\frac{d}{dx}c = 0\\]\nPower Rule\nLet \\(n\\) be a (real) number, if \\(f(x)= x^n\\), then \\(f'(x) = nx^{n-1}\\). Equivalently \\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}.\n\\]\n\nExamples\n\\[\n\\begin{align}\n&y=100 & &f(x)=x^5 & &f(x)=\\frac{1}{x^2}\n\\end{align}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2-blank",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-2-blank",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Rules for differentiation (2)\n\nSum and Difference Rules"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Rules for differentiation (2)\n\nSum and Difference Rules\nLet \\(f(x)\\) and \\(g(x)\\) be differentiable functions. Then \\[\n\\begin{align}\n\\frac{d}{dx}[f(x)+g(x)]=\\frac{d}{dx}f(x)+\\frac{d}{dx}g(x) \\\\\n\\frac{d}{dx}[f(x)-g(x)]=\\frac{d}{dx}f(x)-\\frac{d}{dx}g(x)\n\\end{align}\n\\]\n😵All this says is: if the function has pieces that are added or subtracted you can take the derivative of each individual piece and add those derivatives.\n\nExample\n\\[\nf(x)=x^3-x^2-15\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3-blank",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-3-blank",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-3",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule\nThe derivative of a constant \\(c\\) multiplied by a function \\(f(x)\\) is the same as the constant multiplied by the derivative:\n\\[\\frac{d}{dx}[kf(x)] = k\\frac{d}{dx}f(x)\\]\n\nExample\n\\[\ny=x^2+\\sqrt{2}x-\\frac{8}{x}+4\n\\]"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
-    "href": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Summary of differentiation rules\n\n\n\n\n\n\n\n\n\nDifferentiation Rule\n\\(f'(x)\\) notation\n\\(\\frac{d}{dx}\\) notation\n\n\n\n\nConstant Rule\n\\(f(x)=c \\Rightarrow f'(x)=0\\)\n\\(\\frac{d}{dx}[c]=0\\)\n\n\nPower Rule\n\\(f(x)=x^n \\Rightarrow f'(x)=n x^{n-1}\\)\n\\(\\frac{d}{dx}[x^n]=n x^{n-1}\\)\n\n\nSum Rule\n\\((g(x)+h(x))'=g'(x)+h'(x)\\)\n\\(\\frac{d}{dx}[g(x)+h(x)]=\\frac{d}{dx}g(x)+\\frac{d}{dx}h(x)\\)\n\n\nDifference Rule\n\\((g(x)-h(x))' = g'(x)-h'(x)\\)\n\\(\\frac{d}{dx}[g(x)-h(x)]=\\frac{d}{dx}g(x)-\\frac{d}{dx}h(x)\\)\n\n\nConstant Multiplier Rule\n\\((c\\cdot g(x))'=c\\,g'(x)\\)\n\\(\\frac{d}{dx}[c\\,g(x)]=c\\,\\frac{d}{dx}g(x)\\)"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#ta-2",
-    "href": "notes/day2_limits/lecture-limits.html#ta-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Team Assessment"
-  },
-  {
-    "objectID": "notes/day2_limits/lecture-limits.html#gta2-1",
-    "href": "notes/day2_limits/lecture-limits.html#gta2-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "As a team, list 3 fields of environmental science where studying the rate of change and derivatives would be important.\n\n\n\nWhich rules should you use to take these derivatives?\n\n\\[\n\\begin{align}\n\\text{A)  }& f(x)=3x^4 &\\text{B) }  y=4x^2+3x-16\n\\end{align}\n\\]\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=7x+4 & &\\text{C) }g(y)=\\sqrt{y}\n\\end{align}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/solutions_problem_set_units.html",
-    "href": "notes/day2_functions_graphs/solutions_problem_set_units.html",
-    "title": "Solutions: Units Problem Set",
-    "section": "",
-    "text": "Instructions\n\n\n\nThese are the solutions to the units problem set. Click a solution to expand it and try each problem yourself first!\n\n\n\n\n1) Convert 250 ppm to a percentage.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n250 ppm\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Divide by 10,000 to convert ppm to percent\n\\[\n250 \\text{ ppm} = \\frac{250}{10{,}000}\\% = 0.025\\%\n\\]\nAnswer\n\\[\n\\boxed{0.025\\%}\n\\]\n\n\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n0.015% contaminant by mass\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Multiply by 10,000 to convert percent to ppm\n\\[\n0.015\\% \\times 10{,}000 = 150 \\text{ ppm}\n\\]\nAnswer\n\\[\n\\boxed{150 \\text{ ppm}}\n\\]\n\n\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\nHeavy metal mass: \\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nRatio: \\[\n\\frac{12\\ \\text{g}}{0.19\\ \\text{g}} \\approx 63.2 : 1\n\\]\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nSample mass = 500 g\nOrganic matter = 2.4% by mass\nHeavy metal = 380 ppm by mass\n\nStep 1: Find the mass of organic matter\n\\[\n500\\ \\text{g} \\times 2.4\\% = 500 \\text{g} * 2.4 / 100 = 12\\ \\text{g}\n\\]\nStep 2: Find the mass of heavy metal\n\\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nStep 3: Take the ratio\n\\[\n\\frac{12\\text{ g}}{0.19\\text{ g}} \\approx 63.2\n\\]\nAnswer\n\\[\n\\boxed{63.2}\n\\]\n\n\n\n\n\n\n4) Convert 2,300 mL to liters.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nVolume = 2,300 mL\n\nStep 1: Convert mL to L\n\\[\n2{,}300\\text{ mL} = \\frac{2{,}300}{1000} = 2.3\\text{ L}\n\\]\nAnswer\n\\[\n\\boxed{2.3\\text{ L}}\n\\]\n\n\n\n5) Convert an area of 5.4 km² to m².\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nArea = 5.4 km²\n\nStep 1: Square the linear conversion factor\n\\[\n1\\text{ km} = 1{,}000\\text{ m} \\implies 1\\text{ km}^2 = (1{,}000)^2\\text{ m}^2 = 10^6\\text{ m}^2\n\\]\nStep 2: Apply the factor\n\\[\n5.4\\text{ km}^2 = 5.4 \\times 10^6\\text{ m}^2\n\\]\nAnswer\n\\[\n\\boxed{5{,}400{,}000\\text{ m}^2}\n\\]\n\n\n\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nDepth = 12 m\nSurface area = 1.8 km²\n\nStep 1: Convert area to square meters\n\\[\n1.8\\text{ km}^2 = 1.8 \\times (1{,}000)^2 = 1.8 \\times 10^6\\text{ m}^2\n\\]\nStep 2: Calculate the volume\n\\[\nV = \\text{depth} \\times \\text{area}\n\\]\n\\[\nV = 12 \\times 1.8\\times10^6\n\\]\n\\[\nV = 2.16 \\times 10^7\\text{ m}^3\n\\]\nAnswer\n\\[\n\\boxed{21{,}600{,}000\\text{ m}^3}\n\\]\n\n\n\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 6 g/L\n\nStep 1: Convert grams to milligrams\n\\[\n6\\text{ g} = 6{,}000\\text{ mg}\n\\]\nStep 2: Convert liters to milliliters\n\\[\n1\\text{ L} = 1{,}000\\text{ mL}\n\\]\nStep 3: Divide to get the new concentration\n\\[\n\\frac{6{,}000\\text{ mg}}{1{,}000\\text{ mL}} = 6\\text{ mg/mL}\n\\]\nAnswer\n\\[\n\\boxed{6\\text{ mg/mL}}\n\\]\n\n\n\n8) One microgram (μg) is equivalent to \\(1/10^6\\) grams and one meter cubed (m³) is equivalent to 1000 liters. A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 12 μg/mL\n\\(1\\ \\mu\\text{g} = 10^{-6}\\text{ g}\\) and \\(1\\text{ m}^3 = 1000\\text{ L}\\)\n\nStep 1: Find a conversion factor from micrograms to kilograms\n\\[\n1\\ \\mu\\text{g} = 10^{-6}\\text{ g} = 10^{-9}\\text{ kg} \\implies \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}}\n\\]\nStep 2: Find a conversion factor from m³ to mL\n\\[\n1\\text{ m}^3 = 1000\\text{ L} = 10^{6}\\text{ mL} \\implies \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\n\\]\nStep 3: Multiply by the conversion factors, group numbers and units, and simplify\n\\[\\begin{align*}\n12\\ \\frac{\\mu\\text{g}}{\\text{mL}} &= 12\\ \\frac{\\mu\\text{g}}{\\text{mL}} \\cdot \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}} \\cdot \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\\\\\n&= \\left(12 \\times 10^{-9} \\times 10^{6}\\right) \\cdot \\left(\\frac{\\mu\\text{g}}{\\text{mL}}\\cdot\\frac{\\text{kg}}{\\mu\\text{g}}\\cdot\\frac{\\text{mL}}{\\text{m}^3}\\right)\\\\\n&= 0.012\\ \\frac{\\text{kg}}{\\text{m}^3}\n\\end{align*}\\]\nAnswer\n\\[\n\\boxed{0.012\\text{ kg/m}^3}\n\\]\n\n\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nPrecipitation = 45 mm/year\nWatershed area = 1,800 km²\n\nStep 1: Convert precipitation to meters\n\\[\n45\\text{ mm} = \\frac{45}{1000} = 0.045\\text{ m}\n\\]\nStep 2: Convert area to square meters\n\\[\n1,800\\text{ km}^2 = 1,800(1,000)^2\n\\]\n\\[\n= 1.8 \\times 10^9\\text{ m}^2\n\\]\nStep 3: Calculate the annual precipitation volume\nVolume is calculated as:\n\\[\nV = P \\times A\n\\]\nSubstitute the values:\n\\[\nV = (0.045)(1.8 \\times 10^9)\n\\]\n\\[\nV = 8.1 \\times 10^7\\text{ m}^3/\\text{year}\n\\]\nAnswer\n\\[\n\\boxed{81,000,000\\text{ m}^3/\\text{year}}\n\\]\n\n\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nCompany A: 14.6 barrels spilled, 9.3 barrels recovered\nCompany B: 692 L spilled, 94% recovered\nCompany C: 18.1 gallons spilled, 0% recovered\nConversions: 1 barrel = 42 gallons = 159 liters\n\nStep 1: Company A’s unrecovered oil (already in barrels)\n\\[\n14.6 - 9.3 = 5.3\\text{ barrels}\n\\]\nStep 2: Company B’s unrecovered oil, converted to barrels\n\\[\n692 \\times (1 - 0.94) = 41.52\\text{ L unrecovered}\n\\]\n\\[\n41.52\\text{ L} \\times \\frac{1\\text{ barrel}}{159\\text{ L}} = 0.26\\text{ barrels}\n\\]\nStep 3: Company C’s unrecovered oil, converted to barrels\n\\[\n18.1\\text{ gal} \\times \\frac{1\\text{ barrel}}{42\\text{ gal}} = 0.43\\text{ barrels}\n\\]\nStep 4: Add up all three companies’ unrecovered oil\n\\[\n5.3 + 0.26 + 0.43 = 5.99\\text{ barrels}\n\\]\nAnswer\n\\[\n\\boxed{5.99\\text{ barrels unrecovered}}\n\\]\n\n\n\n\n\n\n11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nIn one sentence, describe what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) On the \\(x\\) axis we have hunderds of households subscribed and on the \\(y\\) axis we have monthly fee in dollars. The plot shows a linear demand curve. We can see that as the monthly fee drops, more households are willing to subscribe to the compost program.\nb)\nThe \\(y\\)-intercept is $25/month, this is the highest fee at which any household is still willing to subscribe. Above $25, quantity demanded drops to zero.\nc)\nThe \\(x\\)-intercept is \\(Q=500\\) (i.e., 500 hundred = 50,000 households). This is the number of households that would subscribe if the service were free. This is the maximum possible demand for the program."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/solutions_problem_set_units.html#percent-ppm-conversions",
-    "href": "notes/day2_functions_graphs/solutions_problem_set_units.html#percent-ppm-conversions",
-    "title": "Solutions: Units Problem Set",
-    "section": "",
-    "text": "1) Convert 250 ppm to a percentage.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n250 ppm\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Divide by 10,000 to convert ppm to percent\n\\[\n250 \\text{ ppm} = \\frac{250}{10{,}000}\\% = 0.025\\%\n\\]\nAnswer\n\\[\n\\boxed{0.025\\%}\n\\]\n\n\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n0.015% contaminant by mass\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Multiply by 10,000 to convert percent to ppm\n\\[\n0.015\\% \\times 10{,}000 = 150 \\text{ ppm}\n\\]\nAnswer\n\\[\n\\boxed{150 \\text{ ppm}}\n\\]\n\n\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\nHeavy metal mass: \\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nRatio: \\[\n\\frac{12\\ \\text{g}}{0.19\\ \\text{g}} \\approx 63.2 : 1\n\\]\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nSample mass = 500 g\nOrganic matter = 2.4% by mass\nHeavy metal = 380 ppm by mass\n\nStep 1: Find the mass of organic matter\n\\[\n500\\ \\text{g} \\times 2.4\\% = 500 \\text{g} * 2.4 / 100 = 12\\ \\text{g}\n\\]\nStep 2: Find the mass of heavy metal\n\\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nStep 3: Take the ratio\n\\[\n\\frac{12\\text{ g}}{0.19\\text{ g}} \\approx 63.2\n\\]\nAnswer\n\\[\n\\boxed{63.2}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/solutions_problem_set_units.html#unit-conversions",
-    "href": "notes/day2_functions_graphs/solutions_problem_set_units.html#unit-conversions",
-    "title": "Solutions: Units Problem Set",
-    "section": "",
-    "text": "4) Convert 2,300 mL to liters.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nVolume = 2,300 mL\n\nStep 1: Convert mL to L\n\\[\n2{,}300\\text{ mL} = \\frac{2{,}300}{1000} = 2.3\\text{ L}\n\\]\nAnswer\n\\[\n\\boxed{2.3\\text{ L}}\n\\]\n\n\n\n5) Convert an area of 5.4 km² to m².\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nArea = 5.4 km²\n\nStep 1: Square the linear conversion factor\n\\[\n1\\text{ km} = 1{,}000\\text{ m} \\implies 1\\text{ km}^2 = (1{,}000)^2\\text{ m}^2 = 10^6\\text{ m}^2\n\\]\nStep 2: Apply the factor\n\\[\n5.4\\text{ km}^2 = 5.4 \\times 10^6\\text{ m}^2\n\\]\nAnswer\n\\[\n\\boxed{5{,}400{,}000\\text{ m}^2}\n\\]\n\n\n\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nDepth = 12 m\nSurface area = 1.8 km²\n\nStep 1: Convert area to square meters\n\\[\n1.8\\text{ km}^2 = 1.8 \\times (1{,}000)^2 = 1.8 \\times 10^6\\text{ m}^2\n\\]\nStep 2: Calculate the volume\n\\[\nV = \\text{depth} \\times \\text{area}\n\\]\n\\[\nV = 12 \\times 1.8\\times10^6\n\\]\n\\[\nV = 2.16 \\times 10^7\\text{ m}^3\n\\]\nAnswer\n\\[\n\\boxed{21{,}600{,}000\\text{ m}^3}\n\\]\n\n\n\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 6 g/L\n\nStep 1: Convert grams to milligrams\n\\[\n6\\text{ g} = 6{,}000\\text{ mg}\n\\]\nStep 2: Convert liters to milliliters\n\\[\n1\\text{ L} = 1{,}000\\text{ mL}\n\\]\nStep 3: Divide to get the new concentration\n\\[\n\\frac{6{,}000\\text{ mg}}{1{,}000\\text{ mL}} = 6\\text{ mg/mL}\n\\]\nAnswer\n\\[\n\\boxed{6\\text{ mg/mL}}\n\\]\n\n\n\n8) One microgram (μg) is equivalent to \\(1/10^6\\) grams and one meter cubed (m³) is equivalent to 1000 liters. A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 12 μg/mL\n\\(1\\ \\mu\\text{g} = 10^{-6}\\text{ g}\\) and \\(1\\text{ m}^3 = 1000\\text{ L}\\)\n\nStep 1: Find a conversion factor from micrograms to kilograms\n\\[\n1\\ \\mu\\text{g} = 10^{-6}\\text{ g} = 10^{-9}\\text{ kg} \\implies \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}}\n\\]\nStep 2: Find a conversion factor from m³ to mL\n\\[\n1\\text{ m}^3 = 1000\\text{ L} = 10^{6}\\text{ mL} \\implies \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\n\\]\nStep 3: Multiply by the conversion factors, group numbers and units, and simplify\n\\[\\begin{align*}\n12\\ \\frac{\\mu\\text{g}}{\\text{mL}} &= 12\\ \\frac{\\mu\\text{g}}{\\text{mL}} \\cdot \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}} \\cdot \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\\\\\n&= \\left(12 \\times 10^{-9} \\times 10^{6}\\right) \\cdot \\left(\\frac{\\mu\\text{g}}{\\text{mL}}\\cdot\\frac{\\text{kg}}{\\mu\\text{g}}\\cdot\\frac{\\text{mL}}{\\text{m}^3}\\right)\\\\\n&= 0.012\\ \\frac{\\text{kg}}{\\text{m}^3}\n\\end{align*}\\]\nAnswer\n\\[\n\\boxed{0.012\\text{ kg/m}^3}\n\\]\n\n\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nPrecipitation = 45 mm/year\nWatershed area = 1,800 km²\n\nStep 1: Convert precipitation to meters\n\\[\n45\\text{ mm} = \\frac{45}{1000} = 0.045\\text{ m}\n\\]\nStep 2: Convert area to square meters\n\\[\n1,800\\text{ km}^2 = 1,800(1,000)^2\n\\]\n\\[\n= 1.8 \\times 10^9\\text{ m}^2\n\\]\nStep 3: Calculate the annual precipitation volume\nVolume is calculated as:\n\\[\nV = P \\times A\n\\]\nSubstitute the values:\n\\[\nV = (0.045)(1.8 \\times 10^9)\n\\]\n\\[\nV = 8.1 \\times 10^7\\text{ m}^3/\\text{year}\n\\]\nAnswer\n\\[\n\\boxed{81,000,000\\text{ m}^3/\\text{year}}\n\\]\n\n\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nCompany A: 14.6 barrels spilled, 9.3 barrels recovered\nCompany B: 692 L spilled, 94% recovered\nCompany C: 18.1 gallons spilled, 0% recovered\nConversions: 1 barrel = 42 gallons = 159 liters\n\nStep 1: Company A’s unrecovered oil (already in barrels)\n\\[\n14.6 - 9.3 = 5.3\\text{ barrels}\n\\]\nStep 2: Company B’s unrecovered oil, converted to barrels\n\\[\n692 \\times (1 - 0.94) = 41.52\\text{ L unrecovered}\n\\]\n\\[\n41.52\\text{ L} \\times \\frac{1\\text{ barrel}}{159\\text{ L}} = 0.26\\text{ barrels}\n\\]\nStep 3: Company C’s unrecovered oil, converted to barrels\n\\[\n18.1\\text{ gal} \\times \\frac{1\\text{ barrel}}{42\\text{ gal}} = 0.43\\text{ barrels}\n\\]\nStep 4: Add up all three companies’ unrecovered oil\n\\[\n5.3 + 0.26 + 0.43 = 5.99\\text{ barrels}\n\\]\nAnswer\n\\[\n\\boxed{5.99\\text{ barrels unrecovered}}\n\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/solutions_problem_set_units.html#graphs",
-    "href": "notes/day2_functions_graphs/solutions_problem_set_units.html#graphs",
-    "title": "Solutions: Units Problem Set",
-    "section": "",
-    "text": "11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nIn one sentence, describe what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) On the \\(x\\) axis we have hunderds of households subscribed and on the \\(y\\) axis we have monthly fee in dollars. The plot shows a linear demand curve. We can see that as the monthly fee drops, more households are willing to subscribe to the compost program.\nb)\nThe \\(y\\)-intercept is $25/month, this is the highest fee at which any household is still willing to subscribe. Above $25, quantity demanded drops to zero.\nc)\nThe \\(x\\)-intercept is \\(Q=500\\) (i.e., 500 hundred = 50,000 households). This is the number of households that would subscribe if the service were free. This is the maximum possible demand for the program."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#title-slide",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#title-slide",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Day 2: Bren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-title",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-title",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Units"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-1",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "UNITS. UNITS. UNITS.\n\n\n\nThink about these statements, which all contain the same value of 4:\n\n\nThere are four in the refrigerator.\nThere are four burritos in the refrigerator.\nThere are four roaches in the refrigerator.\nThere are four million dollars in the refrigerator."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-2",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "UNITS. UNITS. UNITS.\n\n\nThink about this sign at New Cuyama. Anything odd here?"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-critical",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-critical",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Units are critical in environmental science\n\n \n\nWe cannot responsibly work with data without knowing the units of each variable we’re working with.\n\nThat means we need to always familiarize ourselves with variables, carefully check units and any unit conversions, and understand how units combine into the units of a dependent variable."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Metric prefixes\n\nMetric units are built from a base unit (like meters, grams, or liters) plus a prefix that scales it by a power of 10.\n\n\n\nThe factor indicates how many times to multiply the base unit by 10.\nExample: 1 km = \\(10^3\\) m = 1000 m, and 1 cm = \\(10^{-2}\\) m = 0.01 m."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-conversion",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-conversion",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Metric prefixes\n\nMetric units are built from a base unit (like meters, grams, or liters) plus a prefix that scales it by a power of 10.\n\n\n\nThe factor indicates how many times to multiply the base unit by 10.\nExample: 1 km = \\(10^3\\) m = 1000 m, and 1 cm = \\(10^{-2}\\) m = 0.01 m."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-2",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Metric prefixes\n\nExample. Convert 750 mL into L.\n✏️ Let’s solve this together."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-2-solution",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-2-solution",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Metric prefixes\n\nExample. Convert 750 mL into L.\n\n\nStarting at milli and ending at base, we move 3 rows up the table:\nmilli → centi → deci → base\nSo we divide by \\(10^3\\):\n\\[\\begin{align*}\n750 \\text{ mL} &= \\frac{750}{10^3} \\text{ L} \\\\\n&= 0.75 \\text{ L}\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Metric prefixes\n\nExercise. Convert 4.7 km into cm.\n✏️ Take a moment to compute it."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-solution",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-solution",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Metric prefixes\n\nExercise. Convert 4.7 km into cm.\n\n\nStarting at kilo and ending at centi, we move 5 rows down the table:\nkilo → hecto → deka → base → deci → centi\nSo we multiply by \\(10^5\\):\n\\[\\begin{align*}\n4.7 \\text{ km} &= 4.7 \\times 10^5 \\text{ cm} \\\\\n&= 470{,}000 \\text{ cm}\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-volume-conversions",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-volume-conversions",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Converting areas and volumes\n\nSo far we’ve converted linear units (length). What about area (squared units) and volume (cubed units)?\n\n\nTo convert area units, square the linear conversion factor.\nTo convert volume units, cube the linear conversion factor.\n\nSince \\(1 \\text{ m} = 100 \\text{ cm}\\):\n\\[\\begin{align*}\n1 \\text{ m}^2 &= (100 \\text{ cm})^2 = 100^2 \\text{ cm}^2 = 10{,}000 \\text{ cm}^2 \\\\\n1 \\text{ m}^3 &= (100 \\text{ cm})^3 = 100^3 \\text{ cm}^3 = 1{,}000{,}000 \\text{ cm}^3\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Converting areas and volumes\n\n\n\nExample. Convert \\(3.5 \\text{ m}^2\\) into \\(\\text{cm}^2\\).\n✏️ Let’s solve this together."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example-solution",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example-solution",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Converting areas and volumes\n\n\n\nExample. Convert \\(3.5 \\text{ m}^2\\) into \\(\\text{cm}^2\\).\n\nThe linear factor from meters to centimeters is \\(10^2\\) (2 rows down the metric prefix table). For area, we square this factor:\n\n\\[\\begin{align*}\n3.5 \\text{ m}^2 &= 3.5 \\times (10^2)^2 \\text{ cm}^2 \\\\\n&= 3.5 \\times 10^4 \\text{ cm}^2 \\\\\n&= 35{,}000 \\text{ cm}^2.\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Converting areas and volumes\n\n\n\n\nExercise. Convert \\(2 \\text{ m}^3\\) into \\(\\text{cm}^3\\).\n✏️ Take a moment to solve this."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example-solution",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example-solution",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Converting areas and volumes\n\n\n\nExercise. Convert \\(2 \\text{ m}^3\\) into \\(\\text{cm}^3\\).\n\nThe linear factor from meters to centimeters is \\(10^2\\) (2 rows down the metric prefix table). For volume, we cube this factor:\n\n\\[\\begin{align*}\n2 \\text{ m}^3 &= 2 \\times (10^2)^3 \\text{ cm}^3 \\\\\n&= 2 \\times 10^6 \\text{ cm}^3 \\\\\n&= 2{,}000{,}000 \\text{ cm}^3.\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Dimensional analysis (unit conversions)\n\nIn dimensional analysis, we multiply initial units by a sequence of unit conversion factors to arrive at the final desired units.\nExample: How many centimiters are there in 6 inches?\n✏️ Let’s solve this together."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solution-1",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solution-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Dimensional analysis (unit conversions)\n\nIn dimensional analysis, we multiply initial units by a sequence of unit conversion factors to arrive at the final desired units.\nExample: How many centimiters are there in 6 inches?\nWe know: 1 inch = 2.54 cm. This gives us two unit conversion factors:\n\\[ \\frac{2.54 \\text{ cm}}{1 \\text{ in}} \\text{ and } \\frac{1 \\text{ in}}{2.54 \\text{ cm}}.\\] Important: the fraction the numerator and denominator represent the same quantity.\nThen we multiply by the appropriate conversion factor and simplify:\n\\[\\begin{align*}\n\n6 \\text{ in} &= 6 \\text{ in} \\cdot  \\frac{2.54 \\text{ cm}}{1 \\text{ in}}\\\\\n&= 6  \\frac{2.54}{1} \\cdot  \\text{ in}\\frac{\\text{ cm}}{\\text{ in}} \\\\\n&= 15.24 \\cancel{\\text{ in}}\\frac{\\text{ cm}}{\\cancel{\\text{ in}}} \\\\\n&= 15.24 \\text{ cm}\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-2",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Dimensional analysis (unit conversions)\n\nExample. Convert \\(100 \\frac{g}{cm^3}\\) into units of \\(\\frac{kg}{in^3}\\), given that 1 cm3 = 0.061 in3.\n✏️ Let’s solve this together."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-2-solution",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-2-solution",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Dimensional analysis (unit conversions)\n\nExample. Convert \\(100 \\frac{g}{cm^3}\\) into units of \\(\\frac{kg}{in^3}\\), given that 1 cm3 = 0.061 in3.\nWe need one unit conversion factor for \\(g\\): \\(\\frac{1 \\text{ kg}}{1000 \\text{ g}}\\).\nAnd another one for \\(\\text{cm}^3\\): \\(\\frac{1 \\text{ cm}^3}{0.061 \\text{in}^3}\\).\nThen we multiply by the conversion factors and simplify\n\\[\\begin{align*}\n\n100 \\frac{\\text{ g}}{\\text{cm}^3} &= 100 \\frac{\\text{ g}}{\\text{cm}^3} \\cdot \\frac{1 \\text{ cm}^3}{0.061 \\text{ in}^3} \\cdot \\frac{1 \\text{ kg}}{1000 \\text{ g}}\\\\\n&= 100 \\frac{1}{0.061} \\frac{1}{1000}\\cdot \\frac{\\text{ g}}{\\text{cm}^3} \\frac{\\text{ cm}^3}{ \\text{ in}^3} \\frac{ \\text{ kg}}{\\text{ g}}\\\\\n&= \\frac{1}{0.61} \\cdot \\frac{\\cancel{\\text{ g}}}{\\cancel{\\text{cm}^3}} \\frac{\\cancel{\\text{ cm}^3}}{ \\text{ in}^3} \\frac{ \\text{ kg}}{\\cancel{\\text{ g}}}\\\\\n&=1.639\\frac{kg}{in^3}.\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-blank",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-blank",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Parts per million (ppm)\n\n\nParts per million (ppm) is another way of writing a fraction (just like percentage) but suited to very small concentrations (e.g. a contaminant in water or soil).\n\n✏️"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Parts per million (ppm)\n\n\nParts per million (ppm) is another way of writing a fraction (just like percentage) but suited to very small concentrations (e.g. a contaminant in water or soil).\n\n\nWe have that:\n\\[\n1\\% = \\frac{1}{100} \\qquad \\qquad 1 \\text{ ppm} = \\frac{1}{1{,}000{,}000}\n\\]\nFrom these fractions we see we need 10,000 ppm to get 1%, so 1% = 10,000 ppm.\nTo convert percent → ppm, multiply percentage by 10,000. \nTo convert ppm → percent, divide ppm by 10,000."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-example",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-example",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Parts per million (ppm)\n\nExample. Convert 0.008% to ppm.\n✏️ Let’s solve this together."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-example-solution",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-example-solution",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Parts per million (ppm)\n\nExample. Convert 0.008% to ppm.\n\nWe are converting percent → ppm, so we multiply by 10,000:\n\n\\[\\begin{align*}\n0.008\\% &= 0.008 \\times 10{,}000 \\text{ ppm} \\\\\n&= 80 \\text{ ppm}\n\\end{align*}\\]"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-practice",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-practice",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Unit conversion practice\n\n\n\nConvert 120 ppm to a percentage.\n\n\n\nConvert 3,400 mm to meters.\n\n\n\nConvert an area of \\(3.2 \\text{ km}^2\\) to \\(\\text{m}^2\\).\n\n\n\nA stock solution is 4 g/L. Express this in mg/mL.\n\n\n\nConvert \\(8.1\\frac{km}{s}\\) to miles per hour, given that 1 km = 0.621 miles.\n\n\n\nA lake has average depth 800 cm and surface area \\(2.5 \\text{ km}^2\\). Using Volume = depth × area, find the volume in \\(\\text{m}^3\\)."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-6",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-6",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Unit conversion practice\n\n✏️ Let’s see a solution!\n\nConvert 120 ppm to a percentage.\n\n  \n\nConvert 3,400 mm to meters.\n\n  \n\nConvert an area of \\(3.2 \\text{ km}^2\\) to \\(\\text{m}^2\\)."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-3",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-3",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Unit conversion practice\n\n\nA stock solution is 4 g/L. Express this in mg/mL.\n\n✏️ Let’s see a solution!"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-4",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-4",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Unit conversion practice\n\n\nConvert \\(8.1\\frac{km}{s}\\) to miles per hour, given that 1 km = 0.621 miles.\n\n✏️ Let’s see a solution!"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-5",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-5",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Unit conversion practice\n\n\nA lake has average depth 800 cm and surface area \\(2.5 \\text{ km}^2\\). Using Volume = depth × area, find the volume in \\(\\text{m}^3\\).\n\n✏️ Let’s see a solution!"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-answers",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-answers",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Unit conversion practice: solutions\n\n1. \\(120 \\text{ ppm} = 120 / 10{,}000 = 0.012\\%\\)\n2. \\(3{,}400 \\text{ mm} = 3{,}400 / 10^3 = 3.4\\) m\n\n3. \\(3.2 \\text{ km}^2 \\times (1000\\text{ m/km})^2 = 3.2\\times10^{6}\\) m²\n\n4. \\(4 \\text{ g/L} = 4000 \\text{ mg} / 1000 \\text{ mL} = 4\\) mg/mL\n\n5. \\(8.1\\frac{km}{s} \\times 3600\\frac{s}{hr} \\times 0.621\\frac{mi}{km} = 18108.36 \\frac{mi}{hr}\\)\n\n6. Area \\(= 2.5\\times10^{6}\\) m². Volume \\(= 8 \\times 2.5\\times10^{6} = 2\\times10^{7}\\) m³"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#break",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#break",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Let’s take a 10 minute break\n\n\nimage: Flaticon.com"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#eds212-basics",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#eds212-basics",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Functions"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-1",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Functions\n\nFunctions are mathematical expressions that tell us how input values are related to output values."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-2",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Functions\n\nFunctions are mathematical expressions that tell us how input values are related to output values.\n\nFor example, \\(y = 3x-5\\) is a function that tells us the value of y at any value of x. In this scenario, we would probably say y is a function of x."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-3",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-3",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Functions\n\nFunctions are mathematical expressions that tell us how input values are related to output values.\n\nFor example, \\(y = 3x-5\\) is a function that tells us the value of y at any value of x. In this scenario, we would probably say y is a function of x.\nCould you also rewrite it and say x is a function of y?\nHere, with no knowledge of what’s an input and what’s an output, sure - but usually in environmental science we specify the input variable(s), and the output variable(s) carefully.\nWhat follows is the expression in the format of:\n\n“[output variable(s)] is/are a function of [input variable(s)]”.\n\n\nAlso: output variable = dependent variable and input variable = independent variable."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#inputs-outputs",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#inputs-outputs",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Thinking about inputs and outputs\n\n\nFor the following combinations of related variables, which do you expect would be the input and the output in a function describing how they are related? E.g. “Evapotranspiration is a function of air temperature.”\n\n✏️ Write your answer individually as a sentence.\n\n\nfuel (biomass) / slope / wildfire severity / windspeed / air temperature\nwind speed / power generated by wind turbine\nsoil C:N ratio / bacterial biomass / soil water content / leaf litter decomposition rate\n\n\n\n\nwildfire severity is a function of fuel and slope and windspeed and air temperature\npower generated by wind turbine is a function of wind speed\nleaf litter decomposition rate is a function of soil C:N ratio and bacterial biomass and soil water content"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#fxn-notation-blank",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#fxn-notation-blank",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Function notation\n\n✏️"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#fxn-notation",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#fxn-notation",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Function notation\n\n\nSingle variable (univariate) function:\n\\(f(x) = [expression\\space containing \\space x]\\)\n\nMultivariate function:\n\\(g(a,T,z)=[expression\\space containing \\space a, T, \\space and \\space z]\\)"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#eval-fxns-blank",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#eval-fxns-blank",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Evaluating functions\n\n\n\nWe evaluate functions by plugging in values of the input variables.\n\n✏️ Example:\n\nEvaluate \\(g(x,t)=2.4x+0.5t^2\\) at \\(x = 3\\) and \\(t = 10\\)"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#eval-fxns",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#eval-fxns",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Evaluating functions\n\n\n\nWe evaluate functions by plugging in values of the input variables.\n\n✏️ Example:\n\nEvaluate \\(g(x,t)=2.4x+0.5t^2\\) at \\(x = 3\\) and \\(t = 10\\)\n\n\\(g(3, 10) = 2.4(3) + 0.5(10^2)= 57.2\\)"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-title",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-title",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Graphs"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Why graphs?\n\nGraphs are a way for us to more easily process trends or patterns that may be more challenging to understand in a table or list.\n\nWhich could be easier to understand?"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-1",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs generally move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\nAxes units must be defined depending on the application."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-2",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs generally move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\nAxes units must be defined depending on the application.\n\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\n\nWhere would (2,-1) go on the graph?"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-series",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-series",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "We can join series of points to make graphs"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-fcn",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-fcn",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Functions on a single variable and a single output can be graphed\n\n\n\n\n\\(\\color{green}{y=sin(3x)+2x}\\)\n\n\n\n\\(\\color{red}{y=0.5x^3+x^2-5x}\\)\n\n\n\n\\(\\color{blue}{y=0.85x+0.44}\\)"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-1",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Two key ingredients to graphs\n\n\n\nIntercepts\n\n\\(x\\)-intercept\n\nWhere does the graph intersect the \\(x\\)-axis?\nIn other words, for what values of \\(x\\) do we have \\((x,0)\\) be part of the graph?\n\n\n\n\nWhat are the \\(x\\) and \\(y\\) intercepts of the polynomial function in red?"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-2",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Two key ingredients to graphs\n\n\n\nIntercepts\n\n\\(x\\)-intercept\n\nWhere does the graph intersect the \\(x\\)-axis?\nIn other words, for what values of \\(x\\) do we have \\((x,0)\\) be part of the graph?\n\n\\(y\\)-intercept\n\nWhere does the graph intersect the \\(y\\)-axis?\nIn other words, for what value of \\(y\\) do we have \\((0,y)\\) be part of the graph?\n\n\n\n\nWhat are the \\(x\\) and \\(y\\) intercepts of the polynomial function in red?"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Intercepts practice\n\n✏️ Solve these individually.\n\n\n\n\nA reservoir is being drained for irrigation. The graph shows its storage volume (in millions of cubic meters) as a function of time (in years).\n\n\nWhen will the reservoir be empty? Are you using the \\(x\\) or \\(y\\) intercept?\nWhat is the initial volume of the reservoir? Are you using the \\(x\\) or \\(y\\) intercept?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation size is denoted by \\(N\\), this is the total number of individuals. Per-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), is a function of \\(N\\). What does the \\(y\\)-intercept of \\(\\frac{1}{N}\\frac{dN}{dt}\\) represent? What does its \\(x\\)-intercept represent?"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-3-solve",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-3-solve",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Intercepts practice (1)\n\n\n\n\nWhen will the reservoir be empty? Are you using the \\(x\\) or \\(y\\) intercept?\nWhat is the initial volume of the reservoir? Are you using the \\(x\\) or \\(y\\) intercept?\n\n✏️ Let’s see a solution!"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1-solutions",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1-solutions",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Intercepts practice (1)\n\n\n\n\nWhen will the reservoir be empty? Are you using the \\(x\\) or \\(y\\) intercept?\nWhat is the initial volume of the reservoir? Are you using the \\(x\\) or \\(y\\) intercept?\n\n✏️ Let’s see a solution!\n\n\n\n\n\n\n\n\n\n\n\nThe reservoir will be empty after 10 years. To identify this we look at the \\(x\\)-intercept, which happens at \\((10,0)\\).\nThe initial volume of water in the reservoir is 50 cubic meters. To identify this we look at the \\(y\\)-intercept, which happens at \\((0, 50)\\)."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solve",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solve",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Intercepts practice (2)\n\n\n\nPopulation size is denoted by \\(N\\), this is the total number of individuals.\nPer-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), is a function of \\(N\\).\n\nWhat does the \\(y\\)-intercept of \\(\\frac{1}{N}\\frac{dN}{dt}\\) represent?\nWhat does its \\(x\\)-intercept represent?\n\n\n\n\n\n\n\n\n\n\n\n\n✏️ Let’s see a solution!"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solution",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solution",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Intercepts practice (2)\n\n\n\nPopulation size is denoted by \\(N\\), this is the total number of individuals.\nPer-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), is a function of \\(N\\).\n\nWhat does the \\(y\\)-intercept of \\(\\frac{1}{N}\\frac{dN}{dt}\\) represent?\nWhat does its \\(x\\)-intercept represent?\n\n\n\n\n\n\n\n\n\n\n\n\n✏️ Let’s see a solution!\n\n\\(y\\)-intercept = the population’s maximum per-capita growth rate when it is small and not yet resource-limited. This is known as the intrinsic growth rate \\(r\\).\n\\(x\\)-intercept = the population size at which per-capita growth stops. This is known as the carrying capacity \\(K\\)."
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-title",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-title",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "“Reading” graphs"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#understanding-graphs",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#understanding-graphs",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Understanding graphs\n\n\nWhen you look at graphs, the first things you should ask:\n\n\nWhat variables are being plotted (e.g. x- & y-axis, including units)?\n\n\n\nWhat values are plotted (e.g. raw values, transformed, means, etc.)?\n\n\n\nWhat are the overall takeaways (e.g. trends, maxima, minima, axes intercepts) and am I understanding them responsibly?"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-1",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Reading graphs (in general)\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-2",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Reading graphs (in general)\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-1",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-1",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "💬 Partner 1: read the graph to your partner.\n\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-2",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-2",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "💬 Partner 2: read the graph to your partner.\n\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-mono-lake",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-mono-lake",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Reading graphs practice"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#end-of-day",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#end-of-day",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Wrapping up…"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#problem-set",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#problem-set",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "Get some extra practice!\n\n\n\nUnits & graphs problem set"
-  },
-  {
-    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#what-we-covered",
-    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#what-we-covered",
-    "title": "Bren Math Workshop",
-    "section": "",
-    "text": "What we covered today\n\n\n📏 Metric prefixes\n🧊 Area & volume conversions\n⚖️ Dimensional analysis (unit conversions)\n🧪 Parts per million (ppm)\n🧩 Definition of functions \n\n📊 Graphing\n\n📈 \\(x\\) and \\(y\\) intercepts\n💬 Reading graphs\n\n🐟 Applications to MESM courses"
+    "text": "Units & graphs problem set\n\n\n\nSolutions are linked through the problem sets.",
+    "crumbs": [
+      "home",
+      "day 2 - units and graphs"
+    ]
   },
   {
     "objectID": "notes/day1_algebra/solutions_exercise_bank_algebra.html",
@@ -2408,89 +1774,781 @@
     "text": "9) Representative Concentration Pathways (RCP) are climate change scenarios that project future greenhouse gas concentrations in 2100. A new RCP projection (RCP 4.5) indicates that carbon concentrations in the atmosphere will plateau at around 600 ppm. Today’s atmospheric carbon concentration sits at 416 ppm.\n\nIf the United States continues to emit proportionally the same amount of carbon (14%), how much carbon will the US emit in 2100 under RCP 4.5? Use the conversion 1 ppm = 2.13 gigaton to give your answer in gigatons.\nStarting in 2026 (\\(t = 0\\)), an ambitious US policy is modeled to reduce annual carbon emissions along the trajectory \\[f(t) = -\\frac{1}{8}t^2 + 6t + 124\\] where \\(t\\) is years since 2026 and \\(f(t)\\) is US emissions (GT/year). In what year does the US reach zero net carbon emissions?"
   },
   {
-    "objectID": "notes/day2_functions_graphs/day2_functions_graphs.html",
-    "href": "notes/day2_functions_graphs/day2_functions_graphs.html",
-    "title": "Day 2: Units & Graphs",
+    "objectID": "notes/day2_functions_graphs/day2-pairs.html",
+    "href": "notes/day2_functions_graphs/day2-pairs.html",
+    "title": "Day 2 partner pairs",
     "section": "",
-    "text": "Lecture slides\n\nContents\n\n📏 Metric prefixes\n🧊 Area & volume conversions\n⚖️ Dimensional analysis (unit conversions)\n🧪 Parts per million (ppm)\n🧩 Definition of functions\n📈 \\(x\\) and \\(y\\) intercepts\n📊 Graphing\n🐟 Applications to MESM courses\n\n\n\n\nUnits & graphs problem set\n\n\n\nSolutions are linked through the problem sets.",
-    "crumbs": [
-      "home",
-      "day 2 - units and graphs"
-    ]
+    "text": "Day 2 partner pairs\nFind your name below to see who’ll be your main collaborator today.\n\n\n\n\n\nPartner 1\nPartner 2\n\n\n\n\nAdeline Kikut\nSophie Alice Hudson\n\n\nAlexis Hadinger\nMartin Alexander Gonzalez\n\n\nAlexis isabella Vierra\nMandeera Adithya Wijetunga\n\n\nAlyssa Marie Ambrosini\nMiranda Nichole Schmidt\n\n\nAndres Flores\nRyan William Graul\n\n\nAnna Lorraine Benjamin\nMaximillian Ted Gutierrez\n\n\nArthur Ethan Gill\nSophia Grace Hermelin\n\n\nAshley Jordan Caras\nGrace Nicole Williams\n\n\nBailey Thieben\nVeronica Eve Lee\n\n\nBani BADWAL\nCasey Andrews\n\n\nBrice Bain murray\nJulia Benko\n\n\nCara Ashley Gutierrez\nMaranda Jasmine Jordahl\n\n\nCaroline Sandberg\nColton Danial Joseph Bowers\n\n\nChristianna elizabeth Hadsell\nMaya Bhadury\n\n\nChristopher Petersen\nJules Kloner\n\n\nCian Michael Matthews-Schott\nSean Charles Reagan\n\n\nClaire Watson\nZara Khalid\n\n\nClara Sophie Fischer\nMaximilian Gustafson Wassmer\n\n\nCoby Jolish\nEmily McFerson\n\n\nDagny Olivia Bare\nKatherine Josephine Stephenson\n\n\nDaniel Chavez / Lillie Grace Roberts\nMax Joseph Arquilevich\n\n\nDaniela Ceballos\nSydney Allen\n\n\nDemitri George Ablakhad\nSonya Delilah Adler\n\n\nDiego Bier\nYadhvi garg\n\n\nElle Mary de Alessandrini\nSteve Lee Patterson\n\n\nEva Jacqueline Chahbazian\nKiana Roman\n\n\nEve Adelson\nSean Lee\n\n\nGabriella sofia Getacho\nKyra Allen\n\n\nHannah Catherine Palmer\nHelena Econn\n\n\nHannah Cravets\nValeria Viera\n\n\nHannah Jurado\nKatherine James Brook\n\n\nHayley elizabeth Willner\nTaylor Clary\n\n\nHuzair Latif\nJack Ruston Severson\n\n\nIslay Hana Talbot\nValentina Helene Hogenhuis\n\n\nJamie Carol Helmick\nOrreal Amar\n\n\nJasmine Marie Jackson\nWesley Kristian Trimble\n\n\nJasmine Rebollar\nKatja Mikaela Reinwald\n\n\nJonathan Ryan Hurtik\nRachael Marie Meyer\n\n\nJuliet Ann Wall\nLily Byrne\n\n\nKahena Judith Babaci Wilhite\nSuzanne Claire Shilstone\n\n\nKaitlin Lindsay Cartwright\nLauren Olivia Pong\n\n\nKara Rachel Siglin\nOdette Eriantha Finn\n\n\nKatherine Grace Ackley\nSpencer Mayer\n\n\nKayla Venezia Geronimo-Anctil\nMadeline Hill\n\n\nLeah Hall Stednick\nMagdalene Dayle Sutch\n\n\nLorenza Patricia Misel\nVenisha Saxena\n\n\nNicole Wang\nNina Katherine Merz\n\n\nSaif Ali Khan Durrani\nSophia Rose Girguis\n\n\nSantiago Dent\nSummer Rose Wilson"
   },
   {
-    "objectID": "notes/day2_functions_graphs/day2_functions_graphs.html#problem-set",
-    "href": "notes/day2_functions_graphs/day2_functions_graphs.html#problem-set",
-    "title": "Day 2: Units & Graphs",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#title-slide",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#title-slide",
+    "title": "Bren Math Workshop",
     "section": "",
-    "text": "Units & graphs problem set\n\n\n\nSolutions are linked through the problem sets.",
-    "crumbs": [
-      "home",
-      "day 2 - units and graphs"
-    ]
+    "text": "Day 2: Bren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management"
   },
   {
-    "objectID": "notes/day2_functions_graphs/problem_set_units.html",
-    "href": "notes/day2_functions_graphs/problem_set_units.html",
-    "title": "Units Problem Set",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-title",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-title",
+    "title": "Bren Math Workshop",
     "section": "",
-    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\n\n1) Convert 250 ppm to a percentage.\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\n\n\n\n4) Convert 2,300 mL to liters.\n5) Convert an area of 5.4 km² to m².\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n8) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n-   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)\n-   **Company B:** 692 liters spilled (94% recovered)\n-   **Company C:** 18.1 gallons spilled (0% recovered)\n\nWhat is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nWrite one sentence describing what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context."
+    "text": "Units"
   },
   {
-    "objectID": "notes/day2_functions_graphs/problem_set_units.html#percent-ppm-conversions",
-    "href": "notes/day2_functions_graphs/problem_set_units.html#percent-ppm-conversions",
-    "title": "Units Problem Set",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-1",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-1",
+    "title": "Bren Math Workshop",
     "section": "",
-    "text": "1) Convert 250 ppm to a percentage.\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?"
+    "text": "UNITS. UNITS. UNITS.\n\n\n\nThink about these statements, which all contain the same value of 4:\n\n\nThere are four in the refrigerator.\nThere are four burritos in the refrigerator.\nThere are four roaches in the refrigerator.\nThere are four million dollars in the refrigerator."
   },
   {
-    "objectID": "notes/day2_functions_graphs/problem_set_units.html#unit-conversions",
-    "href": "notes/day2_functions_graphs/problem_set_units.html#unit-conversions",
-    "title": "Units Problem Set",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-2",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-2",
+    "title": "Bren Math Workshop",
     "section": "",
-    "text": "4) Convert 2,300 mL to liters.\n5) Convert an area of 5.4 km² to m².\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n8) A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n-   **Company A:** 14.6 barrels spilled (with 9.3 barrels recovered)\n-   **Company B:** 692 liters spilled (94% recovered)\n-   **Company C:** 18.1 gallons spilled (0% recovered)\n\nWhat is the total *unrecovered* amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed."
+    "text": "UNITS. UNITS. UNITS.\n\n\nThink about this sign at New Cuyama. Anything odd here?"
   },
   {
-    "objectID": "notes/day2_functions_graphs/problem_set_units.html#graphs",
-    "href": "notes/day2_functions_graphs/problem_set_units.html#graphs",
-    "title": "Units Problem Set",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-critical",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#units-critical",
+    "title": "Bren Math Workshop",
     "section": "",
-    "text": "11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nWrite one sentence describing what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context."
+    "text": "Units are critical in environmental science\n\n \n\nWe cannot responsibly work with data without knowing the units of each variable we’re working with.\n\nThat means we need to always familiarize ourselves with variables, carefully check units and any unit conversions, and understand how units combine into the units of a dependent variable."
   },
   {
-    "objectID": "notes/day2_limits/day2_limits.html",
-    "href": "notes/day2_limits/day2_limits.html",
-    "title": "Day 2: Limits",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes",
+    "title": "Bren Math Workshop",
     "section": "",
-    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives\n\n\n\n\nClick here to see the problem set.\n\n\n\nSolutions"
+    "text": "Metric prefixes\n\nMetric units are built from a base unit (like meters, grams, or liters) plus a prefix that scales it by a power of 10.\n\n\n\nThe factor indicates how many times to multiply the base unit by 10.\nExample: 1 km = \\(10^3\\) m = 1000 m, and 1 cm = \\(10^{-2}\\) m = 0.01 m."
   },
   {
-    "objectID": "notes/day2_limits/day2_limits.html#lecture-materials",
-    "href": "notes/day2_limits/day2_limits.html#lecture-materials",
-    "title": "Day 2: Limits",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-conversion",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-conversion",
+    "title": "Bren Math Workshop",
     "section": "",
-    "text": "Limits lecture slides\nContents\n\nLimits conceptually\nHow limits work\nLimits into derivatives\nDefinition of derivatives"
+    "text": "Metric prefixes\n\nMetric units are built from a base unit (like meters, grams, or liters) plus a prefix that scales it by a power of 10.\n\n\n\nThe factor indicates how many times to multiply the base unit by 10.\nExample: 1 km = \\(10^3\\) m = 1000 m, and 1 cm = \\(10^{-2}\\) m = 0.01 m."
   },
   {
-    "objectID": "notes/day2_limits/day2_limits.html#problem-set",
-    "href": "notes/day2_limits/day2_limits.html#problem-set",
-    "title": "Day 2: Limits",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-2",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-2",
+    "title": "Bren Math Workshop",
     "section": "",
-    "text": "Click here to see the problem set."
+    "text": "Metric prefixes\n\nExample. Convert 750 mL into L.\n✏️ Let’s solve this together."
   },
   {
-    "objectID": "notes/day2_limits/day2_limits.html#problem-set-solution",
-    "href": "notes/day2_limits/day2_limits.html#problem-set-solution",
-    "title": "Day 2: Limits",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-2-solution",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-2-solution",
+    "title": "Bren Math Workshop",
     "section": "",
-    "text": "Solutions"
+    "text": "Metric prefixes\n\nExample. Convert 750 mL into L.\n\n\nStarting at milli and ending at base, we move 3 rows up the table:\nmilli → centi → deci → base\nSo we divide by \\(10^3\\):\n\\[\\begin{align*}\n750 \\text{ mL} &= \\frac{750}{10^3} \\text{ L} \\\\\n&= 0.75 \\text{ L}\n\\end{align*}\\]"
   },
   {
-    "objectID": "notes/day2_limits/problem_set_limits.html",
-    "href": "notes/day2_limits/problem_set_limits.html",
-    "title": "Limits and Derivatives Problem Set",
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example",
+    "title": "Bren Math Workshop",
     "section": "",
-    "text": "Limits and Derivatives Problem Set\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\n\n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n\n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n\n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n\n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative."
+    "text": "Metric prefixes\n\nExercise. Convert 4.7 km into cm.\n✏️ Take a moment to compute it."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-solution",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#metric-prefixes-example-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Metric prefixes\n\nExercise. Convert 4.7 km into cm.\n\n\nStarting at kilo and ending at centi, we move 5 rows down the table:\nkilo → hecto → deka → base → deci → centi\nSo we multiply by \\(10^5\\):\n\\[\\begin{align*}\n4.7 \\text{ km} &= 4.7 \\times 10^5 \\text{ cm} \\\\\n&= 470{,}000 \\text{ cm}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-volume-conversions",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-volume-conversions",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Converting areas and volumes\n\nSo far we’ve converted linear units (length). What about area (squared units) and volume (cubed units)?\n\n\nTo convert area units, square the linear conversion factor.\nTo convert volume units, cube the linear conversion factor.\n\nSince \\(1 \\text{ m} = 100 \\text{ cm}\\):\n\\[\\begin{align*}\n1 \\text{ m}^2 &= (100 \\text{ cm})^2 = 100^2 \\text{ cm}^2 = 10{,}000 \\text{ cm}^2 \\\\\n1 \\text{ m}^3 &= (100 \\text{ cm})^3 = 100^3 \\text{ cm}^3 = 1{,}000{,}000 \\text{ cm}^3\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Converting areas and volumes\n\n\n\nExample. Convert \\(3.5 \\text{ m}^2\\) into \\(\\text{cm}^2\\).\n✏️ Let’s solve this together."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example-solution",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#area-conversion-example-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Converting areas and volumes\n\n\n\nExample. Convert \\(3.5 \\text{ m}^2\\) into \\(\\text{cm}^2\\).\n\nThe linear factor from meters to centimeters is \\(10^2\\) (2 rows down the metric prefix table). For area, we square this factor:\n\n\\[\\begin{align*}\n3.5 \\text{ m}^2 &= 3.5 \\times (10^2)^2 \\text{ cm}^2 \\\\\n&= 3.5 \\times 10^4 \\text{ cm}^2 \\\\\n&= 35{,}000 \\text{ cm}^2.\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Converting areas and volumes\n\n\n\n\nExercise. Convert \\(2 \\text{ m}^3\\) into \\(\\text{cm}^3\\).\n✏️ Take a moment to solve this."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example-solution",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#volume-conversion-example-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Converting areas and volumes\n\n\n\nExercise. Convert \\(2 \\text{ m}^3\\) into \\(\\text{cm}^3\\).\n\nThe linear factor from meters to centimeters is \\(10^2\\) (2 rows down the metric prefix table). For volume, we cube this factor:\n\n\\[\\begin{align*}\n2 \\text{ m}^3 &= 2 \\times (10^2)^3 \\text{ cm}^3 \\\\\n&= 2 \\times 10^6 \\text{ cm}^3 \\\\\n&= 2{,}000{,}000 \\text{ cm}^3.\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Dimensional analysis (unit conversions)\n\nIn dimensional analysis, we multiply initial units by a sequence of unit conversion factors to arrive at the final desired units.\nExample: How many centimiters are there in 6 inches?\n✏️ Let’s solve this together."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solution-1",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solution-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Dimensional analysis (unit conversions)\n\nIn dimensional analysis, we multiply initial units by a sequence of unit conversion factors to arrive at the final desired units.\nExample: How many centimiters are there in 6 inches?\nWe know: 1 inch = 2.54 cm. This gives us two unit conversion factors:\n\\[ \\frac{2.54 \\text{ cm}}{1 \\text{ in}} \\text{ and } \\frac{1 \\text{ in}}{2.54 \\text{ cm}}.\\] Important: the fraction the numerator and denominator represent the same quantity.\nThen we multiply by the appropriate conversion factor and simplify:\n\\[\\begin{align*}\n\n6 \\text{ in} &= 6 \\text{ in} \\cdot  \\frac{2.54 \\text{ cm}}{1 \\text{ in}}\\\\\n&= 6  \\frac{2.54}{1} \\cdot  \\text{ in}\\frac{\\text{ cm}}{\\text{ in}} \\\\\n&= 15.24 \\cancel{\\text{ in}}\\frac{\\text{ cm}}{\\cancel{\\text{ in}}} \\\\\n&= 15.24 \\text{ cm}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-2",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Dimensional analysis (unit conversions)\n\nExample. Convert \\(100 \\frac{g}{cm^3}\\) into units of \\(\\frac{kg}{in^3}\\), given that 1 cm3 = 0.061 in3.\n✏️ Let’s solve this together."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-2-solution",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-2-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Dimensional analysis (unit conversions)\n\nExample. Convert \\(100 \\frac{g}{cm^3}\\) into units of \\(\\frac{kg}{in^3}\\), given that 1 cm3 = 0.061 in3.\nWe need one unit conversion factor for \\(g\\): \\(\\frac{1 \\text{ kg}}{1000 \\text{ g}}\\).\nAnd another one for \\(\\text{cm}^3\\): \\(\\frac{1 \\text{ cm}^3}{0.061 \\text{in}^3}\\).\nThen we multiply by the conversion factors and simplify\n\\[\\begin{align*}\n\n100 \\frac{\\text{ g}}{\\text{cm}^3} &= 100 \\frac{\\text{ g}}{\\text{cm}^3} \\cdot \\frac{1 \\text{ cm}^3}{0.061 \\text{ in}^3} \\cdot \\frac{1 \\text{ kg}}{1000 \\text{ g}}\\\\\n&= 100 \\frac{1}{0.061} \\frac{1}{1000}\\cdot \\frac{\\text{ g}}{\\text{cm}^3} \\frac{\\text{ cm}^3}{ \\text{ in}^3} \\frac{ \\text{ kg}}{\\text{ g}}\\\\\n&= \\frac{1}{0.61} \\cdot \\frac{\\cancel{\\text{ g}}}{\\cancel{\\text{cm}^3}} \\frac{\\cancel{\\text{ cm}^3}}{ \\text{ in}^3} \\frac{ \\text{ kg}}{\\cancel{\\text{ g}}}\\\\\n&=1.639\\frac{kg}{in^3}.\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-blank",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Parts per million (ppm)\n\n\nParts per million (ppm) is another way of writing a fraction (just like percentage) but suited to very small concentrations (e.g. a contaminant in water or soil).\n\n✏️"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Parts per million (ppm)\n\n\nParts per million (ppm) is another way of writing a fraction (just like percentage) but suited to very small concentrations (e.g. a contaminant in water or soil).\n\n\nWe have that:\n\\[\n1\\% = \\frac{1}{100} \\qquad \\qquad 1 \\text{ ppm} = \\frac{1}{1{,}000{,}000}\n\\]\nFrom these fractions we see we need 10,000 ppm to get 1%, so 1% = 10,000 ppm.\nTo convert percent → ppm, multiply percentage by 10,000. \nTo convert ppm → percent, divide ppm by 10,000."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-example",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-example",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Parts per million (ppm)\n\nExample. Convert 0.008% to ppm.\n✏️ Let’s solve this together."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-example-solution",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#ppm-example-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Parts per million (ppm)\n\nExample. Convert 0.008% to ppm.\n\nWe are converting percent → ppm, so we multiply by 10,000:\n\n\\[\\begin{align*}\n0.008\\% &= 0.008 \\times 10{,}000 \\text{ ppm} \\\\\n&= 80 \\text{ ppm}\n\\end{align*}\\]"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-practice",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-practice",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Unit conversion practice\n\n\n\nConvert 120 ppm to a percentage.\n\n\n\nConvert 3,400 mm to meters.\n\n\n\nConvert an area of \\(3.2 \\text{ km}^2\\) to \\(\\text{m}^2\\).\n\n\n\nA stock solution is 4 g/L. Express this in mg/mL.\n\n\n\nConvert \\(8.1\\frac{km}{s}\\) to miles per hour, given that 1 km = 0.621 miles.\n\n\n\nA lake has average depth 800 cm and surface area \\(2.5 \\text{ km}^2\\). Using Volume = depth × area, find the volume in \\(\\text{m}^3\\)."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-6",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-6",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Unit conversion practice\n\n✏️ Let’s see a solution!\n\nConvert 120 ppm to a percentage.\n\n  \n\nConvert 3,400 mm to meters.\n\n  \n\nConvert an area of \\(3.2 \\text{ km}^2\\) to \\(\\text{m}^2\\)."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-3",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-3",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Unit conversion practice\n\n\nA stock solution is 4 g/L. Express this in mg/mL.\n\n✏️ Let’s see a solution!"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-4",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-4",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Unit conversion practice\n\n\nConvert \\(8.1\\frac{km}{s}\\) to miles per hour, given that 1 km = 0.621 miles.\n\n✏️ Let’s see a solution!"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-5",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-5",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Unit conversion practice\n\n\nA lake has average depth 800 cm and surface area \\(2.5 \\text{ km}^2\\). Using Volume = depth × area, find the volume in \\(\\text{m}^3\\).\n\n✏️ Let’s see a solution!"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-answers",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#unit-conv-solutions-answers",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Unit conversion practice: solutions\n\n1. \\(120 \\text{ ppm} = 120 / 10{,}000 = 0.012\\%\\)\n2. \\(3{,}400 \\text{ mm} = 3{,}400 / 10^3 = 3.4\\) m\n\n3. \\(3.2 \\text{ km}^2 \\times (1000\\text{ m/km})^2 = 3.2\\times10^{6}\\) m²\n\n4. \\(4 \\text{ g/L} = 4000 \\text{ mg} / 1000 \\text{ mL} = 4\\) mg/mL\n\n5. \\(8.1\\frac{km}{s} \\times 3600\\frac{s}{hr} \\times 0.621\\frac{mi}{km} = 18108.36 \\frac{mi}{hr}\\)\n\n6. Area \\(= 2.5\\times10^{6}\\) m². Volume \\(= 8 \\times 2.5\\times10^{6} = 2\\times10^{7}\\) m³"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#break",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#break",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Let’s take a 10 minute break\n\n\nimage: Flaticon.com"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#eds212-basics",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#eds212-basics",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Functions"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-1",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Functions\n\nFunctions are mathematical expressions that tell us how input values are related to output values."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-2",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Functions\n\nFunctions are mathematical expressions that tell us how input values are related to output values.\n\nFor example, \\(y = 3x-5\\) is a function that tells us the value of y at any value of x. In this scenario, we would probably say y is a function of x."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-3",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#functions-3",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Functions\n\nFunctions are mathematical expressions that tell us how input values are related to output values.\n\nFor example, \\(y = 3x-5\\) is a function that tells us the value of y at any value of x. In this scenario, we would probably say y is a function of x.\nCould you also rewrite it and say x is a function of y?\nHere, with no knowledge of what’s an input and what’s an output, sure - but usually in environmental science we specify the input variable(s), and the output variable(s) carefully.\nWhat follows is the expression in the format of:\n\n“[output variable(s)] is/are a function of [input variable(s)]”.\n\n\nAlso: output variable = dependent variable and input variable = independent variable."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#inputs-outputs",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#inputs-outputs",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Thinking about inputs and outputs\n\n\nFor the following combinations of related variables, which do you expect would be the input and the output in a function describing how they are related? E.g. “Evapotranspiration is a function of air temperature.”\n\n✏️ Write your answer individually as a sentence.\n\n\nfuel (biomass) / slope / wildfire severity / windspeed / air temperature\nwind speed / power generated by wind turbine\nsoil C:N ratio / bacterial biomass / soil water content / leaf litter decomposition rate\n\n\n\n\nwildfire severity is a function of fuel and slope and windspeed and air temperature\npower generated by wind turbine is a function of wind speed\nleaf litter decomposition rate is a function of soil C:N ratio and bacterial biomass and soil water content"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#fxn-notation-blank",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#fxn-notation-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Function notation\n\n✏️"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#fxn-notation",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#fxn-notation",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Function notation\n\n\nSingle variable (univariate) function:\n\\(f(x) = [expression\\space containing \\space x]\\)\n\nMultivariate function:\n\\(g(a,T,z)=[expression\\space containing \\space a, T, \\space and \\space z]\\)"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#eval-fxns-blank",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#eval-fxns-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Evaluating functions\n\n\n\nWe evaluate functions by plugging in values of the input variables.\n\n✏️ Example:\n\nEvaluate \\(g(x,t)=2.4x+0.5t^2\\) at \\(x = 3\\) and \\(t = 10\\)"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#eval-fxns",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#eval-fxns",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Evaluating functions\n\n\n\nWe evaluate functions by plugging in values of the input variables.\n\n✏️ Example:\n\nEvaluate \\(g(x,t)=2.4x+0.5t^2\\) at \\(x = 3\\) and \\(t = 10\\)\n\n\\(g(3, 10) = 2.4(3) + 0.5(10^2)= 57.2\\)"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-title",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-title",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Graphs"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Why graphs?\n\nGraphs are a way for us to more easily process trends or patterns that may be more challenging to understand in a table or list.\n\nWhich could be easier to understand?"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-1",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs generally move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\nAxes units must be defined depending on the application."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-2",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#xy-coordinates-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "The \\(xy\\) coordinate system\n\n\n\nGraphs generally move in a 2-dimensional plane with a coordinate system using two axes:\n\n\\(x\\)-axis (horizontal axis)\n\\(y\\)-axis (vertical axis)\n\nAxes units must be defined depending on the application.\n\nWe use pairs of numbers to place data:\n\nA point on the \\(xy\\) plane with coordinates \\((a,b)\\) means the point is located at \\(a\\) on the \\(x\\)-axis and at \\(b\\) on the \\(y\\)-axis.\n\nWhere would (2,-1) go on the graph?"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-series",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-series",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "We can join series of points to make graphs"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-fcn",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-fcn",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Functions on a single variable and a single output can be graphed\n\n\n\n\n\\(\\color{green}{y=sin(3x)+2x}\\)\n\n\n\n\\(\\color{red}{y=0.5x^3+x^2-5x}\\)\n\n\n\n\\(\\color{blue}{y=0.85x+0.44}\\)"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-1",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Two key ingredients to graphs\n\n\n\nIntercepts\n\n\\(x\\)-intercept\n\nWhere does the graph intersect the \\(x\\)-axis?\nIn other words, for what values of \\(x\\) do we have \\((x,0)\\) be part of the graph?\n\n\n\n\nWhat are the \\(x\\) and \\(y\\) intercepts of the polynomial function in red?"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-2",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graph-ingredients-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Two key ingredients to graphs\n\n\n\nIntercepts\n\n\\(x\\)-intercept\n\nWhere does the graph intersect the \\(x\\)-axis?\nIn other words, for what values of \\(x\\) do we have \\((x,0)\\) be part of the graph?\n\n\\(y\\)-intercept\n\nWhere does the graph intersect the \\(y\\)-axis?\nIn other words, for what value of \\(y\\) do we have \\((0,y)\\) be part of the graph?\n\n\n\n\nWhat are the \\(x\\) and \\(y\\) intercepts of the polynomial function in red?"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Intercepts practice\n\n✏️ Solve these individually.\n\n\n\n\nA reservoir is being drained for irrigation. The graph shows its storage volume (in millions of cubic meters) as a function of time (in years).\n\n\nWhen will the reservoir be empty? Are you using the \\(x\\) or \\(y\\) intercept?\nWhat is the initial volume of the reservoir? Are you using the \\(x\\) or \\(y\\) intercept?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPopulation size is denoted by \\(N\\), this is the total number of individuals. Per-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), is a function of \\(N\\). What does the \\(y\\)-intercept of \\(\\frac{1}{N}\\frac{dN}{dt}\\) represent? What does its \\(x\\)-intercept represent?"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-3-solve",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-3-solve",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Intercepts practice (1)\n\n\n\n\nWhen will the reservoir be empty? Are you using the \\(x\\) or \\(y\\) intercept?\nWhat is the initial volume of the reservoir? Are you using the \\(x\\) or \\(y\\) intercept?\n\n✏️ Let’s see a solution!"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1-solutions",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-1-solutions",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Intercepts practice (1)\n\n\n\n\nWhen will the reservoir be empty? Are you using the \\(x\\) or \\(y\\) intercept?\nWhat is the initial volume of the reservoir? Are you using the \\(x\\) or \\(y\\) intercept?\n\n✏️ Let’s see a solution!\n\n\n\n\n\n\n\n\n\n\n\nThe reservoir will be empty after 10 years. To identify this we look at the \\(x\\)-intercept, which happens at \\((10,0)\\).\nThe initial volume of water in the reservoir is 50 cubic meters. To identify this we look at the \\(y\\)-intercept, which happens at \\((0, 50)\\)."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solve",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solve",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Intercepts practice (2)\n\n\n\nPopulation size is denoted by \\(N\\), this is the total number of individuals.\nPer-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), is a function of \\(N\\).\n\nWhat does the \\(y\\)-intercept of \\(\\frac{1}{N}\\frac{dN}{dt}\\) represent?\nWhat does its \\(x\\)-intercept represent?\n\n\n\n\n\n\n\n\n\n\n\n\n✏️ Let’s see a solution!"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solution",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#intercepts-practice-2-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Intercepts practice (2)\n\n\n\nPopulation size is denoted by \\(N\\), this is the total number of individuals.\nPer-capita growth rate, \\(\\frac{1}{N}\\frac{dN}{dt}\\), is a function of \\(N\\).\n\nWhat does the \\(y\\)-intercept of \\(\\frac{1}{N}\\frac{dN}{dt}\\) represent?\nWhat does its \\(x\\)-intercept represent?\n\n\n\n\n\n\n\n\n\n\n\n\n✏️ Let’s see a solution!\n\n\\(y\\)-intercept = the population’s maximum per-capita growth rate when it is small and not yet resource-limited. This is known as the intrinsic growth rate \\(r\\).\n\\(x\\)-intercept = the population size at which per-capita growth stops. This is known as the carrying capacity \\(K\\)."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-title",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-title",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "“Reading” graphs"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#understanding-graphs",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#understanding-graphs",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Understanding graphs\n\n\nWhen you look at graphs, the first things you should ask:\n\n\nWhat variables are being plotted (e.g. x- & y-axis, including units)?\n\n\n\nWhat values are plotted (e.g. raw values, transformed, means, etc.)?\n\n\n\nWhat are the overall takeaways (e.g. trends, maxima, minima, axes intercepts) and am I understanding them responsibly?"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-1",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Reading graphs (in general)\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-2",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#reading-graphs-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Reading graphs (in general)\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-1",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "💬 Partner 1: read the graph to your partner.\n\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-2",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "💬 Partner 2: read the graph to your partner.\n\n\n\n“On the x-axis we have [x-variable] measured in [units] and on the y-axis the the [y-variable] measured in [units]. This figure shows the [change/pattern/relationship] between [x-variable] and [y-variable]. Overall [overall statement of pattern / trend / findings].”"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-mono-lake",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#graphs-reading-practice-mono-lake",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Reading graphs practice"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#end-of-day",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#end-of-day",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Wrapping up…"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#problem-set",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#problem-set",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Get some extra practice!\n\n\n\nUnits & graphs problem set"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/lecture-functions-graphs.html#what-we-covered",
+    "href": "notes/day2_functions_graphs/lecture-functions-graphs.html#what-we-covered",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "What we covered today\n\n\n📏 Metric prefixes\n🧊 Area & volume conversions\n⚖️ Dimensional analysis (unit conversions)\n🧪 Parts per million (ppm)\n🧩 Definition of functions \n\n📊 Graphing\n\n📈 \\(x\\) and \\(y\\) intercepts\n💬 Reading graphs\n\n🐟 Applications to MESM courses"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/solutions_problem_set_units.html",
+    "href": "notes/day2_functions_graphs/solutions_problem_set_units.html",
+    "title": "Solutions: Units Problem Set",
+    "section": "",
+    "text": "Instructions\n\n\n\nThese are the solutions to the units problem set. Click a solution to expand it and try each problem yourself first!\n\n\n\n\n1) Convert 250 ppm to a percentage.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n250 ppm\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Divide by 10,000 to convert ppm to percent\n\\[\n250 \\text{ ppm} = \\frac{250}{10{,}000}\\% = 0.025\\%\n\\]\nAnswer\n\\[\n\\boxed{0.025\\%}\n\\]\n\n\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n0.015% contaminant by mass\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Multiply by 10,000 to convert percent to ppm\n\\[\n0.015\\% \\times 10{,}000 = 150 \\text{ ppm}\n\\]\nAnswer\n\\[\n\\boxed{150 \\text{ ppm}}\n\\]\n\n\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\nHeavy metal mass: \\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nRatio: \\[\n\\frac{12\\ \\text{g}}{0.19\\ \\text{g}} \\approx 63.2 : 1\n\\]\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nSample mass = 500 g\nOrganic matter = 2.4% by mass\nHeavy metal = 380 ppm by mass\n\nStep 1: Find the mass of organic matter\n\\[\n500\\ \\text{g} \\times 2.4\\% = 500 \\text{g} * 2.4 / 100 = 12\\ \\text{g}\n\\]\nStep 2: Find the mass of heavy metal\n\\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nStep 3: Take the ratio\n\\[\n\\frac{12\\text{ g}}{0.19\\text{ g}} \\approx 63.2\n\\]\nAnswer\n\\[\n\\boxed{63.2}\n\\]\n\n\n\n\n\n\n4) Convert 2,300 mL to liters.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nVolume = 2,300 mL\n\nStep 1: Convert mL to L\n\\[\n2{,}300\\text{ mL} = \\frac{2{,}300}{1000} = 2.3\\text{ L}\n\\]\nAnswer\n\\[\n\\boxed{2.3\\text{ L}}\n\\]\n\n\n\n5) Convert an area of 5.4 km² to m².\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nArea = 5.4 km²\n\nStep 1: Square the linear conversion factor\n\\[\n1\\text{ km} = 1{,}000\\text{ m} \\implies 1\\text{ km}^2 = (1{,}000)^2\\text{ m}^2 = 10^6\\text{ m}^2\n\\]\nStep 2: Apply the factor\n\\[\n5.4\\text{ km}^2 = 5.4 \\times 10^6\\text{ m}^2\n\\]\nAnswer\n\\[\n\\boxed{5{,}400{,}000\\text{ m}^2}\n\\]\n\n\n\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nDepth = 12 m\nSurface area = 1.8 km²\n\nStep 1: Convert area to square meters\n\\[\n1.8\\text{ km}^2 = 1.8 \\times (1{,}000)^2 = 1.8 \\times 10^6\\text{ m}^2\n\\]\nStep 2: Calculate the volume\n\\[\nV = \\text{depth} \\times \\text{area}\n\\]\n\\[\nV = 12 \\times 1.8\\times10^6\n\\]\n\\[\nV = 2.16 \\times 10^7\\text{ m}^3\n\\]\nAnswer\n\\[\n\\boxed{21{,}600{,}000\\text{ m}^3}\n\\]\n\n\n\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 6 g/L\n\nStep 1: Convert grams to milligrams\n\\[\n6\\text{ g} = 6{,}000\\text{ mg}\n\\]\nStep 2: Convert liters to milliliters\n\\[\n1\\text{ L} = 1{,}000\\text{ mL}\n\\]\nStep 3: Divide to get the new concentration\n\\[\n\\frac{6{,}000\\text{ mg}}{1{,}000\\text{ mL}} = 6\\text{ mg/mL}\n\\]\nAnswer\n\\[\n\\boxed{6\\text{ mg/mL}}\n\\]\n\n\n\n8) One microgram (μg) is equivalent to \\(1/10^6\\) grams and one meter cubed (m³) is equivalent to 1000 liters. A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 12 μg/mL\n\\(1\\ \\mu\\text{g} = 10^{-6}\\text{ g}\\) and \\(1\\text{ m}^3 = 1000\\text{ L}\\)\n\nStep 1: Find a conversion factor from micrograms to kilograms\n\\[\n1\\ \\mu\\text{g} = 10^{-6}\\text{ g} = 10^{-9}\\text{ kg} \\implies \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}}\n\\]\nStep 2: Find a conversion factor from m³ to mL\n\\[\n1\\text{ m}^3 = 1000\\text{ L} = 10^{6}\\text{ mL} \\implies \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\n\\]\nStep 3: Multiply by the conversion factors, group numbers and units, and simplify\n\\[\\begin{align*}\n12\\ \\frac{\\mu\\text{g}}{\\text{mL}} &= 12\\ \\frac{\\mu\\text{g}}{\\text{mL}} \\cdot \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}} \\cdot \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\\\\\n&= \\left(12 \\times 10^{-9} \\times 10^{6}\\right) \\cdot \\left(\\frac{\\mu\\text{g}}{\\text{mL}}\\cdot\\frac{\\text{kg}}{\\mu\\text{g}}\\cdot\\frac{\\text{mL}}{\\text{m}^3}\\right)\\\\\n&= 0.012\\ \\frac{\\text{kg}}{\\text{m}^3}\n\\end{align*}\\]\nAnswer\n\\[\n\\boxed{0.012\\text{ kg/m}^3}\n\\]\n\n\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nPrecipitation = 45 mm/year\nWatershed area = 1,800 km²\n\nStep 1: Convert precipitation to meters\n\\[\n45\\text{ mm} = \\frac{45}{1000} = 0.045\\text{ m}\n\\]\nStep 2: Convert area to square meters\n\\[\n1,800\\text{ km}^2 = 1,800(1,000)^2\n\\]\n\\[\n= 1.8 \\times 10^9\\text{ m}^2\n\\]\nStep 3: Calculate the annual precipitation volume\nVolume is calculated as:\n\\[\nV = P \\times A\n\\]\nSubstitute the values:\n\\[\nV = (0.045)(1.8 \\times 10^9)\n\\]\n\\[\nV = 8.1 \\times 10^7\\text{ m}^3/\\text{year}\n\\]\nAnswer\n\\[\n\\boxed{81,000,000\\text{ m}^3/\\text{year}}\n\\]\n\n\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nCompany A: 14.6 barrels spilled, 9.3 barrels recovered\nCompany B: 692 L spilled, 94% recovered\nCompany C: 18.1 gallons spilled, 0% recovered\nConversions: 1 barrel = 42 gallons = 159 liters\n\nStep 1: Company A’s unrecovered oil (already in barrels)\n\\[\n14.6 - 9.3 = 5.3\\text{ barrels}\n\\]\nStep 2: Company B’s unrecovered oil, converted to barrels\n\\[\n692 \\times (1 - 0.94) = 41.52\\text{ L unrecovered}\n\\]\n\\[\n41.52\\text{ L} \\times \\frac{1\\text{ barrel}}{159\\text{ L}} = 0.26\\text{ barrels}\n\\]\nStep 3: Company C’s unrecovered oil, converted to barrels\n\\[\n18.1\\text{ gal} \\times \\frac{1\\text{ barrel}}{42\\text{ gal}} = 0.43\\text{ barrels}\n\\]\nStep 4: Add up all three companies’ unrecovered oil\n\\[\n5.3 + 0.26 + 0.43 = 5.99\\text{ barrels}\n\\]\nAnswer\n\\[\n\\boxed{5.99\\text{ barrels unrecovered}}\n\\]\n\n\n\n\n\n\n11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nIn one sentence, describe what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) On the \\(x\\) axis we have hunderds of households subscribed and on the \\(y\\) axis we have monthly fee in dollars. The plot shows a linear demand curve. We can see that as the monthly fee drops, more households are willing to subscribe to the compost program.\nb)\nThe \\(y\\)-intercept is $25/month, this is the highest fee at which any household is still willing to subscribe. Above $25, quantity demanded drops to zero.\nc)\nThe \\(x\\)-intercept is \\(Q=500\\) (i.e., 500 hundred = 50,000 households). This is the number of households that would subscribe if the service were free. This is the maximum possible demand for the program."
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/solutions_problem_set_units.html#percent-ppm-conversions",
+    "href": "notes/day2_functions_graphs/solutions_problem_set_units.html#percent-ppm-conversions",
+    "title": "Solutions: Units Problem Set",
+    "section": "",
+    "text": "1) Convert 250 ppm to a percentage.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n250 ppm\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Divide by 10,000 to convert ppm to percent\n\\[\n250 \\text{ ppm} = \\frac{250}{10{,}000}\\% = 0.025\\%\n\\]\nAnswer\n\\[\n\\boxed{0.025\\%}\n\\]\n\n\n\n2) A water sample is 0.015% contaminant by mass. Express this in ppm.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\n0.015% contaminant by mass\n\\(1\\% = 10{,}000\\) ppm\n\nStep 1: Multiply by 10,000 to convert percent to ppm\n\\[\n0.015\\% \\times 10{,}000 = 150 \\text{ ppm}\n\\]\nAnswer\n\\[\n\\boxed{150 \\text{ ppm}}\n\\]\n\n\n\n3) A 500 g soil sample is 2.4% organic matter by mass, and separately contains 380 ppm of a heavy metal. What is the ratio of organic matter mass to heavy metal mass in the sample?\nHeavy metal mass: \\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nRatio: \\[\n\\frac{12\\ \\text{g}}{0.19\\ \\text{g}} \\approx 63.2 : 1\n\\]\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nSample mass = 500 g\nOrganic matter = 2.4% by mass\nHeavy metal = 380 ppm by mass\n\nStep 1: Find the mass of organic matter\n\\[\n500\\ \\text{g} \\times 2.4\\% = 500 \\text{g} * 2.4 / 100 = 12\\ \\text{g}\n\\]\nStep 2: Find the mass of heavy metal\n\\[\n500\\ \\text{g} \\times 380\\ \\text{ppm} = 500\\ \\text{g} \\times 0.000380 = 0.19\\ \\text{g}\n\\]\nStep 3: Take the ratio\n\\[\n\\frac{12\\text{ g}}{0.19\\text{ g}} \\approx 63.2\n\\]\nAnswer\n\\[\n\\boxed{63.2}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/solutions_problem_set_units.html#unit-conversions",
+    "href": "notes/day2_functions_graphs/solutions_problem_set_units.html#unit-conversions",
+    "title": "Solutions: Units Problem Set",
+    "section": "",
+    "text": "4) Convert 2,300 mL to liters.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nVolume = 2,300 mL\n\nStep 1: Convert mL to L\n\\[\n2{,}300\\text{ mL} = \\frac{2{,}300}{1000} = 2.3\\text{ L}\n\\]\nAnswer\n\\[\n\\boxed{2.3\\text{ L}}\n\\]\n\n\n\n5) Convert an area of 5.4 km² to m².\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nArea = 5.4 km²\n\nStep 1: Square the linear conversion factor\n\\[\n1\\text{ km} = 1{,}000\\text{ m} \\implies 1\\text{ km}^2 = (1{,}000)^2\\text{ m}^2 = 10^6\\text{ m}^2\n\\]\nStep 2: Apply the factor\n\\[\n5.4\\text{ km}^2 = 5.4 \\times 10^6\\text{ m}^2\n\\]\nAnswer\n\\[\n\\boxed{5{,}400{,}000\\text{ m}^2}\n\\]\n\n\n\n6) A reservoir has average depth 12 m and surface area 1.8 km². Using Volume = depth × area, find the volume in m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nDepth = 12 m\nSurface area = 1.8 km²\n\nStep 1: Convert area to square meters\n\\[\n1.8\\text{ km}^2 = 1.8 \\times (1{,}000)^2 = 1.8 \\times 10^6\\text{ m}^2\n\\]\nStep 2: Calculate the volume\n\\[\nV = \\text{depth} \\times \\text{area}\n\\]\n\\[\nV = 12 \\times 1.8\\times10^6\n\\]\n\\[\nV = 2.16 \\times 10^7\\text{ m}^3\n\\]\nAnswer\n\\[\n\\boxed{21{,}600{,}000\\text{ m}^3}\n\\]\n\n\n\n7) A saline stock is 6 g/L. Express this in mg/mL.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 6 g/L\n\nStep 1: Convert grams to milligrams\n\\[\n6\\text{ g} = 6{,}000\\text{ mg}\n\\]\nStep 2: Convert liters to milliliters\n\\[\n1\\text{ L} = 1{,}000\\text{ mL}\n\\]\nStep 3: Divide to get the new concentration\n\\[\n\\frac{6{,}000\\text{ mg}}{1{,}000\\text{ mL}} = 6\\text{ mg/mL}\n\\]\nAnswer\n\\[\n\\boxed{6\\text{ mg/mL}}\n\\]\n\n\n\n8) One microgram (μg) is equivalent to \\(1/10^6\\) grams and one meter cubed (m³) is equivalent to 1000 liters. A pollutant concentration is 12 μg/mL. Convert this to kg/m³.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nConcentration = 12 μg/mL\n\\(1\\ \\mu\\text{g} = 10^{-6}\\text{ g}\\) and \\(1\\text{ m}^3 = 1000\\text{ L}\\)\n\nStep 1: Find a conversion factor from micrograms to kilograms\n\\[\n1\\ \\mu\\text{g} = 10^{-6}\\text{ g} = 10^{-9}\\text{ kg} \\implies \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}}\n\\]\nStep 2: Find a conversion factor from m³ to mL\n\\[\n1\\text{ m}^3 = 1000\\text{ L} = 10^{6}\\text{ mL} \\implies \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\n\\]\nStep 3: Multiply by the conversion factors, group numbers and units, and simplify\n\\[\\begin{align*}\n12\\ \\frac{\\mu\\text{g}}{\\text{mL}} &= 12\\ \\frac{\\mu\\text{g}}{\\text{mL}} \\cdot \\frac{10^{-9}\\text{ kg}}{1\\ \\mu\\text{g}} \\cdot \\frac{10^{6}\\text{ mL}}{1\\text{ m}^3}\\\\\n&= \\left(12 \\times 10^{-9} \\times 10^{6}\\right) \\cdot \\left(\\frac{\\mu\\text{g}}{\\text{mL}}\\cdot\\frac{\\text{kg}}{\\mu\\text{g}}\\cdot\\frac{\\text{mL}}{\\text{m}^3}\\right)\\\\\n&= 0.012\\ \\frac{\\text{kg}}{\\text{m}^3}\n\\end{align*}\\]\nAnswer\n\\[\n\\boxed{0.012\\text{ kg/m}^3}\n\\]\n\n\n\n9) A watershed receives 45 mm/year of precipitation over an area of 1,800 km². Find the total annual volume of precipitation in m³/year.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nPrecipitation = 45 mm/year\nWatershed area = 1,800 km²\n\nStep 1: Convert precipitation to meters\n\\[\n45\\text{ mm} = \\frac{45}{1000} = 0.045\\text{ m}\n\\]\nStep 2: Convert area to square meters\n\\[\n1,800\\text{ km}^2 = 1,800(1,000)^2\n\\]\n\\[\n= 1.8 \\times 10^9\\text{ m}^2\n\\]\nStep 3: Calculate the annual precipitation volume\nVolume is calculated as:\n\\[\nV = P \\times A\n\\]\nSubstitute the values:\n\\[\nV = (0.045)(1.8 \\times 10^9)\n\\]\n\\[\nV = 8.1 \\times 10^7\\text{ m}^3/\\text{year}\n\\]\nAnswer\n\\[\n\\boxed{81,000,000\\text{ m}^3/\\text{year}}\n\\]\n\n\n\n10) You are combining information from multiple sources to estimate the total annual oil spilled in a watershed, reported by different companies. The following are reported for the year:\n\nCompany A: 14.6 barrels spilled (with 9.3 barrels recovered)\nCompany B: 692 liters spilled (94% recovered)\nCompany C: 18.1 gallons spilled (0% recovered)\n\nWhat is the total unrecovered amount of oil spilled into the watershed that year, in barrels. Use the conversion 1 barrel = 42 gallons = 159 liters and a calculator when needed.\n\n\n\n\n\n\nSolution\n\n\n\n\n\nGiven\n\nCompany A: 14.6 barrels spilled, 9.3 barrels recovered\nCompany B: 692 L spilled, 94% recovered\nCompany C: 18.1 gallons spilled, 0% recovered\nConversions: 1 barrel = 42 gallons = 159 liters\n\nStep 1: Company A’s unrecovered oil (already in barrels)\n\\[\n14.6 - 9.3 = 5.3\\text{ barrels}\n\\]\nStep 2: Company B’s unrecovered oil, converted to barrels\n\\[\n692 \\times (1 - 0.94) = 41.52\\text{ L unrecovered}\n\\]\n\\[\n41.52\\text{ L} \\times \\frac{1\\text{ barrel}}{159\\text{ L}} = 0.26\\text{ barrels}\n\\]\nStep 3: Company C’s unrecovered oil, converted to barrels\n\\[\n18.1\\text{ gal} \\times \\frac{1\\text{ barrel}}{42\\text{ gal}} = 0.43\\text{ barrels}\n\\]\nStep 4: Add up all three companies’ unrecovered oil\n\\[\n5.3 + 0.26 + 0.43 = 5.99\\text{ barrels}\n\\]\nAnswer\n\\[\n\\boxed{5.99\\text{ barrels unrecovered}}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_functions_graphs/solutions_problem_set_units.html#graphs",
+    "href": "notes/day2_functions_graphs/solutions_problem_set_units.html#graphs",
+    "title": "Solutions: Units Problem Set",
+    "section": "",
+    "text": "11) A city is considering a curbside compost pickup program. A survey of households estimates the monthly demand for the service as \\[\nP = 25 - 0.05Q\n\\] where \\(Q\\) = number of households subscribed in hundreds and \\(P\\) = the monthly fee ($) a household is willing to pay.\n\n\n\n\n\n\n\n\n\n\nIn one sentence, describe what the graph shows.\nInterpret what the \\(y\\)-intercept means in this context.\nInterpret what the \\(x\\)-intercept means in this context.\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\na) On the \\(x\\) axis we have hunderds of households subscribed and on the \\(y\\) axis we have monthly fee in dollars. The plot shows a linear demand curve. We can see that as the monthly fee drops, more households are willing to subscribe to the compost program.\nb)\nThe \\(y\\)-intercept is $25/month, this is the highest fee at which any household is still willing to subscribe. Above $25, quantity demanded drops to zero.\nc)\nThe \\(x\\)-intercept is \\(Q=500\\) (i.e., 500 hundred = 50,000 households). This is the number of households that would subscribe if the service were free. This is the maximum possible demand for the program."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#title-slide",
+    "href": "notes/day2_limits/lecture-limits.html#title-slide",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Limits and Intro to Derivatives\nBren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management\n\nMaterials have been adapted from Nathaniel Grimes work for the Bren Math Workshop."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#tr",
+    "href": "notes/day2_limits/lecture-limits.html#tr",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Team Review\n\n\nHow did everyone feel about the problem set?\nAny questions?\nDiscuss with study partner"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#fun-bake",
+    "href": "notes/day2_limits/lecture-limits.html#fun-bake",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Functions are like baking recipes\n\n\n\n\nAssemble all your ingredients.\n\nIn a function, these are the independent variables like \\(x\\).\n\nFollow the instructions to mix, bake, and decorate\n\nThese are the mathematical instructions in the function about how to manipulate the independent variables.\n\nEnd up with final product!\n\nThis is the ouput \\(f(x)\\) or dependent variable.\n\nTypically we use the notation \\(f(x)=x\\), but we can always use different representations like \\(g(x)=x\\) or \\(y=x\\)."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#function-definition",
+    "href": "notes/day2_limits/lecture-limits.html#function-definition",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "What is a function?\n\nFor each combination of independent variables, there is exactly one (and only one) value of the dependent variable.\nVertical line test\nIf you run a vertical line perpendicular to the \\(x\\)-axis and see where it intersects the graph of a function, then it should only intersect it once at every value of \\(x\\).\n\n🤔 Are these functions?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#continuity",
+    "href": "notes/day2_limits/lecture-limits.html#continuity",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Continuity\n\nIntuitively, a function is continuous if there are no ‘breaks’ in the graph of the function. This means you are able to draw the whole graph without lifting your pencil.\nTo define it formally we need to understand limits.\n\nA function is discontinuous if it’s not continuous! So there are ‘breaks’ or ‘gaps’ in its graph.\n\n\n\n\nContinuous\n\n\n\n\n\n\n\n\nDiscontinuous"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#limits",
+    "href": "notes/day2_limits/lecture-limits.html#limits",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Limits\n\nDefinition\nWe say a number \\(L\\) is the limit of a function \\(f(x)\\) as its variable \\(x\\) approaches a number \\(c\\), if the function’s output values \\(f(x)\\) approach \\(L\\) when \\(x\\) get closer to \\(c\\).\n\nWe write this symbolically as:\n\\[\n\\large\n\\lim_{x\\to c} f(x)=L\n\\]\n\nWe read this as: “The limit of \\(f(x)\\) as \\(x\\) approaches \\(c\\) is \\(L\\).”"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#lim-ex",
+    "href": "notes/day2_limits/lecture-limits.html#lim-ex",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example: numerical\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\nWe need to examine the values of \\(f(x)\\) as \\(x\\) gets closer to 2 from both sides.\n\n\n\n\n\n\n\n\n\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, we say that “The limit of \\(2x^2-4\\) as \\(x\\) approaches 2 is 4” and we can write it like this:\n\\[\n\\lim_{x\\to 2}(2x^2-4)=4\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
+    "href": "notes/day2_limits/lecture-limits.html#limit-graph-sol",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example: graph\n\nWhat is the limit of \\(f(x)=2x^2-4\\) as \\(x\\) approaches 2?\n\nFrom both directions it looks like \\(f(x)\\) converges to 4.\nSo, \\(\\lim_{x\\to 2}(2x^2-4)=4\\)."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#continuity-revisited",
+    "href": "notes/day2_limits/lecture-limits.html#continuity-revisited",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Continuity revisited\n\n\n\nA function \\(f(x)\\) is continuous at \\(x=c\\) if\n\\[\n\\lim_{x\\to c}f(x)=f(c).\n\\]\nSo, if a function is continuous, we just need to evaluate the function to obtain the limit.\nExample\n\\(f(x) = 2x^2-4\\) is a continuous function. So we can obtain the limit as \\(x\\to 2\\) by evaluating the function\n\\[\\lim_{x\\to 2}(2x^2-4)= f(2) = 4.\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#lim-defined",
+    "href": "notes/day2_limits/lecture-limits.html#lim-defined",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Limit at a discontinuity\n\n\nDiscontinuous functions can still have limits at a discontinuity.\n\nExample\nLet \\[\nf(x) = x+1 , \\text{ if x $\\neq$ 2}\n\\]\n✏️ Draw a graph of \\(f(x)\\). Then try calculating \\(\\lim_{x\\to 2} f(x)\\).\n\n\n\n\n\n\n\n\n\nThe value \\(f(2)\\) may not exist, but we can still find a limit because \\(f(x)\\) consistently approaches 3 from both directions as \\(x\\to 2\\)."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#lim-discon",
+    "href": "notes/day2_limits/lecture-limits.html#lim-discon",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "No limit at a discontinuity\n\n\nBut other times discontinuous functions don’t have a limit at a discontinuity.\n\nExample\nThe function \\(|x|\\) is the absolute value function. It is such that\n\\[\n|x| =\n\\begin{cases}\nx, & \\text{ if } x\\geq 0 \\\\\n-x, & \\text{ if } x &lt;0\n\\end{cases}\n.\n\\]\n\n\n✏️ Is the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\n✏️ Try calculating: \\[\n\\lim_{x\\to 2}\\frac{|x-2|}{x-2}.\n\\]\n\nHint: Try to do numerical approximations or draw the graph of this function."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#mean-girls",
+    "href": "notes/day2_limits/lecture-limits.html#mean-girls",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "No limit at a discontinuity\n\nIs the function \\(f(x) = \\frac{|x-2|}{x-2}\\) continuous at \\(x=2\\)?\nThis function is not even defined at \\(x=2\\) since it would require us to divide by zero, which is undefined.\n\n\nTry calculating \\(\\lim_{x\\to 2}\\frac{|x-2|}{x-2}\\).\nLet’s investigate:"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#graph",
+    "href": "notes/day2_limits/lecture-limits.html#graph",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "No limit at a discontinuity\n\nThe function \\(\\frac{|x-2|}{x-2}\\) approaches different values from either side at \\(x=2\\).\n\n\n\nTherefore… the limit does not exist!"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#side-limits",
+    "href": "notes/day2_limits/lecture-limits.html#side-limits",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Side limits\n\nThough the function \\(f(x) = \\frac{|x-2|}{x-2}\\) had no limit at \\(x=2\\), it clearly was approaching certain values when we considered only values of \\(x\\) from one side or the other:\n\n\n\n\n\n\n\n\n\n\n\nIn this case we say that\n\n\n\\[\n\\lim_{x\\to 2^-} f(x) = -1\n\\]\nThe limit of \\(f(x)\\) as \\(x\\) approaches 2 from the left is -1.\n\nNotice the small - subscript on the 2.\n\n\\[\n\\lim_{x\\to 2^+} f(x) = 1\n\\]\nThe limit of \\(f(x)\\) as \\(x\\) approaches 2 from the right is 1.\n\nNotice the small + subscript on the 2."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#ta",
+    "href": "notes/day2_limits/lecture-limits.html#ta",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-1",
+    "href": "notes/day2_limits/lecture-limits.html#ta-1-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Task 1: Match the graphs (a,b,c) with the limits (1,2,3).\n\nPart 1:\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to3}g(x)=0\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to-4}g(x)=3\n\\]\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3} g(x)= \\text{DNE}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#ta-1-2",
+    "href": "notes/day2_limits/lecture-limits.html#ta-1-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Part 2:\n\n2) Can you think of examples where discontinuous functions might exist in environmental science?\n\n3) As a team, draw graphs to exemplify two of these statements:\n\n\\(\\lim_{x\\to 4^-} f(x)\\) and \\(\\lim_{x\\to 4^+}f(x)\\) are both infinite\n\\(\\lim_{x\\to 3} f(x)=2\\), but \\(f(3)=0\\)\n\\(\\lim_{x\\to 5^-} f(x)=4\\) and \\(\\lim_{x\\to 5^+} f(x)=2\\)\n\\(\\lim_{x\\to -3} f(x)=-5\\) but \\(f(-3)=-5\\)"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#intro-derv",
+    "href": "notes/day2_limits/lecture-limits.html#intro-derv",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Introduction to Derivatives"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#alltogether",
+    "href": "notes/day2_limits/lecture-limits.html#alltogether",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Putting it all together\n\nRecall average and instantaneous rate of change\n\nTaking the average rate of change to a set limit will eventually converge to the instantaneous."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#average-slope",
+    "href": "notes/day2_limits/lecture-limits.html#average-slope",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Average slope\n\n\nStart with:\n\nNearby point:\n\nAverage slope:"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#average-slope-filled",
+    "href": "notes/day2_limits/lecture-limits.html#average-slope-filled",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Average slope\n\n\nStart with a point \\((x,f(x))\\) on the graph.\nA nearby point can be \\((x+\\Delta x, f(x+\\Delta x))\\), where \\(\\Delta x\\) is a short distance from \\(x\\).\n\nThe average slope between \\((x,f(x))\\) and \\((x+\\Delta x, f(x+\\Delta x))\\) is given by\n \\[\\text{average slope} = \\frac{f(x+\\Delta x) - f(x)}{(x+\\Delta x)-x} = \\frac{f(x+\\Delta x) - f(x)}{\\Delta x}.\\] \nWhat happens when \\(\\Delta x\\) becomes smaller and smaller?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-1",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-2",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-3",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-3",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#walkthrough-4",
+    "href": "notes/day2_limits/lecture-limits.html#walkthrough-4",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "What happens when \\(\\Delta x \\to 0\\)?"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#tangent",
+    "href": "notes/day2_limits/lecture-limits.html#tangent",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Tangent lines\n\nWhat if we let \\(\\Delta x=0\\)?\nThen we would have a slope line that only touches the graph at exactly \\(x\\). \n\n\nThese very special types of lines are called tangent lines."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#recap",
+    "href": "notes/day2_limits/lecture-limits.html#recap",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Derivative definition\n\nRemember the slope of the line that passes between two points \\((x_1, y_1)\\) and \\((x_2, y_2)\\) is:\n\\[\\text{slope}=\\frac{y_2-y_1}{x_2-x_1}.\\]\n\nIf we have a function \\(f(x)\\), then \\((x,f(x))\\) represents a point on its graph.\n\n\nChoose a different point on the graph that is \\(\\Delta x\\) away: \\((x+\\Delta x,f(x+\\Delta x))\\).\n\n\nPlug these pointson the graph of \\(f(x)\\) into the slope equation:\n\\[\n\\text{slope}=\\frac{f(x+\\Delta x)-f(x)}{\\Delta x}.\n\\]\n\n\nWhen we let \\(\\Delta x \\to 0\\) we get the slope of the tangent line at \\(x\\)\n \\[\n\\large\nf'(x)=\\lim_{\\Delta x \\to 0} \\frac{f(x+\\Delta x)-f(x)}{\\Delta x}\n\\] \nThis is the derivative of \\(f\\) at \\(x\\). Also denoted \\(\\frac{df}{dx}\\)."
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#deriv9",
+    "href": "notes/day2_limits/lecture-limits.html#deriv9",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Artwork by Allison Horst"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-func",
+    "href": "notes/day2_limits/lecture-limits.html#diff-func",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Not all functions are differentiable\n\n\nAll differentiable functions are continuous, but not all continuous functions are differentiable.\n\n\n\nThe absolute value function \\(|x|\\) is one example, this is defined by \\[|x| =\n\\begin{cases}\nx  &, x \\geq 0\\\\\n-x &, x&lt;0\n\\end{cases}.\\]\n\nIt’s graph is:"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#calc",
+    "href": "notes/day2_limits/lecture-limits.html#calc",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Calculus and derivatives are used to study change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#envs-change",
+    "href": "notes/day2_limits/lecture-limits.html#envs-change",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Environmental Science studies change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#envs-change2",
+    "href": "notes/day2_limits/lecture-limits.html#envs-change2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Environmental Science studies change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#envs-change3",
+    "href": "notes/day2_limits/lecture-limits.html#envs-change3",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Environmental Science studies change"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1-blank",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-1-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Rules for differentiation (1)\n\nConstant Rule\n     \nPower Rule"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-1",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Rules for differentiation (1)\n\nConstant Rule\nLet \\(c\\) be a constant (so, a number). If \\(f(x) = c\\), then \\(f'(x)=0\\). Equivalently\n\\[\\frac{d}{dx}c = 0\\]\nPower Rule\nLet \\(n\\) be a (real) number, if \\(f(x)= x^n\\), then \\(f'(x) = nx^{n-1}\\). Equivalently \\[\n\\frac{d}{dx}[x^n]\n=nx^{n-1}.\n\\]\n\nExamples\n\\[\n\\begin{align}\n&y=100 & &f(x)=x^5 & &f(x)=\\frac{1}{x^2}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2-blank",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-2-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Rules for differentiation (2)\n\nSum and Difference Rules"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-2",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Rules for differentiation (2)\n\nSum and Difference Rules\nLet \\(f(x)\\) and \\(g(x)\\) be differentiable functions. Then \\[\n\\begin{align}\n\\frac{d}{dx}[f(x)+g(x)]=\\frac{d}{dx}f(x)+\\frac{d}{dx}g(x) \\\\\n\\frac{d}{dx}[f(x)-g(x)]=\\frac{d}{dx}f(x)-\\frac{d}{dx}g(x)\n\\end{align}\n\\]\n😵All this says is: if the function has pieces that are added or subtracted you can take the derivative of each individual piece and add those derivatives.\n\nExample\n\\[\nf(x)=x^3-x^2-15\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3-blank",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-3-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-3",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-3",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Rules for differentiation (3)\n\nConstant Multiplier Rule\nThe derivative of a constant \\(c\\) multiplied by a function \\(f(x)\\) is the same as the constant multiplied by the derivative:\n\\[\\frac{d}{dx}[kf(x)] = k\\frac{d}{dx}f(x)\\]\n\nExample\n\\[\ny=x^2+\\sqrt{2}x-\\frac{8}{x}+4\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
+    "href": "notes/day2_limits/lecture-limits.html#diff-rules-summary",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Summary of differentiation rules\n\n\n\n\n\n\n\n\n\nDifferentiation Rule\n\\(f'(x)\\) notation\n\\(\\frac{d}{dx}\\) notation\n\n\n\n\nConstant Rule\n\\(f(x)=c \\Rightarrow f'(x)=0\\)\n\\(\\frac{d}{dx}[c]=0\\)\n\n\nPower Rule\n\\(f(x)=x^n \\Rightarrow f'(x)=n x^{n-1}\\)\n\\(\\frac{d}{dx}[x^n]=n x^{n-1}\\)\n\n\nSum Rule\n\\((g(x)+h(x))'=g'(x)+h'(x)\\)\n\\(\\frac{d}{dx}[g(x)+h(x)]=\\frac{d}{dx}g(x)+\\frac{d}{dx}h(x)\\)\n\n\nDifference Rule\n\\((g(x)-h(x))' = g'(x)-h'(x)\\)\n\\(\\frac{d}{dx}[g(x)-h(x)]=\\frac{d}{dx}g(x)-\\frac{d}{dx}h(x)\\)\n\n\nConstant Multiplier Rule\n\\((c\\cdot g(x))'=c\\,g'(x)\\)\n\\(\\frac{d}{dx}[c\\,g(x)]=c\\,\\frac{d}{dx}g(x)\\)"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#ta-2",
+    "href": "notes/day2_limits/lecture-limits.html#ta-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Team Assessment"
+  },
+  {
+    "objectID": "notes/day2_limits/lecture-limits.html#gta2-1",
+    "href": "notes/day2_limits/lecture-limits.html#gta2-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "As a team, list 3 fields of environmental science where studying the rate of change and derivatives would be important.\n\n\n\nWhich rules should you use to take these derivatives?\n\n\\[\n\\begin{align}\n\\text{A)  }& f(x)=3x^4 &\\text{B) }  y=4x^2+3x-16\n\\end{align}\n\\]\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=7x+4 & &\\text{C) }g(y)=\\sqrt{y}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day2_limits/solutions_problem_set_limits.html",
+    "href": "notes/day2_limits/solutions_problem_set_limits.html",
+    "title": "Limits and Derivatives Problem Set Solutions",
+    "section": "",
+    "text": "Limits and Derivatives Problem Set Solutions\nAnswer the following questions to the best of your ability. Attempt exercises on your own first to make sure you fully understand the concepts. Feel free to work with anyone in the cohort after giving the problems a try!\n\nWhich of these graphs depict functions and which do not?\n\n Graphs A,B, and C all fail the vertical line test. Thus they are not functions. Graph D is a function because passes the vertical line test and thus is a function. \n\nInvestigate what is the value of the following limits:\n\n\n\n\n\\[\n\\lim_{x\\to -2^-}\\frac{4x}{x+2}\n\\]\nTo investigate this limit we can evaluate the function \\(\\frac{4x}{x+2}\\) from the left with values getting closer to -2. We can see from the approximation below that \\(y = \\frac{4x}{x+2}\\) rapidly increases with values closer to -2. So, we can say the limit goes to infinity. \n\n\n\n\n\nx\n-2.5\n-2.1\n-2.01\n-2.001\n-2.0001\n-2.00001\n\n\ny\n20.0\n84.0\n804.00\n8004.000\n80004.0000\n800003.99999\n\n\n\n\n\n We can also plot the function to have a visual understanding of its behavior near -2. \n\n\n\n\n\n\n\n\n\n\n\n\n\\[\n\\lim_{x\\to 3}2^x\n\\]\n To investigate this limit we can evaluate the function \\(2^x\\) with values of \\(x\\) approaching 3 from the left and the right. The table below shows that the limit approaches 8 at x=3 from both directions, so we can say \\(\\lim_{x\\to 3}2^x=8\\). \n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nx\n2.500000\n2.900000\n2.99000\n2.999000\n3.001000\n3.010000\n3.100000\n3.50000\n\n\ny\n5.656854\n7.464264\n7.94474\n7.994457\n8.005547\n8.055644\n8.574188\n11.31371\n\n\n\n\n\n We can also graph this function and see it is continuous. So \\(\\lim_{x\\to 3}2^x = 2^3 = 8\\). \n\n\n\n\n\n\n\n\n\n\nDetermine the value of \\(b\\) to make \\(h(x)\\) continuous at \\(x=-3\\). Explain your reasoning using limits.\n\n\\[\nh(x)=\\begin{cases}\nbx^2-\\frac{3}{2}x-5 &x&lt;-3 \\\\\n-2x-9 &x\\ge-3\n\\end{cases}\n\\]\nThis function is broken down into two “pieces”: it equals \\(bx^2 - \\frac{3}{2}x - 5\\) when \\(x\\) is less than -3, and it equals \\(-2x-9\\) when \\(x\\) is greater or equal to -3. To connect these two pieces and make \\(h(x)\\) continuous we need both pieces to approach the same value at \\(x=-3\\). In other words, we need that \n \\[ -3 = h(x) = \\lim_{x\\to-3} h(x).\\] \n Let’s calculate the side limits to see what’s going on with \\(\\lim_{x\\to-3} h(x)\\). From the left-hand side we have that \nxw \\[\\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^-} bx^2 - \\frac{3}{2}x - 5 = 9b + \\frac{9}{2}.\\] \na8670390NCEAS\nFrom the right-hand side we have that \n \\[\n\\lim_{x\\to-3^+} h(x) = \\lim_{x\\to-3^+} -2x-9 = -3\n\\] \n If we want \\(h(x)\\) to be continuous at \\(x=-3\\) we then need \n \\[ -3 = h(x) = \\lim_{x\\to-3^-} h(x) = \\lim_{x\\to-3^+} h(x) =  9b + \\frac{9}{2} \\] \n Solving this equation we obtain that \n \\[\n\\begin{align}\n9b=\\frac{-5}{2}\\\\\nb=\\frac{-5}{18}.\n\\end{align}\n\\] \n\nLet \\(f(x) = 2x^2+4\\). Calculate \\(f'(x)\\) and \\(f'(-3)\\).\n\n \\[\\begin{align}\nf(x)  &= 2x^2+4\\\\\nf'(x) &= 4x\\\\\nf'(-3) &=4(-3)\\\\\n      &=-12\n\\end{align}\\] \n\nCalculate the derivative of \\(g(x) = x^4-5x^3+x-5\\) at \\(x=5\\).\n\n \\[\\begin{align}\ng(x) &= x^4-5x^3+x-5 \\\\\ng'(x) &= 4x^3-15x^2+1 \\\\\ng'(5) &= 4(5)^3-15(5)^2+1\\\\\n&=126\n\\end{align}\\] \n\nWhat is the instantaneous rate of change of \\(h(x) = \\frac{5}{x^2}\\) at \\(x=2\\)?\n\n We have that \n \\[\nh(x) = \\frac{5}{x^2} = 5x^{-2}\n\\] \n Then, \n \\[\\begin{align}\nh'(x) & =-10x^{-3}\\\\\nh'(2) &= -10(2)^{-3}\\\\\n& = -\\frac{10}{8}\\\\\n&=-1.25.\n\\end{align}\\] \n\n\n\n\nApproximate the slope of the tangent line in the graph below at \\(x=2\\).\nWrite a short paragraph describing how the slope of the tangent line represents the derivative.\n\n\n\n\n\n\n\n\n\n\n a. First, we draw a tangent line to the graph at \\(x=2\\), this is the red line plotted with the graph.\nUsing rise over run we can take two points on the tangent line to find the slope. Let’s use \\((2,1)\\) and \\((1,-1)\\) as our points on the tangent, then \n \\[\nslope=\\frac{1- (-1)}{2-1}=2.\n\\] \n b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative."
   },
   {
     "objectID": "notes/day3/day3-problem-set-solutions.html",
