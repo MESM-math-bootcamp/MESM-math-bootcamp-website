@@ -1755,7 +1755,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#title-slide",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Day 2: Bren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management"
+    "text": "Day 1: Bren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#basics-title",
@@ -1790,7 +1790,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#topics",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Topics overview\n\n\n\nDay 1: Algebra refresher; Rules of exponents\nDay 2: Units; Functions; Graphing; Exponential functions and logarithms\nDay 3: Linear functions; Limits\nDay 4: Derivatives\nDay 5: Integration & ODEs"
+    "text": "Topics overview\n\n\n\nDay 1: Algebra refresher; Rules of exponents\nDay 2: Units; Functions; Graphing;\nDay 3: Exponential functions; Logarithms; Linear functions\nDay 4: Limits & Derivatives\nDay 5: Integration & ODEs"
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#objectives",
@@ -2182,7 +2182,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#esm-201-practice",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Population growth at discrete times\n\n\nA certain population size is measured at discrete time steps. We use the notation:\n\n\n\n\\(N_0 =\\) population at initial time\n\\(N_t =\\) population after \\(t\\) time steps\n\n\n\n\\(b=\\) per capita birth rate\n\\(d=\\) per capita death rate\n\n\nAssuming a closed population (no movement), we can model discrete growth by\n\\[N_{t+1} = N_t + bN_t - dN_t.\\]\n\n✏️ Solve these individually.\n\n\nSimplify this expression by factoring out \\(N_t\\) and subsituting \\(\\lambda = 1 + b -d\\).\nCalculate \\(N_1\\), \\(N_2\\), and \\(N_3\\) and express these in terms of \\(N_0\\). Find a pattern.\nWhat is the general equation for the population size after \\(T\\) time steps? Your answer should only use \\(\\lambda\\), \\(T\\), and \\(N_0\\).\nWhat value of \\(\\lambda\\) would give a stable population across time?\nFind a value of \\(\\lambda\\) for which the population grows and another for which it shrinks. More generally, for which values of \\(\\lambda\\) does \\(N\\) shrink or grow?\nExplain in your own words why \\(\\lambda\\) is the finite rate of population growth."
+    "text": "Population growth at discrete times\n\n\nA certain population size is measured at discrete time steps. We use the notation:\n\n\n\n\\(N_0 =\\) population at initial time\n\\(N_t =\\) population after \\(t\\) time steps\n\n\n\n\\(b=\\) per capita birth rate\n\\(d=\\) per capita death rate\n\n\nAssuming a closed population (no movement), we can model discrete growth by\n\\[N_{t+1} = N_t + bN_t - dN_t.\\]\n\n✏️ Solve these individually.\n\n\nSimplify this expression by factoring out \\(N_t\\) and subsituting \\(\\lambda = 1 + b -d\\).\nCalculate \\(N_1\\), \\(N_2\\), and \\(N_3\\) and express these in terms of \\(N_0\\). Find a pattern.\nWhat is the general equation for the population size after \\(T\\) time steps? Your answer should only use \\(\\lambda\\), \\(T\\), and \\(N_0\\).\nWhat value of \\(\\lambda\\) would give a stable population across time?\nFind a value of \\(\\lambda\\) for which the population grows and another for which it shrinks. More generally, for which values of \\(\\lambda\\) does \\(N\\) shrink or grow?\nExplain in your own words what is the role of \\(\\lambda\\) in this model of population growth."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#esm-201-practice-sols1",
@@ -2196,7 +2196,7 @@
     "href": "notes/day1_algebra/lecture-algebra.html#esm-201-practice-sols2",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Population growth at discrete times\n\n\n✏️\n\nWhat value of \\(\\lambda\\) would give a stable population across time?\nFind a value of \\(\\lambda\\) for which the population grows and another for which it shrinks. More generally, for which values of \\(\\lambda\\) does \\(N\\) shrink or grow?\nExplain in your own words why \\(\\lambda\\) is the finite rate of population growth."
+    "text": "Population growth at discrete times\n\n\n✏️\n\nWhat value of \\(\\lambda\\) would give a stable population across time?\nFind a value of \\(\\lambda\\) for which the population grows and another for which it shrinks. More generally, for which values of \\(\\lambda\\) does \\(N\\) shrink or grow?\nExplain in your own words what is the role of \\(\\lambda\\) in this model of population growth."
   },
   {
     "objectID": "notes/day1_algebra/lecture-algebra.html#esm-201-practice-full-solutions",

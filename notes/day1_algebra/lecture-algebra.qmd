@@ -18,7 +18,7 @@ format:
 
 ## {#title-slide data-menu-title="Title Slide" background="#053660"}
 
-[Day 2: Bren Math Workshop]{.custom-title}
+[Day 1: Bren Math Workshop]{.custom-title}
 
 
 <hr class="hr-teal">
@@ -113,9 +113,9 @@ Before:
 
 ::: {.body-text-l}
 - **Day 1:** Algebra refresher; Rules of exponents
-- **Day 2:** Units; Functions; Graphing; Exponential functions and logarithms
-- **Day 3:**  Linear functions; Limits
-- **Day 4:**  Derivatives 
+- **Day 2:** Units; Functions; Graphing; 
+- **Day 3:**  Exponential functions; Logarithms; Linear functions
+- **Day 4:**  Limits & Derivatives 
 - **Day 5:**  Integration & ODEs
 :::
 
@@ -1434,7 +1434,7 @@ $$N_{t+1} = N_t + bN_t - dN_t.$$
 
 (5) Find a value of $\lambda$ for which the population grows and another for which it shrinks. More generally, for which values of $\lambda$ does $N$ shrink or grow?
 
-(6) Explain in your own words why $\lambda$ is the finite rate of population growth. 
+(6) Explain in your own words what is the role of $\lambda$ in this model of population growth.
 :::
 
 ---
@@ -1472,7 +1472,7 @@ $$N_{t+1} = N_t + bN_t - dN_t.$$
 
 (5) Find a value of $\lambda$ for which the population grows and another for which it shrinks. More generally, for which values of $\lambda$ does $N$ shrink or grow?
 
-(6) Explain in your own words why $\lambda$ is the finite rate of population growth. 
+(6) Explain in your own words what is the role of $\lambda$ in this model of population growth.
 
 :::
 
