@@ -955,7 +955,7 @@ This way, we can use exponents to describe exponential growth and decay. Many en
 
 <br>
 
-(3) Any non-zero $x$ to the power of 0 equals 1:
+(3) Any non-zero number to the power of 0 equals 1:
 
 <br>
 
@@ -1004,7 +1004,7 @@ This way, we can use exponents to describe exponential growth and decay. Many en
 
 <br>
 
-(3) Any non-zero $x$ to the power of 0 equals 1: $x^0 = 1, \ \ \text{for } x \neq 0$
+(3) Any non-zero number to the power of 0 equals 1: $x^0 = 1, \ \ \text{for } x \neq 0$
 
 <br>
 
