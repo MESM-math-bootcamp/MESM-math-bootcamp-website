@@ -72,6 +72,6 @@ ggplot(data.frame(Q, P), aes(x = Q, y = P)) +
   theme_classic()
 ```
 
-a) Write one sentence describing what the graph shows.
+a) In one sentence, describe what the graph shows.
 b) Interpret what the $y$-intercept means in this context.
 c) Interpret what the $x$-intercept means in this context.

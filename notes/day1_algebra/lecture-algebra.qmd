@@ -132,7 +132,7 @@ Before:
 
 2.  💪 Exercise core math skills needed to succeed in your Bren courses
 
-3.  🌎 Explore how valuable math is to environmental data science
+3.  🌎 Explore how valuable math is to environmental science
 
 4.  🤝 Build a collaborative environment and get to know your cohort
 :::
@@ -246,8 +246,8 @@ MESM students have diverse work & academic histories
 
 **This course (re)introduces math concepts and tools that:** 
 
-- Focus on applications to environmental data science
-- Are specifically relevant for MEDS projects, coursework
+- Focus on applications to environmental science
+- Are specifically relevant for MESM projects, coursework
 - Provide an entryway into building computational skills
 - Refresh quantitative thinking skills generally
 - Refresh essentials like units, conversions, notation, **language**
@@ -859,7 +859,7 @@ $$
 
 ## {#break data-menu-title="10 minute break"}
 
-[Let's take a 10 minute break]{.slide-title}
+[Let's take a 5 minute break]{.slide-title}
 
 <hr>
 
@@ -955,7 +955,7 @@ This way, we can use exponents to describe exponential growth and decay. Many en
 
 <br>
 
-(3) Any non-negative $x$ to the power of 0 equals 1:
+(3) Any non-zero $x$ to the power of 0 equals 1:
 
 <br>
 
@@ -1004,7 +1004,7 @@ This way, we can use exponents to describe exponential growth and decay. Many en
 
 <br>
 
-(3) Any non-negative $x$ to the power of 0 equals 1: $x^0 = 1, \ \ \text{for } x \neq 0$
+(3) Any non-zero $x$ to the power of 0 equals 1: $x^0 = 1, \ \ \text{for } x \neq 0$
 
 <br>
 
@@ -1362,11 +1362,33 @@ $$
 
 ::: {.column width="60%"}
 :::{style="color:green;"}
-✏️  Use the quadratic formula to find the solutions to $x^2-x-12=0$.
+✏️  Example: Use the quadratic formula to find the solutions to $x^2-x-12=0$.
 :::
 :::
 
 :::
+
+---
+
+## {#quad-solution data-menu-title="Quadratic Formula: Solution"}
+
+[Quadratic Formula finds roots of 2nd degree polynomials]{.slide-title}
+
+<hr>
+
+Solve $x^2-x-12=0$, where $a=1$, $b=-1$, $c=-12$:
+
+$$
+\begin{aligned}
+x &= \frac{-b\pm\sqrt{b^2-4ac}}{2a} \\
+&= \frac{-(-1)\pm\sqrt{(-1)^2-4(1)(-12)}}{2(1)} \\
+&= \frac{1\pm\sqrt{1+48}}{2} \\
+&= \frac{1\pm\sqrt{49}}{2} \\
+&= \frac{1\pm7}{2}
+\end{aligned}
+$$
+
+So the roots are $x_1 = \frac{1+7}{2}=4$ or $x=\frac{1-7}{2}=-3$. This matches the roots we found earlier by factoring.
 
 ---
 
