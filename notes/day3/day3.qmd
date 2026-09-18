@@ -12,12 +12,16 @@
 
 ::: {.body-text-m}
 
-[**Lecture slides**](day3-slides.qmd){target="_blank"}
+[**Lecture slides - part 1**](day3-graphs-short.qmd){target="_blank"}
+
+[**Lecture slides - part 2**](day3-slides.qmd){target="_blank"}
 
 :::
 
 **Contents**
 
+- 📈 $x$ and $y$ intercepts
+- 📊 Graphing
 - 🌱 The number $e$ and $e^x$
 - 🪵 Natural logarithms
 - 🐰 Exponential growth

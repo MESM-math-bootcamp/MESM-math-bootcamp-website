@@ -1420,7 +1420,7 @@ axis(2, at = seq(y_min, y_max, by = 0.1), cex.axis=2)
 ## {#reading-graphs-title data-menu-title="Reading graphs" background-color="#003660"}
 
 
-<div class="page-center">
+<div class="page-center"> 
 <div class="custom-subtitle">"Reading" graphs</div>
 </div>
 

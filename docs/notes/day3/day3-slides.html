@@ -521,71 +521,6 @@ e^{rt}=2 \ \Rightarrow \ rt=\ln(2) \ \Rightarrow \ t=\frac{\ln(2)}{r}
 <p>Gause, G. F. 1934. The Struggle for Existence. Baltimore: Williams and Wilkins.</p>
 </div>
 </section>
-<section id="logistic-growth" class="slide level2" data-menu-title="Logistic growth">
-<h2></h2>
-<p><span class="slide-title">Logistic growth</span></p>
-<hr>
-<p><span class="body-text-l"><span class="math display">\[N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}\]</span></span></p>
-<p><br></p>
-<p><span class="body-text-m">Where <span class="math inline">\(N_t\)</span> is the population size at time <span class="math inline">\(t\)</span>, <span class="math inline">\(K\)</span> is the carrying capacity, <span class="math inline">\(N_0\)</span> is the initial population size, and <span class="math inline">\(r\)</span> is a growth rate.</span></p>
-<p><br></p>
-<p>✏️ <span style="color:green;">What should be the value of the formula when <span class="math inline">\(t=0\)</span>? Confirm your answer by substituting.</span></p>
-<div class="center-text body-text-m teal-text">
-<p>We should always <em>understand the components of formulas and equations</em> - both conceptually and mathematically.</p>
-</div>
-</section>
-<section id="logistic-growth-example" class="slide level2" data-menu-title="Logistic growth: Example">
-<h2></h2>
-<p><span class="slide-title">Logistic growth: Example</span></p>
-<hr>
-<p>What is <span class="body-text-m"><span class="math display">\[N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}\]</span></span> when t = 0?</p>
-</section>
-<section id="logistic-growth-solution" class="slide level2" data-menu-title="Logistic growth: Solution">
-<h2></h2>
-<p><span class="slide-title">Solution</span></p>
-<hr>
-<p><span class="math display">\[
-\begin{aligned}
-N_0 &amp;= \frac{K}{1+[\frac{K-N_0}{N_0}]e^{-r(0)}} &amp;\text{Substitute } t=0 \\
-&amp;= \frac{K}{1+[\frac{K-N_0}{N_0}](1)} &amp;e^{0}=1 \\
-&amp;= \frac{K}{\frac{N_0 + (K-N_0)}{N_0}} &amp;\text{Combine terms in the denominator} \\
-&amp;= \frac{K}{\frac{K}{N_0}} &amp;N_0 + (K-N_0) = K \\
-&amp;= N_0
-\end{aligned}
-\]</span></p>
-</section>
-<section id="logistic-growth-Qs" class="slide level2" data-menu-title="Logistic growth (Qs)">
-<h2></h2>
-<p><span class="slide-title">Logistic growth</span></p>
-<hr>
-<p><br></p>
-<p><span class="body-text-l"><span class="math display">\[N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}\]</span></span></p>
-<p><br></p>
-<div class="body-text-m">
-<ol type="1">
-<li><p>Why might we expect logistic growth for many populations?</p></li>
-<li><p>What variables <em>besides</em> time would influence the actual population?</p></li>
-</ol>
-<!-- 3. Why, mathematically, does the logistic growth expression take the shape it does? What happens as the population becomes very close to the carrying capacity? -->
-</div>
-<!-- [A brief explanation of the math with derivatives.](https://sites.math.duke.edu/education/ccp/materials/diffeq/logistic/logi1.html) -->
-<aside class="notes">
-<ol type="1">
-<li><p>Pops grow slowly at the start when there are few individuals. Grow more quickly (exponentially) when enough individuals are in a pop and resources are abundant. Plateau when resources become depleted.</p></li>
-<li><p>The number of individuals and the amount of resources</p></li>
-</ol>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
 <section id="break" class="slide level2" data-menu-title="10 minute break">
 <h2></h2>
 <p><span class="slide-title">Let’s take a 10 minute break</span></p>
@@ -1139,6 +1074,9 @@ Wrapping up…
 <p><span class="slide-title">What we covered today</span></p>
 <hr>
 <ul>
+<li><span style="color:#006699"><b>📊 Graphing</b></span><br>
+</li>
+<li><span style="color:#EDC001"><b>📈 <span class="math inline">\(x\)</span> and <span class="math inline">\(y\)</span> intercepts</b></span></li>
 <li><span style="color:#336666"><b>🌱 The number e and exp()</b></span></li>
 <li><span style="color:#003399"><b>🐰 Exponential growth</b></span></li>
 <li><span style="color:#ED7014"><b>🦠 Logistic growth</b></span></li>
@@ -1147,6 +1085,79 @@ Wrapping up…
 <li><span style="color:#FCAE1E"><b>↗️ Slope as a rate of change</b></span></li>
 <li><span style="color:#006699"><b> 🚜 Applications from MESM courses</b></span></li>
 </ul>
+</section>
+<section id="extra" class="slide level2" data-menu-title="Extra" data-background-color="#003660">
+<h2></h2>
+<div class="page-center">
+<div class="custom-subtitle">
+Logistic growth (extra)
+</div>
+</div>
+</section>
+<section id="logistic-growth" class="slide level2" data-menu-title="Logistic growth">
+<h2></h2>
+<p><span class="slide-title">Logistic growth</span></p>
+<hr>
+<p><span class="body-text-l"><span class="math display">\[N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}\]</span></span></p>
+<p><br></p>
+<p><span class="body-text-m">Where <span class="math inline">\(N_t\)</span> is the population size at time <span class="math inline">\(t\)</span>, <span class="math inline">\(K\)</span> is the carrying capacity, <span class="math inline">\(N_0\)</span> is the initial population size, and <span class="math inline">\(r\)</span> is a growth rate.</span></p>
+<p><br></p>
+<p>✏️ <span style="color:green;">What should be the value of the formula when <span class="math inline">\(t=0\)</span>? Confirm your answer by substituting.</span></p>
+<div class="center-text body-text-m teal-text">
+<p>We should always <em>understand the components of formulas and equations</em> - both conceptually and mathematically.</p>
+</div>
+</section>
+<section id="logistic-growth-example" class="slide level2" data-menu-title="Logistic growth: Example">
+<h2></h2>
+<p><span class="slide-title">Logistic growth: Example</span></p>
+<hr>
+<p>What is <span class="body-text-m"><span class="math display">\[N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}\]</span></span> when t = 0?</p>
+</section>
+<section id="logistic-growth-solution" class="slide level2" data-menu-title="Logistic growth: Solution">
+<h2></h2>
+<p><span class="slide-title">Solution</span></p>
+<hr>
+<p><span class="math display">\[
+\begin{aligned}
+N_0 &amp;= \frac{K}{1+[\frac{K-N_0}{N_0}]e^{-r(0)}} &amp;\text{Substitute } t=0 \\
+&amp;= \frac{K}{1+[\frac{K-N_0}{N_0}](1)} &amp;e^{0}=1 \\
+&amp;= \frac{K}{\frac{N_0 + (K-N_0)}{N_0}} &amp;\text{Combine terms in the denominator} \\
+&amp;= \frac{K}{\frac{K}{N_0}} &amp;N_0 + (K-N_0) = K \\
+&amp;= N_0
+\end{aligned}
+\]</span></p>
+</section>
+<section id="logistic-growth-Qs" class="slide level2" data-menu-title="Logistic growth (Qs)">
+<h2></h2>
+<p><span class="slide-title">Logistic growth</span></p>
+<hr>
+<p><br></p>
+<p><span class="body-text-l"><span class="math display">\[N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}\]</span></span></p>
+<p><br></p>
+<div class="body-text-m">
+<ol type="1">
+<li><p>Why might we expect logistic growth for many populations?</p></li>
+<li><p>What variables <em>besides</em> time would influence the actual population?</p></li>
+</ol>
+<!-- 3. Why, mathematically, does the logistic growth expression take the shape it does? What happens as the population becomes very close to the carrying capacity? -->
+</div>
+<!-- [A brief explanation of the math with derivatives.](https://sites.math.duke.edu/education/ccp/materials/diffeq/logistic/logi1.html) -->
+<aside class="notes">
+<ol type="1">
+<li><p>Pops grow slowly at the start when there are few individuals. Grow more quickly (exponentially) when enough individuals are in a pop and resources are abundant. Plateau when resources become depleted.</p></li>
+<li><p>The number of individuals and the amount of resources</p></li>
+</ol>
+<style type="text/css">
+        span.MJX_Assistive_MathML {
+          position:absolute!important;
+          clip: rect(1px, 1px, 1px, 1px);
+          padding: 1px 0 0 0!important;
+          border: 0!important;
+          height: 1px!important;
+          width: 1px!important;
+          overflow: hidden!important;
+          display:block!important;
+      }</style></aside>
 
 
 </section>

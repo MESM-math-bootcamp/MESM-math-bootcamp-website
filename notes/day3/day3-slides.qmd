@@ -678,87 +678,6 @@ Gause, G. F. 1934. The Struggle for Existence. Baltimore: Williams and Wilkins.
 
 ---
 
-## {#logistic-growth data-menu-title="Logistic growth"} 
-
-[Logistic growth]{.slide-title}
-
-<hr>
-
-[$$N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}$$]{.body-text-l}
-
-<br>
-
-[Where $N_t$ is the population size at time $t$, $K$ is the carrying capacity, $N_0$ is the initial population size, and $r$ is a growth rate.]{.body-text-m}
-
-<br>
-
-✏️ [What should be the value of the formula when $t=0$? Confirm your answer by substituting.]{style="color:green;" }
-
-::: {.center-text .body-text-m .teal-text}
-We should always *understand the components of formulas and equations* - both conceptually and mathematically.
-:::
-
----
-
-## {#logistic-growth-example data-menu-title="Logistic growth: Example"}
-
-[Logistic growth: Example]{.slide-title}
-
-<hr>
-
-What is [$$N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}$$]{.body-text-m} when t = 0?
-
-
----
-
-## {#logistic-growth-solution data-menu-title="Logistic growth: Solution"}
-
-[Solution]{.slide-title}
-
-<hr>
-
-$$
-\begin{aligned}
-N_0 &= \frac{K}{1+[\frac{K-N_0}{N_0}]e^{-r(0)}} &\text{Substitute } t=0 \\
-&= \frac{K}{1+[\frac{K-N_0}{N_0}](1)} &e^{0}=1 \\
-&= \frac{K}{\frac{N_0 + (K-N_0)}{N_0}} &\text{Combine terms in the denominator} \\
-&= \frac{K}{\frac{K}{N_0}} &N_0 + (K-N_0) = K \\
-&= N_0
-\end{aligned}
-$$
-
----
-
-## {#logistic-growth-Qs data-menu-title="Logistic growth (Qs)"}
-
-[Logistic growth]{.slide-title}
-
-<hr>
-
-<br>
-
-[$$N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}$$]{.body-text-l}
-
-<br>
-
-::: {.body-text-m}
-1. Why might we expect logistic growth for many populations? 
-
-2. What variables *besides* time would influence the actual population?
-
-<!-- 3. Why, mathematically, does the logistic growth expression take the shape it does? What happens as the population becomes very close to the carrying capacity? -->
-:::
-
-<!-- [A brief explanation of the math with derivatives.](https://sites.math.duke.edu/education/ccp/materials/diffeq/logistic/logi1.html) -->
-
-::: {.notes}
-1. Pops grow slowly at the start when there are few individuals. Grow more quickly (exponentially) when enough individuals are in a pop and resources are abundant. Plateau when resources become depleted.
-
-2. The number of individuals and the amount of resources
-:::
-
----
-
 ## {#break data-menu-title="10 minute break"}
 
 [Let's take a 10 minute break]{.slide-title}
@@ -1597,6 +1516,8 @@ knitr::include_graphics("images/trex.PNG")
 
 <hr>
 
+- <span style="color:#006699"><b>📊 Graphing</b></span>  
+- <span style="color:#EDC001"><b>📈 $x$ and $y$ intercepts</b></span>
 - <span style="color:#336666"><b>🌱 The number e and exp()</b></span>
 - <span style="color:#003399"><b>🐰 Exponential growth</b></span>
 - <span style="color:#ED7014"><b>🦠 Logistic growth</b></span>
@@ -1604,3 +1525,93 @@ knitr::include_graphics("images/trex.PNG")
 - <span style="color:#003366"><b>📈 Linear functions</b></span>
 - <span style="color:#FCAE1E"><b>↗️ Slope as a rate of change</b></span>
 - <span style="color:#006699"><b> 🚜 Applications from MESM courses</b></span>
+
+---
+
+## {#extra data-menu-title="Extra" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Logistic growth (extra)</div>
+</div>
+
+
+---
+
+## {#logistic-growth data-menu-title="Logistic growth"} 
+
+[Logistic growth]{.slide-title}
+
+<hr>
+
+[$$N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}$$]{.body-text-l}
+
+<br>
+
+[Where $N_t$ is the population size at time $t$, $K$ is the carrying capacity, $N_0$ is the initial population size, and $r$ is a growth rate.]{.body-text-m}
+
+<br>
+
+✏️ [What should be the value of the formula when $t=0$? Confirm your answer by substituting.]{style="color:green;" }
+
+::: {.center-text .body-text-m .teal-text}
+We should always *understand the components of formulas and equations* - both conceptually and mathematically.
+:::
+
+---
+
+## {#logistic-growth-example data-menu-title="Logistic growth: Example"}
+
+[Logistic growth: Example]{.slide-title}
+
+<hr>
+
+What is [$$N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}$$]{.body-text-m} when t = 0?
+
+
+---
+
+## {#logistic-growth-solution data-menu-title="Logistic growth: Solution"}
+
+[Solution]{.slide-title}
+
+<hr>
+
+$$
+\begin{aligned}
+N_0 &= \frac{K}{1+[\frac{K-N_0}{N_0}]e^{-r(0)}} &\text{Substitute } t=0 \\
+&= \frac{K}{1+[\frac{K-N_0}{N_0}](1)} &e^{0}=1 \\
+&= \frac{K}{\frac{N_0 + (K-N_0)}{N_0}} &\text{Combine terms in the denominator} \\
+&= \frac{K}{\frac{K}{N_0}} &N_0 + (K-N_0) = K \\
+&= N_0
+\end{aligned}
+$$
+
+---
+
+## {#logistic-growth-Qs data-menu-title="Logistic growth (Qs)"}
+
+[Logistic growth]{.slide-title}
+
+<hr>
+
+<br>
+
+[$$N_t=\frac{K}{1+[\frac{K-N_0}{N_0}]e^{-rt}}$$]{.body-text-l}
+
+<br>
+
+::: {.body-text-m}
+1. Why might we expect logistic growth for many populations? 
+
+2. What variables *besides* time would influence the actual population?
+
+<!-- 3. Why, mathematically, does the logistic growth expression take the shape it does? What happens as the population becomes very close to the carrying capacity? -->
+:::
+
+<!-- [A brief explanation of the math with derivatives.](https://sites.math.duke.edu/education/ccp/materials/diffeq/logistic/logi1.html) -->
+
+::: {.notes}
+1. Pops grow slowly at the start when there are few individuals. Grow more quickly (exponentially) when enough individuals are in a pop and resources are abundant. Plateau when resources become depleted.
+
+2. The number of individuals and the amount of resources
+:::
