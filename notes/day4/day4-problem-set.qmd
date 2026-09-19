@@ -5,7 +5,7 @@ execute:
 author: "Carmen Galaz García, Nathaniel Grimes"  
 ---
 
-# Rates of change, limits and derivatives problem set
+# Rates of change, limits, and derivatives problem set
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE,message=FALSE,warning=FALSE)
@@ -16,18 +16,13 @@ library(tidyverse)
 ::: {.callout-tip}
 ## Instructions
 
-Attempt each problem on your own before checking the [solutions](day3-problem-set-solutions.qmd).
+Attempt each problem on your own before checking the [solutions](day4-problem-set-solutions.qmd).
 Feel free to work with anyone in the cohort after giving the problems a try!
 :::
 
-
-## Rates of change
-
-
-
 ## Slope as a rate of change
 
-**4)** Researchers plotted [dissolved oxygen (DO)](https://www.epa.gov/system/files/documents/2021-07/parameter-factsheet_do.pdf) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.
+**1)** Researchers plotted [dissolved oxygen (DO)](https://www.epa.gov/system/files/documents/2021-07/parameter-factsheet_do.pdf) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.
 
 ```{r}
 #| echo: false
@@ -50,7 +45,7 @@ lines(depth, DO, lwd = 2)
 a) Write the equation for dissolved oxygen, $DO$, as a function of depth.
 b) Interpret the slope in a full sentence, including units.
 
-**5)** The growth of sharks can be modeled using [von Bertalanffy curves](https://en.wikipedia.org/wiki/Von_Bertalanffy_function). Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.
+**2)** The growth of sharks can be modeled using [von Bertalanffy curves](https://en.wikipedia.org/wiki/Von_Bertalanffy_function). Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.
 
 ```{r}
 #| echo: false
@@ -78,5 +73,5 @@ a) What is the average slope from ages 0 to 8? From 20 to 30? Include units.
 b) What does the average slope represent in this scenario and why would these slopes change for a shark as they get older? Write you answers in complete sentences.
 <!-- c) How would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph? -->
 
-![Scalloped hammerhead shark (Sphyrna lewini) off Costa Rica. [By Kris-Mikael Krister.](https://en.wikipedia.org/wiki/Scalloped_hammerhead#/media/File:Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg) CC BY 2.0 ](images/Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg)
+![Scalloped hammerhead shark (Sphyrna lewini) off Costa Rica. [By Kris-Mikael Krister.](https://en.wikipedia.org/wiki/Scalloped_hammerhead#/media/File:Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg) CC BY 2.0 ](images/Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg){width=50%}
 

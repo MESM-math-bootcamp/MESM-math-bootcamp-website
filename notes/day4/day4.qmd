@@ -1,4 +1,4 @@
-# Day 4: Limits and Derivatives
+# Day 4: Rates of change, Limits, and Derivatives
 
 <hr>
 
@@ -12,21 +12,20 @@
 
 ::: {.body-text-m}
 
-[**Lecture slides - Rates of change**](day4-rates-of-change.qmd){target="_blank"}
-
-[**Lecture slides - Limits and derivatives**](day4-limits-derivatives.qmd){target="_blank"}
+[**Lecture slides**](day4-slides.qmd){target="_blank"}
 
 :::
 
 **Contents**
-- <span style="color:#FCAE1E"><b>↗️ Slope as a rate of change</b></span>
+
+- ↗️ Slope as a rate of change
 
 ## Problem set
 
 :::{.center-text}
-[**limits and derivatives problem set**](day4-problem-set.qmd)
+[**rates of change, limits, and derivatives problem set**](day4-problem-set.qmd)
 
-![](/notes/icons/homework.png){width=25%}
+![](/notes/icons/homework.png){width=20%}
 
 :::
 
