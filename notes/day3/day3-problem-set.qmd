@@ -2,7 +2,7 @@
 sidebar: daily-materials
 execute:
   freeze: true
-author: "Carmen Galaz García, Nathaniel Grimes"  
+author: "Carmen Galaz García, Nathaniel Grimes"
 ---
 # $e^x$, Logs, and Lines Problem Set
 
@@ -76,60 +76,18 @@ a) Find the equation for water temperature $T$ (°C) as a function of distance d
 b) Create a plot showing the line. Clearly label the axes, including units, and add a title.
 c) What is the $y$-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence.
 
-## Slope as a rate of change
+<br>
 
-**4)** Researchers plotted [dissolved oxygen (DO)](https://www.epa.gov/system/files/documents/2021-07/parameter-factsheet_do.pdf) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.
+**4)** A regional market for albacore tuna is described below, where $Q$ is quantity in thousands of pounds sold per week and $P$ is price in \$ per pound.
 
-```{r}
-#| echo: false
-#| fig-align: center
-#| out-width: "70%"
-depth <- seq(0, 12, length.out = 100)
-DO <- -0.6*depth + 9
+(1) A fishery's weekly supply curve for tuna passes through $(Q,P) = (0, 20)$ and $(100, 70)$. Find the supply curve $S(Q)$ in slope-intercept form.
 
-plot(depth, DO, type = "l", lwd = 3, col = "green",
-     xlim = c(0, 12), ylim = c(0, 10),
-     xlab = "Depth (m)", ylab = "Dissolved oxygen (mg/L)",
-     xaxt = "n", yaxt = "n")
-abline(h = seq(0, 10, by = 1), col = "lightgray", lty = "dotted")
-abline(v = seq(0, 12, by = 1), col = "lightgray", lty = "dotted")
-axis(1, at = seq(0, 12, by = 1), cex.axis = 2)
-axis(2, at = seq(0, 10, by = 1), cex.axis = 2)
-lines(depth, DO, lwd = 2)
-```
+(2) At a price of \$70/lb, weekly quantity demanded is 40 (thousand lbs); at \$20/lb, quantity demanded is 140 (thousand lbs). Find the inverse demand equation $D(Q)$.
 
-a) Write the equation for dissolved oxygen, $DO$, as a function of depth.
-b) Interpret the slope in a full sentence, including units.
+(3) Plot $S(Q)$ and $D(Q)$ on the same axes, with quantity on the $x$-axis and price on the $y$-axis. Label both axes clearly, including units.
 
-**5)** The growth of sharks can be modeled using [von Bertalanffy curves](https://en.wikipedia.org/wiki/Von_Bertalanffy_function). Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.
+(4) Find the price and quantity at which supply equals demand and interpret this point in one sentence.
 
-```{r}
-#| echo: false
-
-vb<-function(a,l,k,t0){
-  l*(1-exp(-k*(a-t0)))
-}
-
-x=seq(0,30)
-
-length=vb(x,214.8,.13,-1.62)
-
-p1<-ggplot()+
-  geom_point(aes(x=x,y=length),color="black",size=3)+
-  geom_line(aes(x=x,y=length),color="black",size=2)+
-  theme_bw()+
-  scale_y_continuous(breaks=seq(35,215,5))+
-  scale_x_continuous(breaks=seq(0,32,by=2))+
-  labs(x="Age (years)",y="Length (cm)")
-
-p1
-```
-
-a) What is the average slope from ages 0 to 8? From 20 to 30? Include units.
-b) What does the average slope represent in this scenario and why would these slopes change for a shark as they get older? Write you answers in complete sentences.
-<!-- c) How would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph? -->
-
-![Scalloped hammerhead shark (Sphyrna lewini) off Costa Rica. [By Kris-Mikael Krister.](https://en.wikipedia.org/wiki/Scalloped_hammerhead#/media/File:Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg) CC BY 2.0 ](images/Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg)
 
 ---
 

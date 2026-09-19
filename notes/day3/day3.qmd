@@ -27,7 +27,6 @@
 - 🐰 Exponential growth
 - 🦠 Logistic growth
 - 📈 Linear functions
-- ↗️ Slope as a rate of change
 -  🚜 Applications from MESM courses
 
 ## Problem set

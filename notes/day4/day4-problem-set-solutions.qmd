@@ -1,0 +1,19 @@
+---
+sidebar: daily-materials
+execute:
+  freeze: true
+author: "Carmen Galaz García, Nathaniel Grimes"
+---
+
+
+
+A regional market for albacore tuna is described below, where $Q$ is quantity in thousands of pounds sold per week and $P$ is price in \$ per pound.
+
+(1) A fishery's weekly supply curve for tuna passes through $(Q,P) = (0, 20)$ and $(100, 70)$. Find the supply curve $S(Q)$ in slope-intercept form.
+
+(2) At a price of \$70/lb, weekly quantity demanded is 40 (thousand lbs); at \$20/lb, quantity demanded is 140 (thousand lbs). Find the inverse demand equation $D(Q)$.
+
+(3) Plot $S(Q)$ and $D(Q)$ on the same axes, with quantity on the $x$-axis and price on the $y$-axis. Label both axes clearly, including units.
+
+(4) Find the price and quantity at which supply equals demand and interpret this point in one sentence.
+

@@ -1,0 +1,82 @@
+---
+sidebar: daily-materials
+execute:
+  freeze: true
+author: "Carmen Galaz García, Nathaniel Grimes"  
+---
+
+# Rates of change, limits and derivatives problem set
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message=FALSE,warning=FALSE)
+
+library(tidyverse)
+```
+
+::: {.callout-tip}
+## Instructions
+
+Attempt each problem on your own before checking the [solutions](day3-problem-set-solutions.qmd).
+Feel free to work with anyone in the cohort after giving the problems a try!
+:::
+
+
+## Rates of change
+
+
+
+## Slope as a rate of change
+
+**4)** Researchers plotted [dissolved oxygen (DO)](https://www.epa.gov/system/files/documents/2021-07/parameter-factsheet_do.pdf) concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "70%"
+depth <- seq(0, 12, length.out = 100)
+DO <- -0.6*depth + 9
+
+plot(depth, DO, type = "l", lwd = 3, col = "green",
+     xlim = c(0, 12), ylim = c(0, 10),
+     xlab = "Depth (m)", ylab = "Dissolved oxygen (mg/L)",
+     xaxt = "n", yaxt = "n")
+abline(h = seq(0, 10, by = 1), col = "lightgray", lty = "dotted")
+abline(v = seq(0, 12, by = 1), col = "lightgray", lty = "dotted")
+axis(1, at = seq(0, 12, by = 1), cex.axis = 2)
+axis(2, at = seq(0, 10, by = 1), cex.axis = 2)
+lines(depth, DO, lwd = 2)
+```
+
+a) Write the equation for dissolved oxygen, $DO$, as a function of depth.
+b) Interpret the slope in a full sentence, including units.
+
+**5)** The growth of sharks can be modeled using [von Bertalanffy curves](https://en.wikipedia.org/wiki/Von_Bertalanffy_function). Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.
+
+```{r}
+#| echo: false
+
+vb<-function(a,l,k,t0){
+  l*(1-exp(-k*(a-t0)))
+}
+
+x=seq(0,30)
+
+length=vb(x,214.8,.13,-1.62)
+
+p1<-ggplot()+
+  geom_point(aes(x=x,y=length),color="black",size=3)+
+  geom_line(aes(x=x,y=length),color="black",size=2)+
+  theme_bw()+
+  scale_y_continuous(breaks=seq(35,215,5))+
+  scale_x_continuous(breaks=seq(0,32,by=2))+
+  labs(x="Age (years)",y="Length (cm)")
+
+p1
+```
+
+a) What is the average slope from ages 0 to 8? From 20 to 30? Include units.
+b) What does the average slope represent in this scenario and why would these slopes change for a shark as they get older? Write you answers in complete sentences.
+<!-- c) How would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph? -->
+
+![Scalloped hammerhead shark (Sphyrna lewini) off Costa Rica. [By Kris-Mikael Krister.](https://en.wikipedia.org/wiki/Scalloped_hammerhead#/media/File:Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg) CC BY 2.0 ](images/Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg)
+
