@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.7.33">
+<meta name="generator" content="quarto-1.9.38">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
@@ -10,6 +10,9 @@
 
 <title>day3-problem-set-solutions – Bren Math Workshop</title>
 <style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
 div.columns{display: flex; gap: min(4vw, 1.5em);}
@@ -73,10 +76,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-b427677ddefa5d93abdb57081dab58c5.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-ee4c798a696f410de894479ed283eeec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-ed4180e93009920118d63e1acdfa493e.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-a57217462e498614a534451382d2c246.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/all.min.css" rel="stylesheet">
 <link href="../../site_libs/quarto-contrib/fontawesome6-6.7.2/latex-fontsize.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
@@ -108,7 +111,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
   <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+  <script defer="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <script type="text/javascript">
 const typesetMath = (el) => {
@@ -121,7 +124,7 @@ const typesetMath = (el) => {
     var macros = [];
     for (var i = 0; i < mathElements.length; i++) {
       var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN") {
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
         window.katex.render(texText.data, mathElements[i], {
           displayMode: mathElements[i].classList.contains('display'),
           throwOnError: false,
@@ -250,8 +253,11 @@ window.Quarto = {
   </div>
 </li>
         <li class="sidebar-item">
- <span class="menu-text">day 4 - limits and derivatives</span>
-  </li>
+  <div class="sidebar-item-container"> 
+  <a href="../../notes/day4/day4.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">day 4 - limits and derivatives</span></a>
+  </div>
+</li>
         <li class="sidebar-item">
  <span class="menu-text">day 5 - integrals and differential equations</span>
   </li>
@@ -269,7 +275,6 @@ window.Quarto = {
   <ul class="collapse">
   <li><a href="#ex-and-logarithms" id="toc-ex-and-logarithms" class="nav-link" data-scroll-target="#ex-and-logarithms"><span class="math inline">\(e^x\)</span> and logarithms</a></li>
   <li><a href="#lines-and-linear-functions" id="toc-lines-and-linear-functions" class="nav-link" data-scroll-target="#lines-and-linear-functions">Lines and linear functions</a></li>
-  <li><a href="#slope-as-a-rate-of-change" id="toc-slope-as-a-rate-of-change" class="nav-link" data-scroll-target="#slope-as-a-rate-of-change">Slope as a rate of change</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -289,7 +294,7 @@ window.Quarto = {
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Instructions
+<span class="screen-reader-only">Tip</span>Instructions
 </div>
 </div>
 <div class="callout-body-container callout-body">
@@ -306,12 +311,12 @@ Instructions
 <li>State your answer to (b) as a full sentence.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-2-contents" aria-controls="callout-2" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -345,7 +350,7 @@ t &amp;= \frac{\ln(33.33)}{0.245} \approx 14.3
 <div class="cell">
 <details class="code-fold">
 <summary>Show the code</summary>
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#|</span></span>
+<div class="code-copy-outer-scaffold"><div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#|</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>x<span class="ot">=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>)</span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>y<span class="ot">=</span><span class="dv">2</span><span class="sc">*</span>x<span class="sc">+</span><span class="dv">5</span></span>
@@ -374,7 +379,7 @@ t &amp;= \frac{\ln(33.33)}{0.245} \approx 14.3
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>  <span class="fu">scale_x_continuous</span>(<span class="at">breaks=</span><span class="fu">seq</span>(<span class="sc">-</span><span class="dv">5</span>,<span class="dv">5</span>,<span class="at">by=</span><span class="dv">1</span>))<span class="sc">+</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>  <span class="fu">labs</span>(<span class="at">x=</span><span class="st">""</span>,<span class="at">y=</span><span class="st">""</span>)</span>
 <span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>cowplot<span class="sc">::</span><span class="fu">plot_grid</span>(p1,p4,<span class="at">labels=</span><span class="fu">c</span>(<span class="st">"A"</span>,<span class="st">"D"</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>cowplot<span class="sc">::</span><span class="fu">plot_grid</span>(p1,p4,<span class="at">labels=</span><span class="fu">c</span>(<span class="st">"A"</span>,<span class="st">"D"</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </details>
 <div class="cell-output-display">
 <div>
@@ -385,12 +390,12 @@ t &amp;= \frac{\ln(33.33)}{0.245} \approx 14.3
 </div>
 </div>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-3-contents" aria-controls="callout-3" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -408,12 +413,12 @@ Solution
 <li>What is the <span class="math inline">\(y\)</span>-intercept of this line, and what does it mean in the context of the stream? Answer in a full sentence.</li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-4-contents" aria-controls="callout-4" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
@@ -441,90 +446,57 @@ T - 14 = 2(x-2) \ \Rightarrow \ T = 2x + 10
 </div>
 </div>
 </div>
-</section>
-<section id="slope-as-a-rate-of-change" class="level2">
-<h2 class="anchored" data-anchor-id="slope-as-a-rate-of-change">Slope as a rate of change</h2>
-<p><strong>4)</strong> Researchers plotted <a href="https://www.epa.gov/system/files/documents/2021-07/parameter-factsheet_do.pdf">dissolved oxygen (DO)</a> concentration against water depth in a lake, and found the relationship was linear over the depth range sampled.</p>
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="day3-problem-set-solutions_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:70.0%"></p>
-</figure>
-</div>
-</div>
-</div>
-<ol type="a">
-<li>Write the equation for dissolved oxygen, <span class="math inline">\(DO\)</span>, as a function of depth.</li>
-<li>Interpret the slope in a full sentence, including units.</li>
+<p><strong>4)</strong> A regional market for albacore tuna is described below, where <span class="math inline">\(Q\)</span> is quantity in thousands of pounds sold per week and <span class="math inline">\(P\)</span> is price in $ per pound.</p>
+<ol type="1">
+<li><p>A fishery’s weekly supply curve for tuna passes through <span class="math inline">\((Q,P) = (0, 20)\)</span> and <span class="math inline">\((100, 70)\)</span>. Find the supply curve <span class="math inline">\(S(Q)\)</span> in slope-intercept form.</p></li>
+<li><p>At a price of $70/lb, weekly quantity demanded is 40 (thousand lbs); at $20/lb, quantity demanded is 140 (thousand lbs). Find the inverse demand equation <span class="math inline">\(D(Q)\)</span>.</p></li>
+<li><p>Plot <span class="math inline">\(S(Q)\)</span> and <span class="math inline">\(D(Q)\)</span> on the same axes, with quantity on the <span class="math inline">\(x\)</span>-axis and price on the <span class="math inline">\(y\)</span>-axis. Label both axes clearly, including units.</p></li>
+<li><p>Find the price and quantity at which supply equals demand and interpret this point in one sentence.</p></li>
 </ol>
 <div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Solution
+<span class="screen-reader-only">Note</span>Solution
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
 <div id="callout-5" class="callout-5-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
-<p><strong>a)</strong> The line passes through <span class="math inline">\((0, 9)\)</span> and <span class="math inline">\((10, 3)\)</span>, so:</p>
-<ul>
-<li><span class="math inline">\(y\)</span>-intercept: <span class="math inline">\(9\)</span></li>
-<li>slope: <span class="math inline">\(\frac{3-9}{10-0} = \frac{-6}{10} = -0.6\)</span></li>
-</ul>
-<p><span class="math inline">\(DO(depth) = -0.6 \cdot depth + 9\)</span></p>
-<p><strong>b)</strong></p>
-<p>“For every additional meter of depth, dissolved oxygen concentration decreases by an average of 0.6 mg/L, starting from a surface concentration of about 9 mg/L.”</p>
-</div>
-</div>
-</div>
-<p><strong>5)</strong> The growth of sharks can be modeled using <a href="https://en.wikipedia.org/wiki/Von_Bertalanffy_function">von Bertalanffy curves</a>. Scalloped hammerhead sharks in the Atlantic were found to have growth curves that follow the graph below.</p>
-<div class="cell">
-<div class="cell-output-display">
-<div>
-<figure class="figure">
-<p><img src="day3-problem-set-solutions_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid figure-img" width="672"></p>
-</figure>
-</div>
-</div>
-</div>
-<ol type="a">
-<li>What is the average slope from ages 0 to 8? From 20 to 30?</li>
-<li>What are the units of the average slopes and why would they change for a shark as they get older?</li>
-<li>How would you find the instantaneous slope for a shark at age 12? What is the closest approximation you can make with this data and graph?</li>
+<ol type="1">
+<li>Supply passes through <span class="math inline">\((0,20)\)</span> and <span class="math inline">\((100,70)\)</span>:</li>
 </ol>
-<div class="callout callout-style-default callout-note callout-titled" title="Solution">
-<div class="callout-header d-flex align-content-center" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
+<p><span class="math display">\[
+\begin{aligned}
+m &amp;= \frac{70-20}{100-0} = 0.5 &amp;\text{Compute the slope} \\
+S(Q) &amp;= 20 + 0.5Q &amp;\text{Use the } y\text{-intercept } (0,20)
+\end{aligned}
+\]</span></p>
+<ol start="2" type="1">
+<li>Demand passes through <span class="math inline">\((Q,P)=(40,70)\)</span> and <span class="math inline">\((140,20)\)</span>:</li>
+</ol>
+<p><span class="math display">\[
+\begin{aligned}
+m &amp;= \frac{20-70}{140-40} = -0.5 &amp;\text{Compute the slope} \\
+P &amp;= -0.5Q + c \Rightarrow 70 = -0.5(40) + c \Rightarrow c =90 &amp;\text{Using } (40,70) \\
+D(Q) &amp;= 90 - 0.5Q &amp;\text{Simplify}
+\end{aligned}
+\]</span></p>
+<ol start="4" type="1">
+<li>Set <span class="math inline">\(S(Q) = D(Q)\)</span>:</li>
+</ol>
+<p><span class="math display">\[
+\begin{aligned}
+20 + 0.5Q &amp;= 90 - 0.5Q &amp;\text{Set supply equal to demand} \\
+Q &amp;= 70 &amp;\text{Solve for } Q \\
+P &amp;= 20 + 0.5(70) = 55 &amp;\text{Plug into either curve}
+\end{aligned}
+\]</span></p>
+<p>At a price of $55/lb, fishers supply exactly 70 (thousand lbs/week) of tuna and buyers demand exactly that same amount.</p>
 </div>
-<div class="callout-title-container flex-fill">
-Solution
 </div>
-<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
-</div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
-<div class="callout-body-container callout-body">
-<p><strong>a)</strong></p>
-<p>The average slope from ages 0 to 8 can be calcualted by: <span class="math display">\[ slope = \frac{155-40}{8-0} = 14.375\]</span></p>
-<p>The average slope from ages 0 to 8 can be calcualted by: <span class="math display">\[ slope = \frac{210-200}{30-20} =1 \]</span></p>
-<p>This tells us that the average rate of change for sharks between the ages of 0 to 8 was 14.375. For the ages, 20 to 30 the average change was 1.</p>
-<p><strong>b)</strong></p>
-<p>Slopes are in units of length over age, so the slope indicates the growth in centimeters every year. As animals get older, ther slow down their growth. Less energy is spent in growing and more invested in reproductive energy.</p>
-<!-- **c)**
-
-We would need to apply calculus to find the true answer, but we can approximate it reasonably well by finding the smallest possible difference between two points around age 12. In this case we can use $\frac{175-172}{13-12}$ to get an approximate instaneous rate of growth of 3 cm per year. -->
-</div>
-</div>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg" class="img-fluid figure-img"></p>
-<figcaption>Scalloped hammerhead shark (Sphyrna lewini) off Costa Rica. <a href="https://en.wikipedia.org/wiki/Scalloped_hammerhead#/media/File:Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg">By Kris-Mikael Krister.</a> CC BY 2.0</figcaption>
-</figure>
 </div>
 
 
@@ -583,13 +555,14 @@ We would need to apply calculus to find the true answer, but we can approximate 
       e.clearSelection();
     }
     const getTextToCopy = function(trigger) {
-        const codeEl = trigger.previousElementSibling.cloneNode(true);
-        for (const childEl of codeEl.children) {
-          if (isCodeAnnotation(childEl)) {
-            childEl.remove();
-          }
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
         }
-        return codeEl.innerText;
+      }
+      return codeEl.innerText;
     }
     const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
       text: getTextToCopy

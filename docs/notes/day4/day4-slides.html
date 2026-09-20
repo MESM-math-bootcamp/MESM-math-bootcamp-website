@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<link href="../../images/favicon.png" rel="icon" type="image/png">
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-html/tabby.min.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/light-border.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-33269adcf1721b81efc5ea7fcfe7f0ee.css" rel="stylesheet" id="quarto-text-highlighting-styles"><meta charset="utf-8">
+  <meta name="generator" content="quarto-1.9.38">
+
+  <title>Bren Math Workshop – day4-slides</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reset.css">
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/reveal.css">
+  <style>
+    /* Default styles provided by pandoc.
+    ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+    */
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+      vertical-align: middle;
+    }
+  </style>
+  <link rel="stylesheet" href="../../site_libs/revealjs/dist/theme/quarto-47abf7ff7a5eed8d849cff35fd183f8e.css">
+  <link href="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/font-awesome/css/all.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/reveal-chalkboard/style.css" rel="stylesheet">
+  <link href="../../site_libs/revealjs/plugin/quarto-support/footer.css" rel="stylesheet">
+  <style type="text/css">
+    .reveal div.sourceCode {
+      margin: 0;
+      overflow: auto;
+    }
+    .reveal div.hanging-indent {
+      margin-left: 1em;
+      text-indent: -1em;
+    }
+    .reveal .slide:not(.center) {
+      height: 100%;
+    }
+    .reveal .slide.scrollable {
+      overflow-y: auto;
+    }
+    .reveal .footnotes {
+      height: 100%;
+      overflow-y: auto;
+    }
+    .reveal .slide .absolute {
+      position: absolute;
+      display: block;
+    }
+    .reveal .footnotes ol {
+      counter-reset: ol;
+      list-style-type: none; 
+      margin-left: 0;
+    }
+    .reveal .footnotes ol li:before {
+      counter-increment: ol;
+      content: counter(ol) ". "; 
+    }
+    .reveal .footnotes ol li > p:first-child {
+      display: inline-block;
+    }
+    .reveal .slide ul,
+    .reveal .slide ol {
+      margin-bottom: 0.5em;
+    }
+    .reveal .slide ul li,
+    .reveal .slide ol li {
+      margin-top: 0.4em;
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide ul[role="tablist"] li {
+      margin-bottom: 0;
+    }
+    .reveal .slide ul li > *:first-child,
+    .reveal .slide ol li > *:first-child {
+      margin-block-start: 0;
+    }
+    .reveal .slide ul li > *:last-child,
+    .reveal .slide ol li > *:last-child {
+      margin-block-end: 0;
+    }
+    .reveal .slide .columns:nth-child(3) {
+      margin-block-start: 0.8em;
+    }
+    .reveal blockquote {
+      box-shadow: none;
+    }
+    .reveal .tippy-content>* {
+      margin-top: 0.2em;
+      margin-bottom: 0.7em;
+    }
+    .reveal .tippy-content>*:last-child {
+      margin-bottom: 0.2em;
+    }
+    .reveal .slide > img.stretch.quarto-figure-center,
+    .reveal .slide > img.r-stretch.quarto-figure-center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-left,
+    .reveal .slide > img.r-stretch.quarto-figure-left  {
+      display: block;
+      margin-left: 0;
+      margin-right: auto; 
+    }
+    .reveal .slide > img.stretch.quarto-figure-right,
+    .reveal .slide > img.r-stretch.quarto-figure-right  {
+      display: block;
+      margin-left: auto;
+      margin-right: 0; 
+    }
+  </style>
+  <script>
+  (function loadCancelExtension(){
+    if (window.MathJax && window.MathJax.Hub) {
+      MathJax.Hub.Config({ TeX: { extensions: ["cancel.js"] } });
+    } else {
+      setTimeout(loadCancelExtension, 20);
+    }
+  })();
+  </script>
+</head>
+<body class="quarto-light">
+  <div class="reveal">
+    <div class="slides">
+
+
+<section id="title-slide" class="slide level2 center" data-menu-title="Title Slide" data-background="#053660">
+<h2></h2>
+<p><span class="custom-title">Day 4: Bren Math Workshop</span></p>
+<hr class="hr-teal">
+<p><span class="body-text-l center-text baby-blue-text">Carmen Galaz García, Ph.D.</span></p>
+<p><span class="center-text body-text-m baby-blue-text">Bren School of Environmental Science &amp; Management</span></p>
+<p><br></p>
+</section>
+<section id="interpreting-slope" class="slide level2" data-menu-title="Interpreting the slope title" data-background-color="#003660">
+<h2></h2>
+<div class="page-center">
+<div class="custom-subtitle">
+Interpreting the slope
+</div>
+</div>
+</section>
+<section id="avg-rate-of-change-blank" class="slide level2" data-menu-title="Slope (average)">
+<h2></h2>
+<p><span class="slide-title">Slope (average)</span></p>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="body-text-m">
+<p>Sometimes, it can be useful to find the <strong>average rate of change</strong> of a function.</p>
+</div>
+<p>✏️</p>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-1-1.png" class="quarto-figure quarto-figure-center" style="width:90.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="avg-rate-of-change" class="slide level2" data-menu-title="Slope (average)">
+<h2></h2>
+<p><span class="slide-title">Slope (average)</span></p>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="body-text-m">
+<p>Sometimes, it can be useful to find the <strong>average rate of change</strong> of a function.</p>
+<p>Between any two points <span class="math inline">\((x_1,y_1)\)</span> and <span class="math inline">\((x_2,y_2)\)</span> on the graph of a function, the slope is found by:</p>
+<p><br></p>
+<p><span class="math display">\[m=\frac{\Delta y}{\Delta x}=\frac{y_2-y_1}{x_2-x_1}\]</span></p>
+<p>Same idea as in a line!</p>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-2-1.png" class="quarto-figure quarto-figure-center" style="width:90.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+</section>
+<section id="slope-roc" class="slide level2" data-menu-title="Slope represents rate of change">
+<h2></h2>
+<p><span class="slide-title">Slope represents rate of change</span></p>
+<hr>
+<p>Ice-core data before 1958. Mauna Loa data after 1958.</p>
+
+<img data-src="../_linear-functions/images/loa.PNG" class="r-stretch quarto-figure-center"><p class="caption">Source:<a href="https://keelingcurve.ucsd.edu">The Keeling Curve</a></p></section>
+<section id="practice-out-loud" class="slide level2" data-menu-title="Practice out loud">
+<h2></h2>
+<p><span class="slide-title3">Get into the practice of saying the meaning out loud</span></p>
+<hr>
+<ul>
+<li>As if you’re explaining it to someone unfamiliar with the data</li>
+<li>Including units</li>
+<li>Without overstating certainty</li>
+</ul>
+<p><span class="body-text-m"><strong>For example:</strong></span></p>
+<blockquote>
+<p>“Between 1972 and 2020 the price of hobbit homes increased by an average of $2,450 per year”</p>
+</blockquote>
+<p><br></p>
+<p><em>differs from</em></p>
+<p><br></p>
+<blockquote>
+<p>“Between 1972 and 2020 the price of hobbit homes increased by $2,450 per year.”</p>
+</blockquote>
+</section>
+<section id="slope-practice" class="slide level2 smaller" data-menu-title="Slope practice">
+<h2></h2>
+<p><span class="slide-title3">Slope practice</span></p>
+<hr>
+<div style="color:green;">
+<p>✏️ A city has begun a 20-day, round-the-clock grading and paving phase for a highway-widening project that cuts directly through a neighborhood. In response, a community air-quality monitoring group tracked the additional fine particulate matter concentration, <span class="math inline">\(P(t)\)</span> (µg/m³ of PM2.5 above baseline), in the neighborhood’s air over the 20 days of that construction phase.</p>
+</div>
+<div class="columns">
+<div class="column" style="width:35%;">
+<div style="color:green;">
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(t\)</span> (days)</th>
+<th style="text-align: center;"><span class="math inline">\(P(t)\)</span> (µg/m³)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">14.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">33.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">40.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">33.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">14.4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div><div class="column" style="width:65%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-3-1.png" class="quarto-figure quarto-figure-center" style="width:95.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div></div>
+<div style="color:green;">
+<ol type="a">
+<li>Calculate the average rate of change in additional PM2.5 concentration between day 2 and day 6. Represent this graphically on the plot.</li>
+<li>Write your answer as a full sentence, with units, without overstating certainty.</li>
+</ol>
+</div>
+</section>
+<section id="slope-practice-blank" class="slide level2" data-menu-title="Slope practice">
+<h2></h2>
+<p><span class="slide-title3">Slope practice</span></p>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div style="color:green;">
+<div class="body-text-s">
+<p><span class="math inline">\(P(t)\)</span> measures µg/m³ of PM2.5 above baseline in the neighborhood’s air over the 20 days of that construction phase.</p>
+</div>
+<table class="caption-top">
+<thead>
+<tr class="header">
+<th style="text-align: center;"><span class="math inline">\(t\)</span> (days)</th>
+<th style="text-align: center;"><span class="math inline">\(P(t)\)</span> (µg/m³)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">2</td>
+<td style="text-align: center;">14.4</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">6</td>
+<td style="text-align: center;">33.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">10</td>
+<td style="text-align: center;">40.0</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">14</td>
+<td style="text-align: center;">33.6</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">18</td>
+<td style="text-align: center;">14.4</td>
+</tr>
+</tbody>
+</table>
+<ol type="a">
+<li>Calculate the average rate of change in additional PM2.5 concentration between day 2 and day 6. Represent this graphically on the plot.</li>
+<li>Write your answer as a full sentence, with units, without overstating certainty.</li>
+</ol>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure>
+<p><img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-4-1.png" class="quarto-figure quarto-figure-center" style="width:95.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+<p>✏️</p>
+</div></div>
+</section>
+<section id="slope-practice-solution" class="slide level2" data-menu-title="Slope practice">
+<h2></h2>
+<p><span class="slide-title3">Slope practice</span></p>
+<hr>
+<p><br></p>
+<ol type="a">
+<li><span class="math display">\[
+\text{average rate of change} = \frac{P(6) - P(2)}{6-2} = \frac{33.6 - 14.4}{4} = \frac{19.2}{4} = 4.8 \ \frac{\mu\text{g/m}^3}{\text{day}}
+\]</span></li>
+</ol>
+<p><br></p>
+<ol start="2" type="a">
+<li>Between day 2 and day 6 of the grading phase, additional PM2.5 concentration in the neighborhood increased by an average of 4.8 µg/m³ per day.</li>
+</ol>
+</section>
+<section id="whole-story" class="slide level2" data-menu-title="Whole story">
+<h2></h2>
+<p><span class="slide-title3">The <em>average</em> slope of a continuous function rarely tells the whole story</span></p>
+<hr>
+
+<img data-src="images/cod_graph.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"></section>
+<section id="slope-avg" class="slide level2" data-cdata-menu-title="can be average or instantaneous">
+<h2></h2>
+<p><span class="slide-title">Slope can be <em>average</em> or <em>instantaneous</em></span></p>
+<hr>
+<div class="columns">
+<div class="column" style="width:50%;">
+<ul>
+<li>Rise over run can always be used to find average rate of change between two parts of a graph</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<ul>
+<li>Instantaneous rate of change leads us to ✨calculus✨.</li>
+</ul>
+</div></div>
+
+<img data-src="images/trex.PNG" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"></section>
+<section id="limits-title" class="slide level2" data-menu-title="Logarithms" data-background-color="#003660">
+<h2></h2>
+<div class="page-center">
+<div class="custom-subtitle">
+Limits
+</div>
+</div>
+</section>
+<section id="limits-blank" class="slide level2" data-menu-title="Limits">
+<h2></h2>
+<p><span class="slide-title">Limits</span></p>
+<hr>
+<p>✏️</p>
+</section>
+<section id="limits" class="slide level2" data-menu-title="Limits">
+<h2></h2>
+<p><span class="slide-title">Limits</span></p>
+<hr>
+<p><strong>Definition</strong></p>
+<p>We say a number <span class="math inline">\(L\)</span> is the limit of a function <span class="math inline">\(f(x)\)</span> as its variable <span class="math inline">\(x\)</span> approaches a number <span class="math inline">\(c\)</span>, if the function’s output values <span class="math inline">\(f(x)\)</span> approach <span class="math inline">\(L\)</span> when <span class="math inline">\(x\)</span> get closer to <span class="math inline">\(c\)</span>.</p>
+<p><br></p>
+<p>We write this symbolically as:</p>
+<p><span class="math display">\[
+\large
+\lim_{x\to c} f(x)=L
+\]</span></p>
+<p><br></p>
+<p>We read this as: <span class="teal-text">“The limit of <span class="math inline">\(f(x)\)</span> as <span class="math inline">\(x\)</span> approaches <span class="math inline">\(c\)</span> is <span class="math inline">\(L\)</span>.”</span></p>
+</section>
+<section id="lim-ex-blank" class="slide level2" data-menu-title="Limit Example">
+<h2></h2>
+<p><span class="slide-title">Limits example: numerical</span></p>
+<hr>
+<p>What is the limit of <span class="math inline">\(f(x)=2x^2-4\)</span> as <span class="math inline">\(x\)</span> approaches 2?</p>
+<p>We need to examine the values of <span class="math inline">\(f(x)\)</span> as <span class="math inline">\(x\)</span> gets closer to 2 from both sides.</p>
+
+<img data-src="images/limits-blank.png" class="quarto-figure quarto-figure-center r-stretch" style="width:50.0%"><p>✏️</p>
+<p><br> <br> <br></p>
+</section>
+<section id="lim-ex-3" class="slide level2" data-menu-title="Limit Example">
+<h2></h2>
+<p><span class="slide-title">Limits example: numerical</span></p>
+<hr>
+<p>What is the limit of <span class="math inline">\(f(x)=2x^2-4\)</span> as <span class="math inline">\(x\)</span> approaches 2?</p>
+<p>We need to examine the values of <span class="math inline">\(f(x)\)</span> as <span class="math inline">\(x\)</span> gets closer to 2 from both sides.</p>
+
+<img data-src="images/limits.PNG" class="quarto-figure quarto-figure-center r-stretch" style="width:70.0%"><p>From both directions it looks like <span class="math inline">\(f(x)\)</span> converges to 4.</p>
+<p>So, we say that <span class="teal-text">“The limit of <span class="math inline">\(2x^2-4\)</span> as <span class="math inline">\(x\)</span> approaches 2 is 4”</span>. We can write it like this:</p>
+<p><span class="math display">\[
+\lim_{x\to 2}(2x^2-4)=4
+\]</span></p>
+</section>
+<section id="limit-graph-sol" class="slide level2" data-menu-title="Graphical Solution">
+<h2></h2>
+<p><span class="slide-title">Limits example: graph</span></p>
+<hr>
+<p>What is the limit of <span class="math inline">\(f(x)=2x^2-4\)</span> as <span class="math inline">\(x\)</span> approaches 2?</p>
+
+<img data-src="images/limits-graph.png" class="quarto-figure quarto-figure-center r-stretch" style="width:200.0%"><p>From both directions it looks like <span class="math inline">\(f(x)\)</span> converges to 4.</p>
+<p>So, <span class="math inline">\(\lim_{x\to 2}(2x^2-4)=4\)</span>.</p>
+</section>
+<section id="intro-derv" class="slide level2" data-menu-title="Introduction to Derivates" data-background-color="#003660">
+<h2></h2>
+<div class="page-center">
+<div class="custom-subtitle">
+Introduction to derivatives
+</div>
+</div>
+</section>
+<section id="average-slope" class="slide level2" data-menu-title="Average slope">
+<h2></h2>
+<p><span class="slide-title">Average slope</span></p>
+<hr>
+<div style="position: absolute; bottom: 550px; right: 1000px; font-size: 1em;">
+<p>✏️</p>
+</div>
+
+<img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-8-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Start with:</p>
+<p><br></p>
+<p>Nearby point:</p>
+<p><br></p>
+<p>Average slope:</p>
+</section>
+<section id="average-slope-filled" class="slide level2" data-menu-title="Average slope">
+<h2></h2>
+<p><span class="slide-title">Average slope</span></p>
+<hr>
+
+<img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-9-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><p>Start with a point <span class="math inline">\((x,f(x))\)</span> on the graph.</p>
+<p>A nearby point can be <span class="math inline">\((x+\Delta x, f(x+\Delta x))\)</span>, where <span class="math inline">\(\Delta x\)</span> is a short distance from <span class="math inline">\(x\)</span>.</p>
+<p><br></p>
+<p>The average slope between <span class="math inline">\((x,f(x))\)</span> and <span class="math inline">\((x+\Delta x, f(x+\Delta x))\)</span> is given by</p>
+<p><span style="color:red"> <span class="math display">\[\text{average slope} = \frac{f(x+\Delta x) - f(x)}{(x+\Delta x)-x} = \frac{f(x+\Delta x) - f(x)}{\Delta x}.\]</span> </span></p>
+<p><strong>What happens when <span class="math inline">\(\Delta x\)</span> becomes smaller and smaller?</strong></p>
+</section>
+<section id="walkthrough-1" class="slide level2" data-menu-title="Walkthrough">
+<h2></h2>
+<p><span class="slide-title">What happens when <span class="math inline">\(\Delta x \to 0\)</span>?</span></p>
+<hr>
+
+<img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-10-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="walkthrough-2" class="slide level2" data-menu-title="Walkthrough">
+<h2></h2>
+<p><span class="slide-title">What happens when <span class="math inline">\(\Delta x \to 0\)</span>?</span></p>
+<hr>
+
+<img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-11-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="walkthrough-3" class="slide level2" data-menu-title="Walkthrough">
+<h2></h2>
+<p><span class="slide-title">What happens when <span class="math inline">\(\Delta x \to 0\)</span>?</span></p>
+<hr>
+
+<img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-12-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="walkthrough-4" class="slide level2" data-menu-title="Walkthrough">
+<h2></h2>
+<p><span class="slide-title">What happens when <span class="math inline">\(\Delta x \to 0\)</span>?</span></p>
+<hr>
+
+<img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-13-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"></section>
+<section id="tangent" class="slide level2" data-menu-title="Tangent Lines">
+<h2></h2>
+<p><span class="slide-title">Tangent lines</span></p>
+<hr>
+<p><strong>What if we let <span class="math inline">\(\Delta x=0\)</span>?</strong></p>
+<p>Then we would have the slope of a line that only touches the graph at exactly <span class="math inline">\((x, f(x))\)</span>.</p>
+
+<img data-src="day4-slides_files/figure-revealjs/unnamed-chunk-14-1.png" class="quarto-figure quarto-figure-center r-stretch" width="960"><div class="center-text teal-text">
+<p>These very special types of lines are called <strong>tangent lines</strong>.</p>
+</div>
+</section>
+<section id="recap-1" class="slide level2" data-menu-title="Recap in math notation">
+<h2></h2>
+<p><span class="slide-title">Derivative definition</span></p>
+<hr>
+<p>Remember the slope of the line that passes between two points <span class="math inline">\((x_1, y_1)\)</span> and <span class="math inline">\((x_2, y_2)\)</span> is:</p>
+<p><span class="math display">\[\text{slope}=\frac{y_2-y_1}{x_2-x_1}.\]</span></p>
+</section>
+<section id="recap-2" class="slide level2" data-menu-title="Recap in math notation">
+<h2></h2>
+<p><span class="slide-title">Derivative definition</span></p>
+<hr>
+<p>Remember the slope of the line that passes between two points <span class="math inline">\((x_1, y_1)\)</span> and <span class="math inline">\((x_2, y_2)\)</span> is:</p>
+<p><span class="math display">\[\text{slope}=\frac{y_2-y_1}{x_2-x_1}.\]</span></p>
+<p>If we have a function <span class="math inline">\(f(x)\)</span>, then <span class="math inline">\((x,f(x))\)</span> represents a point on its graph.</p>
+<p>Choose a different point on the graph that is <span class="math inline">\(\Delta x\)</span> away: <span class="math inline">\((x+\Delta x,f(x+\Delta x))\)</span>.</p>
+</section>
+<section id="recap-3" class="slide level2" data-menu-title="Recap in math notation">
+<h2></h2>
+<p><span class="slide-title">Derivative definition</span></p>
+<hr>
+<p>Remember the slope of the line that passes between two points <span class="math inline">\((x_1, y_1)\)</span> and <span class="math inline">\((x_2, y_2)\)</span> is:</p>
+<p><span class="math display">\[\text{slope}=\frac{y_2-y_1}{x_2-x_1}.\]</span></p>
+<p>If we have a function <span class="math inline">\(f(x)\)</span>, then <span class="math inline">\((x,f(x))\)</span> represents a point on its graph.</p>
+<p>Choose a different point on the graph that is <span class="math inline">\(\Delta x\)</span> away: <span class="math inline">\((x+\Delta x,f(x+\Delta x))\)</span>.</p>
+<p>Plug these points on the graph of <span class="math inline">\(f(x)\)</span> into the slope equation:</p>
+<p><span class="math display">\[
+\text{slope}=\frac{f(x+\Delta x)-f(x)}{\Delta x}.
+\]</span></p>
+</section>
+<section id="recap-4" class="slide level2" data-menu-title="Recap in math notation">
+<h2></h2>
+<p><span class="slide-title">Derivative definition</span></p>
+<hr>
+<p>Remember the slope of the line that passes between two points <span class="math inline">\((x_1, y_1)\)</span> and <span class="math inline">\((x_2, y_2)\)</span> is:</p>
+<p><span class="math display">\[\text{slope}=\frac{y_2-y_1}{x_2-x_1}.\]</span></p>
+<p>If we have a function <span class="math inline">\(f(x)\)</span>, then <span class="math inline">\((x,f(x))\)</span> represents a point on its graph.</p>
+<p>Choose a different point on the graph that is <span class="math inline">\(\Delta x\)</span> away: <span class="math inline">\((x+\Delta x,f(x+\Delta x))\)</span>.</p>
+<p>Plug these points on the graph of <span class="math inline">\(f(x)\)</span> into the slope equation:</p>
+<p><span class="math display">\[
+\text{slope}=\frac{f(x+\Delta x)-f(x)}{\Delta x}.
+\]</span></p>
+<p>When we let <span class="math inline">\(\Delta x \to 0\)</span> we get <span style="color:red"><strong>the slope of the tangent line at <span class="math inline">\(x\)</span></strong></span></p>
+<p><span style="color:red"> <span class="math display">\[
+\large
+f'(x)=\lim_{\Delta x \to 0} \frac{f(x+\Delta x)-f(x)}{\Delta x}
+\]</span> </span></p>
+<p><span style="color:red"><strong>This is the derivative of <span class="math inline">\(f\)</span> at <span class="math inline">\(x\)</span>.</strong></span> Also denoted <span class="math inline">\(\frac{df}{dx}\)</span>.</p>
+</section>
+<section id="deriv9" class="slide level2" data-menu-title="Derivative">
+<h2></h2>
+
+<img data-src="images/derivative_9.jpg" class="quarto-figure quarto-figure-center r-stretch" style="width:100.0%"><div class="footer">
+<p><em>Artwork by <a href="https://allisonhorst.com/">Allison Horst</a></em></p>
+</div>
+</section>
+<section id="break" class="slide level2" data-menu-title="10 minute break">
+<h2></h2>
+<p><span class="slide-title">Let’s take a 10 minute break</span></p>
+<hr>
+
+<img data-src="../day2_functions_graphs/images/coffee-break.png" class="r-stretch quarto-figure-center"><p class="caption">image: Flaticon.com</p></section>
+<section id="interpretation-derv" class="slide level2" data-menu-title="Introduction to Derivates" data-background-color="#003660">
+<h2></h2>
+<div class="page-center">
+<div class="custom-subtitle">
+Interpreting the derivative
+</div>
+</div>
+</section>
+<section id="calc" class="slide level2" data-menu-title="Calculus and Derivatives are the study of change">
+<h2></h2>
+<p><span class="slide-title">Calculus and derivatives are used to study change</span></p>
+<hr>
+
+<img data-src="images/trex-no-labels.PNG" class="quarto-figure quarto-figure-center r-stretch" style="width:75.0%"></section>
+<section id="envs-change3" class="slide level2" data-menu-title="Enviromental Science is the Study of Change">
+<h2></h2>
+<p><span class="slide-title">Environmental Science studies change</span></p>
+<hr>
+
+<img data-src="images/bait.jpeg" class="quarto-figure quarto-figure-center r-stretch"><p><br></p>
+<p><span style="color:green;">🤔 Talk with a partner, what are 2 fields of environmental science where studying the rate of change and derivatives would be important?</span></p>
+</section>
+<section id="diff-rules" class="slide level2" data-menu-title="Introduction to Derivates" data-background-color="#003660">
+<h2></h2>
+<div class="page-center">
+<div class="custom-subtitle">
+Rules for differentiation
+</div>
+</div>
+</section>
+<section id="diff-rules-1-blank" class="slide level2" data-menu-title="Rules for Differentiation (1)">
+<h2></h2>
+<p><span class="slide-title">Rules for differentiation (1)</span></p>
+<hr>
+<p><strong>Constant Rule</strong> ✏️</p>
+<p><br> <br> <br> <br> <br> <br></p>
+<p><strong>Power Rule</strong> ✏️</p>
+</section>
+<section id="diff-rules-1" class="slide level2" data-menu-title="Rules for Differentiation (1)">
+<h2></h2>
+<p><span class="slide-title">Rules for differentiation (1)</span></p>
+<hr>
+<p><strong>Constant Rule</strong></p>
+<p>Let <span class="math inline">\(c\)</span> be a constant (so, a number). If <span class="math inline">\(f(x) = c\)</span>, then <span class="math inline">\(f'(x)=0\)</span>. Equivalently</p>
+<p><span class="math display">\[\frac{d}{dx}c = 0\]</span></p>
+<p><strong>Power Rule</strong></p>
+<p>Let <span class="math inline">\(n\)</span> be a (real) number, if <span class="math inline">\(f(x)= x^n\)</span>, then <span class="math inline">\(f'(x) = nx^{n-1}\)</span>. Equivalently <span class="math display">\[
+\frac{d}{dx}[x^n]
+=nx^{n-1}.
+\]</span></p>
+<p><strong>Examples</strong> ✏️</p>
+<p><span class="math display">\[
+\begin{align}
+&amp;y=100 &amp; &amp;f(x)=x^5 &amp; &amp;f(x)=\frac{1}{x^2}
+\end{align}
+\]</span></p>
+</section>
+<section id="diff-rules-2-blank" class="slide level2" data-menu-title="Rules for Differentiation (2)">
+<h2></h2>
+<p><span class="slide-title">Rules for differentiation (2)</span></p>
+<hr>
+<p><strong>Sum and Difference Rules</strong></p>
+<p>✏️</p>
+</section>
+<section id="diff-rules-2" class="slide level2 smaller" data-menu-title="Rules for Differentiation (2)">
+<h2></h2>
+<p><span class="slide-title">Rules for differentiation (2)</span></p>
+<hr>
+<p><strong>Sum and Difference Rules</strong></p>
+<p>Let <span class="math inline">\(f(x)\)</span> and <span class="math inline">\(g(x)\)</span> be differentiable functions. Then</p>
+<p><span class="math display">\[
+\begin{align}
+\frac{d}{dx}[f(x)+g(x)]=\frac{d}{dx}f(x)+\frac{d}{dx}g(x) \\
+\frac{d}{dx}[f(x)-g(x)]=\frac{d}{dx}f(x)-\frac{d}{dx}g(x)
+\end{align}
+\]</span></p>
+<p>😵<em>All this says is: if the function has pieces that are added or subtracted you can take the derivative of each individual piece and add those derivatives.</em></p>
+<p>The <span class="math inline">\(\frac{d}{dx}\)</span> notation can be a lot here, the prime notation is a bit better:</p>
+<p><span class="math display">\[
+\begin{align}
+[f(x)+g(x)]'=f'(x)+g'(x) \\
+[f(x)-g(x)]'=f'(x)-g'(x)
+\end{align}
+\]</span></p>
+<p>✏️ <strong>Example</strong></p>
+<p><span class="math display">\[
+f(x)=x^3-x^2-15
+\]</span></p>
+</section>
+<section id="diff-rules-3-blank" class="slide level2" data-menu-title="Rules for Differentiation (3)">
+<h2></h2>
+<p><span class="slide-title">Rules for differentiation (3)</span></p>
+<hr>
+<p><strong>Constant Multiplier Rule</strong></p>
+<p>✏️</p>
+</section>
+<section id="diff-rules-3-example" class="slide level2 smaller" data-menu-title="Rules for Differentiation (3)">
+<h2></h2>
+<p><span class="slide-title">Rules for differentiation (3)</span></p>
+<hr>
+<p><strong>Constant Multiplier Rule</strong></p>
+<p>The derivative of a constant <span class="math inline">\(c\)</span> multiplied by a function <span class="math inline">\(f(x)\)</span> is the same as the constant multiplied by the derivative:</p>
+<p><span class="math display">\[\frac{d}{dx}[kf(x)] = k\frac{d}{dx}f(x)\]</span></p>
+<p>✏️ <strong>Example</strong></p>
+</section>
+<section id="diff-rules-3" class="slide level2" data-menu-title="Rules for Differentiation (3)">
+<h2></h2>
+<p><span class="slide-title">Rules for differentiation (3)</span></p>
+<hr>
+<p><strong>Constant Multiplier Rule</strong></p>
+<p>The derivative of a constant <span class="math inline">\(c\)</span> multiplied by a function <span class="math inline">\(f(x)\)</span> is the same as the constant multiplied by the derivative:</p>
+<p><span class="math display">\[\frac{d}{dx}[kf(x)] = k\frac{d}{dx}f(x)\]</span></p>
+<p>✏️ <strong>Example</strong></p>
+<p><span class="math display">\[
+y=x^2+\sqrt{2}x-\frac{8}{x}+4
+\]</span></p>
+</section>
+<section id="logs-exp" class="slide level2" data-menu-title="Derivative of logs &amp; exp">
+<h2></h2>
+<p><span class="slide-title">Derivative of logs &amp; exponents</span></p>
+<hr>
+<p><br></p>
+<p><span class="body-text-l">Two special derivatives:</span></p>
+<p><br></p>
+<ul>
+<li><span class="body-text-l"><span class="math inline">\(\frac{d}{dx}(e^x) = e^x\)</span></span></li>
+</ul>
+<p><br></p>
+<ul>
+<li><span class="body-text-l"><span class="math inline">\(\frac{d}{dx}ln(x)=\frac{1}{x}\)</span></span></li>
+</ul>
+</section>
+<section id="diff-rules-summary" class="slide level2" data-menu-title="Summary of differentiation rules">
+<h2></h2>
+<p><span class="slide-title">Summary of differentiation rules</span></p>
+<hr>
+<p><br></p>
+<table class="caption-top">
+<colgroup>
+<col style="width: 33%">
+<col style="width: 27%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Differentiation Rule</th>
+<th><span class="math inline">\(f'(x)\)</span> notation</th>
+<th><span class="math inline">\(\frac{d}{dx}\)</span> notation</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Constant Rule</strong></td>
+<td><span class="math inline">\(f(x)=c \Rightarrow f'(x)=0\)</span></td>
+<td><span class="math inline">\(\frac{d}{dx}[c]=0\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Power Rule</strong></td>
+<td><span class="math inline">\(f(x)=x^n \Rightarrow f'(x)=n x^{n-1}\)</span></td>
+<td><span class="math inline">\(\frac{d}{dx}[x^n]=n x^{n-1}\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Sum Rule</strong></td>
+<td><span class="math inline">\((g(x)+h(x))'=g'(x)+h'(x)\)</span></td>
+<td><span class="math inline">\(\frac{d}{dx}[g(x)+h(x)]=\frac{d}{dx}g(x)+\frac{d}{dx}h(x)\)</span></td>
+</tr>
+<tr class="even">
+<td><strong>Difference Rule</strong></td>
+<td><span class="math inline">\((g(x)-h(x))' = g'(x)-h'(x)\)</span></td>
+<td><span class="math inline">\(\frac{d}{dx}[g(x)-h(x)]=\frac{d}{dx}g(x)-\frac{d}{dx}h(x)\)</span></td>
+</tr>
+<tr class="odd">
+<td><strong>Constant Multiplier Rule</strong></td>
+<td><span class="math inline">\((c\cdot g(x))'=c\,g'(x)\)</span></td>
+<td><span class="math inline">\(\frac{d}{dx}[c\,g(x)]=c\,\frac{d}{dx}g(x)\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><br></p>
+<p>And two special derivatives: <span class="math inline">\(\frac{d}{dx}(e^x) = e^x\)</span> and <span class="math inline">\(\frac{d}{dx}ln(x)=\frac{1}{x}\)</span>.</p>
+<div class="center-text body-text-s">
+<p>There’s more differentiation rules (product, quotient, chain rule).</p>
+<p>They’re fun, but we won’t be reviewing them.</p>
+</div>
+</section>
+<section id="higher-order-der" class="slide level2" data-menu-title="Higher Order Derivatives">
+<h2></h2>
+<p><span class="slide-title">Higher order derivatives</span></p>
+<hr>
+<ul>
+<li><p>We can continue to take derivatives of derivatives.</p></li>
+<li><p>The second derivative becomes the rate of change of the rate of change.</p></li>
+<li><p>If we interpret the first derivative as velocity, then the second derivative is acceleration.</p></li>
+</ul>
+<div class="fragment">
+<ul>
+<li><p>Notation:</p>
+<ul>
+<li>Function: <span class="math inline">\(f(x) = y\)</span></li>
+<li>1st derivative: <span class="math inline">\(f'(x)\)</span> or <span class="math inline">\(\frac{dy}{dx}\)</span></li>
+<li>2nd derivative: <span class="math inline">\(f''(x)\)</span> or <span class="math inline">\(\frac{d^2y}{dx^2}\)</span></li>
+<li>nth derivative: <span class="math inline">\(f^{(n)}(x)\)</span> or <span class="math inline">\(\frac{d^ny}{dx^n}\)</span></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="derivatives-practice" class="slide level2" data-menu-title="Derivatives practice">
+<h2></h2>
+<p><span class="slide-title">Derivatives practice</span></p>
+<hr>
+<p><span style="color:green;">Solve individually and then check with a partner.</span></p>
+<ol type="1">
+<li>Which rules should you use to take these derivatives?</li>
+</ol>
+<p><span class="math display">\[
+\begin{align}
+\text{A)  }&amp; f(x)=3x^4 &amp;\text{B) }  y=4x^2+3x-16
+\end{align}
+\]</span></p>
+<ol start="2" type="1">
+<li>Find the derivatives of these functions</li>
+</ol>
+<p><span class="math display">\[
+\begin{align}
+&amp;\text{A) } y=3x^2 &amp; &amp;\text{B) }h(x)=2x(x^2 + 3x) &amp; &amp;\text{C) }g(y)=2\sqrt{y} - e^y + 20\ln(y)
+\end{align}
+\]</span></p>
+<ol start="3" type="1">
+<li>Find the 3rd derivative of:</li>
+</ol>
+<p><span class="math display">\[G(z)=3z^4-8z^3+2z-19\]</span></p>
+</section>
+<section id="derivatives-practice-solve-1" class="slide level2" data-menu-title="Derivatives practice">
+<h2></h2>
+<p><span class="slide-title">Derivatives practice</span></p>
+<hr>
+<p><span style="color:green;">✏️ Let’s see a solution!</span></p>
+<p>2.B) Find the derivative <span class="math display">\[h(x)=2x(x^2 + 3x)\]</span></p>
+</section>
+<section id="derivatives-practice-solve-2" class="slide level2" data-menu-title="Derivatives practice">
+<h2></h2>
+<p><span class="slide-title">Derivatives practice</span></p>
+<hr>
+<p><span style="color:green;">✏️ Let’s see a solution!</span></p>
+<p>2.C) Find the derivative <span class="math display">\[g(y)=2\sqrt{y} - e^y + 20\ln(y)\]</span></p>
+</section>
+<section id="derivatives-practice-solve-3" class="slide level2" data-menu-title="Derivatives practice">
+<h2></h2>
+<p><span class="slide-title">Derivatives practice</span></p>
+<hr>
+<p><span style="color:green;">✏️ Let’s see a solution!</span></p>
+<ol start="3" type="1">
+<li>Find the 3rd derivative of <span class="math inline">\(G(z)=3z^4-8z^3+2z-19\)</span>.</li>
+</ol>
+</section>
+<section id="derivatives-solution" class="slide level2" data-menu-title="Derivatives solution">
+<h2></h2>
+<p><span class="slide-title">Derivatives solution</span></p>
+<hr>
+<ol type="1">
+<li>Which rules should you use to take these derivatives?</li>
+</ol>
+<p><span class="math display">\[
+\begin{align}
+\text{A)  }&amp; f(x)=3x^4 &amp;\text{B) }  y=4x^2+3x-16
+\end{align}
+\]</span></p>
+<ol type="A">
+<li><p>Power Rule (with the Constant Multiplier Rule)</p></li>
+<li><p>Sum/Difference Rule, Power Rule, Constant Multiplier Rule, and Constant Rule (for <span class="math inline">\(-16\)</span>)</p></li>
+</ol>
+<ol start="2" type="1">
+<li>Find the derivatives of these functions</li>
+</ol>
+<p><span class="math display">\[
+\begin{align}
+&amp;\text{A) } y=3x^2 &amp; &amp;\text{B) }h(x)=2x(x^2 + 3x)
+\end{align}
+\]</span></p>
+<ol type="A">
+<li><p><span class="math inline">\(y' = 3\cdot 2x^{(2-1)} = 6x\)</span></p></li>
+<li><p>First expand: <span class="math inline">\(h(x) = 2x\cdot x^2 + 2x \cdot 3x = 2x^3+6x^2\)</span></p></li>
+</ol>
+<p>Then differentiate term by term: <span class="math inline">\(h'(x) = 2\cdot 3x^{(3-1)} + 6\cdot 2x^{(2-1)} = 6x^2+12x\)</span></p>
+</section>
+<section id="derivatives-solution-2" class="slide level2" data-menu-title="Derivatives solution">
+<h2></h2>
+<p><span class="slide-title">Derivatives solution</span></p>
+<hr>
+<ol start="2" type="1">
+<li>Find the derivative of this function</li>
+</ol>
+<p><span class="math display">\[
+g(y)=2\sqrt{y} - e^y + 20\ln(y)
+\]</span></p>
+<p>Rewrite <span class="math inline">\(\sqrt{y}\)</span> as <span class="math inline">\(y^{1/2}\)</span>:</p>
+<p><span class="math display">\[
+\begin{align}
+g(y) &amp;= 2y^{1/2}-e^y+20\ln(y)\\
+g'(y) &amp;= 2\cdot\frac{1}{2}y^{(1/2-1)} - e^y + 20\cdot\frac{1}{y}\\
+&amp;= \frac{1}{\sqrt{y}} - e^y + \frac{20}{y}
+\end{align}
+\]</span></p>
+</section>
+<section id="derivatives-solution-3" class="slide level2" data-menu-title="Derivatives solution">
+<h2></h2>
+<p><span class="slide-title">Derivatives solution</span></p>
+<hr>
+<ol start="3" type="1">
+<li>Find the 3rd derivative of:</li>
+</ol>
+<p><span class="math display">\[G(z)=3z^4-8z^3+2z-19\]</span></p>
+<p><span class="math display">\[
+\begin{align}
+G'(z) &amp;= 3\cdot 4z^{(4-1)} - 8\cdot 3z^{(3-1)} + 2\cdot 1z^{(1-1)} - 0 = 12z^3-24z^2+2\\
+G''(z) &amp;= 12\cdot 3z^{(3-1)} - 24\cdot 2z^{(2-1)} + 0 = 36z^2-48z\\
+G'''(z) &amp;= 36\cdot 2z^{(2-1)} - 48\cdot 1z^{(1-1)} = 72z-48
+\end{align}
+\]</span></p>
+</section>
+<section id="wrapping-up" class="slide level2" data-menu-title="Wrapping up" data-background-color="#003660">
+<h2></h2>
+<div class="page-center">
+<div class="custom-subtitle">
+Wrapping up…
+</div>
+</div>
+</section>
+<section id="problem-set" class="slide level2" data-menu-title="Problem set">
+<h2></h2>
+<p><span class="slide-title">Get some extra practice!</span></p>
+<hr>
+<p><br></p>
+<div class="center-text">
+<p><a href="../../notes/day4/day4-problem-set.html"><strong>Problem set</strong></a></p>
+<p><img data-src="../../notes/icons/homework.png" style="width:30.0%"></p>
+</div>
+</section>
+<section id="what-we-covered" class="slide level2" data-menu-title="What we covered today">
+<h2></h2>
+<p><span class="slide-title">What we covered today</span></p>
+<hr>
+<ul>
+<li><span style="color:#660099"><b>↗️ Slope as a rate of change</b></span><br>
+</li>
+<li><span style="color:#660033"><b>🔎 Limits</b></span><br>
+</li>
+<li><span style="color:#993300"><b>🖊️ Derivatives and rate of change</b></span><br>
+</li>
+<li><span style="color:#330000"><b>🛤️ Tangent lines</b></span><br>
+</li>
+<li><span style="color:#333300"><b>📝 Rules for differentiation</b></span><br>
+</li>
+<li><span style="color:#996600"><b>🔹 Constant rule</b></span><br>
+</li>
+<li><span style="color:#660000"><b>💪 Power rule</b></span><br>
+</li>
+<li><span style="color:#003300"><b>➕ Sum and difference rule</b></span></li>
+</ul>
+
+
+</section>
+    </div>
+  <div class="quarto-auto-generated-content" style="display: none;">
+<div class="footer footer-default">
+
+</div>
+</div></div>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script>
+  <script src="../../site_libs/revealjs/dist/reveal.js"></script>
+  <!-- reveal.js plugins -->
+  <script src="../../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.js"></script>
+  <script src="../../site_libs/revealjs/plugin/pdf-export/pdfexport.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-menu/quarto-menu.js"></script>
+  <script src="../../site_libs/revealjs/plugin/reveal-chalkboard/plugin.js"></script>
+  <script src="../../site_libs/revealjs/plugin/quarto-support/support.js"></script>
+  
+
+  <script src="../../site_libs/revealjs/plugin/notes/notes.js"></script>
+  <script src="../../site_libs/revealjs/plugin/search/search.js"></script>
+  <script src="../../site_libs/revealjs/plugin/zoom/zoom.js"></script>
+  <script src="../../site_libs/revealjs/plugin/math/math.js"></script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://revealjs.com/config/
+      Reveal.initialize({
+'controlsAuto': true,
+'previewLinksAuto': false,
+'pdfSeparateFragments': false,
+'autoAnimateEasing': "ease",
+'autoAnimateDuration': 1,
+'autoAnimateUnmatched': true,
+'jumpToSlide': true,
+'menu': {"side":"left","useTextContentForMissingTitles":true,"markers":false,"loadIcons":false,"custom":[{"title":"Tools","icon":"<i class=\"fas fa-gear\"></i>","content":"<ul class=\"slide-menu-items\">\n<li class=\"slide-tool-item active\" data-item=\"0\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.fullscreen(event)\"><kbd>f</kbd> Fullscreen</a></li>\n<li class=\"slide-tool-item\" data-item=\"1\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.speakerMode(event)\"><kbd>s</kbd> Speaker View</a></li>\n<li class=\"slide-tool-item\" data-item=\"2\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.overview(event)\"><kbd>o</kbd> Slide Overview</a></li>\n<li class=\"slide-tool-item\" data-item=\"3\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.togglePdfExport(event)\"><kbd>e</kbd> PDF Export Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"4\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleScrollView(event)\"><kbd>r</kbd> Scroll View Mode</a></li>\n<li class=\"slide-tool-item\" data-item=\"5\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleChalkboard(event)\"><kbd>b</kbd> Toggle Chalkboard</a></li>\n<li class=\"slide-tool-item\" data-item=\"6\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.toggleNotesCanvas(event)\"><kbd>c</kbd> Toggle Notes Canvas</a></li>\n<li class=\"slide-tool-item\" data-item=\"7\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.downloadDrawings(event)\"><kbd>d</kbd> Download Drawings</a></li>\n<li class=\"slide-tool-item\" data-item=\"8\"><a href=\"#\" onclick=\"RevealMenuToolHandlers.keyboardHelp(event)\"><kbd>?</kbd> Keyboard Help</a></li>\n</ul>"}],"openButton":true},
+'chalkboard': {"buttons":true},
+'smaller': false,
+ 
+        // Display controls in the bottom right corner
+        controls: false,
+
+        // Help the user learn the controls by providing hints, for example by
+        // bouncing the down arrow when they first encounter a vertical slide
+        controlsTutorial: false,
+
+        // Determines where controls appear, "edges" or "bottom-right"
+        controlsLayout: 'edges',
+
+        // Visibility rule for backwards navigation arrows; "faded", "hidden"
+        // or "visible"
+        controlsBackArrows: 'faded',
+
+        // Display a presentation progress bar
+        progress: true,
+
+        // Display the page number of the current slide
+        slideNumber: 'c/t',
+
+        // 'all', 'print', or 'speaker'
+        showSlideNumber: 'all',
+
+        // Add the current slide number to the URL hash so that reloading the
+        // page/copying the URL will return you to the same slide
+        hash: true,
+
+        // Start with 1 for the hash rather than 0
+        hashOneBasedIndex: false,
+
+        // Flags if we should monitor the hash and change slides accordingly
+        respondToHashChanges: true,
+
+        // Push each slide change to the browser history
+        history: true,
+
+        // Enable keyboard shortcuts for navigation
+        keyboard: true,
+
+        // Enable the slide overview mode
+        overview: true,
+
+        // Disables the default reveal.js slide layout (scaling and centering)
+        // so that you can use custom CSS layout
+        disableLayout: false,
+
+        // Vertical centering of slides
+        center: false,
+
+        // Enables touch navigation on devices with touch input
+        touch: true,
+
+        // Loop the presentation
+        loop: false,
+
+        // Change the presentation direction to be RTL
+        rtl: false,
+
+        // see https://revealjs.com/vertical-slides/#navigation-mode
+        navigationMode: 'linear',
+
+        // Randomizes the order of slides each time the presentation loads
+        shuffle: false,
+
+        // Turns fragments on and off globally
+        fragments: true,
+
+        // Flags whether to include the current fragment in the URL,
+        // so that reloading brings you to the same fragment position
+        fragmentInURL: false,
+
+        // Flags if the presentation is running in an embedded mode,
+        // i.e. contained within a limited portion of the screen
+        embedded: false,
+
+        // Flags if we should show a help overlay when the questionmark
+        // key is pressed
+        help: true,
+
+        // Flags if it should be possible to pause the presentation (blackout)
+        pause: true,
+
+        // Flags if speaker notes should be visible to all viewers
+        showNotes: false,
+
+        // Global override for autoplaying embedded media (null/true/false)
+        autoPlayMedia: null,
+
+        // Global override for preloading lazy-loaded iframes (null/true/false)
+        preloadIframes: null,
+
+        // Number of milliseconds between automatically proceeding to the
+        // next slide, disabled when set to 0, this value can be overwritten
+        // by using a data-autoslide attribute on your slides
+        autoSlide: 0,
+
+        // Stop auto-sliding after user input
+        autoSlideStoppable: true,
+
+        // Use this method for navigation when auto-sliding
+        autoSlideMethod: null,
+
+        // Specify the average time in seconds that you think you will spend
+        // presenting each slide. This is used to show a pacing timer in the
+        // speaker view
+        defaultTiming: null,
+
+        // Enable slide navigation via mouse wheel
+        mouseWheel: false,
+
+        // The display mode that will be used to show slides
+        display: 'block',
+
+        // Hide cursor if inactive
+        hideInactiveCursor: true,
+
+        // Time before the cursor is hidden (in ms)
+        hideCursorTime: 5000,
+
+        // Opens links in an iframe preview overlay
+        previewLinks: false,
+
+        // Transition style (none/fade/slide/convex/concave/zoom)
+        transition: 'none',
+
+        // Transition speed (default/fast/slow)
+        transitionSpeed: 'default',
+
+        // Transition style for full page slide backgrounds
+        // (none/fade/slide/convex/concave/zoom)
+        backgroundTransition: 'none',
+
+        // Number of slides away from the current that are visible
+        viewDistance: 3,
+
+        // Number of slides away from the current that are visible on mobile
+        // devices. It is advisable to set this to a lower number than
+        // viewDistance in order to save resources.
+        mobileViewDistance: 2,
+
+        // The "normal" size of the presentation, aspect ratio will be preserved
+        // when the presentation is scaled to fit different resolutions. Can be
+        // specified using percentage units.
+        width: 1050,
+
+        height: 700,
+
+        // Factor of the display size that should remain empty around the content
+        margin: 0.1,
+
+        math: {
+          mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@2.7.9/MathJax.js',
+          config: 'TeX-AMS_HTML-full',
+          tex2jax: {
+            inlineMath: [['\\(','\\)']],
+            displayMath: [['\\[','\\]']],
+            balanceBraces: true,
+            processEscapes: false,
+            processRefs: true,
+            processEnvironments: true,
+            preview: 'TeX',
+            skipTags: ['script','noscript','style','textarea','pre','code'],
+            ignoreClass: 'tex2jax_ignore',
+            processClass: 'tex2jax_process'
+          },
+        },
+
+        // reveal.js plugins
+        plugins: [QuartoLineHighlight, PdfExport, RevealMenu, RevealChalkboard, QuartoSupport,
+
+          RevealMath,
+          RevealNotes,
+          RevealSearch,
+          RevealZoom
+        ]
+      });
+    </script>
+    
+    <script>
+      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
+      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
+      // slide changes (different for each slide format).
+      (function () {
+        // dispatch for htmlwidgets
+        function fireSlideEnter() {
+          const event = window.document.createEvent("Event");
+          event.initEvent("slideenter", true, true);
+          window.document.dispatchEvent(event);
+        }
+
+        function fireSlideChanged(previousSlide, currentSlide) {
+          fireSlideEnter();
+
+          // dispatch for shiny
+          if (window.jQuery) {
+            if (previousSlide) {
+              window.jQuery(previousSlide).trigger("hidden");
+            }
+            if (currentSlide) {
+              window.jQuery(currentSlide).trigger("shown");
+            }
+          }
+        }
+
+        // hookup for slidy
+        if (window.w3c_slidy) {
+          window.w3c_slidy.add_observer(function (slide_num) {
+            // slide_num starts at position 1
+            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
+          });
+        }
+
+      })();
+    </script>
+
+    <script id="quarto-html-after-body" type="application/javascript">
+      window.document.addEventListener("DOMContentLoaded", function (event) {
+        const tabsets =  window.document.querySelectorAll(".panel-tabset-tabby")
+        tabsets.forEach(function(tabset) {
+          const tabby = new Tabby('#' + tabset.id);
+        });
+        const isCodeAnnotation = (el) => {
+          for (const clz of el.classList) {
+            if (clz.startsWith('code-annotation-')) {                     
+              return true;
+            }
+          }
+          return false;
+        }
+        const onCopySuccess = function(e) {
+          // button target
+          const button = e.trigger;
+          // don't keep focus
+          button.blur();
+          // flash "checked"
+          button.classList.add('code-copy-button-checked');
+          var currentTitle = button.getAttribute("title");
+          button.setAttribute("title", "Copied!");
+          let tooltip;
+          if (window.bootstrap) {
+            button.setAttribute("data-bs-toggle", "tooltip");
+            button.setAttribute("data-bs-placement", "left");
+            button.setAttribute("data-bs-title", "Copied!");
+            tooltip = new bootstrap.Tooltip(button, 
+              { trigger: "manual", 
+                customClass: "code-copy-button-tooltip",
+                offset: [0, -8]});
+            tooltip.show();    
+          }
+          setTimeout(function() {
+            if (tooltip) {
+              tooltip.hide();
+              button.removeAttribute("data-bs-title");
+              button.removeAttribute("data-bs-toggle");
+              button.removeAttribute("data-bs-placement");
+            }
+            button.setAttribute("title", currentTitle);
+            button.classList.remove('code-copy-button-checked');
+          }, 1000);
+          // clear code selection
+          e.clearSelection();
+        }
+        const getTextToCopy = function(trigger) {
+          const outerScaffold = trigger.parentElement.cloneNode(true);
+          const codeEl = outerScaffold.querySelector('code');
+          for (const childEl of codeEl.children) {
+            if (isCodeAnnotation(childEl)) {
+              childEl.remove();
+            }
+          }
+          return codeEl.innerText;
+        }
+        const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+          text: getTextToCopy
+        });
+        clipboard.on('success', onCopySuccess);
+        if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+          const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+            text: getTextToCopy,
+            container: window.document.getElementById('quarto-embedded-source-code-modal')
+          });
+          clipboardModal.on('success', onCopySuccess);
+        }
+          var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+          var mailtoRegex = new RegExp(/^mailto:/);
+            var filterRegex = new RegExp('/' + window.location.host + '/');
+          var isInternal = (href) => {
+              return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+          }
+          // Inspect non-navigation links and adorn them if external
+         var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+          for (var i=0; i<links.length; i++) {
+            const link = links[i];
+            if (!isInternal(link.href)) {
+              // undo the damage that might have been done by quarto-nav.js in the case of
+              // links that we want to consider external
+              if (link.dataset.originalHref !== undefined) {
+                link.href = link.dataset.originalHref;
+              }
+                // target, if specified
+                link.setAttribute("target", "_blank");
+                if (link.getAttribute("rel") === null) {
+                  link.setAttribute("rel", "noopener");
+                }
+            }
+          }
+        function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+          const config = {
+            allowHTML: true,
+            maxWidth: 500,
+            delay: 100,
+            arrow: false,
+            appendTo: function(el) {
+                return el.closest('section.slide') || el.parentElement;
+            },
+            interactive: true,
+            interactiveBorder: 10,
+            theme: 'light-border',
+            placement: 'bottom-start',
+          };
+          if (contentFn) {
+            config.content = contentFn;
+          }
+          if (onTriggerFn) {
+            config.onTrigger = onTriggerFn;
+          }
+          if (onUntriggerFn) {
+            config.onUntrigger = onUntriggerFn;
+          }
+            config['offset'] = [0,0];
+            config['maxWidth'] = 700;
+          window.tippy(el, config); 
+        }
+        const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+        for (var i=0; i<noterefs.length; i++) {
+          const ref = noterefs[i];
+          tippyHover(ref, function() {
+            // use id or data attribute instead here
+            let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+            try { href = new URL(href).hash; } catch {}
+            const id = href.replace(/^#\/?/, "");
+            const note = window.document.getElementById(id);
+            if (note) {
+              return note.innerHTML;
+            } else {
+              return "";
+            }
+          });
+        }
+        const findCites = (el) => {
+          const parentEl = el.parentElement;
+          if (parentEl) {
+            const cites = parentEl.dataset.cites;
+            if (cites) {
+              return {
+                el,
+                cites: cites.split(' ')
+              };
+            } else {
+              return findCites(el.parentElement)
+            }
+          } else {
+            return undefined;
+          }
+        };
+        var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+        for (var i=0; i<bibliorefs.length; i++) {
+          const ref = bibliorefs[i];
+          const citeInfo = findCites(ref);
+          if (citeInfo) {
+            tippyHover(citeInfo.el, function() {
+              var popup = window.document.createElement('div');
+              citeInfo.cites.forEach(function(cite) {
+                var citeDiv = window.document.createElement('div');
+                citeDiv.classList.add('hanging-indent');
+                citeDiv.classList.add('csl-entry');
+                var biblioDiv = window.document.getElementById('ref-' + cite);
+                if (biblioDiv) {
+                  citeDiv.innerHTML = biblioDiv.innerHTML;
+                }
+                popup.appendChild(citeDiv);
+              });
+              return popup.innerHTML;
+            });
+          }
+        }
+      });
+      </script>
+    
+
+</body></html>
