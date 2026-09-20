@@ -169,7 +169,7 @@ Ice-core data before 1958. Mauna Loa data after 1958.
 
 ---
 
-## {#slope-practice data-menu-title="Slope practice"} 
+## {#slope-practice data-menu-title="Slope practice" .smaller} 
 
 [Slope practice]{.slide-title3}
 
@@ -339,3 +339,1259 @@ knitr::include_graphics("images/cod_graph.jpg")
 ```{r echo=FALSE,fig.align='center',out.width="50%"}
 knitr::include_graphics("images/trex.PNG")
 ```
+
+
+---
+
+## {#limits-title data-menu-title="Logarithms" background-color="#003660"}
+
+
+<div class="page-center">
+<div class="custom-subtitle">Limits</div>
+</div>
+
+---
+
+## {#limits-blank data-menu-title="Limits"}
+
+[Limits]{.slide-title}
+
+<hr>
+
+✏️
+
+
+
+---
+
+## {#limits data-menu-title="Limits"}
+
+[Limits]{.slide-title}
+
+<hr>
+
+**Definition**
+
+We say a number $L$ is the limit of a function $f(x)$ as its variable $x$ approaches a number $c$, if the function's output values $f(x)$ approach $L$ when $x$ get closer to $c$. 
+
+<br>
+
+We write this symbolically as:
+
+$$
+\large
+\lim_{x\to c} f(x)=L
+$$
+
+<br>
+
+We read this as: ["The limit of $f(x)$ as $x$ approaches $c$ is $L$."]{.teal-text}
+
+---
+
+## {#lim-ex-blank data-menu-title="Limit Example"}
+
+[Limits example: numerical]{.slide-title}
+
+<hr>
+
+What is the limit of $f(x)=2x^2-4$ as $x$ approaches 2?
+
+We need to examine the values of $f(x)$ as $x$ gets closer to 2 from both sides.
+
+![](images/limits-blank.png){fig-align="center" width="50%"}
+
+✏️
+
+<br>
+<br>
+<br>
+
+---
+
+## {#lim-ex-3 data-menu-title="Limit Example"}
+
+[Limits example: numerical]{.slide-title}
+
+<hr>
+
+What is the limit of $f(x)=2x^2-4$ as $x$ approaches 2?
+
+We need to examine the values of $f(x)$ as $x$ gets closer to 2 from both sides.
+
+
+![](images/limits.PNG){fig-align="center" width="70%"}
+
+
+From both directions it looks like $f(x)$ converges to 4.
+
+So, we say that ["The limit of $2x^2-4$ as $x$ approaches 2 is 4"]{.teal-text}. We can write it like this:
+
+$$
+\lim_{x\to 2}(2x^2-4)=4
+$$
+
+---
+
+## {#limit-graph-sol data-menu-title="Graphical Solution"}
+
+[Limits example: graph]{.slide-title}
+
+<hr>
+
+What is the limit of $f(x)=2x^2-4$ as $x$ approaches 2?
+
+```{r fig.align='center',out.width="200%"}
+knitr::include_graphics("images/limits-graph.png")
+```
+
+From both directions it looks like $f(x)$ converges to 4.
+
+So, $\lim_{x\to 2}(2x^2-4)=4$.
+
+---
+
+## {#intro-derv data-menu-title="Introduction to Derivates" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Introduction to derivatives</div>
+</div>
+
+---
+
+## {#average-slope data-menu-title="Average slope"}
+
+[Average slope]{.slide-title}
+
+<hr>
+
+<div style="position: absolute; bottom: 550px; right: 1000px; font-size: 1em;">                                                                               
+  ✏️                    
+</div>  
+
+```{r, fig.align='center'}
+
+library(tidyverse)
+
+x=seq(-1,3,by=0.01)
+y=x^2
+
+lim_df<-data.frame(x=x,y=y)
+
+dx=2
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+
+
+ggplot(data=lim_df,aes(x=x,y=y))+
+  geom_line(color="black", linewidth=3)+
+  theme_classic()+
+  annotate("point",x=0,y=0,size=6,color="blue")+
+  theme(text = element_text(size = 28),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()) + 
+  coord_fixed(ratio = 1) +
+  coord_cartesian(xlim=c(-1,3), ylim=c(0,8))
+```
+
+Start with:
+
+
+<br>
+
+Nearby point:
+
+<br>
+
+Average slope:
+
+---
+
+## {#average-slope-filled data-menu-title="Average slope"}
+
+[Average slope]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+x=seq(-1,3,by=0.01)
+y=x^2
+
+lim_df<-data.frame(x=x,y=y)
+
+dx=2
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+
+
+p0<-ggplot(data=lim_df,aes(x=x,y=y))+
+  geom_line(color="black",linewidth=3)+
+  theme_classic()+
+  geom_line( data = data.frame(x = seq(-1, 3, by = 0.01),  
+                               y = 1.5 * seq(-1, 3, by = 0.01)),
+            aes(x = x, y = y),
+            color="red",
+            linewidth=2)+
+  annotate("point",x=0,y=0,size=8,color="blue")+
+  annotate("text", 
+            x=0, y=1, 
+            label="(x, f(x))",
+            size=10,
+            color="blue")+
+  annotate("point",x=1.5, y=2.25, size=8, color="blue")+
+  annotate("text", 
+            x=2.25, y=2.25, 
+            label="(x+Δx, f(x+Δx))",
+            size=10,
+            color="blue") +
+  theme(text = element_text(size = 28),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()) + 
+  coord_fixed(ratio = 1) +
+  coord_cartesian(xlim=c(-1,3), ylim=c(0,8))
+
+p0
+```
+
+Start with a point $(x,f(x))$ on the graph. 
+
+A nearby point can be $(x+\Delta x, f(x+\Delta x))$, where $\Delta x$ is a short distance from $x$. 
+
+
+<br>
+
+The average slope between $(x,f(x))$ and $(x+\Delta x, f(x+\Delta x))$ is given by
+
+<span style="color:red">
+$$\text{average slope} = \frac{f(x+\Delta x) - f(x)}{(x+\Delta x)-x} = \frac{f(x+\Delta x) - f(x)}{\Delta x}.$$
+</span>
+
+**What happens when $\Delta x$ becomes smaller and smaller?**
+
+---
+
+## {#walkthrough-1 data-menu-title="Walkthrough"}
+
+[What happens when $\Delta x \to 0$?]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+
+library(tidyverse)
+
+x=seq(-1,3,by=0.01)
+y=x^2
+
+lim_df<-data.frame(x=x,y=y)
+
+dx=2
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+
+
+p0<- ggplot(data=lim_df,aes(x=x,y=y))+
+  geom_line(color="black", linewidth=3)+
+  theme_classic()+
+  annotate("point",x=0,y=0,size=6,color="blue")+
+  theme(text = element_text(size = 28),
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()) + 
+  coord_fixed(ratio = 1) +
+  coord_cartesian(xlim=c(-1,3), ylim=c(0,8))
+
+p1<-p0+
+  geom_point(aes(x=dx,y=y2),color="blue",size=6)+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  annotate("text",x=1,y=7,label="Delta~x==2",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=2",size=14)
+p1
+
+```
+
+---
+
+## {#walkthrough-2 data-menu-title="Walkthrough"}
+
+[What happens when $\Delta x \to 0$?]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+dx=1
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+p2<-p0+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  geom_point(aes(x=dx,y=y2),color="blue",size=6)+
+  annotate("text",x=1,y=7,label="Delta~x==1",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=1",size=14)
+
+p2
+```
+
+---
+
+## {#walkthrough-3 data-menu-title="Walkthrough"}
+
+[What happens when $\Delta x \to 0$?]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+dx=0.5
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+p3<-p0+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  geom_point(aes(x=dx,y=y2),color="blue",size=6)+
+  annotate("text",x=1,y=7,label="Delta~x==0.5",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=0.5",size=14)
+p3
+```
+
+---
+
+## {#walkthrough-4 data-menu-title="Walkthrough"}
+
+[What happens when $\Delta x \to 0$?]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center'}
+dx=0.25
+y2=y[which(lim_df$x==dx)]
+
+slope=y2/dx
+line=x*slope
+p4<-p0+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  geom_point(aes(x=dx,y=y2),color="blue",size=6)+
+  annotate("text",x=1,y=7,label="Delta~x==0.25",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=0.25",size=14)
+p4
+```
+
+---
+
+## {#tangent data-menu-title="Tangent Lines"}
+
+[Tangent lines]{.slide-title}
+
+<hr>
+
+**What if we let $\Delta x=0$?**
+
+Then we would have the slope of a line that only touches the graph at exactly $(x, f(x))$.
+
+```{r, fig.align='center'}
+
+slope=0
+line=x*slope
+p5<-p0+
+  geom_line(aes(x=x,y=line),color="red",linewidth=2)+
+  annotate("text",x=1,y=7,label="Delta~x==0",parse=TRUE,size=14)+
+  annotate("text",x=1,y=4.5,label="Slope=?",size=14)
+p5
+```
+
+:::{.center-text .teal-text}
+These very special types of lines are called **tangent lines**.
+:::
+---
+
+## {#recap-1 data-menu-title="Recap in math notation"}
+
+[Derivative definition]{.slide-title}
+
+<hr>
+
+Remember the slope of the line that passes between two points $(x_1, y_1)$ and $(x_2, y_2)$ is:
+
+$$\text{slope}=\frac{y_2-y_1}{x_2-x_1}.$$
+
+---
+
+## {#recap-2 data-menu-title="Recap in math notation"}
+
+[Derivative definition]{.slide-title}
+
+<hr>
+
+Remember the slope of the line that passes between two points $(x_1, y_1)$ and $(x_2, y_2)$ is:
+
+$$\text{slope}=\frac{y_2-y_1}{x_2-x_1}.$$
+
+
+If we have a function $f(x)$, then $(x,f(x))$ represents a point on its graph.
+
+
+Choose a different point on the graph that is $\Delta x$ away: $(x+\Delta x,f(x+\Delta x))$.
+
+---
+
+## {#recap-3 data-menu-title="Recap in math notation"}
+
+[Derivative definition]{.slide-title}
+
+<hr>
+
+Remember the slope of the line that passes between two points $(x_1, y_1)$ and $(x_2, y_2)$ is:
+
+$$\text{slope}=\frac{y_2-y_1}{x_2-x_1}.$$
+
+
+If we have a function $f(x)$, then $(x,f(x))$ represents a point on its graph.
+
+
+Choose a different point on the graph that is $\Delta x$ away: $(x+\Delta x,f(x+\Delta x))$.
+
+
+Plug these points on the graph of $f(x)$ into the slope equation:
+
+$$
+\text{slope}=\frac{f(x+\Delta x)-f(x)}{\Delta x}.
+$$
+
+---
+
+## {#recap-4 data-menu-title="Recap in math notation"}
+
+[Derivative definition]{.slide-title}
+
+<hr>
+
+Remember the slope of the line that passes between two points $(x_1, y_1)$ and $(x_2, y_2)$ is:
+
+$$\text{slope}=\frac{y_2-y_1}{x_2-x_1}.$$
+
+
+If we have a function $f(x)$, then $(x,f(x))$ represents a point on its graph.
+
+
+Choose a different point on the graph that is $\Delta x$ away: $(x+\Delta x,f(x+\Delta x))$.
+
+
+Plug these points on the graph of $f(x)$ into the slope equation:
+
+$$
+\text{slope}=\frac{f(x+\Delta x)-f(x)}{\Delta x}.
+$$
+
+When we let $\Delta x \to 0$ we get <span style="color:red">**the slope of the tangent line at $x$**</span>
+
+<span style="color:red">
+$$
+\large
+f'(x)=\lim_{\Delta x \to 0} \frac{f(x+\Delta x)-f(x)}{\Delta x}
+$$
+</span>
+
+<span style="color:red">**This is the derivative of $f$ at $x$.**</span>
+Also denoted $\frac{df}{dx}$. 
+
+<!--
+<br>
+
+:::{.center-text}
+*Most common notation*
+:::
+
+$$
+\large
+f'(x)\text{, or }\frac{dy}{dx}
+$$
+
+-->
+
+---
+
+## {#deriv9 data-menu-title="Derivative"} 
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+knitr::include_graphics("images/derivative_9.jpg")
+```
+
+::: {.footer}
+*Artwork by [Allison Horst](https://allisonhorst.com/)*
+:::
+
+
+
+## {#applications data-menu-title="Applications"}
+
+[Why derivatives in an EDS program?]{.slide-title}
+
+<hr>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+::: {.center-text .body-text-l}
+Describing rates of change is common in environmental science (rate of pollutant concentration change, rate of population growth, rate of energy consumption)
+:::
+
+---
+
+## {#calc data-menu-title="Calculus and Derivatives are the study of change"}
+
+[Calculus and derivatives are used to study change]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center',out.width="75%"}
+knitr::include_graphics("images/trex-no-labels.PNG")
+```
+
+---
+
+## {#envs-change data-menu-title="Enviromental Science is the Study of Change"}
+
+[Environmental Science studies change]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center',out.width="75%"}
+knitr::include_graphics("images/bait.jpeg")
+```
+
+---
+
+## {#envs-change2 data-menu-title="Enviromental Science is the Study of Change"}
+
+[Environmental Science studies change]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center',out.width="75%"}
+knitr::include_graphics("images/energy.png")
+```
+
+---
+
+## {#envs-change3 data-menu-title="Enviromental Science is the Study of Change"}
+
+[Environmental Science studies change]{.slide-title}
+
+<hr>
+
+```{r, fig.align='center',out.width="75%"}
+knitr::include_graphics("images/glacier.jpg")
+```
+
+<br>
+
+[🤔 Talk with a partner, what are 2 fields of environmental science where studying the rate of change and derivatives would be important?]{style="color:green;"}
+
+---
+
+## {#break data-menu-title="5 minute break"}
+
+[Let's take a 5 minute break]{.slide-title}
+
+<hr>
+
+![image: Flaticon.com](images/coffee-break.png)
+
+
+---
+
+## {#diff-rules-1-blank data-menu-title="Rules for Differentiation (1)"}
+
+[Rules for differentiation (1)]{.slide-title}
+
+<hr>
+
+**Constant Rule** ✏️
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+**Power Rule** ✏️
+
+---
+
+## {#diff-rules-1 data-menu-title="Rules for Differentiation (1)"}
+
+[Rules for differentiation (1)]{.slide-title}
+
+<hr>
+
+**Constant Rule**
+
+Let $c$ be a constant (so, a number). If $f(x) = c$, then $f'(x)=0$. Equivalently
+
+$$\frac{d}{dx}c = 0$$
+
+
+
+**Power Rule**
+
+Let $n$ be a (real) number, if $f(x)= x^n$, then $f'(x) = nx^{n-1}$. Equivalently
+$$
+\frac{d}{dx}[x^n]
+=nx^{n-1}.
+$$
+
+**Examples**   ✏️
+
+$$
+\begin{align}
+&y=100 & &f(x)=x^5 & &f(x)=\frac{1}{x^2}
+\end{align}
+$$
+
+---
+
+## {#diff-rules-2-blank data-menu-title="Rules for Differentiation (2)"}
+
+[Rules for differentiation (2)]{.slide-title}
+
+<hr>
+
+**Sum and Difference Rules**
+
+✏️
+
+---
+
+## {#diff-rules-2 data-menu-title="Rules for Differentiation (2)" .smaller}
+
+[Rules for differentiation (2)]{.slide-title}
+
+<hr>
+
+**Sum and Difference Rules**
+
+Let $f(x)$ and $g(x)$ be differentiable functions. Then 
+
+$$
+\begin{align}
+\frac{d}{dx}[f(x)+g(x)]=\frac{d}{dx}f(x)+\frac{d}{dx}g(x) \\
+\frac{d}{dx}[f(x)-g(x)]=\frac{d}{dx}f(x)-\frac{d}{dx}g(x)
+\end{align}
+$$
+
+
+😵*All this says is: if the function has pieces that are added or subtracted you can take the derivative of each individual piece and add those derivatives.*
+
+The $\frac{d}{dx}$ notation can be a lot here, the prime notation is a bit better:
+
+$$
+\begin{align}
+[f(x)+g(x)]'=f'(x)+g'(x) \\
+[f(x)-g(x)]'=f'(x)-g'(x)
+\end{align}
+$$
+
+
+✏️ **Example** 
+
+$$
+f(x)=x^3-x^2-15
+$$
+
+---
+
+## {#diff-rules-3-blank data-menu-title="Rules for Differentiation (3)"}
+
+[Rules for differentiation (3)]{.slide-title}
+
+<hr>
+
+**Constant Multiplier Rule**
+
+✏️
+
+---
+
+## {#diff-rules-3-example data-menu-title="Rules for Differentiation (3)".smaller}
+
+[Rules for differentiation (3)]{.slide-title}
+
+<hr>
+
+**Constant Multiplier Rule**
+
+The derivative of a constant $c$ multiplied by a function $f(x)$ is the same as the constant multiplied by the derivative:
+
+$$\frac{d}{dx}[kf(x)] = k\frac{d}{dx}f(x)$$
+
+✏️ **Example** 
+
+
+---
+
+## {#diff-rules-3 data-menu-title="Rules for Differentiation (3)"}
+
+[Rules for differentiation (3)]{.slide-title}
+
+<hr>
+
+**Constant Multiplier Rule**
+
+The derivative of a constant $c$ multiplied by a function $f(x)$ is the same as the constant multiplied by the derivative:
+
+$$\frac{d}{dx}[kf(x)] = k\frac{d}{dx}f(x)$$
+
+ ✏️ **Example**
+
+$$
+y=x^2+\sqrt{2}x-\frac{8}{x}+4
+$$
+
+---
+
+## {#logs-exp data-menu-title="Derivative of logs & exp"} 
+
+[Derivative of logs & exponents]{.slide-title}
+
+<hr>
+
+<br>
+
+[Two special derivatives:]{.body-text-l}
+
+<br>
+
+- [$\frac{d}{dx}(e^x) = e^x$]{.body-text-l}
+
+<br>
+
+- [$\frac{d}{dx}ln(x)=\frac{1}{x}$]{.body-text-l}
+
+---
+
+## {#diff-rules-summary data-menu-title="Summary of differentiation rules"}
+
+[Summary of differentiation rules]{.slide-title}
+
+<hr>
+
+<br>
+
+| Differentiation Rule | $f'(x)$ notation | $\frac{d}{dx}$ notation |
+|----------------------|------------------|-------------------------|
+| **Constant Rule** | $f(x)=c \Rightarrow f'(x)=0$ | $\frac{d}{dx}[c]=0$ |
+| **Power Rule** | $f(x)=x^n \Rightarrow f'(x)=n x^{n-1}$ | $\frac{d}{dx}[x^n]=n x^{n-1}$ |
+| **Sum Rule** | $(g(x)+h(x))'=g'(x)+h'(x)$ | $\frac{d}{dx}[g(x)+h(x)]=\frac{d}{dx}g(x)+\frac{d}{dx}h(x)$ |
+| **Difference Rule** | $(g(x)-h(x))' = g'(x)-h'(x)$ | $\frac{d}{dx}[g(x)-h(x)]=\frac{d}{dx}g(x)-\frac{d}{dx}h(x)$ |
+| **Constant Multiplier Rule**  | $(c\cdot g(x))'=c\,g'(x)$ | $\frac{d}{dx}[c\,g(x)]=c\,\frac{d}{dx}g(x)$ |
+
+<br>
+
+And two special derivatives: $\frac{d}{dx}(e^x) = e^x$ and $\frac{d}{dx}ln(x)=\frac{1}{x}$.
+
+:::{.center-text .body-text-s}
+There's more differentiation rules (product, quotient, chain rule). 
+
+They're fun, but we won't be reviewing them.
+:::
+
+---
+
+## {#higher-order-der data-menu-title="Higher Order Derivatives"}
+
+[Higher order derivatives]{.slide-title}
+
+<hr>
+
+- We can continue to take derivatives of derivatives.
+
+- The second derivative becomes the rate of change of the rate of change. 
+
+- If we interpret the first derivative as velocity, then the second derivative is acceleration. 
+
+. . .
+
+- Notation: 
+
+    - Function: $f(x) = y$
+    - 1st derivative: $f'(x)$ or $\frac{dy}{dx}$
+    - 2nd derivative: $f''(x)$ or $\frac{d^2y}{dx^2}$
+    - nth derivative: $f^{(n)}(x)$ or $\frac{d^ny}{dx^n}$
+
+---
+
+## {#derivatives-practice data-menu-title="Derivatives practice"}
+
+[Derivatives practice]{.slide-title}
+
+<hr>
+
+[Solve individually and then check with a partner.]{style="color:green;"}
+
+1) Which rules should you use to take these derivatives?
+
+$$
+\begin{align}
+\text{A)  }& f(x)=3x^4 &\text{B) }  y=4x^2+3x-16
+\end{align}
+$$
+
+2) Find the derivatives of these functions
+
+$$
+\begin{align}
+&\text{A) } y=3x^2 & &\text{B) }h(x)=2x(x^2 + 3x) & &\text{C) }g(y)=2\sqrt{y} - e^y + 20\ln(y)
+\end{align}
+$$
+
+3) Find the 3rd derivative of:
+
+$$G(z)=3z^4-8z^3+2z-19$$
+
+---
+
+## {#derivatives-practice-solve-1 data-menu-title="Derivatives practice"}
+
+[Derivatives practice]{.slide-title}
+
+<hr>
+
+[ ✏️  Let's see a solution!]{style="color:green;"} 
+
+2.B) Find the derivative $$h(x)=2x(x^2 + 3x)$$
+
+---
+
+## {#derivatives-practice-solve-2 data-menu-title="Derivatives practice"}
+
+[Derivatives practice]{.slide-title}
+
+<hr>
+
+[ ✏️  Let's see a solution!]{style="color:green;"} 
+
+2.C) Find the derivative $$g(y)=2\sqrt{y} - e^y + 20\ln(y)$$
+
+---
+
+## {#derivatives-practice-solve-3 data-menu-title="Derivatives practice"}
+
+[Derivatives practice]{.slide-title}
+
+<hr>
+
+[ ✏️  Let's see a solution!]{style="color:green;"}
+
+3) Find the 3rd derivative of $G(z)=3z^4-8z^3+2z-19$.
+
+---
+
+## {#derivatives-solution data-menu-title="Derivatives solution"}
+
+[Derivatives solution]{.slide-title}
+
+<hr>
+
+1) Which rules should you use to take these derivatives?
+
+$$
+\begin{align}
+\text{A)  }& f(x)=3x^4 &\text{B) }  y=4x^2+3x-16
+\end{align}
+$$
+
+A) Power Rule (with the Constant Multiplier Rule)
+
+B) Sum/Difference Rule, Power Rule, Constant Multiplier Rule, and Constant Rule (for $-16$)
+
+<br>
+
+2) Find the derivatives of these functions
+
+$$
+\begin{align}
+&\text{A) } y=3x^2 & &\text{B) }h(x)=2x(x^2 + 3x)
+\end{align}
+$$
+
+A) $y' = 3\cdot 2x^{(2-1)} = 6x$
+
+B) First expand: $h(x) = 2x\cdot x^2 + 2x \cdot 3x = 2x^3+6x^2$
+
+Then differentiate term by term: $h'(x) = 2\cdot 3x^{(3-1)} + 6\cdot 2x^{(2-1)} = 6x^2+12x$
+
+---
+
+## {#derivatives-solution-2 data-menu-title="Derivatives solution"}
+
+[Derivatives solution]{.slide-title}
+
+<hr>
+
+2) Find the derivative of this function
+
+$$
+g(y)=2\sqrt{y} - e^y + 20\ln(y)
+$$
+
+Rewrite $\sqrt{y}$ as $y^{1/2}$:
+
+$$
+\begin{align}
+g(y) &= 2y^{1/2}-e^y+20\ln(y)\\
+g'(y) &= 2\cdot\frac{1}{2}y^{(1/2-1)} - e^y + 20\cdot\frac{1}{y}\\
+&= \frac{1}{\sqrt{y}} - e^y + \frac{20}{y}
+\end{align}
+$$
+
+---
+
+## {#derivatives-solution-3 data-menu-title="Derivatives solution"}
+
+[Derivatives solution]{.slide-title}
+
+<hr>
+
+3) Find the 3rd derivative of:
+
+$$G(z)=3z^4-8z^3+2z-19$$
+
+$$
+\begin{align}
+G'(z) &= 3\cdot 4z^{(4-1)} - 8\cdot 3z^{(3-1)} + 2\cdot 1z^{(1-1)} - 0 = 12z^3-24z^2+2\\
+G''(z) &= 12\cdot 3z^{(3-1)} - 24\cdot 2z^{(2-1)} + 0 = 36z^2-48z\\
+G'''(z) &= 36\cdot 2z^{(2-1)} - 48\cdot 1z^{(1-1)} = 72z-48
+\end{align}
+$$
+
+---
+
+## {#partial-derivatives-title data-menu-title="Introduction to Derivates" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Partial derivatives</div>
+</div>
+
+---
+
+## {#partial-derivatives data-menu-title="Partial derivatives"} 
+
+[Partial derivatives]{.slide-title}
+
+<hr>
+
+<br>
+
+[When we find a partial derivative, we find an expression for the slope with respect to *one variable* in a multivariate function.]{.body-text-m}
+
+<br>
+
+[**Notation:** the partials of $f(x,y,z)$ are $\frac{\partial f}{\partial x}$, $\frac{\partial f}{\partial y}$, and $\frac{\partial f}{\partial z}$]{.body-text-m} 
+
+We read $\frac{\partial f}{\partial x}$ as "the partial derivative of $f$ with respect to $x$"
+
+<br>
+
+[**How to take partial derivatives?** Find the derivative with respect to a single variable, *treating all others as constants.*]{.body-text-m} 
+
+---
+
+## {#partial-derivatives-meaning data-menu-title="Partial derivatives meaning"} 
+
+[OK, but what do partials actually mean?]{.slide-title}
+
+<hr>
+
+The slope with respect to one variable if other variables are held constant.
+
+$\frac{\partial f}{\partial x}$ evaluated at $(x_0,y_0)$ can be written as $\left.\frac{\partial f}{\partial x}\right|_{(x_0,y_0)}$ and tells us the slope of $f$ in the $x$-direction, while $y$ is held fixed at $y_0$.
+
+![](images/partial-derivatives.png){fig-align="center"}
+
+---
+
+## {#partial-derivatives-example-blank data-menu-title="Partial derivatives Ex"}
+
+[Partial derivatives example]{.slide-title}
+
+<hr>
+
+[Find all partial derivatives of]{.body-text-l}
+
+[$$B(x,y, z)=0.4x^3y-3.6y^2+4zx + 8$$]{.body-text-m}
+
+✏️
+
+---
+
+## {#partial-derivatives-example-3 data-menu-title="Partial derivatives Ex"} 
+
+[Partial derivatives example]{.slide-title}
+
+<hr>
+
+[Find all partial derivatives of]{.body-text-l}
+
+[$$B(x,y, z)=0.4x^3y-3.6y^2+4zx + 8$$]{.body-text-m}
+$$\frac{\partial B}{\partial x}=1.2x^2y+4z$$
+$$\frac{\partial B}{\partial y}=0.4x^3-7.2y$$
+$$\frac{\partial B}{\partial z}=4x$$
+
+
+✏️[ What is the value of the partial derivative of $B$ with respect to $z$ at the point $(1,2,3)$?]{style="color:green;"}
+
+---
+
+## {#partial-derivatives-solution data-menu-title="Partial derivatives Ex"} 
+
+[Solution]{.slide-title}
+
+<hr>
+
+[Find all partial derivatives of]{.body-text-l}
+
+[$$B(x,y, z)=0.4x^3y-3.6y^2+4zx + 8$$]{.body-text-m}
+$$\frac{\partial B}{\partial x}=1.2x^2y+4z$$
+$$\frac{\partial B}{\partial y}=0.4x^3-7.2y$$
+$$\frac{\partial B}{\partial z}=4x$$
+
+
+✏️[ What is the value of the partial derivative of $B$ with respect to $z$ at the point $(1,2,3)$?]{style="color:green;"}
+
+$$\frac{\partial B}{\partial z}\Bigr\rvert_{(1,2,3)} = \frac{\partial B}{\partial z}\Bigr\rvert_{(1,2,3)}4x = 4*1 = 4. $$
+
+---
+
+## {#partial-derivatives-practice data-menu-title="Try one" .smaller} 
+
+[Partial derivatives practice]{.slide-title}
+
+<hr>
+
+:::{style="color:green;"}
+(A) The temperature (in Celsius) across a surface (where $x$ and $y$ are in meters) is described by:
+
+$$T(x,y)=x^2y-2x+y-1$$
+
+At what "rate" is temperature changing (with respect to distance):
+
+
+- In the $x$ direction, at the point (1,3) on the surface?
+- In the $y$ direction, at the point (0,2) on the surface?
+- Write your answer as a complete sentence involving rate of change.
+
+(B) A dragon's breath temperature ($T$, in degrees Celsius) is modeled as a function of its wingspan ($W$, in meters) and length ($L$, also in meters):
+
+<br>
+
+$$T(W,L)=0.41WL+2.6W^2$$
+
+- At what rate is breath temperature changing with respect to length for a dragon that is 4.1m long, with a wingspan of 4.5m?
+
+- At what rate is breath temperature changing with respect to wingspan, for the same dragon?
+
+- Write your answer as a complete sentence involving rate of change.
+:::
+
+---
+
+## {#partial-derivatives-solution-1-blank data-menu-title="Try one"}
+
+[Partial derivatives practice]{.slide-title}
+
+<hr>
+
+[✏️ Let's see a solution.]{style="color:green;"}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+(A) The temperature (in Celsius) across a surface (where $x$ and $y$ are in meters) is described by:
+
+$$T(x,y)=x^2y-2x+y-1$$
+
+At what "rate" is temperature changing (with respect to distance):
+
+
+- In the $x$ direction, at the point (1,3) on the surface?
+- In the $y$ direction, at the point (0,2) on the surface?
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+---
+
+## {#partial-derivatives-solution-1 data-menu-title="Try one"} 
+
+[Partial derivatives practice]{.slide-title}
+
+<hr>
+
+[✏️ Let's see a solution.]{style="color:green;"}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+(A) The temperature (in Celsius) across a surface (where $x$ and $y$ are in meters) is described by:
+
+$$T(x,y)=x^2y-2x+y-1$$
+
+At what "rate" is temperature changing (with respect to distance):
+
+
+- In the $x$ direction, at the point (1,3) on the surface?
+- In the $y$ direction, at the point (0,2) on the surface?
+
+:::
+
+
+::: {.column width="50%"}
+$$\frac{\partial T}{\partial x} = 2xy - 2, \qquad \frac{\partial T}{\partial y} = x^2 + 1$$
+
+$$\left.\frac{\partial T}{\partial x}\right|_{(1,3)} = 2(1)(3)-2 = 4 \;{}^\circ\text{C/m}$$
+
+$$\left.\frac{\partial T}{\partial y}\right|_{(0,2)} = (0)^2+1 = 1 \;{}^\circ\text{C/m}$$
+
+:::
+
+:::
+
+
+---
+
+## {#partial-derivatives-solution-2-blank data-menu-title="Try one"} 
+
+[Partial derivatives practice]{.slide-title}
+
+<hr>
+
+[✏️ Let's see a solution.]{style="color:green;"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+(B) A dragon's breath temperature ($T$, in degrees Celsius) is modeled as a function of its wingspan ($W$, in meters) and length ($L$, also in meters): 
+
+<br>
+
+$$T(W,L)=0.41WL+2.6W^2$$
+
+- At what rate is breath temperature changing with respect to length for a dragon that is 4.1m long, with a wingspan of 4.5m?
+
+- At what rate is breath temperature changing with respect to wingspan, for the same dragon?
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+
+:::
+
+---
+
+## {#partial-derivatives-solution-2 data-menu-title="Try one"} 
+
+[Partial derivatives practice]{.slide-title}
+
+<hr>
+
+[✏️ Let's see a solution.]{style="color:green;"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+(B) A dragon's breath temperature ($T$, in degrees Celsius) is modeled as a function of its wingspan ($W$, in meters) and length ($L$, also in meters): 
+
+<br>
+
+$$T(W,L)=0.41WL+2.6W^2$$
+
+- At what rate is breath temperature changing with respect to length for a dragon that is 4.1m long, with a wingspan of 4.5m?
+
+- At what rate is breath temperature changing with respect to wingspan, for the same dragon?
+:::
+
+
+::: {.column width="50%"}
+$$\frac{\partial T}{\partial L} = 0.41W, \qquad \frac{\partial T}{\partial W} = 0.41L + 5.2W$$
+
+$$\left.\frac{\partial T}{\partial L}\right|_{(W=4.5,\,L=4.1)} = 0.41(4.5) = 1.845 \;{}^\circ\text{C/m}$$
+
+$$\left.\frac{\partial T}{\partial W}\right|_{(W=4.5,\,L=4.1)} = 0.41(4.1)+5.2(4.5) $$
+
+$$= 1.681+23.4 = 25.081 \;{}^\circ\text{C/m}$$
+:::
+
+
+:::
+
+---
+
+## {#env-data-example data-menu-title="Environmental data example"} 
+
+[Example: higher order & partial derivatives in environmental data science]{.slide-title2}
+
+<hr>
+
+<br>
+
+[The [**Advection-Dispersion-Reaction Equation**](https://www.enviro.wiki/index.php?title=Advection-Dispersion-Reaction_Equation_for_Solute_Transport) for solute transport models the change in a solute concentration $C$ over time $t$ and $x,y,z$ space, where groundwater is flowing in direction $x$:]{.body-text-m}
+
+<br>
+
+[$$\frac{\partial C}{\partial t}=D_x \frac{\partial^2C}{\partial x^2} + D_y\frac{\partial^2C}{\partial y^2}+D_z\frac{\partial^2C}{\partial z^2}-v\frac{\partial C}{\partial x}-\lambda RC$$]{.body-text-m}
+
+$D_x, D_y, D_z$ are hydrodynamic diffusion coefficients in the $x$, $y$, and $z$ direction.
+
+---
+
+## {#break-it-down data-menu-title="Break it down"} 
+
+[Let's break it down.]{.slide-title}
+
+<hr>
+
+<br>
+
+[$$\frac{\partial C}{\partial t}=D_x \frac{\partial^2C}{\partial x^2} + D_y\frac{\partial^2C}{\partial y^2}+D_z\frac{\partial^2C}{\partial z^2}-v\frac{\partial C}{\partial x}-\lambda RC$$]{.body-text-m}
+
+<br>
+
+- **Left-hand-side:** Rate of concentration change (over time)
+- **Right-hand-side first 3 terms:** Concentration change due to dispersion in $x$, $y$, and $z$ directions
+- **Right-hand-side fourth term:** Concentration change due to groundwater transport (in groundwater flow direction, x)
+- **Right-hand-side final term:** Reaction term (e.g. biodegradation / abiotic degradation)
+
+::: {.notes}
+This example is here (probably) to show that partial derivatives are useful in solving real-world environmental problems.
+:::
+
+---
