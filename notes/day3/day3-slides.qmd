@@ -24,7 +24,7 @@ editor_options:
 
 ## {#title-slide data-menu-title="Title Slide" background="#053660"}
 
-[Day 2: Bren Math Workshop]{.custom-title}
+[Day 3: Bren Math Workshop]{.custom-title}
 
 <hr class="hr-teal">
 
@@ -1197,7 +1197,7 @@ legend("right", legend = c("Supply S(Q)", "Demand D(Q)"),
 
 
 :::{.center-text}
-[**Problem set**]()
+[**Problem set**](day3-problem-set.qmd)
 
 ![](/notes/icons/homework-3.png){width=30%}
 

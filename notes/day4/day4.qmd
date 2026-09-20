@@ -19,11 +19,18 @@
 **Contents**
 
 - ↗️ Slope as a rate of change
+- 🔎 Limits
+- 🖊️ Derivatives and rate of change
+- 🛤️ Tangent lines</b></span>  
+- 📝 Rules for differentiation
+- 🔹 Constant rule
+- 💪 Power rule
+- ➕ Sum and difference rule
 
 ## Problem set
 
 :::{.center-text}
-[**rates of change, limits, and derivatives problem set**](day4-problem-set.qmd)
+[**Rates of change, limits, and derivatives problem set**](day4-problem-set.qmd)
 
 ![](/notes/icons/homework.png){width=20%}
 

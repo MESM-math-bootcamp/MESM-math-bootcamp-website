@@ -1,0 +1,311 @@
+---
+
+## {#partial-derivatives-title data-menu-title="Introduction to Derivates" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Partial derivatives</div>
+</div>
+
+---
+
+## {#partial-derivatives data-menu-title="Partial derivatives"} 
+
+[Partial derivatives]{.slide-title}
+
+<hr>
+
+<br>
+
+[When we find a partial derivative, we find an expression for the slope with respect to *one variable* in a multivariate function.]{.body-text-m}
+
+<br>
+
+[**Notation:** the partials of $f(x,y,z)$ are $\frac{\partial f}{\partial x}$, $\frac{\partial f}{\partial y}$, and $\frac{\partial f}{\partial z}$]{.body-text-m} 
+
+We read $\frac{\partial f}{\partial x}$ as "the partial derivative of $f$ with respect to $x$"
+
+<br>
+
+[**How to take partial derivatives?** Find the derivative with respect to a single variable, *treating all others as constants.*]{.body-text-m} 
+
+---
+
+## {#partial-derivatives-meaning data-menu-title="Partial derivatives meaning"} 
+
+[OK, but what do partials actually mean?]{.slide-title}
+
+<hr>
+
+The slope with respect to one variable if other variables are held constant.
+
+$\frac{\partial f}{\partial x}$ evaluated at $(x_0,y_0)$ can be written as $\left.\frac{\partial f}{\partial x}\right|_{(x_0,y_0)}$ and tells us the slope of $f$ in the $x$-direction, while $y$ is held fixed at $y_0$.
+
+![](images/partial-derivatives.png){fig-align="center"}
+
+---
+
+## {#partial-derivatives-example-blank data-menu-title="Partial derivatives Ex"}
+
+[Partial derivatives example]{.slide-title}
+
+<hr>
+
+[Find all partial derivatives of]{.body-text-l}
+
+[$$B(x,y, z)=0.4x^3y-3.6y^2+4zx + 8$$]{.body-text-m}
+
+✏️
+
+---
+
+## {#partial-derivatives-example-3 data-menu-title="Partial derivatives Ex"} 
+
+[Partial derivatives example]{.slide-title}
+
+<hr>
+
+[Find all partial derivatives of]{.body-text-l}
+
+[$$B(x,y, z)=0.4x^3y-3.6y^2+4zx + 8$$]{.body-text-m}
+$$\frac{\partial B}{\partial x}=1.2x^2y+4z$$
+$$\frac{\partial B}{\partial y}=0.4x^3-7.2y$$
+$$\frac{\partial B}{\partial z}=4x$$
+
+
+✏️[ What is the value of the partial derivative of $B$ with respect to $z$ at the point $(1,2,3)$?]{style="color:green;"}
+
+---
+
+## {#partial-derivatives-solution data-menu-title="Partial derivatives Ex"} 
+
+[Solution]{.slide-title}
+
+<hr>
+
+[Find all partial derivatives of]{.body-text-l}
+
+[$$B(x,y, z)=0.4x^3y-3.6y^2+4zx + 8$$]{.body-text-m}
+$$\frac{\partial B}{\partial x}=1.2x^2y+4z$$
+$$\frac{\partial B}{\partial y}=0.4x^3-7.2y$$
+$$\frac{\partial B}{\partial z}=4x$$
+
+
+✏️[ What is the value of the partial derivative of $B$ with respect to $z$ at the point $(1,2,3)$?]{style="color:green;"}
+
+$$\frac{\partial B}{\partial z}\Bigr\rvert_{(1,2,3)} = \frac{\partial B}{\partial z}\Bigr\rvert_{(1,2,3)}4x = 4*1 = 4. $$
+
+---
+
+## {#partial-derivatives-practice data-menu-title="Try one" .smaller} 
+
+[Partial derivatives practice]{.slide-title}
+
+<hr>
+
+:::{style="color:green;"}
+(A) The temperature (in Celsius) across a surface (where $x$ and $y$ are in meters) is described by:
+
+$$T(x,y)=x^2y-2x+y-1$$
+
+At what "rate" is temperature changing (with respect to distance):
+
+
+- In the $x$ direction, at the point (1,3) on the surface?
+- In the $y$ direction, at the point (0,2) on the surface?
+- Write your answer as a complete sentence involving rate of change.
+
+(B) A dragon's breath temperature ($T$, in degrees Celsius) is modeled as a function of its wingspan ($W$, in meters) and length ($L$, also in meters):
+
+<br>
+
+$$T(W,L)=0.41WL+2.6W^2$$
+
+- At what rate is breath temperature changing with respect to length for a dragon that is 4.1m long, with a wingspan of 4.5m?
+
+- At what rate is breath temperature changing with respect to wingspan, for the same dragon?
+
+- Write your answer as a complete sentence involving rate of change.
+:::
+
+---
+
+## {#partial-derivatives-solution-1-blank data-menu-title="Try one"}
+
+[Partial derivatives practice]{.slide-title}
+
+<hr>
+
+[✏️ Let's see a solution.]{style="color:green;"}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+(A) The temperature (in Celsius) across a surface (where $x$ and $y$ are in meters) is described by:
+
+$$T(x,y)=x^2y-2x+y-1$$
+
+At what "rate" is temperature changing (with respect to distance):
+
+
+- In the $x$ direction, at the point (1,3) on the surface?
+- In the $y$ direction, at the point (0,2) on the surface?
+
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+:::
+
+---
+
+## {#partial-derivatives-solution-1 data-menu-title="Try one"} 
+
+[Partial derivatives practice]{.slide-title}
+
+<hr>
+
+[✏️ Let's see a solution.]{style="color:green;"}
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+(A) The temperature (in Celsius) across a surface (where $x$ and $y$ are in meters) is described by:
+
+$$T(x,y)=x^2y-2x+y-1$$
+
+At what "rate" is temperature changing (with respect to distance):
+
+
+- In the $x$ direction, at the point (1,3) on the surface?
+- In the $y$ direction, at the point (0,2) on the surface?
+
+:::
+
+
+::: {.column width="50%"}
+$$\frac{\partial T}{\partial x} = 2xy - 2, \qquad \frac{\partial T}{\partial y} = x^2 + 1$$
+
+$$\left.\frac{\partial T}{\partial x}\right|_{(1,3)} = 2(1)(3)-2 = 4 \;{}^\circ\text{C/m}$$
+
+$$\left.\frac{\partial T}{\partial y}\right|_{(0,2)} = (0)^2+1 = 1 \;{}^\circ\text{C/m}$$
+
+:::
+
+:::
+
+
+---
+
+## {#partial-derivatives-solution-2-blank data-menu-title="Try one"} 
+
+[Partial derivatives practice]{.slide-title}
+
+<hr>
+
+[✏️ Let's see a solution.]{style="color:green;"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+(B) A dragon's breath temperature ($T$, in degrees Celsius) is modeled as a function of its wingspan ($W$, in meters) and length ($L$, also in meters): 
+
+<br>
+
+$$T(W,L)=0.41WL+2.6W^2$$
+
+- At what rate is breath temperature changing with respect to length for a dragon that is 4.1m long, with a wingspan of 4.5m?
+
+- At what rate is breath temperature changing with respect to wingspan, for the same dragon?
+:::
+
+
+::: {.column width="50%"}
+
+:::
+
+
+:::
+
+---
+
+## {#partial-derivatives-solution-2 data-menu-title="Try one"} 
+
+[Partial derivatives practice]{.slide-title}
+
+<hr>
+
+[✏️ Let's see a solution.]{style="color:green;"}
+
+:::: {.columns}
+
+::: {.column width="50%"}
+(B) A dragon's breath temperature ($T$, in degrees Celsius) is modeled as a function of its wingspan ($W$, in meters) and length ($L$, also in meters): 
+
+<br>
+
+$$T(W,L)=0.41WL+2.6W^2$$
+
+- At what rate is breath temperature changing with respect to length for a dragon that is 4.1m long, with a wingspan of 4.5m?
+
+- At what rate is breath temperature changing with respect to wingspan, for the same dragon?
+:::
+
+
+::: {.column width="50%"}
+$$\frac{\partial T}{\partial L} = 0.41W, \qquad \frac{\partial T}{\partial W} = 0.41L + 5.2W$$
+
+$$\left.\frac{\partial T}{\partial L}\right|_{(W=4.5,\,L=4.1)} = 0.41(4.5) = 1.845 \;{}^\circ\text{C/m}$$
+
+$$\left.\frac{\partial T}{\partial W}\right|_{(W=4.5,\,L=4.1)} = 0.41(4.1)+5.2(4.5) $$
+
+$$= 1.681+23.4 = 25.081 \;{}^\circ\text{C/m}$$
+:::
+
+
+:::
+
+---
+
+## {#env-data-example data-menu-title="Environmental data example"} 
+
+[Example: higher order & partial derivatives in environmental data science]{.slide-title2}
+
+<hr>
+
+<br>
+
+[The [**Advection-Dispersion-Reaction Equation**](https://www.enviro.wiki/index.php?title=Advection-Dispersion-Reaction_Equation_for_Solute_Transport) for solute transport models the change in a solute concentration $C$ over time $t$ and $x,y,z$ space, where groundwater is flowing in direction $x$:]{.body-text-m}
+
+<br>
+
+[$$\frac{\partial C}{\partial t}=D_x \frac{\partial^2C}{\partial x^2} + D_y\frac{\partial^2C}{\partial y^2}+D_z\frac{\partial^2C}{\partial z^2}-v\frac{\partial C}{\partial x}-\lambda RC$$]{.body-text-m}
+
+$D_x, D_y, D_z$ are hydrodynamic diffusion coefficients in the $x$, $y$, and $z$ direction.
+
+---
+
+## {#break-it-down data-menu-title="Break it down"} 
+
+[Let's break it down.]{.slide-title}
+
+<hr>
+
+<br>
+
+[$$\frac{\partial C}{\partial t}=D_x \frac{\partial^2C}{\partial x^2} + D_y\frac{\partial^2C}{\partial y^2}+D_z\frac{\partial^2C}{\partial z^2}-v\frac{\partial C}{\partial x}-\lambda RC$$]{.body-text-m}
+
+<br>
+
+- **Left-hand-side:** Rate of concentration change (over time)
+- **Right-hand-side first 3 terms:** Concentration change due to dispersion in $x$, $y$, and $z$ directions
+- **Right-hand-side fourth term:** Concentration change due to groundwater transport (in groundwater flow direction, x)
+- **Right-hand-side final term:** Reaction term (e.g. biodegradation / abiotic degradation)
+
+::: {.notes}
+This example is here (probably) to show that partial derivatives are useful in solving real-world environmental problems.
+:::

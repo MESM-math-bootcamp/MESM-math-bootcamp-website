@@ -75,3 +75,60 @@ b) What does the average slope represent in this scenario and why would these sl
 
 ![Scalloped hammerhead shark (Sphyrna lewini) off Costa Rica. [By Kris-Mikael Krister.](https://en.wikipedia.org/wiki/Scalloped_hammerhead#/media/File:Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg) CC BY 2.0 ](images/Scalloped_hammerhead_shark_(Sphyrna_lewini)_Costa_Rica_(cropped).jpg){width=50%}
 
+## Limits and derivatives
+
+**3)** Investigate what is the value of 
+$$
+\lim_{x\to 3}2^x.
+$$
+
+
+**4)** Let $f(x) = 2x^2+4$. Calculate $f'(x)$ and $f'(-3)$.
+
+<br>
+
+**5)** Calculate the derivative of $g(x) = x^4-5x^3+x-5$ at $x=5$.
+
+<br>
+
+**6)** What is the instantaneous rate of change of $h(x) = \frac{5}{x^2}$ at $x=2$?
+
+<br>
+
+**7)** 
+  a. Approximate the slope of the tangent line in the graph below at $x=2$. 
+  
+  b. Write a short paragraph describing how the slope of the tangent line represents the derivative. 
+
+```{r}
+#| echo: false
+#| code-summary: "Show the code"
+x=seq(-4,4,by=0.1)
+y=0.5*x^2-1
+
+
+ggplot()+
+  geom_line(aes(x=x,y=y),color="black",linewidth=3)+
+  #annotate("segment",x=0,xend=4,y=-3,yend=5,color="red",linewidth=2)+
+  theme_minimal()+
+  scale_x_continuous(breaks=seq(-4,4,by=1))+
+  scale_y_continuous(breaks=seq(-3,7,by=1))+
+  theme(text=element_text(size=28))+
+  labs(x="",y="")
+  
+```
+
+## Comparing instantaneous and average rates of change
+
+**8)** Since 2010, a mountain glacier has been losing volume at an accelerating pace as regional temperatures rise. Researchers model the cumulative ice volume lost, $V(t)$ (in km³), since monitoring began, as:
+
+$$
+V(t) = 0.5t^2 + 2t
+$$
+
+where $t$ is years since 2010.
+
+(a) Use differentiation rules to find $V'(t)$.
+(b) Evaluate $V'(5)$. What does this value mean in the context of the glacier? State it as a full sentence, with units.
+(c) Now calculate the *average* rate of ice loss between $t=4$ and $t=8$.
+(d) Are the values from (b) and (c) the same? In your own words, explain conceptually why an "average" rate of change over an interval doesn't have to match the "instantaneous" rate of change at a single point within it.
