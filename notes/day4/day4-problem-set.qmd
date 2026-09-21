@@ -82,20 +82,9 @@ $$
 \lim_{x\to 3}2^x.
 $$
 
-
-**4)** Let $f(x) = 2x^2+4$. Calculate $f'(x)$ and $f'(-3)$.
-
 <br>
 
-**5)** Calculate the derivative of $g(x) = x^4-5x^3+x-5$ at $x=5$.
-
-<br>
-
-**6)** What is the instantaneous rate of change of $h(x) = \frac{5}{x^2}$ at $x=2$?
-
-<br>
-
-**7)** 
+**4)** 
   a. Approximate the slope of the tangent line in the graph below at $x=2$. 
   
   b. Write a short paragraph describing how the slope of the tangent line represents the derivative. 
@@ -117,6 +106,19 @@ ggplot()+
   labs(x="",y="")
   
 ```
+
+
+**5)** Let $f(x) = 2x^2+4$. Calculate $f'(x)$ and $f'(-3)$.
+
+<br>
+
+**6)** Calculate the derivative of $g(x) = x^4-5x^3+x-5$ at $x=5$.
+
+<br>
+
+**7)** What is the instantaneous rate of change of $h(x) = \frac{5}{x^2}$ at $x=2$?
+
+
 
 ## Comparing instantaneous and average rates of change
 

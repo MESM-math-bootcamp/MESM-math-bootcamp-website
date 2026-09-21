@@ -149,56 +149,7 @@ ggplot(df, aes(x, y)) +
 ```
 :::
 
-
-## Derivatives
-
-**4)** Let $f(x) = 2x^2+4$. Calculate $f'(x)$ and $f'(-3)$.
-
-::: {.callout-note collapse="true" title="Solution"}
-$$\begin{align}
-f(x)  &= 2x^2+4\\
-f'(x) &= 4x\\
-f'(-3) &=4(-3)\\
-      &=-12
-\end{align}$$
-:::
-
-
-**5)** Calculate the derivative of $g(x) = x^4-5x^3+x-5$ at $x=5$.
-
-::: {.callout-note collapse="true" title="Solution"}
-$$
-\begin{align}
-g(x) &= x^4-5x^3+x-5 \\
-g'(x) &= 4x^3-15x^2+1 \\
-g'(5) &= 4(5)^3-15(5)^2+1\\
-&=126
-\end{align}
-$$
-:::
-
-
-**6)** What is the instantaneous rate of change of $h(x) = \frac{5}{x^2}$ at $x=2$?
-
-::: {.callout-note collapse="true" title="Solution"}
-We have that
-
-$$ 
-h(x) = \frac{5}{x^2} = 5x^{-2}
-$$
-Then,
-
-$$
-\begin{align}
-h'(x) & =-10x^{-3}\\
-h'(2) &= -10(2)^{-3}\\
-& = -\frac{10}{8}\\
- &=-1.25.
-\end{align}
-$$
-:::
-
-**7)** 
+**4)** 
   a. Approximate the slope of the tangent line in the graph below at $x=2$. 
   
   b. Write a short paragraph describing how the slope of the tangent line represents the derivative. 
@@ -233,6 +184,54 @@ $$
  b. The tangent line provides the slope or instaneous rate of change at single point along the curve. Therefore the slope of the tangent line is the derivative. 
 
 :::
+
+**5)** Let $f(x) = 2x^2+4$. Calculate $f'(x)$ and $f'(-3)$.
+
+::: {.callout-note collapse="true" title="Solution"}
+$$\begin{align}
+f(x)  &= 2x^2+4\\
+f'(x) &= 4x\\
+f'(-3) &=4(-3)\\
+      &=-12
+\end{align}$$
+:::
+
+
+**6)** Calculate the derivative of $g(x) = x^4-5x^3+x-5$ at $x=5$.
+
+::: {.callout-note collapse="true" title="Solution"}
+$$
+\begin{align}
+g(x) &= x^4-5x^3+x-5 \\
+g'(x) &= 4x^3-15x^2+1 \\
+g'(5) &= 4(5)^3-15(5)^2+1\\
+&=126
+\end{align}
+$$
+:::
+
+
+**7)** What is the instantaneous rate of change of $h(x) = \frac{5}{x^2}$ at $x=2$?
+
+::: {.callout-note collapse="true" title="Solution"}
+We have that
+
+$$ 
+h(x) = \frac{5}{x^2} = 5x^{-2}
+$$
+Then,
+
+$$
+\begin{align}
+h'(x) & =-10x^{-3}\\
+h'(2) &= -10(2)^{-3}\\
+& = -\frac{10}{8}\\
+ &=-1.25.
+\end{align}
+$$
+:::
+
+
 
 ## Comparing instantaneous and average rates of change
 
