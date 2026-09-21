@@ -176,7 +176,7 @@ Ice-core data before 1958. Mauna Loa data after 1958.
 <hr>
 
 :::{style="color:green;"}
-✏️ A city has begun a 20-day, round-the-clock grading and paving phase for a highway-widening project that cuts directly through a neighborhood. In response, a community air-quality monitoring group tracked the additional fine particulate matter concentration, $P(t)$ (µg/m³ of PM2.5 above baseline), in the neighborhood's air over the 20 days of that construction phase.
+✏️ A community air-quality monitoring group tracked the additional fine particulate matter concentration, $P(t)$ (µg/m³ of PM2.5 above baseline), in the neighborhood's air over 20 days of a construction phase.
 :::
 
 :::: {.columns}
@@ -819,24 +819,6 @@ knitr::include_graphics("images/derivative_9.jpg")
 
 ---
 
-## {#break data-menu-title="10 minute break"}
-
-[Let's take a 10 minute break]{.slide-title}
-
-<hr>
-
-![image: Flaticon.com](../day2_functions_graphs/images/coffee-break.png)
-
----
-
-## {#interpretation-derv data-menu-title="Introduction to Derivates" background-color="#003660"}
-
-<div class="page-center">
-<div class="custom-subtitle">Interpreting the derivative</div>
-</div>
-
----
-
 ## {#calc data-menu-title="Calculus and Derivatives are the study of change"}
 
 [Calculus and derivatives are used to study change]{.slide-title}
@@ -861,6 +843,142 @@ knitr::include_graphics("images/trex-no-labels.PNG")
 
 [🤔 Talk with a partner, what are 2 fields of environmental science where studying the rate of change and derivatives would be important?]{style="color:green;"}
 
+---
+
+## {#break data-menu-title="10 minute break"}
+
+[Let's take a 10 minute break]{.slide-title}
+
+<hr>
+
+![image: Flaticon.com](../day2_functions_graphs/images/coffee-break.png)
+
+---
+
+## {#interpretation-derv data-menu-title="Introduction to Derivates" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Interpreting the derivative</div>
+</div>
+
+---
+
+## {#fx-and-fprimeofx data-menu-title="Relationship between functions and their derivatives"}
+
+[Relationship between functions and their derivatives]{.slide-title}
+
+<hr>
+
+![](images/deriviative-interpretation-1.png)
+
+Remember: $f'(x) = \frac{df}{dx}$ is the derivative of $f(x)$. Same thing, different notation!
+
+---
+
+## {#units-of-derivative-blank data-menu-title="Units of the Derivative"}
+
+[Units of the derivative]{.slide-title}
+
+<hr>
+
+If we have a function $f(x)$, then 
+
+<br>
+<br>
+<br>
+
+$f'(x)$ is approximately equal to the change in $f(x)$ when the variable $x$ increases by 1 unit.
+
+<br>
+
+:::{style="color:green;"}
+✏️ **Example:**
+:::
+
+- $g(t)=$ temperature in degrees Celsius at $t$ hours after midnight
+- $g(7)=15$ means 
+- $g'(7)=3$ means 
+- $g'(7)=-2$ means
+
+---
+
+## {#units-of-derivative data-menu-title="Units of the Derivative"}
+
+[Units of the derivative]{.slide-title}
+
+<hr>
+
+If we have a function $f(x)$, then 
+
+:::{.center-text .teal-text}
+the units for $f'(x)$ are the units of $f(x)$ divided by the units of $x$.
+:::
+
+<br>
+
+$f'(x)$ is approximately equal to the change in $f(x)$ when the variable $x$ increases by 1 unit.
+
+<br>
+
+:::{style="color:green;"}
+✏️ **Example:**
+:::
+
+- $g(t)=$ temperature in degrees Celsius at $t$ hours after midnight
+- $g(7)=15$ means the temperature is 15°C at 7 hours after midnight (7 am)
+- $g'(7)=3$ means the temperature is increasing at a rate of 3°C/ hour at 7am
+- $g'(7)=-2$ means the temperature is decreasing at a rate of 2°C/hour at 7am
+
+---
+
+## {#units-of-derivative-exercise data-menu-title="Units of the Derivative"}
+
+[Units of the derivative]{.slide-title}
+
+<hr>
+
+:::{style="color:green;"}
+✏️
+
+The cost of extracting $T$ tons of ore from a copper mine is $C = f(T)$ dollars. What does it mean to say that $f'(2000) = 100$?
+
+Write your answer as a full sentence, with units.
+:::
+
+---
+
+## {#units-of-derivative-solution data-menu-title="Units of the Derivative"}
+
+[Units of the derivative]{.slide-title}
+
+<hr>
+
+:::{style="color:green;"}
+✏️
+
+The cost of extracting $T$ tons of ore from a copper mine is $C = f(T)$ dollars. What does it mean to say that $f'(2000) = 100$?
+
+Write your answer as a full sentence, with units.
+:::
+
+- Units of $f'$ are dollars per ton, so $f'(2000) = 100$ dollars per ton.
+
+- When 2000 tons have been extracted, the cost of extraction increases at a rate of $100 per ton.
+
+
+- When 2000 tons of ore have already been extracted from the mine, the cost of extracting the next ton is approximately $100 more.
+
+---
+
+## {#fx-and-fprimeofx-2 data-menu-title="Relationship between functions and their derivatives"}
+
+[Relationship between functions and their derivatives]{.slide-title}
+
+<hr>
+
+![](images/deriviative-interpretation-2.png)
+
+Remember: $f'(x) = \frac{df}{dx}$ is the derivative of $f(x)$. Same thing, different notation!
 
 ---
 
