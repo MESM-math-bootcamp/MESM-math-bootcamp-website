@@ -1018,37 +1018,112 @@ $$f'(a) < 0 \implies \text{function is decreasing near } a$$
 
 <hr>
 
-```{r echo=FALSE, fig.align='center', out.width="50%", fig.width=7, fig.height=3.6}
-par(mar = c(1, 1, 1, 1))
+:::: {.columns}
 
-x <- seq(0, 4, length.out = 200)
-u <- x - 2
-y <- u^3 - 3*u + 2.2
+::: {.column width="50%"}
+:::{style="color:green;"}
+✏️ 
 
-plot(x, y, type = "l", lwd = 4, col = "steelblue4",
-     xlab = "", ylab = "",
-     xaxt = "n", yaxt = "n", bty = "n",
-     xlim = c(-0.3, 4.3), ylim = c(0, 5))
+(1) Determine for which sections of the graph of $f(x)$ the derivative is positive, negative, or zero.
+:::
+:::
 
-arrows(-0.3, 0, 4.3, 0, length = 0.15, lwd = 2)
-arrows(0, 0, 0, 5, length = 0.15, lwd = 2)
-```
 
-```{r echo=FALSE, fig.align='center', out.width="50%", fig.width=7, fig.height=3.6}
-par(mar = c(1, 1, 1, 1))
+::: {.column width="50%"}
+![](images/sign-of-deriviative-1.png)
+:::
 
-x <- seq(0, 4, length.out = 200)
-u <- x - 2
-dy <- 3*u^2 - 3
+:::
 
-plot(x, dy, type = "l", lwd = 4, col = "steelblue4",
-     xlab = "", ylab = "",
-     xaxt = "n", yaxt = "n", bty = "n",
-     xlim = c(-0.3, 4.3), ylim = c(-4, 10))
+---
 
-arrows(-0.3, 0, 4.3, 0, length = 0.15, lwd = 2)
-arrows(0, -4, 0, 10, length = 0.15, lwd = 2)
-```
+## {#sign-of-derivative-practice-2 data-menu-title="Tangent lines to f(x)=x^2"}
+
+[Sign of the derivative practice]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+:::{style="color:green;"}
+✏️ 
+
+(1) Determine for which sections of the graph of $f(x)$ the derivative is positive, negative, or zero.
+
+<br>
+<br>
+
+(2) *Example:* Sketch a graph for the derivative.
+:::
+:::
+
+::: {.column width="50%"}
+![](images/sign-of-derivative-2.png)
+:::
+
+:::
+
+---
+
+## {#sign-of-derivative-practice-3 data-menu-title="Tangent lines to f(x)=x^2"}
+
+[Sign of the derivative practice]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+:::{style="color:green;"}
+✏️ 
+
+(1) Determine for which sections of the graph of $f(x)$ the derivative is positive, negative, or zero.
+
+<br>
+<br>
+
+(2) *Example:* Sketch a graph for the derivative.
+:::
+:::
+
+::: {.column width="50%"}
+![](images/sign-of-derivative-3.png)
+:::
+
+:::
+
+---
+
+## {#application data-menu-title="Logistic growth"}
+
+[Application: Logistic growth]{.slide-title}
+
+<hr>
+
+
+:::: {.columns}
+
+::: {.column width="50%"}
+In logistic growth, the population $N$ grows rapidly at first, but then slows down as it approaches a maximum population size $K$, called the carrying capacity.
+
+:::{style="color:green;"}
+✏️ 
+
+(1) What does it mean that $\frac{dN}{dt}$ is positive, negative, or zero in terms of the population growth?
+
+(2) When do you think $\frac{dN}{dt}$ is positive, negative, or zero?
+
+(3) When is population growth fastest?
+:::
+:::
+
+
+::: {.column width="50%"}
+![](images/logistic-growth.png)
+:::
+
+:::
 
 ---
 
