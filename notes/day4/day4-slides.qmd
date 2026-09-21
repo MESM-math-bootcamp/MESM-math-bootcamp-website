@@ -1127,6 +1127,36 @@ In logistic growth, the population $N$ grows rapidly at first, but then slows do
 
 ---
 
+## {#application-solution data-menu-title="Logistic growth" .smaller}
+
+[Application: Logistic growth]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+(1) $\frac{dN}{dt}>0$ means the population is growing; $\frac{dN}{dt}<0$ means the population is shrinking; $\frac{dN}{dt}=0$ means the population size is momentarily unchanged.
+
+<br>
+
+(2) $\frac{dN}{dt}$ is **positive** for all $0<N<K$, since the population is always increasing toward the carrying capacity. $\frac{dN}{dt}$ is **zero** at $N=0$ and $N=K$, the two points where the population stops changing.
+
+<br>
+
+(3) Population growth is **fastest** at $N=K/2$, the inflection point of the curve, where the slope of $N(t)$ is steepest.
+
+:::
+
+::: {.column width="50%"}
+![](images/logistic-growth.png)
+:::
+
+:::
+
+---
+
 ## {#diff-rules data-menu-title="Introduction to Derivates" background-color="#003660"}
 
 <div class="page-center">

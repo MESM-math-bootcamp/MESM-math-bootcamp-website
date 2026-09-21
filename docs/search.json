@@ -263,7 +263,7 @@
     "href": "notes/day4/day4-slides.html#slope-practice",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Slope practice\n\n\n✏️ A city has begun a 20-day, round-the-clock grading and paving phase for a highway-widening project that cuts directly through a neighborhood. In response, a community air-quality monitoring group tracked the additional fine particulate matter concentration, \\(P(t)\\) (µg/m³ of PM2.5 above baseline), in the neighborhood’s air over the 20 days of that construction phase.\n\n\n\n\n\n\n\n\\(t\\) (days)\n\\(P(t)\\) (µg/m³)\n\n\n\n\n2\n14.4\n\n\n6\n33.6\n\n\n10\n40.0\n\n\n14\n33.6\n\n\n18\n14.4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalculate the average rate of change in additional PM2.5 concentration between day 2 and day 6. Represent this graphically on the plot.\nWrite your answer as a full sentence, with units, without overstating certainty."
+    "text": "Slope practice\n\n\n✏️ A community air-quality monitoring group tracked the additional fine particulate matter concentration, \\(P(t)\\) (µg/m³ of PM2.5 above baseline), in the neighborhood’s air over 20 days of a construction phase.\n\n\n\n\n\n\n\n\\(t\\) (days)\n\\(P(t)\\) (µg/m³)\n\n\n\n\n2\n14.4\n\n\n6\n33.6\n\n\n10\n40.0\n\n\n14\n33.6\n\n\n18\n14.4\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nCalculate the average rate of change in additional PM2.5 concentration between day 2 and day 6. Represent this graphically on the plot.\nWrite your answer as a full sentence, with units, without overstating certainty."
   },
   {
     "objectID": "notes/day4/day4-slides.html#slope-practice-blank",
@@ -427,6 +427,20 @@
     "text": "Artwork by Allison Horst"
   },
   {
+    "objectID": "notes/day4/day4-slides.html#calc",
+    "href": "notes/day4/day4-slides.html#calc",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Calculus and derivatives are used to study change"
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#envs-change3",
+    "href": "notes/day4/day4-slides.html#envs-change3",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Environmental Science studies change\n\n\n\n🤔 Talk with a partner, what are 2 fields of environmental science where studying the rate of change and derivatives would be important?"
+  },
+  {
     "objectID": "notes/day4/day4-slides.html#break",
     "href": "notes/day4/day4-slides.html#break",
     "title": "Bren Math Workshop",
@@ -441,18 +455,88 @@
     "text": "Interpreting the derivative"
   },
   {
-    "objectID": "notes/day4/day4-slides.html#calc",
-    "href": "notes/day4/day4-slides.html#calc",
+    "objectID": "notes/day4/day4-slides.html#fx-and-fprimeofx",
+    "href": "notes/day4/day4-slides.html#fx-and-fprimeofx",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Calculus and derivatives are used to study change"
+    "text": "Relationship between functions and their derivatives\n\n\nRemember: \\(f'(x) = \\frac{df}{dx}\\) is the derivative of \\(f(x)\\). Same thing, different notation!"
   },
   {
-    "objectID": "notes/day4/day4-slides.html#envs-change3",
-    "href": "notes/day4/day4-slides.html#envs-change3",
+    "objectID": "notes/day4/day4-slides.html#units-of-derivative-blank",
+    "href": "notes/day4/day4-slides.html#units-of-derivative-blank",
     "title": "Bren Math Workshop",
     "section": "",
-    "text": "Environmental Science studies change\n\n\n\n🤔 Talk with a partner, what are 2 fields of environmental science where studying the rate of change and derivatives would be important?"
+    "text": "Units of the derivative\n\nIf we have a function \\(f(x)\\), then\n  \n\\(f'(x)\\) is approximately equal to the change in \\(f(x)\\) when the variable \\(x\\) increases by 1 unit.\n\n\n✏️ Example:\n\n\n\\(g(t)=\\) temperature in degrees Celsius at \\(t\\) hours after midnight\n\\(g(7)=15\\) means\n\\(g'(7)=3\\) means\n\\(g'(7)=-2\\) means"
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#units-of-derivative",
+    "href": "notes/day4/day4-slides.html#units-of-derivative",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Units of the derivative\n\nIf we have a function \\(f(x)\\), then\n\nthe units for \\(f'(x)\\) are the units of \\(f(x)\\) divided by the units of \\(x\\).\n\n\n\\(f'(x)\\) is approximately equal to the change in \\(f(x)\\) when the variable \\(x\\) increases by 1 unit.\n\n\n✏️ Example:\n\n\n\\(g(t)=\\) temperature in degrees Celsius at \\(t\\) hours after midnight\n\\(g(7)=15\\) means the temperature is 15°C at 7 hours after midnight (7 am)\n\\(g'(7)=3\\) means the temperature is increasing at a rate of 3°C/ hour at 7am\n\\(g'(7)=-2\\) means the temperature is decreasing at a rate of 2°C/hour at 7am"
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#units-of-derivative-exercise",
+    "href": "notes/day4/day4-slides.html#units-of-derivative-exercise",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Units of the derivative\n\n\n✏️\nThe cost of extracting \\(T\\) tons of ore from a copper mine is \\(C = f(T)\\) dollars. What does it mean to say that \\(f'(2000) = 100\\)?\nWrite your answer as a full sentence, with units."
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#units-of-derivative-solution",
+    "href": "notes/day4/day4-slides.html#units-of-derivative-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Units of the derivative\n\n\n✏️\nThe cost of extracting \\(T\\) tons of ore from a copper mine is \\(C = f(T)\\) dollars. What does it mean to say that \\(f'(2000) = 100\\)?\nWrite your answer as a full sentence, with units.\n\n\nUnits of \\(f'\\) are dollars per ton, so \\(f'(2000) = 100\\) dollars per ton.\nWhen 2000 tons have been extracted, the cost of extraction increases at a rate of $100 per ton.\nWhen 2000 tons of ore have already been extracted from the mine, the cost of extracting the next ton is approximately $100 more."
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#sign-of-derivative-blank",
+    "href": "notes/day4/day4-slides.html#sign-of-derivative-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Sign of the derivative\n\n\n✏️\n\n\n\nIf the derivative is positive, it means the rate of change is positive, and the function is increasing.\n\n \n\nIf the derivative is negative, it means the rate of change is negative, and the function is decreasing.\n\n \n\nIf the derivative is zero, it means the rate of change is zero, and the function is neither increasing nor decreasing (it may be at a local maximum or minimum)."
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#sign-of-derivative",
+    "href": "notes/day4/day4-slides.html#sign-of-derivative",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Sign of the derivative\n\n\nIf the derivative is positive, it means the rate of change is positive, and the function is increasing.\n\n\\[f'(a) &gt; 0 \\implies \\text{function is increasing near } a\\]\n\nIf the derivative is negative, it means the rate of change is negative, and the function is decreasing.\n\n\\[f'(a) &lt; 0 \\implies \\text{function is decreasing near } a\\]\n\nIf the derivative is zero, it means the rate of change is zero, and the function is neither increasing nor decreasing (it may be at a local maximum or minimum)."
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#sign-of-derivative-practice",
+    "href": "notes/day4/day4-slides.html#sign-of-derivative-practice",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Sign of the derivative practice\n\n\n\n\n✏️\n\nDetermine for which sections of the graph of \\(f(x)\\) the derivative is positive, negative, or zero."
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#sign-of-derivative-practice-2",
+    "href": "notes/day4/day4-slides.html#sign-of-derivative-practice-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Sign of the derivative practice\n\n\n\n\n✏️\n\nDetermine for which sections of the graph of \\(f(x)\\) the derivative is positive, negative, or zero.\n\n \n\nExample: Sketch a graph for the derivative."
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#sign-of-derivative-practice-3",
+    "href": "notes/day4/day4-slides.html#sign-of-derivative-practice-3",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Sign of the derivative practice\n\n\n\n\n✏️\n\nDetermine for which sections of the graph of \\(f(x)\\) the derivative is positive, negative, or zero.\n\n \n\nExample: Sketch a graph for the derivative."
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#application",
+    "href": "notes/day4/day4-slides.html#application",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Application: Logistic growth\n\n\n\nIn logistic growth, the population \\(N\\) grows rapidly at first, but then slows down as it approaches a maximum population size \\(K\\), called the carrying capacity.\n\n✏️\n\nWhat does it mean that \\(\\frac{dN}{dt}\\) is positive, negative, or zero in terms of the population growth?\nWhen do you think \\(\\frac{dN}{dt}\\) is positive, negative, or zero?\nWhen is population growth fastest?"
+  },
+  {
+    "objectID": "notes/day4/day4-slides.html#application-solution",
+    "href": "notes/day4/day4-slides.html#application-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Application: Logistic growth\n\n\n\n\n\\(\\frac{dN}{dt}&gt;0\\) means the population is growing; \\(\\frac{dN}{dt}&lt;0\\) means the population is shrinking; \\(\\frac{dN}{dt}=0\\) means the population size is momentarily unchanged.\n\n\n\n\\(\\frac{dN}{dt}\\) is positive for all \\(0&lt;N&lt;K\\), since the population is always increasing toward the carrying capacity. \\(\\frac{dN}{dt}\\) is zero at \\(N=0\\) and \\(N=K\\), the two points where the population stops changing.\n\n\n\nPopulation growth is fastest at \\(N=K/2\\), the inflection point of the curve, where the slope of \\(N(t)\\) is steepest."
   },
   {
     "objectID": "notes/day4/day4-slides.html#diff-rules",
