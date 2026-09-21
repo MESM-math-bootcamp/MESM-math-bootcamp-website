@@ -869,7 +869,7 @@ knitr::include_graphics("images/trex-no-labels.PNG")
 
 <hr>
 
-![](images/deriviative-interpretation-1.png)
+![](images/deriviative-interpretation-2.png)
 
 Remember: $f'(x) = \frac{df}{dx}$ is the derivative of $f(x)$. Same thing, different notation!
 
@@ -970,15 +970,83 @@ Write your answer as a full sentence, with units.
 
 ---
 
-## {#fx-and-fprimeofx-2 data-menu-title="Relationship between functions and their derivatives"}
+## {#sign-of-derivative-blank data-menu-title="Tangent lines to f(x)=x^2"}
 
-[Relationship between functions and their derivatives]{.slide-title}
+[Sign of the derivative]{.slide-title}
 
 <hr>
 
-![](images/deriviative-interpretation-2.png)
+ <div style="position: absolute; bottom: 560px; right: 1000px; font-size: 1em;">                                                                               
+✏️                    
+  </div>  
 
-Remember: $f'(x) = \frac{df}{dx}$ is the derivative of $f(x)$. Same thing, different notation!
+- If the **derivative is positive**, it means the rate of change is positive, and the function is increasing. 
+
+<br>
+<br>
+
+- If the **derivative is negative**, it means the rate of change is negative, and the function is decreasing. 
+
+<br>
+<br>
+
+- If the **derivative is zero**, it means the rate of change is zero, and the function is neither increasing nor decreasing (it **may be at a local maximum or minimum**).
+
+---
+
+## {#sign-of-derivative data-menu-title="Tangent lines to f(x)=x^2"}
+
+[Sign of the derivative]{.slide-title}
+
+<hr>
+
+- If the **derivative is positive**, it means the rate of change is positive, and the function is increasing. 
+
+$$f'(a) > 0 \implies \text{function is increasing near } a$$
+
+- If the **derivative is negative**, it means the rate of change is negative, and the function is decreasing. 
+
+$$f'(a) < 0 \implies \text{function is decreasing near } a$$
+
+- If the **derivative is zero**, it means the rate of change is zero, and the function is neither increasing nor decreasing (it **may be at a local maximum or minimum**).
+
+---
+
+:::: {.columns}
+
+::: {.column width="65%"}
+```{r echo=FALSE, fig.align='center', out.width="100%"}
+par(mar = c(5, 6, 2, 2))
+
+f <- function(x) x^2
+
+pts <- c(-2, 0, 2)
+cols <- c("red", "blue", "darkorange")
+
+x <- seq(-3, 3, length.out = 200)
+y <- f(x)
+
+plot(x, y, type = "l", lwd = 4, col = "black",
+     xlab = "x", ylab = "y",
+     cex.lab = 2, cex.axis = 2)
+
+abline(h = 0, v = 0, col = "gray50", lwd = 2)
+
+for (i in seq_along(pts)) {
+  a <- pts[i]
+  slope <- 2 * a
+  intercept <- f(a) - slope * a
+  abline(a = intercept, b = slope, col = cols[i], lwd = 4, lty = 2)
+  points(a, f(a), pch = 19, cex = 3, col = cols[i])
+}
+```
+:::
+::::
+
+::: {.column width="35%"}
+
+:::
+
 
 ---
 
