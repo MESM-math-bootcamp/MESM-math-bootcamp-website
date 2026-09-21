@@ -1012,41 +1012,43 @@ $$f'(a) < 0 \implies \text{function is decreasing near } a$$
 
 ---
 
-:::: {.columns}
+## {#sign-of-derivative-practice data-menu-title="Tangent lines to f(x)=x^2"}
 
-::: {.column width="65%"}
-```{r echo=FALSE, fig.align='center', out.width="100%"}
-par(mar = c(5, 6, 2, 2))
+[Sign of the derivative practice]{.slide-title}
 
-f <- function(x) x^2
+<hr>
 
-pts <- c(-2, 0, 2)
-cols <- c("red", "blue", "darkorange")
+```{r echo=FALSE, fig.align='center', out.width="50%", fig.width=7, fig.height=3.6}
+par(mar = c(1, 1, 1, 1))
 
-x <- seq(-3, 3, length.out = 200)
-y <- f(x)
+x <- seq(0, 4, length.out = 200)
+u <- x - 2
+y <- u^3 - 3*u + 2.2
 
-plot(x, y, type = "l", lwd = 4, col = "black",
-     xlab = "x", ylab = "y",
-     cex.lab = 2, cex.axis = 2)
+plot(x, y, type = "l", lwd = 4, col = "steelblue4",
+     xlab = "", ylab = "",
+     xaxt = "n", yaxt = "n", bty = "n",
+     xlim = c(-0.3, 4.3), ylim = c(0, 5))
 
-abline(h = 0, v = 0, col = "gray50", lwd = 2)
-
-for (i in seq_along(pts)) {
-  a <- pts[i]
-  slope <- 2 * a
-  intercept <- f(a) - slope * a
-  abline(a = intercept, b = slope, col = cols[i], lwd = 4, lty = 2)
-  points(a, f(a), pch = 19, cex = 3, col = cols[i])
-}
+arrows(-0.3, 0, 4.3, 0, length = 0.15, lwd = 2)
+arrows(0, 0, 0, 5, length = 0.15, lwd = 2)
 ```
-:::
-::::
 
-::: {.column width="35%"}
+```{r echo=FALSE, fig.align='center', out.width="50%", fig.width=7, fig.height=3.6}
+par(mar = c(1, 1, 1, 1))
 
-:::
+x <- seq(0, 4, length.out = 200)
+u <- x - 2
+dy <- 3*u^2 - 3
 
+plot(x, dy, type = "l", lwd = 4, col = "steelblue4",
+     xlab = "", ylab = "",
+     xaxt = "n", yaxt = "n", bty = "n",
+     xlim = c(-0.3, 4.3), ylim = c(-4, 10))
+
+arrows(-0.3, 0, 4.3, 0, length = 0.15, lwd = 2)
+arrows(0, -4, 0, 10, length = 0.15, lwd = 2)
+```
 
 ---
 

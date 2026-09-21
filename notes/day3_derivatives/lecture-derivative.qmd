@@ -894,7 +894,7 @@ Finding critical points helps us solve optimization problems: every maximum and 
 ![](images/concavity-second-derivative-no-labels.gif){fig-align="center" width="65%"}
 </div>
 
-<!---------------------------------------------------------------------->
+
 
 ## {#optimization data-menu-title="Finding maxima/minima"}
 
@@ -920,7 +920,8 @@ Finding critical points helps us solve optimization problems: every maximum and 
 - If $f'(x)=0$ and $f''(x)>0$, then $f(x)$ has a local minimum at $p$.
 
 :::
-<!---------------------------------------------------------------------->
+
+---
 
 ## {#opt-graph-blank data-menu-title="Example"}
 
@@ -930,7 +931,7 @@ Finding critical points helps us solve optimization problems: every maximum and 
 
 ✏️ [Consider the function  $f(x)=x^3-12x+2$. What are its local maxima and minima?]{style="color:green;"}
 
-<!---------------------------------------------------------------------->
+---
 
 ## {#opt-graph data-menu-title="Example" .smaller}
 
