@@ -1,0 +1,45 @@
+# Day 5: Integrals and differential equations
+
+<hr>
+
+## Partner pairs
+
+:::{.center-text}
+[**See who you're paired with today**](day5-pairs.qmd)
+:::
+
+## Session materials
+
+::: {.body-text-m}
+
+[**Lecture slides**](day5-slides.qmd){target="_blank"}
+
+:::
+
+**Contents**
+
+- ⚡ Derivatives exercises
+- ∫ Integrals
+- 🧮 Riemann sums
+- 📐 Rules of integration
+- ✏️ Initial value problems
+- 🧾 Definite and indefinite integrals
+<!-- - 📏 Area between two curves -->
+- 🌊 A bit of ODEs
+
+## Problem set
+
+:::{.center-text}
+[**Integrals problem set**](day5-problem-set.qmd)
+
+![](/notes/icons/homework-2.png){width=20%}
+
+:::
+
+
+:::{.center-text}
+Solutions are linked through the problem sets.
+:::
+
+
+

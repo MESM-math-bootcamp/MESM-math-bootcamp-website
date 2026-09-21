@@ -48,7 +48,7 @@ website:
       - text: day 4 - limits and derivatives
         href: notes/day4/day4.qmd
       - text: day 5 - integrals and differential equations
-        # href: notes/day5_differential_equations/day5_differential_equations.qmd
+        href: notes/day5/day5.qmd
 
   page-footer:
     background: dark

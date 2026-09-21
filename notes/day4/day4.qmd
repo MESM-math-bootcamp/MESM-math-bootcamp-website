@@ -21,7 +21,7 @@
 - ↗️ Slope as a rate of change
 - 🔎 Limits
 - 🖊️ Derivatives and rate of change
-- 🛤️ Tangent lines</b></span>  
+- 🛤️ Tangent lines
 - 📝 Rules for differentiation
 - 🔹 Constant rule
 - 💪 Power rule
