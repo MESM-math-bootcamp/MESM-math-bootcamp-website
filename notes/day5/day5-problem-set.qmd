@@ -50,3 +50,127 @@ points(14, rate[which.min(abs(t-14))], pch = 19, col = "#FEBC11", cex = 1.3)
 (a) What does the *area under this curve* represent, in words? Be sure to include units.
 (b) Looking at the shape of the graph (without calculating anything), during which 6-hour window — hours 0–6, 6–12, 12–18, or 18–24 — do you expect the *largest volume* of stormwater to have been absorbed? Explain your reasoning.
 (c) Describe how you would handle the sensor gap when estimating the total area under the curve. What assumption(s) would you have to make, and how would the location of this particular gap affect your confidence in the final estimate?
+
+
+
+
+B) Find the integral of $g$, where
+
+$$g(t)=3t^5-2t^3+16t-7$$
+
+We have that
+
+$$\begin{aligned}
+\int \bigl(3t^{5}-2t^{3}+16t-7\bigr)\,dt
+&= \int 3t^{5}\,dt - \int 2t^{3}\,dt + \int 16t\,dt - \int 7\,dt \\[6pt]
+&= 3\frac{t^{6}}{6} - 2\frac{t^{4}}{4} + 16\frac{t^{2}}{2} - 7t + C \\[6pt]
+&= \frac{t^{6}}{2} - \frac{t^{4}}{2} + 8t^{2} - 7t + C
+\end{aligned}$$
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+3)  A coastal wetland restoration project is being evaluated against a "do-nothing" baseline where the wetland is left degraded. Ecologists model the carbon sequestration rate (tons CO₂ / year) as a function of years since the project began, $t$:
+
+- Restored wetland: $R(t) = 8t - t^2$
+- Degraded baseline: $B(t) = 2t$
+:::
+
+::: {.column width="60%"}
+
+```{r}
+library(ggplot2)
+
+t <- seq(0, 6, length.out = 200)
+df <- data.frame(
+  t = t,
+  R = 8*t - t^2,
+  B = 2*t
+)
+
+ggplot(df, aes(x = t)) +
+  geom_line(aes(y = R, color = "Restored wetland  R(t) = 8t - t²"), linewidth = 1.2) +
+  geom_line(aes(y = B, color = "Degraded baseline  B(t) = 2t"), linewidth = 1.2) +
+  scale_color_manual(values = c(
+    "Restored wetland  R(t) = 8t - t²" = "#2e7d32",
+    "Degraded baseline  B(t) = 2t" = "#8d6e63"
+  )) +
+  labs(
+    x = "Years since project began (t)",
+    y = "Sequestration rate (tons CO2 / yr)",
+    title = "Carbon Sequestration Rate: Restored vs. Degraded Wetland",
+    color = NULL
+  ) +
+  xlim(0, 6) + ylim(0, 18) +
+  theme_minimal() +
+  theme(
+    legend.position = c(0.02, 0.95),
+    legend.justification = c(0, 1),
+    legend.text = element_text(size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 18),
+    plot.title = element_text(size = 20, face = "bold")
+  )
+```
+:::
+
+:::
+
+Both models are valid for $0 \le t \le 6$.
+What is the **total additional carbon sequestered** by the restored wetland over the 6-year period?
+
+
+The toal carbon sequestered in each scenario is given by the area under the curve of the corresponding sequestration rate. 
+
+So the total *additional* carbon sequesterd is represented by the area between the two sequestration rate curves. 
+
+Integrate:
+
+$$\int_0^6 \big[R(t) - B(t)\big]\, dt = \int_0^6 (6t - t^2)\, dt$$
+
+$$= \left[3t^2 - \frac{t^3}{3}\right]_0^6 = (3(36) - \tfrac{216}{3}) - 0 = 108 - 72 = 36$$
+
+
+Over the 6-year period, restoring the wetland sequesters an
+additional **36 tons of CO₂** compared to leaving it
+degraded.
+
+
+
+:::{.center-text .teal-text}
+*Write your answers as full sentences with units!*
+:::
+
+
+:::{style="color:green;"}
+A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$, where $C$ is the ozone concentration (ppm) and $t$ is the elapsed time in years since 1962. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982? 
+:::
+
+
+Given:  
+$$\frac{dC}{dt} = 2t + 20$$
+
+Integrate:  
+$$\int dC = \int (2t + 20)\,dt$$  
+
+$$C(t) = t^{2} + 20t + D$$  
+
+Initial condition:  
+$$C(2)=30 \ \  \text{(since 1964 is 2 years after 1962)}$$  
+
+$$30 = 2^{2} + 20\cdot 2 + D$$  
+
+$$D = 30 - 44 = -14$$  
+
+Thus:  
+$$C(t) = t^{2} + 20t - 14$$  
+
+Evaluate at $t=20$ (1982):  
+
+$$C(20) = 20^{2} + 20\cdot 20 - 14$$  
+
+$$= 400 + 400 - 14$$  
+
+$$= 786 \text{ ppm}$$
+
