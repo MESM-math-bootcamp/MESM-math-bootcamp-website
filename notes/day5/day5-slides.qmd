@@ -1,0 +1,181 @@
+---
+format:
+  revealjs:
+    slide-number: true
+    # code-link: true
+    highlight-style: a11y
+    chalkboard: true
+    theme:
+      - ../../ucsb-media.scss
+    include-in-header:
+      text: |
+        <script>
+        (function loadCancelExtension(){
+          if (window.MathJax && window.MathJax.Hub) {
+            MathJax.Hub.Config({ TeX: { extensions: ["cancel.js"] } });
+          } else {
+            setTimeout(loadCancelExtension, 20);
+          }
+        })();
+        </script>
+editor_options:
+  chunk_output_type: console
+---
+
+## {#title-slide data-menu-title="Title Slide" background="#053660"}
+
+[Day 5: Bren Math Workshop]{.custom-title}
+
+<hr class="hr-teal">
+
+[Carmen Galaz García, Ph.D.]{.body-text-l .center-text .baby-blue-text}
+
+[Bren School of Environmental Science & Management]{.center-text .body-text-m .baby-blue-text}
+
+<br>
+
+---
+
+## {#interpreting-slope data-menu-title="Interpreting the slope title" background-color="#003660"}
+
+
+<div class="page-center">
+<div class="custom-subtitle">Derivatives practice</div>
+</div>
+
+---
+
+## {#diff-rules-summary data-menu-title="Summary of differentiation rules"}
+
+[Summary of differentiation rules]{.slide-title}
+
+<hr>
+
+<br>
+
+| Differentiation Rule | $f'(x)$ notation | $\frac{d}{dx}$ notation |
+|----------------------|------------------|-------------------------|
+| **Constant Rule** | $f(x)=c \Rightarrow f'(x)=0$ | $\frac{d}{dx}[c]=0$ |
+| **Power Rule** | $f(x)=x^n \Rightarrow f'(x)=n x^{n-1}$ | $\frac{d}{dx}[x^n]=n x^{n-1}$ |
+| **Sum Rule** | $(g(x)+h(x))'=g'(x)+h'(x)$ | $\frac{d}{dx}[g(x)+h(x)]=\frac{d}{dx}g(x)+\frac{d}{dx}h(x)$ |
+| **Difference Rule** | $(g(x)-h(x))' = g'(x)-h'(x)$ | $\frac{d}{dx}[g(x)-h(x)]=\frac{d}{dx}g(x)-\frac{d}{dx}h(x)$ |
+| **Constant Multiplier Rule**  | $(c\cdot g(x))'=c\,g'(x)$ | $\frac{d}{dx}[c\,g(x)]=c\,\frac{d}{dx}g(x)$ |
+
+<br>
+
+And two special derivatives: $\frac{d}{dx}(e^x) = e^x$ and $\frac{d}{dx}ln(x)=\frac{1}{x}$.
+
+:::{.center-text .body-text-s}
+There's more differentiation rules (product, quotient, chain rule). 
+
+They're fun, but we won't be reviewing them.
+:::
+
+---
+
+## {#derivatives-practice data-menu-title="Derivatives practice"}
+
+[Derivatives practice]{.slide-title}
+
+<hr>
+
+[**Solve individually and then check with a partner.**]{style="color:green;"}
+
+:::{style="color:green;"}
+1) Find the derivatives of these functions
+
+$$
+\begin{align}
+&\text{A) } y=3x^2 & &\text{B) }h(x)=2x(x^2 + 3x) & &\text{C) }g(y)=2\sqrt{y} - e^y + 20\ln(y)
+\end{align}
+$$
+
+2) A city's community solar program has installed cumulative solar capacity, $S(t)$ (in megawatts = MW), modeled as:
+
+$$S(t) = 0.5t^2 + 4t, \text{ where $t$ is years since 2015.}$$
+
+
+(a) Evaluate $S(6)$. What does this value mean in context? State it as a full sentence, with units.
+
+(b) Find $S'(t)$.
+
+(d) Evaluate $S'(6)$. What does this value mean in context? State it as a full sentence, with units.
+:::
+
+---
+
+## {#derivatives-solution data-menu-title="Derivatives solution"}
+
+[Derivatives solution]{.slide-title}
+
+<hr>
+
+1) Find the derivatives of these functions
+
+$$
+\begin{align}
+&\text{A) } y=3x^2 & &\text{B) }h(x)=2x(x^2 + 3x)
+\end{align}
+$$
+
+A) $y' = 3\cdot 2x^{(2-1)} = 6x$
+
+B) First expand: $h(x) = 2x\cdot x^2 + 2x \cdot 3x = 2x^3+6x^2$
+
+Then differentiate term by term: $h'(x) = 2\cdot 3x^{(3-1)} + 6\cdot 2x^{(2-1)} = 6x^2+12x$
+
+---
+
+## {#derivatives-solution-2 data-menu-title="Derivatives solution"}
+
+[Derivatives solution]{.slide-title}
+
+<hr>
+
+1,C) Find the derivative of this function
+
+$$
+g(y)=2\sqrt{y} - e^y + 20\ln(y)
+$$
+
+Rewrite $\sqrt{y}$ as $y^{1/2}$:
+
+$$
+\begin{align}
+g(y) &= 2y^{1/2}-e^y+20\ln(y)\\
+g'(y) &= 2\cdot\frac{1}{2}y^{(1/2-1)} - e^y + 20\cdot\frac{1}{y}\\
+&= \frac{1}{\sqrt{y}} - e^y + \frac{20}{y}
+\end{align}
+$$
+
+---
+
+## {#derivatives-solution-4 data-menu-title="Derivatives solution (rate & interpretation)" .smaller}
+
+[Derivatives solution]{.slide-title}
+
+<hr>
+
+3) Since 2015, a city's community solar program has installed cumulative solar capacity, $S(t)$ (in MW), modeled as:
+
+$$S(t) = 0.5t^2 + 4t$$
+
+where $t$ is years since 2015.
+
+(a) Evaluate $S(6)$. What does this value mean in context?
+
+We have that $S(6) = 0.5(6)^2 + 4*6 = 42$. This means that in 2021 (6 years after the program began), the city's installed solar capacity was 42 MW. 
+
+(b) Find $S'(t)$.
+
+$$
+S'(t) = t + 4
+$$
+
+(c) Evaluate $S'(6)$. What does this value mean in context?
+
+$$
+S'(6) = 6+4 = 10
+$$
+
+In 2021 (6 years after the program began), the city's installed solar capacity was increasing at a rate of 10 MW per year.

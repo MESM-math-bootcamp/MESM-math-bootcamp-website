@@ -1,0 +1,64 @@
+---
+sidebar: daily-materials
+execute:
+  freeze: true
+author: "Carmen Galaz García, Nathaniel Grimes"  
+---
+
+# Solutions: Integrals and differential equations problem set
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message=FALSE,warning=FALSE)
+
+library(tidyverse)
+```
+
+::: {.callout-tip}
+## Instructions
+These are the solutions to the [rates of change, limits, and derivatives problem set](day5-problem-set.qmd). Click a solution to expand it and try each problem yourself first!
+:::
+
+
+
+## Exercise 6
+
+After restoring a section of coastal wetland, ecologists measure the rate at which the wetland absorbs stormwater runoff, $r(t)$ (in m³/hour), throughout a 24-hour storm. The graph below shows this absorption rate over time. Partway through the storm, the monitoring sensor lost power and went offline between hour 10 and hour 14 (shaded region in the graph) — but you still need to report an estimate of the total volume of stormwater absorbed over the full 24-hour storm.
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "70%"
+t <- seq(0, 24, length.out = 300)
+rate <- 200 * exp(-((t-9)^2)/40)
+
+before <- t <= 10
+after  <- t >= 14
+
+plot(NA, xlim = c(0,24), ylim = c(0,220),
+     xlab = "Hours since storm began", ylab = "Stormwater absorption rate (m³/hr)")
+abline(v = seq(0,24, by = 6), col = "lightgray", lty = "dotted")
+
+rect(10, 0, 14, 220, col = adjustcolor("gray", alpha.f = 0.25), border = NA)
+text(12, 210, "sensor\noffline", cex = 0.8, col = "gray30")
+
+lines(t[before], rate[before], lwd = 3, col = "#003660")
+lines(t[after], rate[after], lwd = 3, col = "#003660")
+points(10, rate[which.min(abs(t-10))], pch = 19, col = "#FEBC11", cex = 1.3)
+points(14, rate[which.min(abs(t-14))], pch = 19, col = "#FEBC11", cex = 1.3)
+```
+
+(a) What does the *area under this curve* represent, in words? Be sure to include units.
+(b) Looking at the shape of the graph (without calculating anything), during which 6-hour window — hours 0–6, 6–12, 12–18, or 18–24 — do you expect the *largest volume* of stormwater to have been absorbed? Explain your reasoning.
+(c) Describe how you would handle the sensor gap when estimating the total area under the curve. What assumption(s) would you have to make, and how would the location of this particular gap affect your confidence in the final estimate?
+
+::: {.callout-note collapse="true"}
+## Solution
+
+**(a)** The area under the rate curve represents the **total volume of stormwater absorbed by the wetland** over that time period, in m³ (rate in m³/hr $\times$ time in hr = volume in m³).
+
+**(b)** Hours 6–12. The curve is highest and covers the most area in that window, since the absorption rate peaks around hour 9 — the middle of the storm, when the ground is saturated and inflow is greatest.
+
+**(c)** Since there's no direct measurement between hour 10 and hour 14, we'd have to interpolate — for example, connecting the last known point (hour 10) to the first known point (hour 14) with a straight line, and using that as our best guess for the missing area. This assumes the rate changed smoothly and roughly monotonically across the gap.
+
+That assumption is riskier here than it would be for an arbitrary gap, because this particular gap covers the storm's peak — the point where the true curve is doing the most curving. A straight-line interpolation would cut across that peak and likely *underestimate* the true absorption rate for most of the gap, so our total volume estimate is probably a bit too low, and we should be less confident in it than we would be if the same size gap had fallen during a flatter part of the storm.
+:::
