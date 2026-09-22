@@ -191,6 +191,20 @@
     ]
   },
   {
+    "objectID": "notes/day5/day5-problem-set.html",
+    "href": "notes/day5/day5-problem-set.html",
+    "title": "Integrals and differential equations problem set",
+    "section": "",
+    "text": "Instructions\n\n\n\nAttempt each problem on your own before checking the solutions. Feel free to work with anyone in the cohort after giving the problems a try!\n\n\n\n\nAfter restoring a section of coastal wetland, ecologists measure the rate at which the wetland absorbs stormwater runoff, \\(r(t)\\) (in m³/hour), throughout a 24-hour storm. The graph below shows this absorption rate over time. Partway through the storm, the monitoring sensor lost power and went offline between hour 10 and hour 14 (shaded region in the graph) — but you still need to report an estimate of the total volume of stormwater absorbed over the full 24-hour storm.\n\n\n\n\n\n\n\n\n\n\nWhat does the area under this curve represent, in words? Be sure to include units.\nLooking at the shape of the graph (without calculating anything), during which 6-hour window — hours 0–6, 6–12, 12–18, or 18–24 — do you expect the largest volume of stormwater to have been absorbed? Explain your reasoning.\nDescribe how you would handle the sensor gap when estimating the total area under the curve. What assumption(s) would you have to make, and how would the location of this particular gap affect your confidence in the final estimate?"
+  },
+  {
+    "objectID": "notes/day5/day5-problem-set.html#exercise-6",
+    "href": "notes/day5/day5-problem-set.html#exercise-6",
+    "title": "Integrals and differential equations problem set",
+    "section": "",
+    "text": "After restoring a section of coastal wetland, ecologists measure the rate at which the wetland absorbs stormwater runoff, \\(r(t)\\) (in m³/hour), throughout a 24-hour storm. The graph below shows this absorption rate over time. Partway through the storm, the monitoring sensor lost power and went offline between hour 10 and hour 14 (shaded region in the graph) — but you still need to report an estimate of the total volume of stormwater absorbed over the full 24-hour storm.\n\n\n\n\n\n\n\n\n\n\nWhat does the area under this curve represent, in words? Be sure to include units.\nLooking at the shape of the graph (without calculating anything), during which 6-hour window — hours 0–6, 6–12, 12–18, or 18–24 — do you expect the largest volume of stormwater to have been absorbed? Explain your reasoning.\nDescribe how you would handle the sensor gap when estimating the total area under the curve. What assumption(s) would you have to make, and how would the location of this particular gap affect your confidence in the final estimate?"
+  },
+  {
     "objectID": "notes/day5/day5-pairs.html",
     "href": "notes/day5/day5-pairs.html",
     "title": "Day 5 partner pairs",
@@ -3778,6 +3792,531 @@
     "title": "Calculus Workshop",
     "section": "2)",
     "text": "2)\nTake the Integrals\n\\[\\begin{align}\n\\text{A) }y=\\frac{3}{x^2}, y(1)=5&  &\\text{B)  }g(t)=3t^5-2t^3+16t-7  &  &\\text{C) } \\int^4_2\\frac{1}{2}x\n\\end{align}\\]\n\n\n\\[\\begin{align}\n\\int\\frac{3}{x^2} dx\\\\\n-3x^{-3}+C\\\\\n-3(1)^{-3}+C=5\\\\\nC=8\\\\\nx^{-3}+8\n\\end{align}\\]\n\\[\\begin{align}\n\\int\\ g(t)=3t^5-2t^3+16t-7 dt\\\\\n\\frac{t^6}{2}-\\frac{t^4}{2}+8t^2-7t+C\\\\\n\\end{align}\\]\n\\[\\begin{align}\n\\int^4_2\\frac{1}{2}x dx\\\\\n\\frac{1}{4}x^2|^4_2\\\\\n\\frac{1}{4}(4)^2-\\frac{1}{4}(2)^2=3\n\\end{align}\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-problem-set-solutions.html",
+    "href": "notes/day5/day5-problem-set-solutions.html",
+    "title": "Solutions: Integrals and differential equations problem set",
+    "section": "",
+    "text": "Instructions\n\n\n\nThese are the solutions to the rates of change, limits, and derivatives problem set. Click a solution to expand it and try each problem yourself first!\n\n\n\n\nAfter restoring a section of coastal wetland, ecologists measure the rate at which the wetland absorbs stormwater runoff, \\(r(t)\\) (in m³/hour), throughout a 24-hour storm. The graph below shows this absorption rate over time. Partway through the storm, the monitoring sensor lost power and went offline between hour 10 and hour 14 (shaded region in the graph) — but you still need to report an estimate of the total volume of stormwater absorbed over the full 24-hour storm.\n\n\n\n\n\n\n\n\n\n\nWhat does the area under this curve represent, in words? Be sure to include units.\nLooking at the shape of the graph (without calculating anything), during which 6-hour window — hours 0–6, 6–12, 12–18, or 18–24 — do you expect the largest volume of stormwater to have been absorbed? Explain your reasoning.\nDescribe how you would handle the sensor gap when estimating the total area under the curve. What assumption(s) would you have to make, and how would the location of this particular gap affect your confidence in the final estimate?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n(a) The area under the rate curve represents the total volume of stormwater absorbed by the wetland over that time period, in m³ (rate in m³/hr \\(\\times\\) time in hr = volume in m³).\n(b) Hours 6–12. The curve is highest and covers the most area in that window, since the absorption rate peaks around hour 9 — the middle of the storm, when the ground is saturated and inflow is greatest.\n(c) Since there’s no direct measurement between hour 10 and hour 14, we’d have to interpolate — for example, connecting the last known point (hour 10) to the first known point (hour 14) with a straight line, and using that as our best guess for the missing area. This assumes the rate changed smoothly and roughly monotonically across the gap.\nThat assumption is riskier here than it would be for an arbitrary gap, because this particular gap covers the storm’s peak — the point where the true curve is doing the most curving. A straight-line interpolation would cut across that peak and likely underestimate the true absorption rate for most of the gap, so our total volume estimate is probably a bit too low, and we should be less confident in it than we would be if the same size gap had fallen during a flatter part of the storm."
+  },
+  {
+    "objectID": "notes/day5/day5-problem-set-solutions.html#exercise-6",
+    "href": "notes/day5/day5-problem-set-solutions.html#exercise-6",
+    "title": "Solutions: Integrals and differential equations problem set",
+    "section": "",
+    "text": "After restoring a section of coastal wetland, ecologists measure the rate at which the wetland absorbs stormwater runoff, \\(r(t)\\) (in m³/hour), throughout a 24-hour storm. The graph below shows this absorption rate over time. Partway through the storm, the monitoring sensor lost power and went offline between hour 10 and hour 14 (shaded region in the graph) — but you still need to report an estimate of the total volume of stormwater absorbed over the full 24-hour storm.\n\n\n\n\n\n\n\n\n\n\nWhat does the area under this curve represent, in words? Be sure to include units.\nLooking at the shape of the graph (without calculating anything), during which 6-hour window — hours 0–6, 6–12, 12–18, or 18–24 — do you expect the largest volume of stormwater to have been absorbed? Explain your reasoning.\nDescribe how you would handle the sensor gap when estimating the total area under the curve. What assumption(s) would you have to make, and how would the location of this particular gap affect your confidence in the final estimate?\n\n\n\n\n\n\n\nSolution\n\n\n\n\n\n(a) The area under the rate curve represents the total volume of stormwater absorbed by the wetland over that time period, in m³ (rate in m³/hr \\(\\times\\) time in hr = volume in m³).\n(b) Hours 6–12. The curve is highest and covers the most area in that window, since the absorption rate peaks around hour 9 — the middle of the storm, when the ground is saturated and inflow is greatest.\n(c) Since there’s no direct measurement between hour 10 and hour 14, we’d have to interpolate — for example, connecting the last known point (hour 10) to the first known point (hour 14) with a straight line, and using that as our best guess for the missing area. This assumes the rate changed smoothly and roughly monotonically across the gap.\nThat assumption is riskier here than it would be for an arbitrary gap, because this particular gap covers the storm’s peak — the point where the true curve is doing the most curving. A straight-line interpolation would cut across that peak and likely underestimate the true absorption rate for most of the gap, so our total volume estimate is probably a bit too low, and we should be less confident in it than we would be if the same size gap had fallen during a flatter part of the storm."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#title-slide",
+    "href": "notes/day5/day5-slides.html#title-slide",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Day 5: Bren Math Workshop\n\nCarmen Galaz García, Ph.D.\nBren School of Environmental Science & Management"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#interpreting-slope",
+    "href": "notes/day5/day5-slides.html#interpreting-slope",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Derivatives practice"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#diff-rules-summary",
+    "href": "notes/day5/day5-slides.html#diff-rules-summary",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Summary of differentiation rules\n\n\n\n\n\n\n\n\n\n\nDifferentiation Rule\n\\(f'(x)\\) notation\n\\(\\frac{d}{dx}\\) notation\n\n\n\n\nConstant Rule\n\\(f(x)=c \\Rightarrow f'(x)=0\\)\n\\(\\frac{d}{dx}[c]=0\\)\n\n\nPower Rule\n\\(f(x)=x^n \\Rightarrow f'(x)=n x^{n-1}\\)\n\\(\\frac{d}{dx}[x^n]=n x^{n-1}\\)\n\n\nSum Rule\n\\((g(x)+h(x))'=g'(x)+h'(x)\\)\n\\(\\frac{d}{dx}[g(x)+h(x)]=\\frac{d}{dx}g(x)+\\frac{d}{dx}h(x)\\)\n\n\nDifference Rule\n\\((g(x)-h(x))' = g'(x)-h'(x)\\)\n\\(\\frac{d}{dx}[g(x)-h(x)]=\\frac{d}{dx}g(x)-\\frac{d}{dx}h(x)\\)\n\n\nConstant Multiplier Rule\n\\((c\\cdot g(x))'=c\\,g'(x)\\)\n\\(\\frac{d}{dx}[c\\,g(x)]=c\\,\\frac{d}{dx}g(x)\\)\n\n\n\n\nAnd two special derivatives: \\(\\frac{d}{dx}(e^x) = e^x\\) and \\(\\frac{d}{dx}ln(x)=\\frac{1}{x}\\).\n\nThere’s more differentiation rules (product, quotient, chain rule).\nThey’re fun, but we won’t be reviewing them."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#derivatives-practice",
+    "href": "notes/day5/day5-slides.html#derivatives-practice",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Derivatives practice\n\nSolve individually and then check with a partner.\n\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=2x(x^2 + 3x) & &\\text{C) }g(y)=2\\sqrt{y} - e^y + 20\\ln(y)\n\\end{align}\n\\]\n\nA city’s community solar program has installed cumulative solar capacity, \\(S(t)\\) (in megawatts = MW), modeled as:\n\n\\[S(t) = 0.5t^2 + 4t, \\text{ where $t$ is years since 2015.}\\]\n\nEvaluate \\(S(6)\\). What does this value mean in context? State it as a full sentence, with units.\nFind \\(S'(t)\\).\nEvaluate \\(S'(6)\\). What does this value mean in context? State it as a full sentence, with units."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#derivatives-solution",
+    "href": "notes/day5/day5-slides.html#derivatives-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Derivatives solution\n\n\nFind the derivatives of these functions\n\n\\[\n\\begin{align}\n&\\text{A) } y=3x^2 & &\\text{B) }h(x)=2x(x^2 + 3x)\n\\end{align}\n\\]\n\n\\(y' = 3\\cdot 2x^{(2-1)} = 6x\\)\nFirst expand: \\(h(x) = 2x\\cdot x^2 + 2x \\cdot 3x = 2x^3+6x^2\\)\n\nThen differentiate term by term: \\(h'(x) = 2\\cdot 3x^{(3-1)} + 6\\cdot 2x^{(2-1)} = 6x^2+12x\\)"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#derivatives-solution-2",
+    "href": "notes/day5/day5-slides.html#derivatives-solution-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Derivatives solution\n\n1,C) Find the derivative of this function\n\\[\ng(y)=2\\sqrt{y} - e^y + 20\\ln(y)\n\\]\nRewrite \\(\\sqrt{y}\\) as \\(y^{1/2}\\):\n\\[\n\\begin{align}\ng(y) &= 2y^{1/2}-e^y+20\\ln(y)\\\\\ng'(y) &= 2\\cdot\\frac{1}{2}y^{(1/2-1)} - e^y + 20\\cdot\\frac{1}{y}\\\\\n&= \\frac{1}{\\sqrt{y}} - e^y + \\frac{20}{y}\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#derivatives-solution-4",
+    "href": "notes/day5/day5-slides.html#derivatives-solution-4",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Derivatives solution\n\n\nSince 2015, a city’s community solar program has installed cumulative solar capacity, \\(S(t)\\) (in MW), modeled as:\n\n\\[S(t) = 0.5t^2 + 4t\\]\nwhere \\(t\\) is years since 2015.\n\nEvaluate \\(S(6)\\). What does this value mean in context?\n\nWe have that \\(S(6) = 0.5(6)^2 + 4*6 = 42\\). This means that in 2021 (6 years after the program began), the city’s installed solar capacity was 42 MW.\n\nFind \\(S'(t)\\).\n\n\\[\nS'(t) = t + 4\n\\]\n\nEvaluate \\(S'(6)\\). What does this value mean in context?\n\n\\[\nS'(6) = 6+4 = 10\n\\]\nIn 2021 (6 years after the program began), the city’s installed solar capacity was increasing at a rate of 10 MW per year."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#integrate-concept",
+    "href": "notes/day5/day5-slides.html#integrate-concept",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Integration Conceputally"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#auc",
+    "href": "notes/day5/day5-slides.html#auc",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "How do we find the area under this curve?"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#rect-approx",
+    "href": "notes/day5/day5-slides.html#rect-approx",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "How do we find the area under this curve?\n\nAreas of rectangles are easy to find. We can approximate the area by adding the area of rectangles under the curve."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#riemann-sum",
+    "href": "notes/day5/day5-slides.html#riemann-sum",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example\n\nApproximate the area under the curve from \\([-3,3]\\) with \\(\\Delta x=2\\) and \\(k=3\\).\n✏️\n\n\n\n\n\n\n\nx\ny\n\n\n\n\n-3\n71\n\n\n-1\n73\n\n\n1\n51\n\n\n3\n53"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#riemann-sum-filled-in",
+    "href": "notes/day5/day5-slides.html#riemann-sum-filled-in",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example\n\nApproximate the area under the curve from \\([-3,3]\\) with \\(\\Delta x=2\\) and \\(k=3\\)."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#rect",
+    "href": "notes/day5/day5-slides.html#rect",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Riemann sums\n\n\nDivide the interval \\([a,b]\\) into \\(k\\) subintervals of width \\(\\Delta x\\).\nThe endpoints of those intervals will give you a series of \\(x\\) values: \\(x_0, x_1, \\ldots, x_k\\).\nMultiply \\(f(x_1)\\Delta x\\) to get the the area of the first rectangle.\nRepeat the same steps above, now starting with \\(x_2\\) as the bottom right corner of the next rectangle. Repeat until you cover the area with rectangles of width \\(\\Delta x\\).\nSum up the area of all \\(k\\) rectangles.\n\n \\[\nR(f(x), \\Delta x)= \\underbrace{f(x_1)\\Delta x+f(x_2)\\Delta x+...f(x_k)\\Delta x}_{\\text{Sum of area of rectangles with width $\\Delta(x)$} }\n\\] \nThis is called a Riemann Sum."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#exp-reimman-1",
+    "href": "notes/day5/day5-slides.html#exp-reimman-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Finer and finer Riemann sums\n\n\nWhat if we try to make \\(\\Delta x\\) (the width of the rectangles) really small? So we let \\(\\Delta x \\to 0\\). This will make the number of rectangles under the curve go to infinity.\nOur estimation of the area will get better and better with more rectangles."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#exp-reimman-2",
+    "href": "notes/day5/day5-slides.html#exp-reimman-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Finer and finer Riemann sums\n\n\nWhat if we try to make \\(\\Delta x\\) (the width of the rectangles) really small? So we let \\(\\Delta x \\to 0\\). This will make the number of rectangles under the curve go to infinity.\nOur estimation of the area will get better and better with more rectangles.\n\n\n\n\n\n\n\n\n\n\nTake the area calculation we did before, but let \\(\\Delta x \\to 0\\)  \\[\n\\large\n\\begin{align}\n\\text{True Area} &= \\lim_{\\Delta x \\to 0}R(f(x),\\Delta x) \\\\\n                  &= \\int^b_af(x)dx\n\\end{align}\n\\] \nWe formally call this the integral of \\(f(x)\\) from \\(a\\) to \\(b\\) with respect to \\(x\\)."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#integral-calc-1",
+    "href": "notes/day5/day5-slides.html#integral-calc-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "How do we calculate integrals?\n\n\nTaking infinite sums is impossible by hand\nLuckily, integrals and derivatives are related in a very useful way:"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#integral-calc-2",
+    "href": "notes/day5/day5-slides.html#integral-calc-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "How do we calculate integrals?\n\n\nTaking infinite sums is impossible by hand\nLuckily, integrals and derivatives are related in a very useful way:\n\n\nIf we integrate a derivative, we should get the same function back as the original vice-versa:\n\\[\n\\begin{align}\n\\frac{d}{dx}\\left[\\int f(x)dx\\right]&=f(x) &\\text{Differentiation is the inverse of integration}\n\\end{align}\n\\]\n\\[\n\\begin{align}\n\\int f'(x)&=f(x)+C &\\text{Integration is the inverse of differentiation}\n\\end{align}\n\\]\n\n\n To find the integral of \\(\\int f(t) dt\\) we need to find a function \\(F(x)\\) whose derivative is \\(f(x)\\)."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#c-blank",
+    "href": "notes/day5/day5-slides.html#c-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Where did that \\(C\\) come from?\n\n\n\nExample\n✏️"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#c",
+    "href": "notes/day5/day5-slides.html#c",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Where did that \\(C\\) come from?\n\n\n\nExample\nFind \\(\\int 2x-4\\).\nTo find \\(\\int 2x-4\\) we need to find a function whose derivative is \\(2x-4\\). What could it be?\n\nIf we integrate, we’ll have \\(\\int 2x-4 = x^2-4x+C\\).\nThere is no way of knowing what the \\(C\\) should be without additional information\n\\(C\\) is the \\(x\\)-intercept and we would have we have to solve for it with an initial value problem."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#integratal-use",
+    "href": "notes/day5/day5-slides.html#integratal-use",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "What is integration useful for?\n\n\nConvert from rate of change to total values!\n\n\n\nSolving differential equations\n\ni.e \\(\\frac{dy}{dx}=2x-4\\)\n\n\n\n\n\nCalculating the area under a curve\n\n\n\nWe’ll see some applied exercises too"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#tough",
+    "href": "notes/day5/day5-slides.html#tough",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "But also… integration can be tough\n\n\n\nBefore integrating ask yourself:\n\nWhat am I trying to solve?\n\n\n\nDoes it make sense to take an integral?\n\n\n\n\n\nSource xkcd comics"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#rules-cover",
+    "href": "notes/day5/day5-slides.html#rules-cover",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Rules of Integration"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#notation",
+    "href": "notes/day5/day5-slides.html#notation",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Notation\n\n\n\nWhen you take an integral, the function in it can be in terms of any variable. This is just notation and it does not affect the result of the integration:\n\n\\[\\int f(x) dx = \\int f(t) dt = \\int f(u) du.\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#sum-diff-blank",
+    "href": "notes/day5/day5-slides.html#sum-diff-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Integration rules (1)\n\n\nSum and Difference Rules\n\n✏️"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#sum-diff",
+    "href": "notes/day5/day5-slides.html#sum-diff",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Integration rules (1)\n\n\nSum and Difference Rules\n\nThe integral of a sum is equal to the sum of the integrals:\n\\[\n\\int[f(x)+g(x)]dx=\\int f(x)dx+\\int g(x)dx\n\\]\nThe integral of the difference is equal to the difference of the integrals:\n\\[\\int[f(x)-g(x)]dx=\\int f(x)dx-\\int g(x)dx \\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#constant-blank",
+    "href": "notes/day5/day5-slides.html#constant-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Integration rules (2)\n\n\nConstant Rule\n\n✏️"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#constant",
+    "href": "notes/day5/day5-slides.html#constant",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Integration rules (2)\n\n\nConstant Rule\n\nWhen a function is mulitplied by a constant, the constant can be taken out to multiply the integral:\n\\[\n\\int cf(x)dx=c\\int f(x)dx\n\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#power-blank",
+    "href": "notes/day5/day5-slides.html#power-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Integration rules (3)\n\n\nPower Rule\n\n✏️"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#power",
+    "href": "notes/day5/day5-slides.html#power",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Integration rules (3)\n\n\n\n\\(\\int x^n dx\\) is a function whose derivative is \\(x^n\\).\nWhat could \\(\\int x^n dx\\) be?\n\n\n\nPower Rule\n\n\\[\n\\int x^ndx=\\frac{x^{n+1}}{n+1}+C \\text{, n}\\ne -1\n\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#examples",
+    "href": "notes/day5/day5-slides.html#examples",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Examples\n\n✏️ Evaluate the following integrals.\n\n\n\n\\(\\int 4 dx\\)\n\n\n\n\\(\\int 2x^2 dx\\)\n\n\n\n\\(\\int x^3-4x dx\\)"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#example-solutions",
+    "href": "notes/day5/day5-slides.html#example-solutions",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example solutions\n\n\n\n\n\\(\\int 4 dx = 4x+C\\)\n\n\n\n\\(\\int 2x^2 dx = \\frac{2}{3}x^3+C\\)\n\n\n\n\\(\\int x^3-4x dx = \\frac{x^4}{4}-2x^2+C\\)"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#initial-value-title",
+    "href": "notes/day5/day5-slides.html#initial-value-title",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Initial value problems"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#ivp",
+    "href": "notes/day5/day5-slides.html#ivp",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Initial value problems\n\n\n\n\nTo find the \\(C\\) term in the integral, we need extra information\nOften times that comes from being given an initial value\nThis means being given some value of the function, e.g. \\(y(0)=a\\) or \\(y(12)=b\\)\nWe use this information to solve for what \\(C\\) should be"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#ivp-ex-blank",
+    "href": "notes/day5/day5-slides.html#ivp-ex-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example\n\n✏️ The marginal cost of producing \\(x\\) units of a product is:\n\\[\n\\frac{dC}{dx}=25-0.02x\n\\]\nWhere \\(C\\) is the cost (in dollars), and \\(x\\) is the number of units produced. Given that producing 2 units of product costs $10, what is the complete cost equation?"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#ivp-ex",
+    "href": "notes/day5/day5-slides.html#ivp-ex",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example\n\n✏️ The marginal cost of producing \\(x\\) units of a product is:\n\\[\n\\frac{dC}{dx}=25-0.02x\n\\]\nWhere \\(C\\) is the cost (in dollars), and \\(x\\) is the number of units produced. Given that producing 2 units of product costs $10, what is the complete cost equation?\nWe can integrate to find the original cost function \\(C\\):\n\\[C(x) = \\int \\frac{dC}{dx} dx = \\int 25-0.02x.\\]\nThen: \\[\n\\begin{align}\n\\int 25-0.02x =&25x-\\frac{.02x^2}{2}+D & \\text{Solve with Power Rule}\\\\\n10&=25(2)-\\frac{0.02(2)^2}{2}+D  &\\text{ Sub in $x=2$}\\\\\n-39.96&=D\\\\\nC(x)&=25x-\\frac{0.2x^2}{2}-39.96\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#break",
+    "href": "notes/day5/day5-slides.html#break",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Let’s take a 5 minute break\n\n\nimage: Flaticon.com"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#definite-integrals",
+    "href": "notes/day5/day5-slides.html#definite-integrals",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Definite integrals"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#definite-blank",
+    "href": "notes/day5/day5-slides.html#definite-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Indefinite vs. definite integrals\n\n✏️"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#definte-1",
+    "href": "notes/day5/day5-slides.html#definte-1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Indefinite vs. definite integrals\n\n\n\n\nWe have been working with indefinite integrals.\n\n\\[\n\\int f(x)dx\n\\]\nThis means there are no integration bounds and we need initial values to find integration constants.\n\nDefinite integrals have start and end values \\(a\\) and \\(b\\):\n\n\\[\\int_a^b f(x) dx.\\]\n\nTo find the area under the curve along an interval \\([a,b]\\), evaluate the antiderivative at the endpoints and subtract them.\n✏️ Example\n\\[\n\\begin{align}\n\\int^b_axdx &= \\frac{1}{2}x^2\\Big|^b_a\\\\\n            &= \\frac{1}{2}(b)^2-\\frac{1}{2}(a)^2\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#def-solve-blank",
+    "href": "notes/day5/day5-slides.html#def-solve-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example\n\n✏️ Evaluate the following integral.\n \\[\\int^2_{-1}3x^2dx\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#def-solve",
+    "href": "notes/day5/day5-slides.html#def-solve",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example\n\n✏️ Evaluate the following integral.\n \\[\\int^2_{-1}3x^2dx\\] \nWe have that: \\[\n\\begin{align}\n\\int^2_{-1}3x^2dx &= x^3\\Big|^2_{-1}\\\\\n&=(2)^3-(-1)^3 \\\\\n&=9\n\\end{align}\n\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#area",
+    "href": "notes/day5/day5-slides.html#area",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Area between two curves"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#area-ex1",
+    "href": "notes/day5/day5-slides.html#area-ex1",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example\n\n✏️ Find the area of the shaded region in the graph below."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#area-ex2",
+    "href": "notes/day5/day5-slides.html#area-ex2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example\n\nWe need to compute\n\\[\\int^1_0 \\sqrt{x} - \\int^1_0 x^2.\\]\nCompute each piece carfully:\n\n\n\\[\n\\small\n\\begin{align}\n\\int^1_0 \\sqrt{x} &=\\frac{2}{3}x^\\frac{3}{2} \\Big|_0^1\\\\\n                  &= \\frac{2}{3}(1)^{\\frac{3}{2}}-\\frac{2}{3}(0)^{\\frac{3}{2}} \\\\\n                  &= \\frac{2}{3}.\n\\end{align}\n\\]\n\n\\[\n\\small\n\\begin{align}\n\\int^1_0 x^2 &=\\frac{1}{3}x^3\\Big|_0^1 \\\\\n            &= \\frac{1}{3}(1)^3-\\frac{1}{3}(0)^3 \\\\\n            &= \\frac{1}{3}.\n\\end{align}\n\\]\n\nThen subtract the upper from the lower:\n\\[\n\\small\n\\frac{2}{3}-\\frac{1}{3}=\\frac{1}{3}\n\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#exercises-title",
+    "href": "notes/day5/day5-slides.html#exercises-title",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Exercises"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#exercises",
+    "href": "notes/day5/day5-slides.html#exercises",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Exercises 1\n\n\n\n\nFind \\(y\\) given that:\n\n\\[y'=\\frac{3}{x^2}, y(3)=2\\]\n\n\nFind the integral of \\(g\\), where\n\n\\[g(t)=3t^5-2t^3+16t-7\\]\n\n\nIntegrate \\[\\int^4_2\\frac{1}{2}x\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#ta2-A-solution",
+    "href": "notes/day5/day5-slides.html#ta2-A-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solution (A)\n\nWe have that\n\\[\n\\begin{aligned}\n\\int \\frac{3}{x^2}\\,dx\n&= 3 \\int x^{-2}\\,dx \\\\[6pt]\n&= 3 \\left( \\frac{x^{-1}}{-1} \\right) + C \\\\[6pt]\n&= -\\frac{3}{x} + C\n\\end{aligned}\n\\]\nWith the initial value \\(y(3)=2\\) we obtain\n\\[\n\\begin{align}\n2 &= y(3) \\\\\n  &= -\\frac{3}{3} + C \\\\\n  &= -1 + C \\\\\n3 &= C.\n\\end{align}\n\\]\nTherefore the solution is \\(-\\frac{3}{x} +3\\)."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#ta2-B-solution",
+    "href": "notes/day5/day5-slides.html#ta2-B-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solution (B)\n\nWe have that\n\\[\\begin{aligned}\n\\int \\bigl(3t^{5}-2t^{3}+16t-7\\bigr)\\,dt\n&= \\int 3t^{5}\\,dt - \\int 2t^{3}\\,dt + \\int 16t\\,dt - \\int 7\\,dt \\\\[6pt]\n&= 3\\frac{t^{6}}{6} - 2\\frac{t^{4}}{4} + 16\\frac{t^{2}}{2} - 7t + C \\\\[6pt]\n&= \\frac{t^{6}}{2} - \\frac{t^{4}}{2} + 8t^{2} - 7t + C\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#ta2-C-solution",
+    "href": "notes/day5/day5-slides.html#ta2-C-solution",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solution (C)\n\nWe get that\n\\[\\begin{aligned}\n\\int_{2}^{4} \\frac{1}{2}x\\,dx\n&= \\frac{1}{2}\\int_{2}^{4} x\\,dx \\\\[6pt]\n&= \\frac{1}{2}\\left[\\frac{x^{2}}{2}\\right]_{2}^{4} \\\\[6pt]\n&= \\frac{1}{4}\\bigl(4^{2}-2^{2}\\bigr) \\\\[6pt]\n&= \\frac{1}{4}(16-4) \\\\[6pt]\n&= 3\n\\end{aligned}\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#exercises-2",
+    "href": "notes/day5/day5-slides.html#exercises-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Exercises 2\n\n\nA model for the rate of change in ozone concentrations over time between 1962-1984 is given by \\(\\frac{dC}{dt}=2t+20\\), where \\(C\\) is the ozone concentration (ppm) and \\(t\\) is the elapsed time in years since 1962. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?\n\n\n\n\nA coastal wetland restoration project is being evaluated against a “do-nothing” baseline where the wetland is left degraded. Ecologists model the carbon sequestration rate (tons CO₂ / year) as a function of years since the project began, \\(t\\):\n\n\nRestored wetland: \\(R(t) = 8t - t^2\\)\nDegraded baseline: \\(B(t) = 2t\\)\n\n\n\n\n\n\n\n\n\n\n\n\nBoth models are valid for \\(0 \\le t \\le 6\\). What is the total additional carbon sequestered by the restored wetland over the 6-year period?\n\nWrite your answers as full sentences with units!"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#exercises-solution-2-blank",
+    "href": "notes/day5/day5-slides.html#exercises-solution-2-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solution (2)\n\n\nA model for the rate of change in ozone concentrations over time between 1962-1984 is given by \\(\\frac{dC}{dt}=2t+20\\), where \\(C\\) is the ozone concentration (ppm) and \\(t\\) is the elapsed time in years since 1962. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982?\n\n✏️"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#exercises-solution-2",
+    "href": "notes/day5/day5-slides.html#exercises-solution-2",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solution (2)\n\nGiven:\n\\[\\frac{dC}{dt} = 2t + 20\\]\nIntegrate:\n\\[\\int dC = \\int (2t + 20)\\,dt\\]\n\\[C(t) = t^{2} + 20t + D\\]\nInitial condition:\n\\[C(2)=30 \\ \\  \\text{(since 1964 is 2 years after 1962)}\\]\n\\[30 = 2^{2} + 20\\cdot 2 + D\\]\n\\[D = 30 - 44 = -14\\]\nThus:\n\\[C(t) = t^{2} + 20t - 14\\]\nEvaluate at \\(t=20\\) (1982):\n\\[C(20) = 20^{2} + 20\\cdot 20 - 14\\]\n\\[= 400 + 400 - 14\\]\n\\[= 786 \\text{ ppm}\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#exercises-solution-3-blank",
+    "href": "notes/day5/day5-slides.html#exercises-solution-3-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solution (3)\n\n\n\n\nA coastal wetland restoration project is being evaluated against a “do-nothing” baseline where the wetland is left degraded. Ecologists model the carbon sequestration rate (tons CO₂ / year) as a function of years since the project began, \\(t\\):\n\n\nRestored wetland: \\(R(t) = 8t - t^2\\)\nDegraded baseline: \\(B(t) = 2t\\)\n\n\n\n\n\n\n\n\n\n\n\n\nBoth models are valid for \\(0 \\le t \\le 6\\). What is the total additional carbon sequestered by the restored wetland over the 6-year period?\n✏️"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#exercises-solution-3-work",
+    "href": "notes/day5/day5-slides.html#exercises-solution-3-work",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solution (3)\n\n✏️"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#exercises-solution-3",
+    "href": "notes/day5/day5-slides.html#exercises-solution-3",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solution (3)\n\nThe toal carbon sequestered in each scenario is given by the area under the curve of the corresponding sequestration rate.\nSo the total additional carbon sequesterd is represented by the area between the two sequestration rate curves.\nIntegrate:\n\\[\\int_0^6 \\big[R(t) - B(t)\\big]\\, dt = \\int_0^6 (6t - t^2)\\, dt\\]\n\\[= \\left[3t^2 - \\frac{t^3}{3}\\right]_0^6 = (3(36) - \\tfrac{216}{3}) - 0 = 108 - 72 = 36\\]\nOver the 6-year period, restoring the wetland sequesters an additional 36 tons of CO₂ compared to leaving it degraded."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#differential-equations-title",
+    "href": "notes/day5/day5-slides.html#differential-equations-title",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Differential equations"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#diffeq",
+    "href": "notes/day5/day5-slides.html#diffeq",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "What is a differential equation?\n\nA differential equation is any equation which contains derivatives.\nThe goal of the differential equation is to find a function that satisfies the equation.\n\nExample\nThe equation\n\\[\ny' = y + x\n\\]\nis a differential equation in which we want to find a function \\(y(x)\\) such that its derivative equals the function plus \\(x\\).\n✏️ 1. How would you check that \\(y(x) = -x -1\\) is a solution for this differential equation?"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#terms",
+    "href": "notes/day5/day5-slides.html#terms",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Differential equations: terms\n\n\n\nOrdinary differential equation (ODE): Does not contain partial derivatives\n\n\\[\\frac{df}{dt}=3.2-f(t)\\]\n Sometimes functions have more than one variable and we can take partial derivatives with respect to each variable. \n\nPartial differential equations (PDE): Differential equations with partial derivatives\n\n\\[\\frac{\\partial B}{\\partial t}= \\alpha B+0.31x-21.6\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#order-ODE",
+    "href": "notes/day5/day5-slides.html#order-ODE",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Order of an ODE\n\nOrder: The order of a differential equation is the highest order for any differential expression in the equation\n\nExample:\n\\(\\frac{df}{dt}=3.2-f(t)\\) is a first order ordinary differential equation\n\nExample:\n\\(\\frac{\\partial^3x}{\\partial t^3}=2x-4.5\\frac{\\partial x}{\\partial t}\\) is a third order partial differential equation"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#practice",
+    "href": "notes/day5/day5-slides.html#practice",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Practice:\n\nUse the terms from the previous slide to describe the following different equations:\n\n\\[2.9t^2 - \\alpha B=\\frac{dB}{dt}\\]\n\n\\[\\frac{\\partial^2f }{\\partial x^2}=1.4\\times10^{-3}f(x)+5.2\\]\n\n\\[\\frac{dC}{dt}=4.1C-8.0\\]"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#why-diff-equations",
+    "href": "notes/day5/day5-slides.html#why-diff-equations",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Differential equations help us understand changing environments\n\n\nFor some natural phenomena it can be easier to describe them in terms of derivatives than give an explicit function.\nBy specifying how something changes, we are describing a process or behavior over time.\nExamples:\n\n\n\n\n\n\nDescribing population dynamics\n\n\n\n\n\n\nGroundwater transport of absorbed contaminants"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#lotka-volterra",
+    "href": "notes/day5/day5-slides.html#lotka-volterra",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Example: Lotka-Volterra (predator-prey) equations\n\n\n\nPrey: \\(\\frac{dV}{dt}=r V-\\alpha VP\\)\n\n\nPredator: \\(\\frac{dP}{dt}=\\beta VP - qP\\)\nWhere:\n\n\\(V\\) is number of prey (e.g. rabbits)\n\\(P\\) is number of predators (e.g. wolves)\n\\(r, \\alpha, \\beta, q\\) are positive parameters\n\n\n\nWhat do the different pieces of the equation mean?\n\n\n\n\\(r\\): intrinsic rate of increase\n\\(\\alpha\\): capture efficiency of predators (i.e. effect of a predator on per capita growth rate of prey population)\n\nthe larger \\(\\alpha\\) is, the more the per capita growht rate of a prey population is depressed by the addition of a single predator (e.g. baleen whales feeding on plankton vs. web-building spider capturing a mosquito)\n\n\\(\\beta\\): a measure of conversion efficiency (i.e. the ability of predators to convert each new prey ite m into additional per capita growth rate for the predator population)\n\n\\(\\beta\\) is high when a single prey item is high value (e.g. a moose prey to wolf predator vs. a seed to a bird)\n\n\\(q\\): per capita death rate (these predators are extreme specialists with no alternative prey sources; so if prey are absent, the predator population declines exponentially)"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#interpretation-prey",
+    "href": "notes/day5/day5-slides.html#interpretation-prey",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Interpretation of prey equation:\n\n\n\\[\\frac{dV}{dt}=r V-\\alpha VP\\]\n\n\n\nThe pieces:\n\n\\(\\frac{dV}{dt}\\): Rate of growth / decline in prey abundance\n\\(r V\\): Population growth (without loss due to predation (assumes predators are the only force limited the growth of the prey population), where \\(r\\) is the intrinsic rate of increase)\n\\(-\\alpha VP\\): Population loss due to predation (where \\(\\alpha\\) is the capture efficiency of the predator)"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#interpretation-pred",
+    "href": "notes/day5/day5-slides.html#interpretation-pred",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Interpretation of predator equation:\n\n\n\\[\\frac{dP}{dt}=\\beta VP - q P\\]\n\n\nThe pieces:\n\n\\(\\frac{dP}{dt}\\): Rate of growth / decline in predator population\n\\(\\beta VP\\): Predator population growth (where \\(\\beta\\) is a measure of conversion efficiency, i.e. the ability of predators to convert each new prey into additional per capita growth rate for the predator population)\n\\(-q P\\): Predator population loss (where \\(q\\) is the per capita death rate; positive population growth only happens when prey are present)"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#pred-prey-image",
+    "href": "notes/day5/day5-slides.html#pred-prey-image",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Or, in pictures:\n\n\n\n\n\nAdapted frrom Christopher Rackauckas, Scientific machine learning: interpretable neural networks that accurately extrapolate from small data. from the Stochastic Lifestyle blog.\n\n\nNow we know the rates of change for both populations, but what we still want to know is the actual numbers through time."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#approx-sols",
+    "href": "notes/day5/day5-slides.html#approx-sols",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Finding \\(V(t)\\) and \\(P(t)\\)? \n\n\n\nIntegration to find approximate solutions. Image: Modelica by Example"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#solve-analytically-blank",
+    "href": "notes/day5/day5-slides.html#solve-analytically-blank",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Some differential equations can be solved analytically:\n\n\n✏️"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#solve-analytically",
+    "href": "notes/day5/day5-slides.html#solve-analytically",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Some differential equations can be solved analytically:\n\n\n\\[\\frac{dy}{dx}=y\\]\n\nSeparate variables and integrate both sides:\n\\[\\int\\frac{1}{y}dy=\\int1dx\\]\n\nYielding:\n\n\\(ln(y)=x\\) or \\(y=e^x\\)"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#solve-numerically",
+    "href": "notes/day5/day5-slides.html#solve-numerically",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Solving differential equations numerically\n\n\n\nFind approximate solutions to differential equations when finding an analytical solution would be really challenging (…which is pretty often).\n\nInstead, computers can numerically approximate solutions by predicting nearby values based on the slope.\n\nThere are many methods for solving differential equations numerically. You’ll do it programatically later on."
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#wrapping-up",
+    "href": "notes/day5/day5-slides.html#wrapping-up",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Wrapping up…"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#acknowledgements",
+    "href": "notes/day5/day5-slides.html#acknowledgements",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "This course is an iterative effort\n\n\n\n\n\n\n\n\n\nAllison Horst\n\n\n\n\n\n\n\n\nRuth Oliver\n\n\n\n\n\n\n\n\nNathan Grimes\n\n\n\n\n\n\n\n\nCarmen Galaz García\n\n\n\n\n\n\n\n\n\n\n\nSam Shanny-Csik\n\n\n\n\n\n\n\n\nAlessandra Vidal Meza\n\n\n\n\n\n\n\n\nCella Schnabel"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#everything-we-covered",
+    "href": "notes/day5/day5-slides.html#everything-we-covered",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "We covered a lot!\n\n\n\n\n🔢 Algebra review\n🗺️ Solving equations\n✖️ Exponents\n📐 Polynomials\n🌡 Units\n📏 Metric prefixes\n🧊 Area & volume conversions\n⚖️ Dimensional analysis\n🧪 Parts per million\n🧩 Definition of functions\n📊 Graphing\n📈 \\(x\\) and \\(y\\) intercepts\n🌱 The number e and \\(e^x\\)\n\n\n\n🐰 Logistic growth\n🪵 Natural logarithms\n📈 Linear functions\n↗️ Slope as a rate of change\n🔎 Limits\n🖊️ Derivatives and rate of change\n🛤️ Tangent lines\n📝 Rules for differentiation\n🔹 Constant rule\n💪 Power rule\n\n\n\n➕ Sum and difference rule\n📈 Higher order derivatives\n🧮 Riemann sums\n∫ Integrals\n📐 Rules of integration\n✏️ Initial value problems\n🧾 Definite and indefinite integrals\n🌊 A bit of ODEs\n🐟 Applications to MESM core courses"
+  },
+  {
+    "objectID": "notes/day5/day5-slides.html#course-evals",
+    "href": "notes/day5/day5-slides.html#course-evals",
+    "title": "Bren Math Workshop",
+    "section": "",
+    "text": "Pleaes fill out the exit survey!"
   },
   {
     "objectID": "notes/day5_differential_equations/day5_differential_equations.html",

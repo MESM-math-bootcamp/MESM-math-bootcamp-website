@@ -1,0 +1,17 @@
+{
+  "hash": "3e1d9e90ba8b5b64513337c043a5c621",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\nsidebar: daily-materials\nexecute:\n  freeze: true\nauthor: \"Carmen Galaz García, Nathaniel Grimes\"  \n---\n\n# Solutions: Integrals and differential equations problem set\n\n\n\n::: {.callout-tip}\n## Instructions\nThese are the solutions to the [rates of change, limits, and derivatives problem set](day5-problem-set.qmd). Click a solution to expand it and try each problem yourself first!\n:::\n\n\n\n## Exercise 6\n\nAfter restoring a section of coastal wetland, ecologists measure the rate at which the wetland absorbs stormwater runoff, $r(t)$ (in m³/hour), throughout a 24-hour storm. The graph below shows this absorption rate over time. Partway through the storm, the monitoring sensor lost power and went offline between hour 10 and hour 14 (shaded region in the graph) — but you still need to report an estimate of the total volume of stormwater absorbed over the full 24-hour storm.\n\n\n::: {.cell layout-align=\"center\"}\n::: {.cell-output-display}\n![](day5-problem-set-solutions_files/figure-html/unnamed-chunk-1-1.png){fig-align='center' width=70%}\n:::\n:::\n\n\n(a) What does the *area under this curve* represent, in words? Be sure to include units.\n(b) Looking at the shape of the graph (without calculating anything), during which 6-hour window — hours 0–6, 6–12, 12–18, or 18–24 — do you expect the *largest volume* of stormwater to have been absorbed? Explain your reasoning.\n(c) Describe how you would handle the sensor gap when estimating the total area under the curve. What assumption(s) would you have to make, and how would the location of this particular gap affect your confidence in the final estimate?\n\n::: {.callout-note collapse=\"true\"}\n## Solution\n\n**(a)** The area under the rate curve represents the **total volume of stormwater absorbed by the wetland** over that time period, in m³ (rate in m³/hr $\\times$ time in hr = volume in m³).\n\n**(b)** Hours 6–12. The curve is highest and covers the most area in that window, since the absorption rate peaks around hour 9 — the middle of the storm, when the ground is saturated and inflow is greatest.\n\n**(c)** Since there's no direct measurement between hour 10 and hour 14, we'd have to interpolate — for example, connecting the last known point (hour 10) to the first known point (hour 14) with a straight line, and using that as our best guess for the missing area. This assumes the rate changed smoothly and roughly monotonically across the gap.\n\nThat assumption is riskier here than it would be for an arbitrary gap, because this particular gap covers the storm's peak — the point where the true curve is doing the most curving. A straight-line interpolation would cut across that peak and likely *underestimate* the true absorption rate for most of the gap, so our total volume estimate is probably a bit too low, and we should be less confident in it than we would be if the same size gap had fallen during a flatter part of the storm.\n:::",
+    "supporting": [
+      "day5-problem-set-solutions_files"
+    ],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

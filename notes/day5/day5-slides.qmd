@@ -179,3 +179,1626 @@ S'(6) = 6+4 = 10
 $$
 
 In 2021 (6 years after the program began), the city's installed solar capacity was increasing at a rate of 10 MW per year.
+
+
+---
+
+## {#integrate-concept data-menu-title="Integration" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Integration Conceputally</div>
+</div>
+
+---
+
+## {#auc data-menu-title="Area under the curve"}
+
+[How do we find the area under this curve?]{.slide-title}
+
+<hr>
+
+```{r}
+knitr::include_graphics("images/area.png")
+```
+
+---
+
+## {#rect-approx data-menu-title="Area under the curve"}
+
+[How do we find the area under this curve?]{.slide-title}
+
+<hr>
+
+Areas of rectangles are easy to find. We can approximate the area by adding the area of rectangles under the curve.
+
+```{r}
+knitr::include_graphics("images/reimann.png")
+```
+
+---
+
+## {#riemann-sum data-menu-title="Riemann Sum"}
+
+[Example]{.slide-title}
+
+<hr>
+
+Approximate the area under the curve from $[-3,3]$ with $\Delta x=2$ and $k=3$.
+
+✏️
+
+:::{.columns}
+
+:::{.column width="30%"}
+```{r}
+library(tidyverse)
+
+x=seq(-5,5,by=.1)
+y=x^3-12*x+62
+
+x_tab=seq(-3,3,by=2)
+y_tab=x_tab^3-12*x_tab+62
+
+data.frame(x=x_tab,y=y_tab) %>% 
+  knitr::kable()
+```
+:::
+
+:::{.column width="70%"}
+
+```{r,out.width="90%"}
+
+ggplot()+
+  geom_line(aes(x=x,y=y),size=2.5,color="#003660")+
+  geom_hline(yintercept = 0, color = "black") +
+  geom_vline(xintercept = 0, color = "black") +
+  theme_classic()+
+  annotate("segment",x=-3,xend=-3,y=71,yend=0,linetype=1,color="#FEBC11",size=2)+
+  annotate("segment",x=3,xend=3,y=53,yend=0,color="#FEBC11",size=2)+
+  theme(text = element_text(size = 28),
+                axis.line = element_blank()) +   # remove default axis box
+  scale_y_continuous(expand=c(0,0))+
+  scale_x_continuous(breaks=seq(-5,5))
+```
+:::
+
+::::
+
+---
+
+## {#riemann-sum-filled-in data-menu-title="Riemann Sum"}
+
+[Example]{.slide-title}
+
+<hr>
+
+Approximate the area under the curve from $[-3,3]$ with $\Delta x=2$ and $k=3$.
+
+![](images/example.png)
+
+---
+
+## {#rect data-menu-title="Riemann Sum"}
+
+[Riemann sums]{.slide-title}
+
+<hr>
+
+1. Divide the interval $[a,b]$ into $k$ subintervals of width $\Delta x$. 
+
+2. The endpoints of those intervals will give you a series of $x$ values: $x_0, x_1, \ldots, x_k$. 
+
+
+3. Multiply $f(x_1)\Delta x$ to get the the area of the first rectangle.
+
+5. Repeat the same steps above, now starting with $x_2$ as the bottom right corner of the next rectangle. Repeat until you cover the area with rectangles of width $\Delta x$. 
+
+6. Sum up the area of all $k$ rectangles.
+
+<span style="color:red">
+$$
+R(f(x), \Delta x)= \underbrace{f(x_1)\Delta x+f(x_2)\Delta x+...f(x_k)\Delta x}_{\text{Sum of area of rectangles with width $\Delta(x)$} }
+$$
+</span>
+
+This is called a **Riemann Sum**.
+
+---
+
+## {#exp-reimman-1 data-menu-title="Riemann Sum"}
+
+[Finer and finer Riemann sums]{.slide-title}
+
+<hr>
+
+- What if we try to make $\Delta x$ (the width of the rectangles) really small? So we let $\Delta x \to 0$. This will make the number of rectangles under the curve go to infinity.
+
+- Our estimation of the area will get better and better with more rectangles.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/riemann.gif){fig-align="center" width="70%"}
+:::
+
+::: {.column width="50%"}
+
+:::
+
+::::
+
+---
+
+## {#exp-reimman-2 data-menu-title="Riemann Sum"}
+
+[Finer and finer Riemann sums]{.slide-title}
+
+<hr>
+
+- What if we try to make $\Delta x$ (the width of the rectangles) really small? So we let $\Delta x \to 0$. This will make the number of rectangles under the curve go to infinity.
+
+- Our estimation of the area will get better and better with more rectangles.
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![](images/riemann.gif){fig-align="center" width="70%"}
+:::
+
+::: {.column width="50%"}
+<br>
+
+Take the area calculation we did before, but let $\Delta x \to 0$
+<span style="color:red">
+$$
+\large
+\begin{align}
+\text{True Area} &= \lim_{\Delta x \to 0}R(f(x),\Delta x) \\
+                  &= \int^b_af(x)dx
+\end{align}
+$$
+</span>
+
+We formally call this <span style="color:red">**the integral of $f(x)$ from $a$ to $b$ with respect to $x$**</span>.
+:::
+
+::::
+
+---
+
+## {#integral-calc-1 data-menu-title="Integrals"}
+
+[How do we calculate integrals?]{.slide-title}
+
+<hr>
+
+- Taking infinite sums is impossible by hand
+
+- Luckily, integrals and derivatives are related in a very useful way:
+
+---
+
+## {#integral-calc-2 data-menu-title="Integrals"}
+
+[How do we calculate integrals?]{.slide-title}
+
+<hr>
+
+- Taking infinite sums is impossible by hand
+
+- Luckily, integrals and derivatives are related in a very useful way:
+
+<br>
+
+If we integrate a derivative, we should get the same function back as the original vice-versa:
+
+$$
+\begin{align}
+\frac{d}{dx}\left[\int f(x)dx\right]&=f(x) &\text{Differentiation is the inverse of integration}
+\end{align}
+$$
+
+$$
+\begin{align}
+\int f'(x)&=f(x)+C &\text{Integration is the inverse of differentiation}
+\end{align}
+$$
+
+
+<br>
+
+<div class="page-center">
+<span style="color:red">
+*To find the integral of $\int f(t) dt$ we need to find a function $F(x)$ whose derivative is $f(x)$.*
+</span>
+</div>
+
+---
+
+## {#c-blank data-menu-title="Constants of Integration"}
+
+[Where did that $C$ come from?]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+**Example** 
+
+✏️
+
+:::
+:::{.column width="50%"}
+```{r,out.width="75%"}
+knitr::include_graphics("images/c.png")
+```
+:::
+::::
+
+---
+
+## {#c data-menu-title="Constants of Integration"}
+
+[Where did that $C$ come from?]{.slide-title}
+
+<hr>
+
+::::{.columns}
+:::{.column width="50%"}
+
+**Example** 
+
+Find $\int 2x-4$.
+
+To find $\int 2x-4$ we need to find a function whose derivative is $2x-4$. What could it be?
+
+- If we integrate, we'll have $\int 2x-4 = x^2-4x+C$. 
+
+- There is no way of knowing what the $C$ should be without additional information
+
+- $C$ is the $x$-intercept and we would have we have to solve for it with an initial value problem.
+
+
+:::
+:::{.column width="50%"}
+```{r,out.width="75%"}
+knitr::include_graphics("images/c.png")
+```
+:::
+::::
+
+---
+
+## {#integratal-use data-menu-title="Why is Integration useful"}
+
+[What is integration useful for?]{.slide-title}
+
+<hr>
+- Convert from rate of change to total values!
+
+<br>
+
+- Solving differential equations
+
+    - i.e $\frac{dy}{dx}=2x-4$
+    
+    <!-- - Logistic Growth is one example -->
+    
+<br>    
+
+- Calculating the area under a curve
+
+<br>    
+
+- We'll see some applied exercises too
+
+---
+
+## {#tough data-menu-title="Integration is tough"}
+
+[But also... integration can be tough]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+**Before integrating ask yourself:**
+
+1. What am I trying to solve?
+
+<br>
+
+2. Does it make sense to take an integral?
+
+:::
+
+::: {.column width="60%"}
+![Source [xkcd comics](https://xkcd.com/2117/)](images/xkcd.png){width="80%"}
+:::
+
+::::
+
+---
+
+## {#rules-cover data-menu-title="Rules of Integration" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Rules of Integration</div>
+</div>
+
+
+---
+
+## {#notation data-menu-title="Notation"}
+
+[Notation]{.slide-title}
+
+<hr>
+
+<br>
+
+:::::: {.body-text-l}
+When you take an integral, the function in it can be in terms of any variable. This is just notation and it does not affect the result of the integration:
+
+<br>
+
+$$\int f(x) dx = \int f(t) dt = \int f(u) du.$$
+:::
+
+---
+
+## {#sum-diff-blank data-menu-title="Rules of Integration"}
+
+[Integration rules (1)]{.slide-title}
+
+<hr>
+
+:::{.center-text .body-text-l}
+**Sum and Difference Rules**
+:::
+
+✏️ 
+
+---
+
+## {#sum-diff data-menu-title="Rules of Integration"}
+
+[Integration rules (1)]{.slide-title}
+
+<hr>
+
+:::{.center-text .body-text-l}
+**Sum and Difference Rules**
+:::
+
+The integral of a sum is equal to the sum of the integrals:
+
+$$
+\int[f(x)+g(x)]dx=\int f(x)dx+\int g(x)dx
+$$
+
+The integral of the difference is equal to the difference of the integrals: 
+
+$$\int[f(x)-g(x)]dx=\int f(x)dx-\int g(x)dx $$
+
+---
+
+## {#constant-blank data-menu-title="Rules of Integration"}
+
+[Integration rules (2)]{.slide-title}
+
+<hr>
+
+:::{.center-text .body-text-l}
+**Constant Rule**
+:::
+
+✏️ 
+
+---
+
+## {#constant data-menu-title="Rules of Integration"}
+
+[Integration rules (2)]{.slide-title}
+
+<hr>
+
+:::{.center-text .body-text-l}
+**Constant Rule**
+:::
+
+When a function is mulitplied by a constant, the constant can be taken out to multiply the integral:
+
+$$
+\int cf(x)dx=c\int f(x)dx
+$$
+
+---
+
+## {#power-blank data-menu-title="Rules of Integration"}
+
+[Integration rules (3)]{.slide-title}
+
+<hr>
+
+:::{.center-text .body-text-l}
+**Power Rule**
+
+:::
+
+✏️ 
+
+---
+
+## {#power data-menu-title="Rules of Integration"}
+
+[Integration rules (3)]{.slide-title}
+
+<hr>
+
+<br>
+
+:::{style="color:green;" .center-text .body-text-m}
+$\int x^n dx$ is a function whose derivative is $x^n$. 
+
+What could $\int x^n dx$ be?
+:::
+
+
+<br>
+
+:::{.center-text .body-text-l}
+**Power Rule**
+:::
+
+$$
+\int x^ndx=\frac{x^{n+1}}{n+1}+C \text{, n}\ne -1
+$$
+
+
+---
+
+## {#examples data-menu-title="Examples of Integration"}
+
+[Examples]{.slide-title}
+
+<hr>
+
+✏️ [Evaluate the following integrals.]{style="color:green;"}
+
+
+:::: {.columns}
+
+::: {.column width="33%"}
+A) $\int 4 dx$
+:::
+
+::: {.column width="33%"}
+B) $\int 2x^2 dx$
+:::
+
+::: {.column width="33%"}
+C) $\int x^3-4x dx$
+:::
+
+::::
+
+---
+
+## {#example-solutions data-menu-title="Example solutions"}
+
+[Example solutions]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="33%"}
+A) $\int 4 dx = 4x+C$
+:::
+
+::: {.column width="33%"}
+B) $\int 2x^2 dx = \frac{2}{3}x^3+C$
+:::
+
+::: {.column width="33%"}
+C) $\int x^3-4x dx = \frac{x^4}{4}-2x^2+C$
+:::
+
+::::
+
+---
+
+## {#initial-value-title data-menu-title="Initial value problems" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Initial value problems</div>
+</div>
+
+---
+
+## {#ivp data-menu-title="Initial Value Problems"}
+
+[Initial value problems]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="50%"}
+
+- To find the $C$ term in the integral, we need extra information
+
+- Often times that comes from being given an *initial value*
+
+- This means being given some value of the function, e.g. $y(0)=a$ or $y(12)=b$
+
+- We use this information to solve for what $C$ should be
+:::
+
+::: {.column width="50%"}
+```{r,out.width="75%"}
+knitr::include_graphics("images/c.png")
+```
+:::
+
+::::
+
+<!----------------------------------------------------->
+
+## {#ivp-ex-blank  data-menu-title="Initial Value Problem"}
+
+[Example]{.slide-title}
+
+<hr>
+
+✏️ [The marginal cost of producing $x$ units of a product is:]{style="color:green;"}
+
+[
+$$
+\frac{dC}{dx}=25-0.02x
+$$
+]{style="color:green;"}
+
+[Where $C$ is the cost (in dollars), and $x$ is the number of units produced. Given that producing 2 units of product costs \$10, what is the complete cost equation?]{style="color:green;"}
+
+<!----------------------------------------------------->
+
+## {#ivp-ex  data-menu-title="Initial Value Problem" .smaller}
+
+[Example]{.slide-title}
+
+<hr>
+
+✏️ [The marginal cost of producing $x$ units of a product is:]{style="color:green;"}
+
+[
+$$
+\frac{dC}{dx}=25-0.02x
+$$
+]{style="color:green;"}
+
+[Where $C$ is the cost (in dollars), and $x$ is the number of units produced. Given that producing 2 units of product costs \$10, what is the complete cost equation?]{style="color:green;"}
+
+We can integrate to find the original cost function $C$:
+
+$$C(x) = \int \frac{dC}{dx} dx = \int 25-0.02x.$$
+
+Then: 
+$$
+\begin{align}
+\int 25-0.02x =&25x-\frac{.02x^2}{2}+D & \text{Solve with Power Rule}\\
+10&=25(2)-\frac{0.02(2)^2}{2}+D  &\text{ Sub in $x=2$}\\
+-39.96&=D\\
+C(x)&=25x-\frac{0.2x^2}{2}-39.96
+\end{align}
+$$
+
+---
+
+## {#break data-menu-title="5 minute break"}
+
+[Let's take a 5 minute break]{.slide-title}
+
+<hr>
+
+![image: Flaticon.com](images/coffee-break.png)
+
+---
+
+## {#definite-integrals data-menu-title="Definite integrals" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Definite integrals</div>
+</div>
+
+---
+
+## {#definite-blank data-menu-title="Definite vs Indefinite"}
+
+[Indefinite vs. definite integrals]{.slide-title}
+
+<hr>
+
+✏️
+
+---
+
+## {#definte-1 data-menu-title="Definite vs Indefinite" .smaller}
+
+[Indefinite vs. definite integrals]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="55%"}
+- We have been working with **indefinite integrals**.
+
+$$
+\int f(x)dx
+$$
+
+This means there are no integration bounds and we need initial values to find integration constants.
+
+- **Definite integrals** have start and end values $a$ and $b$:
+
+$$\int_a^b f(x) dx.$$
+
+<!-- - If $F(x) = \int f(x)dx$ then
+
+$$\int_a^b f(x) dx = F(b) - F(a).$$ -->
+
+To find the area under the curve along an interval $[a,b]$, evaluate the antiderivative at the endpoints and subtract them.
+
+✏️ [**Example**]{style="color:green;"}
+
+$$
+\begin{align}
+\int^b_axdx &= \frac{1}{2}x^2\Big|^b_a\\
+            &= \frac{1}{2}(b)^2-\frac{1}{2}(a)^2
+\end{align}
+$$
+:::
+
+::: {.column width="45%"}
+```{r}
+#| echo: false
+#| warning: false
+#| out-width: "100%"
+#| fig-align: "center"
+library(tidyverse)
+a_val <- 1; b_val <- 3
+x <- seq(-1.5, 4, length.out = 400)
+df <- data.frame(x = x, y = x)
+shade <- df |> filter(x >= a_val, x <= b_val)
+
+ggplot(df, aes(x = x, y = y)) +
+  geom_ribbon(data = shade, aes(ymin = 0, ymax = y),
+              fill = "#FEBC11", alpha = 0.7) +
+  geom_hline(yintercept = 0, color = "black", linewidth = 0.7) +
+  geom_vline(xintercept = 0, color = "black", linewidth = 0.7) +
+  geom_line(linewidth = 2.5, color = "#1a5c2e") +
+  geom_vline(xintercept = a_val, linetype = "dashed", color = "gray40") +
+  geom_vline(xintercept = b_val, linetype = "dashed", color = "gray40") +
+  annotate("text", x = a_val, y = -0.4, label = "a", size = 9, fontface = "italic") +
+  annotate("text", x = b_val, y = -0.4, label = "b", size = 9, fontface = "italic") +
+  scale_x_continuous(limits = c(-1.5, 4), breaks = NULL) +
+  scale_y_continuous(limits = c(-1.5, 4), breaks = NULL) +
+  labs(x = "x", y = "y") +
+  theme_minimal() +
+  theme(
+    axis.title = element_text(size = 22),
+    panel.grid = element_blank()
+  )
+```
+:::
+
+::::
+
+<!----------------------------------------------------->
+
+## {#def-solve-blank data-menu-title="Definite Integral"}
+
+[Example]{.slide-title}
+
+<hr>
+
+✏️ [Evaluate the following integral.]{style="color:green;"}
+
+<span style="color:green">
+$$\int^2_{-1}3x^2dx$$
+</span>
+
+<!----------------------------------------------------->
+
+## {#def-solve data-menu-title="Definite Integral"}
+
+[Example]{.slide-title}
+
+<hr>
+
+✏️ [Evaluate the following integral.]{style="color:green;"}
+
+<span style="color:green">
+$$\int^2_{-1}3x^2dx$$
+</span>
+
+We have that:
+$$
+\begin{align}
+\int^2_{-1}3x^2dx &= x^3\Big|^2_{-1}\\
+&=(2)^3-(-1)^3 \\ 
+&=9
+\end{align}
+$$
+
+<!----------------------------------------------------->
+
+## {#area data-menu-title="Area between Curves"}
+
+[Area between two curves]{.slide-title}
+
+<hr>
+
+```{r,out.width="80%"}
+knitr::include_graphics("images/twocurve.png")
+```
+
+<!----------------------------------------------------->
+
+## {#area-ex1 data-menu-title="Area between curves"}
+
+[Example]{.slide-title}
+
+<hr>
+
+✏️ [Find the area of the shaded region in the graph below.]{style="color:green;"}
+
+:::: {.columns}
+
+::: {.column width="40%"}
+![](images/diffxtwo.gif){fig-align="center"}
+
+![](images/twocurve.png){fig-align="center" width=90%}
+:::
+
+::: {.column width="60%"}
+
+:::
+
+::::
+
+----
+
+## {#area-ex2 data-menu-title="Area between curves"}
+
+[Example]{.slide-title}
+
+<hr>
+
+We need to compute
+
+$$\int^1_0 \sqrt{x} - \int^1_0 x^2.$$
+
+Compute each piece carfully:
+
+:::: {.columns}
+
+::: {.column width="40%"}
+$$
+\small
+\begin{align}
+\int^1_0 \sqrt{x} &=\frac{2}{3}x^\frac{3}{2} \Big|_0^1\\
+                  &= \frac{2}{3}(1)^{\frac{3}{2}}-\frac{2}{3}(0)^{\frac{3}{2}} \\
+                  &= \frac{2}{3}.
+\end{align}
+$$
+:::
+
+::: {.column width="60%"}
+$$
+\small
+\begin{align}
+\int^1_0 x^2 &=\frac{1}{3}x^3\Big|_0^1 \\
+            &= \frac{1}{3}(1)^3-\frac{1}{3}(0)^3 \\
+            &= \frac{1}{3}.
+\end{align}
+$$
+:::
+
+::::
+
+Then subtract the upper from the lower:
+
+$$
+\small
+\frac{2}{3}-\frac{1}{3}=\frac{1}{3}
+$$
+
+---
+
+## {#exercises-title data-menu-title="Exercises" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Exercises</div>
+</div>
+
+---
+
+## {#exercises data-menu-title="Exercises"}
+
+
+[Exercises 1]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="30%"}
+A) Find $y$ given that:
+
+$$y'=\frac{3}{x^2}, y(3)=2$$
+:::
+
+
+::: {.column width="40%"}
+B) Find the integral of $g$, where
+
+$$g(t)=3t^5-2t^3+16t-7$$
+:::
+
+::: {.column width="30%"}
+C) Integrate $$\int^4_2\frac{1}{2}x$$
+:::
+
+:::
+
+
+---
+
+## {#ta2-A-solution data-menu-title="Team Assessment 2 Questions" .smaller}
+
+[Solution (A)]{.slide-title}
+
+<hr>
+
+We have that
+
+$$
+\begin{aligned}
+\int \frac{3}{x^2}\,dx 
+&= 3 \int x^{-2}\,dx \\[6pt]
+&= 3 \left( \frac{x^{-1}}{-1} \right) + C \\[6pt]
+&= -\frac{3}{x} + C
+\end{aligned}
+$$
+
+With the initial value $y(3)=2$ we obtain
+
+$$
+\begin{align}
+2 &= y(3) \\
+  &= -\frac{3}{3} + C \\
+  &= -1 + C \\
+3 &= C.
+\end{align}
+$$
+
+Therefore the solution is
+$-\frac{3}{x} +3$. 
+
+## {#ta2-B-solution data-menu-title="Team Assessment 2 Questions"}
+
+[Solution (B)]{.slide-title}
+
+<hr>
+
+We have that
+
+$$\begin{aligned}
+\int \bigl(3t^{5}-2t^{3}+16t-7\bigr)\,dt
+&= \int 3t^{5}\,dt - \int 2t^{3}\,dt + \int 16t\,dt - \int 7\,dt \\[6pt]
+&= 3\frac{t^{6}}{6} - 2\frac{t^{4}}{4} + 16\frac{t^{2}}{2} - 7t + C \\[6pt]
+&= \frac{t^{6}}{2} - \frac{t^{4}}{2} + 8t^{2} - 7t + C
+\end{aligned}$$
+
+## {#ta2-C-solution data-menu-title="Team Assessment 2 Questions"}
+
+[Solution (C)]{.slide-title}
+
+<hr>
+
+We get that
+
+$$\begin{aligned}
+\int_{2}^{4} \frac{1}{2}x\,dx 
+&= \frac{1}{2}\int_{2}^{4} x\,dx \\[6pt]
+&= \frac{1}{2}\left[\frac{x^{2}}{2}\right]_{2}^{4} \\[6pt]
+&= \frac{1}{4}\bigl(4^{2}-2^{2}\bigr) \\[6pt]
+&= \frac{1}{4}(16-4) \\[6pt]
+&= 3
+\end{aligned}$$
+
+---
+
+## {#exercises-2 data-menu-title="Exercises"}
+
+
+[Exercises 2]{.slide-title}
+
+<hr>
+
+2) A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$, where $C$ is the ozone concentration (ppm) and $t$ is the elapsed time in years since 1962. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982? 
+
+
+:::: {.columns}
+
+::: {.column width="40%"}
+3)  A coastal wetland restoration project is being evaluated against a "do-nothing" baseline where the wetland is left degraded. Ecologists model the carbon sequestration rate (tons CO₂ / year) as a function of years since the project began, $t$:
+
+- Restored wetland: $R(t) = 8t - t^2$
+- Degraded baseline: $B(t) = 2t$
+:::
+
+::: {.column width="60%"}
+
+```{r}
+library(ggplot2)
+
+t <- seq(0, 6, length.out = 200)
+df <- data.frame(
+  t = t,
+  R = 8*t - t^2,
+  B = 2*t
+)
+
+ggplot(df, aes(x = t)) +
+  geom_line(aes(y = R, color = "Restored wetland  R(t) = 8t - t²"), linewidth = 1.2) +
+  geom_line(aes(y = B, color = "Degraded baseline  B(t) = 2t"), linewidth = 1.2) +
+  scale_color_manual(values = c(
+    "Restored wetland  R(t) = 8t - t²" = "#2e7d32",
+    "Degraded baseline  B(t) = 2t" = "#8d6e63"
+  )) +
+  labs(
+    x = "Years since project began (t)",
+    y = "Sequestration rate (tons CO2 / yr)",
+    title = "Carbon Sequestration Rate: Restored vs. Degraded Wetland",
+    color = NULL
+  ) +
+  xlim(0, 6) + ylim(0, 18) +
+  theme_minimal() +
+  theme(
+    legend.position = c(0.02, 0.95),
+    legend.justification = c(0, 1),
+    legend.text = element_text(size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 18),
+    plot.title = element_text(size = 20, face = "bold")
+  )
+```
+:::
+
+:::
+
+Both models are valid for $0 \le t \le 6$.
+What is the **total additional carbon sequestered** by the restored wetland over the 6-year period?
+
+
+:::{.center-text .teal-text}
+*Write your answers as full sentences with units!*
+:::
+
+---
+
+## {#exercises-solution-2-blank data-menu-title="Exercise 2 solution" .smaller}
+
+[Solution (2)]{.slide-title}
+
+<hr>
+
+2) A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$, where $C$ is the ozone concentration (ppm) and $t$ is the elapsed time in years since 1962. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982? 
+
+✏️ 
+
+
+---
+
+## {#exercises-solution-2 data-menu-title="Exercise 2 solution" .smaller}
+
+[Solution (2)]{.slide-title}
+
+<hr>
+
+Given:  
+$$\frac{dC}{dt} = 2t + 20$$
+
+Integrate:  
+$$\int dC = \int (2t + 20)\,dt$$  
+
+$$C(t) = t^{2} + 20t + D$$  
+
+Initial condition:  
+$$C(2)=30 \ \  \text{(since 1964 is 2 years after 1962)}$$  
+
+$$30 = 2^{2} + 20\cdot 2 + D$$  
+
+$$D = 30 - 44 = -14$$  
+
+Thus:  
+$$C(t) = t^{2} + 20t - 14$$  
+
+Evaluate at $t=20$ (1982):  
+
+$$C(20) = 20^{2} + 20\cdot 20 - 14$$  
+
+$$= 400 + 400 - 14$$  
+
+$$= 786 \text{ ppm}$$
+
+----
+
+## {#exercises-solution-3-blank data-menu-title="Exercise 2 solution"}
+
+[Solution (3)]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="40%"}
+3)  A coastal wetland restoration project is being evaluated against a "do-nothing" baseline where the wetland is left degraded. Ecologists model the carbon sequestration rate (tons CO₂ / year) as a function of years since the project began, $t$:
+
+- Restored wetland: $R(t) = 8t - t^2$
+- Degraded baseline: $B(t) = 2t$
+:::
+
+::: {.column width="60%"}
+
+```{r}
+library(ggplot2)
+
+t <- seq(0, 6, length.out = 200)
+df <- data.frame(
+  t = t,
+  R = 8*t - t^2,
+  B = 2*t
+)
+
+ggplot(df, aes(x = t)) +
+  geom_line(aes(y = R, color = "Restored wetland  R(t) = 8t - t²"), linewidth = 1.2) +
+  geom_line(aes(y = B, color = "Degraded baseline  B(t) = 2t"), linewidth = 1.2) +
+  scale_color_manual(values = c(
+    "Restored wetland  R(t) = 8t - t²" = "#2e7d32",
+    "Degraded baseline  B(t) = 2t" = "#8d6e63"
+  )) +
+  labs(
+    x = "Years since project began (t)",
+    y = "Sequestration rate (tons CO2 / yr)",
+    title = "Carbon Sequestration Rate: Restored vs. Degraded Wetland",
+    color = NULL
+  ) +
+  xlim(0, 6) + ylim(0, 18) +
+  theme_minimal() +
+  theme(
+    legend.position = c(0.02, 0.95),
+    legend.justification = c(0, 1),
+    legend.text = element_text(size = 18),
+    axis.title = element_text(size = 18),
+    axis.text = element_text(size = 18),
+    plot.title = element_text(size = 20, face = "bold")
+  )
+```
+:::
+
+:::
+
+Both models are valid for $0 \le t \le 6$.
+What is the **total additional carbon sequestered** by the restored wetland over the 6-year period?
+
+
+✏️ 
+
+----
+
+## {#exercises-solution-3-work data-menu-title="Exercise 2 solution"}
+
+[Solution (3)]{.slide-title}
+
+<hr>
+
+✏️
+
+----
+
+## {#exercises-solution-3 data-menu-title="Exercise 2 solution"}
+
+[Solution (3)]{.slide-title}
+
+<hr>
+
+The toal carbon sequestered in each scenario is given by the area under the curve of the corresponding sequestration rate. 
+
+So the total *additional* carbon sequesterd is represented by the area between the two sequestration rate curves. 
+
+Integrate:
+
+$$\int_0^6 \big[R(t) - B(t)\big]\, dt = \int_0^6 (6t - t^2)\, dt$$
+
+$$= \left[3t^2 - \frac{t^3}{3}\right]_0^6 = (3(36) - \tfrac{216}{3}) - 0 = 108 - 72 = 36$$
+
+
+Over the 6-year period, restoring the wetland sequesters an
+additional **36 tons of CO₂** compared to leaving it
+degraded.
+
+
+---
+
+## {#differential-equations-title data-menu-title="Differential equations" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Differential equations</div>
+</div>
+
+---
+
+## {#diffeq data-menu-title="Diff Eq"}
+
+[What is a differential equation?]{.slide-title}
+
+<hr>
+
+A **differential equation** is any equation which contains derivatives. 
+
+The goal of the differential equation is to find a function that satisfies the equation. 
+
+<br>
+
+**Example**
+
+The equation
+
+$$
+y' = y + x
+$$
+
+is a differential equation in which we want to find a function $y(x)$ such that its derivative equals the function plus $x$.
+
+✏️ [1. How would you check that $y(x) = -x -1$ is a solution for this differential equation?]{style="color:green;"}
+
+---
+
+## {#terms data-menu-title="Terms"} 
+
+[Differential equations: terms]{.slide-title}
+
+<hr>
+
+::: {.body-text-m}
+- **Ordinary differential equation (ODE):** Does not contain partial derivatives
+
+$$\frac{df}{dt}=3.2-f(t)$$
+
+<span style="font-size: 0.8em;">
+*Sometimes functions have more than one variable and we can take **partial derivatives** with respect to each variable.*
+</span>
+
+- **Partial differential equations (PDE):** Differential equations with partial derivatives
+
+$$\frac{\partial B}{\partial t}= \alpha B+0.31x-21.6$$
+:::
+
+---
+
+## {#order-ODE data-menu-title="Order of ODE"} 
+
+[Order of an ODE]{.slide-title}
+
+<hr>
+
+[**Order:** The order of a differential equation is the highest order for any differential expression in the equation ]{.body-text-m}
+
+<br>
+
+[**Example:**]{.body-text-l .teal-text}
+
+[$\frac{df}{dt}=3.2-f(t)$ is a **first order ordinary differential equation**]{.body-text-m}
+
+<br>
+
+[**Example:**]{.body-text-l .teal-text} 
+
+[$\frac{\partial^3x}{\partial t^3}=2x-4.5\frac{\partial x}{\partial t}$ is a **third order partial differential equation**]{.body-text-m}
+
+---
+
+## {#practice data-menu-title="Practice"} 
+
+[Practice:]{.slide-title}
+
+<hr>
+
+[Use the terms from the previous slide to describe the following different equations:]{.body-text-m style="color:green;"}
+
+::: {.body-text-m}
+$$2.9t^2 - \alpha B=\frac{dB}{dt}$$
+
+<br>
+
+$$\frac{\partial^2f }{\partial x^2}=1.4\times10^{-3}f(x)+5.2$$
+
+<br>
+
+$$\frac{dC}{dt}=4.1C-8.0$$
+:::
+
+---
+
+## {#why-diff-equations data-menu-title="Why differential equations"} 
+
+[Differential equations help us understand changing environments]{.slide-title}
+
+<hr>
+
+- For some natural phenomena it can be easier to describe them in terms of derivatives than give an explicit function.
+
+- By specifying how something changes, we are describing a process or behavior over time. 
+
+- Examples:
+
+:::: {.columns}
+
+::: {.column width="50%"}
+![Describing population dynamics](images/lynx-hare-300.jpg){fig-align="center" width="70%"}
+:::
+
+::: {.column width="50%"}
+![Groundwater transport of absorbed contaminants](images/pollution.jpg){fig-align="center" width="65%"}
+:::
+
+:::
+
+---
+
+## {#lotka-volterra data-menu-title="tbd"} 
+
+[Example: Lotka-Volterra (predator-prey) equations]{.slide-title2}
+
+<hr>
+
+::: {.body-text-m}
+<!-- $$\frac{dx}{dt}=\alpha x-\beta xy$$ -->
+Prey: $\frac{dV}{dt}=r V-\alpha VP$
+
+<br>
+
+<!-- $$\frac{dy}{dt}=\delta xy - \gamma y$$ -->
+Predator: $\frac{dP}{dt}=\beta VP - qP$
+
+
+**Where:** 
+
+- $V$ is number of prey (e.g. rabbits)
+- $P$ is number of predators (e.g. wolves)
+- $r, \alpha, \beta, q$ are positive parameters
+:::
+
+::: {.center-text}
+**What do the different pieces of the equation *mean*?**
+:::
+
+::: {.notes}
+- $r$: intrinsic rate of increase
+- $\alpha$: capture efficiency of predators (i.e. effect of a predator on per capita growth rate of prey population)
+  - the larger $\alpha$ is, the more the per capita growht rate of a prey population is depressed by the addition of a single predator (e.g. baleen whales feeding on plankton vs. web-building spider capturing a mosquito)
+- $\beta$: a measure of conversion efficiency (i.e. the ability of predators to convert each new prey ite m into additional per capita growth rate for the predator population) 
+  - $\beta$ is high when a single prey item is high value (e.g. a moose prey to wolf predator vs. a seed to a bird)
+- $q$: per capita death rate (these predators are extreme specialists with no alternative prey sources; so if prey are absent, the predator population declines exponentially)
+:::
+
+---
+
+## {#interpretation-prey data-menu-title="Interpretation (prey)"} 
+
+[Interpretation of prey equation:]{.slide-title}
+
+<hr>
+
+
+::: {.body-text-l}
+$$\frac{dV}{dt}=r V-\alpha VP$$
+:::
+<!-- $$\frac{dx}{dt}=\alpha x-\beta xy$$ -->
+
+::: {.body-text-m}
+**The pieces:** 
+
+- $\frac{dV}{dt}$: Rate of growth / decline in prey abundance 
+- $r V$: Population growth (without loss due to predation (assumes predators are the only force limited the growth of the prey population), where $r$ is the intrinsic rate of increase)
+- $-\alpha VP$: Population loss due to predation (where $\alpha$ is the capture efficiency of the predator)
+:::
+
+---
+
+## {#interpretation-pred data-menu-title="Interpretation (predator)"} 
+
+[Interpretation of predator equation:]{.slide-title}
+
+<hr>
+
+::: {.body-text-l}
+$$\frac{dP}{dt}=\beta VP - q P$$
+:::
+
+::: {.body-text-m}
+**The pieces:** 
+
+- $\frac{dP}{dt}$: Rate of growth / decline in predator population
+- $\beta VP$: Predator population growth (where $\beta$ is a measure of conversion efficiency, i.e. the ability of predators to convert each new prey into additional per capita growth rate for the predator population)
+- $-q P$: Predator population loss (where $q$ is the per capita death rate;  positive population growth only happens when prey are present)
+:::
+
+---
+
+## {#pred-prey-image data-menu-title="Pred/prey image"} 
+
+[Or, in pictures:]{.slide-title}
+
+<hr>
+
+<br>
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+knitr::include_graphics("images/predator-prey-image.png")
+```
+
+<br>
+
+::: {.footer}
+Adapted frrom Christopher Rackauckas, [*Scientific machine learning: interpretable neural networks that accurately extrapolate from small data.*](https://www.stochasticlifestyle.com/how-to-train-interpretable-neural-networks-that-accurately-extrapolate-from-small-data/) from the Stochastic Lifestyle blog. 
+:::
+
+::: {.notes}
+Now we know the rates of change for both populations, but what we still want to know is the actual numbers through time.
+:::
+
+---
+
+## {#approx-sols data-menu-title="Find approximate solutions"} 
+
+[Finding $V(t)$ and $P(t)$?]{.slide-title}
+<!-- [Finding $x(t)$ and $y(t)$?]{.slide-title} -->
+
+<hr>
+
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+knitr::include_graphics("images/lotka-volterra.svg")
+```
+
+::: {.footer}
+Integration to find approximate solutions. *Image: [Modelica by Example](https://mbe.modelica.university/behavior/equations/population/)*
+:::
+
+---
+
+## {#solve-analytically-blank data-menu-title="Solve analytically"} 
+
+[Some differential equations can be solved analytically:]{.slide-title3}
+
+<hr>
+
+<div style="position: absolute; bottom: 550px; right: 1000px; font-size: 1em;">                                                                               
+✏️                    
+</div>  
+
+
+---
+
+## {#solve-analytically data-menu-title="Solve analytically"} 
+
+[Some differential equations can be solved analytically:]{.slide-title3}
+
+<hr>
+
+::: {.body-text-m}
+$$\frac{dy}{dx}=y$$
+
+<br>
+
+**Separate variables and integrate both sides:** 
+
+$$\int\frac{1}{y}dy=\int1dx$$
+
+<br>
+
+**Yielding:** 
+
+::: {.center-text}
+$ln(y)=x$ or $y=e^x$
+:::
+
+:::
+
+---
+
+## {#solve-numerically data-menu-title="Solve numerically"} 
+
+[Solving differential equations numerically]{.slide-title}
+
+<hr>
+
+<br>
+
+::: {.body-text-m}
+Find *approximate* solutions to differential equations when finding an analytical solution would be really challenging (...which is pretty often).
+
+<br>
+
+Instead, computers can numerically approximate solutions by predicting nearby values based on the *slope*. 
+
+<br>
+
+**There are many methods for solving differential equations numerically. You'll do it programatically later on.** 
+:::
+ 
+---
+
+## {#wrapping-up data-menu-title="Integration" background-color="#003660"}
+
+<div class="page-center">
+<div class="custom-subtitle">Wrapping up...</div>
+</div>
+
+---
+
+## {#acknowledgements data-menu-title="Null hypothesis"}
+
+[This course is an iterative effort]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+::: {.column width="25%"}
+![](images/allison_horst.png){height="150px" fig-align="center"}
+
+::: {.center-text}
+Allison Horst
+:::
+:::
+
+::: {.column width="25%"}
+![](images/ruth.png){height="150px" fig-align="center"}
+
+::: {.center-text}
+Ruth Oliver
+:::
+:::
+
+::: {.column width="25%"}
+![](images/nathan_grimes.png){height="150px" fig-align="center"}
+
+::: {.center-text}
+Nathan Grimes
+:::
+:::
+
+::: {.column width="25%"}
+![](images/carmen.png){height="150px" fig-align="center"}
+
+::: {.center-text}
+Carmen Galaz García
+:::
+:::
+::::
+
+<br>
+
+:::: {.columns}
+::: {.column width="33%"}
+![](images/sam.png){height="150px" fig-align="center"}
+
+::: {.center-text}
+Sam Shanny-Csik
+:::
+:::
+
+::: {.column width="33%"}
+![](images/alessandra.png){height="150px" fig-align="center"}
+
+::: {.center-text}
+Alessandra Vidal Meza
+:::
+:::
+
+::: {.column width="33%"}
+![](images/cella.png){height="150px" fig-align="center"}
+
+::: {.center-text}
+Cella Schnabel
+:::
+:::
+::::
+
+---
+
+## {#everything-we-covered data-menu-title="Null hypothesis"}
+
+[We covered a lot!]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column style="width:33%;"}
+
+- <span style="color:#E6001C"><b>🔢 Algebra review</b></span>
+- <span style="color:#FF6600"><b>🗺️ Solving equations</b></span>
+- <span style="color:#EDC001"><b>✖️ Exponents</b></span>
+- <span style="color:#00994D"><b>📐 Polynomials</b></span>
+- <span style="color:#0088CC"><b>🌡 Units</b></span>
+- <span style="color:#3355CC"><b>📏 Metric prefixes</b></span>
+- <span style="color:#9933CC"><b>🧊 Area & volume conversions</b></span>
+- <span style="color:#E6007E"><b>⚖️ Dimensional analysis</b></span>
+- <span style="color:#E6001C"><b>🧪 Parts per million</b></span>
+- <span style="color:#FF6600"><b>🧩 Definition of functions</b></span>
+- <span style="color:#EDC001"><b>📊 Graphing</b></span>
+- <span style="color:#00994D"><b>📈 $x$ and $y$ intercepts</b></span>
+- <span style="color:#0088CC"><b>🌱 The number e and $e^x$</b></span>
+:::
+
+::: {.column style="width:33%;"}
+- <span style="color:#3355CC"><b>🐰 Logistic growth</b></span>
+- <span style="color:#9933CC"><b>🪵 Natural logarithms</b></span>
+- <span style="color:#E6007E"><b>📈 Linear functions</b></span>
+- <span style="color:#E6001C"><b>↗️ Slope as a rate of change</b></span>
+- <span style="color:#FF6600"><b>🔎 Limits</b></span>
+- <span style="color:#EDC001"><b>🖊️ Derivatives and rate of change</b></span>
+- <span style="color:#00994D"><b>🛤️ Tangent lines</b></span>
+- <span style="color:#0088CC"><b>📝 Rules for differentiation</b></span>
+- <span style="color:#3355CC"><b>🔹 Constant rule</b></span>
+- <span style="color:#9933CC"><b>💪 Power rule</b></span>
+:::
+
+::: {.column style="width:33%;"}
+
+- <span style="color:#E6007E"><b>➕ Sum and difference rule</b></span>
+- <span style="color:#E6001C"><b>📈 Higher order derivatives</b></span>
+- <span style="color:#FF6600"><b>🧮 Riemann sums</b></span>
+- <span style="color:#EDC001"><b>∫ Integrals</b></span>
+- <span style="color:#00994D"><b>📐 Rules of integration</b></span>
+- <span style="color:#0088CC"><b>✏️ Initial value problems</b></span>
+- <span style="color:#3355CC"><b>🧾 Definite and indefinite integrals</b></span>
+- <span style="color:#E6007E"><b>🌊 A bit of ODEs</b></span>
+- <span style="color:#FF6600"><b>🐟 Applications to MESM core courses</b></span>
+:::
+
+::::
+
+---
+
+![](images/you_know_stuff.png)
+
+---
+
+
+## {#course-evals data-menu-title="Null hypothesis"}
+
+[Pleaes fill out the exit survey!]{.slide-title}
+
+<hr>
+
+:::{.center-text}
+![](images/exit-survey.png)
+:::
+
