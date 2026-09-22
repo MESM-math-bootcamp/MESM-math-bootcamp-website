@@ -1245,7 +1245,70 @@ $$\frac{\partial B}{\partial t}= \alpha B+0.31x-21.6$$
 
 ---
 
-## {#lotka-volterra data-menu-title="tbd"} 
+## {#isoclines data-menu-title="Isoclines"}
+
+[What is an isocline?]{.slide-title}
+
+<hr>
+
+:::: {.columns}
+
+::: {.column width="45%"}
+::: {.body-text-m}
+For an equation $\frac{dy}{dx}=f(x,y)$:
+
+- An **isocline** is a curve along which the slope $\frac{dy}{dx}$ is **the same constant value** everywhere
+- *"iso"* = same, *"cline"* = slope
+
+<br>
+
+Isoclines let us sketch what solutions look like *without solving the equation* — handy when an equation (like Lotka-Volterra!) is too messy to solve analytically.
+:::
+:::
+
+::: {.column width="55%"}
+```{r}
+#| eval: true
+#| echo: false
+#| out-width: "100%"
+#| fig-align: "center"
+library(tidyverse)
+
+grid <- expand.grid(x = seq(-4, 4, by = 1), y = seq(-4, 4, by = 1)) %>%
+  mutate(slope = x - y,
+         theta = atan(slope),
+         len = 0.42,
+         dx = len * cos(theta),
+         dy = len * sin(theta))
+
+isoclines <- tibble(c = c(-3, 0, 3)) %>%
+  mutate(intercept = -c)
+
+ggplot() +
+  geom_segment(data = grid, aes(x = x - dx, xend = x + dx, y = y - dy, yend = y + dy),
+               color = "grey45", linewidth = 1) +
+  geom_abline(data = isoclines, aes(intercept = intercept, slope = 1, color = factor(c)),
+              linewidth = 2.5) +
+  scale_color_manual(values = c("-3" = "#E6001C", "0" = "#FEBC11", "3" = "#00994D"),
+                      labels = c("slope = -3", "slope = 0", "slope = 3"),
+                      name = NULL) +
+  coord_equal(xlim = c(-4, 4), ylim = c(-4, 4)) +
+  theme_classic() +
+  theme(text = element_text(size = 28),
+        legend.position = "bottom") +
+  labs(x = "x", y = "y")
+```
+
+::: {.footer}
+Example shown: $\frac{dy}{dx}=x-y$. Grey ticks show the slope at each point; each colored line connects points that all share the same slope.
+:::
+:::
+
+::::
+
+---
+
+## {#lotka-volterra data-menu-title="tbd"}
 
 [Example: Lotka-Volterra (predator-prey) equations]{.slide-title2}
 
@@ -1253,19 +1316,19 @@ $$\frac{\partial B}{\partial t}= \alpha B+0.31x-21.6$$
 
 ::: {.body-text-m}
 <!-- $$\frac{dx}{dt}=\alpha x-\beta xy$$ -->
-Prey: $\frac{dV}{dt}=r V-\alpha VP$
+Prey: $\frac{dN}{dt}=r N- \alpha NP$
 
 <br>
 
 <!-- $$\frac{dy}{dt}=\delta xy - \gamma y$$ -->
-Predator: $\frac{dP}{dt}=\beta VP - qP$
+Predator: $\frac{dP}{dt}=ab NP - mP$
 
 
-**Where:** 
+**Where:**
 
-- $V$ is number of prey (e.g. rabbits)
+- $N$ is number of prey (e.g. rabbits)
 - $P$ is number of predators (e.g. wolves)
-- $r, \alpha, \beta, q$ are positive parameters
+- $r, \alpha, a, b, m$ are positive parameters
 :::
 
 ::: {.center-text}
@@ -1274,11 +1337,11 @@ Predator: $\frac{dP}{dt}=\beta VP - qP$
 
 ::: {.notes}
 - $r$: intrinsic rate of increase
-- $\alpha$: capture efficiency of predators (i.e. effect of a predator on per capita growth rate of prey population)
-  - the larger $\alpha$ is, the more the per capita growht rate of a prey population is depressed by the addition of a single predator (e.g. baleen whales feeding on plankton vs. web-building spider capturing a mosquito)
-- $\beta$: a measure of conversion efficiency (i.e. the ability of predators to convert each new prey ite m into additional per capita growth rate for the predator population) 
-  - $\beta$ is high when a single prey item is high value (e.g. a moose prey to wolf predator vs. a seed to a bird)
-- $q$: per capita death rate (these predators are extreme specialists with no alternative prey sources; so if prey are absent, the predator population declines exponentially)
+- $a$: attack rate, or capture efficiency, of predators (i.e. effect of a predator on per capita growth rate of prey population)
+  - the larger $a$ is, the more the per capita growht rate of a prey population is depressed by the addition of a single predator (e.g. baleen whales feeding on plankton vs. web-building spider capturing a mosquito)
+- $b$: a measure of conversion efficiency (i.e. the ability of predators to convert each new prey item into additional per capita growth rate for the predator population)
+  - $b$ is high when a single prey item is high value (e.g. a moose prey to wolf predator vs. a seed to a bird)
+- $m$: predator mortality, i.e. per capita death rate (these predators are extreme specialists with no alternative prey sources; so if prey are absent, the predator population declines exponentially)
 :::
 
 ---
@@ -1291,16 +1354,16 @@ Predator: $\frac{dP}{dt}=\beta VP - qP$
 
 
 ::: {.body-text-l}
-$$\frac{dV}{dt}=r V-\alpha VP$$
+$$\frac{dN}{dt}=r N-a NP$$
 :::
 <!-- $$\frac{dx}{dt}=\alpha x-\beta xy$$ -->
 
 ::: {.body-text-m}
-**The pieces:** 
+**The pieces:**
 
-- $\frac{dV}{dt}$: Rate of growth / decline in prey abundance 
-- $r V$: Population growth (without loss due to predation (assumes predators are the only force limited the growth of the prey population), where $r$ is the intrinsic rate of increase)
-- $-\alpha VP$: Population loss due to predation (where $\alpha$ is the capture efficiency of the predator)
+- $\frac{dN}{dt}$: Rate of growth / decline in prey abundance
+- $r N$: Population growth ( $r$ is the intrinsic rate of increase)
+- $-\alpha NP$: Population loss due to predation (where $a$ is the attack rate, or capture efficiency, of the predator)
 :::
 
 ---
@@ -1312,15 +1375,15 @@ $$\frac{dV}{dt}=r V-\alpha VP$$
 <hr>
 
 ::: {.body-text-l}
-$$\frac{dP}{dt}=\beta VP - q P$$
+$$\frac{dP}{dt}=ba NP - m P$$
 :::
 
 ::: {.body-text-m}
-**The pieces:** 
+**The pieces:**
 
 - $\frac{dP}{dt}$: Rate of growth / decline in predator population
-- $\beta VP$: Predator population growth (where $\beta$ is a measure of conversion efficiency, i.e. the ability of predators to convert each new prey into additional per capita growth rate for the predator population)
-- $-q P$: Predator population loss (where $q$ is the per capita death rate;  positive population growth only happens when prey are present)
+- $ba NP$: Predator population growth 
+- $-m P$: Predator population loss (where $m$ is the predator mortality)
 :::
 
 ---
@@ -1355,7 +1418,7 @@ Now we know the rates of change for both populations, but what we still want to 
 
 ## {#approx-sols data-menu-title="Find approximate solutions"} 
 
-[Finding $V(t)$ and $P(t)$?]{.slide-title}
+[Finding $N(t)$ and $P(t)$?]{.slide-title}
 <!-- [Finding $x(t)$ and $y(t)$?]{.slide-title} -->
 
 <hr>
