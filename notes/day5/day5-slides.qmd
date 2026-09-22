@@ -1245,69 +1245,6 @@ $$\frac{\partial B}{\partial t}= \alpha B+0.31x-21.6$$
 
 ---
 
-## {#isoclines data-menu-title="Isoclines"}
-
-[What is an isocline?]{.slide-title}
-
-<hr>
-
-:::: {.columns}
-
-::: {.column width="45%"}
-::: {.body-text-m}
-For an equation $\frac{dy}{dx}=f(x,y)$:
-
-- An **isocline** is a curve along which the slope $\frac{dy}{dx}$ is **the same constant value** everywhere
-- *"iso"* = same, *"cline"* = slope
-
-<br>
-
-Isoclines let us sketch what solutions look like *without solving the equation* — handy when an equation (like Lotka-Volterra!) is too messy to solve analytically.
-:::
-:::
-
-::: {.column width="55%"}
-```{r}
-#| eval: true
-#| echo: false
-#| out-width: "100%"
-#| fig-align: "center"
-library(tidyverse)
-
-grid <- expand.grid(x = seq(-4, 4, by = 1), y = seq(-4, 4, by = 1)) %>%
-  mutate(slope = x - y,
-         theta = atan(slope),
-         len = 0.42,
-         dx = len * cos(theta),
-         dy = len * sin(theta))
-
-isoclines <- tibble(c = c(-3, 0, 3)) %>%
-  mutate(intercept = -c)
-
-ggplot() +
-  geom_segment(data = grid, aes(x = x - dx, xend = x + dx, y = y - dy, yend = y + dy),
-               color = "grey45", linewidth = 1) +
-  geom_abline(data = isoclines, aes(intercept = intercept, slope = 1, color = factor(c)),
-              linewidth = 2.5) +
-  scale_color_manual(values = c("-3" = "#E6001C", "0" = "#FEBC11", "3" = "#00994D"),
-                      labels = c("slope = -3", "slope = 0", "slope = 3"),
-                      name = NULL) +
-  coord_equal(xlim = c(-4, 4), ylim = c(-4, 4)) +
-  theme_classic() +
-  theme(text = element_text(size = 28),
-        legend.position = "bottom") +
-  labs(x = "x", y = "y")
-```
-
-::: {.footer}
-Example shown: $\frac{dy}{dx}=x-y$. Grey ticks show the slope at each point; each colored line connects points that all share the same slope.
-:::
-:::
-
-::::
-
----
-
 ## {#lotka-volterra data-menu-title="tbd"}
 
 [Example: Lotka-Volterra (predator-prey) equations]{.slide-title2}
@@ -1642,6 +1579,14 @@ Cella Schnabel
 <hr>
 
 :::{.center-text}
-![](images/exit-survey.png)
+![](images/exit-survey-qr.png){width="40%"}
+
+[https://bit.ly/4yfEknE](https://bit.ly/4yfEknE)
 :::
+
+<div style="font-size:3rem; text-align:center; font-weight:bold;">
+🎉 Have a great Fall Quarter! 🍂
+</div>
+
+
 
