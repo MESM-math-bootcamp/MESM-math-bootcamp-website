@@ -850,6 +850,63 @@ $$
 
 ---
 
+## {#exercise-initial-value data-menu-title="Definite vs Indefinite"}
+
+[Exercise]{.slide-title}
+
+<hr>
+
+:::{style="color:green;"}
+A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$, where $C$ is the ozone concentration (ppm) and $t$ is the elapsed time in years since 1962. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982? 
+:::
+
+✏️         
+
+
+---
+
+## {#exercise-initial-value-sol data-menu-title="Definite vs Indefinite" .smaller}
+
+[Exercise]{.slide-title}
+
+<hr>
+
+:::{style="color:green;"}
+A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$, where $C$ is the ozone concentration (ppm) and $t$ is the elapsed time in years since 1962. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982? 
+:::
+
+
+Given:  
+$$\frac{dC}{dt} = 2t + 20$$
+
+Integrate:  
+$$\int dC = \int (2t + 20)\,dt$$  
+
+$$C(t) = t^{2} + 20t + D$$  
+
+Initial condition:  
+$$C(2)=30 \ \  \text{(since 1964 is 2 years after 1962)}$$  
+
+$$30 = 2^{2} + 20\cdot 2 + D$$  
+
+$$D = 30 - 44 = -14$$  
+
+Thus:  
+$$C(t) = t^{2} + 20t - 14$$  
+
+Evaluate at $t=20$ (1982):  
+
+$$C(20) = 20^{2} + 20\cdot 20 - 14$$  
+
+$$= 400 + 400 - 14$$  
+
+$$= 786 \text{ ppm}$$
+
+
+
+
+---
+
 ## {#definite-integrals data-menu-title="Definite integrals" background-color="#003660"}
 
 <div class="page-center">
@@ -1004,60 +1061,20 @@ $$
 ## {#exercises data-menu-title="Exercises"}
 
 
-[Exercises 1]{.slide-title}
+[Exercise]{.slide-title}
 
 <hr>
 
-:::: {.columns}
-
-::: {.column width="50%"}
-
+:::{style="color:green;"}
+Integrate $$\int^4_2\frac{1}{2}x.$$ Make a diagram to represent the area this integral represents.
 :::
-
-::: {.column width="50%"}
-B) Integrate $$\int^4_2\frac{1}{2}x.$$ Make a diagram to represent the area this integral represents.
-:::
-
-:::
-
----
-
-## {#ta2-A-solution data-menu-title="Team Assessment 2 Questions" .smaller}
-
-[Solution (A)]{.slide-title}
-
-<hr>
-
-We have that
-
-$$
-\begin{aligned}
-\int \frac{3}{x^2}\,dx 
-&= 3 \int x^{-2}\,dx \\[6pt]
-&= 3 \left( \frac{x^{-1}}{-1} \right) + C \\[6pt]
-&= -\frac{3}{x} + C
-\end{aligned}
-$$
-
-With the initial value $y(3)=2$ we obtain
-
-$$
-\begin{align}
-2 &= y(3) \\
-  &= -\frac{3}{3} + C \\
-  &= -1 + C \\
-3 &= C.
-\end{align}
-$$
-
-Therefore the solution is
-$-\frac{3}{x} +3$. 
+✏️ 
 
 ---
 
 ## {#ta2-C-solution data-menu-title="Team Assessment 2 Questions"}
 
-[Solution (B)]{.slide-title}
+[Solution]{.slide-title}
 
 <hr>
 
@@ -1082,6 +1099,24 @@ $$\begin{aligned}
 
 ---
 
+## {#diffeq-blank data-menu-title="Diff Eq"}
+
+[What is a differential equation?]{.slide-title}
+
+<hr>
+
+A **differential equation** is any equation which contains derivatives. 
+
+The goal of the differential equation is to find a function that satisfies the equation. 
+
+<br>
+
+**Example**
+
+✏️
+
+---
+
 ## {#diffeq data-menu-title="Diff Eq"}
 
 [What is a differential equation?]{.slide-title}
@@ -1096,32 +1131,70 @@ The goal of the differential equation is to find a function that satisfies the e
 
 **Example**
 
-The equation
 
 $$
-y' = y + x
+\text{Solve for $y(x)$ in} \hspace{0.5 cm} y'(x) = y(x) + x.
 $$
 
-is a differential equation in which we want to find a function $y(x)$ such that its derivative equals the function plus $x$.
+Notation is often simplified as 
 
-✏️ [1. How would you check that $y(x) = -x -1$ is a solution for this differential equation?]{style="color:green;"}
+$$
+\text{Solve for $y$ in} \hspace{0.5 cm} y' = y + x.
+$$
+
+
+- Is a differential equation because we are trying to find the function $y$ with information about its derivative $y'$.
+
+- Translated as: find a function $y(x)$ whose derivative equals the function pluse $x$. 
+
+---
+
+## {#diffeq-solution data-menu-title="Diff Eq"}
+
+[What is a solution to a differential equation?]{.slide-title}
+
+<hr>
+
+In a "normal" equation the solutions are a set of values of $x$. 
+
+$$
+\text{Solve for $x$ in} \hspace{0.5 cm} x^2 - 4 = 0.
+$$
+
+:::{style="color:green;" .center-text}
+How would you check that $x=2$ is a solution for the equation?
+:::
+
+<br>
+<br>
+
+In a differential equation, the solutions are whole functions.
+
+$$
+\text{Solve for $y$ in} \hspace{0.5 cm} y' = y + x.
+$$
+
+:::{style="color:green;" .center-text}
+How would you check that $y(x) = -x -1$ is a solution for this differential equation?
+:::
 
 ---
 
 ## {#terms data-menu-title="Terms"} 
 
-[Differential equations: terms]{.slide-title}
+[Differential equations: vocab]{.slide-title}
 
 <hr>
+
+<span style="font-size: 0.8em;">
+*Sometimes functions have more than one variable and we can take **partial derivatives** with respect to each variable.*
+</span>
 
 ::: {.body-text-m}
 - **Ordinary differential equation (ODE):** Does not contain partial derivatives
 
 $$\frac{df}{dt}=3.2-f(t)$$
 
-<span style="font-size: 0.8em;">
-*Sometimes functions have more than one variable and we can take **partial derivatives** with respect to each variable.*
-</span>
 
 - **Partial differential equations (PDE):** Differential equations with partial derivatives
 
@@ -1143,34 +1216,6 @@ $$\frac{\partial B}{\partial t}= \alpha B+0.31x-21.6$$
 [**Example:**]{.body-text-l .teal-text}
 
 [$\frac{df}{dt}=3.2-f(t)$ is a **first order ordinary differential equation**]{.body-text-m}
-
-<br>
-
-[**Example:**]{.body-text-l .teal-text} 
-
-[$\frac{\partial^3x}{\partial t^3}=2x-4.5\frac{\partial x}{\partial t}$ is a **third order partial differential equation**]{.body-text-m}
-
----
-
-## {#practice data-menu-title="Practice"} 
-
-[Practice:]{.slide-title}
-
-<hr>
-
-[Use the terms from the previous slide to describe the following different equations:]{.body-text-m style="color:green;"}
-
-::: {.body-text-m}
-$$2.9t^2 - \alpha B=\frac{dB}{dt}$$
-
-<br>
-
-$$\frac{\partial^2f }{\partial x^2}=1.4\times10^{-3}f(x)+5.2$$
-
-<br>
-
-$$\frac{dC}{dt}=4.1C-8.0$$
-:::
 
 ---
 
@@ -1335,9 +1380,7 @@ Integration to find approximate solutions. *Image: [Modelica by Example](https:/
 
 <hr>
 
-<div style="position: absolute; bottom: 550px; right: 1000px; font-size: 1em;">                                                                               
-✏️                    
-</div>  
+✏️ 
 
 
 ---
@@ -1516,7 +1559,7 @@ Cella Schnabel
 - <span style="color:#00994D"><b>📐 Rules of integration</b></span>
 - <span style="color:#0088CC"><b>✏️ Initial value problems</b></span>
 - <span style="color:#3355CC"><b>🧾 Definite and indefinite integrals</b></span>
-- <span style="color:#E6007E"><b>🌊 A bit of ODEs</b></span>
+- <span style="color:#E6007E"><b>🌊 What is an ODE</b></span>
 - <span style="color:#FF6600"><b>🐟 Applications to MESM core courses</b></span>
 :::
 

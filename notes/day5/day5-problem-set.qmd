@@ -174,3 +174,17 @@ $$= 400 + 400 - 14$$
 
 $$= 786 \text{ ppm}$$
 
+
+## Continuous population growth
+
+*This is an exercise for students to understand what an ODE is, practice derivatives, and use separation of variables to solve an ODE.*
+
+Using the BIDE model, the per capita growth rate of a population $N$ with respect to time $t$ can be written as
+
+$$\frac{1}{N}\frac{dN}{dt} = r,$$
+
+where $r$, the intrinsic growth rate, is constant. 
+
+(1) Explain why the previous equation is an ordinary differential equation. 
+
+(2) Verify that $N_0\cdot e^{rt}$ is a solution for this differential equation. 
