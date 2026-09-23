@@ -7,6 +7,8 @@
 
 [**Lecture slides**](lecture-algebra.qmd){target="_blank"}
 
+[**Annotated slides**](day1-after-class.pdf){target="_blank"}
+
 :::
 
 

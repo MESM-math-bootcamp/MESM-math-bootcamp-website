@@ -14,7 +14,11 @@
 
 [**Lecture slides - part 1**](day3-graphs-short.qmd){target="_blank"}
 
+[**Annotated slides - part 1**](day3-part1-after-class.pdf){target="_blank"}
+
 [**Lecture slides - part 2**](day3-slides.qmd){target="_blank"}
+
+[**Annotated slides - part 2**](day3-part2-after-class.pdf){target="_blank"}
 
 :::
 

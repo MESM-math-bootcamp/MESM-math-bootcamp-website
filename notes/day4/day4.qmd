@@ -14,6 +14,8 @@
 
 [**Lecture slides**](day4-slides.qmd){target="_blank"}
 
+[**Annotated slides**](day4-after-class.pdf){target="_blank"}
+
 :::
 
 **Contents**

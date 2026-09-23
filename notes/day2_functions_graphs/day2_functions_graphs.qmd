@@ -16,6 +16,8 @@
 
 [**Lecture slides**](lecture-functions-graphs.qmd){target="_blank"}
 
+[**Annotated slides**](day2-after-class.pdf){target="_blank"}
+
 :::
 
 **Contents**
