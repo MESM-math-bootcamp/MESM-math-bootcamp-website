@@ -1,0 +1,222 @@
+---
+sidebar: daily-materials
+execute:
+  freeze: true
+author: "Carmen Galaz García"  
+---
+
+# Solutions: Integrals problem set
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message=FALSE,warning=FALSE)
+
+library(tidyverse)
+```
+
+::: {.callout-tip}
+## Instructions
+These are the solutions to the [rates of change, limits, and derivatives problem set](day5-problem-set.qmd). Click a solution to expand it and try each problem yourself first!
+:::
+
+
+
+## Indefinite and definite integrals, and initial value problems
+
+**1)** Find the indefinite integral: $\int 7\,dx$
+
+::: {.callout-note collapse="true"}
+## Solution
+
+We can use the power rule to solve this one:
+$$
+\int 7\,dx = \int 7x^0\,dx = 7\frac{x^{0+1}}{1} +C =7x+C
+$$
+:::
+
+<br>
+
+**2)** Find the integral of $g$, where
+
+$$g(t)=3t^5-2t^3+16t-7$$
+
+
+:::{.callout-note collapse="true"}
+## Solution
+We have that
+
+$$\begin{aligned}
+\int \bigl(3t^{5}-2t^{3}+16t-7\bigr)\,dt
+&= \int 3t^{5}\,dt - \int 2t^{3}\,dt + \int 16t\,dt - \int 7\,dt \\[6pt]
+&= 3\frac{t^{6}}{6} - 2\frac{t^{4}}{4} + 16\frac{t^{2}}{2} - 7t + C \\[6pt]
+&= \frac{t^{6}}{2} - \frac{t^{4}}{2} + 8t^{2} - 7t + C
+\end{aligned}$$
+
+:::
+
+<br>
+
+**3)** Evaluate: $\int_0^3 2x\,dx$
+
+::: {.callout-note collapse="true"}
+## Solution
+$$
+\int_0^3 2x\,dx = x^2\Big|_0^3 = 9-0 = 9
+$$
+:::
+
+<br>
+
+**4)** Evaluate: $\int_1^3 (x^2-1)\,dx$
+
+::: {.callout-note collapse="true"}
+## Solution
+$$
+\int_1^3 (x^2-1)\,dx = \left[\frac{1}{3}x^3-x\right]_1^3 = \left(9-3\right)-\left(\frac{1}{3}-1\right) = 6-\left(-\frac{2}{3}\right) = \frac{20}{3}
+$$
+:::
+
+<br>
+
+**5)** Given $\frac{dy}{dx}=6x-1$, find $y(x)$ if $y(2)=5$.
+
+::: {.callout-note collapse="true"}
+## Solution
+$$
+y=3x^2-x+C
+$$
+$$
+y(2)=3(2)^2-2+C=10+C=5 \Rightarrow C=-5
+$$
+$$
+y=3x^2-x-5
+$$
+:::
+
+<br>
+
+## Applications
+
+:::{.center-text .teal-text}
+*Write your answers as full sentences with units!*
+:::
+
+
+**6)** A hiker's velocity along a trail is $v(t)=3t^2-2t+1$ km/hr for the first $t$ hours. Find the total distance traveled in the first 3 hours, $\int_0^3 v(t)\,dt$.
+
+::: {.callout-note collapse="true"}
+## Solution
+$$
+\int_0^3(3t^2-2t+1)\,dt = \left[t^3-t^2+t\right]_0^3 = 27-9+3 = 21\text{ km}
+$$
+:::
+
+<br>
+
+**7)** After restoring a section of coastal wetland, ecologists measure the rate at which the wetland absorbs stormwater runoff, $r(t)$ (in m³/hour), throughout a 24-hour storm. The graph below shows this absorption rate over time. Partway through the storm, the monitoring sensor lost power and went offline between hour 10 and hour 14 (shaded region in the graph) — but you still need to report an estimate of the total volume of stormwater absorbed over the full 24-hour storm.
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "70%"
+t <- seq(0, 24, length.out = 300)
+rate <- 200 * exp(-((t-9)^2)/40)
+
+before <- t <= 10
+after  <- t >= 14
+
+plot(NA, xlim = c(0,24), ylim = c(0,220),
+     xlab = "Hours since storm began", ylab = "Stormwater absorption rate (m³/hr)")
+abline(v = seq(0,24, by = 6), col = "lightgray", lty = "dotted")
+
+rect(10, 0, 14, 220, col = adjustcolor("gray", alpha.f = 0.25), border = NA)
+text(12, 210, "sensor\noffline", cex = 0.8, col = "gray30")
+
+lines(t[before], rate[before], lwd = 3, col = "#003660")
+lines(t[after], rate[after], lwd = 3, col = "#003660")
+points(10, rate[which.min(abs(t-10))], pch = 19, col = "#FEBC11", cex = 1.3)
+points(14, rate[which.min(abs(t-14))], pch = 19, col = "#FEBC11", cex = 1.3)
+```
+
+(a) What does the *area under this curve* represent, in words? Be sure to include units.
+(b) Looking at the shape of the graph (without calculating anything), during which 6-hour window — hours 0–6, 6–12, 12–18, or 18–24 — do you expect the *largest volume* of stormwater to have been absorbed? Explain your reasoning.
+(c) Describe how you would handle the sensor gap when estimating the total area under the curve. What assumption(s) would you have to make, and how would the location of this particular gap affect your confidence in the final estimate?
+
+::: {.callout-note collapse="true"}
+## Solution
+
+**(a)** The area under the rate curve represents the **total volume of stormwater absorbed by the wetland** over that time period, in m³ (rate in m³/hr $\times$ time in hr = volume in m³).
+
+**(b)** Hours 6–12. The curve is highest and covers the most area in that window, since the absorption rate peaks around hour 9.
+
+**(c)** Since there's no direct measurement between hour 10 and hour 14, we'd have to interpolate. There's many ways of doing this. One option could be to connect the last known point (hour 10) to the first known point (hour 14) with a straight line, and using that as our best guess for the missing area. This assumes the rate changed smoothly and roughly monotonically across the gap.
+
+That assumption is riskier here than it would be for an arbitrary gap, because this particular gap covers the storm's peak (the point where the true curve is doing the most curving). A straight-line interpolation would cut across that peak and likely *underestimate* the true absorption rate for most of the gap, so our total volume estimate is probably a bit too low, and we should be less confident in it than we would be if the same size gap had fallen during a flatter part of the storm.
+:::
+
+<br>
+
+**8)** A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$, where $C$ is the ozone concentration (ppm) and $t$ is the elapsed time in years since 1962. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982? 
+
+
+::: {.callout-note collapse="true"}
+## Solution
+
+Given:  
+$$\frac{dC}{dt} = 2t + 20$$
+
+Integrate:  
+$$\int dC = \int (2t + 20)\,dt$$  
+
+$$C(t) = t^{2} + 20t + D$$  
+
+Initial condition:  
+$$C(2)=30 \ \  \text{(since 1964 is 2 years after 1962)}$$  
+
+$$30 = 2^{2} + 20\cdot 2 + D$$  
+
+$$D = 30 - 44 = -14$$  
+
+Thus:  
+$$C(t) = t^{2} + 20t - 14$$  
+
+Evaluate at $t=20$ (1982):  
+
+$$C(20) = 20^{2} + 20\cdot 20 - 14$$  
+
+$$= 400 + 400 - 14$$  
+
+$$= 786 \text{ ppm}$$
+
+:::
+
+<br>
+
+**9)** Using the [BIDE model](https://en.wikipedia.org/wiki/Matrix_population_models), the per capita growth rate of a population $N$ with respect to time $t$ can be written as
+
+$$\frac{1}{N}\frac{dN}{dt} = r,$$
+
+where $r$, the intrinsic growth rate, is constant. 
+
+(1) Explain why the previous equation is an ordinary differential equation. 
+
+(2) Knowing that $\frac{d}{dt}e^{rt} = r e^{rt}$, verify that $N_0\cdot e^{rt}$ is a solution for this differential equation. 
+
+::: {.callout-note collapse="true"}
+## Solution
+(1) In this equation the unknown is the population function $N(t)$. We could rewrite it as 
+
+$$ \frac{dN}{dt} = rN.$$
+
+It is a (first degree) ordinary differential equation because the only derivative in the equation is $\frac{dN}{dt}$ which is the first derivative of $N$ with respect to $t$.
+
+(2) To check whether $N(t) = N_0 e^{rt}$ is a solution for the differential equation we can check whether this $N(t)$ satisfies that 
+
+$$ \frac{dN}{dt} = rN.$$
+
+We have that
+
+$$\frac{d}{dt} N_0e^{rt} = N_0 re^{rt} = r \left( N_0 e^{rt}\right).$$
+
+So we see that $N(t) = N_0e^{rt}$ satisfies the equation. 
+
+:::

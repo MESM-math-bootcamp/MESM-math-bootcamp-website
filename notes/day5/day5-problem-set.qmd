@@ -1,0 +1,117 @@
+---
+sidebar: daily-materials
+execute:
+  freeze: true
+author: "Carmen Galaz García"  
+---
+
+# Integrals problem set
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE,message=FALSE,warning=FALSE)
+
+library(tidyverse)
+```
+
+::: {.callout-tip}
+## Instructions
+
+Attempt each problem on your own before checking the [solutions](day5-problem-set-solutions.qmd).
+Feel free to work with anyone in the cohort after giving the problems a try!
+:::
+
+<br>
+
+## Indefinite and definite integrals, and initial value problems
+
+**1)** Find the indefinite integral: $\int 7\,dx$
+
+
+<br>
+
+**2)** Find the integral of $g$, where
+
+$$g(t)=3t^5-2t^3+16t-7$$
+
+<br>
+
+**3)** Evaluate: $\int_0^3 2x\,dx$
+
+
+<br>
+
+**4)** Evaluate: $\int_1^3 (x^2-1)\,dx$
+
+
+<br>
+
+**5)** Given $\frac{dy}{dx}=6x-1$, find $y(x)$ if $y(2)=5$.
+
+
+<br>
+
+## Applications
+
+:::{.center-text .teal-text}
+*Write your answers as full sentences with units!*
+:::
+
+
+**6)** A hiker's velocity along a trail is $v(t)=3t^2-2t+1$ km/hr for the first $t$ hours. Find the total distance traveled in the first 3 hours, $\int_0^3 v(t)\,dt$.
+
+
+<br>
+
+**7)** After restoring a section of coastal wetland, ecologists measure the rate at which the wetland absorbs stormwater runoff, $r(t)$ (in m³/hour), throughout a 24-hour storm. The graph below shows this absorption rate over time. Partway through the storm, the monitoring sensor lost power and went offline between hour 10 and hour 14 (shaded region in the graph) — but you still need to report an estimate of the total volume of stormwater absorbed over the full 24-hour storm.
+
+```{r}
+#| echo: false
+#| fig-align: center
+#| out-width: "70%"
+t <- seq(0, 24, length.out = 300)
+rate <- 200 * exp(-((t-9)^2)/40)
+
+before <- t <= 10
+after  <- t >= 14
+
+plot(NA, xlim = c(0,24), ylim = c(0,220),
+     xlab = "Hours since storm began", ylab = "Stormwater absorption rate (m³/hr)")
+abline(v = seq(0,24, by = 6), col = "lightgray", lty = "dotted")
+
+rect(10, 0, 14, 220, col = adjustcolor("gray", alpha.f = 0.25), border = NA)
+text(12, 210, "sensor\noffline", cex = 0.8, col = "gray30")
+
+lines(t[before], rate[before], lwd = 3, col = "#003660")
+lines(t[after], rate[after], lwd = 3, col = "#003660")
+points(10, rate[which.min(abs(t-10))], pch = 19, col = "#FEBC11", cex = 1.3)
+points(14, rate[which.min(abs(t-14))], pch = 19, col = "#FEBC11", cex = 1.3)
+```
+
+(a) What does the *area under this curve* represent, in words? Be sure to include units.
+(b) Looking at the shape of the graph (without calculating anything), during which 6-hour window — hours 0–6, 6–12, 12–18, or 18–24 — do you expect the *largest volume* of stormwater to have been absorbed? Explain your reasoning.
+(c) Describe how you would handle the sensor gap when estimating the total area under the curve. What assumption(s) would you have to make, and how would the location of this particular gap affect your confidence in the final estimate?
+
+
+<br>
+
+**8)** A model for the rate of change in ozone concentrations over time between 1962-1984 is given by $\frac{dC}{dt}=2t+20$, where $C$ is the ozone concentration (ppm) and $t$ is the elapsed time in years since 1962. Given that in 1964 the ozone concentration was 30 ppm, what was the ozone concentration in 1982? 
+
+
+
+<br>
+
+**9)** Using the [BIDE model](https://en.wikipedia.org/wiki/Matrix_population_models), the per capita growth rate of a population $N$ with respect to time $t$ can be written as
+
+$$\frac{1}{N}\frac{dN}{dt} = r,$$
+
+where $r$, the intrinsic growth rate, is constant. 
+
+(1) Explain why the previous equation is an ordinary differential equation. 
+
+(2) Knowing that $\frac{d}{dt}e^{rt} = r e^{rt}$, verify that $N_0\cdot e^{rt}$ is a solution for this differential equation. 
+
+---
+
+:::{style="color:gray;"}
+*All the functions and example data are synthetic and were generated (some with the aid of Claude Code) for the purpose of this lesson.*
+:::
